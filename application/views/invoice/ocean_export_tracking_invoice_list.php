@@ -56,12 +56,14 @@
 
                             <div class="form-group">
                                 <label class="" for="from_date"><?php echo display('from') ?></label>
-                                <input type="text" name="from_date" class="form-control datepicker" id="from_date" value="" placeholder="<?php echo display('start_date') ?>" >
+                                <input type="date" name="from_date" class="form-control" id="from_date" value="" placeholder="<?php echo display('start_date') ?>" >
                             </div> 
 
                             <div class="form-group">
+                                &nbsp;
                                 <label class="" for="to_date"><?php echo display('to') ?></label>
-                                <input type="text" name="to_date" class="form-control datepicker" id="to_date" placeholder="<?php echo display('end_date') ?>" value="">
+                                &nbsp;
+                                <input type="date" name="to_date" class="form-control" id="to_date" placeholder="<?php echo display('end_date') ?>" value="">
                             </div>  
 
                             <button type="button" id="btn-filter" class="btn btn-success"><?php echo display('find') ?></button>
@@ -105,11 +107,6 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-
-
-                                    
-
-
                         
                                 </tbody>
                                 <tfoot>

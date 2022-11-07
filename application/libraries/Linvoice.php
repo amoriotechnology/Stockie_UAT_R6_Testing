@@ -825,10 +825,7 @@ class Linvoice {
         $customer_details = $CI->Invoices->pos_customer_setup();
      
         $currency_details = $CI->Web_settings->retrieve_setting_editdata();
-        $taxfield = $CI->db->select('tax_name,default_value')
-                ->from('tax_settings')
-                ->get()
-                ->result_array();
+        $taxfield = $CI->db->select('tax_name,default_value')->from('tax_settings')->get()->result_array();
         $bank_list          = $CI->Web_settings->bank_list();
         $data = array(
             'title'         => 'Add New Export Invoice',
@@ -855,20 +852,17 @@ class Linvoice {
         $get_customer= $CI->Accounts_model->get_customer();
        // print_r($customer_details);
         $currency_details = $CI->Web_settings->retrieve_setting_editdata();
-        $taxfield = $CI->db->select('tax_name,default_value')
-                ->from('tax_settings')
-                ->get()
-                ->result_array();
-        $bank_list          = $CI->Web_settings->bank_list();
+        $taxfield = $CI->db->select('tax_name,default_value')->from('tax_settings')->get()->result_array();
+        $bank_list = $CI->Web_settings->bank_list();
         $data = array(
             'title'         => 'Add New Trucking Invoice',
             'discount_type' => $currency_details[0]['discount_type'],
-                 'all_supplier'  => $all_supplier,
+            'all_supplier'  => $all_supplier,
             'taxes'         => $taxfield,
             'customer_name' => isset($customer_details[0]['customer_name'])?$customer_details[0]['customer_name']:'',
             'customer_id'   => isset($customer_details[0]['customer_id'])?$customer_details[0]['customer_id']:'',
             'bank_list'     => $bank_list,
-              'customer_list' => $get_customer
+            'customer_list' => $get_customer
         );
         $invoiceForm = $CI->parser->parse('invoice/trucking', $data, true);
         return $invoiceForm;

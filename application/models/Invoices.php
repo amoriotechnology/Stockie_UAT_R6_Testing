@@ -74,6 +74,39 @@ class Invoices extends CI_Model {
             ->result_array();
            
     }
+
+    
+     public function invoice_pdf() {
+        $this->db->select('in.*, ci.customer_name');
+        $this->db->from('invoice in');
+        $this->db->join('customer_information ci', 'ci.customer_id = in.customer_id');
+      //  $this->db->where('in.invoice_id', $invoice_id);
+       
+        $query = $this->db->get();
+
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        }
+        return false;
+
+    }
+
+    public function all_invoice() {
+    $this->db->select('a.*,b.*');
+    $this->db->from('invoice_details a');
+    $this->db->join('invoice b', 'b.invoice_id = a.invoice_id');
+    // $this->db->where('b.invoice_id');
+    
+    $query = $this->db->get();
+   
+      if ($query->num_rows() > 0) {
+          return $query->result_array();
+      }
+      return false;
+}
+
+
+
     public function profarma_pdf($purchase_id) {
         $this->db->select('pi.*, ci.customer_name');
         $this->db->from('profarma_invoice pi');
@@ -1988,9 +2021,11 @@ public function availability($product_nam,$product_model){
 
         );
 
-    //print_r($datainv);
+    print_r($datainv); exit();
 
         $this->db->insert('invoice', $datainv);
+
+        $this->session->set_userdata(array('message' => display('successfully_added')));
 
         $prinfo  = $this->db->select('product_id,Avg(rate) as product_rate')->from('product_purchase_details')->where_in('product_id',$product_id)->group_by('product_id')->get()->result(); 
 

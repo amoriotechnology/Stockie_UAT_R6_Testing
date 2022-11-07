@@ -66,8 +66,8 @@ class Invoice_content extends CI_Model {
             return $query->result_array();
 
         }
-
-        return false;
+        
+        return true;
 
     }
 

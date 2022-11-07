@@ -51,9 +51,12 @@ class Invoice_design extends CI_Model {
 
 
        public function retrieve_data() {
-           $id=$_SESSION['user_id'];
+        
+        $id=$_SESSION['user_id'];
 
         $this->db->select('*');
+
+    
 
         $this->db->from('invoice_design');
 
@@ -67,7 +70,7 @@ class Invoice_design extends CI_Model {
 
         }
 
-        return false;
+        return true;
 
     }
 

@@ -64,7 +64,7 @@ border: 2px solid #dce4ec;
             $this->session->unset_userdata('error_message');
             }
         ?>
-
+    
         <!-- Purchase report -->
         <div class="row">
             <div class="col-sm-12">
@@ -76,9 +76,9 @@ border: 2px solid #dce4ec;
                     </div>
 
                     <div class="panel-body">
-                    <?php echo form_open_multipart('Cinvoice/performer_ins',array('class' => 'form-vertical', 'id' => 'insert_sale','name' => 'insert_sale'))?>
-     
-
+                    <?php 
+                    echo form_open_multipart('Cinvoice/performer_ins',array('class' => 'form-vertical', 'id' => 'insert_sale','name' => 'insert_sale'))?>
+ 
                         <div class="row">
                             <div class="col-sm-6" style="display:none;">
                                <div class="form-group row">
@@ -101,7 +101,7 @@ border: 2px solid #dce4ec;
                                     </label>
                                     <div class="col-sm-8">
                                         <?php $date = date('Y-m-d'); ?>
-                                        <input type="text" required tabindex="2" class="form-control datepicker" name="purchase_date" value="<?php echo $date; ?>" id="date"  />
+                                        <input type="date" required tabindex="2" class="form-control datepicker" name="purchase_date" value="<?php echo $date; ?>" id="date"  />
                                     </div>
                                 </div>
                             </div>
@@ -265,13 +265,16 @@ border: 2px solid #dce4ec;
                                 <td style="width:80%;border:none;text-align:right;font-weight:bold;">Tax : 
                                  </td>
                                 <td>
-<select name="tx" id="product_tax" class="form-control" onselect="gtotal();">
-<option value="Select the Tax" selected>Select the Tax</option>
-
-</select>
-</td>
-</tr>
-</table>
+                            <select name="tx" id="product_tax" class="form-control" onselect="gtotal();">
+                                <option value="Select the Tax" selected>Select the Tax</option>
+                                 <!-- <?php foreach($tax as $tx){?>
+  
+                                    <option value="<?php echo $tx['tax_id'].'-'.$tx['tax'].'%';?>">  <?php echo $tx['tax_id'].'-'.$tx['tax'].'%';  ?></option>
+                                <?php } ?> -->
+                            </select>
+                            </td>
+                            </tr>
+                        </table>
                           
                             <table class="table table-bordered table-hover" id="normalinvoice">
                                 <thead>
@@ -339,26 +342,20 @@ border: 2px solid #dce4ec;
                                         </td>
                                         <td> <button type="button" id="add_invoice_item" class="btn btn-info" name="add-invoice-item"  onClick="addInputField('addPurchaseItem');addprod();"  tabindex="9"><i class="fa fa-plus"></i></button>
 
-<input type="hidden" name="baseUrl" class="baseUrl" value="<?php echo base_url();?>"/></td>
+                                        <input type="hidden" name="baseUrl" class="baseUrl" value="<?php echo base_url();?>"/></td>
                                     </tr>
                                         
-                                    
-
-                                  
-                                     
-
-                                   
                                 </tfoot>
                             </table>
                                          
                         </div>
-<div class="form-group row">
+                            <div class="form-group row">
 
                                     <label for="billing_address" class="col-sm-4 col-form-label">Account Details/Additional Information</label>
 
                                     <div class="col-sm-8">
 
-                                        <textarea rows="4" cols="50" id="details" name="ac_details" class=" form-controlqq" placeholder='Account Details/Additional Information' id="" >dsdddddd</textarea>
+                                        <textarea rows="4" cols="50" id="details" name="ac_details" class=" form-control" placeholder='Account Details/Additional Information' id="" ></textarea>
                                                 <br>
                                                 
                                     </div>
@@ -385,20 +382,22 @@ border: 2px solid #dce4ec;
                                         <input type="hidden" name="uid" value="<?php echo $_SESSION['user_id']; ?>">
     
                                         <input type="submit" id="add_purchase" class="btn btn-primary btn-large"  onclick="  $('#btn1_download').css('display','block');
-       $('#btn1_email').css('display','block');"name="add-purchase" value="<?php echo display('Save') ?>" /></td>
+                                        $('#btn1_email').css('display','block');"name="add-purchase" value="<?php echo display('Save') ?>" />
+                                    </td>
                                     <td>&nbsp;</td>
                                     <td id="btn1_download">
                                         
-                                        <a href="" id="down" class="btn btn-primary">
-                                            Donwload 
+                                        <a href="<?php echo base_url('Cinvoice/performa_pdf/'.$purchase_id);?>" id="down" class="btn btn-primary">
+                                            Download 
                                         </a>
 
                                     </td>
                                     <td>&nbsp;</td>
                                     <td id="btn1_email">
                                         <a href="" id="send" class="btn btn-primary">
-                                    Sendmail with attachment
-                                        </a></td>
+                                            Sendmail with attachment
+                                        </a>
+                                    </td>
                                   
                                   
                                     
@@ -407,7 +406,7 @@ border: 2px solid #dce4ec;
                             </div>
                         </div>
 
-<input type="text" id="currency"/>
+<input type="hidden" id="currency"/>
                                 
 <?php echo form_close()?>
                     </div>

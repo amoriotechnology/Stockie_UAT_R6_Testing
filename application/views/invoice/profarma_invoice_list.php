@@ -68,7 +68,7 @@
 
             <div class="alert alert-danger alert-dismissable">
 
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">X</button>
 
                 <?php echo $error_message ?>                    
 
@@ -83,22 +83,14 @@
         ?>
 
 
-
         <div class="row">
-
             <div class="col-sm-12">
 
-               
-
-    <?php if($this->permission1->method('new_invoice','create')->access()){ ?>
+                <?php if($this->permission1->method('new_invoice','create')->access()){ ?>
 
                     <a href="<?php echo base_url('Cinvoice/profarma_invoice') ?>" class="btn btn-info m-b-5 m-r-2"><i class="ti-plus"> </i> New Profarma Invoice </a>
 
                 <?php }?>
-
-           
-
-                
 
             </div>
 
@@ -129,20 +121,20 @@
                         ?>
 
                         <div class="form-group">
-
+                            &nbsp;
                             <label class="" for="from_date"><?php echo display('start_date') ?></label>
-
-                            <input type="text" name="from_date" class="form-control datepicker" id="from_date" value="" placeholder="<?php echo display('start_date') ?>" >
+                            &nbsp;
+                            <input type="date" name="from_date" class="form-control" id="from_date" value="" placeholder="<?php echo display('start_date') ?>" >
 
                         </div> 
 
 
 
                         <div class="form-group">
-
+                            &nbsp;
                             <label class="" for="to_date"><?php echo display('end_date') ?></label>
-
-                            <input type="text" name="to_date" class="form-control datepicker" id="to_date" placeholder="<?php echo display('end_date') ?>" value="">
+                            &nbsp;
+                            <input type="date" name="to_date" class="form-control" id="to_date" placeholder="<?php echo display('end_date') ?>" value="">
 
                         </div>  
 

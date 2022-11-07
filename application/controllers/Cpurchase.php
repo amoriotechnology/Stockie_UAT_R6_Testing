@@ -507,21 +507,30 @@ class Cpurchase extends CI_Controller {
         $CC = & get_instance();
         $CA = & get_instance();
         $CB = & get_instance();
+        $w = & get_instance();
         $CI->auth->check_admin_auth();
         $CI->load->library('linvoice');
         $CB->load->model('Purchases');
         $CA->load->model('invoice_design');
         $CC->load->model('invoice_content');
+        $w->load->model('Ppurchases');
+        $company_info = $w->Ppurchases->retrieve_company();
+        // print_r($company_info); exit();
         $dataw = $CA->invoice_design->retrieve_data();
+        // print_r($dataw); die();
         $datacontent = $CI->invoice_content->retrieve_data();
 
         $packing_details = $CB->Purchases->packing_details_data($expense_packing_id);
+
+        // print_r($packing_details); exit();
 
         $data=array(
             'header'=> $dataw[0]['header'],
             'logo'=> $dataw[0]['logo'],
             'color'=> $dataw[0]['color'],
             'template'=> $dataw[0]['template'],
+            'company' => $company_info[0]['company_name'],
+            'address' => $company_info[0]['address'],
             'invoice'  =>$packing_details[0]['invoice_no'],
             'invoice_date' => $packing_details[0]['invoice_date'],
             'gross' => $packing_details[0]['gross_weight'],

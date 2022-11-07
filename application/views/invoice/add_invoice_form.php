@@ -585,7 +585,7 @@
                                            <?php } ?>
                                         </select>
                                         <input type='hidden' class='common_product autocomplete_hidden_value  product_id_1' name='product_id[]' id='SchoolHiddenId' />
-                                                                  </td>
+                                        </td>
 
                                        <td class="wt">
                                                 <input type="text" id="available_quantity[]" name="available_quantity[]" class="form-control text-right available_quantity_1" placeholder="0.00" readonly/>
@@ -622,7 +622,7 @@
                                            
                                     </tr>
            
-<tr> <td class="text-right" colspan="4"><b><?php echo "Grand Total" ?>:</b></td>
+                                    <tr> <td class="text-right" colspan="4"><b><?php echo "Grand Total" ?>:</b></td>
                                         <td class="text-right">
                                             <input type="text" id="gtotal" class="text-right form-control" name="gtotal" value="0.00" readonly="readonly" />
                                         </td>
@@ -630,13 +630,6 @@
 
                                             <input type="hidden" name="baseUrl" class="baseUrl" value="<?php echo base_url();?>"/></td>
                                     </tr>
-                                       
-                                        
-                                    
-
-                                  
-                                     
-
                                    
                                 </tfoot>
                             </table>
@@ -644,11 +637,30 @@
 
                         <div class="form-group row">
                             <div class="col-sm-6">
-                                <input type="submit" id="add_purchase" class="btn btn-primary btn-large" name="add-purchase" value="<?php echo display('Save') ?>" />
-                                <input type="submit" value="<?php echo display('submit_and_add_another') ?>" name="add-purchase-another" class="btn btn-large btn-success" id="add_purchase_another" >
-                                <button class="btn btn-primary" data-toggle="modal" data-target="#formModal" id="send_email">
-Send Email
-</button>
+                                <table>
+                                <tr>
+                                    <td>
+    
+                                        <input type="submit" id="add_purchase" class="btn btn-primary btn-large" name="add-packing-list" value="Save" />
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        
+                                        <a href="" id="download" style="display:none; color: #fff;" class="btn btn-primary">
+                                            Download 
+                                        </a>
+
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        <a href="" style="display:none; color: #fff ;" id="save_another" class="btn btn-primary">
+                                            Sendmail with attachment
+                                        </a>
+                                    </td>
+                                  
+                                  
+                                    
+                                </tr>
                           
                             </div>
                         </div>
@@ -665,7 +677,7 @@ Send Email
                                     </div>
 
                                 </div> 
-    <div class="form-group row">
+                                <div class="form-group row">
 
                                     <label for="remark" class="col-sm-4 col-form-label">Remarks/Conditions</label>
 
@@ -1333,7 +1345,7 @@ gtotal();
 
                     <div class="panel-body">
 
- <input type ="hidden" name="csrf_test_name" id="" value="<?php echo $this->security->get_csrf_hash();?>">
+                        <input type ="hidden" name="csrf_test_name" id="" value="<?php echo $this->security->get_csrf_hash();?>">
 
                         <div class="form-group row">
 
@@ -1409,7 +1421,7 @@ gtotal();
 
                             
 
-                            <input type="submit" class="btn btn-success" value="Submit">
+                            <input type="submit" class="btn btn-success" onClick="refreshPage()" value="Submit">
 
                         </div>
 
@@ -1562,15 +1574,14 @@ gtotal();
 
 <script type="text/javascript">
     $('#add_purchase').on('click', function() {
-$('#send_email').show();
-
+    $('#send_email').show();
     });
      $(function() { 
         $('#send_email').hide();
        var data = {
-         
-      
+    
        };
+
        data[csrfName] = csrfHash;
    
        $.ajax({
@@ -1613,13 +1624,27 @@ $('#send_email').show();
                csrfName = result.csrfName;
                csrfHash = result.csrfHash;
             }
-            $('#billing_address').html(result[0]['customer_address']+'<br>'+result[0]['customer_email']+'<br>'+result[0]['phone']);
+            $('#billing_address').html(result[0]['customer_address']+'\n'+result[0]['customer_email']+'\n'+result[0]['phone']);
     $('#email_info').val(result[0]['customer_email']);
         }
     });
 });
 
 </script>
+
+<script type="text/javascript">
+
+    $('#add_purchase').on('click', function() {
+
+    $('#download_pdf').show();   
+
+    });
+
+
+
+</script>
+
+
 <script type="text/javascript">
      $('#number_of_days').change(function(){
       
@@ -1730,6 +1755,33 @@ $('#email_send').click(function(){
       });
   });
 
+
+</script>
+
+<script>
+function refreshPage(){
+    window.location.reload();
+} 
+
+// function refresh(){
+//     window.location.href = "<?php echo base_url('Cinvoice/manage_invoice'); ?>";
+
+// }
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function () {
+    $("#add_purchase").click(function () {
+        $("#save_another").toggle();
+    });
+});
+
+$(document).ready(function () {
+    $("#add_purchase").click(function () {
+        $("#download").toggle();
+    });
+});
 
 </script>
 
