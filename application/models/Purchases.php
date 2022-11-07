@@ -535,10 +535,556 @@ class Purchases extends CI_Model {
 
          return $response; 
     }
+    public function trucking($date=null) {
+        if($date) {
+$split = array_map(
+ function($value) {
+     return implode(' ', $value);
+ },
+ array_chunk(explode('-', $date), 3)
+);
+
+
+     $start = str_replace(' ', '-', $split[0]);
+     $end = str_replace(' ', '-', $split[1]);
+     $start = rtrim($start, "-");
+     $end= preg_replace('/' . '-' . '/', '', $end, 1);
+}
+$query = '';
+     $data = array();
+
+     $records_per_page = 10;
+     $start_from = 0;
+     $current_page_number = 0;
+     if(isset($_POST["rowCount"]))
+     {
+      $records_per_page = $_POST["rowCount"];
+     }
+     else
+     {
+      $records_per_page = 10;
+     }
+     if(isset($_POST["current"]))
+     {
+      $current_page_number = $_POST["current"];
+     }
+     else
+     {
+      $current_page_number = 1;
+     }
+     $start_from = ($current_page_number - 1) * $records_per_page;
+     $this->db->select('a.*,b.customer_name');
+     $this->db->from('expense_trucking a');
+    $this->db->join('customer_information b', 'b.customer_id = a.bill_to','left');
+   $this->db->where('a.create_by',$this->session->userdata('user_id'));
+
+   
 
 
 
+     if($date) {
+      if(!empty($start) && !empty($end)){
+         $this->db->where('a.invoice_date >=',$start);
+     $this->db->where('a.invoice_date <=',$end);
+      }
+ 
+     }
+    
+     if(!empty($_POST["searchPhrase"]))
+     {
+      $query .= 'WHERE (a.invoice_no LIKE "%'.$_POST["searchPhrase"].'%" ';
+      $query .= 'OR a.invoice_date LIKE "%'.$_POST["searchPhrase"].'%" ';
+      $query .= 'OR a.bill_to LIKE "%'.$_POST["searchPhrase"].'%" ';
+      $query .= 'OR b.customer_name LIKE "%'.$_POST["searchPhrase"].'%" ) ';
+    
+     }
+     
+     $order_by = '';
+     if(isset($_POST["sort"]) && is_array($_POST["sort"]))
+     {
+      foreach($_POST["sort"] as $key => $value)
+      {
+       $order_by .= " $key $value, ";
+      }
+     }
+     else
+     {
+     $query .= 'ORDER BY trucking_id DESC ';
+     }
+    // if($order_by != '')
+   //  {
+   //   $query .= ' ORDER BY ' . substr($order_by, 0, -2);
+  //   }
+     
+     if($records_per_page != -1)
+     {
+      $query .= " LIMIT " . $start_from . ", " . $records_per_page;
+     }
+    
+        $query = $this->db->get();
+   //    echo $this->db->last_query();
+    // $result = $this->db->query($query); 
+    $result = $query->result_array();
+    foreach($result as $row)
+ {
+     $data[] = $row;
+ }
+   
+     
+     
+     $this->db->select('*');
+  
+     $this->db->from('expense_trucking');
+     $query1 = $this->db->get();
+     $result1 = $query1->result_array();
+   
+     $total_records = $query1->num_rows();
+     $output = array(
+  
+      'rows'   => $data
+     );
+   return $output;
+//  echo json_encode($output);
 
+ }
+        public function ocean_import($date=null) {
+        if($date) {
+$split = array_map(
+ function($value) {
+     return implode(' ', $value);
+ },
+ array_chunk(explode('-', $date), 3)
+);
+
+
+     $start = str_replace(' ', '-', $split[0]);
+     $end = str_replace(' ', '-', $split[1]);
+     $start = rtrim($start, "-");
+     $end= preg_replace('/' . '-' . '/', '', $end, 1);
+}
+$query = '';
+     $data = array();
+
+     $records_per_page = 10;
+     $start_from = 0;
+     $current_page_number = 0;
+     if(isset($_POST["rowCount"]))
+     {
+      $records_per_page = $_POST["rowCount"];
+     }
+     else
+     {
+      $records_per_page = 10;
+     }
+     if(isset($_POST["current"]))
+     {
+      $current_page_number = $_POST["current"];
+     }
+     else
+     {
+      $current_page_number = 1;
+     }
+     $start_from = ($current_page_number - 1) * $records_per_page;
+     $this->db->select('a.*,b.supplier_name');
+     $this->db->from('ocean_import_tracking a');
+     $this->db->join('supplier_information b', 'b.supplier_id = a.supplier_id','left');
+     $this->db->where('a.create_by',$this->session->userdata('user_id'));
+
+
+
+     if($date) {
+      if(!empty($start) && !empty($end)){
+         $this->db->where('a.invoice_date >=',$start);
+     $this->db->where('a.invoice_date <=',$end);
+      }
+ 
+     }
+    
+     if(!empty($_POST["searchPhrase"]))
+     {
+      $query .= 'WHERE (a.booking_no LIKE "%'.$_POST["searchPhrase"].'%" ';
+      $query .= 'OR a.container_no LIKE "%'.$_POST["searchPhrase"].'%" ';
+      $query .= 'OR a.seal_no LIKE "%'.$_POST["searchPhrase"].'%" ';
+      $query .= 'OR b.supplier_name LIKE "%'.$_POST["searchPhrase"].'%" ) ';
+    
+     }
+     
+     $order_by = '';
+     if(isset($_POST["sort"]) && is_array($_POST["sort"]))
+     {
+      foreach($_POST["sort"] as $key => $value)
+      {
+       $order_by .= " $key $value, ";
+      }
+     }
+     else
+     {
+     $query .= 'ORDER BY ocean_import_tracking_id DESC ';
+     }
+    // if($order_by != '')
+   //  {
+   //   $query .= ' ORDER BY ' . substr($order_by, 0, -2);
+  //   }
+     
+     if($records_per_page != -1)
+     {
+      $query .= " LIMIT " . $start_from . ", " . $records_per_page;
+     }
+    
+        $query = $this->db->get();
+   //    echo $this->db->last_query();
+    // $result = $this->db->query($query); 
+    $result = $query->result_array();
+    foreach($result as $row)
+ {
+     $data[] = $row;
+ }
+   
+     
+     
+     $this->db->select('*');
+  
+     $this->db->from('ocean_import_tracking');
+     $query1 = $this->db->get();
+     $result1 = $query1->result_array();
+   
+     $total_records = $query1->num_rows();
+     $output = array(
+  
+      'rows'   => $data
+     );
+   return $output;
+//  echo json_encode($output);
+
+ }
+    public function packing_list($date=null) {
+        if($date) {
+$split = array_map(
+ function($value) {
+     return implode(' ', $value);
+ },
+ array_chunk(explode('-', $date), 3)
+);
+
+
+     $start = str_replace(' ', '-', $split[0]);
+     $end = str_replace(' ', '-', $split[1]);
+     $start = rtrim($start, "-");
+     $end= preg_replace('/' . '-' . '/', '', $end, 1);
+}
+$query = '';
+     $data = array();
+
+     $records_per_page = 10;
+     $start_from = 0;
+     $current_page_number = 0;
+     if(isset($_POST["rowCount"]))
+     {
+      $records_per_page = $_POST["rowCount"];
+     }
+     else
+     {
+      $records_per_page = 10;
+     }
+     if(isset($_POST["current"]))
+     {
+      $current_page_number = $_POST["current"];
+     }
+     else
+     {
+      $current_page_number = 1;
+     }
+     $start_from = ($current_page_number - 1) * $records_per_page;
+
+     $this->db->select('*');
+     $this->db->from('expense_packing_list');
+    $this->db->where('create_by',$this->session->userdata('user_id'));
+
+     if($date) {
+      if(!empty($start) && !empty($end)){
+         $this->db->where('invoice_date >=',$start);
+     $this->db->where('invoice_date <=',$end);
+      }
+ 
+     }
+    
+     if(!empty($_POST["searchPhrase"]))
+     {
+      $query .= 'WHERE (a.invoice_no LIKE "%'.$_POST["searchPhrase"].'%" ';
+      $query .= 'OR invoice_date LIKE "%'.$_POST["searchPhrase"].'%" ';
+      $query .= 'OR expense_packing_id LIKE "%'.$_POST["searchPhrase"].'%" ';
+      $query .= 'OR grand_total_amount LIKE "%'.$_POST["searchPhrase"].'%" ) ';
+    
+     }
+     
+     $order_by = '';
+     if(isset($_POST["sort"]) && is_array($_POST["sort"]))
+     {
+      foreach($_POST["sort"] as $key => $value)
+      {
+       $order_by .= " $key $value, ";
+      }
+     }
+     else
+     {
+     $query .= 'ORDER BY expense_packing_id DESC ';
+     }
+    // if($order_by != '')
+   //  {
+   //   $query .= ' ORDER BY ' . substr($order_by, 0, -2);
+  //   }
+     
+     if($records_per_page != -1)
+     {
+      $query .= " LIMIT " . $start_from . ", " . $records_per_page;
+     }
+    
+        $query = $this->db->get();
+   //    echo $this->db->last_query();
+    // $result = $this->db->query($query); 
+    $result = $query->result_array();
+    foreach($result as $row)
+ {
+     $data[] = $row;
+ }
+   
+     
+     
+     $this->db->select('*');
+  
+     $this->db->from('expense_packing_list');
+     $query1 = $this->db->get();
+     $result1 = $query1->result_array();
+   
+     $total_records = $query1->num_rows();
+     $output = array(
+  
+      'rows'   => $data
+     );
+   return $output;
+//  echo json_encode($output);
+
+ }
+    public function newexpense($date=null) {
+        if($date) {
+$split = array_map(
+ function($value) {
+     return implode(' ', $value);
+ },
+ array_chunk(explode('-', $date), 3)
+);
+
+
+     $start = str_replace(' ', '-', $split[0]);
+     $end = str_replace(' ', '-', $split[1]);
+     $start = rtrim($start, "-");
+     $end= preg_replace('/' . '-' . '/', '', $end, 1);
+}
+$query = '';
+     $data = array();
+
+     $records_per_page = 10;
+     $start_from = 0;
+     $current_page_number = 0;
+     if(isset($_POST["rowCount"]))
+     {
+      $records_per_page = $_POST["rowCount"];
+     }
+     else
+     {
+      $records_per_page = 10;
+     }
+     if(isset($_POST["current"]))
+     {
+      $current_page_number = $_POST["current"];
+     }
+     else
+     {
+      $current_page_number = 1;
+     }
+     $start_from = ($current_page_number - 1) * $records_per_page;
+     $usertype = $this->session->userdata('user_type');
+     $this->db->select('a.*,b.supplier_name');
+     $this->db->from('product_purchase a');
+     $this->db->join('supplier_information b', 'b.supplier_id = a.supplier_id');
+     $this->db->where('a.create_by',$this->session->userdata('user_id'));
+
+     if($date) {
+      if(!empty($start) && !empty($end)){
+         $this->db->where('a.purchase_date >=',$start);
+     $this->db->where('a.purchase_date <=',$end);
+      }
+ 
+     }
+    
+     if(!empty($_POST["searchPhrase"]))
+     {
+      $query .= 'WHERE (a.chalan_no LIKE "%'.$_POST["searchPhrase"].'%" ';
+      $query .= 'OR a.purchase_date LIKE "%'.$_POST["searchPhrase"].'%" ';
+      $query .= 'OR b.supplier_name LIKE "%'.$_POST["searchPhrase"].'%" ';
+      $query .= 'OR a.grand_total_amount LIKE "%'.$_POST["searchPhrase"].'%" ) ';
+    
+     }
+     
+     $order_by = '';
+     if(isset($_POST["sort"]) && is_array($_POST["sort"]))
+     {
+      foreach($_POST["sort"] as $key => $value)
+      {
+       $order_by .= " $key $value, ";
+      }
+     }
+     else
+     {
+     $query .= 'ORDER BY a.purchase_id DESC ';
+     }
+    // if($order_by != '')
+   //  {
+   //   $query .= ' ORDER BY ' . substr($order_by, 0, -2);
+  //   }
+     
+     if($records_per_page != -1)
+     {
+      $query .= " LIMIT " . $start_from . ", " . $records_per_page;
+     }
+    
+        $query = $this->db->get();
+   //    echo $this->db->last_query();
+    // $result = $this->db->query($query); 
+    $result = $query->result_array();
+    foreach($result as $row)
+ {
+     $data[] = $row;
+ }
+   
+     
+     
+     $this->db->select('*');
+  
+     $this->db->from('product_purchase');
+     $query1 = $this->db->get();
+     $result1 = $query1->result_array();
+   
+     $total_records = $query1->num_rows();
+     $output = array(
+  
+      'rows'   => $data
+     );
+   return $output;
+//  echo json_encode($output);
+
+ }
+
+ public function purchase_order($date=null) {
+    if($date) {
+$split = array_map(
+function($value) {
+ return implode(' ', $value);
+},
+array_chunk(explode('-', $date), 3)
+);
+
+
+ $start = str_replace(' ', '-', $split[0]);
+ $end = str_replace(' ', '-', $split[1]);
+ $start = rtrim($start, "-");
+ $end= preg_replace('/' . '-' . '/', '', $end, 1);
+}
+$query = '';
+ $data = array();
+
+ $records_per_page = 10;
+ $start_from = 0;
+ $current_page_number = 0;
+ if(isset($_POST["rowCount"]))
+ {
+  $records_per_page = $_POST["rowCount"];
+ }
+ else
+ {
+  $records_per_page = 10;
+ }
+ if(isset($_POST["current"]))
+ {
+  $current_page_number = $_POST["current"];
+ }
+ else
+ {
+  $current_page_number = 1;
+ }
+ $start_from = ($current_page_number - 1) * $records_per_page;
+ $this->db->select('po.*,si.* ,po.created_by AS create');
+ $this->db->from('purchase_order po');
+ $this->db->join('supplier_information si', 'po.supplier_id = si.supplier_id'); 
+ $this->db->where('po.create_by',$this->session->userdata('user_id'));
+
+
+
+ if($date) {
+  if(!empty($start) && !empty($end)){
+     $this->db->where('po.purchase_date >=',$start);
+ $this->db->where('po.purchase_date <=',$end);
+  }
+
+ }
+
+ if(!empty($_POST["searchPhrase"]))
+ {
+  $query .= 'WHERE (po.chalan_no LIKE "%'.$_POST["searchPhrase"].'%" ';
+  $query .= 'OR po.purchase_date LIKE "%'.$_POST["searchPhrase"].'%" ';
+  $query .= 'OR si.supplier_name LIKE "%'.$_POST["searchPhrase"].'%" ';
+  $query .= 'OR a.grand_total_amount LIKE "%'.$_POST["searchPhrase"].'%" ) ';
+
+ }
+ 
+ $order_by = '';
+ if(isset($_POST["sort"]) && is_array($_POST["sort"]))
+ {
+  foreach($_POST["sort"] as $key => $value)
+  {
+   $order_by .= " $key $value, ";
+  }
+ }
+ else
+ {
+ $query .= 'ORDER BY po.purchase_order_id DESC ';
+ }
+// if($order_by != '')
+//  {
+//   $query .= ' ORDER BY ' . substr($order_by, 0, -2);
+//   }
+ 
+ if($records_per_page != -1)
+ {
+  $query .= " LIMIT " . $start_from . ", " . $records_per_page;
+ }
+
+    $query = $this->db->get();
+ //  echo $this->db->last_query();
+// $result = $this->db->query($query); 
+$result = $query->result_array();
+foreach($result as $row)
+{
+ $data[] = $row;
+}
+
+ 
+ 
+ $this->db->select('*');
+
+ $this->db->from('purchase_order');
+ $query1 = $this->db->get();
+ $result1 = $query1->result_array();
+
+ $total_records = $query1->num_rows();
+ $output = array(
+
+  'rows'   => $data
+ );
+return $output;
+//  echo json_encode($output);
+
+}
        public function getPackingList($postData=null){
          $this->load->library('occational');
          $this->load->model('Web_settings');

@@ -591,275 +591,7 @@ public function availability($product_nam,$product_model){
     }
 
 
-    public function getProfarmaInvoiceList($postData=null){
-
-        $this->load->library('occational');
- 
-          $response = array();
- 
-          $usertype = $this->session->userdata('user_type');
- 
-          $fromdate = $this->input->post('fromdate',TRUE);
- 
-          $todate   = $this->input->post('todate',TRUE);
- 
-          if(!empty($fromdate)){
- 
-             $datbetween = "(a.date BETWEEN '$fromdate' AND '$todate')";
- 
-          }else{
- 
-             $datbetween = "";
- 
-          }
- 
-          ## Read value
- 
-          $draw = $postData['draw'];
- 
-          $start = $postData['start'];
- 
-          $rowperpage = $postData['length']; // Rows display per page
- 
-          $columnIndex = $postData['order'][0]['column']; // Column index
- 
-          $columnName = $postData['columns'][$columnIndex]['data']; // Column name
- 
-          $columnSortOrder = $postData['order'][0]['dir']; // asc or desc
- 
-          $searchValue = $postData['search']['value']; // Search value
- 
- 
- 
-          ## Search 
- 
-          $searchQuery = "";
- 
-          if($searchValue != ''){
- 
-             $searchQuery = " (b.customer_name like '%".$searchValue."%' or a.invoice like '%".$searchValue."%' or a.date like'%".$searchValue."%' or a.invoice_id like'%".$searchValue."%' or u.first_name like'%".$searchValue."%'or u.last_name like'%".$searchValue."%')";
- 
-          }
- 
- 
- 
-          ## Total number of records without filtering
- 
-          $this->db->select('count(*) as allcount');
- 
-          $this->db->from('profarma_invoice a');
- 
-          $this->db->join('customer_information b', 'b.customer_id = a.customer_id','left');
- 
-          $this->db->join('users u', 'u.user_id = a.sales_by','left');
- 
-          if($usertype == 2){
- 
-           $this->db->where('a.sales_by',$this->session->userdata('user_id'));
- 
-          }
- 
-           if(!empty($fromdate) && !empty($todate)){
- 
-              $this->db->where($datbetween);
- 
-          }
- 
-           if($searchValue != '')
- 
-           $this->db->where($searchQuery);
- 
-           
-
-          $records = $this->db->get()->result();
- 
-          $totalRecords = $records[0]->allcount;
- 
- 
- 
-          ## Total number of record with filtering
- 
-          $this->db->select('count(*) as allcount');
- 
-          $this->db->from('profarma_invoice a');
- 
-          $this->db->join('customer_information b', 'b.customer_id = a.customer_id','left');
- 
-      //     $this->db->join('users u', 'u.user_id = a.sales_by','left');
- 
-          if($usertype == 2){
- 
-           $this->db->where('a.sales_by',$this->session->userdata('user_id'));
- 
-         }
- 
-          if(!empty($fromdate) && !empty($todate)){
- 
-              $this->db->where($datbetween);
- 
-          }
- 
-          if($searchValue != '')
- 
-             $this->db->where($searchQuery);
- 
-           
- 
-          $records = $this->db->get()->result();
- 
-          $totalRecordwithFilter = $records[0]->allcount;
- 
- 
- 
-          ## Fetch records
- 
-          $this->db->select("a.*,b.customer_name,u.first_name,u.last_name");
- 
-          $this->db->from('profarma_invoice a');
-
-          $this->db->join('customer_information b', 'b.customer_id = a.customer_id','left');
- 
-          $this->db->join('users u', 'u.user_id = a.sales_by','left');
- 
-         if($usertype == 2){
- 
-          $this->db->where('a.sales_by',$this->session->userdata('user_id'));
- 
-         }
- 
-           if(!empty($fromdate) && !empty($todate)){
- 
-              $this->db->where($datbetween);
- 
-          }
- 
-          if($searchValue != '')
- 
-          $this->db->where($searchQuery);
- 
-        
- 
-        //   $this->db->order_by($columnName, $columnSortOrder);
- 
-        //   $this->db->limit($rowperpage, $start);
-
-          $records = $this->db->get()->result();
-
-          
-        //   $response = array(
- 
-        //     "draw" => intval($draw),
-
-        //     "iTotalRecords" => $totalRecordwithFilter,
-
-        //     "iTotalDisplayRecords" => $totalRecords,
-
-        //     "aaData" => $records
-
-        //  );
-
-        //  return $response; 
-
-
-
-          
-          $data = array();
- 
-          $sl =1;
- 
-   
- 
-          foreach($records as $record ){
- 
-           $button = '';
- 
-           $base_url = base_url();
- 
-           $jsaction = "return confirm('Are You Sure ?')";
- 
- 
- 
-           $button .='  <a href="'.$base_url.'Cinvoice/performa_pdf/'.$record->purchase_id.'" class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="left" title="'.display('invoice').'"><i class="fa fa-download" aria-hidden="true"></i></a>';
- 
-           $button .='  <a href="'.$base_url.'Cinvoice/email/'.$record->customer_id.'" class="btn btn-primary btn-sm" id="mailbutn" data-toggle="tooltip"  data-placement="left" title="'."send email".'"><i class="fa fa-envelope" aria-hidden="true"></i></a>';
-
- 
- 
- 
- 
-          $button .='  <a href="'.$base_url.'Cinvoice/min_invoice_inserted_data/'.$record->purchase_id.'" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="left" title="'.display('mini_invoice').'"><i class="fa fa-fax" aria-hidden="true"></i></a>';
- 
- 
- 
-          $button .='  <a href="'.$base_url.'Cinvoice/pos_invoice_inserted_data/'.$record->purchase_id.'" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="left" title="'.display('pos_invoice').'"><i class="fa fa-fax" aria-hidden="true"></i></a>';
- 
-           // $button .='  <a href="'.$base_url.'Cinvoice/invoicdetails_download/'.$record->invoice_id.'" class="btn btn-default btn-sm" data-toggle="tooltip" data-placement="left" title="'.display('download').'"><i class="fa fa-download"></i></a>';
- 
- 
- 
-       if($this->permission1->method('manage_invoice','update')->access()){
- 
-          $button .=' <a href="'.$base_url.'Cinvoice/profarma_invoice_update_form/'.$record->purchase_id.'" class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="left" title="'. display('update').'"><i class="fa fa-pencil" aria-hidden="true"></i></a> ';
- 
-      }
- 
- 
- 
-        
- 
- 
- 
-           $details ='  <a href="'.$base_url.'Cinvoice/profarma_invoice_inserted_data/'.$record->purchase_id.'" class="" >'.$record->purchase_id.'</a>';
- 
-                
- 
-             $data[] = array( 
- 
-                 'sl'               =>$sl,
- 
-                 'invoice'          =>$details,
- 
-                 'salesman'         =>$record->first_name.' '.$record->last_name,
- 
-                 'customer_name'    =>$record->customer_name,
- 
-                 'final_date'       =>$this->occational->dateConvert($record->purchase_date),
- 
-                 'currency'     =>'$',
-
-                 'total_amount'     =>$record->total,
- 
-                 'button'           =>$button,
- 
-                 
- 
-             ); 
- 
-             $sl++;
- 
-          }
- 
- 
- 
-          ## Response
- 
-          $response = array(
- 
-             "draw" => intval($draw),
- 
-             "iTotalRecords" => $totalRecordwithFilter,
- 
-             "iTotalDisplayRecords" => $totalRecords,
- 
-             "aaData" => $data
- 
-          );
- 
- 
- 
-          return $response; 
- 
-     }
+    
      public function get_customer_data($customer_id){
         $this->db->select('*');
     
@@ -2561,10 +2293,10 @@ $product_id=$this->input->post('product_id',TRUE);
         $query = $this->db->get();
 
 
- // $sql = $this->db->last_query();
+//echo  $this->db->last_query();
 
  // print_r($sql);
- // die();
+  //die();
 
         if ($query->num_rows() > 0) {
 
@@ -2572,7 +2304,7 @@ $product_id=$this->input->post('product_id',TRUE);
 
         }
 
-        return false;
+        return true;
 
     }
 
@@ -3292,7 +3024,108 @@ public function profarma_invoice_customer()
         return false;
 
     }
+ function getProfarmaInvoiceList(){
+    $query = '';
+    $data = array();
+    $records_per_page = 10;
+    $start_from = 0;
+    $current_page_number = 0;
+    if(isset($_POST["rowCount"]))
+    {
+     $records_per_page = $_POST["rowCount"];
+    }
+    else
+    {
+     $records_per_page = 10;
+    }
+    if(isset($_POST["current"]))
+    {
+     $current_page_number = $_POST["current"];
+    }
+    else
+    {
+     $current_page_number = 1;
+    }
+    $start_from = ($current_page_number - 1) * $records_per_page;
+    $usertype = $this->session->userdata('user_type');
+    $this->db->select('a.invoice_id, a.date,a.sales_by, b.customer_name');
+ 
+    $this->db->from('invoice a');
 
+    $this->db->join('customer_information b', 'b.customer_id = a.customer_id','left');
+
+    $this->db->join('users u', 'u.user_id = a.sales_by','left');
+
+    if($usertype == 2){
+
+     $this->db->where('a.sales_by',$this->session->userdata('user_id'));
+
+    }
+
+     if(!empty($fromdate) && !empty($todate)){
+
+        $this->db->where($datbetween);
+
+    }
+   
+    if(!empty($_POST["searchPhrase"]))
+    {
+     $query .= 'WHERE (a.invoice_id LIKE "%'.$_POST["searchPhrase"].'%" ';
+     $query .= 'OR a.date LIKE "%'.$_POST["searchPhrase"].'%" ';
+     $query .= 'OR b.customer_name LIKE "%'.$_POST["searchPhrase"].'%" ';
+     $query .= 'OR a.total_amount LIKE "%'.$_POST["searchPhrase"].'%" ) ';
+    }
+    $order_by = '';
+    if(isset($_POST["sort"]) && is_array($_POST["sort"]))
+    {
+     foreach($_POST["sort"] as $key => $value)
+     {
+      $order_by .= " $key $value, ";
+     }
+    }
+    else
+    {
+     $query .= 'ORDER BY a.invoice_id DESC ';
+    }
+    if($order_by != '')
+    {
+     $query .= ' ORDER BY ' . substr($order_by, 0, -2);
+    }
+    
+    if($records_per_page != -1)
+    {
+     $query .= " LIMIT " . $start_from . ", " . $records_per_page;
+    }
+   
+       $query = $this->db->get();
+   // $result = $this->db->query($query); 
+   $result = $query->result_array();
+   foreach($result as $row)
+{
+    $data[] = $row;
+}
+  
+    
+    
+    $this->db->select('*');
+ 
+    $this->db->from('invoice');
+    $query1 = $this->db->get();
+    $result1 = $query1->result_array();
+  
+    $total_records = $query1->num_rows();
+    $output = array(
+     'current'  => 10,
+     'rowCount'  => 10,
+     'total'   => intval($total_records),
+     'rows'   => $data
+    );
+   // print_r($output);
+    echo json_encode($output);
+  
+ }
+   
+  
 
 
     //Retrieve company Edit Data
@@ -4055,8 +3888,579 @@ public function customerinfo_rpt($customer_id){
 
 
     }
+    public function sale_trucking($date=null) {
+        if($date) {
+$split = array_map(
+ function($value) {
+     return implode(' ', $value);
+ },
+ array_chunk(explode('-', $date), 3)
+);
 
 
+     $start = str_replace(' ', '-', $split[0]);
+     $end = str_replace(' ', '-', $split[1]);
+     $start = rtrim($start, "-");
+     $end= preg_replace('/' . '-' . '/', '', $end, 1);
+}
+$query = '';
+     $data = array();
+
+     $records_per_page = 10;
+     $start_from = 0;
+     $current_page_number = 0;
+     if(isset($_POST["rowCount"]))
+     {
+      $records_per_page = $_POST["rowCount"];
+     }
+     else
+     {
+      $records_per_page = 10;
+     }
+     if(isset($_POST["current"]))
+     {
+      $current_page_number = $_POST["current"];
+     }
+     else
+     {
+      $current_page_number = 1;
+     }
+     $start_from = ($current_page_number - 1) * $records_per_page;
+     $usertype = $this->session->userdata('user_type');
+     $this->db->select('a.*,b.customer_name');
+     $this->db->from('sale_trucking a');
+    $this->db->join('customer_information b', 'b.customer_id = a.bill_to','left');
+   $this->db->where('a.create_by',$this->session->userdata('user_id'));
+    
+ 
+     if($date) {
+      if(!empty($start) && !empty($end)){
+         $this->db->where('a.invoice_date >=',$start);
+     $this->db->where('a.invoice_date <=',$end);
+      }
+ 
+     }
+    
+     if(!empty($_POST["searchPhrase"]))
+     {
+      $query .= 'WHERE (a.invoice_no LIKE "%'.$_POST["searchPhrase"].'%" ';
+      $query .= 'OR a.invoice_date LIKE "%'.$_POST["searchPhrase"].'%" ';
+      $query .= 'OR b.customer_name LIKE "%'.$_POST["searchPhrase"].'%" ';
+      $query .= 'OR a.grand_total_amount LIKE "%'.$_POST["searchPhrase"].'%" ) ';
+      $query .= 'OR a.shipment_company LIKE "%'.$_POST["searchPhrase"].'%" ) ';
+      $query .= 'OR a.container_pickup_date LIKE "%'.$_POST["searchPhrase"].'%" ) ';
+     }
+     
+     $order_by = '';
+     if(isset($_POST["sort"]) && is_array($_POST["sort"]))
+     {
+      foreach($_POST["sort"] as $key => $value)
+      {
+       $order_by .= " $key $value, ";
+      }
+     }
+     else
+     {
+     $query .= 'ORDER BY a.trucking_id DESC ';
+     }
+    // if($order_by != '')
+   //  {
+   //   $query .= ' ORDER BY ' . substr($order_by, 0, -2);
+  //   }
+     
+     if($records_per_page != -1)
+     {
+      $query .= " LIMIT " . $start_from . ", " . $records_per_page;
+     }
+    
+        $query = $this->db->get();
+      // echo $this->db->last_query();
+    // $result = $this->db->query($query); 
+    $result = $query->result_array();
+    foreach($result as $row)
+ {
+     $data[] = $row;
+ }
+   
+     
+     
+     $this->db->select('*');
+  
+     $this->db->from('sale_trucking');
+     $query1 = $this->db->get();
+     $result1 = $query1->result_array();
+   
+     $total_records = $query1->num_rows();
+     $output = array(
+  
+      'rows'   => $data
+     );
+   return $output;
+//  echo json_encode($output);
+
+ }
+    public function newsale($date=null) {
+        if($date) {
+$split = array_map(
+ function($value) {
+     return implode(' ', $value);
+ },
+ array_chunk(explode('-', $date), 3)
+);
+
+
+     $start = str_replace(' ', '-', $split[0]);
+     $end = str_replace(' ', '-', $split[1]);
+     $start = rtrim($start, "-");
+     $end= preg_replace('/' . '-' . '/', '', $end, 1);
+}
+$query = '';
+     $data = array();
+
+     $records_per_page = 10;
+     $start_from = 0;
+     $current_page_number = 0;
+     if(isset($_POST["rowCount"]))
+     {
+      $records_per_page = $_POST["rowCount"];
+     }
+     else
+     {
+      $records_per_page = 10;
+     }
+     if(isset($_POST["current"]))
+     {
+      $current_page_number = $_POST["current"];
+     }
+     else
+     {
+      $current_page_number = 1;
+     }
+     $start_from = ($current_page_number - 1) * $records_per_page;
+     $usertype = $this->session->userdata('user_type');
+     $this->db->select('a.id,a.invoice_id, a.date,a.sales_by, b.customer_name,u.first_name,u.last_name,a.total_amount');
+  
+     $this->db->from('invoice a');
+ 
+     $this->db->join('customer_information b', 'b.customer_id = a.customer_id','left');
+ 
+     $this->db->join('users u', 'u.user_id = a.sales_by','left');
+ 
+     if($usertype == 2){
+ 
+      $this->db->where('a.sales_by',$this->session->userdata('user_id'));
+ 
+     }
+     if($date) {
+      if(!empty($start) && !empty($end)){
+         $this->db->where('a.date >=',$start);
+     $this->db->where('a.date <=',$end);
+      }
+ 
+     }
+    
+     if(!empty($_POST["searchPhrase"]))
+     {
+      $query .= 'WHERE (a.invoice_id LIKE "%'.$_POST["searchPhrase"].'%" ';
+      $query .= 'OR a.date LIKE "%'.$_POST["searchPhrase"].'%" ';
+      $query .= 'OR b.customer_name LIKE "%'.$_POST["searchPhrase"].'%" ';
+      $query .= 'OR a.total_amount LIKE "%'.$_POST["searchPhrase"].'%" ) ';
+      $query .= 'OR u.first_name LIKE "%'.$_POST["searchPhrase"].'%" ) ';
+      $query .= 'OR u.last_name LIKE "%'.$_POST["searchPhrase"].'%" ) ';
+     }
+     
+     $order_by = '';
+     if(isset($_POST["sort"]) && is_array($_POST["sort"]))
+     {
+      foreach($_POST["sort"] as $key => $value)
+      {
+       $order_by .= " $key $value, ";
+      }
+     }
+     else
+     {
+     $query .= 'ORDER BY a.id DESC ';
+     }
+    // if($order_by != '')
+   //  {
+   //   $query .= ' ORDER BY ' . substr($order_by, 0, -2);
+  //   }
+     
+     if($records_per_page != -1)
+     {
+      $query .= " LIMIT " . $start_from . ", " . $records_per_page;
+     }
+    
+        $query = $this->db->get();
+      // echo $this->db->last_query();
+    // $result = $this->db->query($query); 
+    $result = $query->result_array();
+    foreach($result as $row)
+ {
+     $data[] = $row;
+ }
+   
+     
+     
+     $this->db->select('*');
+  
+     $this->db->from('profarma_invoice');
+     $query1 = $this->db->get();
+     $result1 = $query1->result_array();
+   
+     $total_records = $query1->num_rows();
+     $output = array(
+  
+      'rows'   => $data
+     );
+   return $output;
+//  echo json_encode($output);
+
+ }
+ public function ocean_export($date=null) {
+    if($date) {
+$split = array_map(
+function($value) {
+ return implode(' ', $value);
+},
+array_chunk(explode('-', $date), 3)
+);
+
+
+ $start = str_replace(' ', '-', $split[0]);
+ $end = str_replace(' ', '-', $split[1]);
+ $start = rtrim($start, "-");
+ $end= preg_replace('/' . '-' . '/', '', $end, 1);
+}
+$query = '';
+ $data = array();
+
+ $records_per_page = 10;
+ $start_from = 0;
+ $current_page_number = 0;
+ if(isset($_POST["rowCount"]))
+ {
+  $records_per_page = $_POST["rowCount"];
+ }
+ else
+ {
+  $records_per_page = 10;
+ }
+ if(isset($_POST["current"]))
+ {
+  $current_page_number = $_POST["current"];
+ }
+ else
+ {
+  $current_page_number = 1;
+ }
+ $start_from = ($current_page_number - 1) * $records_per_page;        $this->db->select('a.*,b.supplier_name');
+
+
+
+ $this->db->select('a.*,b.*');
+
+ $this->db->from('ocean_export_tracking a');
+ $this->db->join('supplier_information b', 'b.supplier_id = a.supplier_id','left');
+ $this->db->where('a.create_by',$this->session->userdata('user_id'));
+
+
+ if($date) {
+  if(!empty($start) && !empty($end)){
+     $this->db->where('a.invoice_date >=',$start);
+ $this->db->where('a.invoice_date <=',$end);
+  }
+
+ }
+
+ if(!empty($_POST["searchPhrase"]))
+ {
+  $query .= 'WHERE (a.booking_no LIKE "%'.$_POST["searchPhrase"].'%" ';
+  $query .= 'OR a.container_no LIKE "%'.$_POST["searchPhrase"].'%" ';
+  $query .= 'OR a.seal_no LIKE "%'.$_POST["searchPhrase"].'%" ';
+  $query .= 'OR a.place_of_delivery LIKE "%'.$_POST["searchPhrase"].'%" ) ';
+  $query .= 'OR b.supplier_name LIKE "%'.$_POST["searchPhrase"].'%" ) ';
+  $query .= 'OR a.ocean_export_tracking_id LIKE "%'.$_POST["searchPhrase"].'%" ) ';
+ }
+ 
+ $order_by = '';
+ if(isset($_POST["sort"]) && is_array($_POST["sort"]))
+ {
+  foreach($_POST["sort"] as $key => $value)
+  {
+   $order_by .= " $key $value, ";
+  }
+ }
+ else
+ {
+ $query .= 'ORDER BY a.ocean_export_tracking_id DESC ';
+ }
+// if($order_by != '')
+//  {
+//   $query .= ' ORDER BY ' . substr($order_by, 0, -2);
+//   }
+ 
+ if($records_per_page != -1)
+ {
+  $query .= " LIMIT " . $start_from . ", " . $records_per_page;
+ }
+
+    $query = $this->db->get();
+//    echo $this->db->last_query();
+// $result = $this->db->query($query); 
+$result = $query->result_array();
+foreach($result as $row)
+{
+ $data[] = $row;
+}
+
+ 
+ 
+ $this->db->select('*');
+
+ $this->db->from('ocean_export_tracking');
+ $query1 = $this->db->get();
+ $result1 = $query1->result_array();
+
+ $total_records = $query1->num_rows();
+ $output = array(
+
+  'rows'   => $data
+ );
+return $output;
+//  echo json_encode($output);
+
+}
+public function packing_list($date=null) {
+    if($date) {
+$split = array_map(
+function($value) {
+ return implode(' ', $value);
+},
+array_chunk(explode('-', $date), 3)
+);
+
+
+ $start = str_replace(' ', '-', $split[0]);
+ $end = str_replace(' ', '-', $split[1]);
+ $start = rtrim($start, "-");
+ $end= preg_replace('/' . '-' . '/', '', $end, 1);
+}
+$query = '';
+ $data = array();
+
+ $records_per_page = 10;
+ $start_from = 0;
+ $current_page_number = 0;
+ if(isset($_POST["rowCount"]))
+ {
+  $records_per_page = $_POST["rowCount"];
+ }
+ else
+ {
+  $records_per_page = 10;
+ }
+ if(isset($_POST["current"]))
+ {
+  $current_page_number = $_POST["current"];
+ }
+ else
+ {
+  $current_page_number = 1;
+ }
+ $start_from = ($current_page_number - 1) * $records_per_page;
+ $usertype = $this->session->userdata('user_type');
+ $this->db->select('a.*, u.first_name,u.last_name');
+
+ $this->db->from('sale_packing_list a');
+
+
+
+ $this->db->join('users u', 'u.user_id = a.create_by','left');
+
+
+
+  $this->db->where('a.create_by',$this->session->userdata('user_id'));
+
+
+
+
+ if(!empty($_POST["searchPhrase"]))
+ {
+  $query .= 'WHERE (a.invoice_date LIKE "%'.$_POST["searchPhrase"].'%" ';
+  $query .= 'OR a.expense_packing_id LIKE "%'.$_POST["searchPhrase"].'%" ';
+  $query .= 'OR a.invoice_no LIKE "%'.$_POST["searchPhrase"].'%" ';
+  $query .= 'OR a.grand_total_amount LIKE "%'.$_POST["searchPhrase"].'%" ) ';
+  $query .= 'OR u.first_name LIKE "%'.$_POST["searchPhrase"].'%" ) ';
+  $query .= 'OR u.last_name LIKE "%'.$_POST["searchPhrase"].'%" ) ';
+ }
+ 
+ $order_by = '';
+ if(isset($_POST["sort"]) && is_array($_POST["sort"]))
+ {
+  foreach($_POST["sort"] as $key => $value)
+  {
+   $order_by .= " $key $value, ";
+  }
+ }
+ else
+ {
+ $query .= 'ORDER BY a.expense_packing_id DESC ';
+ }
+// if($order_by != '')
+//  {
+//   $query .= ' ORDER BY ' . substr($order_by, 0, -2);
+//   }
+ 
+ if($records_per_page != -1)
+ {
+  $query .= " LIMIT " . $start_from . ", " . $records_per_page;
+ }
+
+    $query = $this->db->get();
+ 
+// $result = $this->db->query($query); 
+$result = $query->result_array();
+foreach($result as $row)
+{
+ $data[] = $row;
+}
+
+ 
+ 
+ $this->db->select('*');
+
+ $this->db->from('sale_packing_list');
+ $query1 = $this->db->get();
+ $result1 = $query1->result_array();
+
+ $total_records = $query1->num_rows();
+ $output = array(
+
+  'rows'   => $data
+ );
+return $output;
+//  echo json_encode($output);
+
+}
+    public function sample($date=null) {
+           if($date) {
+$split = array_map(
+    function($value) {
+        return implode(' ', $value);
+    },
+    array_chunk(explode('-', $date), 3)
+);
+
+
+        $start = str_replace(' ', '-', $split[0]);
+        $end = str_replace(' ', '-', $split[1]);
+        $start = rtrim($start, "-");
+        $end= preg_replace('/' . '-' . '/', '', $end, 1);
+}
+ $query = '';
+        $data = array();
+   
+        $records_per_page = 10;
+        $start_from = 0;
+        $current_page_number = 0;
+        if(isset($_POST["rowCount"]))
+        {
+         $records_per_page = $_POST["rowCount"];
+        }
+        else
+        {
+         $records_per_page = 10;
+        }
+        if(isset($_POST["current"]))
+        {
+         $current_page_number = $_POST["current"];
+        }
+        else
+        {
+         $current_page_number = 1;
+        }
+        $start_from = ($current_page_number - 1) * $records_per_page;
+        $usertype = $this->session->userdata('user_type');
+        $this->db->select('a.id,a.chalan_no, a.purchase_date,a.sales_by, b.customer_name,u.first_name,u.last_name,a.total');
+     
+        $this->db->from('profarma_invoice a');
+    
+        $this->db->join('customer_information b', 'b.customer_id = a.customer_id','left');
+    
+        $this->db->join('users u', 'u.user_id = a.sales_by','left');
+    
+        if($usertype == 2){
+    
+         $this->db->where('a.sales_by',$this->session->userdata('user_id'));
+    
+        }
+        if($date) {
+         if(!empty($start) && !empty($end)){
+            $this->db->where('a.purchase_date >=',$start);
+        $this->db->where('a.purchase_date <=',$end);
+         }
+    
+        }
+       
+        if(!empty($_POST["searchPhrase"]))
+        {
+         $query .= 'WHERE (a.chalan_no LIKE "%'.$_POST["searchPhrase"].'%" ';
+         $query .= 'OR a.purchase_date LIKE "%'.$_POST["searchPhrase"].'%" ';
+         $query .= 'OR b.customer_name LIKE "%'.$_POST["searchPhrase"].'%" ';
+         $query .= 'OR a.total LIKE "%'.$_POST["searchPhrase"].'%" ) ';
+         $query .= 'OR u.first_name LIKE "%'.$_POST["searchPhrase"].'%" ) ';
+         $query .= 'OR u.last_name LIKE "%'.$_POST["searchPhrase"].'%" ) ';
+        }
+        
+        $order_by = '';
+        if(isset($_POST["sort"]) && is_array($_POST["sort"]))
+        {
+         foreach($_POST["sort"] as $key => $value)
+         {
+          $order_by .= " $key $value, ";
+         }
+        }
+        else
+        {
+        $query .= 'ORDER BY a.id DESC ';
+        }
+       // if($order_by != '')
+      //  {
+      //   $query .= ' ORDER BY ' . substr($order_by, 0, -2);
+     //   }
+        
+        if($records_per_page != -1)
+        {
+         $query .= " LIMIT " . $start_from . ", " . $records_per_page;
+        }
+       
+           $query = $this->db->get();
+      //    echo $this->db->last_query();
+       // $result = $this->db->query($query); 
+       $result = $query->result_array();
+       foreach($result as $row)
+    {
+        $data[] = $row;
+    }
+      
+        
+        
+        $this->db->select('*');
+     
+        $this->db->from('profarma_invoice');
+        $query1 = $this->db->get();
+        $result1 = $query1->result_array();
+      
+        $total_records = $query1->num_rows();
+        $output = array(
+     
+         'rows'   => $data
+        );
+      return $output;
+  //  echo json_encode($output);
+
+    }
      //Trucking Entry
     public function trucking_entry() {
 
@@ -4254,6 +4658,10 @@ public function customerinfo_rpt($customer_id){
 
 }
 
+public function get_datas()
+	{
+		return $this->db->get('bootgrid_data')->result();
+	}
  public function tempdesign()
     {
         

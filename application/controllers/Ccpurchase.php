@@ -44,16 +44,39 @@ class Ccpurchase extends CI_Controller {
     }
 
     public function manage_ocean_import_tracking() {
+        $date = $this->input->post("daterange");
         $this->load->library('Llpurchase');
-        $content = $this->llpurchase->ocean_import_list();
+        $content1 = $this->llpurchase->ocean_import_list();
+        $CI = & get_instance();
+        $CI->load->model('Purchases');
+        $expense = $CI->Purchases->ocean_import($date);
+
+        $data = array(
+
+            'invoice'         =>  $content1,
+
+            'expense' => $expense
+            );
+        $content = $this->load->view('purchase/ocean_import_list', $data, true);
         $this->template->full_admin_html_view($content);
-    
     }
 
 
      public function manage_trucking() {
+        $date = $this->input->post("daterange");
         $this->load->library('Llpurchase');
-        $content = $this->llpurchase->trucking_list();
+        $content1 = $this->llpurchase->trucking_list();
+        $CI = & get_instance();
+        $CI->load->model('Purchases');
+        $expense = $CI->Purchases->trucking($date);
+
+        $data = array(
+
+            'invoice'         =>  $content1,
+
+            'expense' => $expense
+            );
+        $content = $this->load->view('purchase/trucking_list', $data, true);
         $this->template->full_admin_html_view($content);
     }
 
