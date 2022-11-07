@@ -983,7 +983,7 @@ print_r($data);
     public function manage_invoice() {
 
 // echo 3;
-
+$date = $this->input->post("daterange");
         $CI = & get_instance();
 
         $this->auth->check_admin_auth();
@@ -992,14 +992,27 @@ print_r($data);
 
         $CI->load->model('Invoices');
 
-        $content = $this->linvoice->invoice_list();
+        $value = $this->linvoice->invoice_list();
+        $sale = $CI->Invoices->newsale($date);
 
+        $data = array(
+
+            'invoice'         =>  $value,
+
+            'sale' => $sale
+
+
+        );
+        $content = $this->load->view('invoice/invoice', $data, true);
+    
         $this->template->full_admin_html_view($content);
+      
 
     }
 
       public function manage_profarma_invoice() {
 
+        $date = $this->input->post("daterange");
         $CI = & get_instance();
 
         $this->auth->check_admin_auth();
@@ -1008,8 +1021,17 @@ print_r($data);
 
         $CI->load->model('Invoices');
 
-        $data['invoice'] = $CI->Invoices->get_profarma_invoice();
+      $invoice = $CI->Invoices->get_profarma_invoice();
+      $sale = $CI->Invoices->sample($date);
 
+        $data = array(
+
+            'invoice'         =>  $invoice,
+
+            'sale' => $sale
+
+
+        );
         $content = $this->load->view('invoice/profarma_invoice_list', $data, true);
     
         $this->template->full_admin_html_view($content);
@@ -1018,7 +1040,7 @@ print_r($data);
     }
 
      public function manage_packing_list() {
-
+        $date = $this->input->post("daterange");
         $CI = & get_instance();
 
         $this->auth->check_admin_auth();
@@ -1026,9 +1048,20 @@ print_r($data);
         $CI->load->library('linvoice');
 
         $CI->load->model('Invoices');
+        $sale = $CI->Invoices->packing_list($date);
+        $value = $this->linvoice->packing_invoice_list();
 
-        $content = $this->linvoice->packing_invoice_list();
+        $data = array(
 
+            'invoice'         =>  $value,
+
+            'sale' => $sale
+
+
+        );
+      //  print_r($sale);
+        $content = $this->load->view('invoice/packing_list', $data, true);
+    
         $this->template->full_admin_html_view($content);
 
     }
@@ -1036,15 +1069,25 @@ print_r($data);
       public function manage_ocean_export_tracking() {
 
         $CI = & get_instance();
-
+        $date = $this->input->post("daterange");
         $this->auth->check_admin_auth();
 
         $CI->load->library('linvoice');
 
         $CI->load->model('Invoices');
+        $sale = $CI->Invoices->ocean_export($date);
+        $value = $this->linvoice->ocean_export_tracking_invoice_list();
 
-        $content = $this->linvoice->ocean_export_tracking_invoice_list();
+        $data = array(
 
+            'invoice'         =>  $value,
+
+            'sale' => $sale
+
+
+        );
+        $content = $this->load->view('invoice/ocean_export_tracking_invoice_list', $data, true);
+    
         $this->template->full_admin_html_view($content);
 
     }
@@ -1052,16 +1095,28 @@ print_r($data);
        public function manage_trucking() {
 
         $CI = & get_instance();
-
+        $date = $this->input->post("daterange");
         $this->auth->check_admin_auth();
 
         $CI->load->library('linvoice');
 
         $CI->load->model('Invoices');
 
-        $content = $this->linvoice->trucking_invoice_list();
+        $value = $this->linvoice->trucking_invoice_list();
+        $sale = $CI->Invoices->sale_trucking($date);
 
+        $data = array(
+
+            'invoice'         =>  $value,
+
+            'sale' => $sale
+
+
+        );
+        $content = $this->load->view('invoice/trucking_invoice_list', $data, true);
+    
         $this->template->full_admin_html_view($content);
+     
 
     }
 
@@ -1086,20 +1141,28 @@ print_r($data);
 
 
     public function CheckProfarmaInvoiceList(){
+       
+       // $date = $this->input->post("daterange");
 
-        // GET data
 
-        $this->load->model('Invoices');
-
-        $postData = $this->input->post();
-
-        $data = $this->Invoices->getProfarmaInvoiceList($postData);
-
-        echo json_encode($data);
-
+ 
+        $CI = & get_instance();
+        $CI->auth->check_admin_auth();
+       $CI->load->model('Invoices');
+        $content = $CI->Invoices->sample();
+       
+        $this->template->full_admin_html_view($content);
+ 
     } 
 
-
+	public function index1()
+	{ $CI = & get_instance();
+        $CI->load->model('Invoices','boot');
+		$data['data'] = $this->boot->get_datas();
+        print_r($data);
+        die();
+		$this->load->view('invoice/profarma_invoice_list',$data);
+	}
 
      //Retrive right now inserted data to cretae html
     public function ocean_export_tracking_details_data($purchase_id) {
@@ -2772,9 +2835,9 @@ $this->template->full_admin_html_view($content);
                 // $this->Invoices->add_profarma_invoice($data);
                  $this->db->insert('profarma_invoice', $data);
                //  echo   $this->db->last_query();
-               // echo json_encode($data);
+                
                 $avl = $this->input->post('available_quantity');
-                 $p_id = $this->input->post('product_name');
+                 $p_id = $this->input->post('product_id');
          // print_r($p_id);
                  $quantity = $this->input->post('product_quantity');
                  $rate = $this->input->post('product_rate');
@@ -2792,13 +2855,15 @@ $this->template->full_admin_html_view($content);
                         'purchase_detail_id' => $this->generator(15),
                         'purchase_id'        => $purchase_id,
                         'product_id'         => $product_id,
-                        'product_name'         => $product_name,
+                       
                         'quantity'           => $product_quantity,
                         'rate'               => $product_rate,
                         'total_amount'       => $total_price,
                         'create_by'          =>  $this->session->userdata('user_id'),
                         'status'             => 1
                     );
+                   echo json_encode($data1);
+                   die();
                     $this->db->insert('profarma_invoice_details', $data1);
                  
                 }

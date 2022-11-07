@@ -30,24 +30,68 @@ class Cpurchase extends CI_Controller {
         $this->template->full_admin_html_view($content);
     }
     public function manage_packing_list(){
+        $date = $this->input->post("daterange");
         $CI = & get_instance();
+        $CI->load->model('Purchases');
         $CI->auth->check_admin_auth();
         $CI->load->library('lpurchase');
-        $content = $CI->lpurchase->packing_list();
+        $content1 = $CI->lpurchase->packing_list();
+        $expense = $CI->Purchases->packing_list($date);
+
+        $data = array(
+
+            'invoice'         =>  $content1,
+
+            'expense' => $expense
+
+
+        );
+        $content = $this->load->view('purchase/packing_list', $data, true);
         $this->template->full_admin_html_view($content);
     }
 
 
     //Manage purchase
     public function manage_purchase() {
+        $date = $this->input->post("daterange");
+        $CI = & get_instance();
+        $CI->load->model('Purchases');
         $this->load->library('lpurchase');
-        $content = $this->lpurchase->purchase_list();
+    
+        $content1 = $this->lpurchase->purchase_list();
+        $expense = $CI->Purchases->newexpense($date);
+
+        $data = array(
+
+            'invoice'         =>  $content1,
+
+            'expense' => $expense
+
+
+        );
+        $content = $this->load->view('purchase/purchase', $data, true);
         $this->template->full_admin_html_view($content);
+      //  $this->template->full_admin_html_view($content);
     }
 
      public function manage_purchase_order() {
+        $date = $this->input->post("daterange");
         $this->load->library('lpurchase');
-        $content = $this->lpurchase->purchase_order_list();
+        $CI = & get_instance();
+        $CI->load->model('Purchases');
+     //   $content1 = $this->lpurchase->purchase_order_list();
+        $expense = $CI->Purchases->purchase_order($date);
+
+        $data = array(
+
+         //   'invoice'         =>  $content1,
+
+            'expense' => $expense
+
+
+        );
+     
+        $content = $this->load->view('purchase/purchase_order_list', $data, true);
         $this->template->full_admin_html_view($content);
     }
 

@@ -730,6 +730,7 @@ function available_quantity (id) {
           //  alert(result[0].p_quantity);
           $(".available_quantity_"+ id).val(result[0]['p_quantity']);
           $("#product_rate_"+ id).val(result[0]['price']);
+          $(".product_id_"+ id).val(result[0]['product_id']);
           //  $('#available_quantity_'+ id).html(result[0].p_quantity);
             console.log(result);
         }
