@@ -23,9 +23,9 @@
 	        <h1>Packing List</h1>
 	        <small><?php echo display('manage_your_purchase') ?></small>
 	        <ol class="breadcrumb">
-	            <li><a href="#"><i class="pe-7s-home"></i> <?php echo display('home') ?></a></li>
+            <li><a href="<?php   echo base_url(); ?>"><i class="pe-7s-home"></i> <?php echo display('home') ?></a></li>
 	            <li><a href="#"><?php echo display('purchase') ?></a></li>
-	            <li class="active"><?php echo display('manage_purchase') ?></li>
+	            <li class="active" style="color:orange;">Manage Packing List</li>
 	        </ol>
 	    </div>
 	</section>
@@ -84,6 +84,7 @@ $today = date('Y-m-d');
 
     <input type="text" name="daterange" />
     <input type="submit" id="btn-filter" class="btn btn-success" value="Search"/>
+    <a href="javascript:window.location.reload(true)">  <i class="fa fa-refresh" style="font-size:20px;float:right;" aria-hidden="true"></i> </a>
 </div> 
 <?php echo form_close() ?>
                     </div>
@@ -152,8 +153,8 @@ $today = date('Y-m-d');
      <?php
     $count=1;
 
-     foreach($expense['rows'] as $k=>$arr){
-      if(is_array($arr) && count($arr)>0){
+    if(count($expense['rows'])>0){
+        foreach($expense['rows'] as $k=>$arr){
           ?>
           <tr><td><?php  echo $count;  ?></td>
  <td><?php   echo $arr['invoice_no'];  ?></td>
@@ -162,19 +163,19 @@ $today = date('Y-m-d');
 <td><?php   echo $arr['container_no'];  ?></td>
   <td><?php   echo $arr['invoice_date'];  ?></td>
   <td><?php   echo $arr['thickness'];  ?></td>
-  <td><a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cinvoice/trucking_update_form/<?php echo  $arr['purchase_order_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td></tr>
+  <td><a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cpurchase/packing_list_update_form/<?php echo  $arr['expense_packing_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td></tr>
      <?php   
 $count++;
-      }  else{
-        ?>
-         <tr><td><?php  echo "No Records Found"  ;?></td></tr>
-        <?php
-              }
+     
               
                 
-            }
+} }  else{
+    ?>
+     <tr><td colspan="8" style="text-align:center;font-weight:bold;"><?php  echo "No Records Found"  ;?></td></tr>
+    <?php
+          }
 
-        ?>
+?>
   
     </tbody>
     <!--
@@ -215,19 +216,19 @@ $count++;
             <div id="myModal_colSwitch" class="modal_colSwitch">
                     <div class="modal-content_colSwitch">
                           <span class="close_colSwitch">&times;</span>
-                          <input type="checkbox"  data-control-column="1" class="opt" /> ID<br>
+                          <input type="checkbox"  data-control-column="1" class="opt" checked="true"/> ID<br>
 
-    <input type="checkbox"  data-control-column="2" class="opt" />Invoice No<br>
+    <input type="checkbox"  data-control-column="2" class="opt" checked="true"/>Invoice No<br>
  
-    <input type="checkbox"  data-control-column="3" class="opt" />Expense Packing ID<br>
+    <input type="checkbox"  data-control-column="3" class="opt" checked="true"/>Expense Packing ID<br>
   
-    <input type="checkbox"  data-control-column="4" class="opt" />Gross Weight<br>
+    <input type="checkbox"  data-control-column="4" class="opt" checked="true"/>Gross Weight<br>
 
-    <input type="checkbox"  data-control-column="5" class="opt" />Container No.<br>
+    <input type="checkbox"  data-control-column="5" class="opt" checked="true"/>Container No.<br>
 
-    <input type="checkbox"  data-control-column="6" class="opt" />Invoice Date<br>
-	<input type="checkbox"  data-control-column="7" class="opt" />Thickness<br>
-<input type="checkbox"  data-control-column="8" class="opt" />Action<br>
+    <input type="checkbox"  data-control-column="6" class="opt" checked="true"/>Invoice Date<br>
+	<input type="checkbox"  data-control-column="7" class="opt" checked="true"/>Thickness<br>
+<input type="checkbox"  data-control-column="8" class="opt" checked="true"/>Action<br>
                      
                     </div>
                 </div>

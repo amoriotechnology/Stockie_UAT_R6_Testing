@@ -16,6 +16,8 @@
 <script type="text/javascript" src="http://mrrio.github.io/jsPDF/dist/jspdf.debug.js"></script>
 <input type="hidden" name="<?php echo $this->security->get_csrf_token_name();?>" value="<?php echo $this->security->get_csrf_hash();?>">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>my-assets/css/css.css" />
+<script type="text/javascript" src="http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.js"></script>
+
 <div class="content-wrapper">
 
     <section class="content-header">
@@ -34,11 +36,11 @@
 
             <ol class="breadcrumb">
 
-                <li><a href="#"><i class="pe-7s-home"></i> <?php echo display('home') ?></a></li>
+                <li><a href="<?php   echo base_url(); ?>"><i class="pe-7s-home"></i> <?php echo display('home') ?></a></li>
 
                 <li><a href="#"><?php echo display('invoice') ?></a></li>
 
-                <li class="active"><?php echo display('manage_invoice') ?></li>
+                <li class="active" style="color:orange;"><?php echo display('manage_invoice') ?></li>
 
             </ol>
 
@@ -125,11 +127,13 @@ $today = date('Y-m-d');
 
     <input type="text" name="daterange" />
     <input type="submit" id="btn-filter" class="btn btn-success" value="Search"/>
+    <a href="javascript:window.location.reload(true)" >  <i class="fa fa-refresh" style="font-size:20px;float:right;" aria-hidden="true"></i> </a>
 </div> 
 <?php echo form_close() ?>
                     </div>
                     <div class="col-sm-2">
                     <i class="fa fa-cog"  aria-hidden="true" id="myBtn" style="font-size:25px;" onClick="columnSwitchMODAL()"></i> <!-- onclick opens MODAL -->
+                   
                     <div class="dropdown bootcol" id="drop" style="float:right;padding-right:20px;padding-bottom:10px;">
     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
        <span class="glyphicon glyphicon-th-list"></span> Download
@@ -175,15 +179,15 @@ $today = date('Y-m-d');
                     <div class="panel-body">
 
                     <div id="customers">
-  <table class="table table-bordered" cellspacing="0" width="100%" id="ProfarmaInvList">
+  <table class="table table-bordered" cellspacing="0" width="100%"  id="ProfarmaInvList">
     <thead>
       <tr>
-      <th data-column-id="id" class="id">ID</th>
-        <th data-column-id="Invoice" >Invoice No</th>
-        <th data-column-id="Sale By">Sale By</th>
-        <th data-column-id="Customer Name" class="Customer Name" >Customer Name</th>
-        <th data-column-id="date" class="date">Date</th>
-        <th data-column-id="total" class="total">Total Amount</th>
+      <th data-resizable-column-id="1" style="width:50px;">ID</th>
+        <th data-resizable-column-id="2">Invoice No</th>
+        <th data-resizable-column-id="3">Sale By</th>
+        <th  data-resizable-column-id="4">Customer Name</th>
+        <th data-resizable-column-id="5">Date</th>
+        <th data-resizable-column-id="6">Total Amount</th>
       <div class="myButtonClass"> 
          <th class="text-center" data-column-id="action" data-formatter="commands" data-sortable="false">Action</th>
         </div>
@@ -194,28 +198,29 @@ $today = date('Y-m-d');
      <?php
     $count=1;
 
+      if(count($sale['rows'])>0){
      foreach($sale['rows'] as $k=>$arr){
-      if(is_array($arr) && count($arr)>0){
           ?>
           <tr><td><?php  echo $count;  ?></td>
  <td><?php   echo $arr['invoice_id'];  ?></td>
    <td><?php   echo $arr['first_name'].' '.$arr['last_name'];  ?></td>
    <td><?php   echo $arr['customer_name'];  ?></td>
 <td><?php   echo $arr['date'];  ?></td>
-  <td><?php   echo $arr['sales_by'];  ?></td>
-  <td><a href="<?php echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php echo  $arr['invoice_id'];  ?>">edit</a><input type="button" value="delete"/></td></tr>
+  <td><?php   echo $arr['total_amount'];  ?></td>
+  <td><a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cinvoice/invoice_update_form/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td></tr>
      <?php   
 $count++;
-      }  else{
-        ?>
-         <tr><td><?php  echo "No Records Found"  ;?></td></tr>
-        <?php
-              }
+
+     
               
                 
-            }
+} }  else{
+    ?>
+     <tr><td colspan="8" style="text-align:center;font-weight:bold;"><?php  echo "No Records Found"  ;?></td></tr>
+    <?php
+          }
 
-        ?>
+?>
   
     </tbody>
     <!--
@@ -244,19 +249,19 @@ $count++;
             <div id="myModal_colSwitch" class="modal_colSwitch">
                     <div class="modal-content_colSwitch">
                           <span class="close_colSwitch">&times;</span>
-                          <input type="checkbox"  data-control-column="1" class="opt" /> ID<br>
+                          <input type="checkbox"  data-control-column="1" class="opt" checked="true"/> ID<br>
 
-    <input type="checkbox"  data-control-column="2" class="opt" />Invoice No<br>
+    <input type="checkbox"  data-control-column="2" class="opt" checked="true"/>Invoice No<br>
  
-    <input type="checkbox"  data-control-column="3" class="opt" />Sale By<br>
+    <input type="checkbox"  data-control-column="3" class="opt" checked="true"/>Sale By<br>
   
-    <input type="checkbox"  data-control-column="4" class="opt" />Customer Name<br>
+    <input type="checkbox"  data-control-column="4" class="opt" checked="true"/>Customer Name<br>
 
-    <input type="checkbox"  data-control-column="5" class="opt" />Date<br>
+    <input type="checkbox"  data-control-column="5" class="opt" checked="true"/>Date<br>
 
-    <input type="checkbox"  data-control-column="6" class="opt" />Total<br>
+    <input type="checkbox"  data-control-column="6" class="opt" checked="true"/>Total<br>
 
-    <input type="checkbox"  data-control-column="7" class="opt" />Action<br>
+    <input type="checkbox"  data-control-column="7" class="opt" checked="true"/>Action<br>
                      
                     </div>
                 </div>

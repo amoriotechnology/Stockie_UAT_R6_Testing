@@ -60,17 +60,7 @@
                         
 
                         <div class="row">
-                            <div class="col-sm-6">
-                               <div class="form-group row">
-                                    <label for="supplier_sss" class="col-sm-4 col-form-label">Exporter
-                                        <i class="text-danger">*</i>
-                                    </label>
-                                    <div class="col-sm-6">
-                                               <textarea rows="4" cols="50" name="billing_address" class=" form-control" placeholder='Add Exporter Detail' id="">{billing_address} </textarea>
-                                    </div>
-                                
-                                </div> 
-                            </div>
+                          
 
                              <div class="col-sm-6">
                                 <div class="form-group row">
@@ -130,7 +120,8 @@
                                     <label for="eta" class="col-sm-4 col-form-label">Place of Receipt
                                     </label>
                                     <div class="col-sm-8">
-                                        <textarea class="form-control" tabindex="4" id="eta" name="receipt" value="{receipt}" placeholder="Place of Receipt" rows="1"></textarea>
+                                        <input type="text" class="form-control" id="eta" name="receipt" value="<?php echo $receipt; ?>" placeholder="Place of Receipt"/>
+                                      
                                     </div>
                                 </div> 
                             </div>
@@ -146,7 +137,7 @@
                                         <i class="text-danger"></i>
                                     </label>
                                     <div class="col-sm-6">
-                                        <input type="text" tabindex="3" class="form-control" name="country_goods" value="{country_goods}" placeholder="Country of origin of goods" id="shipping_line" />
+                                        <input type="text" tabindex="3" class="form-control" name="country_goods" value="<?php   echo  $country_goods  ;?>"    placeholder="Country of origin of goods" id="shipping_line" />
                                     </div>
                                 </div>
                             </div>
@@ -156,7 +147,8 @@
                                     <label for="container_no" class="col-sm-4 col-form-label">Country of final destination
                                     </label>
                                     <div class="col-sm-8">
-                                        <textarea class="form-control" tabindex="4" id="container_no" name="country_destination" value="{country_destination}" placeholder="Country of final destination" rows="1"></textarea>
+                                        <input type="text" class="form-control" tabindex="4" id="container_no" name="country_destination" value="<?php   echo  $country_destination  ;?>" placeholder="Country of final destination"/>
+
                                     </div>
                                 </div> 
                             </div>
@@ -213,10 +205,8 @@
                                         <i class="text-danger"></i>
                                     </label>
                                     <div class="col-sm-6">
-
-                                    <textarea rows="4" cols="50" name="description_goods" value="" class=" form-control" placeholder='Description of goods' id="">{description_goods} </textarea>
-
-                                    </div>
+<input type="text" name="description_goods" value="{description_goods}"  class="form-control" placeholder='Description of goods' />
+                                            </div>
                                 </div>
                             </div>
                         </div>

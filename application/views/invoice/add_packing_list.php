@@ -62,7 +62,7 @@
                     </div>
 
                     <div class="panel-body">
-                    <?php echo form_open_multipart('Cpurchase/insert_packing_list',array('class' => 'form-vertical', 'id' => 'insert_packing_list','name' => 'insert_packing_list'))?>
+                    <?php echo form_open_multipart('Cinvoice/insert_packing_list',array('class' => 'form-vertical', 'id' => 'insert_packing_list','name' => 'insert_packing_list'))?>
                         
 
                         <div class="row">
@@ -134,7 +134,7 @@
 
  <input type='button' value='Add Bundle' id="buddle_1"    class="btn btn-primary" onclick="add(); " style="float: right;margin-left: 10px;    margin-right: 33px;
     margin-top: 12px;margin-bottom: 20px;"  />
-<div id='content'>
+<div id='print'>
             <div class="crate_wrap" id="crate_wrap" style="
     border: 1px solid #ddd;
     padding: 6px;
@@ -373,7 +373,7 @@
 <script type="text/javascript">
     function add()
     {
-        $('#content').append($('#crate_wrap').html());
+        $('#print').append($('#crate_wrap').html());
         $('#buddle_1').css('display','none');
         $('#buddle_2').css('display','block');
 

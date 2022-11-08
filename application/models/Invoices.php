@@ -223,8 +223,156 @@ public function availability($product_nam,$product_model){
     
     return $query;
 }
+public function retrieve_packing_editdata($purchase_id) {
+    $this->db->select('a.*,
+                     b.*,c.*
+                '
+     );
+     $this->db->from('sale_packing_list a');
+     $this->db->join('sale_packing_list_detail b', 'b.expense_packing_id =a.expense_packing_id');
+     $this->db->join('product_information c', 'c.product_id =a.product_id');
+
+     $this->db->where('a.create_by',$this->session->userdata('user_id'));
+     $this->db->where('a.expense_packing_id', $purchase_id);
+    // $this->db->order_by('a.purchase_details', 'asc');
+     $query = $this->db->get();
+   
+     if ($query->num_rows() > 0) {
+         return $query->result_array();
+     }
+     return false;
+ }
+public function packing_list_entry() {
+       
+    $purchase_id  = date('YmdHis');
+    $p_id = $this->input->post('product_id',TRUE);
+    // $supplier_id = $this->input->post('supplier_id',TRUE);
+    // $supinfo =$this->db->select('*')->from('supplier_information')->where('supplier_id',$supplier_id)->get()->row();
+    // $sup_head = $supinfo->supplier_id.'-'.$supinfo->supplier_name;
+    // $sup_coa = $this->db->select('*')->from('acc_coa')->where('HeadName',$sup_head)->get()->row();
+    $receive_by=$this->session->userdata('user_id');
+    $receive_date=date('Y-m-d');
+    $createdate=date('Y-m-d H:i:s');
+    $paid_amount = $this->input->post('paid_amount',TRUE);
+    $due_amount = $this->input->post('due_amount',TRUE);
+    $discount = $this->input->post('discount',TRUE);
+      $bank_id = $this->input->post('bank_id',TRUE);
+    if(!empty($bank_id)){
+     $bankname = $this->db->select('bank_name')->from('bank_add')->where('bank_id',$bank_id)->get()->row()->bank_name;
+  
+     $bankcoaid = $this->db->select('HeadCode')->from('acc_coa')->where('HeadName',$bankname)->get()->row()->HeadCode;
+    }else
+    {
+           $bankcoaid = '';
+    }
+
+    //supplier & product id relation ship checker.
+    // for ($i = 0, $n = count($p_id); $i < $n; $i++) {
+    //     $product_id = $p_id[$i];
+    //     $value = $this->product_supplier_check($product_id, $supplier_id);
+    //     if ($value == 0) {
+    //         $this->session->set_flashdata('error_message', display('product_and_supplier_did_not_match'));
+    //         redirect(base_url('Cpurchase'));
+    //         exit();
+    //     }
+    // }
+
+    $data = array(
+        'expense_packing_id'        => $purchase_id,
+        'create_by'       =>  $this->session->userdata('user_id'),
+        'invoice_no'          => $this->input->post('invoice_no',TRUE),
+        'invoice_date'        => $this->input->post('invoice_date',TRUE),
+        'gross_weight' => $this->input->post('gross_weight',TRUE),
+        'thickness' => $this->input->post('thickness',TRUE),
+        'description'=> $this->input->post('description',TRUE),
+        'product_id' => $this->input->post('product_id',TRUE),
+        // 'grand_total_amount' => $this->input->post('grand_total_price',TRUE),
+        'container_no'     => $this->input->post('container_no',TRUE),
+        'grand_total_amount'      => $this->input->post('total',TRUE),
+        'status'             => 1,
+    );
 
 
+
+
+      ///Inventory Debit
+//    $coscr = array(
+//   'VNo'            =>  $purchase_id,
+//   'Vtype'          =>  'Purchase',
+//   'VDate'          =>  $this->input->post('invoice_date',TRUE),
+//   'COAID'          =>  10107,
+//   'Narration'      =>  'Inventory Debit For Supplier ',
+//   'Debit'          =>  $this->input->post('grand_total_price',TRUE),
+//   'Credit'         =>  0,//purchase price asbe
+//   'IsPosted'       => 1,
+//   'CreateBy'       => $receive_by,
+//   'CreateDate'     => $createdate,
+//   'IsAppove'       => 1
+// ); 
+
+
+
+
+
+   //new end
+
+
+    
+   
+    $this->db->insert('sale_packing_list', $data);
+  
+    if($this->input->post('paytype') == 2){
+      if(!empty($paid_amount)){
+    $this->db->insert('acc_transaction',$bankc);
+   
+    $this->db->insert('acc_transaction',$supplierdebit);
+  }
+    }
+    if($this->input->post('paytype') == 1){
+      if(!empty($paid_amount)){
+    $this->db->insert('acc_transaction',$cashinhand);
+    $this->db->insert('acc_transaction',$supplierdebit); 
+    }    
+    }    
+
+    $serial_number = $this->input->post('serial_number',TRUE);
+    $slab_no = $this->input->post('slab_no',TRUE);
+    $height = $this->input->post('height',TRUE);
+    $width = $this->input->post('width',TRUE);
+    $area = $this->input->post('total_price',TRUE);
+ 
+
+ 
+
+    for ($i = 0, $n = count($slab_no); $i < $n; $i++) {
+        $serial = $serial_number[$i];
+        $slabno = $slab_no[$i];
+        $heightt = $height[$i];
+        $widthh = $width[$i];
+        $areaa = $area[$i];
+   
+
+        $data1 = array(
+            'product_id'   =>  $p_id,
+            'expense_packing_detail_id' => $this->generator(15),
+            'expense_packing_id'        => $purchase_id,
+            'serial_no'         => $serial,
+            'slab_no'               => $slabno,
+            'height' => $heightt,
+            'width' => $widthh,
+            'net_measure'       => 'cm',
+            'area' => $areaa,
+            'create_by'          =>  $this->session->userdata('user_id'),
+            'status'             => 1
+        );
+
+        if (!empty($serial_number)) {
+            $this->db->insert('sale_packing_list_detail', $data1);
+        }
+    }
+
+    return true;
+}
      public function getInvoiceList($postData=null){
 
        $this->load->library('occational');
@@ -2258,7 +2406,7 @@ $product_id=$this->input->post('product_id',TRUE);
         $query = $this->db->get();
 
 
-//echo  $this->db->last_query();
+
 
  // print_r($sql);
   //die();
@@ -4347,7 +4495,7 @@ $split = array_map(
         }
         $start_from = ($current_page_number - 1) * $records_per_page;
         $usertype = $this->session->userdata('user_type');
-        $this->db->select('a.id,a.chalan_no, a.purchase_date,a.sales_by, b.customer_name,u.first_name,u.last_name,a.total');
+        $this->db->select('a.purchase_id,a.chalan_no, a.purchase_date,a.sales_by, b.customer_name,u.first_name,u.last_name,a.total');
      
         $this->db->from('profarma_invoice a');
     
@@ -4388,7 +4536,7 @@ $split = array_map(
         }
         else
         {
-        $query .= 'ORDER BY a.id DESC ';
+        $query .= 'ORDER BY a.purchase_id DESC ';
         }
        // if($order_by != '')
       //  {

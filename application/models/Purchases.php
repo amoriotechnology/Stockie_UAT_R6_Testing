@@ -1586,7 +1586,7 @@ return $output;
         );
 
 
-     
+     print_r($data);
    
           ///Inventory Debit
     //    $coscr = array(
@@ -2145,7 +2145,8 @@ return $output;
         if ($query->num_rows() > 0) {
             return $query->result_array();
         }
-        return false;
+     
+        return true;
     }
 
 
@@ -2160,7 +2161,7 @@ return $output;
         if ($query->num_rows() > 0) {
             return $query->result_array();
         }
-        return false;
+        return true;
     }
 
 
@@ -2201,6 +2202,7 @@ return $output;
         $this->db->where('a.expense_packing_id', $purchase_id);
        // $this->db->order_by('a.purchase_details', 'asc');
         $query = $this->db->get();
+      
         if ($query->num_rows() > 0) {
             return $query->result_array();
         }

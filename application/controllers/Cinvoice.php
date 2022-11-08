@@ -1038,6 +1038,21 @@ $date = $this->input->post("daterange");
 
 
     }
+    public function insert_packing_list() {
+
+        $CI = & get_instance();
+        $CI->auth->check_admin_auth();
+        $CI->load->model('Invoices');
+        $CI->Invoices->packing_list_entry();
+        $this->session->set_userdata(array('message' => display('successfully_added')));
+        if (isset($_POST['add-packing-list'])) {
+            redirect(base_url('Cinvoice/manage_packing_list'));
+            exit;
+        } elseif (isset($_POST['add-packing-list-another'])) {
+            redirect(base_url('Cinvoice/add_packing_list'));
+            exit;
+        }
+    }
 
      public function manage_packing_list() {
         $date = $this->input->post("daterange");
@@ -1065,7 +1080,13 @@ $date = $this->input->post("daterange");
         $this->template->full_admin_html_view($content);
 
     }
-
+    public function packing_list_update_form($purchase_id) {
+        $CI = & get_instance();
+        $CI->auth->check_admin_auth();
+        $CI->load->library('linvoice');
+        $content = $CI->linvoice->packing_list_edit_data($purchase_id);
+        $this->template->full_admin_html_view($content);
+    } 
       public function manage_ocean_export_tracking() {
 
         $CI = & get_instance();
@@ -2862,8 +2883,7 @@ $this->template->full_admin_html_view($content);
                         'create_by'          =>  $this->session->userdata('user_id'),
                         'status'             => 1
                     );
-                   echo json_encode($data1);
-                   die();
+                  
                     $this->db->insert('profarma_invoice_details', $data1);
                  
                 }

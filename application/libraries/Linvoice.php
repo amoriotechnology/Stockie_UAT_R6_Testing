@@ -28,7 +28,90 @@ class Linvoice {
         $invoiceList = $CI->parser->parse('invoice/invoice', $data, true);
         return $invoiceList;
     }
+    public function packing_list_edit_data($purchase_id) {
 
+        $CI = & get_instance();
+    
+        $CI->load->model('Invoices');
+    
+        $CI->load->model('Suppliers');
+    
+        $CI->load->model('Web_settings');
+    
+         //$bank_list        = $CI->Web_settings->bank_list();
+    
+        $purchase_detail = $CI->Invoices->retrieve_packing_editdata($purchase_id);
+    
+        // $customer_id = $purchase_detail[0]['customer_id'];
+    
+        // $supplier_list = $CI->Suppliers->supplier_list("110", "0");
+    
+        // $supplier_selected = $CI->Suppliers->supplier_search_item($supplier_id);
+    
+    
+    
+        if (!empty($purchase_detail)) {
+    
+            $i = 0;
+    
+            foreach ($purchase_detail as $k => $v) {
+    
+                $i++;
+    
+                $purchase_detail[$k]['sl'] = $i;
+    
+            }
+    
+        }
+    
+    
+    
+        $currency_details = $CI->Web_settings->retrieve_setting_editdata();
+    
+        $data = array(
+    
+            'title'         => 'Packing List Edit',
+    
+            'expense_packing_id'   => $purchase_detail[0]['expense_packing_id'],
+    
+            'invoice_no'     => $purchase_detail[0]['invoice_no'],
+    
+            'invoice_date'   => $purchase_detail[0]['invoice_date'],
+    
+            'gross_weight' => $purchase_detail[0]['gross_weight'],
+    
+            'container_no' => $purchase_detail[0]['container_no'],
+    
+            'thickness' => $purchase_detail[0]['thickness'],
+    
+            'description' =>  $purchase_detail[0]['description'],
+    
+            'grand_total_amount' =>  $purchase_detail[0]['grand_total_amount'],
+    
+            'serial_no' =>   $purchase_detail[0]['serial_no'],
+    
+            'purchase_info' => $purchase_detail,
+    
+            'slab_no' =>   $purchase_detail[0]['slab_no'],
+    
+            'prouduct_name' =>  $purchase_detail[0]['product_name'],
+    
+            'net_measure' =>   $purchase_detail[0]['net_measure'],
+    
+            'height' =>   $purchase_detail[0]['height'],
+    
+            'width'=>   $purchase_detail[0]['width'],
+            'area'=>   $purchase_detail[0]['area'],
+    
+        );
+    
+    
+    
+        $chapterList = $CI->parser->parse('invoice/edit_packing_form', $data, true);
+    
+        return $chapterList;
+    
+    }
 
      public function profarma_invoice_list() {
 
@@ -1002,8 +1085,7 @@ class Linvoice {
         $purchase_detail = $CI->Invoices->retrieve_profarma_invoice_editdata($invoice_id);
 
         // echo "<pre>";
-        // print_r($purchase_detail);
-        // die();
+     
         
         $customer_id = $purchase_detail[0]['customer_id'];
 
