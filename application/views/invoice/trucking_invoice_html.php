@@ -144,7 +144,9 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
 <script>
 $(document).ready(function () {
- 
+
+$('.navbar').hide();    
+
  var pdf = new jsPDF('p','pt','a4');
     const invoice = document.getElementById("content");
              console.log(invoice);
