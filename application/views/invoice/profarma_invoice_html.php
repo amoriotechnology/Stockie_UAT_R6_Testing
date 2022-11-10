@@ -91,11 +91,11 @@
                 
             </tr>
             <tr>
-               <td><?php echo $product; ?></td>
-               <td><?php echo $stock; ?></td>
-               <td><?php echo $quantity; ?></td>
-               <td><?php echo $totalamount; ?></td>
-               <td><?php echo $total;  ?></td>
+               <td style="font-size: 16px;"><?php echo $product; ?></td>
+               <td style="font-size: 16px;"><?php echo $stock; ?></td>
+               <td style="font-size: 16px;"><?php echo $quantity; ?></td>
+               <td style="font-size: 16px;"><?php echo $totalamount; ?></td>
+               <td style="font-size: 16px;"><?php echo $total;  ?></td>
               
                
             </tr>
@@ -103,7 +103,7 @@
             <tr>
            
               <td colspan="4" style="text-align: right;">Total:</td>
-              <td><?php echo $total;  ?></td>
+              <td style="font-size: 16px;"><?php echo $total;  ?></td>
             
                
                 

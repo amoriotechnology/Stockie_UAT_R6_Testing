@@ -65,24 +65,24 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
         <div class="row">
 
          <div class="col-md-6" style="">
-            <h4>Customer Name :<span><?php echo $customername; ?></span></h4>
-            <h4>Payment Type :<span><?php echo $payment; ?></span></h4>
-            <h4>Sales Invoice date :<span><?php echo $date; ?></span></h4>
-            <h4>Billing Address :<span><?php echo $billing; ?></span></h4>
-            <h4>Payment Terms   :<span><?php echo $paymentterms; ?></span></h4>
-            <h4>Number of days   :<span><?php echo $days; ?></span></h4>
-            <h4>ETD    :<span><?php echo $date; ?></span></h4>
+            <h4>Customer Name :&nbsp;&nbsp;<span style="font-weight: normal; font-size: 16px; font-family: roboto;"><?php echo $customername; ?></span></h4>
+            <h4>Payment Type :&nbsp;&nbsp;<span style="font-weight: normal; font-size: 16px; font-family: roboto;"><?php echo $payment; ?></span></h4>
+            <h4>Sales Invoice date :&nbsp;&nbsp;<span style="font-weight: normal; font-size: 16px; font-family: roboto;"><?php echo $date; ?></span></h4>
+            <h4>Billing Address :&nbsp;&nbsp;<span style="font-weight: normal; font-size: 16px; font-family: roboto;"><?php echo $billing; ?></span></h4>
+            <h4>Payment Terms   :&nbsp;&nbsp;<span style="font-weight: normal; font-size: 16px; font-family: roboto;"><?php echo $paymentterms; ?></span></h4>
+            <h4>Number of days   :&nbsp;&nbsp;<span style="font-weight: normal; font-size: 16px; font-family: roboto;"><?php echo $days; ?></span></h4> 
+            <h4>ETD    :&nbsp;&nbsp;<span style="font-weight: normal; font-size: 16px; font-family: roboto;"><?php echo $date; ?></span></h4>
          </div>
 
          <div class="col-md-6">
-            <h4>Customer Mobile: <span><?php echo $mobile; ?></span></h4>
-            <h4>Address: <span><?php echo $customeraddress; ?></span> </h4> 
-            <h4>Commercial Invoice Number: <span><?php echo $invoicenumber; ?></span></h4> 
-            <h4>Container Number: <span><?php echo $container; ?></span></h4>  
-            <h4>B/L No : <span><?php echo $blno; ?></span></h4> 
-            <h4>Port of discharge: <span><?php echo $port; ?></span></h4> 
-            <h4>Payment Due date: <span><?php echo $paymentdue; ?></span></h4> 
-            <h4><?php echo $date; ?></h4>
+            <h4>Customer Mobile: &nbsp;&nbsp;<span style="font-weight: normal; font-size: 16px; font-family: roboto;"><?php echo $mobile; ?></span></h4>
+            <h4>Address: &nbsp;&nbsp;<span style="font-weight: normal; font-size: 16px; font-family: roboto;"><?php echo $customeraddress; ?></span> </h4> 
+            <h4>Commercial Invoice Number: &nbsp;&nbsp;<span style="font-weight: normal; font-size: 16px; font-family: roboto;"><?php echo $invoicenumber; ?></span></h4> 
+            <h4>Container Number: &nbsp;&nbsp;<span style="font-weight: normal; font-size: 16px; font-family: roboto;"><?php echo $container; ?></span></h4>  
+            <h4>B/L No : &nbsp;&nbsp;<span style="font-weight: normal; font-size: 16px; font-family: roboto;"><?php echo $blno; ?></span></h4> 
+            <h4>Port of discharge: &nbsp;&nbsp;<span style="font-weight: normal; font-size: 16px; font-family: roboto;"><?php echo $port; ?></span></h4> 
+            <h4>Payment Due date: &nbsp;&nbsp;<span style="font-weight: normal; font-size: 16px; font-family: roboto;"><?php echo $paymentdue; ?></span></h4> 
+            <h4>ETD:&nbsp;&nbsp;<span style="font-weight: normal; font-size: 16px; font-family: roboto;"><?php echo $date; ?></span></h4>
          </div>
     </div>
 <div class="row">
@@ -98,11 +98,11 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
                 <!-- <th>Action</th> -->
             </tr>
             <tr>
-               <td><?php echo $product; ?></td>
-               <td><?php echo $stock; ?></td>
-               <td><?php echo $quantity; ?></td>
-               <td><?php echo $rate; ?></td>
-               <td>$<?php echo $total; ?></td>
+               <td style="font-size: 16px;"><?php echo $product; ?></td>
+               <td style="font-size: 16px;"><?php echo $stock; ?></td>
+               <td style="font-size: 16px;"><?php echo $quantity; ?></td>
+               <td style="font-size: 16px;"><?php echo $rate; ?></td>
+               <td style="font-size: 16px;">$<?php echo $total; ?></td>
               <!--  <td>   </td> -->
                
             </tr>
@@ -110,7 +110,7 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
             <tr>
            
               <td colspan="4" style="text-align: right;">Total:</td>
-              <td>$<?php echo $total; ?></td>
+              <td style="font-size: 16px;">$<?php echo $total; ?></td>
              <!--  <td></td> -->
                
                 
@@ -119,7 +119,7 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
             <tr>
            
                 <td colspan="4" style="text-align: right;">Grand Total:</td>
-                <td></td>
+                <td style="font-size: 16px;"></td>
                 <!-- <td></td> -->
                  
                   

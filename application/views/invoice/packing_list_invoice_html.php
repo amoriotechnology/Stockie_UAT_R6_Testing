@@ -92,9 +92,9 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
                 <th>Thickness</th>
             </tr>
             <tr>
-               <td><?php echo $product; ?></td>
-               <td><?php echo $description; ?></td>
-               <td><?php echo $thickness; ?></td>
+               <td style="font-size: 15px;"><?php echo $product; ?></td>
+               <td style="font-size: 15px;"><?php echo $description; ?></td>
+               <td style="font-size: 15px;"><?php echo $thickness; ?></td>
             </tr>
  </table><br><br>
        <table style="width:100%">
@@ -105,15 +105,15 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
             <th>Area (Sq. Ft)</th>
         </tr>
         <tr>
-         <td><?php echo $serial; ?></td>
-         <td><?php echo $slab; ?></td>
-         <td><p>Width: &nbsp; <?php echo $width; ?></p> <p >Height: &nbsp; <?php echo $height; ?></p></td>
-         <td><?php echo $area; ?></td>
+         <td style="font-size: 15px;"><?php echo $serial; ?></td>
+         <td style="font-size: 15px;"><?php echo $slab; ?></td>
+         <td style="font-size: 15px;"><p>Width: &nbsp; <?php echo $width; ?></p> <p >Height: &nbsp; <?php echo $height; ?></p></td>
+         <td style="font-size: 15px;"><?php echo $area; ?></td>
         </tr>
 
         <tr>
             <td colspan="3" style="text-align: right;">Total:</td>
-            <td>$<?php echo $total; ?></td>
+            <td style="font-size: 15px;">$<?php echo $total; ?></td>
             
              </tr>
 
@@ -140,6 +140,7 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
         padding: 3px;
     }    
 </style>      
+
 
 
 
