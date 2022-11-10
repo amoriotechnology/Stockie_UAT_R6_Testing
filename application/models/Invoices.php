@@ -75,6 +75,26 @@ class Invoices extends CI_Model {
            
     }
 
+     public function packing_pdf() {
+        $this->db->select('a.*, pi.product_name');
+
+        $this->db->from('sale_packing_list in');
+
+        $this->db->join('product_information pi', 'pi.product_id = a.product_id');
+
+       // $this->db->where('in.invoice_id', $invoice_id);
+       
+        $query = $this->db->get();
+
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        }
+        return false;
+
+    }
+
+
+
     
      public function invoice_pdf() {
         $this->db->select('in.*, ci.customer_name');
@@ -91,11 +111,21 @@ class Invoices extends CI_Model {
 
     }
 
+
+
+
+
+
+    
+  
+
     public function all_invoice() {
     $this->db->select('a.*,b.*');
     $this->db->from('invoice_details a');
     $this->db->join('invoice b', 'b.invoice_id = a.invoice_id');
     // $this->db->where('b.invoice_id');
+
+    // echo $this->db->last_query(); die();
     
     $query = $this->db->get();
    
@@ -126,6 +156,8 @@ class Invoices extends CI_Model {
     $this->db->from('profarma_invoice_details a');
     $this->db->join('profarma_invoice b', 'b.purchase_id = a.purchase_id');
     $this->db->where('b.purchase_id', $purchase_id);
+
+    // echo $this->db->last_query(); die();
     
     $query = $this->db->get();
    
@@ -134,6 +166,127 @@ class Invoices extends CI_Model {
       }
       return false;
 }
+
+
+    public function packing_details_data() {
+        $sql = 'SELECT * FROM sale_packing_list as a JOIN sale_packing_list_detail as ac JOIN product_information as b ON b.product_id = a.product_id';
+        $query = $this->db->query($sql);
+//    echo $this->db->last_query();
+//        die(); 
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        }
+        return false;
+    }
+
+
+
+    public function packing_list_entry() {
+    $purchase_id  = date('YmdHis');
+    $p_id = $this->input->post('product_id',TRUE);
+    // $supplier_id = $this->input->post('supplier_id',TRUE);
+    // $supinfo =$this->db->select('*')->from('supplier_information')->where('supplier_id',$supplier_id)->get()->row();
+    // $sup_head = $supinfo->supplier_id.'-'.$supinfo->supplier_name;
+    // $sup_coa = $this->db->select('*')->from('acc_coa')->where('HeadName',$sup_head)->get()->row();
+    $receive_by=$this->session->userdata('user_id');
+    $receive_date=date('Y-m-d');
+    $createdate=date('Y-m-d H:i:s');
+    $paid_amount = $this->input->post('paid_amount',TRUE);
+    $due_amount = $this->input->post('due_amount',TRUE);
+    $discount = $this->input->post('discount',TRUE);
+      $bank_id = $this->input->post('bank_id',TRUE);
+    if(!empty($bank_id)){
+     $bankname = $this->db->select('bank_name')->from('bank_add')->where('bank_id',$bank_id)->get()->row()->bank_name;
+     $bankcoaid = $this->db->select('HeadCode')->from('acc_coa')->where('HeadName',$bankname)->get()->row()->HeadCode;
+    }else
+    {
+           $bankcoaid = '';
+    }
+    //supplier & product id relation ship checker.
+    // for ($i = 0, $n = count($p_id); $i < $n; $i++) {
+    //     $product_id = $p_id[$i];
+    //     $value = $this->product_supplier_check($product_id, $supplier_id);
+    //     if ($value == 0) {
+    //         $this->session->set_flashdata('error_message', display('product_and_supplier_did_not_match'));
+    //         redirect(base_url('Cpurchase'));
+    //         exit();
+    //     }
+    // }
+    $data = array(
+        'expense_packing_id'        => $purchase_id,
+        'create_by'       =>  $this->session->userdata('user_id'),
+        'invoice_no'          => $this->input->post('invoice_no',TRUE),
+        'invoice_date'        => $this->input->post('invoice_date',TRUE),
+        'gross_weight' => $this->input->post('gross_weight',TRUE),
+        'thickness' => $this->input->post('thickness',TRUE),
+        'description'=> $this->input->post('description',TRUE),
+        'product_id' => $this->input->post('product_id',TRUE),
+        // 'grand_total_amount' => $this->input->post('grand_total_price',TRUE),
+        'container_no'     => $this->input->post('container_no',TRUE),
+        'grand_total_amount'      => $this->input->post('total',TRUE),
+        'status'             => 1,
+    );
+      ///Inventory Debit
+//    $coscr = array(
+//   'VNo'            =>  $purchase_id,
+//   'Vtype'          =>  'Purchase',
+//   'VDate'          =>  $this->input->post('invoice_date',TRUE),
+//   'COAID'          =>  10107,
+//   'Narration'      =>  'Inventory Debit For Supplier ',
+//   'Debit'          =>  $this->input->post('grand_total_price',TRUE),
+//   'Credit'         =>  0,//purchase price asbe
+//   'IsPosted'       => 1,
+//   'CreateBy'       => $receive_by,
+//   'CreateDate'     => $createdate,
+//   'IsAppove'       => 1
+// );
+   //new end
+    $this->db->insert('sale_packing_list', $data);
+    if($this->input->post('paytype') == 2){
+      if(!empty($paid_amount)){
+    $this->db->insert('acc_transaction',$bankc);
+    $this->db->insert('acc_transaction',$supplierdebit);
+  }
+    }
+    if($this->input->post('paytype') == 1){
+      if(!empty($paid_amount)){
+    $this->db->insert('acc_transaction',$cashinhand);
+    $this->db->insert('acc_transaction',$supplierdebit);
+    }
+    }
+    $serial_number = $this->input->post('serial_number',TRUE);
+    $slab_no = $this->input->post('slab_no',TRUE);
+    $height = $this->input->post('height',TRUE);
+    $width = $this->input->post('width',TRUE);
+    $area = $this->input->post('total_price',TRUE);
+    for ($i = 0, $n = count($slab_no); $i < $n; $i++) {
+        $serial = $serial_number[$i];
+        $slabno = $slab_no[$i];
+        $heightt = $height[$i];
+        $widthh = $width[$i];
+        $areaa = $area[$i];
+        $data1 = array(
+            'product_id'   =>  $p_id,
+            'expense_packing_detail_id' => $this->generator(15),
+            'expense_packing_id'        => $purchase_id,
+            'serial_no'         => $serial,
+            'slab_no'               => $slabno,
+            'height' => $heightt,
+            'width' => $widthh,
+            'net_measure'       => 'cm',
+            'area' => $areaa,
+            'create_by'          =>  $this->session->userdata('user_id'),
+            'status'             => 1
+        );
+        if (!empty($serial_number)) {
+            $this->db->insert('sale_packing_list_detail', $data1);
+        }
+    }
+    return true;
+}
+
+
+
 public function fetch_data($day){
     //$fromdate = $this->input->post('prodt',TRUE);
     echo "sad";
@@ -287,137 +440,7 @@ public function retrieve_packing_editdata($purchase_id) {
      }
      return false;
  }
-public function packing_list_entry() {
-       
-    $purchase_id  = date('YmdHis');
-    $p_id = $this->input->post('product_id',TRUE);
-    // $supplier_id = $this->input->post('supplier_id',TRUE);
-    // $supinfo =$this->db->select('*')->from('supplier_information')->where('supplier_id',$supplier_id)->get()->row();
-    // $sup_head = $supinfo->supplier_id.'-'.$supinfo->supplier_name;
-    // $sup_coa = $this->db->select('*')->from('acc_coa')->where('HeadName',$sup_head)->get()->row();
-    $receive_by=$this->session->userdata('user_id');
-    $receive_date=date('Y-m-d');
-    $createdate=date('Y-m-d H:i:s');
-    $paid_amount = $this->input->post('paid_amount',TRUE);
-    $due_amount = $this->input->post('due_amount',TRUE);
-    $discount = $this->input->post('discount',TRUE);
-      $bank_id = $this->input->post('bank_id',TRUE);
-    if(!empty($bank_id)){
-     $bankname = $this->db->select('bank_name')->from('bank_add')->where('bank_id',$bank_id)->get()->row()->bank_name;
-  
-     $bankcoaid = $this->db->select('HeadCode')->from('acc_coa')->where('HeadName',$bankname)->get()->row()->HeadCode;
-    }else
-    {
-           $bankcoaid = '';
-    }
 
-    //supplier & product id relation ship checker.
-    // for ($i = 0, $n = count($p_id); $i < $n; $i++) {
-    //     $product_id = $p_id[$i];
-    //     $value = $this->product_supplier_check($product_id, $supplier_id);
-    //     if ($value == 0) {
-    //         $this->session->set_flashdata('error_message', display('product_and_supplier_did_not_match'));
-    //         redirect(base_url('Cpurchase'));
-    //         exit();
-    //     }
-    // }
-
-    $data = array(
-        'expense_packing_id'        => $purchase_id,
-        'create_by'       =>  $this->session->userdata('user_id'),
-        'invoice_no'          => $this->input->post('invoice_no',TRUE),
-        'invoice_date'        => $this->input->post('invoice_date',TRUE),
-        'gross_weight' => $this->input->post('gross_weight',TRUE),
-        'thickness' => $this->input->post('thickness',TRUE),
-        'description'=> $this->input->post('description',TRUE),
-        'product_id' => $this->input->post('product_id',TRUE),
-        // 'grand_total_amount' => $this->input->post('grand_total_price',TRUE),
-        'container_no'     => $this->input->post('container_no',TRUE),
-        'grand_total_amount'      => $this->input->post('total',TRUE),
-        'status'             => 1,
-    );
-
-
-
-
-      ///Inventory Debit
-//    $coscr = array(
-//   'VNo'            =>  $purchase_id,
-//   'Vtype'          =>  'Purchase',
-//   'VDate'          =>  $this->input->post('invoice_date',TRUE),
-//   'COAID'          =>  10107,
-//   'Narration'      =>  'Inventory Debit For Supplier ',
-//   'Debit'          =>  $this->input->post('grand_total_price',TRUE),
-//   'Credit'         =>  0,//purchase price asbe
-//   'IsPosted'       => 1,
-//   'CreateBy'       => $receive_by,
-//   'CreateDate'     => $createdate,
-//   'IsAppove'       => 1
-// ); 
-
-
-
-
-
-   //new end
-
-
-    
-   
-    $this->db->insert('sale_packing_list', $data);
-  
-    if($this->input->post('paytype') == 2){
-      if(!empty($paid_amount)){
-    $this->db->insert('acc_transaction',$bankc);
-   
-    $this->db->insert('acc_transaction',$supplierdebit);
-  }
-    }
-    if($this->input->post('paytype') == 1){
-      if(!empty($paid_amount)){
-    $this->db->insert('acc_transaction',$cashinhand);
-    $this->db->insert('acc_transaction',$supplierdebit); 
-    }    
-    }    
-
-    $serial_number = $this->input->post('serial_number',TRUE);
-    $slab_no = $this->input->post('slab_no',TRUE);
-    $height = $this->input->post('height',TRUE);
-    $width = $this->input->post('width',TRUE);
-    $area = $this->input->post('total_price',TRUE);
- 
-
- 
-
-    for ($i = 0, $n = count($slab_no); $i < $n; $i++) {
-        $serial = $serial_number[$i];
-        $slabno = $slab_no[$i];
-        $heightt = $height[$i];
-        $widthh = $width[$i];
-        $areaa = $area[$i];
-   
-
-        $data1 = array(
-            'product_id'   =>  $p_id,
-            'expense_packing_detail_id' => $this->generator(15),
-            'expense_packing_id'        => $purchase_id,
-            'serial_no'         => $serial,
-            'slab_no'               => $slabno,
-            'height' => $heightt,
-            'width' => $widthh,
-            'net_measure'       => 'cm',
-            'area' => $areaa,
-            'create_by'          =>  $this->session->userdata('user_id'),
-            'status'             => 1
-        );
-
-        if (!empty($serial_number)) {
-            $this->db->insert('sale_packing_list_detail', $data1);
-        }
-    }
-
-    return true;
-}
      public function getInvoiceList($postData=null){
 
        $this->load->library('occational');
@@ -1086,6 +1109,10 @@ public function packing_list_entry() {
         return $query->result();
 
     }
+
+
+
+
 
 
 
@@ -1913,7 +1940,7 @@ public function packing_list_entry() {
 
         );
 
-    print_r($datainv); exit();
+    // print_r($datainv); exit();
 
         $this->db->insert('invoice', $datainv);
 
@@ -2173,7 +2200,7 @@ public function packing_list_entry() {
 
         $serial_n            = $this->input->post('serial_no',TRUE);
 
-$product_id=$this->input->post('product_id',TRUE);
+        $product_id           =  $this->input->post('product_id',TRUE);
 
         for ($i = 0, $n = count($p_id); $i < $n; $i++) {
 
@@ -2236,7 +2263,7 @@ $product_id=$this->input->post('product_id',TRUE);
 
             );
 
-//print_r($data1);
+// print_r($data1);
 
                 $this->db->insert('invoice_details', $data1);
 
@@ -2286,6 +2313,122 @@ $product_id=$this->input->post('product_id',TRUE);
         $t = preg_replace('/<[^<|>]+?>/', '', htmlspecialchars_decode($str));
         $t = htmlentities($t, ENT_QUOTES, "UTF-8");
         return $t;
+    }
+
+
+
+           public function getPackingList($postData=null){
+         $this->load->library('occational');
+         $this->load->model('Web_settings');
+         $currency_details = $this->Web_settings->retrieve_setting_editdata();
+         $response = array();
+         $fromdate = $this->input->post('fromdate');
+         $todate   = $this->input->post('todate');
+         if(!empty($fromdate)){
+            $datbetween = "(a.est_ship_date BETWEEN '$fromdate' AND '$todate')";
+         }else{
+            $datbetween = "";
+         }
+         ## Read value
+         $draw = $postData['draw'];
+         $start = $postData['start'];
+         $rowperpage = $postData['length']; // Rows display per page
+         $columnIndex = $postData['order'][0]['column']; // Column index
+         $columnName = $postData['columns'][$columnIndex]['data']; // Column name
+         $columnSortOrder = $postData['order'][0]['dir']; // asc or desc
+         $searchValue = $postData['search']['value']; // Search value
+
+         ## Search 
+         $searchQuery = "";
+         if($searchValue != ''){
+            $searchQuery = " (b.supplier_name like '%".$searchValue."%' or a.chalan_no like '%".$searchValue."%' or a.purchase_date like'%".$searchValue."%')";
+         }
+
+        ## Total number of records without filtering
+        $this->db->select('count(*) as allcount');
+        $this->db->from('expense_packing_list');
+     //   $this->db->join('customer_information b', 'b.customer_id = a.bill_to','left');
+       // $this->db->where('a.create_by',$this->session->userdata('user_id'));
+        if(!empty($fromdate) && !empty($todate)){
+             $this->db->where($datbetween);
+         }
+          if($searchValue != '')
+          $this->db->where($searchQuery);
+          
+         $records = $this->db->get()->result();
+         $totalRecords = $records[0]->allcount;
+
+         ## Total number of record with filtering
+         $this->db->select('count(*) as allcount');
+        $this->db->from('expense_packing_list');
+        // $this->db->join('customer_information b', 'b.customer_id = a.bill_to','left');
+        $this->db->where('create_by',$this->session->userdata('user_id'));
+         if(!empty($fromdate) && !empty($todate)){
+             $this->db->where($datbetween);
+         }
+         if($searchValue != '')
+            $this->db->where($searchQuery);
+          
+         $records = $this->db->get()->result();
+         $totalRecordwithFilter = $records[0]->allcount;
+
+         ## Fetch records
+        $this->db->select('*');
+        $this->db->from('expense_packing_list');
+         // $this->db->join('customer_information b', 'b.customer_id = a.bill_to','left');
+        $this->db->where('create_by',$this->session->userdata('user_id'));
+          if(!empty($fromdate) && !empty($todate)){
+             $this->db->where($datbetween);
+         }
+         if($searchValue != '')
+         $this->db->where($searchQuery);
+       
+         $this->db->order_by($columnName, $columnSortOrder);
+         $this->db->limit($rowperpage, $start);
+         $records = $this->db->get()->result();
+         $data = array();
+         $sl =1;
+         foreach($records as $record ){
+          $button = '';
+          $base_url = base_url();
+          $jsaction = "return confirm('Are You Sure ?')";
+           
+          $button .='  <a href="'.$base_url.'Cinvoice/packing_list_details_data/'.$record->expense_packing_id.'" class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="left" title="Packing Download"><i class="fa fa-window-restore" aria-hidden="true"></i></a>';
+
+           $button .='  <a href="'.$base_url.'Cinvoice/packing_list_details_data/'.$record->expense_packing_id.'" class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="left" title="Packing List Detail"><i class="fa fa-window-restore" aria-hidden="true"></i></a>';
+              if($this->permission1->method('manage_purchase','update')->access()){
+                 $button .=' <a href="'.$base_url.'Cpurchase/packing_list_update_form/'.$record->expense_packing_id.'" class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="left" title="'. display('update').'"><i class="fa fa-pencil" aria-hidden="true"></i></a> ';
+             }
+
+     
+
+         $purchase_ids ='<a href="'.$base_url.'Cinvoice/packing_details_data/'.$record->expense_packing_id.'">'.$record->expense_packing_id.'</a>';
+               
+               $data[] = array(
+                'sl'               =>$sl,
+                'invoice_no'        =>$record->invoice_no,
+                'expense_packing_id'  =>$purchase_ids,
+                'gross_weight' => $record->gross_weight,
+                'container_no' => $record->container_no,
+                'invoice_date'    =>$record->invoice_date,
+                // 'invoice_date'    =>$this->occational->dateConvert($record->invoice_date),
+                'total' => $record->grand_total_amount,
+                'thickness' => $record->thickness,
+                'button'           =>$button,
+                
+            ); 
+            $sl++;
+         }
+
+         ## Response
+         $response = array(
+            "draw" => intval($draw),
+            "iTotalRecords" => $totalRecordwithFilter,
+            "iTotalDisplayRecords" => $totalRecords,
+            "aaData" => $data
+         );
+
+         return $response; 
     }
 
 
@@ -4198,7 +4341,7 @@ $query = '';
      }
      $start_from = ($current_page_number - 1) * $records_per_page;
      $usertype = $this->session->userdata('user_type');
-     $this->db->select('a.id,a.invoice_id, a.date,a.sales_by, b.customer_name,u.first_name,u.last_name,a.total_amount');
+     $this->db->select('a.id,a.invoice_id, a.date,a.sales_by, b.customer_name, b.customer_id,u.first_name,u.last_name,a.total_amount');
   
      $this->db->from('invoice a');
  
@@ -4430,7 +4573,7 @@ $query = '';
  }
  $start_from = ($current_page_number - 1) * $records_per_page;
  $usertype = $this->session->userdata('user_type');
- $this->db->select('a.*, u.first_name,u.last_name');
+ $this->db->select('a.*, a.expense_packing_id, u.first_name,u.last_name');
 
  $this->db->from('sale_packing_list a');
 
@@ -4503,9 +4646,11 @@ return $output;
 //  echo json_encode($output);
 
 }
+
+
     public function sample($date=null) {
            if($date) {
-$split = array_map(
+        $split = array_map(
     function($value) {
         return implode(' ', $value);
     },
@@ -4819,9 +4964,9 @@ $split = array_map(
 }
 
 public function get_datas()
-	{
-		return $this->db->get('bootgrid_data')->result();
-	}
+    {
+        return $this->db->get('bootgrid_data')->result();
+    }
  public function tempdesign()
     {
         

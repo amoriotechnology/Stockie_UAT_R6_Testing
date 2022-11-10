@@ -22,12 +22,14 @@ class Lpurchase {
             $CI->load->model('Suppliers');
         $CI->load->model('Categories');
         $CI->load->model('Units');
+        $CI->load->model('Products');
    
 
 
 
         $CI->load->model('Web_settings');
 
+        $all_product_list = $CI1->Products->all_product_list();
         $all_supplier = $CI1->Purchases->select_all_supplier();
            $supplier      = $CI->Suppliers->supplier_list("110", "0");
 
@@ -46,6 +48,7 @@ class Lpurchase {
             'title'         => display('add_purchase'),
 
             'all_supplier'  => $all_supplier,
+            'product_list'  => $all_product_list,
 
            
 
@@ -60,6 +63,8 @@ class Lpurchase {
             'bank_list'     => $bank_list,
 
         );
+
+    
 
         $purchaseForm = $CI->parser->parse('purchase/add_purchase_form', $data, true);
         $purchaseForm = $CI->parser->parse('purchase/purchase_order', $data, true);
@@ -238,10 +243,12 @@ class Lpurchase {
         $CI->load->model('Units');
    
         $CI->load->model('Web_settings');
+        $CI->load->model('Products');
 
       
 
         $all_supplier = $CI->Purchases->select_all_supplier();
+        $products = $CI->Products->get_products();
 
         $currency_details = $CI->Web_settings->retrieve_setting_editdata();
 
@@ -262,6 +269,7 @@ class Lpurchase {
 
             'all_supplier'  => $all_supplier,
             
+            
             'voucher_no' => $voucher_no ,
 
             'invoice_no'    => $CI->auth->generator(10),
@@ -273,11 +281,12 @@ class Lpurchase {
             'discount_type' => $currency_details[0]['discount_type'],
 
             'bank_list'     => $bank_list,
+            'products'  => $products,
 
         );
 
         // echo "<pre>";
-        // print_r($data);die();
+        // print_r($data['category_list']);die();
 
     
 
@@ -674,7 +683,9 @@ class Lpurchase {
         $CI->load->model('Web_settings');
          $bank_list        = $CI->Web_settings->bank_list();
         $purchase_detail = $CI->Purchases->retrieve_purchase_editdata($purchase_id);
-        $supplier_id = $purchase_detail[0]['supplier_id'];
+      echo $purchase_detail;
+        exit;
+        // $supplier_id = $purchase_detail[0]['supplier_id'];
         $supplier_list = $CI->Suppliers->supplier_list("110", "0");
         $supplier_selected = $CI->Suppliers->supplier_search_item($supplier_id);
 
@@ -1163,108 +1174,123 @@ class Lpurchase {
 
 
     //Purchase details data
-
-    public function purchase_details_data($purchase_id) {
-
-
-
-        $CI = & get_instance();
-
-        $CI->load->model('Purchases');
-
-        $CI->load->model('Web_settings');
-
-        $CI->load->library('occational');
+public function purchase_details_data($purchase_id) {
 
 
 
-        $purchase_detail = $CI->Purchases->purchase_details_data($purchase_id);
+
+
+    $CI = & get_instance();
+
+    $CI->load->model('Purchases');
+    $CI->load->model('Products');
+
+   
+
+    $CI->load->library('occational');
+    $CI->load->library('Products');
 
 
 
-        if (!empty($purchase_detail)) {
+    $purchase_detail = $CI->Purchases->purchase_details_data($purchase_id);
+    $Products = $CI->Products->get_invoice_product($purchase_id);
 
-            $i = 0;
-
-            foreach ($purchase_detail as $k => $v) {
-
-                $i++;
-
-                $purchase_detail[$k]['sl'] = $i;
-
-            }
+    $get_invoice_design = $CI->Purchases->get_invoice_design();
+            
 
 
 
-            foreach ($purchase_detail as $k => $v) {
+    
 
-                $purchase_detail[$k]['convert_date'] = $CI->occational->dateConvert($purchase_detail[$k]['purchase_date']);
+    if (!empty($purchase_detail)) {
 
-            }
+        $i = 0;
+
+        foreach ($purchase_detail as $k => $v) {
+
+            $i++;
+
+            $purchase_detail[$k]['sl'] = $i;
 
         }
 
 
 
-        $currency_details = $CI->Web_settings->retrieve_setting_editdata();
+        foreach ($purchase_detail as $k => $v) {
 
-        $company_info = $CI->Purchases->retrieve_company();
+            $purchase_detail[$k]['convert_date'] = $CI->occational->dateConvert($purchase_detail[$k]['purchase_date']);
 
-    //  print_r($purchase_detail); die;  
-
-        $data = array(
-
-            'title'            => display('purchase_details'),
-
-            'purchase_id'      => $purchase_detail[0]['purchase_id'],
-
-            'email_address'      => $purchase_detail[0]['email_address'],
-
-            'mobile'      => $purchase_detail[0]['mobile'],
-
-            'address'      => $purchase_detail[0]['address'],
-
-            'message_invoice' => $purchase_detail[0]['message_invoice'],
-
-            'purchase_details' => $purchase_detail[0]['purchase_details'],
-
-            'remarks'  => $purchase_detail[0]['remarks'],
-
-            'supplier_name'    => $purchase_detail[0]['supplier_name'],
-
-            'final_date'       => $purchase_detail[0]['convert_date'],
-
-            'sub_total_amount' => number_format($purchase_detail[0]['grand_total_amount'], 2, '.', ','),
-
-            'chalan_no'        => $purchase_detail[0]['chalan_no'],
-
-            'total'            =>  number_format($purchase_detail[0]['grand_total_amount']+(!empty($purchase_detail[0]['total_discount'])?$purchase_detail[0]['total_discount']:0), 2),
-
-            'discount'         => number_format((!empty($purchase_detail[0]['total_discount'])?$purchase_detail[0]['total_discount']:0),2),
-
-            'paid_amount'      => number_format($purchase_detail[0]['paid_amount'],2),
-
-            'due_amount'      => number_format($purchase_detail[0]['due_amount'],2),
-
-            'purchase_all_data'=> $purchase_detail,
-
-            'company_info'     => $company_info,
-
-            'currency'         => $currency_details[0]['currency'],
-
-            'position'         => $currency_details[0]['currency_position'],
-
-            'Web_settings'     => $currency_details,
-
-        );
-
-
-
-        $chapterList = $CI->parser->parse('purchase/purchase_detail', $data, true);
-
-        return $chapterList;
+        }
 
     }
+
+
+
+    $currency_details = $CI->Web_settings->retrieve_setting_editdata();
+
+    $company_info = $CI->Purchases->retrieve_company();
+
+
+
+    $data = array(
+
+        'title'            => display('purchase_details'),
+
+        'purchase_id'      => $purchase_detail[0]['purchase_id'],
+
+        'email_address'      => $purchase_detail[0]['email_address'],
+
+        'mobile'      => $purchase_detail[0]['mobile'],
+
+        'address'      => $purchase_detail[0]['address'],
+
+        'message_invoice' => $purchase_detail[0]['message_invoice'],
+
+        'purchase_details' => $purchase_detail[0]['purchase_details'],
+
+        'remarks'  => $purchase_detail[0]['remarks'],
+
+        'supplier_name'    => $purchase_detail[0]['supplier_name'],
+
+        'final_date'       => $purchase_detail[0]['convert_date'],
+        'payment_due_date'       => $purchase_detail[0]['payment_due_date'],
+
+        'sub_total_amount' => number_format($purchase_detail[0]['grand_total_amount'], 2, '.', ','),
+
+        'chalan_no'        => $purchase_detail[0]['chalan_no'],
+
+        'total'            =>  number_format($purchase_detail[0]['grand_total_amount']+(!empty($purchase_detail[0]['total_discount'])?$purchase_detail[0]['total_discount']:0), 2),
+
+        'discount'         => number_format((!empty($purchase_detail[0]['total_discount'])?$purchase_detail[0]['total_discount']:0),2),
+
+        'paid_amount'      => number_format($purchase_detail[0]['paid_amount'],2),
+
+        'due_amount'      => number_format($purchase_detail[0]['due_amount'],2),
+
+        'purchase_all_data'=> $purchase_detail,
+
+        'company_info'     => $company_info,
+
+        'currency'         => $currency_details[0]['currency'],
+
+        'position'         => $currency_details[0]['currency_position'],
+
+        'Web_settings'     => $currency_details,
+        'products'     => $Products,
+        'invoice_setting'     => $get_invoice_design,
+
+    );
+
+
+    print_r($data['invoice_setting']);
+ 
+
+    $chapterList = $CI->parser->parse('purchase/purchase_detail', $data, true);
+
+    return $chapterList;
+
+}
+
 
 
 
@@ -1424,7 +1450,26 @@ class Lpurchase {
 
     }
 
+public function packing_update_form($purchase_id)
+{
+     $CI = & get_instance();
+     $CI->load->model('Purchases');
+      $invoice = $CI->Purchases->invoice_edit($purchase_id);
 
+      $invoice_detail = $CI->Purchases->invoice_detail_edit($purchase_id);
+
+      $get_invoice_product = $CI->Purchases->invoice_product_edit($purchase_id);
+
+     
+    $data['invoice']=$invoice;
+    $data['invoice_detail']=$invoice_detail;
+    $data['invoice_product']=$get_invoice_product;
+    
+
+    
+$packingedit  = $CI->parser->parse('purchase/editpackinglist', $data, true);
+return $packingedit;
+}
 
 }
 

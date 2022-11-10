@@ -27,687 +27,165 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
         </div>
     </section>
     <!-- Main content -->
+    <div class="" id="content">
     <section class="content">
         <!-- Alert Message -->
         <?php
-        $message = $this->session->userdata('message');
-        if (isset($message)) {
-            ?>
-            <div class="alert alert-info alert-dismissable">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                <?php echo $message ?>                    
-            </div>
-            <?php
-            $this->session->unset_userdata('message');
-        }
-        $error_message = $this->session->userdata('error_message');
-        if (isset($error_message)) {
-            ?>
-            <div class="alert alert-danger alert-dismissable">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                <?php echo $error_message ?>                    
-            </div>
-            <?php
-            $this->session->unset_userdata('error_message');
-        }
-        ?>
-   <div class=""  id="packing">
-            <div class="row">
-               <div class="document active">
-                  <div class="spreadSheetGroup">
-          
-          <div class="col-md-12 logo">
-            <img src="<?php echo base_url() ?>my-assets/image/logo-2.jpg" class="img-responsive"/>
-          </div>
-          
-                     <hr style="visibility:hidden"/>
-           
-           
-           
-           <table class="table table-bordered" >
-              <tr>
-              <td colspan="4">INFINITY STONES EUROPE SRL</td>
-            </tr>
-            <tr>
-              <td colspan="4">PIAZZA DEL MERCATO 18, PRASCATI, ROME 00044, ITALY</td>
-            </tr>
-            
-            <tr>
-              <td colspan="4">TELEPHONE: +39 069 4890, Hand phone: +31 611 2131</td>
-            </tr>
-            <tr>
-              <td colspan="4">Email : info@infinitystoneseu.com</td>
-            </tr>
-            
-           
-           </table>
-          
-            <table class="table table-bordered">
-            
-            <tbody>
-            <tr>
-              <td colspan="4">PACKING LIST   </td>
-            </tr>
-            <tr>
-            
-              <td colspan="2">Invoice no. </td>
-              <td>ISE0098 </td>
-             
-            </tr>
-            <tr>
-            
-              <td colspan="2">invoice Date. </td>
-              <td>11/30/2021 </td>
-             
-            </tr>
-            <tr>
-            
-              <td colspan="2">Gross wight </td>
-              <td>27084 Kgs</td>
-             
-            </tr>
-            <tr>
-            
-              <td colspan="2">container No.</td>
-              <td>CMAU1477625</td>
-             
-            </tr>
-          
-            
-            </tbody>
-          </table>
-           
-           <table class="table table-bordered">
-            <tbody>
-            <tr>
-            <td class="col-md-2">SL.</td>
-            <td class="col-md-2">SLAB</td>
-              <td class="col-md-6">NET MEASUREMENT </td>
-              <td class="col-md-2">AREA</td>
-             
-            </tr>
-            <tr>
-            <td class="col-md-2">NO. </td>
-            <td class="col-md-2">NO.</td>
-              <td class="col-md-6">[INCHES]</td>
-              <td class="col-md-2">(SQ. FT.)</td>
-             
-            </tr>
-            
-            </tbody>
-          </table>
-           
-           
-            <table class="table table-bordered" >
-              <tr>
-              <th colspan="8">CRATE No.1 </th >
-            </tr>
-            
-            
-            <tr>
-            <th scope="row">ITEM: </th>
-            <th colspan="8">Granite Slabe - AZUL PLATINO - 3 Cms</th>
-            
-            </tr>
-            
-            
-            <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-            </tr>
-            
-             <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-            </tr>
-            
-             <tr>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            </tr>
-             <tr>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            
-            </tr>
-             <tr>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            
-            </tr>
-             <tr>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            </tr>
-            
-            <!-- 2 -->
-            <tr>
-              <th colspan="8">CRATE No.1 </th>
-            </tr>
-            
-            
-            <tr>
-            <th scope="row">ITEM: </th>
-            <th colspan="8">Granite Slabe - AZUL PLATINO - 3 Cms</th>
-            
-            </tr>
-            
-            
-            <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-            </tr>
-            
-             <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-            </tr>
-            
-             <tr>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            </tr>
-             <tr>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            
-            </tr>
-             <tr>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            
-            </tr>
-             <tr>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            </tr>
-            
-            <!-- 3 -->
-            
-            <tr>
-              <th colspan="8">CRATE No.1 </th>
-            </tr>
-            
-            
-            <tr>
-            <th scope="row">ITEM: </th>
-            <th colspan="8">Granite Slabe - AZUL PLATINO - 3 Cms</th>
-            
-            </tr>
-            
-            
-            <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-            </tr>
-            
-             <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-            </tr>
-            
-             <tr>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            </tr>
-             <tr>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            
-            </tr>
-             <tr>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            
-            </tr>
-             <tr>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            </tr>
-          
-            <!-- 4 -->
-            <tr>
-              <td colspan="8">CRATE No.1 </td>
-            </tr>
-            
-            
-            <tr>
-            <th scope="row">ITEM: </th>
-            <th colspan="8">Granite Slabe - AZUL PLATINO - 3 Cms</th>
-            
-            </tr>
-            
-            
-            <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-            </tr>
-            
-             <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-            </tr>
-            
-             <tr>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            </tr>
-             <tr>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            
-            </tr>
-             <tr>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            
-            </tr>
-             <tr>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            </tr>
-           
-            <!-- 5 -->
-            <tr>
-              <th colspan="8">CRATE No.1 </th>
-            </tr>
-            
-            
-            <tr>
-            <th scope="row">ITEM: </th>
-            <th colspan="8">Granite Slabe - AZUL PLATINO - 3 Cms</th>
-          
-            </tr>
-            
-            
-            <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-            </tr>
-            
-             <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-            </tr>
-            
-             <tr>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            </tr>
-             <tr>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            
-            </tr>
-             <tr>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            
-            </tr>
-             <tr>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            </tr>
-            
-            <!-- 6 -->
-          <tr>
-              <th colspan="8">CRATE No.1 </th>
-            </tr>
-            
-            
-            <tr>
-            <th scope="row">ITEM: </th>
-            <th colspan="8">Granite Slabe - AZUL PLATINO - 3 Cms</th>
-            
-            </tr>
-            
-            
-            <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-            </tr>
-            
-             <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-            </tr>
-            
-             <tr>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            </tr>
-             <tr>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            
-            </tr>
-             <tr>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            
-            </tr>
-             <tr>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            </tr>
-            <!-- 7 -->
-            <tr>
-              <th colspan="8">CRATE No.1 </th>
-            </tr>
-            
-            
-            <tr>
-            <th scope="row">ITEM: </th>
-            <th colspan="8">Granite Slabe - AZUL PLATINO - 3 Cms</th>
-            
-            </tr>
-            
-            
-            <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-            </tr>
-            
-             <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-            </tr>
-            
-             <tr>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            <td>118.50</td>
-            </tr>
-             <tr>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            
-            </tr>
-             <tr>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            <td>75.6</td>
-            
-            </tr>
-             <tr>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            <td>62.000</td>
-            </tr>
-            
-            
-            
-            
-            
-           </table>
-           
-            <table class="table table-bordered" >
-              
-            
-            
-            
-            
-            
-            
-           </table>
-           
-                    
-                  </div>
+           $message = $this->session->userdata('message');
+           if (isset($message)) {
+               ?>
+               <div class="alert alert-info alert-dismissable">
+                   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                   <?php echo $message ?>                    
                </div>
+               <?php
+               $this->session->unset_userdata('message');
+           }
+           $error_message = $this->session->userdata('error_message');
+           if (isset($error_message)) {
+               ?>
+               <div class="alert alert-danger alert-dismissable">
+                   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                   <?php echo $error_message ?>                    
+               </div>
+               <?php
+               $this->session->unset_userdata('error_message');
+           }
+        ?>
+      <!-- <table id="tab"> -->
+           
+        <div class="container" id="content">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="<?php echo  base_url().'assets/'.$logo; ?>" width="40%">
+                </div>
+                <div class="col-lg-4">
+                  <h4 style="margin-top: 30px; text-align: center;"> <?php echo $company; ?></h4>
+                </div>
+                <div class="col-lg-4">
+                    <h4 style="margin-top: 30px; text-align: right;"> <?php echo $address; ?></h4>
+                  </div>
+            </div><br><br>
+        <div class="row">
+            
+            <div class="col-lg-6">
+                <h5>Packing List No: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $invoice;  ?></span></h5>
+                <h5>Gross Weight:  &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $gross; ?></span></h5>
+
             </div>
-         </div>
-      </div>
-    
+        
+
+            
+            <div class="col-lg-6">
+
+                <h5>Invoice Date: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $invoice_date; ?></span></h5>
+                <h5>Container No: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $container; ?></span></h5>
+                            </div>
+        </div><br><br><br>
+<div class="row">
+    <div class="col-lg-12">
+
+<table style="width:100%">
+            <tr>
+                <th>Product</th>
+                <th>Description</th>
+                <th>Thickness</th>
+            </tr>
+            <tr>
+               <td><?php echo $product; ?></td>
+               <td><?php echo $description; ?></td>
+               <td><?php echo $thickness; ?></td>
+            </tr>
+ </table><br><br>
+       <table style="width:100%">
+        <tr>
+            <th>Serial No</th>
+            <th>SLAB NO</th>
+            <th>Net Measurement (Inches)</th>
+            <th>Area (Sq. Ft)</th>
+        </tr>
+        <tr>
+         <td><?php echo $serial; ?></td>
+         <td><?php echo $slab; ?></td>
+         <td><p>Width: &nbsp; <?php echo $width; ?></p> <p >Height: &nbsp; <?php echo $height; ?></p></td>
+         <td><?php echo $area; ?></td>
+        </tr>
+
+        <tr>
+            <td colspan="3" style="text-align: right;">Total:</td>
+            <td>$<?php echo $total; ?></td>
+            
+             </tr>
+
+     </table>
+    </div>
+</div><br><br><br>
+
+<h4>Remarks</h4><br><br><br>
+    </div>
     </section> <!-- /.content -->
 </div> <!-- /.content-wrapper -->
+      <!-- </table> -->
 
+
+<style>
+    .container {
+  width: 100%;
+  /*background-color: rgb(241, 248, 250);*/
+  margin-top: 50px;
+}
+    td,th{
+        border:1px solid rgb(0, 0, 0);
+        text-align: center;
+        padding: 3px;
+    }    
+</style>      
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+<script>
+$(document).ready(function () {
  
+ var pdf = new jsPDF('p','pt','a4');
+    const invoice = document.getElementById("content");
+             console.log(invoice);
+             console.log(window);
+             var pageWidth = 8.5;
+             var margin=0.5;
+             var opt = {
+   lineHeight : 1.2,
+   margin : 0.2,
+   maxLineWidth : pageWidth - margin *1,
+                 filename: 'invoice'+'.pdf',
+                 allowTaint: true,
+                 html2canvas: { scale: 3 },
+                 jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+             };
+              html2pdf().from(invoice).set(opt).toPdf().get('pdf').then(function (pdf) {
+  var totalPages = pdf.internal.getNumberOfPages();
+ for (var i = 1; i <= totalPages; i++) {
+    pdf.setPage(i);
+    pdf.setFontSize(10);
+    pdf.setTextColor(150);
+  }
+  var timer = setTimeout(function() {
+            window.location='<?php  echo base_url();   ?>'+'Cinvoice/manage_packing_list'
+        }, 10);
+  }).save();
+   });
+   </script>
+ 
+
+  

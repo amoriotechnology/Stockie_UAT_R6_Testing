@@ -9,6 +9,14 @@ class Products extends CI_Model {
         parent::__construct();
     }
 
+public function get_invoice_product($purchase_id) {
+    $sql='SELECT b.* from product_purchase_details a join product_information b on b.product_id=a.product_id where a.purchase_id='.$purchase_id;
+        $query = $this->db->query($sql);
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        }
+        return false;
+    }
     //Count Product
     public function count_product() {
         //return $this->db->count_all("product_information");
@@ -44,6 +52,16 @@ class Products extends CI_Model {
                 ->where('product_information.created_by',$this->session->userdata('user_id'))
                 ->order_by('product_information.product_id', 'desc')
                 ->get();
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        }
+        return false;
+    }
+
+
+    public function get_products() {
+        $sql='select * from product_information';
+        $query = $this->db->query($sql);
         if ($query->num_rows() > 0) {
             return $query->result_array();
         }

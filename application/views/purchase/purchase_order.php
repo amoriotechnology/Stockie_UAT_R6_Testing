@@ -488,7 +488,7 @@
 
             <div id="customeMessage" class="alert hide"></div>
 
-      <?php echo form_open_multipart('Cproduct/insert_product_from_expense', array('class' => 'form-vertical', 'id' => 'insert_product_from_expense', 'name' => 'insert_product')) ?>
+      <?php echo form_open_multipart('Cpurchase/insert_po_product', array('class' => 'form-vertical', 'id' => 'insert_product_from_expense', 'name' => 'insert_product')) ?>
 
     <div class="panel-body">
 
@@ -513,7 +513,15 @@
                 <div class="form-group row">
                     <label for="product_name" class="col-sm-4 col-form-label"><?php echo display('product_name') ?> <i class="text-danger">*</i></label>
                     <div class="col-sm-8">
-                        <input class="form-control" name="product_name" type="text" id="product_name" placeholder="<?php echo display('product_name') ?>" required tabindex="1" >
+                      <select name="product_id">
+                          <option value="">Select Products</option>
+                          <?php 
+                          for($i=0;$i<count($products);$i++)
+                          {
+                            ?>
+                            <option value="<?php echo $products[$i]['product_id']; ?>"><?php echo $products[$i]['product_name']; ?></option>
+                        <?php } ?>
+                      </select>
                     </div>
                 </div>
             </div>

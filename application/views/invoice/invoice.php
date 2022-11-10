@@ -113,37 +113,6 @@
                         <?php echo form_open_multipart('Cinvoice/manage_invoice',array('class' => 'form-vertical', 'id' => 'insert_sale','name' => 'insert_sale'))?>
 
 
-<<<<<<< HEAD
-                        <?php echo form_open('', array('class' => 'form-inline', 'method' => 'get')) ?>
-
-                        <?php
-
-                      
-
-                        $today = date('Y-m-d');
-
-                        ?>
-
-                        <div class="form-group">
-                            &nbsp; 
-                            <label class="" for="from_date"><?php echo display('start_date') ?></label>
-                            &nbsp; 
-                            <input type="date" name="from_date" class="form-control" id="from_date" value="" placeholder="<?php echo display('start_date') ?>" >
-
-                        </div> 
-
-                        <div class="form-group">
-                            &nbsp; 
-                            <label class="" for="to_date"><?php echo display('end_date') ?></label>
-                            &nbsp; 
-                            <input type="date" name="to_date" class="form-control" id="to_date" placeholder="<?php echo display('end_date') ?>" value="">
-
-                        </div>  
-
-                        <button type="button" id="btn-filter" class="btn btn-success"><?php echo display('find') ?></button>
-
-                        <?php echo form_close() ?>
-=======
 <?php
 
 
@@ -155,7 +124,6 @@ $today = date('Y-m-d');
 <div class="form-group">
 
     <label class="" for="from_date"><?php echo 'Search By Date Range : '; ?></label>
->>>>>>> 65a0d4d5e3a2e5a64b9c3ed043ab5e0c9647f0cf
 
     <input type="text" name="daterange" />
     <input type="submit" id="btn-filter" class="btn btn-success" value="Search"/>
@@ -211,7 +179,7 @@ $today = date('Y-m-d');
                     <div class="panel-body">
 
                     <div id="customers">
-  <table class="table table-bordered" cellspacing="0" width="100%"  id="ProfarmaInvList">
+  <table class="table table-bordered" cellspacing="0" width="100%" id="InvList">
     <thead>
       <tr>
       <th class="ID" data-resizable-column-id="1" style="width:50px;">ID</th>
@@ -233,13 +201,28 @@ $today = date('Y-m-d');
       if(count($sale['rows'])>0){
      foreach($sale['rows'] as $k=>$arr){
           ?>
-          <tr><td class="ID"><?php  echo $count;  ?></td>
- <td class="Invoice No"><?php   echo $arr['invoice_id'];  ?></td>
-   <td class="Sale By"><?php   echo $arr['first_name'].' '.$arr['last_name'];  ?></td>
-   <td class="Customer Name"><?php   echo $arr['customer_name'];  ?></td>
-<td class="Date"><?php   echo $arr['date'];  ?></td>
-  <td class="Total Amount"><?php   echo $arr['total_amount'];  ?></td>
-  <td class="Action"><a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cinvoice/invoice_update_form/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td></tr>
+          <tr><td><?php  echo $count;  ?></td>
+ <td><?php   echo $arr['invoice_id'];  ?></td>
+   <td><?php   echo $arr['first_name'].' '.$arr['last_name'];  ?></td>
+   <td><?php   echo $arr['customer_name'];  ?></td>
+<td><?php   echo $arr['date'];  ?></td>
+  <td><?php   echo $arr['sales_by'];  ?></td>
+  <!-- <td><a href="<?php echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php echo  $arr['invoice_id'];  ?>">edit</a><input type="button" value="delete"/></td> -->
+  <div class="form-group">
+  <td>
+  <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/invoice_inserted_data/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-download" aria-hidden="true"></i></a>
+  <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/sendmail_with_attachments/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+  </td>
+  </div>
+</tr>
+  <td><a href="http://localhost/Stockie_UAT_R6_Testing/Cinvoice/invoice_inserted_data/20221103085607" style="    background: #3ca5de;
+    color: #fff;" class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Expenses Details"><i class="fa fa-window-restore" aria-hidden="true"></i></a>
+      
+    <a class="btn btn-primary btn-sm" style="color: #fff;background:#3ca5de" href="<?php echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+<a class="btn btn-primary btn-sm" style="color: #fff;background:#3ca5de" href="<?php echo base_url()?>Cinvoice/sendmail_with_attachments/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+
+</td></tr>
      <?php   
 $count++;
 

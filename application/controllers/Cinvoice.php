@@ -45,6 +45,7 @@ class Cinvoice extends CI_Controller {
 
     }
 
+
      public function profarma_invoice() {
 
         $CI = & get_instance();
@@ -101,19 +102,18 @@ class Cinvoice extends CI_Controller {
 
         $CI->load->library('occational');
 
-
-
         $purchase_detail = $CI->Invoices->profarma_pdf($purchase_id);
 
+        // print_r($purchase_detail); die();
 
         $all_profarma = $CI->Invoices->all_profarma($purchase_id);
 
-  $product_name = $this->db->select('*')->from('product_information')
-  ->where("product_id",$all_profarma[0]['product_id'])->get()->result_array();
-  // print_r($product_name);die();
+        $product_name = $this->db->select('*')->from('product_information')
+        ->where("product_id",$all_profarma[0]['product_id'])->get()->result_array();
+        // print_r($product_name);die();
 
-  $profarma_details = $this->db->select('*')->from('profarma_invoice_details')
-  ->where("purchase_id",$purchase_detail[0]['purchase_id'])->get()->result_array();
+        $profarma_details = $this->db->select('*')->from('profarma_invoice_details')
+        ->where("purchase_id",$purchase_detail[0]['purchase_id'])->get()->result_array();
 
    // print_r($profarma_details);die();
 
@@ -214,9 +214,13 @@ class Cinvoice extends CI_Controller {
 
         $chapterList = $CI->parser->parse('invoice/profarma_invoice_html', $data, true);
         $this->template->full_admin_html_view( $chapterList);
+
+
         return $chapterList;
 
     }
+
+
 
     public function get_email_data(){
         $CI = & get_instance();
@@ -484,6 +488,10 @@ echo json_encode($data);
 
 
 
+
+
+
+
     //Insert invoice
 
     public function insert_invoice() {
@@ -511,7 +519,8 @@ echo json_encode($data);
 
     public function manual_sales_insert(){
 
-
+// direct('Cinvoice');
+exit;
         $CI = & get_instance();
 
         $CI->auth->check_admin_auth();
@@ -520,7 +529,6 @@ echo json_encode($data);
 
         $invoice_id = $CI->Invoices->invoice_entry();
 // print_r($invoice_id);
-die();
         if(!empty($invoice_id)){
 
         $data['status'] = true;
@@ -570,7 +578,7 @@ print_r($data);
         $this->session->set_userdata(array('message' => display('successfully_added')));
         if (isset($_POST['add-ocean-export'])) {
            // print_r($_POST['add-ocean-export']);
-          redirect(base_url('Cinvoice/manage_ocean_export_tracking'));
+          redirect(base_url('Cinvoice/ocean_export_tracking'));
             exit;
         } elseif (isset($_POST['add-ocean-export-another'])) {
            // print_r($_POST['add-ocean-export-another']);
@@ -578,12 +586,6 @@ print_r($data);
             exit;
         }
     }
-
-
-    
-
-
-
 
 
        public function invoice_pdf_generate($invoice_id = null) {
@@ -994,7 +996,8 @@ print_r($data);
     public function manage_invoice() {
 
 // echo 3;
-$date = $this->input->post("daterange");
+        $date = $this->input->post("daterange");
+
         $CI = & get_instance();
 
         $this->auth->check_admin_auth();
@@ -1004,7 +1007,10 @@ $date = $this->input->post("daterange");
         $CI->load->model('Invoices');
 
         $value = $this->linvoice->invoice_list();
+
         $sale = $CI->Invoices->newsale($date);
+
+        // print_r($sale); die();
 
         $data = array(
 
@@ -1021,6 +1027,67 @@ $date = $this->input->post("daterange");
 
     }
 
+
+public function sendmail_with_attachments($invoiceid)
+{
+
+
+
+$uid=$_SESSION['user_id'];
+
+ $sql='select c.* from company_information c 
+    
+    join 
+    user_login as u 
+    on u.cid=c.company_id
+    where u.user_id='.$uid;
+    $query=$this->db->query($sql);
+
+    $company_info=$query->result_array();
+
+
+ $sql='SELECT c.* from invoice i JOIN customer_information c on c.customer_id=i.customer_id where i.invoice_id='.$uid;
+    $query=$this->db->query($sql);
+
+    $customer_info=$query->result_array();
+
+
+
+
+
+  $sql='SELECT p.* FROM `invoice_details` i JOIN
+
+ product_information p
+ on p.product_id=i.product_id
+
+ where 
+ i.invoice_id="'.$invoiceid.'";
+ ';
+
+    $query=$this->db->query($sql);
+
+    $product_info=$query->result_array();
+
+
+
+    $data['company_info']=$company_info;
+    $data['customer_info']=$customer_info;
+    $data['product_info']=$product_info;
+    $data['invoiceid']=$invoiceid;
+
+
+
+
+    $content = $this->load->view('pdf_attach_mail/new_sale', $data, true);
+    if($content)
+    {
+  redirect("Cinvoice/manage_invoice");
+}
+         // $this->template->full_admin_html_view($content);
+}   
+
+
+
       public function manage_profarma_invoice() {
 
         $date = $this->input->post("daterange");
@@ -1033,6 +1100,7 @@ $date = $this->input->post("daterange");
         $CI->load->model('Invoices');
 
       $invoice = $CI->Invoices->get_profarma_invoice();
+      
       $sale = $CI->Invoices->sample($date);
 
         $data = array(
@@ -1238,29 +1306,52 @@ $this->db->update('bootgrid_data');
 
 
 
+    // public function CheckProfarmaInvoiceList(){
+       
+    //     $CI = & get_instance();
+    //     $CI->auth->check_admin_auth();
+    //    $CI->load->model('Invoices');
+    //     $content = $CI->Invoices->sample();
+       
+    //     $this->template->full_admin_html_view($content);
+ 
+    // } 
+
     public function CheckProfarmaInvoiceList(){
-       
-       // $date = $this->input->post("daterange");
+
+        // GET data
+
+        $this->load->model('Invoices');
+
+        $postData = $this->input->post();
+
+        $data = $this->Invoices->getProfarmaInvoiceList($postData);
+
+        echo json_encode($data);
+
+    }
 
 
- 
-        $CI = & get_instance();
-        $CI->auth->check_admin_auth();
-       $CI->load->model('Invoices');
-        $content = $CI->Invoices->sample();
-       
-        $this->template->full_admin_html_view($content);
- 
-    } 
+     public function CheckPackingList(){
+        // GET data
+        $this->load->model('Invoices');
+        $postData = $this->input->post();
+        $data = $this->Invoices->getPackingList($postData);
+        echo json_encode($data);
+    }
 
-	public function index1()
-	{ $CI = & get_instance();
+
+
+
+
+    public function index1()
+    { $CI = & get_instance();
         $CI->load->model('Invoices','boot');
-		$data['data'] = $this->boot->get_datas();
+        $data['data'] = $this->boot->get_datas();
         print_r($data);
         die();
-		$this->load->view('invoice/profarma_invoice_list',$data);
-	}
+        $this->load->view('invoice/profarma_invoice_list',$data);
+    }
 
      //Retrive right now inserted data to cretae html
     public function ocean_export_tracking_details_data($purchase_id) {
@@ -1813,6 +1904,63 @@ $this->db->update('bootgrid_data');
     }
 
 
+ 
+
+
+    public function packing_list_details_data() {
+        $CI = & get_instance();
+        $CC = & get_instance();
+        $CA = & get_instance();
+        $CB = & get_instance();
+        $w = & get_instance();
+        $CI->auth->check_admin_auth();
+        $CI->load->library('linvoice');
+        $CB->load->model('Invoices');
+        $CA->load->model('invoice_design');
+        $CC->load->model('invoice_content');
+        $w->load->model('Ppurchases');
+        $company_info = $w->Ppurchases->retrieve_company();
+        // print_r($company_info); exit();
+        $dataw = $CA->invoice_design->retrieve_data();
+        // print_r($dataw); die();
+        $datacontent = $CI->invoice_content->retrieve_data();
+
+        $packing_details = $CB->Invoices->packing_details_data();
+
+        // print_r($packing_details); exit();
+
+        $data=array(
+            'header'=> $dataw[0]['header'],
+            'logo'=> $dataw[0]['logo'],
+            'color'=> $dataw[0]['color'],
+            'template'=> $dataw[0]['template'],
+            'company' => $company_info[0]['company_name'],
+            'address' => $company_info[0]['address'],
+            'invoice'  =>$packing_details[0]['invoice_no'],
+            'invoice_date' => $packing_details[0]['invoice_date'],
+            'gross' => $packing_details[0]['gross_weight'],
+            'container' => $packing_details[0]['container_no'],
+            'description' => $packing_details[0]['description'],
+            'thickness' => $packing_details[0]['thickness'],
+            'total' => $packing_details[0]['grand_total_amount'],
+            'serial' => $packing_details[0]['serial_no'],
+            'slab' => $packing_details[0]['slab_no'],
+            'width' => $packing_details[0]['width'],
+            'height' => $packing_details[0]['height'],
+            'area' => $packing_details[0]['area'],
+            'product' => $packing_details[0]['product_name']
+        );
+     
+        // print_r($data); exit();
+       // echo $content = $CI->linvoice->invoice_add_form();
+        $content = $this->load->view('invoice/packing_list_invoice_html', $data, true);
+        //$content='';
+        $this->template->full_admin_html_view($content);
+    }
+
+
+
+
 
     //POS invoice page load
 
@@ -2043,6 +2191,8 @@ $this->db->update('bootgrid_data');
 
         $all_invoice = $CI->Invoices->all_invoice();
 
+         // print_r($all_invoice); die();
+
         $dataw = $CA->invoice_design->retrieve_data();
        
         $datacontent = $CC->invoice_content->retrieve_data();
@@ -2050,6 +2200,8 @@ $this->db->update('bootgrid_data');
         $customer = $this->db->select('*')->from('customer_information')->where("customer_id",$invoice_detail[0]['customer_id'])->get()->result_array();
 
          $product_name = $this->db->select('*')->from('product_information')->where("product_id",$all_invoice[0]['product_id'])->get()->result_array();
+
+        //  echo $this->db->last_query(); die();
 
           // print_r($product_name); die();
 
@@ -2085,6 +2237,62 @@ $this->db->update('bootgrid_data');
     $content = $this->load->view('invoice/new_invoice_pdf_html', $data, true);
 
     $this->template->full_admin_html_view($content);
+    }
+
+
+    public function sale_packing(){
+
+        $CI = & get_instance();
+        $CC = & get_instance();
+        $CA = & get_instance();
+        $w = & get_instance();
+
+        $w->load->model('Ppurchases');
+        $company_info = $w->Ppurchases->retrieve_company();
+        $CI->load->model('Invoices');
+        $CA->load->model('invoice_design');
+        $CC->load->model('invoice_content');
+        
+        $company_info = $w->Ppurchases->retrieve_company();
+        $packing_detail = $CI->Invoices->packing_pdf();
+
+        // print_r($packing_detail); die();
+
+        $data=array(
+            'header'=> $dataw[0]['header'],
+            'logo'=> $dataw[0]['logo'],
+            'color'=> $dataw[0]['color'],
+            'template'=> $dataw[0]['template'],
+            'company'=> $company_info[0]['company_name'],
+            // 'address'=> $company_info[0]['address'],
+            // 'customername'=> $customer[0]['customer_name'],
+            // 'payment'=> $invoice_detail[0]['payment_type'],
+            // 'billing'=> $invoice_detail[0]['billing_address'],
+            // 'date'=> $invoice_detail[0]['date'],
+            // 'paymentterms'=> $invoice_detail[0]['payment_terms'],
+            // 'days'=> $invoice_detail[0]['number_of_days'],
+            // 'mobile'=> $customer[0]['customer_mobile'],
+            // 'customeraddress'=> $customer[0]['customer_address'],
+            // 'invoicenumber'=> $invoice_detail[0]['commercial_invoice_number'],
+            // 'container'=> $invoice_detail[0]['container_no'],
+            // 'blno'=> $invoice_detail[0]['bl_no'],
+            // 'port'=> $invoice_detail[0]['port_of_discharge'],
+            // 'paymentdue'=> $invoice_detail[0]['payment_due_date'],
+            // 'product'=> $product_name[0]['product_name'],
+            // 'stock'=> $product_name[0]['p_quantity'],
+            // 'quantity'=> $all_invoice[0]['quantity'],
+            // 'rate'=> $all_invoice[0]['rate'],
+            // 'total'=> $all_invoice[0]['total_price'],
+        );
+     
+    
+
+    $content = $this->load->view('invoice/packing_list_invoice_html', $data, true);
+
+    $this->template->full_admin_html_view($content);
+
+
+
     }
 
 
@@ -2959,7 +3167,7 @@ $this->db->update('bootgrid_data');
 
 
 
-       public function performer_ins(){
+    public function performer_ins(){
           
         $CI = & get_instance();
         $CI->auth->check_admin_auth();
@@ -2998,19 +3206,14 @@ $this->db->update('bootgrid_data');
                     'ac_details'=>$this->input->post('ac_details'),
                     'sales_by'        => $this->session->userdata('user_id')
                  );
-            $content = $this->load->view('invoice/profarma_invoice', $data, true);
+                $content = $this->load->view('invoice/profarma_invoice', $data, true);
 
-        $this->template->full_admin_html_view($content);
+                $this->template->full_admin_html_view($content);
 
                   
                  $this->db->insert('profarma_invoice', $data);
                  $avl = $this->input->post('available_quantity');
                  $p_id = $this->input->post('product_name');
-               //  echo   $this->db->last_query();
-                
-                $avl = $this->input->post('available_quantity');
-                 $p_id = $this->input->post('product_id');
-         // print_r($p_id);
                  $quantity = $this->input->post('product_quantity');
                  $rate = $this->input->post('product_rate');
                  $t_price = $this->input->post('total_price');
@@ -3027,20 +3230,17 @@ $this->db->update('bootgrid_data');
                         'purchase_detail_id' => $this->generator(15),
                         'purchase_id'        => $purchase_id,
                         'product_id'         => $product_id,
-
                         // 'product_name'         => $product_name,
-
-                       
                         'quantity'           => $product_quantity,
                         'rate'               => $product_rate,
                         'total_amount'       => $total_price,
                         'create_by'          =>  $this->session->userdata('user_id'),
                         'status'             => 1
                     );
-
                     // print_r($data1); exit();
 
-                  
+                   echo json_encode($data1);
+                   die();
                     $this->db->insert('profarma_invoice_details', $data1);
                     
                 }
@@ -3048,16 +3248,18 @@ $this->db->update('bootgrid_data');
                     $this->session->set_userdata(array('message' => display('successfully_added')));
 
                     redirect('Cinvoice/manage_profarma_invoice');
-
-
                
 
 
      }
 
+
+
+
+
         public function instant_customer(){
 
-      $this->load->model('Customers');
+         $this->load->model('Customers');
 
        
 

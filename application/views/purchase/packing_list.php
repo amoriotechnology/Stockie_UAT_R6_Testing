@@ -133,7 +133,7 @@ $today = date('Y-m-d');
 
                     <div class="panel-body">
                     <div id="customers">
-  <table class="table table-bordered" cellspacing="0" width="100%" id="ProfarmaInvList">
+  <table class="table table-bordered" cellspacing="0" width="100%" id="PackingOrderList">
     <thead>
       <tr>
       <th class="ID">ID</th>
@@ -156,14 +156,21 @@ $today = date('Y-m-d');
     if(count($expense['rows'])>0){
         foreach($expense['rows'] as $k=>$arr){
           ?>
-          <tr><td class="ID"><?php  echo $count;  ?></td>
- <td class="Invoice No"><?php   echo $arr['invoice_no'];  ?></td>
-   <td class="Expense Packing ID"><?php   echo $arr['expense_packing_id'];  ?></td>
-   <td class="Gross Weight"><?php   echo $arr['gross_weight'];  ?></td>
-<td class="Container No."><?php   echo $arr['container_no'];  ?></td>
-  <td class="Invoice Date"><?php   echo $arr['invoice_date'];  ?></td>
-  <td class="Thickness"><?php   echo $arr['thickness'];  ?></td>
-  <td class="Action"><a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cpurchase/packing_list_update_form/<?php echo  $arr['expense_packing_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td></tr>
+
+          <tr><td><?php  echo $count;  ?></td>
+ <td><?php   echo $arr['invoice_no'];  ?></td>
+   <td><?php   echo $arr['expense_packing_id'];  ?></td>
+   <td><?php   echo $arr['gross_weight'];  ?></td>
+<td><?php   echo $arr['container_no'];  ?></td>
+  <td><?php   echo $arr['invoice_date'];  ?></td>
+  <td><?php   echo $arr['thickness'];  ?></td>
+  <td>
+<a href="<?php echo base_url(); ?>Cpurchase/purchase_details_data/20221103085607" style='background-color: #62d0f1;
+    color: #fff;
+' class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Expenses Details"><i class="fa fa-window-restore" aria-hidden="true"></i></a>
+    <a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cpurchase/packing_update_form/<?php echo  $arr['expense_packing_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+
+  </td></tr>
      <?php   
 $count++;
      

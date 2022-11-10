@@ -13,6 +13,15 @@ class Cpurchase extends CI_Controller {
         )); 
     }
 
+
+public function packing_update_form($purchase_id)
+{
+$CI = & get_instance();
+        $CI->auth->check_admin_auth();
+        $CI->load->library('lpurchase');
+        $content = $CI->lpurchase->packing_update_form($purchase_id);
+        $this->template->full_admin_html_view($content);
+}
     public function index() {
         $CI = & get_instance();
         $CI->auth->check_admin_auth();
@@ -129,9 +138,9 @@ class Cpurchase extends CI_Controller {
        //  $CI->load->library('lpurchase');
        //  $data=array();
        // // echo $content = $CI->linvoice->invoice_add_form();
-         $content1 = $this->load->view('purchase/purchase_order', $data, true);
+       //  $content = $this->load->view('purchase/purchase_order', $data, true);
        //  //$content='';
-         $this->template->full_admin_html_view($content1);
+       //  $this->template->full_admin_html_view($content);
 
     }
 
@@ -292,20 +301,26 @@ class Cpurchase extends CI_Controller {
         $CI = & get_instance();
         $CI->auth->check_admin_auth();
         $CI->load->model('Purchases');
-      $data=  $CI->Purchases->packing_list_entry();
-      $this->session->set_userdata(array('message' => display('successfully_added')));
-      $content = $this->load->view('purchase/add_packing_list', $data, true);
-      
-      //$content='';
-      $this->template->full_admin_html_view($content);
-      
-       
+        $CI->Purchases->packing_list_entry();
+        $this->session->set_userdata(array('message' => display('successfully_added')));
+        if (isset($_POST['add-packing-list'])) {
+            redirect(base_url('Cpurchase/manage_packing_list'));
+            exit;
+        } elseif (isset($_POST['add-packing-list-another'])) {
+            redirect(base_url('Cpurchase'));
+            exit;
+        }
     }
 
 
 
 
     public function insert_purchase_order() {
+
+
+
+        print_r($_REQUEST);
+        exit; 
         $CI = & get_instance();
         $CI->auth->check_admin_auth();
         $CI->load->model('Purchases');
@@ -356,6 +371,8 @@ class Cpurchase extends CI_Controller {
 
     //purchase Update Form
     public function purchase_update_form($purchase_id) {
+      
+       
         $CI = & get_instance();
         $CI->auth->check_admin_auth();
         $CI->load->library('lpurchase');
@@ -488,9 +505,7 @@ class Cpurchase extends CI_Controller {
           $data=array();
         $this->load->model('Purchases');
 
-        // $data['company_info']=
-            
-        exit;
+    
         $content = $CI->lpurchase->purchase_details_data($purchase_id);
         $this->template->full_admin_html_view($content);
     }
@@ -509,7 +524,9 @@ class Cpurchase extends CI_Controller {
 
 
      //Retrive right now inserted data to cretae html
-    public function purchase_order_details_data() {
+    public function purchase_order_details_data($purchase_id) {
+
+
 
         $CI = & get_instance();
         $CI->auth->check_admin_auth();
@@ -517,13 +534,15 @@ class Cpurchase extends CI_Controller {
         $CI->load->library('linvoice');
         $data=array();
         $this->load->model('Purchases');
-        $this->load->model('invoice_design');
         $invoice_no = $this->uri->segment(3); 
-        $data['invoice_setting'] =$this->invoice_design->retrieve_data();
         $data['invoice'] =$this->Purchases->get_purchases_invoice($invoice_no);
         $data['order'] =$this->Purchases->get_purchases_order($invoice_no);
         $data['supplier'] =$this->Purchases->get_supplier($invoice_no);
         $data['company_info'] =$this->Purchases->company_info();
+
+
+      
+
      
 
       
@@ -554,30 +573,21 @@ class Cpurchase extends CI_Controller {
         $CC = & get_instance();
         $CA = & get_instance();
         $CB = & get_instance();
-        $w = & get_instance();
         $CI->auth->check_admin_auth();
         $CI->load->library('linvoice');
         $CB->load->model('Purchases');
         $CA->load->model('invoice_design');
         $CC->load->model('invoice_content');
-        $w->load->model('Ppurchases');
-        $company_info = $w->Ppurchases->retrieve_company();
-        // print_r($company_info); exit();
         $dataw = $CA->invoice_design->retrieve_data();
-        // print_r($dataw); die();
         $datacontent = $CI->invoice_content->retrieve_data();
 
         $packing_details = $CB->Purchases->packing_details_data($expense_packing_id);
-
-        // print_r($packing_details); exit();
 
         $data=array(
             'header'=> $dataw[0]['header'],
             'logo'=> $dataw[0]['logo'],
             'color'=> $dataw[0]['color'],
             'template'=> $dataw[0]['template'],
-            'company' => $company_info[0]['company_name'],
-            'address' => $company_info[0]['address'],
             'invoice'  =>$packing_details[0]['invoice_no'],
             'invoice_date' => $packing_details[0]['invoice_date'],
             'gross' => $packing_details[0]['gross_weight'],
@@ -593,18 +603,11 @@ class Cpurchase extends CI_Controller {
             'product' => $packing_details[0]['product_name']
         );
      
-       //  print_r($data); exit();
+        // print_r($data); exit();
        // echo $content = $CI->linvoice->invoice_add_form();
         $content = $this->load->view('purchase/packing_invoice_html', $data, true);
-        if ($content) {
-            #set success message
-            $this->session->set_flashdata('message', display('Downloaded Successfully'));
-        } else {
-            #set exception message
-            $this->session->set_flashdata('exception', display('please_try_again'));
-        }
-        redirect(base_url('Cpurchase/manage_purchase_order'));
-      //  $this->template->full_admin_html_view($content);
+        //$content='';
+        $this->template->full_admin_html_view($content);
     }
 
     public function trucking_details_data() {
@@ -684,6 +687,34 @@ class Cpurchase extends CI_Controller {
             force_download(FCPATH.'assets/data/pdf/'.$file_name, null);
     }
 
+public function insert_po_product()
+{
+
+
+$date=date('d-m-Y');
+
+     $sql='insert supplier_product(
+    product_id,
+    products_model,
+    supplier_id,
+    supplier_price,
+    date
+
+    ) values(
+
+    "'.$_REQUEST['product_id'].'",
+    "'.$_REQUEST['model'].'",
+    "'.$_REQUEST['supplier_id'].'",
+    "'.$_REQUEST['price'].'",
+    "'.$date.'",
+
+)';
+
+$qury=$this->db->query($sql);
+
+    redirect('Cpurchase/purchase_order');
+    
+}
 
 
    

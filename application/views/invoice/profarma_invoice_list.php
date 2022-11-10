@@ -86,7 +86,7 @@
 
             <div class="alert alert-danger alert-dismissable">
 
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">X</button>
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
 
                 <?php echo $error_message ?>                    
 
@@ -101,29 +101,6 @@
         ?>
 
 
-        <div class="row">
-            <div class="col-sm-12">
-
-                <?php if($this->permission1->method('new_invoice','create')->access()){ ?>
-
-                    <a href="<?php echo base_url('Cinvoice/profarma_invoice') ?>" class="btn btn-info m-b-5 m-r-2"><i class="ti-plus"> </i> New Profarma Invoice </a>
-
-                <?php }?>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- date between search -->
-
-        <div class="row">
-
-             <div class="col-sm-12">
-
-                <div class="panel panel-default">
-
 
 <div class="panel panel-default">
                     <div class="panel-body"> 
@@ -137,31 +114,7 @@
                      
                         <?php echo form_open_multipart('Cinvoice/manage_profarma_invoice',array('class' => 'form-vertical', 'id' => 'insert_sale','name' => 'insert_sale'))?>
 
-                        <?php echo form_open('', array('class' => 'form-inline', 'method' => 'get')) ?>
 
-                        <?php
-
-                      
-
-                        $today = date('Y-m-d');
-
-                        ?>
-
-                        <div class="form-group">
-                            &nbsp;
-                            <label class="" for="from_date"><?php echo display('start_date') ?></label>
-                            &nbsp;
-                            <input type="date" name="from_date" class="form-control" id="from_date" value="" placeholder="<?php echo display('start_date') ?>" >
-
-                        </div> 
-
-
-
-                        <div class="form-group">
-                            &nbsp;
-                            <label class="" for="to_date"><?php echo display('end_date') ?></label>
-                            &nbsp;
-                            <input type="date" name="to_date" class="form-control" id="to_date" placeholder="<?php echo display('end_date') ?>" value="">
 <?php
 
 
@@ -246,17 +199,29 @@ $today = date('Y-m-d');
 
      <?php
     $count=1;
-
+   
+  
     if(count($sale['rows'])>0){
-        foreach($sale['rows'] as $k=>$arr){
+      foreach($sale['rows'] as $k=>$arr){
           ?>
-          <tr><td class="ID"><?php  echo $count;  ?></td>
- <td class="Invoice No"><?php   echo $arr['chalan_no'];  ?></td>
-   <td class="Sale By"><?php   echo $arr['first_name'].' '.$arr['last_name'];  ?></td>
-   <td class="Customer Name" ><?php   echo $arr['customer_name'];  ?></td>
-<td class="Date"><?php   echo $arr['purchase_date'];  ?></td>
-  <td class="Total Amount"><?php   echo $arr['total'];  ?></td>
-  <td class="Action"><a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php echo  $arr['purchase_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td></tr>
+          <tr><td><?php  echo $count;  ?></td>
+ <td><?php   echo $arr['chalan_no'];  ?></td>
+   <td><?php   echo $arr['first_name'].' '.$arr['last_name'];  ?></td>
+   <td><?php   echo $arr['customer_name'];  ?></td>
+<td><?php   echo $arr['purchase_date'];  ?></td>
+  <td><?php   echo $arr['sales_by'];  ?></td>
+
+  <div class="form-group">
+  <td>
+  <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/performa_pdf/<?php echo  $arr['purchase_id'];  ?>"><i class="fa fa-download" aria-hidden="true"></i></a>
+  <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+  </td>
+  </div>
+
+  </tr>
+
+</tr>
      <?php   
 $count++;
      

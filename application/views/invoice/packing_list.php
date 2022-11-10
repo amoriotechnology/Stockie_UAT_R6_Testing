@@ -70,29 +70,6 @@
                      
                         <?php echo form_open_multipart('Cinvoice/manage_packing_list',array('class' => 'form-vertical', 'id' => 'insert_sale','name' => 'insert_sale'))?>
 
-		                    <div class="form-group">
-		                        <label class="" for="from_date"><?php echo display('from') ?></label>
-		                        <input type="date" name="from_date" class="form-control" id="from_date" value="" placeholder="<?php echo display('start_date') ?>" >
-		                    </div> 
-                        
-		                    <div class="form-group">
-		                    	  &nbsp;
-		                        <label class="" for="to_date"><?php echo display('to') ?></label>
-		                        &nbsp;
-		                        <input type="date" name="to_date" class="form-control" id="to_date" placeholder="<?php echo display('end_date') ?>" value="">
-		                    </div>  
-
-		                    <button type="button" id="btn-filter" class="btn btn-success"><?php echo display('find') ?></button>
-		                  
-		             <?php echo form_close()?>
-		            </div>
-		           
-		        </div>
-		    </div>
-		    
-		   
-		    </div>
-
 
 <?php
 
@@ -157,7 +134,7 @@ $today = date('Y-m-d');
                     <input type="hidden" value="Sale/PackingList" id="url"/>
                     <div class="panel-body">
                     <div id="customers">
-  <table class="table table-bordered" cellspacing="0" width="100%" id="ProfarmaInvList">
+  <table class="table table-bordered" cellspacing="0" width="100%" id="PackingOrderList">
     <thead>
       <tr>
       <th class="ID" style="width:50px;">ID</th>
@@ -180,14 +157,23 @@ $today = date('Y-m-d');
     if(count($sale['rows'])>0){
         foreach($sale['rows'] as $k=>$arr){
           ?>
-          <tr><td class="ID"><?php  echo $count;  ?></td>
- <td class="Invoice No"><?php   echo $arr['invoice_no'];  ?></td>
-   <td class="Expense Packing ID"><?php   echo $arr['expense_packing_id'];  ?></td>
-   <td class="Gross Weight"><?php   echo $arr['gross_weight'];  ?></td>
-<td class="Container No."><?php   echo $arr['container_no'];  ?></td>
-  <td class="Invoice Date"><?php   echo $arr['invoice_date'];  ?></td>
-  <td class="Thickness"><?php   echo $arr['thickness'];  ?></td>
-  <td class="Action"><a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cinvoice/packing_list_update_form/<?php echo  $arr['expense_packing_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td></tr>
+          <tr><td><?php  echo $count;  ?></td>
+ <td><?php   echo $arr['invoice_no'];  ?></td>
+   <td><?php   echo $arr['expense_packing_id'];  ?></td>
+   <td><?php   echo $arr['gross_weight'];  ?></td>
+<td><?php   echo $arr['container_no'];  ?></td>
+  <td><?php   echo $arr['invoice_date'];  ?></td>
+  <td><?php   echo $arr['thickness'];  ?></td>
+  <!-- <td><a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cinvoice/trucking_update_form/<?php echo  $arr['expense_packing_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td> -->
+
+  <div class="form-group">
+  <td>
+  <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/packing_list_details_data/<?php echo  $arr['expense_packing_id'];  ?>"><i class="fa fa-download" aria-hidden="true"></i></a>
+  <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+  </td>
+  </div>
+</tr>
      <?php   
 $count++;
      
