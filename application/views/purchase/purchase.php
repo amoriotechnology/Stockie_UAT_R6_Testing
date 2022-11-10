@@ -159,7 +159,11 @@ $today = date('Y-m-d');
    <td class="Purchase Date"><?php   echo $arr['purchase_date'];  ?></td>
 
   <td class="Total Amount"><?php   echo $arr['grand_total_amount'];  ?></td>
-  <td class="Action"><a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cpurchase/purchase_update_form/<?php echo  $arr['purchase_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td></tr>
+  <td class="Action">
+<a href="<?php echo base_url()?>Cpurchase/purchase_details_data/20221103085607" style='    background: #3ca5de;
+    color: #fff;' class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Expenses Details"><i class="fa fa-window-restore" aria-hidden="true"></i></a> 
+
+  	<a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cpurchase/purchase_update_form/<?php echo  $arr['purchase_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td></tr>
      <?php   
 $count++;
      

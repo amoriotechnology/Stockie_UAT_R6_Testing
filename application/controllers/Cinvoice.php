@@ -45,6 +45,7 @@ class Cinvoice extends CI_Controller {
 
     }
 
+
      public function profarma_invoice() {
 
         $CI = & get_instance();
@@ -487,64 +488,7 @@ echo json_encode($data);
 
 
 
-    public function sendmail_with_attachments($invoice_id)
-    {
 
-    $uid=$_SESSION['user_id'];
-     $sql='select c.* from company_information c
-        join
-        user_login as u
-        on u.cid=c.company_id
-        where u.user_id='.$uid;
-        $query=$this->db->query($sql);
-
-        $company_info=$query->result_array();
-
-     $sql='SELECT c.* from invoice i JOIN customer_information c on c.customer_id=i.customer_id where i.invoice_id='.$invoice_id;
-        $query=$this->db->query($sql);
-        $customer_info=$query->result_array();
-
-      $sql='SELECT p.* FROM `invoice_details` i JOIN
-     product_information p
-     on p.product_id=i.product_id
-     where
-     i.invoice_id="'.$invoice_id.'";
-     ';
-
-      // print_r($sql); die();
-    
-        $query=$this->db->query($sql);
-        $product_info=$query->result_array();
-
-         // echo $this->db->last_query(); die();
-
-         // print_r($product_info); die();
-
-        $invoice_sql = 'SELECT * FROM `invoice` i JOIN invoice_details p on p.invoice_id=i.invoice_id';
-        $query=$this->db->query($invoice_sql);
-        $invoice_info=$query->result_array();
-        
-        // echo "<pre>"; 
-        // print_r($invoice_info); die();
-        // echo "</pre>"; 
-      
-        $data['company_info']=$company_info;
-        $data['customer_info']=$customer_info;
-        $data['product_info']=$product_info;
-        $data['invoiceid']=$invoice_id;
-
-        $data['invoice_info']=$invoice_info;
-
-        // print_r($data);
-
-        $content = $this->load->view('pdf_attach_mail/new_sale', $data, true);
-          $this->template->full_admin_html_view($content);
-        if($content)
-        {
-      redirect("Cinvoice/manage_invoice");
-    }
-            
-    }
 
 
 
@@ -575,7 +519,8 @@ echo json_encode($data);
 
     public function manual_sales_insert(){
 
-
+// direct('Cinvoice');
+exit;
         $CI = & get_instance();
 
         $CI->auth->check_admin_auth();
@@ -1082,6 +1027,67 @@ print_r($data);
 
     }
 
+
+public function sendmail_with_attachments($invoiceid)
+{
+
+
+
+$uid=$_SESSION['user_id'];
+
+ $sql='select c.* from company_information c 
+    
+    join 
+    user_login as u 
+    on u.cid=c.company_id
+    where u.user_id='.$uid;
+    $query=$this->db->query($sql);
+
+    $company_info=$query->result_array();
+
+
+ $sql='SELECT c.* from invoice i JOIN customer_information c on c.customer_id=i.customer_id where i.invoice_id='.$uid;
+    $query=$this->db->query($sql);
+
+    $customer_info=$query->result_array();
+
+
+
+
+
+  $sql='SELECT p.* FROM `invoice_details` i JOIN
+
+ product_information p
+ on p.product_id=i.product_id
+
+ where 
+ i.invoice_id="'.$invoiceid.'";
+ ';
+
+    $query=$this->db->query($sql);
+
+    $product_info=$query->result_array();
+
+
+
+    $data['company_info']=$company_info;
+    $data['customer_info']=$customer_info;
+    $data['product_info']=$product_info;
+    $data['invoiceid']=$invoiceid;
+
+
+
+
+    $content = $this->load->view('pdf_attach_mail/new_sale', $data, true);
+    if($content)
+    {
+  redirect("Cinvoice/manage_invoice");
+}
+         // $this->template->full_admin_html_view($content);
+}   
+
+
+
       public function manage_profarma_invoice() {
 
         $date = $this->input->post("daterange");
@@ -1336,14 +1342,16 @@ $this->db->update('bootgrid_data');
 
 
 
-	public function index1()
-	{ $CI = & get_instance();
+
+
+    public function index1()
+    { $CI = & get_instance();
         $CI->load->model('Invoices','boot');
-		$data['data'] = $this->boot->get_datas();
+        $data['data'] = $this->boot->get_datas();
         print_r($data);
         die();
-		$this->load->view('invoice/profarma_invoice_list',$data);
-	}
+        $this->load->view('invoice/profarma_invoice_list',$data);
+    }
 
      //Retrive right now inserted data to cretae html
     public function ocean_export_tracking_details_data($purchase_id) {
@@ -1896,6 +1904,8 @@ $this->db->update('bootgrid_data');
     }
 
 
+ 
+
 
     public function packing_list_details_data() {
         $CI = & get_instance();
@@ -1947,6 +1957,8 @@ $this->db->update('bootgrid_data');
         //$content='';
         $this->template->full_admin_html_view($content);
     }
+
+
 
 
 

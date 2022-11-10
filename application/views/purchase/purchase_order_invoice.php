@@ -1,4 +1,20 @@
 <!-- Purchase Payment Ledger Start -->
+<style>
+    .container {
+  width: 100%;
+  background-color: rgb(241, 248, 250);
+  margin-top: 50px;
+ 
+
+}
+
+    td,th{
+        border:1px solid black;
+        text-align: center;
+        padding: 3px;
+    }
+    
+</style>
 <div class="content-wrapper">
 	<section class="content-header">
 	    <div class="header-icon">
@@ -302,7 +318,7 @@ tbody tr{text-align:center}
 </div>
 <!-- Purchase ledger End  -->
 
-
+<!-- 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
@@ -351,4 +367,4 @@ $('.navbar').css('display','none');
 
    });
 
-   </script>
+   </script> -->

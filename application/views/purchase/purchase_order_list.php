@@ -157,9 +157,11 @@ $today = date('Y-m-d');
 <td class="Purchase Order ID"><?php   echo $arr['purchase_order_id'];  ?></td>
   <td class="Total Amount"><?php   echo $arr['grand_total_amount'];  ?></td>
 
-  <td class="Action">
+  <td align="center" class="Action">
   <a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cpurchase/purchase_order_details_data/<?php echo  $arr['purchase_order_id'];  ?>"><i class="fa fa-download" aria-hidden="true"></i></a>
-  <a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cpurchase/purchase_order_update_form/<?php echo  $arr['purchase_order_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td></tr>
+  <a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cpurchase/purchase_order_update_form/<?php echo  $arr['purchase_order_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a>.
+    <a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cpurchase/purchase_order_details_data/<?php echo  $arr['purchase_order_id'];  ?>"><i class="fa fa-window-restore" aria-hidden="true"></i></a>
+  </td></tr>
      <?php   
 $count++;
      

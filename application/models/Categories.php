@@ -53,9 +53,7 @@ class Categories extends CI_Model {
 
         $this->db->from('product_category');
 
-        $this->db->where('created_by',$this->session->userdata('user_id'));
-
-        $this->db->where('status', 1);
+       
 
         $query = $this->db->get();
 

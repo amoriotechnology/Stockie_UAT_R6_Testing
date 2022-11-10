@@ -30,6 +30,8 @@ class Cproduct extends CI_Controller {
 
     public function insert_product_from_expense(){
 
+
+
  $CI = & get_instance();
         $CI->auth->check_admin_auth();
         $CI->load->library('lproduct');
@@ -47,26 +49,27 @@ class Cproduct extends CI_Controller {
         $sup_price = $this->input->post('supplier_price',TRUE);
         $s_id = $this->input->post('product_id',TRUE);
         $product_model = $this->input->post('model',TRUE);
-        for ($i = 0, $n = count($s_id); $i < $n; $i++) {
-            if($sup_price[$i])
-            {
-            $supplier_price = $sup_price[$i];
-            }
-            if($supp_id)
-            {
-            $supp_id = $s_id[$i];
-        }
+     
 
+        $date=date('d-m-Y');
+        $product_id= $this->input->post('product_id',TRUE);
+        $supplier_id= $this->input->post('supplier_id',TRUE);
+        $supplier_price= $this->input->post('price',TRUE);
+        $products_model= $this->input->post('model',TRUE);
+;
             $supp_prd = array(
                 'created_by'       =>  $this->session->userdata('user_id'),
                 'product_id'     => $product_id,
                 'supplier_id'    => $supp_id,
                 'supplier_price' => $supplier_price,
-                'products_model' => $product_model = $this->input->post('model',TRUE)
+                'date'=>$date,
+                'products_model' => $product_model
             );
-print_r($supp_prd);
+
+            print_r($supp_prd);
+            exit;
             $this->db->insert('supplier_product', $supp_prd);
-        }
+       
 
         //Supplier check
         if ($this->input->post('supplier_id',TRUE) == null) {

@@ -156,7 +156,7 @@ $today = date('Y-m-d');
     if(count($expense['rows'])>0){
         foreach($expense['rows'] as $k=>$arr){
           ?>
-<<<<<<< HEAD
+
           <tr><td><?php  echo $count;  ?></td>
  <td><?php   echo $arr['invoice_no'];  ?></td>
    <td><?php   echo $arr['expense_packing_id'];  ?></td>
@@ -164,30 +164,13 @@ $today = date('Y-m-d');
 <td><?php   echo $arr['container_no'];  ?></td>
   <td><?php   echo $arr['invoice_date'];  ?></td>
   <td><?php   echo $arr['thickness'];  ?></td>
-
-  <!-- <td><a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cinvoice/trucking_update_form/<?php echo  $arr['purchase_order_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td> -->
-
-  <div class="form-group">
   <td>
-  <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cpurchase/packing_list_details_data/<?php echo  $arr['expense_packing_id'];  ?>"><i class="fa fa-download" aria-hidden="true"></i></a>
-  <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/trucking_update_form/<?php echo  $arr['purchase_order_id'];  ?>"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-    <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cpurchase/packing_list_update_form/<?php echo  $arr['expense_packing_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-  </td>
-  </div>
+<a href="<?php echo base_url(); ?>Cpurchase/purchase_details_data/20221103085607" style='background-color: #62d0f1;
+    color: #fff;
+' class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Expenses Details"><i class="fa fa-window-restore" aria-hidden="true"></i></a>
+    <a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cpurchase/packing_update_form/<?php echo  $arr['expense_packing_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
 
-
-
-</tr>
-=======
-          <tr><td class="ID"><?php  echo $count;  ?></td>
- <td class="Invoice No"><?php   echo $arr['invoice_no'];  ?></td>
-   <td class="Expense Packing ID"><?php   echo $arr['expense_packing_id'];  ?></td>
-   <td class="Gross Weight"><?php   echo $arr['gross_weight'];  ?></td>
-<td class="Container No."><?php   echo $arr['container_no'];  ?></td>
-  <td class="Invoice Date"><?php   echo $arr['invoice_date'];  ?></td>
-  <td class="Thickness"><?php   echo $arr['thickness'];  ?></td>
-  <td class="Action"><a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cpurchase/packing_list_update_form/<?php echo  $arr['expense_packing_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td></tr>
->>>>>>> 19c3dfd372182d438dd2141f8d1363c79dc746a4
+  </td></tr>
      <?php   
 $count++;
      

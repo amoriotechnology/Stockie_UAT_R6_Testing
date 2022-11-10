@@ -111,13 +111,21 @@ class Invoices extends CI_Model {
 
     }
 
+
+
+
+
+
+    
+  
+
     public function all_invoice() {
     $this->db->select('a.*,b.*');
     $this->db->from('invoice_details a');
-    // echo $this->db->last_query(); die();
     $this->db->join('invoice b', 'b.invoice_id = a.invoice_id');
     // $this->db->where('b.invoice_id');
 
+    // echo $this->db->last_query(); die();
     
     $query = $this->db->get();
    
@@ -4956,9 +4964,9 @@ return $output;
 }
 
 public function get_datas()
-	{
-		return $this->db->get('bootgrid_data')->result();
-	}
+    {
+        return $this->db->get('bootgrid_data')->result();
+    }
  public function tempdesign()
     {
         
