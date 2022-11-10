@@ -1,3 +1,4 @@
+    
     var count = 2;
     var limits = 500;
         "use strict";
@@ -39,7 +40,18 @@
         }
     }
 
-
+    "use strict";
+    function deleteRow(e) {
+debugger;
+        var t = $("#purchaseTable > tbody > tr").length;
+        if (1 == t) alert("There only one row you can't delete.");
+        else {
+            var a = e.parentNode.parentNode;
+            a.parentNode.removeChild(a)
+        }
+       count -= 1;
+      //  calculateSum()
+    }
 
 
          "use strict";
@@ -131,17 +143,69 @@ function full_paid() {
 }
 
     //Delete row
-        "use strict";
-    function deleteRow(e) {
-        var t = $("#purchaseTable > tbody > tr").length;
-        if (1 == t) alert("There only one row you can't delete.");
-        else {
-            var a = e.parentNode.parentNode;
-            a.parentNode.removeChild(a)
-        }
-        calculateSum()
-    }
 
+    "use strict";
+function calculateSum() {
+     var taxnumber = $("#txfieldnum").val();
+    var t = 0,
+            a = 0,
+            e = 0,
+            o = 0,
+            p = 0,
+            f = 0,
+            tx = 0,
+            ds = 0,
+            ad = 0;
+
+    //Total Tax
+   for(var i=0;i<taxnumber;i++){
+      
+var j = 0;
+    $(".total_tax"+i).each(function () {
+        isNaN(this.value) || 0 == this.value.length || (j += parseFloat(this.value))
+    });
+            $("#total_tax_ammount"+i).val(j.toFixed(2, 2));
+             
+    }
+            //Total Discount
+            $(".total_discount").each(function () {
+        isNaN(this.value) || 0 == this.value.length || (p += parseFloat(this.value))
+    }),
+            $("#total_discount_ammount").val(p.toFixed(2, 2)),
+
+             $(".totalTax").each(function () {
+        isNaN(this.value) || 0 == this.value.length || (f += parseFloat(this.value))
+    }),
+            $("#total_tax_amount").val(f.toFixed(2, 2)),
+         
+            //Total Price
+            $(".total_price").each(function () {
+        isNaN(this.value) || 0 == this.value.length || (t += parseFloat(this.value))
+    }),
+
+ $(".dppr").each(function () {
+        isNaN(this.value) || 0 == this.value.length || (ad += parseFloat(this.value))
+    }),
+            
+            o = a.toFixed(2, 2),
+            e = t.toFixed(2, 2),
+            tx = f.toFixed(2, 2),
+    ds = p.toFixed(2, 2);
+
+    var test = +tx + +e + -ds + + ad;
+    $("#grandTotal").val(test.toFixed(2, 2));
+
+
+    var gt = $("#grandTotal").val();
+    var invdis = $("#invoice_discount").val();
+    var total_discount_ammount = $("#total_discount_ammount").val();
+    var ttl_discount = +total_discount_ammount;
+    $("#total_discount_ammount").val(ttl_discount.toFixed(2, 2));
+    var grnt_totals = gt;
+    $("#grandTotal").val(grnt_totals);
+
+    
+}
 
 
 

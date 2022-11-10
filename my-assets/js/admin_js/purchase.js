@@ -132,12 +132,14 @@ calculate_store();
 //Delete row
     "use strict";
 function deleteRow(e) {
+
     var t = $("#purchaseTable > tbody > tr").length;
     if (1 == t) alert("There only one row you can't delete.");
     else {
         var a = e.parentNode.parentNode;
         a.parentNode.removeChild(a)
     }
+   
     calculateSum()
 }
 

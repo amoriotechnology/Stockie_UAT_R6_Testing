@@ -1,7 +1,8 @@
 var csrfName = '<?php echo $this->security->get_csrf_token_name();?>';
 var csrfHash = '<?php echo $this->security->get_csrf_hash();?>';
 
-
+	
+  
   $('#ProfarmaInvList').tablemanager({
 		
 			disable: ["last"],
@@ -51,6 +52,7 @@ function setSates(states){
 // this will read and set the initial states when the page loads
 setSates( localStorage.getItem('states') );
 
+/*
 
 $(function() {
     var pressed = false;
@@ -78,6 +80,7 @@ $(function() {
         }
     });
 });
+*/
 $(".bootcol").click(function() {
   $(this).find("ul").toggleClass('show');
 });
@@ -111,7 +114,7 @@ $('input[name="daterange"]').daterangepicker(
 
 }, 
 function(start, end, label) {
-    alert("A new date range was chosen: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+   // alert("A new date range was chosen: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
 
 });
 
@@ -161,6 +164,33 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.*/
+function highlight_row() {
+	var table = document.getElementById("ProfarmaInvList");
+	var tdsth = table.querySelectorAll("th");
+  
+	for (var i = 0; i < tdsth.length; i++) {
+	  var cell = tdsth[i];
+	  cell.onclick = function() {
+		const children = this.parentElement.children;
+		const clickedThIndex = [...children].findIndex(th => th == this);
+		const columns = document.querySelectorAll(`th:nth-child(${clickedThIndex + 1})`);
+		columns.forEach(col => {
+		  if (col.classList.contains('selected'))
+		  
+			col.classList.remove('selected');
+		  else
+			col.classList.add('selected');
+		});
+	  }
+	}
+  }
+  
+  window.onload = highlight_row;
+$(function() {
+	$(".table th").resizable({
+	  minWidth: 100
+	});
+  });
 
 (function($){
 	$.fn.extend({

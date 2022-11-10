@@ -129,9 +129,9 @@ class Cpurchase extends CI_Controller {
        //  $CI->load->library('lpurchase');
        //  $data=array();
        // // echo $content = $CI->linvoice->invoice_add_form();
-       //  $content = $this->load->view('purchase/purchase_order', $data, true);
+         $content1 = $this->load->view('purchase/purchase_order', $data, true);
        //  //$content='';
-       //  $this->template->full_admin_html_view($content);
+         $this->template->full_admin_html_view($content1);
 
     }
 
@@ -292,15 +292,14 @@ class Cpurchase extends CI_Controller {
         $CI = & get_instance();
         $CI->auth->check_admin_auth();
         $CI->load->model('Purchases');
-        $CI->Purchases->packing_list_entry();
-        $this->session->set_userdata(array('message' => display('successfully_added')));
-        if (isset($_POST['add-packing-list'])) {
-            redirect(base_url('Cpurchase/manage_packing_list'));
-            exit;
-        } elseif (isset($_POST['add-packing-list-another'])) {
-            redirect(base_url('Cpurchase'));
-            exit;
-        }
+      $data=  $CI->Purchases->packing_list_entry();
+      $this->session->set_userdata(array('message' => display('successfully_added')));
+      $content = $this->load->view('purchase/add_packing_list', $data, true);
+      
+      //$content='';
+      $this->template->full_admin_html_view($content);
+      
+       
     }
 
 
@@ -518,12 +517,16 @@ class Cpurchase extends CI_Controller {
         $CI->load->library('linvoice');
         $data=array();
         $this->load->model('Purchases');
+        $this->load->model('invoice_design');
         $invoice_no = $this->uri->segment(3); 
+        $data['invoice_setting'] =$this->invoice_design->retrieve_data();
         $data['invoice'] =$this->Purchases->get_purchases_invoice($invoice_no);
         $data['order'] =$this->Purchases->get_purchases_order($invoice_no);
         $data['supplier'] =$this->Purchases->get_supplier($invoice_no);
         $data['company_info'] =$this->Purchases->company_info();
+     
 
+      
         $content = $this->load->view('purchase/purchase_order_invoice', $data, true);
         //$content='';
         $this->template->full_admin_html_view($content);
@@ -590,11 +593,18 @@ class Cpurchase extends CI_Controller {
             'product' => $packing_details[0]['product_name']
         );
      
-        // print_r($data); exit();
+       //  print_r($data); exit();
        // echo $content = $CI->linvoice->invoice_add_form();
         $content = $this->load->view('purchase/packing_invoice_html', $data, true);
-        //$content='';
-        $this->template->full_admin_html_view($content);
+        if ($content) {
+            #set success message
+            $this->session->set_flashdata('message', display('Downloaded Successfully'));
+        } else {
+            #set exception message
+            $this->session->set_flashdata('exception', display('please_try_again'));
+        }
+        redirect(base_url('Cpurchase/manage_purchase_order'));
+      //  $this->template->full_admin_html_view($content);
     }
 
     public function trucking_details_data() {

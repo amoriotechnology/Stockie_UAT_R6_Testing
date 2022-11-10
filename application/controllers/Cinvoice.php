@@ -1049,6 +1049,86 @@ $date = $this->input->post("daterange");
 
 
     }
+    public function get_setting() {
+        $CI = & get_instance();
+
+        $this->auth->check_admin_auth();
+        $CI->load->model('Invoices');
+        $menu = $this->input->post('menu');
+      
+     $submenu = $this->input->post('submenu');
+       
+        $user=$this->session->userdata('user_id');
+  
+
+                $invoice = $CI->Invoices->get_setting($user,$menu,$submenu);
+               $menu= $invoice[0]->menu; 
+               $submenu=$invoice[0]->submenu;
+               $set= $invoice[0]->setting;
+$data=array(
+'menu'=> $menu,
+'submenu'=> $submenu,
+'setting' => $set
+);
+echo json_encode($data);
+
+    }
+    public function setting() {
+      //  echo "<script>alert(localStorage.getItem('states'))</script>";
+        $output = $this->input->post();
+        $user=$this->session->userdata('user_id');
+$this->output->set_content_type('application/json')
+     ->set_output(json_encode($output));
+    // echo $output['content'];
+  $split= explode("/",$output['page']) ;
+$set=json_encode( $output['content']);
+  $data=array(
+'user' => $user,
+'menu' => $split[0],
+'submenu' => $split[1],
+'setting' => $set
+ );
+ 
+ $this->db->select('*');
+ $this->db->from('bootgrid_data');
+ $this->db->where('user', $user);
+ $this->db->where('menu', $split[0]);
+ $this->db->where('submenu', $split[1]);
+ $query = $this->db->get();
+  echo $this->db->last_query();
+    
+        if ($query->num_rows() > 0) {
+            $this->db->where('user', $user); 
+            $this->db->where('menu', $split[0]); 
+            $this->db->where('submenu', $split[1]); 
+$this->db->set('setting',$set);
+$this->db->update('bootgrid_data');
+
+
+
+    }else{
+        
+
+ $this->db->insert('bootgrid_data', $data);
+
+    }
+   // 
+}
+    public function insert_packing_list() {
+
+        $CI = & get_instance();
+        $CI->auth->check_admin_auth();
+        $CI->load->model('Invoices');
+        $CI->Invoices->packing_list_entry();
+        $this->session->set_userdata(array('message' => display('successfully_added')));
+        if (isset($_POST['add-packing-list'])) {
+            redirect(base_url('Cinvoice/manage_packing_list'));
+            exit;
+        } elseif (isset($_POST['add-packing-list-another'])) {
+            redirect(base_url('Cinvoice/add_packing_list'));
+            exit;
+        }
+    }
 
      public function manage_packing_list() {
         $date = $this->input->post("daterange");
@@ -1076,7 +1156,13 @@ $date = $this->input->post("daterange");
         $this->template->full_admin_html_view($content);
 
     }
-
+    public function packing_list_update_form($purchase_id) {
+        $CI = & get_instance();
+        $CI->auth->check_admin_auth();
+        $CI->load->library('linvoice');
+        $content = $CI->linvoice->packing_list_edit_data($purchase_id);
+        $this->template->full_admin_html_view($content);
+    } 
       public function manage_ocean_export_tracking() {
 
         $CI = & get_instance();
@@ -2954,8 +3040,7 @@ $date = $this->input->post("daterange");
 
                     // print_r($data1); exit();
 
-                   echo json_encode($data1);
-                   die();
+                  
                     $this->db->insert('profarma_invoice_details', $data1);
                     
                 }
