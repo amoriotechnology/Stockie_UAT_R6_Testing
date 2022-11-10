@@ -1598,8 +1598,13 @@ return $output;
             'status'             => 1,
         );
 
+        $content = $this->load->view('C/add_packing_list', $data, true);
 
-     
+        $this->template->full_admin_html_view($content);
+        // print_r($data); exit();
+
+
+    // print_r($data);
    
           ///Inventory Debit
     //    $coscr = array(
@@ -1677,7 +1682,7 @@ return $output;
             }
         }
 
-        return true;
+        return $data1;
     }
 
 
@@ -2158,7 +2163,8 @@ return $output;
         if ($query->num_rows() > 0) {
             return $query->result_array();
         }
-        return false;
+     
+        return true;
     }
 
 
@@ -2173,7 +2179,7 @@ return $output;
         if ($query->num_rows() > 0) {
             return $query->result_array();
         }
-        return false;
+        return true;
     }
 
 
@@ -2214,6 +2220,7 @@ return $output;
         $this->db->where('a.expense_packing_id', $purchase_id);
        // $this->db->order_by('a.purchase_details', 'asc');
         $query = $this->db->get();
+      
         if ($query->num_rows() > 0) {
             return $query->result_array();
         }
@@ -2460,6 +2467,13 @@ public function get_supplier($purchase_id='')
 }
 public function company_info()
 {
+    $this->db->select('c.*,u.*');
+    $this->db->from('company_information c');
+    $this->db->join('user_login u', 'u.cid = c.company_id'); 
+    $this->db->where('u.user_id',$_SESSION['user_id']);
+    $query = $this->db->get();
+    
+
       $sql='SELECT * FROM `company_information` as c JOIN user_login as u on u.cid=c.company_id where u.user_id='.$_SESSION['user_id'];
    $query=$this->db->query($sql);
    if ($query->num_rows() > 0) {
@@ -2699,15 +2713,14 @@ public function company_info()
     }
 
     public function packing_details_data($expense_packing_id) {
-        // $sql='SELECT * FROM expense_packing_list as a JOIN expense_packing_list_detail as b ON b.product_id = a.product_id WHERE a.expense_packing_id = '.$expense_packing_id;
         $sql = 'SELECT * FROM expense_packing_list as a JOIN expense_packing_list_detail as ac JOIN product_information as b ON b.product_id = a.product_id WHERE a.expense_packing_id = '.$expense_packing_id;
         $query = $this->db->query($sql);
-//    echo $this->db->last_query();
-//        die(); 
+   // echo $this->db->last_query();
+   //     die(); 
         if ($query->num_rows() > 0) {
             return $query->result_array();
         }
-        return false;
+        return true;
     }
 
 

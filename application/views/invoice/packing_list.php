@@ -14,6 +14,7 @@
 <script type="text/javascript" src="http://mrrio.github.io/jsPDF/dist/jspdf.debug.js"></script>
 <input type="hidden" name="<?php echo $this->security->get_csrf_token_name();?>" value="<?php echo $this->security->get_csrf_hash();?>">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>my-assets/css/css.css" />
+<script type="text/javascript" src="http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.js"></script>
 <div class="content-wrapper">
 	<section class="content-header">
 	    <div class="header-icon">
@@ -23,9 +24,9 @@
 	        <h1>Packing List</h1>
 	        <small>Manage your Sale</small>
 	        <ol class="breadcrumb">
-	            <li><a href="#"><i class="pe-7s-home"></i> <?php echo display('home') ?></a></li>
+            <li><a href="<?php   echo base_url(); ?>"><i class="pe-7s-home"></i> <?php echo display('home') ?></a></li>
 	            <li><a href="#">Sale</a></li>
-	            <li class="active">Manage Sales</li>
+	            <li class="active" style="color:orange;">Manage Packing List</li>
 	        </ol>
 	    </div>
 	</section>
@@ -62,7 +63,7 @@
                         <div class="row">
                         <div class="col-sm-4">
                              <?php if($this->permission1->method('add_purchase','create')->access()){ ?>
-                    <a href="<?php echo base_url('Cpurchase/purchase_order') ?>" class="btn btn-info m-b-5 m-r-2">Create Purchase Order</a>
+                    <a href="<?php echo base_url('Cinvoice/add_packing_list') ?>" class="btn btn-info m-b-5 m-r-2">Create Packing List</a>
                        <?php } ?>
                         </div>
                         <div class="col-sm-6">
@@ -84,6 +85,7 @@ $today = date('Y-m-d');
 
     <input type="text" name="daterange" />
     <input type="submit" id="btn-filter" class="btn btn-success" value="Search"/>
+    <a href="javascript:window.location.reload(true)">  <i class="fa fa-refresh" style="font-size:20px;float:right;" aria-hidden="true"></i> </a>
 </div> 
 <?php echo form_close() ?>
                     </div>
@@ -129,21 +131,21 @@ $today = date('Y-m-d');
 
 
 
-
+                    <input type="hidden" value="Sale/PackingList" id="url"/>
                     <div class="panel-body">
                     <div id="customers">
-  <table class="table table-bordered" cellspacing="0" width="100%" id="ProfarmaInvList">
+  <table class="table table-bordered" cellspacing="0" width="100%" id="PackingOrderList">
     <thead>
       <tr>
-      <th >ID</th>
-        <th >Invoice No</th>
-        <th>Expense Packing ID</th>
-        <th>Gross Weight</th>
-        <th>Container No.</th>
-         <th>Invoice Date</th>
-		 <th>Thickness</th>
+      <th class="ID" style="width:50px;">ID</th>
+        <th class="Invoice No">Invoice No</th>
+        <th class="Expense Packing ID">Expense Packing ID</th>
+        <th class="Gross Weight">Gross Weight</th>
+        <th class="Container No.">Container No.</th>
+         <th class="Invoice Date">Invoice Date</th>
+		 <th class="Thickness">Thickness</th>
       <div class="myButtonClass"> 
-         <th class="text-center" data-column-id="action" data-formatter="commands" data-sortable="false">Action</th>
+         <th class="text-center Action" data-column-id="action" data-formatter="commands" data-sortable="false">Action</th>
         </div>
       </tr>
     </thead>
@@ -152,8 +154,8 @@ $today = date('Y-m-d');
      <?php
     $count=1;
 
-     foreach($sale['rows'] as $k=>$arr){
-      if(is_array($arr) && count($arr)>0){
+    if(count($sale['rows'])>0){
+        foreach($sale['rows'] as $k=>$arr){
           ?>
           <tr><td><?php  echo $count;  ?></td>
  <td><?php   echo $arr['invoice_no'];  ?></td>
@@ -162,19 +164,29 @@ $today = date('Y-m-d');
 <td><?php   echo $arr['container_no'];  ?></td>
   <td><?php   echo $arr['invoice_date'];  ?></td>
   <td><?php   echo $arr['thickness'];  ?></td>
-  <td><a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cinvoice/trucking_update_form/<?php echo  $arr['purchase_order_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td></tr>
+  <!-- <td><a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cinvoice/trucking_update_form/<?php echo  $arr['expense_packing_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td> -->
+
+  <div class="form-group">
+  <td>
+  <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/packing_list_details_data/<?php echo  $arr['expense_packing_id'];  ?>"><i class="fa fa-download" aria-hidden="true"></i></a>
+  <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+  </td>
+  </div>
+</tr>
      <?php   
 $count++;
-      }  else{
-        ?>
-         <tr><td><?php  echo "No Records Found"  ;?></td></tr>
-        <?php
-              }
+     
               
                 
-            }
+} }  else{
+    ?>
+     <tr><td colspan="8" style="text-align:center;font-weight:bold;"><?php  echo "No Records Found"  ;?></td></tr>
+    <?php
+          }
 
-        ?>
+?>
+  
   
     </tbody>
     <!--
@@ -215,19 +227,20 @@ $count++;
             <div id="myModal_colSwitch" class="modal_colSwitch">
                     <div class="modal-content_colSwitch">
                           <span class="close_colSwitch">&times;</span>
-                          <input type="checkbox"  data-control-column="1" class="opt" /> ID<br>
+                          <input type="checkbox"  data-control-column="1" class="opt ID" value="ID" /> ID<br>
 
-    <input type="checkbox"  data-control-column="2" class="opt" />Invoice No<br>
+    <input type="checkbox"  data-control-column="2" class="opt Invoice No" value="Invoice No"/>Invoice No<br>
  
-    <input type="checkbox"  data-control-column="3" class="opt" />Expense Packing ID<br>
+    <input type="checkbox"  data-control-column="3" class="opt Expense Packing ID" value="Expense Packing ID"/>Expense Packing ID<br>
   
-    <input type="checkbox"  data-control-column="4" class="opt" />Gross Weight<br>
+    <input type="checkbox"  data-control-column="4" class="opt Gross Weight" value="Gross Weight"/>Gross Weight<br>
 
-    <input type="checkbox"  data-control-column="5" class="opt" />Container No.<br>
+    <input type="checkbox"  data-control-column="5" class="opt Container No." value="Container No."/>Container No.<br>
 
-    <input type="checkbox"  data-control-column="6" class="opt" />Invoice Date<br>
-	<input type="checkbox"  data-control-column="7" class="opt" />Thickness<br>
-<input type="checkbox"  data-control-column="8" class="opt" />Action<br>
+    <input type="checkbox"  data-control-column="6" class="opt Invoice Date" value="Invoice Date"/>Invoice Date<br>
+	<input type="checkbox"  data-control-column="7" class="opt Thickness" value="Thickness"/>Thickness<br>
+<input type="checkbox"  data-control-column="8" class="opt Action" value="Action"/>Action<br>
+     <!--      <input type="submit" value="submit" id="submit"/>-->
                      
                     </div>
                 </div>
@@ -260,6 +273,94 @@ $count++;
 
 </div>
 <script type="text/javascript" src="<?php echo base_url()?>my-assets/js/profarma.js"></script>
+
+<script>
+
+    var csrfName = '<?php echo $this->security->get_csrf_token_name();?>';
+var csrfHash = '<?php echo $this->security->get_csrf_hash();?>';
+$editor = $('#submit'),
+  $editor.on('click', function(e) {
+    if (this.checkValidity && !this.checkValidity()) return;
+    e.preventDefault();
+    var yourArray = [];
+    //loop through all checkboxes which is checked
+    $('.modal-content_colSwitch input[type=checkbox]:not(:checked)').each(function() {
+      yourArray.push($(this).val());//push value in array
+    });
+   
+    values = {
+    
+      extralist_text: yourArray
+    
+    };
+    console.log(values)
+    var json=values;
+    var data = {
+        page:$('#url').val(),
+          content: yourArray
+       
+       };
+       data[csrfName] = csrfHash;
+$.ajax({
+	
+    type: "POST",  
+    url:'<?php echo base_url();?>Cinvoice/setting',
+   
+    data: data,
+    dataType: "json", 
+    success: function(data) {
+        if(data) {
+           console.log(data);
+        }
+    }  
+});
+  });
+
+  $( document ).ready(function() {
+   var page=$('#url').val();
+   page=page.split('/');
+    var data = {
+        'menu':page[0],
+        'submenu':page[1]
+         
+       
+       };
+      console.log(page[0]+"-"+page[1]);
+       data[csrfName] = csrfHash;
+    $.ajax({
+	
+    type: "POST",  
+    url:'<?php echo base_url();?>Cinvoice/get_setting',
+   
+    data: data,
+    dataType: "json", 
+    success: function(data) {
+     var menu=data.menu;
+     var submenu=data.submenu;
+     if(menu=='Sale' && submenu=='PackingList'){
+     var s=data.setting;
+s=JSON.parse(s);
+console.log(s);
+for (var i = 0; i < s.length; i++) {
+    console.log(s[i]);
+    $('td.'+s[i]).hide(); // hide the column header th
+    $('th.'+s[i]).hide();
+$('tr').each(function(){
+     $(this).find('td:eq('+$('td.'+s[i]).index()+')').hide();
+});
+    }
+    for (var i = 0; i < s.length; i++) {
+       // if( $('.'+s[i]))
+  $('.'+s[i]).prop('checked', false); //check the box from the array, note: you need to add a class to your checkbox group to only select the checkboxes, right now it selects all input elements that have the values in the array 
+    }  
+}
+    }
+});
+
+
+});
+
+    </script>
 
 
 

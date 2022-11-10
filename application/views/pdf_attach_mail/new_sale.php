@@ -1,10 +1,8 @@
 <?php                
 
-include_once('tcpdf_6_2_13/tcpdf.php');
+include_once('tcpdf_6_2_13/tcpdf.php'); 
 
-
-
-             
+         
   
 if(1==1) 
 {
@@ -31,81 +29,76 @@ if(1==1)
 
 	
 		
-		$content .= '<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Sale</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<style>
-    .container {
-  width: 100%;
-  background-color: rgb(241, 248, 250);
-  margin-top: 50px;
- 
+	$content .= '<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>New Sale</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+        </head>
+        <style>
+            .container {
+          width: 50%;
+          margin-top: 50px;
+         
 
-}
+        }
 
-    td,th{
-        border:1px solid black;
-        text-align: center;
-        padding: 3px;
-    }
-    
-</style>
-<body>
+            td,th{
+                border:1px solid black;
+                text-align: center;
+                padding: 3px;
+            }
+            
+        </style>
+        <body>
 
     <div class="container">
-
-
         <div class="row">
-            <div class="col-lg-4">
-                <img src="/office logo.png" width="100px" height="100px">
+            <div class="col-lg-4 col-sm-4">
+                <img src="../../assets/'.$company_info[0]['logo'].'" width="40%">
             </div>
-            <div class="col-lg-4">
-              <h4 style="margin-top: 30px;"> AMORIO TECHNOLOGIES</h4>
+            <div class="col-lg-4 col-sm-4">
+              <h6 style="margin-top: 30px; text-align: center;">'.$company_info[0]['company_name'].'</h6>
             </div>
-            <div class="col-lg-4">
-                <address style="text-align: right;">Written by Jon Doe.<br>
-                    Visit us at:<br>
-                    Example.com<br>
-                    Box 564, Disneyland<br>
-                    USA</address>
+            <div class="col-lg-4 col-sm-4">
+                <h6 style="margin-top: 30px; text-align: right;">'.$company_info[0]['address'].'</h6>
               </div>
         </div><br><br>
 
 
 
-        <div class="row">
-            
-            <div class="col-lg-6"> 
-               <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Customer Name</h5>
-                <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Type</h5>
-                 <h5> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sales Invoice date</h5>
-                <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Billing Address</h5>
-                <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Terms </h5>
-                <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number of days</h5>
-                <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ETD</h5>
-   </div>
+    <div class="row">
+         <div class="col-md-6 col-sm-6">
+            <h6>Customer Name :<span>'.$customer_info[0]['customer_name'].'</span></h6>
+            <h6>Payment Type :<span>'.$invoice_info[0]['payment_type'].'</span></h6>
+            <h6>Sales Invoice date :<span>'.$invoice_info[0]['date'].'</span></h6>
+            <h6>Billing Address :<span>'.$invoice_info[0]['billing_address'].'</span></h6>
+            <h6>Payment Terms   :<span>'.$invoice_info[0]['payment_terms'].'</span></h6>
+            <h6>Number of days   :<span>'.$invoice_info[0]['number_of_days'].'</span></h6>
+            <h6>ETD    :<span>'.$invoice_info[0]['date'].'</span></h4>
+         </div>
 
-            <div class="col-lg-6">
-                <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Customer Mobile</h5>
-                <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address</h5>
-                <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Commercial Invoice Number</h5>
-                <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Container Number</h5>
-                <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B/L No</h5>
-                <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Port of discharge</h5>
-                <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Due date</h5>
-                <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ETA</h5>
-                  </div>
-        </div><br><br><br>
-        
+         <div class="col-md-6 col-sm-6">
+            <h6>Customer Mobile: <span>'.$customer_info[0]['customer_mobile'].'</span></h6>
+            <h6>Address: <span>'.$customer_info[0]['customer_address'].'</span> </h6> 
+            <h6>Commercial Invoice Number: <span>'.$invoice_info[0]['commercial_invoice_number'].'</span></h6> 
+            <h6>Container Number: <span>'.$invoice_info[0]['container_no'].'</span></h6>  
+            <h6>B/L No : <span>'.$invoice_info[0]['bl_no'].'</span></h6> 
+            <h6>Port of discharge: <span>'.$invoice_info[0]['port_of_discharge'].'</span></h6> 
+            <h6>Payment Due date: <span>'.$invoice_info[0]['payment_due_date'].'</span></h6> 
+            <h6>'.$invoice_info[0]['date'].'</h6>
+         </div>
+    </div>
+
+
+
 <div class="row">
     <div class="col-lg-12">
+         <br><br><br><br>
         <table style="width:100%">
             <tr>
                 <th>Product Name</th>
@@ -113,32 +106,23 @@ if(1==1)
                 <th>Quantity / Sq ft.</th>
                 <th>Amount</th>
                 <th>Total</th>
-                
+                <!-- <th>Action</th> -->
             </tr>
             <tr>
-               <td>djkfl</td>
-               <td>100</td>
-               <td>10</td>
-               <td>1000</td>
-               <td>1000</td>
-               
+               <td></td>
+               <td>'.$invoice_info[0]['port_of_discharge'].'</td>
+               <td>'.$invoice_info[0]['quantity'].'</td>
+               <td>'.$invoice_info[0]['rate'].'</td>
+               <td>$'.$invoice_info[0]['total_price'].'</td>
+              <!--  <td>   </td> -->
                
             </tr>
 
             <tr>
-               <td>djkfl</td>
-               <td>100</td>
-               <td>10</td>
-               <td>1000</td>
-               <td>1000</td>
-               
-               
-            </tr>
-            <tr>
            
               <td colspan="4" style="text-align: right;">Total:</td>
-              <td>2000</td>
-             
+              <td>$'.$invoice_info[0]['total_price'].'</td>
+             <!--  <td></td> -->
                
                 
             </tr>
@@ -146,8 +130,8 @@ if(1==1)
             <tr>
            
                 <td colspan="4" style="text-align: right;">Grand Total:</td>
-                <td>2000</td>
-                
+                <td></td>
+                <!-- <td></td> -->
                  
                   
               </tr>
@@ -155,13 +139,13 @@ if(1==1)
         
     </div>
 </div>
-<h4>Message / Notes on Invoice </h4><br><br>
-        
-    </div>
+<h6>Message / Notes on Invoice </h6><br><br>
+</div>
 </body>
 </html>'; 
  $content;
-
+// echo $content;
+// die();
 $pdf->writeHTML($content);
 
 $file_location = ""; //add your full path of your server
@@ -178,7 +162,6 @@ ob_end_clean();
 $pdf->Output($file_location.$file_name, 'F',777); // F means upload PDF file on some folder
 
 include 'mail.php';
-
 }
 else 
 {

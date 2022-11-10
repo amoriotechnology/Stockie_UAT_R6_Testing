@@ -45,10 +45,13 @@
 							</div>
 						</div>
 					</div>
+					<br>
 					<div class="row">
-                    <div class="col-md-12">
+                        <div class="col-md-12">
 			
-							<input type="submit" value="Send Message" id="email_send" name="email_send" class="btn btn-primary btn-lg mb-xlg" data-loading-text="Loading...">
+							<input type="submit" value="Send Message" id="email_send" name="email_send" class="btn btn-primary" data-loading-text="Loading...">
+
+							<!-- <input type="submit" value="Close" name="" class="btn btn-danger" data-loading-text="Loading..."> -->
                            
                         </div>
                        

@@ -113,17 +113,15 @@
 
                                             <select name="bill_to" id="bill_to" class="form-control" onchange="" required>
 
-                            <<option value="">Select Customer</option>}
+                                                <option value="">Select Customer</option>}
 
-                            option
+                                                 <?php foreach ($customer_list as $customer) {?>
 
-                             <?php foreach ($customer_list as $customer) {?>
+                                                <option value="<?php echo html_escape($customer->customer_id);?>"><?php echo html_escape($customer->customer_name);?></option>
 
-                       <option value="<?php echo html_escape($customer->customer_id);?>"><?php echo html_escape($customer->customer_name);?></option>
+                                                 <?php }?>
 
-                             <?php }?>
-
-                           </select>
+                                            </select>
 
                            
                                             <!--    <textarea rows="4" cols="50" name="bill_to" class=" form-control" placeholder='Add Exporter Detail' id=""> </textarea> -->
@@ -246,32 +244,30 @@
                                         <td class="span3 supplier">
                                                 
                                             <?php $date = date('Y-m-d'); ?>
-                                               <input type="date" required tabindex="2" class="form-control " name="trucking_date[]" value="<?php echo $date; ?>" id="date"  />
-
+                                               <input type="date" required tabindex="2" class="form-control " name="trucking_date[]" value="<?php echo $date; ?>" id="date"/>
                                         </td>
 
                                        <td class="wt">
-                                                <input type="text" name="product_quantity[]" id="cartoon_1" required="" min="0" class="form-control text-right store_cal_1" onkeyup="calculate_store(1);" onchange="calculate_store(1);" placeholder="0.00" value=""  tabindex="6"/>
-                                            </td>
+                                            <input type="text" name="product_quantity[]" id="cartoon_1" required="" min="0" class="form-control text-right store_cal_1" onkeyup="calculate_store(1);" onchange="calculate_store(1);" placeholder="0.00" value=""  tabindex="6"/>
+                                        </td>
                                         
-                                            <td class="text-right">
-                                                <input type="text" name="description[]" id="" required="" min="0" class="form-control text-right" value=""  tabindex="6"/>
-                                            </td>
-                                            <td class="test">
-                                                <input type="text" name="product_rate[]" required="" onkeyup="calculate_store(1);" onchange="calculate_store(1);" id="product_rate_1" class="form-control product_rate_1 text-right" placeholder="0.00" value="" min="0" tabindex="7"/>
-                                            </td>
+                                        <td class="text-right">
+                                            <input type="text" name="description[]" id="" required="" min="0" class="form-control text-right" value=""  tabindex="6"/>
+                                        </td>
+                                        <td class="test">
+                                            <input type="text" name="product_rate[]" required="" onkeyup="calculate_store(1);" onchange="calculate_store(1);" id="product_rate_1" class="form-control product_rate_1 text-right" placeholder="0.00" value="" min="0" tabindex="7"/>
+                                        </td>
 
-                                            <td class="text-right">
-                                                <input class="form-control" type="text" name="pro_no[]" id="pro_no" value=""  />
-                                            </td>
+                                        <td class="text-right">
+                                            <input class="form-control" type="text" name="pro_no[]" id="pro_no" value=""  />
+                                        </td>
                                            
-
-                                            <td class="text-right">
-                                                <input class="form-control total_price text-right" type="text" name="total_price[]" id="total_price_1" value="0.00" readonly="readonly" />
-                                            </td>
-                                            <td>
-                                                <button  class="btn btn-danger text-right red" type="button" value="<?php echo display('delete')?>" onclick="deleteRow(this)" tabindex="8"><i class="fa fa-close"></i></button>
-                                            </td>
+                                        <td class="text-right">
+                                            <input class="form-control total_price text-right" type="text" name="total_price[]" id="total_price_1" value="0.00" readonly="readonly" />
+                                        </td>
+                                        <td>
+                                            <button  class="btn btn-danger text-right red" type="button" value="<?php echo display('delete')?>" onclick="deleteRow(this)" tabindex="8"><i class="fa fa-close"></i></button>
+                                        </td>
                                     </tr>
                                 </tbody>
                                 <tfoot>
@@ -327,27 +323,18 @@
                                 </tfoot>
                             </table>
                         </div>
-
                         <div class="form-group row">
                             <div class="col-sm-6">
-                                <input type="submit" id="add_trucking" class="btn btn-primary btn-large" name="add-trucking" value="<?php echo display('submit') ?>" />
-                                <input type="submit" value="Submit & Sales bill expenses" name="add-trucking-another" class="btn btn-large btn-success" id="add_purchase_another">
+                                <input type="submit" id="add_trucking" class="btn btn-primary btn-large" name="add-trucking" value="Save" />
+                                <input type="submit" value="Save & Sales bill expenses" name="add-trucking-another" class="btn btn-large btn-success" id="add_purchase_another">
                             </div>
                         </div>
-
-
-                           <div class="form-group row">
-
-                                    <label for="remarks" class="col-sm-4 col-form-label">Remarks</label>
-
-                                    <div class="col-sm-8">
-
-                                        <textarea rows="4" cols="50" name="remarks" class=" form-control" placeholder="Remarks" id=""> </textarea>
-
-                                    </div>
-                          </div> 
-
-
+                        <div class="form-group row">
+                            <label for="remarks" class="col-sm-4 col-form-label">Remarks</label>
+                            <div class="col-sm-8">
+                                <textarea rows="4" cols="50" name="remarks" class=" form-control" placeholder="Remarks" id=""></textarea>
+                            </div>
+                        </div> 
                     <?php echo form_close()?>
                     </div>
                 </div>

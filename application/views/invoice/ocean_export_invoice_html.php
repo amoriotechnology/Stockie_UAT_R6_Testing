@@ -27,331 +27,143 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
         </div>
     </section>
     <!-- Main content -->
+    <div class="">
     <section class="content">
         <!-- Alert Message -->
         <?php
-        $message = $this->session->userdata('message');
-        if (isset($message)) {
-            ?>
-            <div class="alert alert-info alert-dismissable">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                <?php echo $message ?>                    
-            </div>
-            <?php
-            $this->session->unset_userdata('message');
-        }
-        $error_message = $this->session->userdata('error_message');
-        if (isset($error_message)) {
-            ?>
-            <div class="alert alert-danger alert-dismissable">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                <?php echo $error_message ?>                    
-            </div>
-            <?php
-            $this->session->unset_userdata('error_message');
-        }
-        ?>
-      <div class="" id="ocean">
-            <div class="row">
-               <div class="document">
-                  <div class="spreadSheetGroup">
-                    <table class="shipToFrom" id="tab" cellspacing="10" cellpadding="10" >
-                    
-                    <tr>
-                             <td><img src="<?php echo  base_url().'assets/'.$logo; ?>" style='width: 10%;'></td>
-     
-                              
-                              
-                             
-                           </tr>
-
-
-    </table>
-    <table class="shipToFrom" id="tab1" style="border:1px solid black;" cellspacing="10" cellpadding="10">
-                    
-                    <tr>
-                     
-                       <td class="col-md-6 oc-head2"><span style='font-weight:bold;'>Company Info :</span> <br/><?php  echo $company_info[0]['company_name']."<br/>".$company_info[0]['email']."<br/>".$company_info[0]['address']."<br/>".$company_info[0]['mobile'];
-                              ?></td>
-                          <td style="height:50px;" class="col-md-6 oc-head1">Invoice Date :<p style="font-size:15px;">{invoice_date}</p></td>
-                              <td class="col-md-6 oc-head2">Booking no :<p style="font-size:15px;">{booking_no}</p></td>
-                       
-                      
-                    </tr>
-                    
-                   
-                   
-              </table>
-                     <table class="shipToFrom" id="tab1" cellspacing="10" cellpadding="10">
-                    
-                           <tr>
-                           
-                              
-                              
-                             
-                           </tr>
-                           
-                           <tr>
-                              <th class="col-md-6">Shipper : <br> {supplier_name}</th>
-                             <th class="booking col-md-6">Consignee:<br> {consignee}<br><?php  $company_info[0]['company_name'];   ?>   <br> 
-                              <?php  $company_info[0]['address'];   ?> <br> <?php  $company_info[0]['email'];   ?><br><?php  $company_info[0]['mobile'];   ?></th>
-                                
-                           </tr>
-                          
-                     </table>
-                     
-  <table  style="width:100%;" id="tab2">
-  <tr>
-   
-   <td ><span> Notify Party: &nbsp;</span>{notify_party}</td>
-                 <td>&nbsp;</td>     <td>&nbsp;</td>   
-                     </tr>
-                           <tr>
-                              <td  ><span> Vessel :&nbsp;</span> {vessel}</td>
-
-<td style="border:1px solid black;"><span> Freight forwarder:&nbsp;</span> {freight_forwarder}</td> 
-<td style="border:1px solid black;padding-top:30px;"><span> Port of loading :&nbsp;</span>{port_of_loading}</td> 
-
-
-      </tr>
-      <tr>
-      <td><span>Voyage No :&nbsp;</span>{voyage_no}</td>
-<td style="border:1px solid black;"><span> placeof delivery :&nbsp;</span>{place_of_delivery}</td> 
-<td rowspan="2" style="border:1px solid black;"><span> Port of discharge:&nbsp;</span> {port_of_discharge}</td>
-
-
-                              </tr>
-                                   
-         
-                         
-                     </table>        
-                    
-                   <table id="tab3">
-                    <tr>
-                    <td  style="border:1px solid black;padding-top:30px;"><span>Estimated time of departure :&nbsp;</span>{etd}</td>
-                    <td ><span>Estimated Time of Arrival  :&nbsp;</span>{eta}</td> 
-    </tr>
-                   <tr>
-    
-    <td><span> Container No : &nbsp;</span>{container_no}</td> 
-    <td style="border:1px solid black;"><span> Seal No :&nbsp;</span>{seal_no}</td>  
-
-
-    </tr> 
-
-
-                   <table>
-                     
-                     
-                     <style>
-                     table { text-align: left; }
-                     span{
-                     
-                        font-weight:bold;
-                     }
-                        </style>
-                     
-               
-                  <br/>
-                       <table class="shipToFrom" id="tab4">
-                     
-                           <tr>
-                              <th style="text-align:center;">PARTICULARS FURNISHED BY SHIPPER</th>
-                            
-                              </th>
-                              
-                             
-                           </tr>
-                           
-                         
-                              
-                        
-                       
-                        <tr >
-                              <td Class="col-md-8"><p>{particular}</p>
-                                 
-                              </td>
-
-                               
-                            <div class="verify">
-                            <p class="copy">Verify copy<p>
-                        </div>
-                              
-                           </tr>
-                     </table>
-                  
-                  
-                  </div>
+           $message = $this->session->userdata('message');
+           if (isset($message)) {
+               ?>
+               <div class="alert alert-info alert-dismissable">
+                   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                   <?php echo $message ?>                    
                </div>
+               <?php
+               $this->session->unset_userdata('message');
+           }
+           $error_message = $this->session->userdata('error_message');
+           if (isset($error_message)) {
+               ?>
+               <div class="alert alert-danger alert-dismissable">
+                   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                   <?php echo $error_message ?>                    
+               </div>
+               <?php
+               $this->session->unset_userdata('error_message');
+           }
+        ?>
+      <!-- <table id="tab"> -->
+           
+         
+        <div class="container" id="content">
+            <div class="row">
+                <div class="col-lg-4" >
+                    <img src="<?php echo  base_url().'assets/'.$logo; ?>" style='width: 40%;'>
+                </div>
+                <div class="col-lg-4">
+                  <h4 style="margin-top: 30px; text-align: center;"><?php echo $company; ?></h4>
+                </div>
+                <div class="col-lg-4">
+                    <h4 style="margin-top: 30px; text-align: right;"><?php echo $address; ?></h4>
+                  </div>
+            </div><br><br>
+        <div class="row">
+            
+            <div class="col-lg-6">
+                 
+                 <h5>Shipper: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $shipper;  ?></span></h5>
+                 <h5>Invoice Date: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $invoice_date;  ?></span></h5>
+                 <h5>Notify Party: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $notify_party;  ?></span></h5>
+                 <h5>Voyage No: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $voyage_no;  ?></span></h5>
+                 <h5>Port of discharge: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $port_of_discharge;  ?></span></h5>
+                 <h5>Container No: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $container_no;  ?></span></h5>
+                 <h5>Freight forwarder: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $freight_forwarder;  ?></span></h5>
+                 <h5>Estimated time of departure: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $invoice_date;  ?></span></h5>
             </div>
-         </div>
+        
+
+            
+            <div class="col-lg-6">
+
+                  <h5>Booking No: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $booking_no;  ?></span></h5>
+                  <h5>Customer / Consignee: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $consignee;  ?></span></h5>
+                  <h5>Vessel: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $vessel;  ?></span></h5>
+                  <h5>Port of loading: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $port_of_loading;  ?></span></h5>
+                  <h5>Place of Delivery: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $place_of_delivery;  ?></span></h5>
+                  <h5>Seal No: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $seal_no;  ?></span></h5>
+                  <h5>Estimated Time of Arrival: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $invoice_date;  ?></span></h5>
+                  <h5>Particulars: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $particular;  ?></span></h5>
+
+
+            </div>
+        </div><br>
+
+        
+
+
     </section> <!-- /.content -->
 </div> <!-- /.content-wrapper -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.0.0-alpha.1/jspdf.plugin.autotable.js"></script>
+      <!-- </table> -->
 
 
+<style>
+    .container {
+  width: 100%;
+  /*background-color: rgb(241, 248, 250);*/
+  margin-top: 50px;
+}
+    td,th{
+        border:1px solid rgb(0, 0, 0);
+        text-align: center;
+        padding: 3px;
+    }    
+</style>      
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
 <script>
 $(document).ready(function () {
  
-
-    var pdf = new jsPDF('l', 'mm', [300, 300]);
-    var img = new Image();
-img.src = "<?php echo  base_url().'assets/'.$logo; ?>";
-
-var res1 = document.getElementById('tab');
-var res = pdf.autoTableHtmlToJson(res1);
-
-var elem2 = document.getElementById('tab1');
-var data2 = pdf.autoTableHtmlToJson(elem2);
-
- var elem3 = document.getElementById('tab2');
-var data3 = pdf.autoTableHtmlToJson(elem3);
-
-var elem4 = document.getElementById('tab3');
-var data4 = pdf.autoTableHtmlToJson(elem4);
-var elem5 = document.getElementById('tab4');
-var data5 = pdf.autoTableHtmlToJson(elem5);
-
-var header = function(data) {
-pdf.setFontSize(18);
- pdf.setTextColor(40);
- pdf.setFontStyle('bold');
-//  doc.addImage(headerImgData, 'JPEG', data.settings.margin.left, 20, 50, 50);
-pdf.text("", data.settings.margin.left, 50);
-pdf.addImage(img, 'png', 120, 0,'30','20');
-};
-
-//var endPos = pdf.autoTableEndPosY();
-
-pdf.autoTable(res.columns, res.data, {
- startY:  10,
-  pageBreak: 'auto',
-  theme: 'grid',
-
-  beforePageContent: header,
- margin: {horizontal: 130, top: 10, bottom: 10},
- headerStyles: {
-        lineWidth: 1,
-        lineColor: [204, 204, 204]
-    },
- headerStyles: {fillColor: [255,255,255],textColor: 20},
-  styles: {
-   overflow: 'linebreak',
-   fontSize: 10,
-   tableWidth: 'auto',
-   columnWidth: 'auto',
-   valign: 'middle',
-    rowHeight: 20
- },
-   drawHeaderRow: function(row, data) {
-  row.height = 15;
- }
- 
-});
-// pdf.addPage();
-pdf.autoTable(data2.columns, data2.data, {
-  startY :40,
-  pageBreak: 'auto',
-  theme: 'grid',
-  beforePageContent: header,
-
-  headerStyles: {fontStyle: 'normal',fillColor: [255,255,255],textColor: 20},
-   styles: {
-   overflow: 'linebreak',
-   fontSize: 10,
-  tableWidth: 'auto',
-   columnWidth: 'auto',
-   valign: 'middle',
-    rowHeight: 30
- },
-    drawHeaderRow: function(row, data) {
-  row.height = 10;
- },
- margin: {horizontal: 10, top: 10, bottom: 10}
-});
-//pdf.addPage();
-pdf.autoTable(data3.columns, data3.data, {
-    startY :70,
-  pageBreak: 'auto',
-  theme: 'grid',
-  bodyStyles: {lineColor: [0, 0, 0]},
-  beforePageContent: header,
-  headerStyles: {
-        lineWidth: 1,
-        lineColor: [255, 255, 255]
-    },
-  headerStyles: {fontStyle: 'normal',fillColor: [255,255,255],textColor: 20},
-   styles: {
-   overflow: 'linebreak',
-   fontSize: 10,
-   tableWidth: 280,
-   columnWidth: 'auto',
-   valign: 'middle',
-    rowHeight: 10
- },
-    drawHeaderRow: function(row, data) {
-  row.height = 10;
- },
- margin: {horizontal: 10, top: 10, bottom: 10}
-});
-
-pdf.autoTable(data4.columns, data4.data, {
-    startY :100,
-  pageBreak: 'auto',
-  theme: 'grid',
-  bodyStyles: {lineColor: [0, 0, 0]},
-  beforePageContent: header,
-  headerStyles: {
-        lineWidth: 1,
-        lineColor: [255, 255, 255]
-    },
-  headerStyles: {fontStyle: 'normal',fillColor: [255,255,255],textColor: 20},
-   styles: {
-   overflow: 'linebreak',
-   fontSize: 10,
-   tableWidth: 280,
-   columnWidth: 'auto',
-   valign: 'middle',
-    rowHeight: 10
- },
-    drawHeaderRow: function(row, data) {
-  row.height = 10;
- },
- margin: {horizontal: 10, top: 10, bottom: 10}
-});
-pdf.autoTable(data5.columns, data5.data, {
-    startY :120,
-  pageBreak: 'auto',
-  theme: 'grid',
-  bodyStyles: {lineColor: [0, 0, 0]},
-  beforePageContent: header,
-  headerStyles: {
-        lineWidth: 1,
-        lineColor: [255, 255, 255]
-    },
-  headerStyles: {fontStyle: 'normal',fillColor: [255,255,255],textColor: 20},
-   styles: {
-   overflow: 'linebreak',
-   fontSize: 10,
-   tableWidth: 280,
-   columnWidth: 'auto',
-   valign: 'middle',
-    rowHeight: 10
- },
-    drawHeaderRow: function(row, data) {
-  row.height = 10;
- },
- margin: {horizontal: 10, top: 10, bottom: 10}
-});
-
-pdf.save('Ocean_Export_Invoice_'+'<?php  echo $invoice_date;  ?>'+'.pdf');
-
-
-
+ var pdf = new jsPDF('p','pt','a4');
+    const invoice = document.getElementById("content");
+             console.log(invoice);
+             console.log(window);
+             var pageWidth = 8.5;
+             var margin=0.5;
+             var opt = {
+   lineHeight : 1.2,
+   margin : 0.2,
+   maxLineWidth : pageWidth - margin *1,
+                 filename: 'invoice'+'.pdf',
+                 allowTaint: true,
+                 html2canvas: { scale: 3 },
+                 jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+             };
+              html2pdf().from(invoice).set(opt).toPdf().get('pdf').then(function (pdf) {
+  var totalPages = pdf.internal.getNumberOfPages();
+ for (var i = 1; i <= totalPages; i++) {
+    pdf.setPage(i);
+    pdf.setFontSize(10);
+    pdf.setTextColor(150);
+  }
+  var timer = setTimeout(function() {
+            window.location='<?php  echo base_url();   ?>'+'Cinvoice/manage_ocean_export_tracking'
+        }, 10);
+  }).save();
    });
- 
- 
    </script>
+ 
+
+  

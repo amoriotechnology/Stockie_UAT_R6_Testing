@@ -543,6 +543,9 @@ $CI = & get_instance();
 
       
 
+     
+
+      
         $content = $this->load->view('purchase/purchase_order_invoice', $data, true);
         //$content='';
         $this->template->full_admin_html_view($content);
@@ -710,7 +713,7 @@ $date=date('d-m-Y');
 $qury=$this->db->query($sql);
 
     redirect('Cpurchase/purchase_order');
-
+    
 }
 
 

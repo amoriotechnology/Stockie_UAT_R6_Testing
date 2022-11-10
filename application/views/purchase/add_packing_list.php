@@ -216,7 +216,7 @@
                                         </tr>
                                 </thead>
                                 <tbody id="addPurchaseItem">
-                                    <tr>
+                                    <tr class="addPurchaseItem">
                                          <td class="wt">
                                                 <input type="text" id="serial_number[]" name="serial_number[]" value="1" class="form-control text-right" placeholder="" />
                                          </td>
@@ -370,47 +370,7 @@
 
 <script type="text/javascript">
 
-let count12 = 0;
-let s1=0;
-function addCrate(divName){
 
-    //alert('ok');
-
-
-        if (count == limits)  {
-
-            alert("You have reached the limit of adding " + count + " inputs");
-
-        }
-
-        else{
-
-            var newdiv = document.createElement('div');
-
-            var tabin="product_name_"+count;
-
-            tabindex = count * 4 ,
-
-            newdiv = document.createElement("div");
-
-            tab1 = tabindex + 1;
-
-            tab2 = tabindex + 2;
-
-            tab3 = tabindex + 3;
-
-            tab4 = tabindex + 4;
-
-            tab5 = tabindex + 5;
-
-            tab6 = tab5 + 1;
-
-            tab7 = tab6 +1;
-
-            
-           newdiv.innerHTML ='<table class="table table-bordered table-hover" id="purchaseTable"><thead><tr><th class="text-center" width="20%">SL NO.<i class="text-danger">*</i></th>  <th class="text-center" width="20%">Product<i class="text-danger">*</i></th> <th class="text-center">SLAB NO</th><th class="text-center">NET Measurements<i class="text-danger">*</i></th><th class="text-center" id="th_Measurements1'+count12+'">Set Measurements<i class="text-danger">*</i></th><th class="text-center">Area<i class="text-danger">*</i></th><th class="text-center">Total<i class="text-danger">*</i></th><th class="text-center"></th><th class="text-center"></th></tr></thead><tbody id="addPurchaseItem"><tr><td class="span3 supplier"><input type="text" name="product_name" required class="form-control product_name productSelection" onkeypress="product_pur_or_list(1);" placeholder="" id="product_name_1" tabindex="5" ><input type="hidden" class="autocomplete_hidden_value product_id_1" name="product_id[]" id="SchoolHiddenId"/><input type="hidden" class="sl" value="1"></td><td class="wt"> <input type="text" name="product_name" required class="form-control product_name productSelection" onkeypress="product_pur_or_list(1);" placeholder="<?php echo display('product_name') ?>" id="product_name_1" tabindex="5" ></td><td class="text-right"><input type="text" name="product_quantity[]" id="cartoon_1" required="" min="0" class="form-control text-right store_cal_1" onkeyup="calculate_store(1);" onchange="calculate_store(1);" placeholder="0.00" value=""  tabindex="6"/></td><td><select name="measurments" id="Measurments'+count12+'" class="form-control " required="" tabindex="1"><option value=" ">Cms</option><option value=" ">Inches</option><option value=" ">Cms to inches</option></select></td><td class="text-right" id="th_Measurements'+count12+'"><input type="text" id="height'+count12+'" name="height[]"class="form-control text-right store_cal_1"placeholder="Height"/><input type="text" id="weight'+count12+'" name="weight[]"class="form-control text-right store_cal_1"placeholder="Weight"/><input type="text" id="thikness'+count12+'" name="thikness[]"class="form-control text-right store_cal_1"placeholder="Thikness"/></td><td class="text-right"><input type="text" id="area'+count12+'" required="" min="0" class="form-control text-right" placeholder="0.00" value=""  tabindex="6"/></td><td class="text-right"><input type="text" name="" id="" required="" min="0" class="form-control text-right" placeholder="0.00" value=""  tabindex="6"/></td><td class="text-right"><input type="text" name="product_quantity[]" id="cartoon_1" required="" min="0" class="form-control text-right store_cal_1" onkeyup="calculate_store(1);" onchange="calculate_store(1);" placeholder="0.00" value=""  tabindex="6"/></td><td class="test"><input type="text" name="product_rate[]" required="" onkeyup="calculate_store(1);" onchange="calculate_store(1);" id="product_rate_1" class="form-control product_rate_1 text-right" placeholder="0.00" value="" min="0" tabindex="7"/></td><td class="text-right"><input class="form-control total_price text-right" type="text" name="total_price[]" id="total_price_1" value="0.00" readonly="readonly" /></td><td><button  class="btn btn-danger text-right red" type="button" value="" onclick="deleteRow(this)" tabindex="8"><i class="fa fa-close"></i></button></td></tr></tbody><tfoot><tr><td class="text-right" colspan="5"><b>Total Over:</b></td><td class="text-right"><input type="text" id="dueAmmount" class="text-right form-control" name="due_amount" value="0.00" readonly="readonly" /></td><td></td></tr></tfoot></table>';
-
-            document.getElementById(divName).appendChild(newdiv);
 
     $('#Measurments'+s1).change(function(){
 
@@ -429,45 +389,7 @@ function addCrate(divName){
     });   
   }); 
 
-            //document.getElementById(tabin).focus();
-
-            // document.getElementById("add_invoice_item").setAttribute("tabindex", tab5);
-
-            // document.getElementById("add_purchase").setAttribute("tabindex", tab6);
-
-            // document.getElementById("add_purchase_another").setAttribute("tabindex", tab7);
-
-           
-
-            count++;
-            count12++;
-            s1++;
-
-
-
-            $("select.form-control:not(.dont-select-me)").select2({
-
-                placeholder: "Select option",
-
-                allowClear: true
-
-            });
-
-        }
-
-    }
-
-
    
-
-    // $(function() {
-    // $('#btnAddtoList').click(function(){
-      //  var newDiv = $('<table class="table table-bordered table-hover" id="purchaseTable"><thead><tr><th class="text-center" width="20%">SL NO.<i class="text-danger">*</i></th> <th class="text-center">SLAB NO</th><th class="text-center">NET Measurements<i class="text-danger">*</i></th><th class="text-center">Cms<i class="text-danger">*</i></th><th class="text-center">Inches<i class="text-danger">*</i></th><th class="text-center">Area<i class="text-danger">*</i></th><th class="text-center"></th><th class="text-center"></th></tr></thead><tbody id="addPurchaseItem"><tr><td class="span3 supplier"><input type="text" name="product_name" required class="form-control product_name productSelection" onkeypress="product_pur_or_list(1);" placeholder="" id="product_name_1" tabindex="5" ><input type="hidden" class="autocomplete_hidden_value product_id_1" name="product_id[]" id="SchoolHiddenId"/><input type="hidden" class="sl" value="1"></td><td class="wt"><input type="text" id="available_quantity_1" class="form-control text-right stock_ctn_1" placeholder="0.00" /></td><td class="text-right"><input type="text" name="product_quantity[]" id="cartoon_1" required="" min="0" class="form-control text-right store_cal_1" onkeyup="calculate_store(1);" onchange="calculate_store(1);" placeholder="0.00" value=""  tabindex="6"/></td><td class="text-right"><input type="text" name="" id="" required="" min="0" class="form-control text-right" placeholder="0.00" value=""  tabindex="6"/></td><td class="text-right"><input type="text" name="" id="" required="" min="0" class="form-control text-right" placeholder="0.00" value=""  tabindex="6"/></td><td class="text-right"><input type="text" name="product_quantity[]" id="cartoon_1" required="" min="0" class="form-control text-right store_cal_1" onkeyup="calculate_store(1);" onchange="calculate_store(1);" placeholder="0.00" value=""  tabindex="6"/></td><td class="test"><input type="text" name="product_rate[]" required="" onkeyup="calculate_store(1);" onchange="calculate_store(1);" id="product_rate_1" class="form-control product_rate_1 text-right" placeholder="0.00" value="" min="0" tabindex="7"/></td><td class="text-right"><input class="form-control total_price text-right" type="text" name="total_price[]" id="total_price_1" value="0.00" readonly="readonly" /></td><td><button  class="btn btn-danger text-right red" type="button" value="" onclick="deleteRow(this)" tabindex="8"><i class="fa fa-close"></i></button></td></tr></tbody><tfoot><tr><td class="text-right" colspan="7"><b>:</b></td><td class="text-right"><input type="text" id="Total" class="text-right form-control" name="total" value="0.00" readonly="readonly" /></td><td> <button type="button" id="add_invoice_item" class="btn btn-info" name="add-invoice-item"  onClick="addPurchaseOrderField1('addPurchaseItem')"  tabindex="9"/><i class="fa fa-plus"></i></button><input type="hidden" name="baseUrl" class="baseUrl" value=""/></td></tr><tr><td class="text-right" colspan="7"><b>:</b></td><td class="text-right"><input type="text" id="grandTotal" class="text-right form-control" name="grand_total_price" value="0.00" readonly="readonly" /></td><td> </td></tr><tr><td class="text-right" colspan="7"><b>:</b></td><td class="text-right"><input type="text" id="paidAmount" class="text-right form-control" onKeyup="invoice_paidamount()" name="paid_amount" value="" /></td><td> </td></tr><tr><td colspan="2" class="text-right"><input type="button" id="full_paid_tab" class="btn btn-warning" value="" tabindex="16" onClick="full_paid()"/></td><td class="text-right" colspan="5"><b>:</b></td><td class="text-right"><input type="text" id="dueAmmount" class="text-right form-control" name="due_amount" value="0.00" readonly="readonly" /></td><td></td></tr></tfoot></table>');
-      //newDiv.style.background = "#000";
-//        $('#quotation_service').append(newDiv);
-//     });
-// });
-
 
   $("#service_quotation_div").click(function () {
 

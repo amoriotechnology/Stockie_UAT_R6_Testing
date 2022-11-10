@@ -31,131 +31,107 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
     <section class="content">
         <!-- Alert Message -->
         <?php
-        $message = $this->session->userdata('message');
-        if (isset($message)) {
-            ?>
-            <div class="alert alert-info alert-dismissable">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                <?php echo $message ?>                    
-            </div>
-            <?php
-            $this->session->unset_userdata('message');
-        }
-        $error_message = $this->session->userdata('error_message');
-        if (isset($error_message)) {
-            ?>
-            <div class="alert alert-danger alert-dismissable">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                <?php echo $error_message ?>                    
-            </div>
-            <?php
-            $this->session->unset_userdata('error_message');
-        }
+           $message = $this->session->userdata('message');
+           if (isset($message)) {
+               ?>
+               <div class="alert alert-info alert-dismissable">
+                   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                   <?php echo $message ?>                    
+               </div>
+               <?php
+               $this->session->unset_userdata('message');
+           }
+           $error_message = $this->session->userdata('error_message');
+           if (isset($error_message)) {
+               ?>
+               <div class="alert alert-danger alert-dismissable">
+                   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                   <?php echo $error_message ?>                    
+               </div>
+               <?php
+               $this->session->unset_userdata('error_message');
+           }
         ?>
       <!-- <table id="tab"> -->
-     
-            <div class="row">
-               <div class="document">
-                  <div class="spreadSheetGroup">
-                     <table class="shipToFrom table table-bordered">
-                        <thead>
-                           <tr>
-                              <th class="col-md-4 oc-head1"><img src="<?php echo  base_url().'assets/'.$logo; ?>"  alt=""></th>
-                              <th class="col-md-4 oc-head3"><p>Invoice No:  </p>
-                                <p><?php echo $invoice; ?></p></th>
-                                <th class="col-md-4oc-head3"><p>Invoice Date:  </p>
-                                <p><?php echo $invoice_date; ?></p></th>
-                           </tr>
-                           <tr>
-                              <th class="col-md-6 oc-head2"><p class="text-center"><small>Gross Weight:</small></p><p class="text-center"><?php echo $gross; ?></p></th>
-                              <th class="col-md-6 oc-head3" colspan="3"><p class="text-center"><small>Container No:</small></p><p class="text-center"><?php echo $container; ?></p></th>
-                           </tr>
-                        </thead>
-                     </table>
-                     <!-- <table class="shipToFrom table table-bordered">
-                        <thead>
-                           <tr>
-                              <th class="col-md-6 oc-head2"><p>Gross Weight: &nbsp; <?php echo $gross; ?></p></th>
-                              <th class="col-md-6 oc-head3"><p>Container No: &nbsp; <?php echo $container; ?> </p></th>
-                           </tr>
-                        </thead>
-                     </table> -->
-                     <!-- <table class="shipToFrom">
-                        <thead >
-                           <tr>
-                              <th class="col-md-6"> Shiper: INFINITY STONES EUROPE SRL <br> INFINITY STONES EUROPE SRL <br> 
-                              FRASCATI <br> 00044<br>RM <br> ITALY</th>
-                             <th class="booking col-md-6"><em>Booking No.</em>
-                                214250582 </th>
-                                
-                           </tr>
-                           
-                        </thead>
-                         
-                     </table>  -->
-                       <!-- <table class="shipToFrom">
-                        <thead>
-                           <tr>
-                              <th style="text-align:center;">PARTICULARS FURNISHED BY SHIPPER</th>
-                            
-                              </th>
-                              
-                             
-                           </tr>
-                        
-                        </thead>
-                  
-                     </table> -->
-                     <br><br>
-                     <table class="proposedWork table table-bordered" id="price" width="100%" style="margin-top:20px">
-                        
-                        <tbody>
-                           <tr >
-                              <td Class="col-md-4"><p><small>Product Name	:</small></p><p><?php echo $product; ?></p></td>
-                              <td Class="col-md-4"><p><small>Description :</small></p><p><?php echo $description; ?></p></td>
-                              <td Class="col-md-4"><p><small>Thickness	:</small></p><p><?php echo $thickness; ?></p></td>
-                               
-                            <!-- <div class="verify">
-                            <p class="copy">Verify copy<p>
-                        </div> -->
-                              
-                           </tr>
-                        </tbody>
-                        
-                        <tfoot>
-                          
-                         
-                        </tfoot>
-                     </table>
-                     <br><br>
-                     <table class="proposedWork table table-bordered" id="price" width="100%" style="margin-top:20px">
-                        
-                        <tbody>
-                           <tr >
-                              <td Class="col-md-3"><p><small>Serial NO	:</small></p><p><?php echo $serial; ?></p></td>
-                              <td Class="col-md-3"><p><small>SLAB NO	:</small></p><p><?php echo $slab; ?></p></td>
-                              <td Class="col-md-3"><p><small>Net Measurement (Inches)</small></p> <p>Width: &nbsp; <?php echo $width; ?></p> <p >Height: &nbsp; <?php echo $height; ?></p></td>
-                              <td Class="col-md-3"><p><small>Area (Sq. Ft)</small></p><p><?php echo $area; ?></p></td>
-                           </tr>
-                           <tr >
-                              <td Class="col-md-6" colspan="3"><p style="text-align:right;">Total:</p></td>
-                              <td Class="col-md-6"><p style="font-weight: bold;">$<?php echo $total; ?></p></td>
-                           </tr>
-                        </tbody>
-                        
-                        <tfoot>
-                          
-                         
-                        </tfoot>
-                     </table>
-                
+           
+ <div class="container" id="content">
+    <div class="row">
+                <div class="col-lg-4">
+                    <img src="<?php echo  base_url().'assets/'.$logo; ?>" width="40%">
+                </div>
+                <div class="col-lg-4">
+                  <h4 style="margin-top: 30px; text-align: center;"> <?php echo $company; ?></h4>
+                </div>
+                <div class="col-lg-4">
+                    <h4 style="margin-top: 30px; text-align: right;"> <?php echo $address; ?></h4>
                   </div>
-               </div>
+            </div> <br><br>
+        <div class="row">
+            
+            <div class="col-lg-6">
+                <h5>Packing List No: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $invoice;  ?></span></h5>
+                <h5>Gross Weight:  &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $gross; ?></span></h5>
+
             </div>
-         </div>
+        
+
+            
+            <div class="col-lg-6">
+                <h5>Invoice Date: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $invoice_date; ?></span></h5>
+                <h5>Container No: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $container; ?></span></h5>
+                            </div>
+        </div><br><br>
+
+        <table style="width:100%">
+            <tr>
+              <th>Product</th>
+              <th>Description</th>
+              <th>Thickness</th>
+            </tr>
+            <tr>
+              <td><?php echo $product; ?></td>
+              <td><?php echo $description; ?></td>
+              <td><?php echo $thickness; ?></td>
+            </tr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </table><br>
+        <table style="width:100%">
+            <tr>
+                <th>SLAB NO</th>
+                <th>Net Measurement (Inches)</th>
+                <th>Area (Sq. Ft)</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td><?php echo $slab; ?></td>
+                <td><?php echo $width; ?></td>
+                <td><?php echo $height; ?></td>
+                <td><?php echo $area; ?></td>
+            </tr>
+         
+          </table><br><br>
+
+          
+
+<h4>Remarks </h4>
+        
+    </div>
     </section> <!-- /.content -->
 </div> <!-- /.content-wrapper -->
       <!-- </table> -->
+
+
+<style>
+    .container {
+  width: 100%;
+  /*background-color: rgb(241, 248, 250);*/
+  margin-top: 50px;
+}
+    td,th{
+        border:1px solid rgb(0, 0, 0);
+        text-align: center;
+        padding: 3px;
+    }    
+</style>      
 
 
 

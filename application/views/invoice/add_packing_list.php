@@ -57,14 +57,15 @@
                 <div class="panel panel-bd lobidrag">
                     <div class="panel-heading">
                         <div class="panel-title">
-                            <h4>Create New Packing List Invoicew</h4>
+                            <h4>Create New Packing List Invoice</h4>
                         </div>
                     </div>
 
                     <div class="panel-body">
-                    <?php echo form_open_multipart('Cpurchase/insert_packing_list',array('class' => 'form-vertical', 'id' => 'insert_packing_list','name' => 'insert_packing_list'))?>
+                    <?php 
+                    echo form_open_multipart('Cinvoice/insert_packing_list',array('class' => 'form-vertical', 'id' => 'insert_packing_list','name' => 'insert_packing_list'))?>
                         
-
+                         
                         <div class="row">
 
                              <div class="col-sm-6">
@@ -327,8 +328,35 @@
                     </div>
                         <div class="form-group row">
                             <div class="col-sm-6">
-                                <input type="submit" id="add_purchase" class="btn btn-primary btn-large" name="add-packing-list" value="<?php echo display('submit') ?>" />
-                                <input type="submit" value="<?php echo display('submit_and_add_another') ?>" name="add-packing-list-another" class="btn btn-large btn-success" id="add-packing-list-another" >
+                               <!--  <input type="submit" id="add_purchase" class="btn btn-primary btn-large" name="add-packing-list" value="Save" />
+                                <input type="submit" value="Sendemail With Attachement" name="add-packing-list-another" class="btn btn-large btn-success" style="display:none;" id="save_another" >
+                                <input type="submit" style="display:none;" id="download" class="btn btn-primary btn-large" name="add-packing-list" value="Download" /> -->
+
+                                <table>
+                                <tr>
+                                    <td>
+    
+                                        <input type="submit" id="add_purchase" class="btn btn-primary btn-large" name="add-packing-list" value="Save" />
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        
+                                        <a href="" id="download" style="display:none;" class="btn btn-primary">
+                                            Download 
+                                        </a>
+
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        <a href="" style="display:none; color: #fff ;" id="save_another" class="btn btn-primary">
+                                            Sendmail with attachment
+                                        </a>
+                                    </td>
+                                  
+                                  
+                                    
+                                </tr>
+                               </table>
                             </div>
                         </div>
 
@@ -373,21 +401,31 @@
 <script type="text/javascript">
     function add()
     {
-        $('#content').append($('#crate_wrap').html());
+        $('#print').append($('#crate_wrap').html());
         $('#buddle_1').css('display','none');
         $('#buddle_2').css('display','block');
-
-
-
-
-
-
         
     }
     function hide()
     {
       
     }
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function () {
+    $("#add_purchase").click(function () {
+        $("#save_another").toggle();
+    });
+});
+
+$(document).ready(function () {
+    $("#add_purchase").click(function () {
+        $("#download").toggle();
+    });
+});
+
 </script>
 
 
@@ -530,7 +568,5 @@ $(document).ready(function(){
 
   
 });
-    
-
 
 </script>

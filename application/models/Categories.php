@@ -63,7 +63,7 @@ class Categories extends CI_Model {
 
         }
 
-        return false;
+        return true;
 
     }
 

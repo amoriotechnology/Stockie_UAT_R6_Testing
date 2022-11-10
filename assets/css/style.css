@@ -63,7 +63,7 @@ section, footer, header{
 	margin: 0px auto;
 	padding: 45px;
 	position: relative;
-	width: 590px;
+	/*width: 590px;*/
 }
 
 #chart{

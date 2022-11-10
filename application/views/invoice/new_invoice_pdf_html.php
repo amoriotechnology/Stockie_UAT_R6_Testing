@@ -50,13 +50,13 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
 
         <div class="row">
             <div class="col-lg-4">
-                <img src="<?php echo  base_url().'assets/'.$logo; ?>" width="100px" height="100px">
+                <img src="<?php echo  base_url().'assets/'.$logo; ?>" width="40%">
             </div>
             <div class="col-lg-4">
               <h4 style="margin-top: 30px; text-align: center;"><?php echo $company; ?></h4>
             </div>
             <div class="col-lg-4">
-                <address style="text-align: right;"><?php echo $address; ?></address>
+                <h4 style="margin-top: 30px; text-align: right;"><?php echo $address; ?></h4>
               </div>
         </div><br><br>
 
@@ -129,6 +129,7 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
     </div>
 </div>
 <h4>Message / Notes on Invoice </h4><br><br>
+</div>
     
     </section> <!-- /.content -->
 </div> <!-- /.content-wrapper -->
