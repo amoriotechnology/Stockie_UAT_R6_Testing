@@ -259,7 +259,7 @@
 
                                     <div class="col-sm-6">
 
-                                        <select name="paytype" class="form-control" required="" onchange="bank_paymet(this.value)" tabindex="3">
+                                        <select name="paytype" class="form-control" requirde="" onchange="bank_paymet(this.value)" tabindex="3">
 
                                             <option value="1"><?php echo display('cash_payment') ?></option>
 
@@ -304,7 +304,7 @@
 
                                         ?>
 
-                                        <input class=" form-control" type="date" size="50" name="invoice_date" id="date" required value="<?php echo html_escape($date); ?>" tabindex="4" />
+                                        <input class=" form-control" type="date" size="50" name="invoice_date" id="date" requirde value="<?php echo html_escape($date); ?>" tabindex="4" />
 
                                     </div>
 
@@ -413,7 +413,7 @@
 
                                     <div class="col-sm-8">
 
-                                       <input class="form-control" placeholder="Container Number" type="text" size="50" name="container_number" id="date" required value="" tabindex="4" />
+                                       <input class="form-control" placeholder="Container Number" type="text" size="50" name="container_number" id="date" requirde value="" tabindex="4" />
 
                                     </div>
 
@@ -432,7 +432,7 @@
                                     <div class="col-sm-8">
 
 
-                                        <input class="form-control" placeholder="BL Number" type="text" size="50" name="bl_no" required value=""/>
+                                        <input class="form-control" placeholder="BL Number" type="text" size="50" name="bl_no" requirde value=""/>
 
                                     </div>
 
@@ -465,7 +465,7 @@
 
                                         ?>
 
-                                        <input class="form-control" type="date" size="50" name="payment_due_date" id="date1" required  tabindex="4" />
+                                        <input class="form-control" type="date" size="50" name="payment_due_date" id="date1" requirde  tabindex="4" />
 
                                     </div>
 
@@ -484,7 +484,7 @@
 
                                         ?>
 
-                                        <input class="form-control" type="date" size="50" name="eta" id="date1" required  tabindex="4" />
+                                        <input class="form-control" type="date" size="50" name="eta" id="date1" requirde  tabindex="4" />
 
                                     </div>
 
@@ -592,10 +592,10 @@
                                             </td>
                                         
                                             <td class="text-right">
-                                                <input type="text" name="product_quantity[]" id="cartoon_1" required="" min="0" class="form-control text-right store_cal_1" onkeyup="total_amt(1);" placeholder="0.00" value=""  tabindex="6"/>
+                                                <input type="text" name="product_quantity[]" id="cartoon_1" requirde="" min="0" class="form-control text-right store_cal_1" onkeyup="total_amt(1);" placeholder="0.00" value=""  tabindex="6"/>
                                             </td>
                                             <td class="test">
-                                                <input type="text" name="product_rate[]" required=""  id="product_rate_1" class="form-control product_rate_1 text-right" placeholder="0.00" value="" min="0" tabindex="7" readonly/>
+                                                <input type="text" name="product_rate[]" requirde=""  id="product_rate_1" class="form-control product_rate_1 text-right" placeholder="0.00" value="" min="0" tabindex="7" readonly/>
                                             </td>
                                          
 
@@ -645,7 +645,11 @@
                         <div class="form-group row">
                             <div class="col-sm-6">
                                 <input type="submit" id="add_purchase" class="btn btn-primary btn-large" name="add-purchase" value="<?php echo display('Save') ?>" />
-                                <input type="submit" value="<?php echo display('submit_and_add_another') ?>" name="add-purchase-another" class="btn btn-large btn-success" id="add_purchase_another" >
+                              <!--  <div id='down_mail'  style="display: none;">
+                                <br>
+          <a href="<?php echo base_url()?>Cinvoice/invoice_inserted_data/2381153132" class="btn btn-success" style="color:#fff;">Download</a>
+                                   <a href="" class="btn btn-success" style="color:#fff;">Send  Email</a>
+                               </div> -->
                                 <button class="btn btn-primary" data-toggle="modal" data-target="#formModal" id="send_email">
 Send Email
 </button>
@@ -989,7 +993,7 @@ gtotal();
                                 <div class="form-group row">
                                     <label for="quantity" class="col-sm-4 col-form-label"><?php echo 'Quantity' ?> <i class="text-danger">*</i></label>
                                     <div class="col-sm-8">
-                                        <input class="form-control" name="quantity" type="number" id="quantity" placeholder="Enter Product Quantity only" required tabindex="1" >
+                                        <input class="form-control" name="quantity" type="number" id="quantity" placeholder="Enter Product Quantity only" requirde tabindex="1" >
                                     </div>
                                 </div>
                             </div>
@@ -1002,7 +1006,7 @@ gtotal();
                                 <div class="form-group row">
                                     <label for="product_name" class="col-sm-4 col-form-label"><?php echo display('product_name') ?> <i class="text-danger">*</i></label>
                                     <div class="col-sm-8">
-                                        <input class="form-control" name="product_name" type="text" id="product_name" placeholder="<?php echo display('product_name') ?>" required tabindex="1" >
+                                        <input class="form-control" name="product_name" type="text" id="product_name" placeholder="<?php echo display('product_name') ?>" requirde tabindex="1" >
                                     </div>
                                 </div>
                             </div>
@@ -1054,7 +1058,7 @@ gtotal();
                                 <div class="form-group row">
                                     <label for="sell_price" class="col-sm-4 col-form-label"><?php echo display('sell_price') ?> <i class="text-danger">*</i> </label>
                                     <div class="col-sm-8">
-                                        <input class="form-control text-right" id="sell_price" name="price" type="text" required="" placeholder="0.00" tabindex="5" min="0">
+                                        <input class="form-control text-right" id="sell_price" name="price" type="text" requirde="" placeholder="0.00" tabindex="5" min="0">
                                     </div>
                                 </div> 
                             </div>
@@ -1116,7 +1120,7 @@ gtotal();
                                     <tr class="">
 
                                         <td width="300">
-                                            <select name="supplier_id[]" class="form-control"  required="">
+                                            <select name="supplier_id[]" class="form-control"  requirde="">
                                                 <option value=""> select Supplier</option>
                                                 <?php if ($supplier) { ?>
                                                     {supplier}
@@ -1126,7 +1130,7 @@ gtotal();
                                             </select>
                                         </td>
                                         <td class="">
-                                            <input type="text" tabindex="6" class="form-control text-right" name="supplier_price[]" placeholder="0.00"  required  min="0"/>
+                                            <input type="text" tabindex="6" class="form-control text-right" name="supplier_price[]" placeholder="0.00"  requirde  min="0"/>
                                         </td>
 
                                         <!-- <td width="100"> <a  id="add_purchase_item" class="btn btn-info btn-sm" name="add-invoice-item" onClick="addpruduct('proudt_item');"  tabindex="9"/><i class="fa fa-plus-square" aria-hidden="true"></i></a> <a class="btn btn-danger btn-sm"  value="<?php //echo display('delete') ?>" onclick="deleteRow(this)" tabindex="10"><i class="fa fa-trash" aria-hidden="true"></i></a>
@@ -1214,7 +1218,7 @@ gtotal();
 
                             <div class="col-sm-6">
 
-                                <input type="text" class="form-control" name="bank_name" id="bank_name" required="" placeholder="<?php echo display('bank_name') ?>" tabindex="1"/>
+                                <input type="text" class="form-control" name="bank_name" id="bank_name" requirde="" placeholder="<?php echo display('bank_name') ?>" tabindex="1"/>
 
                             </div>
 
@@ -1228,7 +1232,7 @@ gtotal();
 
                             <div class="col-sm-6">
 
-                                <input type="text" class="form-control" name="ac_name" id="ac_name" required="" placeholder="<?php echo display('ac_name') ?>" tabindex="2"/>
+                                <input type="text" class="form-control" name="ac_name" id="ac_name" requirde="" placeholder="<?php echo display('ac_name') ?>" tabindex="2"/>
 
                             </div>
 
@@ -1242,7 +1246,7 @@ gtotal();
 
                             <div class="col-sm-6">
 
-                                <input type="text" class="form-control" name="ac_no" id="ac_no" required="" placeholder="<?php echo display('ac_no') ?>" tabindex="3"/>
+                                <input type="text" class="form-control" name="ac_no" id="ac_no" requirde="" placeholder="<?php echo display('ac_no') ?>" tabindex="3"/>
 
                             </div>
 
@@ -1256,7 +1260,7 @@ gtotal();
 
                             <div class="col-sm-6">
 
-                                <input type="text" class="form-control" name="branch" id="branch" required="" placeholder="<?php echo display('branch') ?>" tabindex="4"/>
+                                <input type="text" class="form-control" name="branch" id="branch" requirde="" placeholder="<?php echo display('branch') ?>" tabindex="4"/>
 
                             </div>
 
@@ -1341,7 +1345,7 @@ gtotal();
 
                             <div class="col-sm-6">
 
-                                <input class="form-control" name ="customer_name" id="" type="text" placeholder="<?php echo display('customer_name') ?>"  required="" tabindex="1">
+                                <input class="form-control" name ="customer_name" id="" type="text" placeholder="<?php echo display('customer_name') ?>"  requirde="" tabindex="1">
 
                             </div>
 
@@ -1357,7 +1361,7 @@ gtotal();
 
                             <div class="col-sm-6">
 
-                                <input class="form-control" name ="email" id="email" type="email" placeholder="<?php echo display('customer_email') ?>" required tabindex="2"> 
+                                <input class="form-control" name ="email" id="email" type="email" placeholder="<?php echo display('customer_email') ?>" requirde tabindex="2"> 
 
                             </div>
 
@@ -1371,7 +1375,7 @@ gtotal();
 
                             <div class="col-sm-6">
 
-                                <input class="form-control" name ="mobile" id="mobile" type="number" placeholder="<?php echo display('customer_mobile') ?>" min="0" tabindex="3" required>
+                                <input class="form-control" name ="mobile" id="mobile" type="number" placeholder="<?php echo display('customer_mobile') ?>" min="0" tabindex="3" requirde>
 
                             </div>
 
@@ -1385,7 +1389,7 @@ gtotal();
 
                             <div class="col-sm-6">
 
-                                <textarea class="form-control" required name="address" id="address " rows="3" placeholder="<?php echo display('customer_address') ?>" tabindex="4"></textarea>
+                                <textarea class="form-control" requirde name="address" id="address " rows="3" placeholder="<?php echo display('customer_address') ?>" tabindex="4"></textarea>
 
                             </div>
 
@@ -1461,7 +1465,7 @@ gtotal();
 
                             <div class="col-sm-6">
 
-                                <input class="form-control" name ="new_payment_type" id="" type="text" placeholder="New Payment Type"  required="" tabindex="1">
+                                <input class="form-control" name ="new_payment_type" id="" type="text" placeholder="New Payment Type"  requirde="" tabindex="1">
 
                             </div>
 
@@ -1523,11 +1527,11 @@ gtotal();
 						<div class="form-group">
 							<div class="col-md-6">
 								<label>Your name *</label>
-								<input type="text"  data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name_email" required>
+								<input type="text"  data-msg-requirde="Please enter your name." maxlength="100" class="form-control" name="name" id="name_email" requirde>
 							</div>
 							<div class="col-md-6">
 								<label>Your email address *</label>
-								<input type="email"  data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email_info" required>
+								<input type="email"  data-msg-requirde="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email_info" requirde>
 							</div>
 						</div>
 					</div>
@@ -1535,7 +1539,7 @@ gtotal();
 						<div class="form-group">
 							<div class="col-md-12">
 								<label>Subject</label>
-								<input type="text"  data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="subject" id="subject_email" required>
+								<input type="text"  data-msg-requirde="Please enter the subject." maxlength="100" class="form-control" name="subject" id="subject_email" requirde>
 							</div>
 						</div>
 					</div>
@@ -1543,7 +1547,7 @@ gtotal();
 						<div class="form-group">
 							<div class="col-md-12">
 								<label>Message *</label>
-								<textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="message" id="message_email" required></textarea>
+								<textarea maxlength="5000" data-msg-requirde="Please enter your message." rows="10" class="form-control" name="message" id="message_email" requirde></textarea>
 							</div>
 						</div>
 					</div>
@@ -1562,7 +1566,7 @@ gtotal();
 
 <script type="text/javascript">
     $('#add_purchase').on('click', function() {
-$('#send_email').show();
+$('#domail').show();
 
     });
      $(function() { 
@@ -1691,7 +1695,7 @@ $('#send_email').show();
         e.innerHTML = "<td><select name='prodt' id='prodt_" + count + "' class='form-control product_name' onchange='available_quantity("+ count +");'>"+
         "<option value='Select the Product' selected>Select the Product</option><?php  foreach($product as $tx){?>"+
        " <option value='<?php echo $tx['product_name'].'-'.$tx['product_model'];?>'>  <?php echo $tx['product_name'].'-'.$tx['product_model'];  ?></option>"+
-        "<?php } ?> </select><input type='hidden' class='common_product autocomplete_hidden_value  product_id_" + count + "' name='product_id[]' id='SchoolHiddenId' /></td><td><input type='text' name='available_quantity[]' id='available_quantity[]' class='form-control text-right common_avail_qnt available_quantity_" + count + "' value='0' readonly='readonly' /></td><td> <input type='text' name='product_quantity[]' id='cartoon_" + count + "'  required='required' onkeyup='total_amt(" + count + ");'  onchange='total_amt(" + count + ");' id='total_qntt_" + count + "' class='common_qnt total_qntt_" + count + " form-control text-right'  placeholder='0.00' min='0' tabindex='" + tab3 + "'/></td><td><input type='text' name='product_rate[]' id='product_rate_" + count + "' onkeyup='quantity_calculate(" + count + ");' onchange='quantity_calculate(" + count + ");' id='price_item_" + count + "' class='common_rate price_item" + count + " form-control text-right' required placeholder='0.00' min='0' tabindex='" + tab4 + "'/></td><td class='text-right'><input class='common_total_price total_price form-control text-right' type='text' name='total_price[]' id='total_price_" + count + "' value='0.00' readonly='readonly'/></td><td>"+tbfild+"<input type='hidden' id='all_discount_" + count + "' class='total_discount dppr' name='discount_amount[]'/><button tabindex='" + tab5 + "' style='text-align: right;' class='btn btn-danger' type='button' value='Delete' onclick='deleteRow(this)'><i class='fa fa-close'></i></button></td>",
+        "<?php } ?> </select><input type='hidden' class='common_product autocomplete_hidden_value  product_id_" + count + "' name='product_id[]' id='SchoolHiddenId' /></td><td><input type='text' name='available_quantity[]' id='available_quantity[]' class='form-control text-right common_avail_qnt available_quantity_" + count + "' value='0' readonly='readonly' /></td><td> <input type='text' name='product_quantity[]' id='cartoon_" + count + "'  requirde='requirde' onkeyup='total_amt(" + count + ");'  onchange='total_amt(" + count + ");' id='total_qntt_" + count + "' class='common_qnt total_qntt_" + count + " form-control text-right'  placeholder='0.00' min='0' tabindex='" + tab3 + "'/></td><td><input type='text' name='product_rate[]' id='product_rate_" + count + "' onkeyup='quantity_calculate(" + count + ");' onchange='quantity_calculate(" + count + ");' id='price_item_" + count + "' class='common_rate price_item" + count + " form-control text-right' requirde placeholder='0.00' min='0' tabindex='" + tab4 + "'/></td><td class='text-right'><input class='common_total_price total_price form-control text-right' type='text' name='total_price[]' id='total_price_" + count + "' value='0.00' readonly='readonly'/></td><td>"+tbfild+"<input type='hidden' id='all_discount_" + count + "' class='total_discount dppr' name='discount_amount[]'/><button tabindex='" + tab5 + "' style='text-align: right;' class='btn btn-danger' type='button' value='Delete' onclick='deleteRow(this)'><i class='fa fa-close'></i></button></td>",
                 document.getElementById(t).appendChild(e),
                 document.getElementById(a).focus(),
                 document.getElementById("add_invoice_item").setAttribute("tabindex", tab6);

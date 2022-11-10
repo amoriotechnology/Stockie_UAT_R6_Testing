@@ -62,6 +62,19 @@ class Purchases extends CI_Model {
     }
 
 
+  public function get_invoice_design()
+    {
+        $uid=$_SESSION['user_id'];
+    $sql='select * from invoice_design where uid="'.$uid.'"';
+     $query=$this->db->query($sql); 
+
+        if ($query->num_rows() > 0) {
+
+            return $query->result_array();
+
+        }
+        return false;
+    }
                //Count Trucking
     public function count_trucking() {
         $this->db->select('*');
@@ -2116,7 +2129,7 @@ return $output;
 
     // print_r($str);
 
-    // exit;
+
         if ($query->num_rows() > 0) {
             return $query->result_array();
         }
@@ -2447,7 +2460,7 @@ public function get_supplier($purchase_id='')
 }
 public function company_info()
 {
-      $sql='SELECT * FROM `company_information` as c JOIN user_login as u on u.cid=c.company_id where u.id='.$_SESSION['user_id'];
+      $sql='SELECT * FROM `company_information` as c JOIN user_login as u on u.cid=c.company_id where u.user_id='.$_SESSION['user_id'];
    $query=$this->db->query($sql);
    if ($query->num_rows() > 0) {
             return $query->result_array();
@@ -2806,7 +2819,37 @@ public function company_info()
         }
         return false;
     }
-///////////////////////Invoice Area////////
+/////////////////////// edit Invoice Area////////
+
+    public function invoice_edit($purchase_id)
+    {
+        $sql='SELECT * FROM `expense_packing_list` WHERE expense_packing_id="'.$purchase_id.'"';
+        $query=$this->db->query($sql);
+         if ($query->num_rows() > 0) {
+            return $query->result_array();
+        }
+
+    }
+
+     public function invoice_detail_edit($purchase_id)
+    {
+        $sql='SELECT * FROM `expense_packing_list_detail` WHERE expense_packing_id="'.$purchase_id.'"';
+        $query=$this->db->query($sql);
+         if ($query->num_rows() > 0) {
+            return $query->result_array();
+        }
+    }
+
+         public function invoice_product_edit($purchase_id)
+    {
+        $sql='SELECT b.* FROM `expense_packing_list_detail` a JOIN product_information b on b.product_id=a.product_id where a.expense_packing_id="'.$purchase_id.'"';
+
+        $query=$this->db->query($sql);
+         if ($query->num_rows() > 0) {
+            return $query->result_array();
+        }
+
+    }
 
 
 

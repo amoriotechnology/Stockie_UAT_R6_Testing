@@ -162,7 +162,13 @@ $today = date('Y-m-d');
 <td><?php   echo $arr['container_no'];  ?></td>
   <td><?php   echo $arr['invoice_date'];  ?></td>
   <td><?php   echo $arr['thickness'];  ?></td>
-  <td><a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cinvoice/trucking_update_form/<?php echo  $arr['purchase_order_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td></tr>
+  <td>
+<a href="<?php echo base_url(); ?>Cpurchase/purchase_details_data/20221103085607" style='background-color: #62d0f1;
+    color: #fff;
+' class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Expenses Details"><i class="fa fa-window-restore" aria-hidden="true"></i></a>
+    <a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cpurchase/packing_update_form/<?php echo  $arr['expense_packing_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+
+  </td></tr>
      <?php   
 $count++;
       }  else{

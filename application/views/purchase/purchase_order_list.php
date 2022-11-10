@@ -156,7 +156,9 @@ $today = date('Y-m-d');
 <td><?php   echo $arr['purchase_order_id'];  ?></td>
   <td><?php   echo $arr['grand_total_amount'];  ?></td>
 
-  <td><a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cinvoice/trucking_update_form/<?php echo  $arr['purchase_order_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td></tr>
+  <td align="center"><a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cinvoice/trucking_update_form/<?php echo  $arr['purchase_order_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a>.
+    <a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cpurchase/purchase_order_details_data/<?php echo  $arr['purchase_order_id'];  ?>"><i class="fa fa-window-restore" aria-hidden="true"></i></a>
+  </td></tr>
      <?php   
 $count++;
       }  else{

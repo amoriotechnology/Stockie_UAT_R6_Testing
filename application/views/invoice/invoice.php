@@ -203,7 +203,13 @@ $today = date('Y-m-d');
    <td><?php   echo $arr['customer_name'];  ?></td>
 <td><?php   echo $arr['date'];  ?></td>
   <td><?php   echo $arr['sales_by'];  ?></td>
-  <td><a href="<?php echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php echo  $arr['invoice_id'];  ?>">edit</a><input type="button" value="delete"/></td></tr>
+  <td><a href="http://localhost/Stockie_UAT_R6_Testing/Cinvoice/invoice_inserted_data/20221103085607" style="    background: #3ca5de;
+    color: #fff;" class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Expenses Details"><i class="fa fa-window-restore" aria-hidden="true"></i></a>
+      
+    <a class="btn btn-primary btn-sm" style="color: #fff;background:#3ca5de" href="<?php echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+<a class="btn btn-primary btn-sm" style="color: #fff;background:#3ca5de" href="<?php echo base_url()?>Cinvoice/sendmail_with_attachments/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+
+</td></tr>
      <?php   
 $count++;
       }  else{

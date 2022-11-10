@@ -13,6 +13,15 @@ class Cpurchase extends CI_Controller {
         )); 
     }
 
+
+public function packing_update_form($purchase_id)
+{
+$CI = & get_instance();
+        $CI->auth->check_admin_auth();
+        $CI->load->library('lpurchase');
+        $content = $CI->lpurchase->packing_update_form($purchase_id);
+        $this->template->full_admin_html_view($content);
+}
     public function index() {
         $CI = & get_instance();
         $CI->auth->check_admin_auth();
@@ -307,6 +316,11 @@ class Cpurchase extends CI_Controller {
 
 
     public function insert_purchase_order() {
+
+
+
+        print_r($_REQUEST);
+        exit; 
         $CI = & get_instance();
         $CI->auth->check_admin_auth();
         $CI->load->model('Purchases');
@@ -357,6 +371,8 @@ class Cpurchase extends CI_Controller {
 
     //purchase Update Form
     public function purchase_update_form($purchase_id) {
+      
+       
         $CI = & get_instance();
         $CI->auth->check_admin_auth();
         $CI->load->library('lpurchase');
@@ -489,9 +505,7 @@ class Cpurchase extends CI_Controller {
           $data=array();
         $this->load->model('Purchases');
 
-        // $data['company_info']=
-            
-        exit;
+    
         $content = $CI->lpurchase->purchase_details_data($purchase_id);
         $this->template->full_admin_html_view($content);
     }
@@ -510,7 +524,9 @@ class Cpurchase extends CI_Controller {
 
 
      //Retrive right now inserted data to cretae html
-    public function purchase_order_details_data() {
+    public function purchase_order_details_data($purchase_id) {
+
+
 
         $CI = & get_instance();
         $CI->auth->check_admin_auth();
@@ -523,6 +539,9 @@ class Cpurchase extends CI_Controller {
         $data['order'] =$this->Purchases->get_purchases_order($invoice_no);
         $data['supplier'] =$this->Purchases->get_supplier($invoice_no);
         $data['company_info'] =$this->Purchases->company_info();
+
+
+      
 
         $content = $this->load->view('purchase/purchase_order_invoice', $data, true);
         //$content='';
@@ -665,6 +684,34 @@ class Cpurchase extends CI_Controller {
             force_download(FCPATH.'assets/data/pdf/'.$file_name, null);
     }
 
+public function insert_po_product()
+{
+
+
+$date=date('d-m-Y');
+
+     $sql='insert supplier_product(
+    product_id,
+    products_model,
+    supplier_id,
+    supplier_price,
+    date
+
+    ) values(
+
+    "'.$_REQUEST['product_id'].'",
+    "'.$_REQUEST['model'].'",
+    "'.$_REQUEST['supplier_id'].'",
+    "'.$_REQUEST['price'].'",
+    "'.$date.'",
+
+)';
+
+$qury=$this->db->query($sql);
+
+    redirect('Cpurchase/purchase_order');
+
+}
 
 
    
