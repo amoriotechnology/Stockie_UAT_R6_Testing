@@ -616,10 +616,11 @@ class Ppurchases extends CI_Model {
                 ->where('created_by',$this->session->userdata('user_id'))
                 ->where('status', '1')
                 ->get();
-        if ($query->num_rows() > 0) {
+             
+      
             return $query->result_array();
-        }
-        return false;
+        
+       
     }
 
         //Select All Supplier List

@@ -202,12 +202,24 @@ public function get_email_data(){
     return false;
 
 }
+public function get_setting($user,$menu,$submenu){
+ 
+    $this->db->select('*');
+    $this->db->from('bootgrid_data');
+    $this->db->where('user', $user);
+    $this->db->where('menu', $menu);
+    $this->db->where('submenu', $submenu);
+    $query = $this->db->get()->result();
+
+     return $query;
+
+}
 public function getcustomer_data($value){
     $this->db->select('*');
     $this->db->from('customer_information');
     $this->db->where('customer_name', $value);
     $query = $this->db->get()->result();
-     return $query;
+   echo json_encode($query);
 
 }
 public function availability($product_nam,$product_model){

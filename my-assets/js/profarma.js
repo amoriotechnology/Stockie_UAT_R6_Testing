@@ -51,6 +51,7 @@ function setSates(states){
 }
 // this will read and set the initial states when the page loads
 setSates( localStorage.getItem('states') );
+
 /*
 
 $(function() {

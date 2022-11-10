@@ -136,17 +136,17 @@ $today = date('Y-m-d');
   <table class="table table-bordered" cellspacing="0" width="100%" id="ProfarmaInvList">
     <thead>
       <tr>
-      <th >ID</th>
-        <th >Trucking ID</th>
-        <th>Container Pick Up Date</th>
-        <th>Delivery Date</th>
-        <th>Shipment Company</th>
-         <th>Bill To</th>
-		 <th>Invoice Date</th>
-		 <th>Total Amount</th>
-      <div class="myButtonClass"> 
-         <th class="text-center" data-column-id="action" data-formatter="commands" data-sortable="false">Action</th>
-        </div>
+      <th class="ID">ID</th>
+        <th class="Trucking ID">Trucking ID</th>
+        <th class="Container Pick Up Date">Container Pick Up Date</th>
+        <th class="Delivery Date">Delivery Date</th>
+        <th class="Shipment Company">Shipment Company</th>
+         <th class="Bill To">Bill To</th>
+		 <th class="Invoice Date">Invoice Date</th>
+		 <th class="Total Amount">Total Amount</th>
+     
+         <th class="text-center Action" data-column-id="action" data-formatter="commands" data-sortable="false">Action</th>
+       
       </tr>
     </thead>
     <tbody>
@@ -158,15 +158,15 @@ $today = date('Y-m-d');
         foreach($expense['rows'] as $k=>$arr){
     
           ?>
-          <tr><td><?php  echo $count;  ?></td>
- <td><?php   echo $arr['trucking_id'];  ?></td>
-   <td><?php   echo $arr['container_pickup_date'];  ?></td>
-   <td><?php   echo $arr['delivery_date'];  ?></td>
-<td><?php   echo $arr['shipment_company'];  ?></td>
-  <td><?php   echo $arr['customer_name'];  ?></td>
-  <td><?php   echo $arr['invoice_date'];  ?></td>
-  <td><?php   echo $arr['grand_total_amount'];  ?></td>
-  <td><a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Ccpurchase/trucking_update_form/<?php echo  $arr['trucking_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td></tr>
+          <tr><td class="ID"><?php  echo $count;  ?></td>
+ <td class="Trucking ID"><?php   echo $arr['trucking_id'];  ?></td>
+   <td class="Container Pick Up Date"><?php   echo $arr['container_pickup_date'];  ?></td>
+   <td class="Delivery Date"><?php   echo $arr['delivery_date'];  ?></td>
+<td class="Shipment Company"><?php   echo $arr['shipment_company'];  ?></td>
+  <td class="Bill To"><?php   echo $arr['customer_name'];  ?></td>
+  <td class="Invoice Date"><?php   echo $arr['invoice_date'];  ?></td>
+  <td class="Total Amount"><?php   echo $arr['grand_total_amount'];  ?></td>
+  <td class="Action"><a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Ccpurchase/trucking_update_form/<?php echo  $arr['trucking_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td></tr>
      <?php   
 $count++;
      
@@ -214,33 +214,26 @@ $count++;
 
 
 
-<th >ID</th>
-        <th >Trucking ID</th>
-        <th>Container Pick Up Date</th>
-        <th>Delivery Date</th>
-        <th>Shipment Company</th>
-         <th>Bill To</th>
-		 <th>Invoice Date</th>
-		 <th>Total Amount</th>
+
     <!-- The Modal Column Switch -->
             <div id="myModal_colSwitch" class="modal_colSwitch">
                     <div class="modal-content_colSwitch">
                           <span class="close_colSwitch">&times;</span>
-                          <input type="checkbox"  data-control-column="1" class="opt" /> ID<br>
+                          <input type="checkbox"  data-control-column="1" class="opt ID" value="ID"/> ID<br>
 
-    <input type="checkbox"  data-control-column="2" class="opt" />Trucking ID<br>
+    <input type="checkbox"  data-control-column="2" class="opt Trucking ID" value="Trucking ID"/>Trucking ID<br>
  
-    <input type="checkbox"  data-control-column="3" class="opt" />Container Pick Up Date<br>
+    <input type="checkbox"  data-control-column="3" class="opt Container Pick Up Date" value="Container Pick Up Date"/>Container Pick Up Date<br>
   
-    <input type="checkbox"  data-control-column="4" class="opt" />Delivery Date<br>
+    <input type="checkbox"  data-control-column="4" class="opt Delivery Date" value="Delivery Date"/>Delivery Date<br>
 
-    <input type="checkbox"  data-control-column="5" class="opt" />Shipment Company<br>
+    <input type="checkbox"  data-control-column="5" class="opt Shipment Company" value="Shipment Company"/>Shipment Company<br>
 
-    <input type="checkbox"  data-control-column="6" class="opt" />Bill To<br>
-	<input type="checkbox"  data-control-column="7" class="opt" />Invoice Date<br>
-	<input type="checkbox"  data-control-column="8" class="opt" />Total Amount<br>
-<input type="checkbox"  data-control-column="9" class="opt" />Action<br>
-                     
+    <input type="checkbox"  data-control-column="6" class="opt Bill To" value="Bill To"/>Bill To<br>
+	<input type="checkbox"  data-control-column="7" class="opt Invoice Date" value="Invoice Date"/>Invoice Date<br>
+	<input type="checkbox"  data-control-column="8" class="opt Total Amount" value="Total Amount"/>Total Amount<br>
+<input type="checkbox"  data-control-column="9" class="opt Action" value="Action"/>Action<br>
+     <!--      <input type="submit" value="submit" id="submit"/>-->    
                     </div>
                 </div>
 
@@ -272,6 +265,109 @@ $count++;
 
 </div>
 <script type="text/javascript" src="<?php echo base_url()?>my-assets/js/profarma.js"></script>
+<input type="hidden" value="Purchase/Trucking" id="url"/>
+<input type="hidden" name="<?php echo $this->security->get_csrf_token_name();?>" value="<?php echo $this->security->get_csrf_hash();?>">
+<script>
+
+    var csrfName = '<?php echo $this->security->get_csrf_token_name();?>';
+var csrfHash = '<?php echo $this->security->get_csrf_hash();?>';
+$editor = $('#submit'),
+  $editor.on('click', function(e) {
+    if (this.checkValidity && !this.checkValidity()) return;
+    e.preventDefault();
+    var yourArray = [];
+    //loop through all checkboxes which is checked
+    $('.modal-content_colSwitch input[type=checkbox]:not(:checked)').each(function() {
+      yourArray.push($(this).val());//push value in array
+    });
+   
+    values = {
+    
+      extralist_text: yourArray
+    
+    };
+    console.log(values)
+    var json=values;
+    var data = {
+        page:$('#url').val(),
+          content: yourArray
+       
+       };
+       data[csrfName] = csrfHash;
+$.ajax({
+	
+    type: "POST",  
+    url:'<?php echo base_url();?>Cinvoice/setting',
+   
+    data: data,
+    dataType: "json", 
+    success: function(data) {
+        if(data) {
+           console.log(data);
+        }
+    }  
+});
+  });
+
+  $( document ).ready(function() {
+   var page=$('#url').val();
+   page=page.split('/');
+    var data = {
+        'menu':page[0],
+        'submenu':page[1]
+         
+       
+       };
+      console.log(page[0]+"-"+page[1]);
+       data[csrfName] = csrfHash;
+    $.ajax({
+	
+    type: "POST",  
+    url:'<?php echo base_url();?>Cinvoice/get_setting',
+   
+    data: data,
+    dataType: "json", 
+    success: function(data) {
+     var menu=data.menu;
+     var submenu=data.submenu;
+     if(menu=='Purchase' && submenu=='Trucking'){
+     var s=data.setting;
+s=JSON.parse(s);
+console.log(s);
+for (var i = 0; i < s.length; i++) {
+    console.log(s[i]);
+    $('td.'+s[i]).hide(); // hide the column header th
+    $('th.'+s[i]).hide();
+$('tr').each(function(){
+     $(this).find('td:eq('+$('td.'+s[i]).index()+')').hide();
+});
+    }
+    for (var i = 0; i < s.length; i++) {
+       // if( $('.'+s[i]))
+  $('.'+s[i]).prop('checked', false); //check the box from the array, note: you need to add a class to your checkbox group to only select the checkboxes, right now it selects all input elements that have the values in the array 
+    }  
+}
+    }
+});
+
+
+});
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
