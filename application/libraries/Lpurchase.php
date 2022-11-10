@@ -62,7 +62,7 @@ class Lpurchase {
         );
 
         $purchaseForm = $CI->parser->parse('purchase/add_purchase_form', $data, true);
-
+        $purchaseForm = $CI->parser->parse('purchase/purchase_order', $data, true);
         return $purchaseForm;
 
     }
@@ -1058,8 +1058,7 @@ class Lpurchase {
          //$bank_list        = $CI->Web_settings->bank_list();
 
         $purchase_detail = $CI->Purchases->retrieve_packing_editdata($purchase_id);
-
-      
+   
         // $customer_id = $purchase_detail[0]['customer_id'];
 
         // $supplier_list = $CI->Suppliers->supplier_list("110", "0");

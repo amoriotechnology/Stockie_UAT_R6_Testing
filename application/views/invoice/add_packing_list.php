@@ -133,16 +133,14 @@
 
         <br>
 
-                     <button type='submit' id="buddle_1"  class="btn btn-primary" onclick="add(); " style="float: right;margin-left: 10px;    margin-right: 33px;
-                        margin-top: 12px;margin-bottom: 20px;">Add Bundle</button>
-
-                   <!--  <button type='submit' id="buddle_1" class="btn btn-primary packing_btn" onclick="add()">Add Bundle</button>     -->
-                    <div id='content'>
-                                <div class="crate_wrap" id="crate_wrap" style="
-                        border: 1px solid #ddd;
-                        padding: 6px;
-                        margin: 5px;
-                    ">
+ <input type='button' value='Add Bundle' id="buddle_1"    class="btn btn-primary" onclick="add(); " style="float: right;margin-left: 10px;    margin-right: 33px;
+    margin-top: 12px;margin-bottom: 20px;"  />
+<div id='content'>
+            <div class="crate_wrap" id="crate_wrap" style="
+    border: 1px solid #ddd;
+    padding: 6px;
+    margin: 5px;
+">
 
 
 
@@ -403,7 +401,7 @@
 <script type="text/javascript">
     function add()
     {
-        $('#content').append($('#crate_wrap').html());
+        $('#print').append($('#crate_wrap').html());
         $('#buddle_1').css('display','none');
         $('#buddle_2').css('display','block');
         

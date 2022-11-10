@@ -17,6 +17,7 @@
 <script type="text/javascript" src="http://mrrio.github.io/jsPDF/dist/jspdf.debug.js"></script>
 <input type="hidden" name="<?php echo $this->security->get_csrf_token_name();?>" value="<?php echo $this->security->get_csrf_hash();?>">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>my-assets/css/css.css" />
+<script type="text/javascript" src="http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.js"></script>
 
 
 <div class="content-wrapper">
@@ -37,11 +38,11 @@
 
             <ol class="breadcrumb">
 
-                <li><a href="#"><i class="pe-7s-home"></i> <?php echo display('home') ?></a></li>
+            <li><a href="<?php   echo base_url(); ?>"><i class="pe-7s-home"></i> <?php echo display('home') ?></a></li>
 
                 <li><a href="#"><?php echo display('invoice') ?></a></li>
 
-                <li class="active">Manage Profarma Invoice</li>
+                <li class="active" style="color:orange;">Manage Profarma Invoice</li>
 
             </ol>
 
@@ -128,6 +129,7 @@ $today = date('Y-m-d');
 
     <input type="text" name="daterange" />
     <input type="submit" id="btn-filter" class="btn btn-success" value="Search"/>
+    <a href="javascript:window.location.reload(true)">  <i class="fa fa-refresh" style="font-size:20px;float:right;" aria-hidden="true"></i> </a>
 </div> 
 <?php echo form_close() ?>
                     </div>
@@ -182,15 +184,15 @@ $today = date('Y-m-d');
   <table class="table table-bordered" cellspacing="0" width="100%" id="ProfarmaInvList">
     <thead>
       <tr>
-      <th data-column-id="id" class="id">ID</th>
-        <th data-column-id="Invoice" >Invoice No</th>
-        <th data-column-id="Sale By">Sale By</th>
+      <th data-column-id="id" class="ID">ID</th>
+        <th data-column-id="Invoice" class="Invoice No">Invoice No</th>
+        <th data-column-id="Sale By" class="Sale By">Sale By</th>
         <th data-column-id="Customer Name" class="Customer Name" >Customer Name</th>
-        <th data-column-id="date" class="date">Date</th>
-        <th data-column-id="total" class="total">Total Amount</th>
-      <div class="myButtonClass"> 
-         <th class="text-center" data-column-id="action" data-formatter="commands" data-sortable="false">Action</th>
-        </div>
+        <th data-column-id="date" class="Date">Date</th>
+        <th data-column-id="total" class="Total Amount">Total Amount</th>
+    
+         <th class="text-center Action" data-column-id="action" data-formatter="commands" data-sortable="false">Action</th>
+      
       </tr>
     </thead>
     <tbody>
@@ -199,8 +201,8 @@ $today = date('Y-m-d');
     $count=1;
    
   
-     foreach($sale['rows'] as $k=>$arr){
-      if(is_array($arr) && count($arr)>0){
+    if(count($sale['rows'])>0){
+      foreach($sale['rows'] as $k=>$arr){
           ?>
           <tr><td><?php  echo $count;  ?></td>
  <td><?php   echo $arr['chalan_no'];  ?></td>
@@ -222,16 +224,17 @@ $today = date('Y-m-d');
 </tr>
      <?php   
 $count++;
-      }  else{
-        ?>
-         <tr><td><?php  echo "No Records Found"  ;?></td></tr>
-        <?php
-              }
+     
               
                 
-            }
+} }  else{
+    ?>
+     <tr><td colspan="8" style="text-align:center;font-weight:bold;"><?php  echo "No Records Found"  ;?></td></tr>
+    <?php
+          }
 
-        ?>
+?>
+  
   
     </tbody>
     <!--
@@ -260,20 +263,20 @@ $count++;
             <div id="myModal_colSwitch" class="modal_colSwitch">
                     <div class="modal-content_colSwitch">
                           <span class="close_colSwitch">&times;</span>
-                          <input type="checkbox"  data-control-column="1" class="opt" /> ID<br>
+                          <input type="checkbox"  data-control-column="1" class="opt ID" value="ID"/> ID<br>
 
-                                <input type="checkbox"  data-control-column="2" class="opt" />Invoice No<br>
-                            
-                                <input type="checkbox"  data-control-column="3" class="opt" />Sale By<br>
-                            
-                                <input type="checkbox"  data-control-column="4" class="opt" />Customer Name<br>
+    <input type="checkbox"  data-control-column="2" class="opt Invoice No" value="Invoice No"/>Invoice No<br>
+ 
+    <input type="checkbox"  data-control-column="3" class="opt Sale By" value="Sale By"/>Sale By<br>
+  
+    <input type="checkbox"  data-control-column="4" class="opt" value="Customer Name"/>Customer Name<br>
 
-                                <input type="checkbox"  data-control-column="5" class="opt" />Date<br>
+    <input type="checkbox"  data-control-column="5" class="opt" value="Date"/>Date<br>
 
-                                <input type="checkbox"  data-control-column="6" class="opt" />Total<br>
+    <input type="checkbox"  data-control-column="6" class="opt" value="Total"/>Total<br>
 
-                                <input type="checkbox"  data-control-column="7" class="opt" />Action<br>
-                     
+    <input type="checkbox"  data-control-column="7" class="opt" value="Action"/>Action<br>
+     <!--      <input type="submit" value="submit" id="submit"/>--> 
                     </div>
                 </div>
 
@@ -305,5 +308,93 @@ $count++;
 
 </div>
 <script type="text/javascript" src="<?php echo base_url()?>my-assets/js/profarma.js"></script>
+<input type="hidden" value="Sale/ProfarmaInvoice" id="url"/>
+<script>
+
+    var csrfName = '<?php echo $this->security->get_csrf_token_name();?>';
+var csrfHash = '<?php echo $this->security->get_csrf_hash();?>';
+$editor = $('#submit'),
+  $editor.on('click', function(e) {
+    if (this.checkValidity && !this.checkValidity()) return;
+    e.preventDefault();
+    var yourArray = [];
+    //loop through all checkboxes which is checked
+    $('.modal-content_colSwitch input[type=checkbox]:not(:checked)').each(function() {
+      yourArray.push($(this).val());//push value in array
+    });
+   
+    values = {
+    
+      extralist_text: yourArray
+    
+    };
+    console.log(values)
+    var json=values;
+    var data = {
+        page:$('#url').val(),
+          content: yourArray
+       
+       };
+       data[csrfName] = csrfHash;
+$.ajax({
+	
+    type: "POST",  
+    url:'<?php echo base_url();?>Cinvoice/setting',
+   
+    data: data,
+    dataType: "json", 
+    success: function(data) {
+        if(data) {
+           console.log(data);
+        }
+    }  
+});
+  });
+
+  $( document ).ready(function() {
+   var page=$('#url').val();
+   page=page.split('/');
+    var data = {
+        'menu':page[0],
+        'submenu':page[1]
+         
+       
+       };
+      console.log(page[0]+"-"+page[1]);
+       data[csrfName] = csrfHash;
+    $.ajax({
+	
+    type: "POST",  
+    url:'<?php echo base_url();?>Cinvoice/get_setting',
+   
+    data: data,
+    dataType: "json", 
+    success: function(data) {
+     var menu=data.menu;
+     var submenu=data.submenu;
+     if(menu=='Sale' && submenu=='ProfarmaInvoice'){
+     var s=data.setting;
+s=JSON.parse(s);
+console.log(s);
+for (var i = 0; i < s.length; i++) {
+    console.log(s[i]);
+    $('td.'+s[i]).hide(); // hide the column header th
+    $('th.'+s[i]).hide();
+$('tr').each(function(){
+     $(this).find('td:eq('+$('td.'+s[i]).index()+')').hide();
+});
+    }
+    for (var i = 0; i < s.length; i++) {
+      
+  $('.'+s[i]).prop('checked', false); //check the box from the array, note: you need to add a class to your checkbox group to only select the checkboxes, right now it selects all input elements that have the values in the array 
+    }  
+}
+    }
+});
+
+
+});
+
+    </script>
 
 

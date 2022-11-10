@@ -114,10 +114,10 @@ class Invoices extends CI_Model {
     public function all_invoice() {
     $this->db->select('a.*,b.*');
     $this->db->from('invoice_details a');
+    // echo $this->db->last_query(); die();
     $this->db->join('invoice b', 'b.invoice_id = a.invoice_id');
     // $this->db->where('b.invoice_id');
 
-    // echo $this->db->last_query(); die();
     
     $query = $this->db->get();
    
@@ -380,12 +380,24 @@ public function get_email_data(){
     return false;
 
 }
+public function get_setting($user,$menu,$submenu){
+ 
+    $this->db->select('*');
+    $this->db->from('bootgrid_data');
+    $this->db->where('user', $user);
+    $this->db->where('menu', $menu);
+    $this->db->where('submenu', $submenu);
+    $query = $this->db->get()->result();
+
+     return $query;
+
+}
 public function getcustomer_data($value){
     $this->db->select('*');
     $this->db->from('customer_information');
     $this->db->where('customer_name', $value);
     $query = $this->db->get()->result();
-     return $query;
+   echo json_encode($query);
 
 }
 public function availability($product_nam,$product_model){
@@ -401,7 +413,25 @@ public function availability($product_nam,$product_model){
     
     return $query;
 }
+public function retrieve_packing_editdata($purchase_id) {
+    $this->db->select('a.*,
+                     b.*,c.*
+                '
+     );
+     $this->db->from('sale_packing_list a');
+     $this->db->join('sale_packing_list_detail b', 'b.expense_packing_id =a.expense_packing_id');
+     $this->db->join('product_information c', 'c.product_id =a.product_id');
 
+     $this->db->where('a.create_by',$this->session->userdata('user_id'));
+     $this->db->where('a.expense_packing_id', $purchase_id);
+    // $this->db->order_by('a.purchase_details', 'asc');
+     $query = $this->db->get();
+   
+     if ($query->num_rows() > 0) {
+         return $query->result_array();
+     }
+     return false;
+ }
 
      public function getInvoiceList($postData=null){
 
@@ -2558,7 +2588,7 @@ public function availability($product_nam,$product_model){
         $query = $this->db->get();
 
 
-//echo  $this->db->last_query();
+
 
  // print_r($sql);
   //die();
@@ -4690,7 +4720,7 @@ return $output;
         }
         else
         {
-        $query .= 'ORDER BY a.id DESC ';
+        $query .= 'ORDER BY a.purchase_id DESC ';
         }
        // if($order_by != '')
       //  {

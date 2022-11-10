@@ -1591,7 +1591,7 @@ return $output;
         // print_r($data); exit();
 
 
-     
+    // print_r($data);
    
           ///Inventory Debit
     //    $coscr = array(
@@ -1669,7 +1669,7 @@ return $output;
             }
         }
 
-        return true;
+        return $data1;
     }
 
 
@@ -2150,7 +2150,8 @@ return $output;
         if ($query->num_rows() > 0) {
             return $query->result_array();
         }
-        return false;
+     
+        return true;
     }
 
 
@@ -2165,7 +2166,7 @@ return $output;
         if ($query->num_rows() > 0) {
             return $query->result_array();
         }
-        return false;
+        return true;
     }
 
 
@@ -2206,6 +2207,7 @@ return $output;
         $this->db->where('a.expense_packing_id', $purchase_id);
        // $this->db->order_by('a.purchase_details', 'asc');
         $query = $this->db->get();
+      
         if ($query->num_rows() > 0) {
             return $query->result_array();
         }
@@ -2452,8 +2454,13 @@ public function get_supplier($purchase_id='')
 }
 public function company_info()
 {
-      $sql='SELECT * FROM `company_information` as c JOIN user_login as u on u.cid=c.company_id where u.id='.$_SESSION['user_id'];
-   $query=$this->db->query($sql);
+    $this->db->select('c.*,u.*');
+    $this->db->from('company_information c');
+    $this->db->join('user_login u', 'u.cid = c.company_id'); 
+    $this->db->where('u.user_id',$_SESSION['user_id']);
+    $query = $this->db->get();
+    
+
    if ($query->num_rows() > 0) {
             return $query->result_array();
         }
@@ -2698,7 +2705,7 @@ public function company_info()
         if ($query->num_rows() > 0) {
             return $query->result_array();
         }
-        return false;
+        return true;
     }
 
 
