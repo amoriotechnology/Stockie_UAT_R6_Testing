@@ -63,7 +63,7 @@
 
                     <div class="panel-body">
                     <?php 
-                    echo form_open_multipart('Cpurchase/insert_packing_list',array('class' => 'form-vertical', 'id' => 'insert_packing_list','name' => 'insert_packing_list'))?>
+                    echo form_open_multipart('Cinvoice/insert_packing_list',array('class' => 'form-vertical', 'id' => 'insert_packing_list','name' => 'insert_packing_list'))?>
                         
                          
                         <div class="row">

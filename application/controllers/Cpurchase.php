@@ -563,10 +563,12 @@ class Cpurchase extends CI_Controller {
         $dataw = $CA->invoice_design->retrieve_data();
         // print_r($dataw); die();
         $datacontent = $CI->invoice_content->retrieve_data();
-
+ // print_r($datacontent); die();
         $packing_details = $CB->Purchases->packing_details_data($expense_packing_id);
-
+        
+        // echo '<pre>';
         // print_r($packing_details); exit();
+        //  echo '</pre>';
 
         $data=array(
             'header'=> $dataw[0]['header'],

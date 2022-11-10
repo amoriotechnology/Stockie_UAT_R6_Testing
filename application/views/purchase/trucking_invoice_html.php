@@ -1,578 +1,148 @@
+<?php
+$CI = & get_instance();
+$CI->load->model('Web_settings');
+$Web_settings = $CI->Web_settings->retrieve_setting_editdata();
+?>
 
 
-<!-- Add new customer start -->
-<style type="text/css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-#templates>img:hover
-{
-
-background-color: orange;
-border: 1px solid orange;
-}
-#templates>img
-{
-    width: 50%;
-}
-#templatetext
-{
-    margin-left:20px;
-     font-size: 10px;
-    font-style: italic;
-    font-family: ui-monospace;
-}
-</style>
-<div class="content-wrapper" >
+   
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
     <section class="content-header">
         <div class="header-icon">
             <i class="pe-7s-note2"></i>
         </div>
-   
+        <div class="header-title">
+            <h1>Packing List Invoice Detail</h1>
+            <small>Packing List Invoice Detail</small>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="pe-7s-home"></i> <?php echo display('home') ?></a></li>
+                <li><a href="#"><?php echo display('invoice') ?></a></li>
+                <li class="active">Packing List Invoice Detail</li>
+            </ol>
+        </div>
     </section>
-
+    <!-- Main content -->
+    <div class="">
     <section class="content">
-        <!-- Alert Message -->      
+        <!-- Alert Message -->
         <?php
-        $message = $this->session->userdata('message');
-        if (isset($message)) {
-            ?>
-            <div class="alert alert-info alert-dismissable">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                <?php echo $message ?>                    
-            </div>
-            <?php
-            $this->session->unset_userdata('message');
-        }
-        $error_message = $this->session->userdata('error_message');
-        if (isset($error_message)) {
-            ?>
-            <div class="alert alert-danger alert-dismissable">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                <?php echo $error_message ?>                    
-            </div>
-            <?php
-            $this->session->unset_userdata('error_message');
-        }
-        ?>
-
-
-
-        <!-- New customer -->
-       
-            <?php
-            //////////////Design one///////////// 
-            if($template==1)
-            {
-            ?>
-
-        <div class="col-sm-8" > <div class="panel panel-default" >
-    <div class="panel-body">
-    <div id="content">
-        <div class="row" >
-     
-            <div class="col-sm-2"><img src="<?php echo  base_url().'assets/'.$logo; ?>" style='width: 40%;'>
-               
-              </div>
-            <div class="col-sm-6 text-center"><h3><?php echo $header; ?></h3></div>
-           <div class="col-sm-4" id='company_info'>
-                  
-                  Company name:<?php echo $cname; ?><br>
-                  Address:<?php echo $address; ?><br>
-                  Email:<?php echo $email; ?><br>
-                  Contact:<?php echo $phone; ?><br>
-              </div>
-        </div>
-        <div class="row">
-            <br>
-            <br>
-            <table width="348" height="79" border="1" style="color: #000;">
-  <tr>
-    <td width="204" height="30" style="background-color:#<?php echo $color; ?>;"><b>BILL TO </b> </td>
-  </tr>
-  <tr>
-    <td>{bill_to}</td>
-  </tr>
-</table>
-<br>
-<br>
-<table width="100%"  border="1">
-  <tr style="background-color: #<?php echo $color; ?>;">
-    <td>Invoice No</td>
-    <td>Invoice Date</td>
-    <td>Trucking Company</td>
-    <td>delivery_date</td>
-
-  </tr>
-  <tr>
-    <td>{template}</td>
-    <td><?php  echo $invoice_date;   ?></td>
-    <td><?php  echo $shipment_company;   ?></td>
-    <td><?php  echo $delivery_date;   ?></td>
-
-    
-  </tr>
-</table>
-<br>
-<br>
-<table class="proposedWork" width="100%" style="margin-top:20px">
-                        <thead>
-                        <tr style="background-color: #<?php echo $color; ?>;color: white;">
-                           <th>DATE</th>
-                           <th>QNTY</th>
-                           <th>DESCRIPTION</th>
-                           <th>RATE</th>
-                           <th>PRO *</th>
-                           <th class="amountColumn">Amount</th>
-                           <tr>
-                        </thead>
-                        <tbody>
-
-                                <?php
-                                    if ($purchase_all_data) {
-                                ?>
-                                    {purchase_all_data}
-                           <tr>
-                              <td contenteditable="true">{trucking_date}</td>
-                              <td class="unit" contenteditable="true">{qty}</td>
-                              <td contenteditable="true" class="description">{description}</td>
-                              <td contenteditable="true" class="description">{rate}</td>
-                              <td  class="description">{pro_no_reference}</td>
-                              <td class="amount" contenteditable="true">475.00</td>
-
-                           </tr>
-                            {/purchase_all_data}
-                           <?php
-                            }
-                                ?>
-                        </tbody>
-              <tfoot>
-                          
-                           <tr>
-                              <td style="border:none"></td>
-                              <td style="border:none"></td>
-                              <td style="border:none"></td>
-                   <td style="border:none"></td>
-                  
-                              <td style="border:none;text-align:right">TOTAL:</td>
-                              <td class="total amount" contenteditable="true"> {grand_total}</td>
-                              <td class="docEdit"></td>
-                           </tr>
-                        </tfoot>
-                     </table>
-
-   <br>
-                          </div>
-        </div>
-    </div>
-  </div></div>
-
-            <?php 
-
-            }
-    elseif($template==2)
-    {
-            ?>
-          <div class="col-sm-8" > <div class="panel panel-default">
-    <div class="panel-body">
-    <div id="content">
-        <div class="row">
-      
-            <div class="col-sm-2"><img src="<?php echo  base_url().'assets/'.$logo; ?>" style='width: 40%;'>
-               
-              </div>
-            <div class="col-sm-6 text-center"><h3><?php echo $header; ?></h3></div>
-           <div class="col-sm-4" id='company_info'>
-                  
-                  Company name:<?php echo $cname; ?><br>
-                  Address:<?php echo $address; ?><br>
-                  Email:<?php echo $email; ?><br>
-                  Contact:<?php echo $phone; ?><br>
-              </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6"><table width="348" height="79" border="1" style="color: #000;">
-  <tr>
-    <td width="204" height="30" style="background-color:#<?php echo $color; ?>;"><b>BILL TO </b> </td>
-  </tr>
-  <tr>
-  <td>{bill_to}</td>
-  </tr>
-</table>
-<br>
-<br>
-
-
-</div>
-            <div class="col-sm-6"></div>
-            
-<br>
-<table width="100%"  border="1">
-  <tr style="background-color: #<?php echo $color; ?>;">
-    <td>Invoice No</td>
-    <td>Invoice Date</td>
-    <td>Trucking Company</td>
-    <td>delivery_date</td>
-
-  </tr>
-  <tr>
-    <td>{invoice_no}</td>
-    <td><?php  echo $invoice_date;   ?></td>
-    <td><?php  echo $shipment_company;   ?></td>
-    <td><?php  echo $delivery_date;   ?></td>
-
-    
-  </tr>
-</table>
-<br>
-<table class="proposedWork" width="100%" style="margin-top:20px">
-                        <thead>
-                        <tr style="background-color: #<?php echo $color; ?>;color: white;">
-                           <th>DATE</th>
-                           <th>QNTY</th>
-                           <th>DESCRIPTION</th>
-                           <th>RATE</th>
-                           <th>PRO *</th>
-                           <th class="amountColumn">Amount</th>
-                           <tr>
-                        </thead>
-                        <tbody>
-
-                                <?php
-                                    if ($purchase_all_data) {
-                                ?>
-                                    {purchase_all_data}
-                           <tr>
-                              <td contenteditable="true">{trucking_date}</td>
-                              <td class="unit" contenteditable="true">{qty}</td>
-                              <td contenteditable="true" class="description">{description}</td>
-                              <td contenteditable="true" class="description">{rate}</td>
-                              <td  class="description">{pro_no_reference}</td>
-                              <td class="amount" contenteditable="true">475.00</td>
-
-                           </tr>
-                            {/purchase_all_data}
-                           <?php
-                            }
-                                ?>
-                        </tbody>
-              <tfoot>
-                          
-                           <tr>
-                              <td style="border:none"></td>
-                              <td style="border:none"></td>
-                              <td style="border:none"></td>
-                   <td style="border:none"></td>
-                  
-                              <td style="border:none;text-align:right">TOTAL:</td>
-                              <td class="total amount" contenteditable="true"> {grand_total}</td>
-                              <td class="docEdit"></td>
-                           </tr>
-                        </tfoot>
-                     </table>
-
-   <br>
-        </div>
-    </div>
-  </div></div></div>
-
-            <?php 
-                   }
-    elseif($template==3)
-    {
-        ?>
-    <div class="col-sm-8" > <div class="panel panel-default">
-    <div class="panel-body">
-    <div id="content">
-        <div class="row">
-       
-            <div class="col-sm-2"><img src="<?php echo  base_url().'assets/'.$logo; ?>" style='width: 40%;'>
-               
-              </div>
-            <div class="col-sm-6 text-center"><h3><?php echo $header; ?></h3></div>
-         
-        </div>
-        <br>
-        <br>
-        <div class="row">
-            <div class="col-sm-8"><table width="348" height="79" border="1" style="color: #000;">
-  <tr>
-    <td width="204" height="30" style="background-color:#<?php echo $color; ?>;"><b>BILL TO </b> </td>
-  </tr>
-  <tr>
-  <td>{bill_to}</td>
-  </tr>
-</table>
-<br>
-<br>
-
-
-</div>
-            <div class="col-sm-4 " id="">Company namea:<?php echo $cname; ?><br>
-                  Address:<?php echo $address; ?><br>
-                  Email:<?php echo $email; ?><br>
-                  Contact:<?php echo $phone; ?><br>
-              </div></div>
-            
-<br>
-<table width="100%"  border="1">
-  <tr style="background-color: #<?php echo $color; ?>;">
-    <td>Invoice No</td>
-    <td>Invoice Date</td>
-    <td>Trucking Company</td>
-    <td>delivery_date</td>
-
-  </tr>
-  <tr>
-    <td>{invoice_no}</td>
-    <td><?php  echo $invoice_date;   ?></td>
-    <td><?php  echo $shipment_company;   ?></td>
-    <td><?php  echo $delivery_date;   ?></td>
-
-    
-  </tr>
-</table>
-<br>
-<table class="proposedWork" width="100%" style="margin-top:20px">
-                        <thead>
-                        <tr style="background-color: #<?php echo $color; ?>;color: white;">
-                           <th>DATE</th>
-                           <th>QNTY</th>
-                           <th>DESCRIPTION</th>
-                           <th>RATE</th>
-                           <th>PRO *</th>
-                           <th class="amountColumn">Amount</th>
-                           <tr>
-                        </thead>
-                        <tbody>
-
-                                <?php
-                                    if ($purchase_all_data) {
-                                ?>
-                                    {purchase_all_data}
-                           <tr>
-                              <td contenteditable="true">{trucking_date}</td>
-                              <td class="unit" contenteditable="true">{qty}</td>
-                              <td contenteditable="true" class="description">{description}</td>
-                              <td contenteditable="true" class="description">{rate}</td>
-                              <td  class="description">{pro_no_reference}</td>
-                              <td class="amount" contenteditable="true">475.00</td>
-
-                           </tr>
-                            {/purchase_all_data}
-                           <?php
-                            }
-                                ?>
-                        </tbody>
-              <tfoot>
-                          
-                           <tr>
-                              <td style="border:none"></td>
-                              <td style="border:none"></td>
-                              <td style="border:none"></td>
-                   <td style="border:none"></td>
-                  
-                              <td style="border:none;text-align:right">TOTAL:</td>
-                              <td class="total amount" contenteditable="true"> {grand_total}</td>
-                              <td class="docEdit"></td>
-                           </tr>
-                        </tfoot>
-                     </table>
-
-
-   <br>
-        </div>
-    </div>
-  </div></div></div>
-        <?php
-               }
-    elseif($template==4)
-    {
-    ?>
- <div class="col-sm-8" > 
-    <div class="panel panel-default">
-    <div class="panel-body">
-    <div id="content">
-        <div class="row">
-      
-            <div class="col-sm-2"><img src="<?php echo  base_url().'assets/'.$logo; ?>" style='width: 40%;'>
-               
-              </div>
-            <div class="col-sm-6 text-center"><h3><?php echo $header; ?></h3></div>
-           <div class="col-sm-4" id='company_info'>
-                  
-                  Company name:<?php echo $cname; ?><br>
-                  Address:<?php echo $address; ?><br>
-                  Email:<?php echo $email; ?><br>
-                  Contact:<?php echo $phone; ?><br>
-              </div>
-        </div>
-        <div class="row">
-            <table width="348" height="79" border="1" style="color: #000;">
-  <tr>
-    <td width="204" height="30" style="background-color:#<?php echo $color; ?>;"><b>BILL TO</b> </td>
-  </tr>
-  <tr>
-  <td>{bill_to}</td>
-  </tr>
-</table>
-<br>
-<br>
-<table width="100%"  border="1">
-  <tr style="background-color: #<?php echo $color; ?>;">
-    <td>Invoice No</td>
-    <td>Invoice Date</td>
-    <td>Trucking Company</td>
-    <td>delivery_date</td>
-
-  </tr>
-  <tr>
-    <td>{invoice_no}</td>
-    <td><?php  echo $invoice_date;   ?></td>
-    <td><?php  echo $shipment_company;   ?></td>
-    <td><?php  echo $delivery_date;   ?></td>
-
-    
-  </tr>
-</table>
-<br>
-<br>
-<table class="proposedWork" width="100%" style="margin-top:20px">
-                        <thead>
-                        <tr style="background-color: #<?php echo $color; ?>;color: white;">
-                           <th>DATE</th>
-                           <th>QNTY</th>
-                           <th>DESCRIPTION</th>
-                           <th>RATE</th>
-                           <th>PRO *</th>
-                           <th class="amountColumn">Amount</th>
-                           <tr>
-                        </thead>
-                        <tbody>
-
-                                <?php
-                                    if ($purchase_all_data) {
-                                ?>
-                                    {purchase_all_data}
-                           <tr>
-                              <td contenteditable="true">{trucking_date}</td>
-                              <td class="unit" contenteditable="true">{qty}</td>
-                              <td contenteditable="true" class="description">{description}</td>
-                              <td contenteditable="true" class="description">{rate}</td>
-                              <td  class="description">{pro_no_reference}</td>
-                              <td class="amount" contenteditable="true">475.00</td>
-
-                           </tr>
-                            {/purchase_all_data}
-                           <?php
-                            }
-                                ?>
-                        </tbody>
-              <tfoot>
-                          
-                           <tr>
-                              <td style="border:none"></td>
-                              <td style="border:none"></td>
-                              <td style="border:none"></td>
-                   <td style="border:none"></td>
-                  
-                              <td style="border:none;text-align:right">TOTAL:</td>
-                              <td class="total amount" contenteditable="true"> {grand_total}</td>
-                              <td class="docEdit"></td>
-                           </tr>
-                        </tfoot>
-                     </table>
-
-   <br>
-        </div>
-    </div>
-  </div></div></div>
-    <?php 
+           $message = $this->session->userdata('message');
+           if (isset($message)) {
+               ?>
+               <div class="alert alert-info alert-dismissable">
+                   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                   <?php echo $message ?>                    
+               </div>
+               <?php
+               $this->session->unset_userdata('message');
            }
-    else
-    {
-    ?>
-    <div class="col-sm-8" > <div class="panel panel-default">
-    <div class="panel-body">
-    <div id="content">
+           $error_message = $this->session->userdata('error_message');
+           if (isset($error_message)) {
+               ?>
+               <div class="alert alert-danger alert-dismissable">
+                   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                   <?php echo $error_message ?>                    
+               </div>
+               <?php
+               $this->session->unset_userdata('error_message');
+           }
+        ?>
+      <!-- <table id="tab"> -->
+           
+<div class="container" id="content">
+    <div class="row">
+                <div class="col-lg-4">
+                    <img src="<?php echo  base_url().'assets/'.$logo; ?>" width="40%">
+                </div>
+                <div class="col-lg-4">
+                  <h4 style="margin-top: 30px; text-align: center;"> <?php echo $cname; ?></h4>
+                </div>
+                <div class="col-lg-4">
+                    <h4 style="margin-top: 30px; text-align: right;"> <?php echo $address; ?></h4>
+                  </div>
+            </div><br><br>
         <div class="row">
-       
-            <div class="col-sm-2"><img src="<?php echo  base_url().'assets/'.$logo; ?>" style='width: 40%;'>
-               
-              </div>
-            <div class="col-sm-6 text-center"><h3><?php echo $header; ?></h3></div>
-           <div class="col-sm-4" id='company_info'>
-                  
-                  Company name:<?php echo $cname; ?><br>
-                  Address:<?php echo $address; ?><br>
-                  Email:<?php echo $email; ?><br>
-                  Contact:<?php echo $phone; ?><br>
-              </div>
-        </div>
-        <div class="row">
-            <table width="348" height="79" border="1" style="color: #000;">
-  <tr>
-    <td width="204" height="30" style="background-color:#<?php echo $color; ?>;"><b>BILL TO</b> </td>
-  </tr>
-  <tr>
-  <td>{bill_to}</td>
-  </tr>
-</table>
-<br>
-<br>
-<table width="100%"  border="1">
-  <tr style="background-color: #<?php echo $color; ?>;">
-    <td>Invoice No</td>
-    <td>Invoice Date</td>
-    <td>Trucking Company</td>
-    <td>delivery_date</td>
+            
+            <div class="col-lg-6">
+                <h5>Trucking Invoice No: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $invoice_no;  ?></span></h5> 
+                <h5>Bill To: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $bill_to;  ?></span></h5> 
+                <h5>Container / Goods Pick up date: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $container_pickup_date;  ?></span></h5> 
+                <h5>Container Number: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $invoice_no;  ?></span></h5> 
+            </div>
+        
 
-  </tr>
-  <tr>
-    <td>{invoice_no}</td>
-    <td><?php  echo $invoice_date;   ?></td>
-    <td><?php  echo $shipment_company;   ?></td>
-    <td><?php  echo $delivery_date;   ?></td>
+            
+            <div class="col-lg-6">
 
-    
-  </tr>
-</table>
-<br>
-<br>
-<table width="100%" height='100%' border="1">
-  <tr style="background-color: #<?php echo $color; ?>;">
-    <td>Material</td>
-    <td>Description</td>
-    <td>Qty</td>
-    <td>Rate</td>
-    <td>Amount</td>
-    
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
- 
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
- 
-  </tr>
-</table>
-
-   <br>
-        </div>
+                <h5>Invoice Date: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php  echo $invoice_date;   ?></span></h5> 
+                <h5>Trucking Company: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php  echo $shipment_company;   ?></span></h5> 
+                <h5>Delivery date: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php  echo $delivery_date;   ?></span></h5> 
+                <!-- <h5>Shipment / BL Number: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $invoice_no;  ?></span></h5>  -->
+            </div>
+        </div><br><br><br>
+<div class="row">
+    <div class="col-lg-12">
+        <table style="width:100%">
+            <tr>
+                <th>Date</th>
+                <th>Quantity</th>
+                <th>Description</th>
+                <th>Rate</th>
+                <th>Pro No / Reference</th>
+                <th>Total</th>
+                
+            </tr>
+            <tr>
+               <td><?php echo $truckingdate; ?></td>
+               <td><?php echo $qty; ?></td>
+               <td><?php echo $description; ?></td>
+               <td><?php echo $rate; ?></td>
+               <td><?php echo $pro_no_reference; ?></td>
+               <td><?php echo $total; ?></td>
+              
+            </tr>
+            <tr>
+              
+                <td colspan="5">Overall Total:</td>
+                <td><?php echo $total; ?></td>
+              
+            </tr>
+        </table><br><br>
+        
     </div>
-  </div></div></div>
-    <?php 
-
-}
-?>
 </div>
+<h4>Remarks </h4>
+
+
+
+
+        
+    </div>
+    </section> <!-- /.content -->
+</div> <!-- /.content-wrapper -->
+      <!-- </table> -->
+
+
+<style>
+    .container {
+  width: 100%;
+  /*background-color: rgb(241, 248, 250);*/
+  margin-top: 50px;
+}
+    td,th{
+        border:1px solid rgb(0, 0, 0);
+        text-align: center;
+        padding: 3px;
+    }    
+</style>      
+
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
@@ -588,18 +158,7 @@ border: 1px solid orange;
 <script>
 $(document).ready(function () {
  
-pdf();
-//load();
-
-
-   });
-   function load(){
-    var timer = setTimeout(function() {
-            window.location='<?php  echo base_url();   ?>'+'Cpurchase/manage_trucking'
-        }, 2000);
-   }
- function pdf(){
-  var pdf = new jsPDF('p','pt','a4');
+ var pdf = new jsPDF('p','pt','a4');
     const invoice = document.getElementById("content");
              console.log(invoice);
              console.log(window);
@@ -611,9 +170,8 @@ pdf();
    maxLineWidth : pageWidth - margin *1,
                  filename: 'invoice'+'.pdf',
                  allowTaint: true,
-                
                  html2canvas: { scale: 3 },
-                 jsPDF: { unit: 'in', format: 'a4', orientation: 'landscape' }
+                 jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
              };
               html2pdf().from(invoice).set(opt).toPdf().get('pdf').then(function (pdf) {
   var totalPages = pdf.internal.getNumberOfPages();
@@ -621,10 +179,13 @@ pdf();
     pdf.setPage(i);
     pdf.setFontSize(10);
     pdf.setTextColor(150);
-    
   }
+  var timer = setTimeout(function() {
+            window.location='<?php  echo base_url();   ?>'+'Ccpurchase/manage_trucking'
+        }, 10);
   }).save();
- }
-   
-  
+   });
    </script>
+ 
+
+  

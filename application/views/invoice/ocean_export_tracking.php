@@ -362,8 +362,36 @@
 
                         <div class="form-group row">
                             <div class="col-sm-6">
-                                <input type="submit" id="ocean_export_tracking" class="btn btn-primary btn-large" name="add-ocean-export" value="<?php echo display('submit') ?>" />
-                                <input type="submit" value="<?php echo display('submit_and_add_another') ?>" name="add-ocean-export-another" class="btn btn-large btn-success" id="add-ocean-export-another" >
+                                <!-- <input type="submit" id="ocean_export_tracking" class="btn btn-primary btn-large" name="add-ocean-export" value="<?php echo display('submit') ?>" />
+                                <input type="submit" value="<?php echo display('submit_and_add_another') ?>" name="add-ocean-export-another" class="btn btn-large btn-success" id="add-ocean-export-another" > -->
+
+                                 <table>
+                                <tr>
+                                    <td>
+                                        <input type="hidden" name="uid" value="<?php echo $_SESSION['user_id']; ?>">
+    
+                                        <input type="submit" id="ocean_export_tracking" class="btn btn-primary btn-large" name="add-ocean-export" onclick="  $('#btn1_download').css('display','block');
+                                        $('#btn1_email').css('display','block');"name="add-purchase" value="<?php echo display('Save') ?>" />
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td id="btn1_download">
+                                        
+                                        <a href="" id="down" class="btn btn-primary text-white">
+                                            Download 
+                                        </a>
+
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td id="btn1_email">
+                                        <a href="" id="send" class="btn btn-primary text-white">
+                                            Sendmail with attachment
+                                        </a>
+                                    </td>
+                                  
+                                  
+                                    
+                                </tr>
+                               </table>
                             </div>
                         </div>
 
@@ -583,6 +611,15 @@
 
             </div><!-- /.modal -->
 
+
+<style>
+ #btn1_download{
+display:none;
+ }
+     #btn1_email{
+        display:none;
+     }
+    </style>
 
 
 

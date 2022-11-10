@@ -54,18 +54,18 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
         ?>
       <!-- <table id="tab"> -->
            
-        <div class="container" id="content">
-            <div class="row">
+ <div class="container" id="content">
+    <div class="row">
                 <div class="col-lg-4">
-                    <img src="<?php echo  base_url().'assets/'.$logo; ?>" width="100px" height="100px">
+                    <img src="<?php echo  base_url().'assets/'.$logo; ?>" width="40%">
                 </div>
                 <div class="col-lg-4">
                   <h4 style="margin-top: 30px; text-align: center;"> <?php echo $company; ?></h4>
                 </div>
                 <div class="col-lg-4">
-                    <address style="text-align: right;"><?php echo $address; ?></address>
+                    <h4 style="margin-top: 30px; text-align: right;"> <?php echo $address; ?></h4>
                   </div>
-            </div><br><br>
+            </div> <br><br>
         <div class="row">
             
             <div class="col-lg-6">
@@ -77,51 +77,43 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
 
             
             <div class="col-lg-6">
-
                 <h5>Invoice Date: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $invoice_date; ?></span></h5>
                 <h5>Container No: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $container; ?></span></h5>
                             </div>
-        </div><br><br><br>
-<div class="row">
-    <div class="col-lg-12">
+        </div><br><br>
 
-<table style="width:100%">
+        <table style="width:100%">
             <tr>
-                <th>Product</th>
-                <th>Description</th>
-                <th>Thickness</th>
+              <th>Product</th>
+              <th>Description</th>
+              <th>Thickness</th>
             </tr>
             <tr>
-               <td><?php echo $product; ?></td>
-               <td><?php echo $description; ?></td>
-               <td><?php echo $thickness; ?></td>
+              <td><?php echo $product; ?></td>
+              <td><?php echo $description; ?></td>
+              <td><?php echo $thickness; ?></td>
+            </tr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </table><br>
+        <table style="width:100%">
+            <tr>
+                <th>SLAB NO</th>
+                <th>Net Measurement (Inches)</th>
+                <th>Area (Sq. Ft)</th>
+                <th>Action</th>
             </tr>
- </table><br><br>
-       <table style="width:100%">
-        <tr>
-            <th>Serial No</th>
-            <th>SLAB NO</th>
-            <th>Net Measurement (Inches)</th>
-            <th>Area (Sq. Ft)</th>
-        </tr>
-        <tr>
-         <td><?php echo $serial; ?></td>
-         <td><?php echo $slab; ?></td>
-         <td><p>Width: &nbsp; <?php echo $width; ?></p> <p >Height: &nbsp; <?php echo $height; ?></p></td>
-         <td><?php echo $area; ?></td>
-        </tr>
+            <tr>
+                <td><?php echo $slab; ?></td>
+                <td><?php echo $width; ?></td>
+                <td><?php echo $height; ?></td>
+                <td><?php echo $area; ?></td>
+            </tr>
+         
+          </table><br><br>
 
-        <tr>
-            <td colspan="3" style="text-align: right;">Total:</td>
-            <td>$<?php echo $total; ?></td>
-            
-             </tr>
+          
 
-     </table>
-    </div>
-</div><br><br><br>
-
-<h4>Remarks</h4><br><br><br>
+<h4>Remarks </h4>
+        
     </div>
     </section> <!-- /.content -->
 </div> <!-- /.content-wrapper -->
@@ -181,7 +173,7 @@ $(document).ready(function () {
     pdf.setTextColor(150);
   }
   var timer = setTimeout(function() {
-            window.location='<?php  echo base_url();   ?>'+'Cinvoice/manage_packing_list'
+            window.location='<?php  echo base_url();   ?>'+'Cpurchase/manage_packing_list'
         }, 10);
   }).save();
    });

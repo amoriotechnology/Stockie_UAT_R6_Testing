@@ -69,22 +69,8 @@
                      
                         <?php echo form_open_multipart('Cinvoice/manage_ocean_export_tracking',array('class' => 'form-vertical', 'id' => 'insert_sale','name' => 'insert_sale'))?>
 
-<<<<<<< HEAD
-                            <div class="form-group">
-                                <label class="" for="from_date"><?php echo display('from') ?></label>
-                                <input type="date" name="from_date" class="form-control" id="from_date" value="" placeholder="<?php echo display('start_date') ?>" >
-                            </div> 
-
-                            <div class="form-group">
-                                &nbsp;
-                                <label class="" for="to_date"><?php echo display('to') ?></label>
-                                &nbsp;
-                                <input type="date" name="to_date" class="form-control" id="to_date" placeholder="<?php echo display('end_date') ?>" value="">
-                            </div>  
-=======
 
 <?php
->>>>>>> 65a0d4d5e3a2e5a64b9c3ed043ab5e0c9647f0cf
 
 
 
@@ -145,30 +131,8 @@ $today = date('Y-m-d');
 
 
                     <div class="panel-body">
-<<<<<<< HEAD
-                        <div class="table-responsive">
-                            <table class="table table-striped table-bordered" cellspacing="0" width="100%" id="oceanExport"> 
-                                <thead>
-                                    <tr>
-                                        <th><?php echo display('sl') ?></th>
-                                        <th>Booking Number</th>
-                                        <th>Container Number</th>
-                                        <th>Seal Number</th>
-                                        <th>Ocean Export Id</th>
-                                        <th><?php echo display('supplier_name') ?></th>
-                                        <th><?php echo display('purchase_date') ?></th>
-                                        <th>Place Of Delivery</th>
-                                        <th><?php echo display('action') ?></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                        
-                                </tbody>
-                                <tfoot>
-                    <th colspan="5" class="text-right"><?php echo display('total') ?>:</th>
-=======
                     <div id="customers">
-  <table class="table table-bordered" cellspacing="0" width="100%" id="ProfarmaInvList">
+  <table class="table table-bordered" cellspacing="0" width="100%" id="oceanExport">
     <thead>
       <tr>
       <th >ID</th>
@@ -202,7 +166,17 @@ $today = date('Y-m-d');
   <td><?php   echo $arr['invoice_date'];  ?></td>
 
   <td><?php   echo $arr['place_of_delivery'];  ?></td>
-  <td><a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cinvoice/trucking_update_form/<?php echo  $arr['purchase_order_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td></tr>
+  <!-- <td><a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cinvoice/trucking_update_form/<?php echo  $arr['purchase_order_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td> -->
+   
+   <div class="form-group">
+  <td>
+  <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/ocean_export_tracking_details_data/<?php echo  $arr['ocean_export_tracking_id'];  ?>"><i class="fa fa-download" aria-hidden="true"></i></a>
+  <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+  </td>
+  </div>
+
+</tr>
      <?php   
 $count++;
       }  else{
@@ -211,7 +185,6 @@ $count++;
         <?php
               }
               
->>>>>>> 65a0d4d5e3a2e5a64b9c3ed043ab5e0c9647f0cf
                 
             }
 

@@ -163,7 +163,7 @@ class Llpurchase {
 
         );
 
-        $purchaseForm = $CI->parser->parse('purchase/ocean_import_tracking', $data, true);
+        $purchaseForm = $CI->parser->parse('purchase/trucking_list', $data, true);
 
         return $purchaseForm;
 
@@ -790,7 +790,7 @@ class Llpurchase {
 
         //ocean import tracking Edit Data
 
-    public function ocean_import_tracking_edit_data($purchase_id) {
+    public function trucking_list_edit_data($purchase_id) {
 
         $CI = & get_instance();
 
@@ -1217,6 +1217,8 @@ class Llpurchase {
 
         $purchase_detail = $CI->Ppurchases->trucking_details_data($purchase_id);
 
+         // print_r($purchase_detail); die();
+
 
 
         if (!empty($purchase_detail)) {
@@ -1248,13 +1250,16 @@ class Llpurchase {
         $CC = & get_instance();
       
         $company_info = $CI->Ppurchases->retrieve_company();
+        // print_r($company_info); die();
         $CII->load->model('invoice_design');
         $CC->load->model('invoice_content');
         $CI1 = & get_instance();
         $CI1->load->model('Purchases');
         $all_supplier = $CI1->Purchases->select_all_supplier();
+          // print_r($purchase_detail); die();
        $dataw = $CII->invoice_design->retrieve_data();
        $datacontent = $CI->invoice_content->retrieve_data();
+        // print_r($datacontent); die();
      $data = array(
             'header'=> $dataw[0]['header'],
             'logo'=> $dataw[0]['logo'],
@@ -1262,19 +1267,20 @@ class Llpurchase {
             'template'=> $dataw[0]['template'],
             'all_supplier' => $all_supplier,
             'address'=>$datacontent[0]['address'],
-            'cname'=>$datacontent[0]['business_name'],
+            'cname'=>$company_info[0]['company_name'],
             'phone'=>$datacontent[0]['phone'],
             'email'=>$datacontent[0]['email'],
             'reg_number'=>$datacontent[0]['reg_number'],
             'website'=>$datacontent[0]['website'],
-            'address'=>$datacontent[0]['address'],
+            'address'=>$company_info[0]['address'],
             'title'            => display('purchase_details'),
-
             'trucking_id'      => $purchase_detail[0]['trucking_id'],
-'grand_total' => $purchase_detail[0]['grand_total_amount'],
+            'grand_total' => $purchase_detail[0]['grand_total_amount'],
             'invoice_no' =>  $purchase_detail[0]['invoice_no'],
 
             'invoice_date' => $purchase_detail[0]['invoice_date'],
+
+            'truckingdate' => $purchase_detail[0]['trucking_date'],
 
             'bill_to' => $purchase_detail[0]['bill_to'],
 

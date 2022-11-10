@@ -646,7 +646,7 @@
                                     <td>&nbsp;</td>
                                     <td>
                                         
-                                        <a href="" id="download" style="display:none; color: #fff;" class="btn btn-primary">
+                                        <a href="<?php echo base_url('Cinvoice/invoice_inserted_data/'.$invoice_id) ?>" id="download" style="display:none; color: #fff;" class="btn btn-primary">
                                             Download 
                                         </a>
 

@@ -5,6 +5,8 @@
 
 <script src="<?php echo base_url()?>my-assets/js/admin_js/purchase.js" type="text/javascript"></script>
 
+<script src="<?php echo base_url() ?>my-assets/js/countrypicker.js" type="text/javascript"></script>
+
 
 <!-- Add New Purchase Start -->
 <div class="content-wrapper">
@@ -336,7 +338,8 @@
                                           <i class="text-danger">*</i>
                                     </label>
                                     <div class="col-sm-8">
-                                        <input type="text" required tabindex="2" class="form-control" placeholder="Country of Origin" name="country_of_origin" value=""  />
+                                        <select class="selectpicker countrypicker form-control" data-live-search="true" data-default="Select the Country"  name="country_of_origin" id="shipping_line"></select>
+                                        <!-- <input type="text" required tabindex="2" class="form-control" placeholder="Country of Origin" name="country_of_origin" value=""  /> -->
                                     </div>
                                 </div> 
                             </div>

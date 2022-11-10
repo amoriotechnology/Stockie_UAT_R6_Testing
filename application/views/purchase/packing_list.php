@@ -132,7 +132,7 @@ $today = date('Y-m-d');
 
                     <div class="panel-body">
                     <div id="customers">
-  <table class="table table-bordered" cellspacing="0" width="100%" id="ProfarmaInvList">
+  <table class="table table-bordered" cellspacing="0" width="100%" id="PackingOrderList">
     <thead>
       <tr>
       <th >ID</th>
@@ -162,7 +162,20 @@ $today = date('Y-m-d');
 <td><?php   echo $arr['container_no'];  ?></td>
   <td><?php   echo $arr['invoice_date'];  ?></td>
   <td><?php   echo $arr['thickness'];  ?></td>
-  <td><a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cinvoice/trucking_update_form/<?php echo  $arr['purchase_order_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td></tr>
+
+  <!-- <td><a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cinvoice/trucking_update_form/<?php echo  $arr['purchase_order_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td> -->
+
+  <div class="form-group">
+  <td>
+  <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cpurchase/packing_list_details_data/<?php echo  $arr['expense_packing_id'];  ?>"><i class="fa fa-download" aria-hidden="true"></i></a>
+  <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/trucking_update_form/<?php echo  $arr['purchase_order_id'];  ?>"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cpurchase/packing_list_update_form/<?php echo  $arr['expense_packing_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+  </td>
+  </div>
+
+
+
+</tr>
      <?php   
 $count++;
       }  else{

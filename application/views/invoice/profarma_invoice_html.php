@@ -45,13 +45,13 @@
 	     <div class="container" id="content">
         <div class="row">
             <div class="col-lg-4">
-                <img src="<?php echo  base_url().'assets/'.$logo; ?>" width="100" height="100"  alt="">
+                <img src="<?php echo  base_url().'assets/'.$logo; ?>" width="40%"  alt="">
             </div>
             <div class="col-lg-4">
               <h4 style="margin-top: 30px; text-align: center;"> <?php echo $company_info[0]['company_name']; ?></h4>
             </div>
             <div class="col-lg-4">
-                <address style="text-align: right;"><?php echo $company_info[0]['address']; ?></address>
+                <h4 style="margin-top: 30px; text-align: right;"> <?php echo $company_info[0]['address']; ?></h4>
               </div>
         </div><br><br>
           <div class="table">

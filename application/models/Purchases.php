@@ -2691,11 +2691,10 @@ public function company_info()
     }
 
     public function packing_details_data($expense_packing_id) {
-        // $sql='SELECT * FROM expense_packing_list as a JOIN expense_packing_list_detail as b ON b.product_id = a.product_id WHERE a.expense_packing_id = '.$expense_packing_id;
         $sql = 'SELECT * FROM expense_packing_list as a JOIN expense_packing_list_detail as ac JOIN product_information as b ON b.product_id = a.product_id WHERE a.expense_packing_id = '.$expense_packing_id;
         $query = $this->db->query($sql);
-//    echo $this->db->last_query();
-//        die(); 
+   // echo $this->db->last_query();
+   //     die(); 
         if ($query->num_rows() > 0) {
             return $query->result_array();
         }

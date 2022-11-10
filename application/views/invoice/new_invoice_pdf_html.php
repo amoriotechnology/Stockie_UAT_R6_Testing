@@ -46,18 +46,17 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
             $this->session->unset_userdata('error_message');
         }
         ?>
-        <div class="container">
-
+        <div class="container" id="content">
 
         <div class="row">
             <div class="col-lg-4">
-                <img src="<?php echo  base_url().'assets/'.$logo; ?>" width="100px" height="100px">
+                <img src="<?php echo  base_url().'assets/'.$logo; ?>" width="40%">
             </div>
             <div class="col-lg-4">
               <h4 style="margin-top: 30px; text-align: center;"><?php echo $company; ?></h4>
             </div>
             <div class="col-lg-4">
-                <address style="text-align: right;"><?php echo $address; ?></address>
+                <h4 style="margin-top: 30px; text-align: right;"><?php echo $address; ?></h4>
               </div>
         </div><br><br>
 
@@ -130,6 +129,7 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
     </div>
 </div>
 <h4>Message / Notes on Invoice </h4><br><br>
+</div>
     
     </section> <!-- /.content -->
 </div> <!-- /.content-wrapper -->
@@ -149,4 +149,49 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
     }
     
 </style>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+<script>
+$(document).ready(function () {
+ 
+ var pdf = new jsPDF('p','pt','a4');
+    const invoice = document.getElementById("content");
+             console.log(invoice);
+             console.log(window);
+             var pageWidth = 8.5;
+             var margin=0.5;
+             var opt = {
+   lineHeight : 1.2,
+   margin : 0.2,
+   maxLineWidth : pageWidth - margin *1,
+                 filename: 'invoice'+'.pdf',
+                 allowTaint: true,
+                 html2canvas: { scale: 3 },
+                 jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+             };
+              html2pdf().from(invoice).set(opt).toPdf().get('pdf').then(function (pdf) {
+  var totalPages = pdf.internal.getNumberOfPages();
+ for (var i = 1; i <= totalPages; i++) {
+    pdf.setPage(i);
+    pdf.setFontSize(10);
+    pdf.setTextColor(150);
+  }
+  var timer = setTimeout(function() {
+            window.location='<?php  echo base_url();   ?>'+'Cinvoice/manage_invoice'
+        }, 10);
+  }).save();
+   });
+   </script>
 

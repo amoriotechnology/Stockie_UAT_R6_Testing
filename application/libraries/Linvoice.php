@@ -253,6 +253,8 @@ class Linvoice {
         $dataw = $CII->invoice_design->retrieve_data();
         $company_info = $CI->Invoices->retrieve_company();
 
+        // print_r($company_info); die();
+
         $data = array(
             'header'=> $dataw[0]['header'],
             'logo'=> $dataw[0]['logo'],
@@ -266,7 +268,8 @@ class Linvoice {
             'booking_no' => $purchase_detail[0]['booking_no'],
 
             'container_no'    => $purchase_detail[0]['container_no'],
-'company_info' => $company_info,
+            'company'    => $company_info[0]['company_name'],
+            'address'    => $company_info[0]['address'],
             'seal_no'       => $purchase_detail[0]['seal_no'],
             'etd' => $purchase_detail[0]['etd'],
             'eta' => $purchase_detail[0]['eta'],
@@ -348,8 +351,12 @@ class Linvoice {
         $CC = & get_instance();
         $w = & get_instance();
 
-        $w->load->model('Invoices');
-     //   $company_info = $w->Ppurchases->retrieve_company();
+        $w->load->model('Ppurchases');
+
+       $company_info = $w->Ppurchases->retrieve_company();
+
+       // print_r($company_info); die();
+
         $CII->load->model('invoice_design');
         $CC->load->model('invoice_content');
         $CI1 = & get_instance();
@@ -363,7 +370,8 @@ class Linvoice {
             'color'=> $dataw[0]['color'],
             'template'=> $dataw[0]['template'],
             'all_supplier' => $all_supplier,
-            'address'=>$datacontent[0]['address'],
+            'add'=>$company_info[0]['address'],
+            'company'=>$company_info[0]['company_name'],
             'cname'=>$datacontent[0]['business_name'],
             'phone'=>$datacontent[0]['phone'],
             'email'=>$datacontent[0]['email'],
@@ -373,7 +381,7 @@ class Linvoice {
             'title'            => display('purchase_details'),
 
             'trucking_id'      => $purchase_detail[0]['trucking_id'],
-'grand_total' => $purchase_detail[0]['grand_total_amount'],
+            'grand_total' => $purchase_detail[0]['grand_total_amount'],
             'invoice_no' =>  $purchase_detail[0]['invoice_no'],
 
             'invoice_date' => $purchase_detail[0]['invoice_date'],
@@ -385,6 +393,8 @@ class Linvoice {
             'container_pickup_date' => $purchase_detail[0]['container_pickup_date'],
 
             'delivery_date' => $purchase_detail[0]['delivery_date'],
+
+            'truckingdate' => $purchase_detail[0]['trucking_date'],
             
             'customer_name' => $purchase_detail[0]['customer_name'],
 
@@ -397,6 +407,8 @@ class Linvoice {
             'pro_no_reference' => $purchase_detail[0]['pro_no_reference'],
 
             'total' =>  $purchase_detail[0]['total'],
+
+            'grandtotal' =>  $purchase_detail[0]['grand_total_amount'],
 
             'purchase_all_data'=> $purchase_detail,
 

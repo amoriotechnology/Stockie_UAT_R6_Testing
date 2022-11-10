@@ -77,6 +77,7 @@ border: 2px solid #dce4ec;
 
                     <div class="panel-body">
                     <?php 
+//   print_r($data);die();  
                     echo form_open_multipart('Cinvoice/performer_ins',array('class' => 'form-vertical', 'id' => 'insert_sale','name' => 'insert_sale'))?>
  
                         <div class="row">
@@ -375,7 +376,7 @@ border: 2px solid #dce4ec;
 
                         <div class="form-group row">
                             <div class="col-sm-6">
-                                
+                              
                                <table>
                                 <tr>
                                     <td>
