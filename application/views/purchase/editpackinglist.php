@@ -180,13 +180,13 @@
 
 
                                         <td class="span3 supplier">
-                                           <input type="text" name="description" value="<?php echo $invoice_product[0]['product_details']; ?>" required class="form-control" placeholder="<?php echo display('description') ?>"  tabindex="5" >
+                                           <input type="text" name="description" value="<?php echo $invoice[0]['description']; ?>" required class="form-control" placeholder="<?php echo display('description') ?>"  tabindex="5" >
 
                                         </td>
 
 
                                           <td class="span3 supplier">
-                                           <input type="text" name="thickness" required class="form-control" placeholder="Thickness"  tabindex="5" >
+                                           <input type="text" name="thickness" required value="<?php echo $invoice[0]['thickness']; ?>" class="form-control" placeholder="Thickness"  tabindex="5" >
 
                                         </td>
 
@@ -219,47 +219,23 @@
                                         </tr>
                                 </thead>
                                 <tbody id="addPurchaseItem">
+                                {packinglist}
                                     <tr>
                                          <td class="wt">
-                                                <input type="text" id="serial_number[]" name="serial_number[]" value="<?php $invoice_detail[0]['serial_no']; ?>" class="form-control text-right" placeholder="" name=""  />
+                                                <input type="text" value="{sl}" id="serial_number[]" name="serial_number[]" class="form-control text-right" placeholder="" />
                                          </td>
 
                                        <td class="wt">
-                                                <input type="text" name="slab_no[]"
-
-                                                value="<?php $invoice_detail[0]['slab_no']; ?>"
-                                                 id="available_quantity_1" 
+                                                <input type="text" value="{slab_no}" name="slab_no[]"     id="available_quantity_1" 
 
                                                 class="form-control text-right stock_ctn_1" placeholder="0.00" />
                                        </td>
                                         
-<!--                                             <td class="text-right">
-                                                <input type="text" name="product_quantity[]" id="cartoon_1" required="" min="0" class="form-control text-right store_cal_1" onkeyup="calculate_store(1);" onchange="calculate_store(1);" placeholder="11" value=""  tabindex="6"/>
-                                            </td> -->
-                                           <!--  <td>
-
-
-
-
-                                        <select name="measurments" id="Measurments" class="form-control " required="" tabindex="1">
-                                            <option value="cm">Cms</option>
-                                            <option value="in">Inches</option>
-                                            <option value="Cm-in">Cms to inches</option>
-                                        </select>
-                                            </td> -->
-                                          <!--   <td class="text-right" id="th_Measurements">
-                                                <input type="text" id="height" name="height[]"class="form-control text-right store_cal_1"placeholder="Height"/>
-                                                <input type="text" id="width" name="width[]"class="form-control text-right store_cal_1"placeholder="Width"/>
-                                                <input type="text" id="thickness" name="thickness[]"class="form-control text-right store_cal_1"placeholder="Thickness"/>
-                                            </td> -->
-
-
-                                           
 
                                             <td class="text-right" style="display: flex;">
-                                                <input type="text" value="<?php echo $invoice_detail[0]['width']; ?>" name="width[]" id="cartoon_1"  class="form-control text-right store_cal_1" onkeyup="calculate_store(1);" onchange="calculate_store(1);" placeholder="Width" value=""  tabindex="6" style="width: 50%;"/>
+                                                <input type="text" value="{width}" name="width[]" id="cartoon_1"  class="form-control text-right store_cal_1" onkeyup="calculate_store(1);" onchange="calculate_store(1);" placeholder="Width" value=""  tabindex="6" style="width: 50%;"/>
 
-                                                 <input type="text" name="height[]" id="product_rate_1"   value="<?php echo $invoice_detail[0]['height']; ?>" class="form-control text-right store_cal_1" onkeyup="calculate_store(1);" onchange="calculate_store(1);" placeholder="Height" value=""  tabindex="6" style="width: 50%;"/>
+                                                 <input type="text" name="height[]" id="product_rate_1"   value="{height}" class="form-control text-right store_cal_1" onkeyup="calculate_store(1);" onchange="calculate_store(1);" placeholder="Height" value=""  tabindex="6" style="width: 50%;"/>
 
 
                                             </td>
@@ -269,13 +245,14 @@
                                            
 
                                             <td class="text-right">
-                                                <input class="form-control total_price text-right" type="text" name="area"  id="total_price_1" value="0.00" readonly="readonly" value="2" />
+                                                <input class="form-control total_price text-right" type="text" name="area"  id="total_price_1" value="{area}" readonly="readonly" value="2" />
                                             </td>
                                             
                                             <td>
                                                 <button  class="btn btn-danger text-right red" type="button" value="<?php echo display('delete')?>" onclick="deleteRow(this)" tabindex="8"><i class="fa fa-close"></i></button>
                                             </td>
                                     </tr>
+                                    {/packinglist}
                                 </tbody>
                                 <tfoot>
                                     <tr>

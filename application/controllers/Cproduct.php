@@ -515,6 +515,7 @@ foreach($html->find('table.table-dark') as $elements) {
             ->from('product_information')
             ->get()
             ->result_array();
+         
        echo json_encode($prodt);
     }
 public function get_all_product(){

@@ -515,6 +515,7 @@ function addprod(){
         dataType:"json",
         url:'<?php echo base_url();?>Cproduct/get_all_product1',
         success: function(result, statut) {
+            console.log(result);
             if(result.csrfName){
                csrfName = result.csrfName;
                csrfHash = result.csrfHash;

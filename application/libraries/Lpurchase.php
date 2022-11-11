@@ -1135,7 +1135,7 @@ class Lpurchase {
 
 
         $chapterList = $CI->parser->parse('purchase/edit_packing_form', $data, true);
-
+      //  $chapterList = $CI->parser->parse('purchase/editpackinglist', $data, true);
         return $chapterList;
 
     }
@@ -1459,10 +1459,34 @@ public function packing_update_form($purchase_id)
       $invoice = $CI->Purchases->invoice_edit($purchase_id);
 
       $invoice_detail = $CI->Purchases->invoice_detail_edit($purchase_id);
+      $purchase_detail = $CI->Purchases->retrieve_packing_editdata($purchase_id);
+   
+      // $customer_id = $purchase_detail[0]['customer_id'];
+
+      // $supplier_list = $CI->Suppliers->supplier_list("110", "0");
+
+      // $supplier_selected = $CI->Suppliers->supplier_search_item($supplier_id);
+
+
+
+      if (!empty($purchase_detail)) {
+
+          $i = 0;
+
+          foreach ($purchase_detail as $k => $v) {
+
+              $i++;
+
+              $purchase_detail[$k]['sl'] = $i;
+
+          }
+
+      }
+
 
       $get_invoice_product = $CI->Purchases->invoice_product_edit($purchase_id);
 
-     
+      $data['packinglist']=$purchase_detail;
     $data['invoice']=$invoice;
     $data['invoice_detail']=$invoice_detail;
     $data['invoice_product']=$get_invoice_product;

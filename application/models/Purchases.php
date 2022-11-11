@@ -2218,11 +2218,11 @@ return $output;
         $this->db->where('a.expense_packing_id', $purchase_id);
        // $this->db->order_by('a.purchase_details', 'asc');
         $query = $this->db->get();
-      
+     
         if ($query->num_rows() > 0) {
             return $query->result_array();
         }
-        return false;
+        return true;
     }
 
 
@@ -2835,7 +2835,9 @@ public function company_info()
     public function invoice_edit($purchase_id)
     {
         $sql='SELECT * FROM `expense_packing_list` WHERE expense_packing_id="'.$purchase_id.'"';
+      
         $query=$this->db->query($sql);
+    
          if ($query->num_rows() > 0) {
             return $query->result_array();
         }
@@ -2845,7 +2847,9 @@ public function company_info()
      public function invoice_detail_edit($purchase_id)
     {
         $sql='SELECT * FROM `expense_packing_list_detail` WHERE expense_packing_id="'.$purchase_id.'"';
+       
         $query=$this->db->query($sql);
+   
          if ($query->num_rows() > 0) {
             return $query->result_array();
         }
