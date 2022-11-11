@@ -26,7 +26,7 @@ $CI = & get_instance();
         $CI = & get_instance();
         $CI->auth->check_admin_auth();
         $CI->load->library('lpurchase');
-        $content = $CI->lpurchase->purchase_add_form();
+        $content = $CI->lpurchase->purchase_add_form1();
         $this->template->full_admin_html_view($content);
     }
 
@@ -311,15 +311,8 @@ $CI = & get_instance();
             exit;
         }
     }
-
-
-
-
-    public function insert_purchase_order() {
-
-
-
-        $CI = & get_instance();
+ public function insert_purchase_order() {
+   $CI = & get_instance();
         $CI->auth->check_admin_auth();
         $CI->load->model('Purchases');
         $CI->Purchases->purchase_order_entry();
@@ -332,9 +325,7 @@ $CI = & get_instance();
             exit;
         }
     }
-
-
-       public function insert_ocean_import() {
+    public function insert_ocean_import() {
         $CI = & get_instance();
         $CI->auth->check_admin_auth();
         $CI->load->model('Purchases');

@@ -65,13 +65,69 @@ class Lpurchase {
         );
 
     
-        $purchaseForm = $CI->parser->parse('purchase/purchase_order', $data, true);
+      
         $purchaseForm = $CI->parser->parse('purchase/add_purchase_form', $data, true);
       
         return $purchaseForm;
 
     }
+    public function purchase_add_form1() {
 
+        $CI = & get_instance();
+        $CI1 = & get_instance();
+        $CI1->load->model('Purchases');
+            $CI->load->model('Suppliers');
+        $CI->load->model('Categories');
+        $CI->load->model('Units');
+        $CI->load->model('Products');
+   
+
+
+
+        $CI->load->model('Web_settings');
+
+        $all_product_list = $CI1->Products->all_product_list();
+        $all_supplier = $CI1->Purchases->select_all_supplier();
+           $supplier      = $CI->Suppliers->supplier_list("110", "0");
+
+        $currency_details = $CI->Web_settings->retrieve_setting_editdata();
+
+        $bank_list        = $CI->Web_settings->bank_list();
+
+
+        $category_list = $CI->Categories->category_list_product();
+
+        $unit_list     = $CI->Units->unit_list();
+
+
+        $data = array(
+
+            'title'         => display('add_purchase'),
+
+            'all_supplier'  => $all_supplier,
+            'product_list'  => $all_product_list,
+
+           
+
+            'invoice_no'    => $CI->auth->generator(10),
+
+            'category_list'=> $category_list,
+
+            'unit_list'    => $unit_list,
+
+            'discount_type' => $currency_details[0]['discount_type'],
+
+            'bank_list'     => $bank_list,
+
+        );
+
+    
+        $purchaseForm = $CI->parser->parse('purchase/purchase_order', $data, true);
+       
+      
+        return $purchaseForm;
+
+    }
 
       public function packing_add_form() {
 

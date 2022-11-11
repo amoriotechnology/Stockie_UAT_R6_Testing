@@ -31,7 +31,7 @@ h3,#company_info{
 tbody tr{text-align:center}
 .right{text-align:right; font-weight:bold;}
    </style>
-   <?php   $invoice_setting[0]['template']=2; ?>
+
 <div class="content-wrapper">
     <section class="content-header" >
         <div class="header-icon">

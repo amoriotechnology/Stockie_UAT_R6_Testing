@@ -46,9 +46,10 @@ class Ccpurchase extends CI_Controller {
     public function manage_ocean_import_tracking() {
         $date = $this->input->post("daterange");
         $this->load->library('Llpurchase');
-        $content1 = $this->llpurchase->ocean_import_list();
+       
         $CI = & get_instance();
         $CI->load->model('Purchases');
+         $content1 = $this->llpurchase->ocean_import_list();
         $expense = $CI->Purchases->ocean_import($date);
 
         $data = array(

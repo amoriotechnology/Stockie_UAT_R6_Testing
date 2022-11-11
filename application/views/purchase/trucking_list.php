@@ -67,7 +67,7 @@
                         </div>
                         <div class="col-sm-6">
                      
-                        <?php echo form_open_multipart('Ccpurchase/manage_trucking',array('class' => 'form-vertical', 'id' => 'insert_sale','name' => 'insert_sale'))?>
+                        <?php echo form_open_multipart('Cpurchase/manage_trucking',array('class' => 'form-vertical', 'id' => 'insert_sale','name' => 'insert_sale'))?>
 
 
 <?php
