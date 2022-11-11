@@ -93,17 +93,17 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
             <th>Total</th>
         </tr>
         <tr>
-         <td><?php echo $truckingdate; ?></td>
-         <td><?php echo $qty; ?></td>
-         <td><?php echo $description; ?></td>
-         <td><?php echo $rate; ?></td>
-         <td><?php echo $pro_no_reference; ?></td>
-         <td><?php echo $total; ?></td>
+         <td style="font-size: 15px;"><?php echo $truckingdate; ?></td>
+         <td style="font-size: 15px;"><?php echo $qty; ?></td>
+         <td style="font-size: 15px;"><?php echo $description; ?></td>
+         <td style="font-size: 15px;"><?php echo $rate; ?></td>
+         <td style="font-size: 15px;"><?php echo $pro_no_reference; ?></td>
+         <td style="font-size: 15px;"><?php echo $total; ?></td>
         </tr>
 
         <tr>
             <td colspan="5" style="text-align: right;">Overall Total:</td>
-            <td><?php echo $grandtotal; ?></td>
+            <td style="font-size: 15px;"><?php echo $grandtotal; ?></td>
             
              </tr>
 
@@ -144,7 +144,9 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
 <script>
 $(document).ready(function () {
- 
+
+$('.navbar').hide();    
+
  var pdf = new jsPDF('p','pt','a4');
     const invoice = document.getElementById("content");
              console.log(invoice);
