@@ -169,7 +169,10 @@ $today = date('Y-m-d');
   <td class="Purchase Date"><?php   echo $arr['invoice_date'];  ?></td>
   <td class="Country of Origin"><?php   echo $arr['country_origin'];  ?></td>
   <td class="Place of Delivery"><?php   echo $arr['place_of_delivery'];  ?></td>
-  <td class="Action"><a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cinvoice/trucking_update_form/<?php echo  $arr['purchase_order_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td></tr>
+  <td class="Action">
+    <a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cpurchase/ocean_import_tracking_update_form/<?php echo  $arr['ocean_import_tracking_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+  <a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cpurchase/ocean_import_tracking_details_data/<?php echo  $arr['ocean_import_tracking_id'];  ?>"><i class="fa fa-download" aria-hidden="true"></i></a>
+</td></tr>
      <?php   
 $count++;
      

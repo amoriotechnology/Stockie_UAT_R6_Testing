@@ -163,7 +163,7 @@ class Llpurchase {
 
         );
 
-        $purchaseForm = $CI->parser->parse('purchase/trucking_list', $data, true);
+        $purchaseForm = $CI->parser->parse('purchase/ocean_import_tracking', $data, true);
 
         return $purchaseForm;
 

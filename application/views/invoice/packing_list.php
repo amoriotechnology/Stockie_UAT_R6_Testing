@@ -134,10 +134,10 @@ $today = date('Y-m-d');
                     <input type="hidden" value="Sale/PackingList" id="url"/>
                     <div class="panel-body">
                     <div id="customers">
-  <table class="table table-bordered" cellspacing="0" width="100%" id="PackingOrderList">
-    <thead>
+  <table class="table table-bordered" cellspacing="0" width="100%" id="ProfarmaInvList">
+  <thead>
       <tr>
-      <th class="ID" style="width:50px;">ID</th>
+      <th class="ID">ID</th>
         <th class="Invoice No">Invoice No</th>
         <th class="Expense Packing ID">Expense Packing ID</th>
         <th class="Gross Weight">Gross Weight</th>
@@ -150,6 +150,7 @@ $today = date('Y-m-d');
       </tr>
     </thead>
     <tbody>
+
 
      <?php
     $count=1;
@@ -166,13 +167,15 @@ $today = date('Y-m-d');
   <td><?php   echo $arr['thickness'];  ?></td>
   <!-- <td><a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cinvoice/trucking_update_form/<?php echo  $arr['expense_packing_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td> -->
 
-  <div class="form-group">
-  <td>
-  <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/packing_list_details_data/<?php echo  $arr['expense_packing_id'];  ?>"><i class="fa fa-download" aria-hidden="true"></i></a>
-  <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-    <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+
+  <td class="Action">
+
+ 
+  <a class="btn  btn-sm" style="background-color: #3CA5DE; color: #fff;" href="<?php echo base_url()?>Cinvoice/packing_list_details_data/<?php echo  $arr['expense_packing_id'];  ?>"><i class="fa fa-download" aria-hidden="true"></i></a>
+  <a class="btn  btn-sm" style="background-color: #3CA5DE; color: #fff;" href="<?php echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php echo  $arr['expense_packing_id'];  ?>"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    <a class="btn  btn-sm" style="background-color: #3CA5DE; color: #fff;" href="<?php echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php echo  $arr['expense_packing_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
   </td>
-  </div>
+
 </tr>
      <?php   
 $count++;
@@ -273,7 +276,6 @@ $count++;
 
 </div>
 <script type="text/javascript" src="<?php echo base_url()?>my-assets/js/profarma.js"></script>
-
 <script>
 
     var csrfName = '<?php echo $this->security->get_csrf_token_name();?>';
@@ -337,7 +339,7 @@ $.ajax({
     success: function(data) {
      var menu=data.menu;
      var submenu=data.submenu;
-     if(menu=='Sale' && submenu=='PackingList'){
+     if(menu=='Purchase' && submenu=='PackingList'){
      var s=data.setting;
 s=JSON.parse(s);
 console.log(s);
@@ -361,6 +363,5 @@ $('tr').each(function(){
 });
 
     </script>
-
 
 

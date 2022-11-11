@@ -687,7 +687,7 @@ class Lpurchase {
         exit;
         // $supplier_id = $purchase_detail[0]['supplier_id'];
         $supplier_list = $CI->Suppliers->supplier_list("110", "0");
-        $supplier_selected = $CI->Suppliers->supplier_search_item($supplier_id);
+        $supplier_selected = $CI->Suppliers->supplier_search_item($purchase_id);
 
 
 
@@ -1282,7 +1282,7 @@ public function purchase_details_data($purchase_id) {
     );
 
 
-    print_r($data['invoice_setting']);
+
  
 
     $chapterList = $CI->parser->parse('purchase/purchase_detail', $data, true);
@@ -1336,14 +1336,17 @@ public function purchase_details_data($purchase_id) {
 
         }
 
-
+        $CI->load->model('invoice_design');
+       
+        $dataw = $CI->invoice_design->retrieve_data();
 
         $currency_details = $CI->Web_settings->retrieve_setting_editdata();
 
         $company_info = $CI->Purchases->retrieve_company();
 
         $data = array(
-
+'invoice_setting'  => $dataw,
+'company_info' =>  $company_info,
         'title'            => display('purchase_details'),
 
         'ocean_import_tracking_id'      => $purchase_detail[0]['ocean_import_tracking_id'],

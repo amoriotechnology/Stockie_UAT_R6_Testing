@@ -158,26 +158,7 @@ $today = date('Y-m-d');
         foreach($expense['rows'] as $k=>$arr){
     
           ?>
-<<<<<<< HEAD
-          <tr><td><?php  echo $count;  ?></td>
- <td><?php   echo $arr['trucking_id'];  ?></td>
-   <td><?php   echo $arr['container_pickup_date'];  ?></td>
-   <td><?php   echo $arr['delivery_date'];  ?></td>
-<td><?php   echo $arr['shipment_company'];  ?></td>
-  <td><?php   echo $arr['customer_name'];  ?></td>
-  <td><?php   echo $arr['invoice_date'];  ?></td>
-  <td><?php   echo $arr['grand_total_amount'];  ?></td>
-  <!-- <td><a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cinvoice/trucking_update_form/<?php echo  $arr['purchase_order_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td></tr> -->
-
-  <div class="form-group">
-  <td>
-  <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Ccpurchase/trucking_details_data/<?php echo  $arr['trucking_id'];  ?>"><i class="fa fa-download" aria-hidden="true"></i></a>
-  <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-    <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-  </td>
-  </div>
-=======
-          <tr><td class="ID"><?php  echo $count;  ?></td>
+<tr><td class="ID"><?php  echo $count;  ?></td>
  <td class="Trucking ID"><?php   echo $arr['trucking_id'];  ?></td>
    <td class="Container Pick Up Date"><?php   echo $arr['container_pickup_date'];  ?></td>
    <td class="Delivery Date"><?php   echo $arr['delivery_date'];  ?></td>
@@ -185,8 +166,16 @@ $today = date('Y-m-d');
   <td class="Bill To"><?php   echo $arr['customer_name'];  ?></td>
   <td class="Invoice Date"><?php   echo $arr['invoice_date'];  ?></td>
   <td class="Total Amount"><?php   echo $arr['grand_total_amount'];  ?></td>
-  <td class="Action"><a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Ccpurchase/trucking_update_form/<?php echo  $arr['trucking_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td></tr>
->>>>>>> 19c3dfd372182d438dd2141f8d1363c79dc746a4
+  <!-- <td><a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cinvoice/trucking_update_form/<?php echo  $arr['purchase_order_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td></tr> -->
+
+  <div class="form-group">
+  <td class="Action">
+  <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Ccpurchase/trucking_details_data/<?php echo  $arr['trucking_id'];  ?>"><i class="fa fa-download" aria-hidden="true"></i></a>
+  <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+  </td>
+  </div>
+
      <?php   
 $count++;
      

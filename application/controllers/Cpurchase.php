@@ -319,8 +319,6 @@ $CI = & get_instance();
 
 
 
-        print_r($_REQUEST);
-        exit; 
         $CI = & get_instance();
         $CI->auth->check_admin_auth();
         $CI->load->model('Purchases');
@@ -534,14 +532,16 @@ $CI = & get_instance();
         $CI->load->library('linvoice');
         $data=array();
         $this->load->model('Purchases');
+        $this->load->model('invoice_design');
         $invoice_no = $this->uri->segment(3); 
         $data['invoice'] =$this->Purchases->get_purchases_invoice($invoice_no);
         $data['order'] =$this->Purchases->get_purchases_order($invoice_no);
         $data['supplier'] =$this->Purchases->get_supplier($invoice_no);
         $data['company_info'] =$this->Purchases->company_info();
 
-
-      
+        $data['invoice_setting'] =$this->invoice_design->retrieve_data();
+       
+   
 
      
 

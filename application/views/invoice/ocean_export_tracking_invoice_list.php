@@ -133,7 +133,7 @@ $today = date('Y-m-d');
 
                     <div class="panel-body">
                     <div id="customers">
-  <table class="table table-bordered" cellspacing="0" width="100%" id="oceanExport">
+  <table class="table table-bordered" cellspacing="0" width="100%" id="ProfarmaInvList">
     <thead>
       <tr>
       <th class="ID">ID</th>
@@ -245,7 +245,7 @@ $count++;
 
 	<input type="checkbox"  data-control-column="8" class="opt Place of Delivery" value="Place of Delivery"/>Place of Delivery<br>
 <input type="checkbox"  data-control-column="9" class="opt Action" />Action<br>
-<input type="submit" value="submit" id="submit"/>
+<!--<input type="submit" value="submit" id="submit"/>-->
                      
                     </div>
                 </div>

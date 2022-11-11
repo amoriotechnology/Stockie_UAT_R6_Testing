@@ -1,4 +1,5 @@
 <?php
+ob_start();
 $CI = & get_instance();
 $CI->load->model('Web_settings');
 $CI->load->model('Reports');

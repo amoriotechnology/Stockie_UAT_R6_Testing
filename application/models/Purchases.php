@@ -1598,7 +1598,7 @@ return $output;
             'status'             => 1,
         );
 
-        $content = $this->load->view('C/add_packing_list', $data, true);
+        $content = $this->load->view('Cpurchase/add_packing_list', $data, true);
 
         $this->template->full_admin_html_view($content);
         // print_r($data); exit();

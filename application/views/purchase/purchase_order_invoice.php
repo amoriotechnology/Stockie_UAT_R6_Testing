@@ -2,7 +2,7 @@
 <style>
     .container {
   width: 100%;
-  background-color: rgb(241, 248, 250);
+ 
   margin-top: 50px;
  
 
@@ -31,8 +31,8 @@
 	    </div>
 	</section>
 <style>
-   #company_info,form,table{
-   font-size:12px;
+   #company_info,form,table,p{
+   font-size:14px;
    }
    th, td {
   padding: 10px;
@@ -91,7 +91,7 @@ tbody tr{text-align:center}
                   Contact:<?php echo $company_info[0]['mobile']; ?><br>
               </div>
             <div class="col-sm-6 text-center"><h3><?php echo $invoice_setting[0]['header']; ?></h3></div>
-            <div class="col-sm-3"><img src="<?php echo base_url(); ?>assets/<?php echo $invoice_setting[0]['logo']; ?>" style="width: 100%;"></div>
+            <div class="col-sm-3"><img src="<?php echo base_url(); ?>assets/<?php echo $invoice_setting[0]['logo']; ?>" style="width: 60%;"></div>
         </div>
         <br>
         <div class="row">
@@ -150,7 +150,7 @@ tbody tr{text-align:center}
         
     </div>
 </div>
-<h4>Message / Notes on Invoice </h4>
+<h4>Message / Notes on Invoice </h4><p><?= $invoice->message_invoice; ?></p>
         
     </div>
 					 
@@ -161,7 +161,7 @@ tbody tr{text-align:center}
 {
  ?> 
            <div class="row">
-        <div class="col-sm-3"><img src="<?php echo base_url(); ?>assets/<?php echo $invoice_setting[0]['logo']; ?>" style="width: 100%;"></div>
+        <div class="col-sm-3"><img src="<?php echo base_url(); ?>assets/<?php echo $invoice_setting[0]['logo']; ?>" style="width: 60%;"></div>
             <div class="col-sm-6 text-center"><h3><?php echo $invoice_setting[0]['header']; ?></h3></div>
             <div class="col-sm-3" id="company_info">
                   Company name:<?php echo $company_info[0]['company_name']; ?><br>
@@ -228,7 +228,7 @@ tbody tr{text-align:center}
         
     </div>
 </div>
-<h4>Message / Notes on Invoice </h4>
+<h4>Message / Notes on Invoice  : </h4><p><?= $invoice->message_invoice; ?></p>
         
     </div>
 					 
@@ -240,7 +240,7 @@ tbody tr{text-align:center}
 {
  ?>  
  <div class="row">
-        <div class="col-sm-3"><img src="<?php echo base_url(); ?>assets/<?php echo $invoice_setting[0]['logo']; ?>" style="width: 100%;"></div>
+        <div class="col-sm-3"><img src="<?php echo base_url(); ?>assets/<?php echo $invoice_setting[0]['logo']; ?>" style="width: 60%;"></div>
             <div class="col-sm-6 text-center"><h3><?php echo $invoice_setting[0]['header']; ?></h3></div>
         </div>
         <br>
@@ -303,7 +303,7 @@ tbody tr{text-align:center}
         
     </div>
 </div>
-<h4>Message / Notes on Invoice </h4>
+<h4>Message / Notes on Invoice :</h4><p><?= $invoice->message_invoice; ?></p>
         
     </div>
 					 
@@ -318,7 +318,7 @@ tbody tr{text-align:center}
 </div>
 <!-- Purchase ledger End  -->
 
-<!-- 
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
@@ -335,7 +335,7 @@ tbody tr{text-align:center}
 
   
 $(document).ready(function () {
-$('.navbar').css('display','none');
+$('.navbar').hide();
  var pdf = new jsPDF('p','pt','a4');
     const invoice = document.getElementById("content");
              console.log(invoice);
@@ -367,4 +367,4 @@ $('.navbar').css('display','none');
 
    });
 
-   </script> -->
+   </script> 

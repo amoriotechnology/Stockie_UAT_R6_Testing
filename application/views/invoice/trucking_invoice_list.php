@@ -130,7 +130,7 @@ $today = date('Y-m-d');
                     </div>
                     <div class="panel-body">
                     <div id="customers">
-  <table class="table table-bordered" cellspacing="0" width="100%" id="truckingList">
+  <table class="table table-bordered" cellspacing="0" width="100%" id="ProfarmaInvList">
     <thead>
       <tr>
       <th data-column-id="id" class="ID">ID</th>
