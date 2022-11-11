@@ -62,19 +62,6 @@ class Purchases extends CI_Model {
     }
 
 
-  public function get_invoice_design()
-    {
-        $uid=$_SESSION['user_id'];
-    $sql='select * from invoice_design where uid="'.$uid.'"';
-     $query=$this->db->query($sql); 
-
-        if ($query->num_rows() > 0) {
-
-            return $query->result_array();
-
-        }
-        return false;
-    }
                //Count Trucking
     public function count_trucking() {
         $this->db->select('*');
@@ -1599,9 +1586,6 @@ return $output;
         );
 
 
-        // print_r($data); exit();
-
-
     // print_r($data);
    
           ///Inventory Debit
@@ -2132,7 +2116,7 @@ return $output;
 
     // print_r($str);
 
-
+    // exit;
         if ($query->num_rows() > 0) {
             return $query->result_array();
         }
@@ -2218,11 +2202,11 @@ return $output;
         $this->db->where('a.expense_packing_id', $purchase_id);
        // $this->db->order_by('a.purchase_details', 'asc');
         $query = $this->db->get();
-     
+      
         if ($query->num_rows() > 0) {
             return $query->result_array();
         }
-        return true;
+        return false;
     }
 
 
@@ -2472,8 +2456,6 @@ public function company_info()
     $query = $this->db->get();
     
 
-      $sql='SELECT * FROM `company_information` as c JOIN user_login as u on u.cid=c.company_id where u.user_id='.$_SESSION['user_id'];
-   $query=$this->db->query($sql);
    if ($query->num_rows() > 0) {
             return $query->result_array();
         }
@@ -2711,10 +2693,11 @@ public function company_info()
     }
 
     public function packing_details_data($expense_packing_id) {
+        // $sql='SELECT * FROM expense_packing_list as a JOIN expense_packing_list_detail as b ON b.product_id = a.product_id WHERE a.expense_packing_id = '.$expense_packing_id;
         $sql = 'SELECT * FROM expense_packing_list as a JOIN expense_packing_list_detail as ac JOIN product_information as b ON b.product_id = a.product_id WHERE a.expense_packing_id = '.$expense_packing_id;
         $query = $this->db->query($sql);
-   // echo $this->db->last_query();
-   //     die(); 
+//    echo $this->db->last_query();
+//        die(); 
         if ($query->num_rows() > 0) {
             return $query->result_array();
         }
@@ -2830,41 +2813,7 @@ public function company_info()
         }
         return false;
     }
-/////////////////////// edit Invoice Area////////
-
-    public function invoice_edit($purchase_id)
-    {
-        $sql='SELECT * FROM `expense_packing_list` WHERE expense_packing_id="'.$purchase_id.'"';
-      
-        $query=$this->db->query($sql);
-    
-         if ($query->num_rows() > 0) {
-            return $query->result_array();
-        }
-
-    }
-
-     public function invoice_detail_edit($purchase_id)
-    {
-        $sql='SELECT * FROM `expense_packing_list_detail` WHERE expense_packing_id="'.$purchase_id.'"';
-       
-        $query=$this->db->query($sql);
-   
-         if ($query->num_rows() > 0) {
-            return $query->result_array();
-        }
-    }
-
-         public function invoice_product_edit($purchase_id)
-    {
-        $sql='SELECT b.* FROM `expense_packing_list_detail` a JOIN product_information b on b.product_id=a.product_id where a.expense_packing_id="'.$purchase_id.'"';
-
-        $query=$this->db->query($sql);
-         if ($query->num_rows() > 0) {
-            return $query->result_array();
-        }
-
-    }
+///////////////////////Invoice Area////////
 
 
 
