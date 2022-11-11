@@ -171,8 +171,7 @@ $today = date('Y-m-d');
   <div class="form-group">
   <td class="Action">
   <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Ccpurchase/trucking_details_data/<?php echo  $arr['trucking_id'];  ?>"><i class="fa fa-download" aria-hidden="true"></i></a>
-  <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-    <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+   <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Ccpurchase/trucking_update_form/<?php echo  $arr['trucking_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
   </td>
   </div>
 
@@ -228,20 +227,20 @@ $count++;
             <div id="myModal_colSwitch" class="modal_colSwitch">
                     <div class="modal-content_colSwitch">
                           <span class="close_colSwitch">&times;</span>
-                          <input type="checkbox"  data-control-column="1" class="opt ID" value="ID"/> ID<br>
+                          <input type="checkbox"  data-control-column="1" checked = "checked" class="opt ID" value="ID"/> ID<br>
 
-    <input type="checkbox"  data-control-column="2" class="opt Trucking ID" value="Trucking ID"/>Trucking ID<br>
+    <input type="checkbox"  data-control-column="2" checked = "checked" class="opt Trucking ID" value="Trucking ID"/>Trucking ID<br>
  
-    <input type="checkbox"  data-control-column="3" class="opt Container Pick Up Date" value="Container Pick Up Date"/>Container Pick Up Date<br>
+    <input type="checkbox"  data-control-column="3" checked = "checked" class="opt Container Pick Up Date" value="Container Pick Up Date"/>Container Pick Up Date<br>
   
-    <input type="checkbox"  data-control-column="4" class="opt Delivery Date" value="Delivery Date"/>Delivery Date<br>
+    <input type="checkbox"  data-control-column="4" checked = "checked" class="opt Delivery Date" value="Delivery Date"/>Delivery Date<br>
 
-    <input type="checkbox"  data-control-column="5" class="opt Shipment Company" value="Shipment Company"/>Shipment Company<br>
+    <input type="checkbox"  data-control-column="5" checked = "checked" class="opt Shipment Company" value="Shipment Company"/>Shipment Company<br>
 
-    <input type="checkbox"  data-control-column="6" class="opt Bill To" value="Bill To"/>Bill To<br>
-	<input type="checkbox"  data-control-column="7" class="opt Invoice Date" value="Invoice Date"/>Invoice Date<br>
-	<input type="checkbox"  data-control-column="8" class="opt Total Amount" value="Total Amount"/>Total Amount<br>
-<input type="checkbox"  data-control-column="9" class="opt Action" value="Action"/>Action<br>
+    <input type="checkbox"  data-control-column="6" checked = "checked" class="opt Bill To" value="Bill To"/>Bill To<br>
+	<input type="checkbox"  data-control-column="7" checked = "checked" class="opt Invoice Date" value="Invoice Date"/>Invoice Date<br>
+	<input type="checkbox"  data-control-column="8" checked = "checked" class="opt Total Amount" value="Total Amount"/>Total Amount<br>
+<input type="checkbox"  data-control-column="9" checked = "checked" class="opt Action" value="Action"/>Action<br>
      <!--      <input type="submit" value="submit" id="submit"/>-->    
                     </div>
                 </div>

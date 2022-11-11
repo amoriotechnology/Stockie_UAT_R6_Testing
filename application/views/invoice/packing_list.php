@@ -230,19 +230,19 @@ $count++;
             <div id="myModal_colSwitch" class="modal_colSwitch">
                     <div class="modal-content_colSwitch">
                           <span class="close_colSwitch">&times;</span>
-                          <input type="checkbox"  data-control-column="1" class="opt ID" value="ID" /> ID<br>
+                          <input type="checkbox"  data-control-column="1" checked = "checked" class="opt ID" value="ID" /> ID<br>
 
-    <input type="checkbox"  data-control-column="2" class="opt Invoice No" value="Invoice No"/>Invoice No<br>
+    <input type="checkbox"  data-control-column="2" checked = "checked" class="opt Invoice No" value="Invoice No"/>Invoice No<br>
  
-    <input type="checkbox"  data-control-column="3" class="opt Expense Packing ID" value="Expense Packing ID"/>Expense Packing ID<br>
+    <input type="checkbox"  data-control-column="3" checked = "checked" class="opt Expense Packing ID" value="Expense Packing ID"/>Expense Packing ID<br>
   
-    <input type="checkbox"  data-control-column="4" class="opt Gross Weight" value="Gross Weight"/>Gross Weight<br>
+    <input type="checkbox"  data-control-column="4" checked = "checked" class="opt Gross Weight" value="Gross Weight"/>Gross Weight<br>
 
-    <input type="checkbox"  data-control-column="5" class="opt Container No." value="Container No."/>Container No.<br>
+    <input type="checkbox"  data-control-column="5" checked = "checked" class="opt Container No." value="Container No."/>Container No.<br>
 
-    <input type="checkbox"  data-control-column="6" class="opt Invoice Date" value="Invoice Date"/>Invoice Date<br>
-	<input type="checkbox"  data-control-column="7" class="opt Thickness" value="Thickness"/>Thickness<br>
-<input type="checkbox"  data-control-column="8" class="opt Action" value="Action"/>Action<br>
+    <input type="checkbox"  data-control-column="6" checked = "checked" class="opt Invoice Date" value="Invoice Date"/>Invoice Date<br>
+	<input type="checkbox"  data-control-column="7" checked = "checked" class="opt Thickness" value="Thickness"/>Thickness<br>
+<input type="checkbox"  data-control-column="8" checked = "checked" class="opt Action" value="Action"/>Action<br>
      <!--      <input type="submit" value="submit" id="submit"/>-->
                      
                     </div>

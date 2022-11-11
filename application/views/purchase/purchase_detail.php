@@ -1,4 +1,4 @@
-Purchase Payment Ledger Start -->
+
 <style>
     .container {
   width: 100%;
@@ -15,6 +15,23 @@ Purchase Payment Ledger Start -->
     }
     
 </style>
+<style>
+        #ocean{
+            margin-left: 300px;
+        }
+   #company_info,form,table,p{
+   font-size:14px;
+   }
+   th, td {
+  padding: 10px;
+}
+h3,#company_info{
+   font-weight:bold;
+}
+tbody tr{text-align:center}
+.right{text-align:right; font-weight:bold;}
+   </style>
+   <?php   $invoice_setting[0]['template']=2; ?>
 <div class="content-wrapper">
     <section class="content-header" >
         <div class="header-icon">
@@ -33,58 +50,33 @@ Purchase Payment Ledger Start -->
 <?php if($invoice_setting[0]['template']==1)
 {
  ?>    <!-- Invoice information -->
-     <div class="container" id="content">
+    <div id="content">
         <div class="row">
         
               <div class="col-sm-3" id="company_info">
                   
-                  Company name:<?php echo $company_info[0]['company_name']; ?><br>
-                  Address:<?php echo $company_info[0]['address']; ?><br>
-                  Email:<?php echo $company_info[0]['email']; ?><br>
-                  Contact:<?php echo $company_info[0]['mobile']; ?><br>
+                  Company name :&nbsp;<?php echo $company_info[0]['company_name']; ?><br>
+                  Address :&nbsp;<?php echo $company_info[0]['address']; ?><br>
+                  Email :&nbsp;<?php echo $company_info[0]['email']; ?><br>
+                  Contact :&nbsp;<?php echo $company_info[0]['mobile']; ?><br>
               </div>
             <div class="col-sm-6 text-center"><h3><?php echo $invoice_setting[0]['header']; ?></h3></div>
             <div class="col-sm-3"><img src="<?php echo base_url(); ?>assets/<?php echo $invoice_setting[0]['logo']; ?>" style="width: 40%;"></div>
         </div>
-
         <div class="row">
-            
-            <div class="col-lg-6">
-
-
- 
-    <label for="text">Invoice No:<?php echo $chalan_no; ?> </label>
- 
-            </div>
-        
-
-            
-            <div class="col-lg-6" style="margin-left:51%;
-    margin-top: -6%;">
-                <form action="">
-                    <label for="text">Expenses / Bill date:<?php echo $final_date; ?></label><br><br>
-                    <label for="text">Payment due date:<?php echo $payment_due_date; ?></label> 
-                </form>
-                            </div>
-        </div><br><br>
-<div class="row">
     <div class="col-lg-12">
         <table style="width:100%">
             <tr>
+                <th S.No</th>
                 <th>Product</th>
-                <th>Product model</th>
-                <th>Product Description</th>
+                <th>Description</th>
                 <th>Quantity </th>
                 <th>Rate</th>
-                <th>total</th>
-             
-     
+                <th>Total</th>
+               
                 
             </tr>
-            <?php 
-            $i=0;
-          ?> 
-<?php
+            <?php
 $i=1;
 foreach($products as $product)
 { 
@@ -103,38 +95,29 @@ foreach($products as $product)
             
                
             </tr>
-        <?php } ?>
-       
+        <?php $i++;} ?>
             <tr>
              
-              <td></td>
-              <td></td>
-              <td></td>
-           
-                <td></td>
-                <td>Overall Total:</td>
-          
+             
+                <td class="right" colspan="5">Overall Total:</td>
                 <td><?php echo array_sum($totals); ?></td>
-            
             </tr>
         </table><br><br>
         
     </div>
 </div>
-<h4>Remarks / Details </h4>
-<br><br><?php echo $remarks; ?><br>
-<h4>Message on Invoice</h4>
-<br><br><?php echo $message_invoice; ?><br>
+<h4>Remarks / Details :&nbsp;</h4><?php  echo $remarks; ?>
+<br><br><br>
+<h4>Message on Invoice :&nbsp;</h4><?php   echo $message_invoice; ?>
 
         
     </div>
 </div>
-
 <?php } ?>
 <?php if($invoice_setting[0]['template']==2)
 {
  ?>    <!-- Invoice information -->
-     <div class="container" id="content">
+    <div id="content">
         <div class="row">
         <div class="col-sm-3"><img src="<?php echo base_url(); ?>assets/<?php echo $invoice_setting[0]['logo']; ?>" style="width: 40%;"></div>
 
@@ -143,31 +126,31 @@ foreach($products as $product)
             
             <div class="col-sm-3" id="company_info">
                   
-                  Company name:<?php echo $company_info[0]['company_name']; ?><br>
-                  Address:<?php echo $company_info[0]['address']; ?><br>
-                  Email:<?php echo $company_info[0]['email']; ?><br>
-                  Contact:<?php echo $company_info[0]['mobile']; ?><br>
+                  Company name :&nbsp;<?php echo $company_info[0]['company_name']; ?><br>
+                  Address :&nbsp;<?php echo $company_info[0]['address']; ?><br>
+                  Email :&nbsp;<?php echo $company_info[0]['email']; ?><br>
+                  Contact :&nbsp;<?php echo $company_info[0]['mobile']; ?><br>
               </div>
         </div>
   <br>
         <br>
+        <div class="container">
         <div class="row">
             
             <div class="col-lg-6">
-
-
- 
-    <label for="text">Invoice No:<?php echo $chalan_no; ?> </label>
- 
+<form action="">
+    <label for="text">Vendor :&nbsp;</label><?php echo $supplier_name;   ?><br><br>
+    <label for="text">Invoice No :&nbsp;</label><?php echo $chalan_no; ?>
+   
+</form>
             </div>
         
 
             
-            <div class="col-lg-6" style="margin-left:51%;
-    margin-top: -6%;">
+            <div class="col-lg-6">
                 <form action="">
-                    <label for="text">Expenses / Bill date:<?php echo $final_date; ?></label><br><br>
-                    <label for="text">Payment due date:<?php echo $payment_due_date; ?></label> 
+                    <label for="text">Expenses / Bill date :&nbsp;</label><?php echo $final_date; ?><br><br>
+                    <label for="text">Payment due date :&nbsp;</label> <?php echo $payment_due_date; ?>
                 </form>
                             </div>
         </div><br><br>
@@ -175,20 +158,16 @@ foreach($products as $product)
     <div class="col-lg-12">
         <table style="width:100%">
             <tr>
+                <th>S.No</th>
                 <th>Product</th>
-                <th>Product model</th>
-                <th>Product Description</th>
+                <th>Description</th>
                 <th>Quantity </th>
                 <th>Rate</th>
-                <th>total</th>
+                <th>Total</th>
              
-     
                 
             </tr>
-            <?php 
-            $i=0;
-          ?> 
-<?php
+            <?php
 $i=1;
 foreach($products as $product)
 { 
@@ -207,39 +186,30 @@ foreach($products as $product)
             
                
             </tr>
-        <?php } ?>
-       
+        <?php $i++;} ?>
             <tr>
              
-              <td></td>
-              <td></td>
-              <td></td>
-           
-                <td></td>
-                <td>Overall Total:</td>
-          
+             
+                <td class="right" colspan="5">Overall Total :</td>
                 <td><?php echo array_sum($totals); ?></td>
-            
             </tr>
         </table><br><br>
         
     </div>
 </div>
-<h4>Remarks / Details </h4>
-<br><br><?php echo $remarks; ?><br>
-<h4>Message on Invoice</h4>
-<br><br><?php echo $message_invoice; ?><br>
+<h4>Remarks / Details :&nbsp;</h4><?php  echo $remarks; ?>
+<br><br><br>
+<h4>Message on Invoice :&nbsp;</h4><?php   echo $message_invoice; ?>
 
         
     </div>
 </div>
-
 <?php } ?>
 <?php if($invoice_setting[0]['template']==3)
 {
  ?>    <!-- Invoice information -->
-     <div class="container" id="content">
-        <div class="row">
+   <div id="content">
+        <div class="row" >
         
         <div class="col-sm-3"><img src="<?php echo base_url(); ?>assets/<?php echo $invoice_setting[0]['logo']; ?>" style="width: 40%;"></div>
               
@@ -248,60 +218,59 @@ foreach($products as $product)
         </div>
 <br>
 <br>
-<br>
-<br>
+<div class="container">
         <div class="row">
             
-            <div class="col-lg-6">
-
-
- 
-    <label for="text">Invoice No:<?php echo $chalan_no; ?> </label>
- 
+            <div class="col-sm-4">
+<form action="">
+<label for="text">Vendor :&nbsp;</label><?php echo $supplier_name;   ?><br><br>
+    <label for="text">Invoice No :&nbsp;</label><?php echo $chalan_no; ?>
+   
+</form>
             </div>
         
 
             
-            <div class="col-lg-6" style="margin-left:51%;
-    margin-top: -6%;">
-         
-                    <label for="text">Expenses / Bill date:<?php echo $final_date; ?></label><br><br>
-                    <label for="text">Payment due date:<?php echo $payment_due_date; ?></label> 
-            
+            <div class="col-sm-4">
+                <form action="">
+                <label for="text">Expenses / Bill date :&nbsp;</label><?php echo $final_date; ?><br><br>
+                    <label for="text">Payment due date :&nbsp;</label> <?php echo $payment_due_date; ?>
+                </form>
                             </div>
-                            <div class="col-sm-3" id="company_info">
-                  
-                  Company name:<?php echo $company_info[0]['company_name']; ?><br>
-                  Address:<?php echo $company_info[0]['address']; ?><br>
-                  Email:<?php echo $company_info[0]['email']; ?><br>
-                  Contact:<?php echo $company_info[0]['mobile']; ?><br>
+                            <div class="col-sm-4" id="company_info">
+                  Company name :&nbsp;<?php echo $company_info[0]['company_name']; ?><br>
+                  Address :&nbsp;<?php echo $company_info[0]['address']; ?><br>
+                  Email :&nbsp;<?php echo $company_info[0]['email']; ?><br>
+                  Contact :&nbsp;<?php echo $company_info[0]['mobile']; ?><br>
               </div>
 
-        </div><br><br>
+
+        </div>
+        
+        
+        
+        
+        <br><br>
 <div class="row">
     <div class="col-lg-12">
-        <table style="width:100%:">
-            <tr style="background: #<?php echo $invoice_setting[0]['color']; ?>">
+        <table style="width:100%">
+            <tr>
+            <th>S.No</th>
                 <th>Product</th>
-                <th>Product model</th>
-                <th>Product Description</th>
+                <th>Description</th>
                 <th>Quantity </th>
                 <th>Rate</th>
-                <th>total</th>
+                <th>Total</th>
              
-     
                 
             </tr>
-            <?php 
-            $i=0;
-          ?> 
-<?php
+            <?php
 $i=1;
 foreach($products as $product)
 { 
 
     ?>
-            <tr >
+            <tr>
                <td><?php echo $i; ?></td>
                 
                <td><?php echo $product['product_name']; ?></td>
@@ -314,33 +283,24 @@ foreach($products as $product)
             
                
             </tr>
-        <?php } ?>
-       
-            <tr>
+        <?php $i++;} ?>
+        <tr>
              
-              <td></td>
-              <td></td>
-              <td></td>
-           
-                <td></td>
-                <td>Overall Total:</td>
-          
-                <td><?php echo array_sum($totals); ?></td>
-            
-            </tr>
-        </table><br><br>
-        
-    </div>
+             
+             <td class="right" colspan="5">Overall Total :</td>
+             <td><?php echo array_sum($totals); ?></td>
+         </tr>
+     </table><br><br>
+     
+ </div>
 </div>
-<h4>Remarks / Details </h4>
-<br><br><?php echo $remarks; ?><br>
-<h4>Message on Invoice</h4>
-<br><br><?php echo $message_invoice; ?><br>
+<h4>Remarks / Details :&nbsp;</h4><?php  echo $remarks; ?>
+<br><br><br>
+<h4>Message on Invoice :&nbsp;</h4><?php   echo $message_invoice; ?>
 
-        
-    </div>
-</div>
-
+     
+ </div> </div>
+       
 <?php } ?>
 
 
@@ -357,6 +317,7 @@ foreach($products as $product)
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
 <script>
+    
 $(document).ready(function () {
  
  var pdf = new jsPDF('p','pt','a4');
@@ -373,7 +334,7 @@ $(document).ready(function () {
                  allowTaint: true,
                 
                  html2canvas: { scale: 3 },
-                 jsPDF: { unit: 'in', format: 'a4', orientation: 'landscape' }
+                 jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
              };
               html2pdf().from(invoice).set(opt).toPdf().get('pdf').then(function (pdf) {
   var totalPages = pdf.internal.getNumberOfPages();
@@ -384,11 +345,11 @@ $(document).ready(function () {
     
   }
   
-  }).save('ramji.pdf');
-
-   
+  var timer = setTimeout(function() {
+            window.location='<?php  echo base_url();   ?>'+'Cpurchase/manage_purchase'
+        }, 10);
+  }).save();
    });
-
    </script> 
 
 

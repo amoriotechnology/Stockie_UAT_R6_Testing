@@ -582,12 +582,10 @@ $CI = & get_instance();
         $datacontent = $CI->invoice_content->retrieve_data();
 
         $packing_details = $CB->Purchases->packing_details_data($expense_packing_id);
-
+        $company_info=$this->Purchases->company_info();
         $data=array(
-            'header'=> $dataw[0]['header'],
-            'logo'=> $dataw[0]['logo'],
-            'color'=> $dataw[0]['color'],
-            'template'=> $dataw[0]['template'],
+            'company_info' => $company_info,
+           'invoice_setting' => $dataw,
             'invoice'  =>$packing_details[0]['invoice_no'],
             'invoice_date' => $packing_details[0]['invoice_date'],
             'gross' => $packing_details[0]['gross_weight'],

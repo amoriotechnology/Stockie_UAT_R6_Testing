@@ -65,9 +65,9 @@ class Lpurchase {
         );
 
     
-
-        $purchaseForm = $CI->parser->parse('purchase/add_purchase_form', $data, true);
         $purchaseForm = $CI->parser->parse('purchase/purchase_order', $data, true);
+        $purchaseForm = $CI->parser->parse('purchase/add_purchase_form', $data, true);
+      
         return $purchaseForm;
 
     }
@@ -683,8 +683,7 @@ class Lpurchase {
         $CI->load->model('Web_settings');
          $bank_list        = $CI->Web_settings->bank_list();
         $purchase_detail = $CI->Purchases->retrieve_purchase_editdata($purchase_id);
-      echo $purchase_detail;
-        exit;
+     
         // $supplier_id = $purchase_detail[0]['supplier_id'];
         $supplier_list = $CI->Suppliers->supplier_list("110", "0");
         $supplier_selected = $CI->Suppliers->supplier_search_item($purchase_id);
@@ -1312,7 +1311,6 @@ public function purchase_details_data($purchase_id) {
 
         $purchase_detail = $CI->Purchases->ocean_import_tracking_details_data($purchase_id);
 
-     
 
         if (!empty($purchase_detail)) {
 
@@ -1352,12 +1350,13 @@ public function purchase_details_data($purchase_id) {
         'ocean_import_tracking_id'      => $purchase_detail[0]['ocean_import_tracking_id'],
 
             'booking_no' => $purchase_detail[0]['booking_no'],
-
+'remarks' => $purchase_detail[0]['remarks'],
             'container_no'    => $purchase_detail[0]['container_no'],
-
+'country_of_origin'  =>$purchase_detail[0]['country_origin'],
             'seal_no'       => $purchase_detail[0]['seal_no'],
             'etd' => $purchase_detail[0]['etd'],
             'eta' => $purchase_detail[0]['eta'],
+            'bl_shipment' =>$purchase_detail[0]['bl_shipment_date'],
             'supplier_id' => $purchase_detail[0]['supplier_id'],
             'supplier_name' => $purchase_detail[0]['supplier_name'],
             'shipper' => $purchase_detail[0]['shipper'],

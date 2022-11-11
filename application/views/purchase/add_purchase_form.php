@@ -366,9 +366,9 @@
 
                                         </td>
 
-                                       <td class="wt">
+                                      <!--  <td class="wt">
                                                 <input type="text" id="available_quantity_1" class="form-control text-right stock_ctn_1" placeholder="0.00" readonly/>
-                                            </td>
+                                            </td> -->
 
                                             <td class="wt">
                                                 <input type="text" name="description[]" id="" class="form-control" />

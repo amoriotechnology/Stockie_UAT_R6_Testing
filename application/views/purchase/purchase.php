@@ -161,7 +161,7 @@ $today = date('Y-m-d');
   <td class="Total Amount"><?php   echo $arr['grand_total_amount'];  ?></td>
   <td class="Action">
 <a href="<?php echo base_url()?>Cpurchase/purchase_details_data/<?php echo  $arr['purchase_id'];  ?>" style='    background: #3ca5de;
-    color: #fff;' class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Expenses Details"><i class="fa fa-window-restore" aria-hidden="true"></i></a> 
+    color: #fff;' class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Expenses Details"><i class="fa fa-download" aria-hidden="true"></i></a> 
 
   	<a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cpurchase/purchase_update_form/<?php echo  $arr['purchase_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td></tr>
      <?php   
@@ -206,19 +206,19 @@ $count++;
             <div id="myModal_colSwitch" class="modal_colSwitch">
                     <div class="modal-content_colSwitch">
                           <span class="close_colSwitch">&times;</span>
-                          <input type="checkbox"  data-control-column="1" class="opt ID" value="ID"/> ID<br>
+                          <input type="checkbox"  data-control-column="1" checked = "checked" class="opt ID" value="ID"/> ID<br>
 
-    <input type="checkbox"  data-control-column="2" class="opt Invoice No" value="Invoice No"/>Invoice No<br>
+    <input type="checkbox"  data-control-column="2" checked = "checked" class="opt Invoice No" value="Invoice No"/>Invoice No<br>
  
-    <input type="checkbox"  data-control-column="3" class="opt Purchase ID" value="Purchase ID"/>Purchase ID<br>
+    <input type="checkbox"  data-control-column="3" checked = "checked" class="opt Purchase ID" value="Purchase ID"/>Purchase ID<br>
   
-    <input type="checkbox"  data-control-column="4" class="opt Supplier Name" value="Supplier Name"/>Supplier Name<br>
+    <input type="checkbox"  data-control-column="4" checked = "checked" class="opt Supplier Name" value="Supplier Name"/>Supplier Name<br>
 
-    <input type="checkbox"  data-control-column="5" class="opt Purchase Date" value="Purchase Date"/>Purchase Date<br>
+    <input type="checkbox"  data-control-column="5" checked = "checked" class="opt Purchase Date" value="Purchase Date"/>Purchase Date<br>
 
-    <input type="checkbox"  data-control-column="6" class="opt Total Amount" value="Total Amount"/>Total Amount<br>
+    <input type="checkbox"  data-control-column="6" checked = "checked" class="opt Total Amount" value="Total Amount"/>Total Amount<br>
 
-<input type="checkbox"  data-control-column="7" class="opt Action" value="Action"/>Action<br>
+<input type="checkbox"  data-control-column="7" checked = "checked" class="opt Action" value="Action"/>Action<br>
      <!--      <input type="submit" value="submit" id="submit"/>-->    
                     </div>
                 </div>

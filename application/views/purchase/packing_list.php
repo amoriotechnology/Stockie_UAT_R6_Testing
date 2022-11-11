@@ -165,7 +165,7 @@ $today = date('Y-m-d');
   <td><?php   echo $arr['invoice_date'];  ?></td>
   <td><?php   echo $arr['thickness'];  ?></td>
   <td>
-<a href="<?php echo base_url(); ?>Cpurchase/purchase_details_data/<?php echo  $arr['expense_packing_id'];  ?>" style='background-color: #62d0f1;
+<a href="<?php echo base_url(); ?>Cpurchase/packing_list_details_data/<?php echo  $arr['expense_packing_id'];  ?>" style='background-color: #62d0f1;
     color: #fff;
 ' class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Expenses Details"><i class="fa fa-download" aria-hidden="true"></i></a>
     <a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cpurchase/packing_update_form/<?php echo  $arr['expense_packing_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
@@ -223,19 +223,19 @@ $count++;
             <div id="myModal_colSwitch" class="modal_colSwitch">
                     <div class="modal-content_colSwitch">
                           <span class="close_colSwitch">&times;</span>
-                          <input type="checkbox"  data-control-column="1" class="opt ID" value="ID"/> ID<br>
+                          <input type="checkbox"  data-control-column="1" checked = "checked" class="opt ID" value="ID"/> ID<br>
 
-    <input type="checkbox"  data-control-column="2" class="opt Invoice No" value="Invoice No"/>Invoice No<br>
+    <input type="checkbox"  data-control-column="2" checked = "checked" class="opt Invoice No" value="Invoice No"/>Invoice No<br>
  
-    <input type="checkbox"  data-control-column="3" class="opt Expense Packing ID" value="Expense Packing ID"/>Expense Packing ID<br>
+    <input type="checkbox"  data-control-column="3" checked = "checked" class="opt Expense Packing ID" value="Expense Packing ID"/>Expense Packing ID<br>
   
-    <input type="checkbox"  data-control-column="4" class="opt Gross Weight" value="Gross Weight"/>Gross Weight<br>
+    <input type="checkbox"  data-control-column="4" checked = "checked" class="opt Gross Weight" value="Gross Weight"/>Gross Weight<br>
 
-    <input type="checkbox"  data-control-column="5" class="opt Container No." value="Container No."/>Container No.<br>
+    <input type="checkbox"  data-control-column="5" checked = "checked" class="opt Container No." value="Container No."/>Container No.<br>
 
-    <input type="checkbox"  data-control-column="6" class="opt Invoice Date" value="Invoice Date"/>Invoice Date<br>
-	<input type="checkbox"  data-control-column="7" class="opt Thickness" value="Thickness"/>Thickness<br>
-<input type="checkbox"  data-control-column="8" class="opt Action" value="Action"/>Action<br>
+    <input type="checkbox"  data-control-column="6" checked = "checked" class="opt Invoice Date" value="Invoice Date"/>Invoice Date<br>
+	<input type="checkbox"  data-control-column="7" checked = "checked" class="opt Thickness" value="Thickness"/>Thickness<br>
+<input type="checkbox"  data-control-column="8" checked = "checked" class="opt Action" value="Action"/>Action<br>
      <!--      <input type="submit" value="submit" id="submit"/>-->       
                     </div>
                 </div>

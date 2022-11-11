@@ -308,7 +308,7 @@ border: 2px solid #dce4ec;
                                             </td>
                                         
                                             <td class="text-right">
-                                                <input type="text" name="product_quantity[]" id="cartoon_1" required="" min="0" class="form-control text-right store_cal_1" onkeyup='total_amt(1);' onchange='total_amt(1);'  placeholder="0.00" value=""  tabindex="6"/>
+                                                <input type="text" name="product_quantity[]" id="cartoon_1" required="" min="0" class="form-control text-right store_cal_1"  onchange='total_amt(1);'  placeholder="0.00" value=""  tabindex="6"/>
                                             </td>
                                             <td class="test">
                                                 <input type="text" name="product_rate[]" required=""   id="product_rate_1" class="form-control product_rate_1 text-right" placeholder="0.00" value="" min="0" tabindex="7"/>
@@ -742,6 +742,7 @@ function available_quantity (id) {
 var arr=[];
 
 function total_amt(id){
+
     var sum=0.0;
    
 var total='total_price_'+id;
