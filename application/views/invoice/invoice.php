@@ -207,12 +207,12 @@ $today = date('Y-m-d');
    <td><?php   echo $arr['customer_name'];  ?></td>
 <td><?php   echo $arr['date'];  ?></td>
   <td><?php   echo $arr['sales_by'];  ?></td>
-  <!-- <td><a href="<?php echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php echo  $arr['invoice_id'];  ?>">edit</a><input type="button" value="delete"/></td> -->
+  <!-- <td><a href="<?php //echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php //echo  $arr['invoice_id'];  ?>">edit</a><input type="button" value="delete"/></td> -->
   <div class="form-group">
   <td>
   <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/invoice_inserted_data/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-download" aria-hidden="true"></i></a>
   <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/sendmail_with_attachments/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-    <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+    <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/invoice_update_form/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
   </td>
   </div>
 </tr>

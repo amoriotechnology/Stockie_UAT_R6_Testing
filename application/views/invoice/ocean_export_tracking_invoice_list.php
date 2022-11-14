@@ -172,8 +172,8 @@ $today = date('Y-m-d');
    <div class="form-group">
   <td>
   <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/ocean_export_tracking_details_data/<?php echo  $arr['ocean_export_tracking_id'];  ?>"><i class="fa fa-download" aria-hidden="true"></i></a>
-  <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-    <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+  <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php echo  $arr['ocean_export_tracking_id'];  ?>"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/ocean_export_tracking_update_form/<?php echo  $arr['ocean_export_tracking_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
   </td>
   </div>
 

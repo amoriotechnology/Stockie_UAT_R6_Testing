@@ -67,7 +67,7 @@ class Invoice_content extends CI_Model {
 
         }
         
-        return true;
+     
 
     }
 

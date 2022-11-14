@@ -1089,7 +1089,7 @@ class Linvoice {
          //$bank_list        = $CI->Web_settings->bank_list();
 
         $purchase_detail = $CI->Invoices->retrieve_profarma_invoice_editdata($invoice_id);
-
+      
         // echo "<pre>";
      
         

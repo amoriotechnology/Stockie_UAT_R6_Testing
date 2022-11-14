@@ -241,21 +241,7 @@
                         </div>
                     
 
-                        <div class="row">
-                             <div class="col-sm-6">
-                               <div class="form-group row">
-                                    <label for="adress" class="col-sm-4 col-form-label">Attachements
-                                    </label>
-                                    <div class="col-sm-8">
-                                       <input type="file" name="attachments" class="form-control">
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-
-
-
-<br>
+                       
                         <div class="table-responsive">
                             <table class="table table-bordered table-hover" id="truckingTable">
                                 <thead>
@@ -364,8 +350,37 @@
                                 </tfoot>
                             </table>
                         </div>
+                        </div>
+                     
 
-                        <div class="form-group row">
+                        <div class="row">
+                           
+                         
+
+                                    <label for="remarks" class="col-sm-2 col-form-label" style="text-align:right;">Remarks</label>
+
+                                    <div class="col-sm-4">
+
+                                        <textarea rows="4" style="border:1px solid #808080;" cols="50" name="remarks" class=" form-control" placeholder="Remarks" id=""> </textarea>
+
+                                    </div>  </div> 
+                        <br/>
+                          <div class="row">
+                             <div class="col-sm-6">
+                               <div class="form-group row">
+                                    <label for="adress" class="col-sm-4 col-form-label" style="text-align:right;">Attachements
+                                    </label>
+                                    <div class="col-sm-8">
+                                       <input type="file" name="attachments" class="form-control">
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+
+
+
+<br>
+<div class="form-group row">
                             <div class="col-sm-6">
                                <!--  <input type="submit" id="add_purchase" class="btn btn-primary btn-large" name="add-trucking" value="<?php echo display('submit') ?>" />
                                 <input type="submit" value="<?php echo display('submit_and_add_another') ?>" name="add-trucking-another" class="btn btn-large btn-success" id="add_purchase_another" > -->
@@ -399,20 +414,6 @@
                                </table>
                             </div>
                         </div>
-
-
-                           <div class="form-group row">
-
-                                    <label for="remarks" class="col-sm-4 col-form-label">Remarks</label>
-
-                                    <div class="col-sm-8">
-
-                                        <textarea rows="4" cols="50" name="remarks" class=" form-control" placeholder="Remarks" id=""> </textarea>
-
-                                    </div>
-                          </div> 
-
-
                     <?php echo form_close()?>
                     </div>
                 </div>

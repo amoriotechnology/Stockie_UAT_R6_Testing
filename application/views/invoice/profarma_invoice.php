@@ -1,15 +1,10 @@
 <!-- Product Purchase js -->
 <?php    ?>
-
-
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
-
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
 <script src="<?php echo base_url() ?>my-assets/js/countrypicker.js" type="text/javascript"></script>
+<script src="<?php echo base_url() ?>my-assets/js/admin_js/invoice.js" type="text/javascript"></script>
 
 <style>
     /*   Bootstrap Country Select CSS  */

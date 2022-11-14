@@ -107,15 +107,14 @@ class Cinvoice extends CI_Controller {
         // print_r($purchase_detail); die();
 
         $all_profarma = $CI->Invoices->all_profarma($purchase_id);
+      
+     $product_name = $this->db->select('*')->from('product_information')->where("product_id",$all_profarma[0]['product_id'])->get()->result_array();
+        
+    // print_r($product_name);die();
 
-        $product_name = $this->db->select('*')->from('product_information')
-        ->where("product_id",$all_profarma[0]['product_id'])->get()->result_array();
-        // print_r($product_name);die();
+        $profarma_details = $this->db->select('*')->from('profarma_invoice_details')->where("purchase_id",$purchase_detail[0]['purchase_id'])->get()->result_array();
 
-        $profarma_details = $this->db->select('*')->from('profarma_invoice_details')
-        ->where("purchase_id",$purchase_detail[0]['purchase_id'])->get()->result_array();
 
-   // print_r($profarma_details);die();
 
         if (!empty($purchase_detail)) {
 
@@ -148,6 +147,7 @@ class Cinvoice extends CI_Controller {
         $dataw = $CII->invoice_design->retrieve_data();
         // print_r($dataw); exit();
        $datacontent = $CI->invoice_content->retrieve_data();
+      
        $customer = $this->db->select('*')->from('customer_information')->where("customer_id",$purchase_detail[0]['customer_id'])->get()->result_array();
   //$prinfo = $this->db->select('*')->from('product_information')->where('product_id',$product_id)->get()->result_array();
         
@@ -208,7 +208,7 @@ class Cinvoice extends CI_Controller {
         );
 
         
-   // print_r($data);die();
+
 
 
 
@@ -3239,8 +3239,8 @@ $this->db->update('bootgrid_data');
                     );
                     // print_r($data1); exit();
 
-                   echo json_encode($data1);
-                   die();
+                  // echo json_encode($data1);
+             
                     $this->db->insert('profarma_invoice_details', $data1);
                     
                 }

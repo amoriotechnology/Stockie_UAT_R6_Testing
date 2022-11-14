@@ -51,19 +51,35 @@ class Invoices extends CI_Model {
            
     }
     public function servic_provider(){
-         $this->db->select("*");
-         $this->db->from('supplier_information') ;
-         $this->db->where('created_by',$this->session->userdata('user_id'));
-         $this->db->where('service_provider','1');
-      
- 
-        $query = $this->db->get();
-        if ($query->num_rows() > 0) {
-            return $query->result_array();
-        }
-        return false;
+        $this->db->select("*");
+        $this->db->from('supplier_information') ;
+        $this->db->where('created_by',$this->session->userdata('user_id'));
+        $this->db->where('service_provider','1');
+     
 
-    }
+       $query = $this->db->get();
+       if ($query->num_rows() > 0) {
+           return $query->result_array();
+       }
+      // return false;
+
+       
+
+   }
+   public function servic_provider_amount(){
+    
+       
+      $this->db->select('a.supplier_id,b.supplier_id,b.supplier_name,sum(a.grand_total_amount) as total_sale,b.service_provider,b.created_by');
+      $this->db->from('purchase_order a');
+      $this->db->join('supplier_information b', 'b.supplier_id = a.supplier_id');
+      $this->db->where('b.created_by',$this->session->userdata('user_id'));
+        $this->db->where('b.service_provider','1');
+
+      
+        $query = $this->db->get()->row();
+      return $query->total_sale;
+    
+  }
          public function profarma_voucher_no()
     {
       return  $data = $this->db->select("chalan_no as voucher")
@@ -123,9 +139,7 @@ class Invoices extends CI_Model {
     $this->db->select('a.*,b.*');
     $this->db->from('invoice_details a');
     $this->db->join('invoice b', 'b.invoice_id = a.invoice_id');
-    // $this->db->where('b.invoice_id');
 
-    // echo $this->db->last_query(); die();
     
     $query = $this->db->get();
    
@@ -157,22 +171,21 @@ class Invoices extends CI_Model {
     $this->db->join('profarma_invoice b', 'b.purchase_id = a.purchase_id');
     $this->db->where('b.purchase_id', $purchase_id);
 
-    // echo $this->db->last_query(); die();
+   
     
     $query = $this->db->get();
-   
-      if ($query->num_rows() > 0) {
+
+   //   if ($query->num_rows() > 0) {
           return $query->result_array();
-      }
-      return false;
+   //   }
+    //  return false;
 }
 
 
     public function packing_details_data() {
         $sql = 'SELECT * FROM sale_packing_list as a JOIN sale_packing_list_detail as ac JOIN product_information as b ON b.product_id = a.product_id';
         $query = $this->db->query($sql);
-//    echo $this->db->last_query();
-//        die(); 
+
         if ($query->num_rows() > 0) {
             return $query->result_array();
         }
@@ -293,7 +306,7 @@ public function fetch_data($day){
     echo $day;
     $split=explode("-",$day);
    // print_r($split);
-    die();
+  
       $data = $this->db->select("p_quantity,price")
     ->from('product_information') 
     ->where('product_name', $split[0])
@@ -356,7 +369,7 @@ echo $quantity;
                    'status'             => 1
                );
              //  print_r($data1);
-               die();
+           
                $this->db->insert('profarma_invoice_details', $data);
            }         
 
@@ -415,8 +428,7 @@ public function availability($product_nam,$product_model){
      
        $this->db->where('product_name', $product_nam);
        $this->db->where('product_model', $product_model);
-   // echo "select 'p_quantity,price' from 'product_information' where product_name='".$product_nam."' and 'product_model'='".$product_model."'";
-  //die();
+ 
     $query = $this->db->get()->result();
     
     return $query;
@@ -2607,7 +2619,7 @@ public function retrieve_packing_editdata($purchase_id) {
 
         }
 
-        return true;
+      //  return true;
 
     }
 

@@ -18,7 +18,7 @@
             <h1>Ocean Import Tracking</h1>
             <small>Generate New Ocean Import Tracking</small>
             <ol class="breadcrumb">
-                <li><a href="#"><i class="pe-7s-home"></i> <?php echo display('home') ?></a></li>
+                <li><a href="<?php echo base_url()?>"><i class="pe-7s-home"></i> <?php echo display('home') ?></a></li>
                 <li><a href="#">Ocean Import Tracking</a></li>
                 <li class="active">Generate New Ocean Import Tracking</li>
             </ol>

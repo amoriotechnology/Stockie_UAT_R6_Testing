@@ -184,7 +184,7 @@ a{
 
                         </div>
                         <div class="text" style="background-color: #18628f;">
-		<a href="<?php echo base_url('Cinvoice/manage_invoice') ?>">Total Sale</a>
+		<a href="<?php echo base_url('Admin_dashboard/todays_sales_report') ?>">Total Sale</a>
 	</div></div>
                     </div>
                     <div style="<?php if($expense_setting=='disable'){ echo "display: none;"; }else{ echo "display: block;"; } ?>" >
@@ -199,7 +199,7 @@ a{
 
                         </div>
                         <div class="text" style="background-color: #9D467A;">
-		<a href="<?php echo base_url('Cpurchase/manage_purchase') ?>">Total Expenses</a>
+		<a href="<?php echo base_url('Admin_dashboard/todays_purchase_report') ?>">Total Expenses</a>
 	</div>
                     </div>
                     </div>
@@ -271,28 +271,49 @@ a{
 
                         </div>
                         <div class="text" style="background-color: #76448A;">
-		<a href="<?php echo base_url('Cproduct/manage_product') ?>">Total Product Purchased</a>
+                    <a href="<?php echo base_url('Cproduct/manage_product') ?>">Total Product Purchased</a>
 	</div></div>
                     </div>
+                    <div style="<?php if($vendor=='disable'){ echo "display: none;"; }else{ echo "display: block;"; } ?>" >
+                    <div class="card-single col">
+                 
+                 <div id="span" class="text-center">
+                       
+                         <span style="background-color: #76448A;padding:5px;border-radius:10px;"> <i class="fa fa-shopping-basket" style="color: #fff;"></i></span>
+                     </div>
+                     <div>
+                  
+                         <span> <h1><span class="count-number"><?php if($servic_p_amount==''){echo 0;}else{ print_r($servic_p_amount); } ?></span></h1>
+                         <p>
+                            <?php
+            //    .'('. print_r($servic_p_amount).')';  ?>
+                    <?php 
+                    // print_r(count(array_filter($service_provider_list[0]['supplier_name'])));
+                     $count=1;
+                         foreach ($service_provider_list as $single) {
+                          //  echo $single['supplier_name']; 
+                          //  echo "<br/>";
+                            $count++;
+                         }
+                         echo 'Vendor('.count($service_provider_list).')';
+                       //
+                       //  echo $count;
+                         ?>
+                
+                </p></span>
 
-                    <div class="card-single col" style="font-weight:bold;text-align:center;">
-                 <?php
-                 if(!empty($service_provider_list))
-                 {   
-                 foreach ($service_provider_list as $single) {
-                    echo $single['supplier_name']; 
-                    echo "<br/>";
-                    
-                 } } else {
-
-                    echo 'No Supplier for this user'; 
-                 } ?>
-                   </div>
+                     </div>
+                     <div class="text" style="background-color: #76448A;">
+     <a href="<?php echo base_url('Csupplier/supplier_ledger_report') ?>">Total Vendor</a>
+ </div></div>
+                 </div>
+                  
                     
 
 
                 </div>
     </div>
+
 
 
     <?php if ($this->session->userdata('user_type') == '1') { ?>
@@ -605,10 +626,16 @@ $('#submit1').on('click', function (e) {
   });
 $(function() { 
  //   sessionStorage.clear();
+ var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+today = yyyy + '-' + mm + '-' + dd;
+var firstdate = new Date().getFullYear()+'-01-01';
 
 var retrieve =sessionStorage.getItem("daterange");
 if(retrieve==null){
-    $('#daterangepicker-field').val("2022-01-01 to 2022-10-27");
+    $('#daterangepicker-field').val(firstdate+" to "+today);
 }else{
 $('#daterangepicker-field').val(retrieve);
 }
