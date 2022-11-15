@@ -19817,3 +19817,82 @@ INFO - 2022-11-14 16:50:03 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\a
 INFO - 2022-11-14 16:50:03 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
 INFO - 2022-11-14 16:50:03 --> Final output sent to browser
 DEBUG - 2022-11-14 16:50:03 --> Total execution time: 0.0704
+ERROR - 2022-11-14 13:18:44 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-14 13:18:44 --> Config Class Initialized
+INFO - 2022-11-14 13:18:44 --> Hooks Class Initialized
+DEBUG - 2022-11-14 13:18:44 --> UTF-8 Support Enabled
+INFO - 2022-11-14 13:18:44 --> Utf8 Class Initialized
+INFO - 2022-11-14 13:18:44 --> URI Class Initialized
+INFO - 2022-11-14 13:18:44 --> Router Class Initialized
+INFO - 2022-11-14 13:18:44 --> Output Class Initialized
+INFO - 2022-11-14 13:18:44 --> Security Class Initialized
+DEBUG - 2022-11-14 13:18:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-14 13:18:44 --> CSRF cookie sent
+INFO - 2022-11-14 13:18:44 --> Input Class Initialized
+INFO - 2022-11-14 13:18:44 --> Language Class Initialized
+INFO - 2022-11-14 13:18:44 --> Loader Class Initialized
+INFO - 2022-11-14 13:18:44 --> Helper loaded: url_helper
+INFO - 2022-11-14 13:18:44 --> Helper loaded: file_helper
+INFO - 2022-11-14 13:18:44 --> Helper loaded: form_helper
+INFO - 2022-11-14 13:18:44 --> Helper loaded: lang_helper
+INFO - 2022-11-14 13:18:44 --> Database Driver Class Initialized
+INFO - 2022-11-14 13:18:44 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-14 13:18:44 --> Parser Class Initialized
+INFO - 2022-11-14 13:18:44 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-14 13:18:44 --> Pagination Class Initialized
+INFO - 2022-11-14 13:18:44 --> Form Validation Class Initialized
+INFO - 2022-11-14 13:18:44 --> Controller Class Initialized
+DEBUG - 2022-11-14 13:18:44 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-14 13:18:44 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-14 13:18:44 --> Model "Customers" initialized
+INFO - 2022-11-14 13:18:44 --> Model "Invoices" initialized
+INFO - 2022-11-14 13:18:44 --> Model "Suppliers" initialized
+INFO - 2022-11-14 13:18:44 --> Model "Web_settings" initialized
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1096
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1096
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1126
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1126
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1128
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1128
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1130
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1130
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1132
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1132
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1134
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1134
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1136
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1136
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1138
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1138
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1140
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1140
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1144
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1144
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1146
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1146
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1148
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1148
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1150
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1150
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1152
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1152
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1154
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1154
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1156
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1156
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1158
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 1158
+ERROR - 2022-11-14 13:18:44 --> Severity: Notice --> Undefined variable: customer D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\profarma_invoice_update.php 96
+ERROR - 2022-11-14 13:18:44 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\profarma_invoice_update.php 96
+INFO - 2022-11-14 13:18:44 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/profarma_invoice_update.php
+DEBUG - 2022-11-14 13:18:44 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-14 13:18:44 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-14 13:18:44 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-14 13:18:44 --> Model "Products" initialized
+INFO - 2022-11-14 18:48:45 --> Model "reports" initialized
+INFO - 2022-11-14 18:48:45 --> Model "Users" initialized
+INFO - 2022-11-14 18:48:45 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-14 18:48:45 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-14 18:48:45 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-14 18:48:45 --> Final output sent to browser
+DEBUG - 2022-11-14 18:48:45 --> Total execution time: 0.6310

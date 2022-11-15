@@ -66,7 +66,7 @@ class Lpurchase {
 
     
       
-        $purchaseForm = $CI->parser->parse('purchase/add_purchase_form', $data, true);
+        $purchaseForm = $CI->parser->parse('purchase/purchase_order', $data, true);
       
         return $purchaseForm;
 
@@ -122,7 +122,7 @@ class Lpurchase {
         );
 
     
-        $purchaseForm = $CI->parser->parse('purchase/purchase_order', $data, true);
+        $purchaseForm = $CI->parser->parse('purchase/add_purchase_form', $data, true);
        
       
         return $purchaseForm;

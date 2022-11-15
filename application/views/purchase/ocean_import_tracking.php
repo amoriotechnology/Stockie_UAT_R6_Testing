@@ -186,7 +186,13 @@
                                     <label for="adress" class="col-sm-4 col-form-label">Customer / Consignee
                                     </label>
                                     <div class="col-sm-8">
-                                        <textarea class="form-control" rows="1" cols="50" tabindex="4" id="adress" name="consignee" placeholder="Consignee" rows="1"></textarea>
+                                    <select  id="adress" name="consignee" class="form-control " required="" tabindex="1"> 
+                                            <option value=" "><?php echo display('select_one') ?></option>
+                                            {customer_list}
+                                            <option value="{customer_name}">{customer_name}</option>
+                                            {/customer_list}
+                                        </select>
+                                       
                                     </div>
                                 </div> 
                             </div>

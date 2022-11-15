@@ -1952,11 +1952,9 @@ public function retrieve_packing_editdata($purchase_id) {
 
         );
 
-    // print_r($datainv); exit();
+    //print_r($datainv);
 
         $this->db->insert('invoice', $datainv);
-
-        $this->session->set_userdata(array('message' => display('successfully_added')));
 
         $prinfo  = $this->db->select('product_id,Avg(rate) as product_rate')->from('product_purchase_details')->where_in('product_id',$product_id)->group_by('product_id')->get()->result(); 
 
@@ -2212,7 +2210,7 @@ public function retrieve_packing_editdata($purchase_id) {
 
         $serial_n            = $this->input->post('serial_no',TRUE);
 
-        $product_id           =  $this->input->post('product_id',TRUE);
+$product_id=$this->input->post('product_id',TRUE);
 
         for ($i = 0, $n = count($p_id); $i < $n; $i++) {
 
@@ -2275,7 +2273,7 @@ public function retrieve_packing_editdata($purchase_id) {
 
             );
 
-// print_r($data1);
+//print_r($data1);
 
                 $this->db->insert('invoice_details', $data1);
 
@@ -2318,7 +2316,6 @@ public function retrieve_packing_editdata($purchase_id) {
         return $invoice_id;
 
     }
-
 
     private function stripHTMLtags($str)
     {

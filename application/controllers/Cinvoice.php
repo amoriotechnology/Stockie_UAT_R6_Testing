@@ -519,8 +519,7 @@ echo json_encode($data);
 
     public function manual_sales_insert(){
 
-// direct('Cinvoice');
-exit;
+
         $CI = & get_instance();
 
         $CI->auth->check_admin_auth();
@@ -561,7 +560,7 @@ exit;
 
         }
 
-print_r($data);
+
 
         echo json_encode($data);
 

@@ -129,7 +129,7 @@ class Llpurchase {
 
         $CI->load->model('Categories');
         $CI->load->model('Units');
-   
+        $CI->load->model('Accounts_model');
 
         $CI->load->model('Web_settings');
 
@@ -139,14 +139,14 @@ class Llpurchase {
 
         $bank_list        = $CI->Web_settings->bank_list();
 
-
+        $get_customer= $CI->Accounts_model->get_customer();
         $category_list = $CI->Categories->category_list_product();
 
         $unit_list     = $CI->Units->unit_list();
 
 
         $data = array(
-
+            'customer_list' => $get_customer,
             'title'         => "Add Ocean Import",
 
             'all_supplier'  => $all_supplier,
