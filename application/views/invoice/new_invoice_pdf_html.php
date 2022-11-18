@@ -46,109 +46,184 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
             $this->session->unset_userdata('error_message');
         }
         ?>
-        <div class="container" id="content">
 
-        <div class="row">
-            <div class="col-lg-4">
-                <img src="<?php echo  base_url().'assets/'.$logo; ?>" width="40%">
+    <div class="container" id="content">
+        <div class="brand-section">
+            <div class="row">
+                <div class="col-6">
+                   <a> <img src="<?php echo  base_url().'assets/'.$logo; ?>" width="20%"><h4 class="text-white" style="margin-top: 10px;"><?php echo $company; ?></h4></a>
+                </div>
+                <div class="col-6" style="color:#F6F6F6;">
+                    <h4 style="margin-top: 30px; text-align: right;"> <?php echo $address; ?></h4>
+                </div>
             </div>
-            <div class="col-lg-4">
-              <h4 style="margin-top: 30px; text-align: center;"><?php echo $company; ?></h4>
+        </div>
+
+        <div class="body-section">
+            <div class="row">
+                <div class="col-6">
+                    <p class="sub-heading heading_name">Customer Name: &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $customername;  ?></span></p><br>
+                    <p class="sub-heading heading_name">Sales Invoice date:&nbsp;&nbsp; <span style="font-weight: normal;"><?php echo $date;  ?></span></p><br>
+                    <p class="sub-heading heading_name">Billing Address: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <textarea style="background-color: transparent; border: none; resize: none; font-weight: normal; outline: none; position: absolute;" rows="4" cols="20" readonly><?php echo $billing;  ?></textarea></p><br><br>
+                    <p class="sub-heading heading_name">Payment Terms: &nbsp;&nbsp;&nbsp; <span style="font-weight: normal;"><?php echo $paymentterms;  ?></span></p><br>
+                    <p class="sub-heading heading_name">Number of days: <span style="font-weight: normal; font-size: 16px; font-family: roboto;"><?php echo $days; ?></span></p><br>
+                    <p class="sub-heading heading_name">ETD: <span style="font-weight: normal; margin-left: 100px;"><?php echo $date;  ?></span></p><br>
+                </div>
+                <div class="col-6">
+                    <p class="sub-heading heading_name">Payment Type:<span style="font-weight: normal; margin-left: 100px;"><?php echo $payment;  ?></span></p><br>
+                    <p class="sub-heading heading_name">Commercial Invoice Number: <span style="font-weight: normal;"><?php echo $invoicenumber;  ?></span></p><br>
+                    <p class="sub-heading heading_name">Container Number: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $container;  ?></span></p><br>
+                    <p class="sub-heading heading_name">B/L No:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $blno;  ?></span></p><br>
+                    <p class="sub-heading heading_name">Port of discharge: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $port;  ?></span></p><br>
+                    <p class="sub-heading heading_name">Payment Due date: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $paymentdue;  ?></span></p><br>
+                    <p class="sub-heading heading_name">ETA: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $date;  ?></span></p><br>                         
+                </div>
             </div>
-            <div class="col-lg-4">
-                <h4 style="margin-top: 30px; text-align: right;"><?php echo $address; ?></h4>
-              </div>
-        </div><br><br>
+        </div>
 
+        <div class="body-section">
+            <table class="table-bordered">
+                <thead>
+                    <tr>
+                        <th class="text-center text-white">Product Name</th>
+                        <th class="text-center text-white">In stock</th>
+                        <th class="text-center text-white">Quantity / Sq ft.</th>
+                        <th class="text-center text-white">Amount</th>
+                        <th class="text-center text-white">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       <td style="font-size: 16px;"><?php echo $product; ?></td>
+                       <td style="font-size: 16px;"><?php echo $stock; ?></td>
+                       <td style="font-size: 16px;"><?php echo $quantity; ?></td>
+                       <td style="font-size: 16px;">$<?php echo $rate; ?></td>
+                       <td style="font-size: 16px;">$<?php echo $total; ?></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="text-right">Total:</td>
+                        <td style="font-size: 16px;">$<?php echo $total; ?></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="text-right">Grand Total:</td>
+                        <td style="font-size: 16px;">$<?php echo $total; ?></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <h3 class="heading">Message / Notes on Invoice</h3>
+            
+        </div>
 
-
-        <div class="row">
-
-         <div class="col-md-6" style="">
-            <h4>Customer Name :&nbsp;&nbsp;<span style="font-weight: normal; font-size: 16px; font-family: roboto;"><?php echo $customername; ?></span></h4>
-            <h4>Payment Type :&nbsp;&nbsp;<span style="font-weight: normal; font-size: 16px; font-family: roboto;"><?php echo $payment; ?></span></h4>
-            <h4>Sales Invoice date :&nbsp;&nbsp;<span style="font-weight: normal; font-size: 16px; font-family: roboto;"><?php echo $date; ?></span></h4>
-            <h4>Billing Address :&nbsp;&nbsp;<span style="font-weight: normal; font-size: 16px; font-family: roboto;"><?php echo $billing; ?></span></h4>
-            <h4>Payment Terms   :&nbsp;&nbsp;<span style="font-weight: normal; font-size: 16px; font-family: roboto;"><?php echo $paymentterms; ?></span></h4>
-            <h4>Number of days   :&nbsp;&nbsp;<span style="font-weight: normal; font-size: 16px; font-family: roboto;"><?php echo $days; ?></span></h4> 
-            <h4>ETD    :&nbsp;&nbsp;<span style="font-weight: normal; font-size: 16px; font-family: roboto;"><?php echo $date; ?></span></h4>
-         </div>
-
-         <div class="col-md-6">
-            <h4>Customer Mobile: &nbsp;&nbsp;<span style="font-weight: normal; font-size: 16px; font-family: roboto;"><?php echo $mobile; ?></span></h4>
-            <h4>Address: &nbsp;&nbsp;<span style="font-weight: normal; font-size: 16px; font-family: roboto;"><?php echo $customeraddress; ?></span> </h4> 
-            <h4>Commercial Invoice Number: &nbsp;&nbsp;<span style="font-weight: normal; font-size: 16px; font-family: roboto;"><?php echo $invoicenumber; ?></span></h4> 
-            <h4>Container Number: &nbsp;&nbsp;<span style="font-weight: normal; font-size: 16px; font-family: roboto;"><?php echo $container; ?></span></h4>  
-            <h4>B/L No : &nbsp;&nbsp;<span style="font-weight: normal; font-size: 16px; font-family: roboto;"><?php echo $blno; ?></span></h4> 
-            <h4>Port of discharge: &nbsp;&nbsp;<span style="font-weight: normal; font-size: 16px; font-family: roboto;"><?php echo $port; ?></span></h4> 
-            <h4>Payment Due date: &nbsp;&nbsp;<span style="font-weight: normal; font-size: 16px; font-family: roboto;"><?php echo $paymentdue; ?></span></h4> 
-            <h4>ETD:&nbsp;&nbsp;<span style="font-weight: normal; font-size: 16px; font-family: roboto;"><?php echo $date; ?></span></h4>
-         </div>
-    </div>
-<div class="row">
-    <div class="col-lg-12">
-         <br><br><br><br>
-        <table style="width:100%">
-            <tr>
-                <th>Product Name</th>
-                <th>In stock</th>
-                <th>Quantity / Sq ft.</th>
-                <th>Amount</th>
-                <th>Total</th>
-                <!-- <th>Action</th> -->
-            </tr>
-            <tr>
-               <td style="font-size: 16px;"><?php echo $product; ?></td>
-               <td style="font-size: 16px;"><?php echo $stock; ?></td>
-               <td style="font-size: 16px;"><?php echo $quantity; ?></td>
-               <td style="font-size: 16px;"><?php echo $rate; ?></td>
-               <td style="font-size: 16px;">$<?php echo $total; ?></td>
-              <!--  <td>   </td> -->
-               
-            </tr>
-
-            <tr>
-           
-              <td colspan="4" style="text-align: right;">Total:</td>
-              <td style="font-size: 16px;">$<?php echo $total; ?></td>
-             <!--  <td></td> -->
-               
-                
-            </tr>
-
-            <tr>
-           
-                <td colspan="4" style="text-align: right;">Grand Total:</td>
-                <td style="font-size: 16px;"></td>
-                <!-- <td></td> -->
-                 
-                  
-              </tr>
-        </table><br><br>
         
-    </div>
-</div>
-<h4>Message / Notes on Invoice </h4><br><br>
-</div>
+    </div>   
+
     
     </section> <!-- /.content -->
 </div> <!-- /.content-wrapper -->
 
 
 <style>
-    .container {
-  width: 100%;
-  /* background-color: rgb(241, 248, 250); */
-  margin-top: 50px;
-}
+        body{
+            background-color: #fcf8f8; 
+            margin: 0;
+            padding: 0;
+        }
+        h1,h2,h3,h4,h5,h6{
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            margin: 0;
+            padding: 0;
+        }
+        .heading_name{
+            font-weight: bold;
+        }
+        .container{
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 50px;
+        }
+        .brand-section{
+           background-color: #5961b3;
+           padding: 10px 40px;
+        }
+        .logo{
+            width: 50%;
+        }
 
-    td,th{
-        border:1px solid black;
-        text-align: center;
-        padding: 3px;
-    }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        .col-6{
+            width: 50%;
+            flex: 0 0 auto;
+           
+        }
+        .text-white{
+            color: #fff;
+        }
+        .company-details{
+            float: right;
+            text-align: right;
+        }
     
-</style>
+        .body-section{
+            padding: 16px;
+            border: 1px solid gray;
+            
+        }
+        .heading{
+            font-size: 20px;
+            margin-bottom: 08px;
+        }
+        .sub-heading{
+            color: #262626;
+            margin-bottom: 05px;
+        }
+        table{
+            background-color: #fff;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table thead tr{
+            border: 1px solid #111;
+            background-color:#5961b3;
+        }
+        table td {
+            vertical-align: middle !important;
+            text-align: center;
+        }
+        table th, table td {
+            padding-top: 08px;
+            padding-bottom: 08px;
+        }
+        .table-bordered{
+            box-shadow: 0px 0px 5px 0.5px gray;
+        }
+        .table-bordered td, .table-bordered th {
+            border: 1px solid #dee2e6;
+        }
+        .text-right{
+            text-align: end;
+        }
+        .w-20{
+            width: 20%;
+        }
+        .float-right{
+            float: right;
+        }
+        @media only screen and (max-width: 600px) {
+            
+        }
+
+       
+    </style>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

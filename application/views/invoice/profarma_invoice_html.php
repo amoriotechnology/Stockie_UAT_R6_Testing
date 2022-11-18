@@ -42,120 +42,198 @@
 	        }
 	    ?>
 
-	     <div class="container" id="content">
-        <div class="row">
-            <div class="col-lg-4">
-                <img src="<?php echo  base_url().'assets/'.$logo; ?>" width="40%"  alt="">
+<div class="container" id="content">
+        <div class="brand-section">
+            <div class="row">
+                <div class="col-6">
+                   <a> <img src="<?php echo  base_url().'assets/'.$logo; ?>" width="20%"><h4 class="text-white" style="margin-top: 10px;"><?php echo $company_info[0]['company_name']; ?></h4></a>
+                </div>
+                <div class="col-6" style="color:#F6F6F6;">
+                    <h4 style="margin-top: 30px; text-align: right;"> <?php echo $company_info[0]['address']; ?></h4>
+                </div>
             </div>
-            <div class="col-lg-4">
-              <h4 style="margin-top: 30px; text-align: center;"> <?php echo $company_info[0]['company_name']; ?></h4>
-            </div>
-            <div class="col-lg-4">
-                <h4 style="margin-top: 30px; text-align: right;"> <?php echo $company_info[0]['address']; ?></h4>
-              </div>
-        </div><br><br>
-          <div class="table">
-        <div class="row">
-            
-            <div class="col-lg-6" >
-          <h5>Date: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $purchase_date;  ?></span></h5> 
-          <h5>Invoice No: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $chalan_no;  ?></span></h5> 
-          <h5>Pre Carriage By: &nbsp;<span style="font-family: roboto; font-weight: bold;">{pre_carriage}</span></h5> 
-          <h5>Country of origin of goods: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $country_goods; ?></span></h5> 
-          <h5>Port of loading: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $loading; ?></span></h5> 
-          <h5>Terms of payment and delivery: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $terms_payment; ?></span></h5> 
-            </div>
-            <div class="col-lg-6">
-                <h5>Place of Receipt: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $receipt; ?></span></h5>
-                <h5>Country of final destination: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $receipt; ?></span></h5>
-                <h5>Port of discharge: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $country_destination; ?></span></h5>
-                <h5>Description of goods: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $description_goods; ?></span></h5>
-            </div>
-        </div><br><br><br>
-    </div>
-<div class="row">
-    <div class="col-lg-12">
-        <table style="width:100%">
-<!-- <tr>
-    <td colspan="5" style="text-align: right;">Tax:</td>
-    <td></td>
-</tr> -->
-</table><br>
-<table style="width:100%">
-            <tr>
-                <th>Product Name</th>
-                <th>In stock</th>
-                <th>Quantity / Sq ft.</th>
-                <th>Amount</th>
-                <th>Total</th>
-                
-            </tr>
-            <tr>
-               <td style="font-size: 16px;"><?php echo $product; ?></td>
-               <td style="font-size: 16px;"><?php echo $stock; ?></td>
-               <td style="font-size: 16px;"><?php echo $quantity; ?></td>
-               <td style="font-size: 16px;"><?php echo $totalamount; ?></td>
-               <td style="font-size: 16px;"><?php echo $total;  ?></td>
-              
-               
-            </tr>
+        </div>
 
-            <tr>
-           
-              <td colspan="4" style="text-align: right;">Total:</td>
-              <td style="font-size: 16px;"><?php echo $total;  ?></td>
-            
-               
-                
-            </tr>
+        <div class="body-section">
+            <div class="row">
+                <div class="col-6">
+                    <p class="sub-heading heading_name">Date: <span style="font-weight: normal; margin-left: 180px;"><?php echo $purchase_date;  ?></span></p><br>
+                    <p class="sub-heading heading_name">Invoice No: <span style="font-weight: normal; margin-left: 140px;"><?php echo $chalan_no;  ?></span></p><br>
+                    <p class="sub-heading heading_name">Pre Carriage By: <span style="font-weight: normal; margin-left: 108px;">{pre_carriage}</span></p><br>
+                    <p class="sub-heading heading_name">Country of origin of goods: <span style="font-weight: normal; margin-left: 35px;"><?php echo $country_goods;  ?></span></p><br>
+                    <p class="sub-heading heading_name">Port of loading: <span style="font-weight: normal; margin-left: 113px;"><?php echo $loading;  ?></span></p><br>
+                    <p class="sub-heading heading_name">Terms of payment<br> and delivery: <span style="font-weight: normal; margin-left: 128px;"><?php echo $terms_payment;  ?></span></p><br>
+                </div>
+                <div class="col-6">
+                    <p class="sub-heading heading_name">Buyer/Customer: <span style="font-weight: normal; margin-left: 128px;"><?php echo $customer;  ?></span></p><br>
+                    <p class="sub-heading heading_name">Place of Receipt: <span style="font-weight: normal; margin-left: 133px;"><?php echo $receipt;  ?></span></p><br>
+                    <p class="sub-heading heading_name">Country of final destination: <span style="font-weight: normal; margin-left: 50px;"><?php echo $country_destination;  ?></span></p><br>
+                    <p class="sub-heading heading_name">Port of discharge: <span style="font-weight: normal; margin-left: 127px;"><?php echo $discharge;  ?></span></p><br>
+                    <p class="sub-heading heading_name">Description of goods: <span style="font-weight: normal; margin-left: 104px;"><?php echo $description_goods;  ?></span></p><br>
+                                           
+                </div>
+            </div>
+        </div>
 
-            <tr>
-           
-                <td colspan="4" style="text-align: right;">Grand Total:</td>
-                <td></td>
-                
-                 
-                  
-              </tr>
-        </table>
-        
-    </div>
-</div>
-<h4>Account Details/Additional Information</h4><br><br>
+        <div class="body-section">
+            <table class="table-bordered">
+                <thead>
+                    <!-- <tr>
+                        <td colspan="4" style="text-align: right;">Tax:</td>
+                        <td></td>
+                    </tr> -->
+
+
+                    <tr>
+                        <th class="text-white text-center">Product Name</th>
+                        <th class="text-white text-center">In stock</th>
+                        <th class="text-white text-center">Quantity / Sq ft.</th>
+                        <th class="text-white text-center">Amount</th>
+                        <th class="text-white text-center">Total</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="font-size: 16px;"><?php echo $product; ?></td>
+                        <td style="font-size: 16px;"><?php echo $stock; ?></td>
+                       <td style="font-size: 16px;"><?php echo $quantity; ?></td>
+                       <td style="font-size: 16px;">$<?php echo $totalamount; ?></td>
+                       <td style="font-size: 16px;">$<?php echo $total;  ?></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="text-right">Total:</td>
+                        <td style="font-size: 16px;">$<?php echo $total;  ?></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="text-right">Grand Total:</td>
+                        <td style="font-size: 16px;">$<?php echo $total;  ?></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <h4>Account Details/Additional Information</h4><br><br>
 
 <h4>Remarks/Conditions</h4><br><br><br>
         
-    </div>
+            
+        </div>
+
+        
+    </div>      
+
 
 	</section>
 </div>
 <!-- Purchase ledger End  -->
 
 
-<style>
-    .container {
-  width: 100%;
-  /*background-color: rgb(241, 248, 250);*/
-  margin-top: 50px;
- 
+    <style>
+        body{
+            background-color: #fcf8f8; 
+            margin: 0;
+            padding: 0;
+        }
+        h1,h2,h3,h4,h5,h6{
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            margin: 0;
+            padding: 0;
+        }
+        .heading_name{
+            font-weight: bold;
+        }
+        .container{
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 50px;
+        }
+        .brand-section{
+           background-color: #5961b3;
+           padding: 10px 40px;
+        }
+        .logo{
+            width: 50%;
+        }
 
-}
-
-    td,th{
-        border:1px solid black;
-        text-align: center;
-        padding: 3px;
-    }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        .col-6{
+            width: 50%;
+            flex: 0 0 auto;
+           
+        }
+        .text-white{
+            color: #fff;
+        }
+        .company-details{
+            float: right;
+            text-align: right;
+        }
     
-    
-</style>
+        .body-section{
+            padding: 16px;
+            border: 1px solid gray;
+            
+        }
+        .heading{
+            font-size: 20px;
+            margin-bottom: 08px;
+        }
+        .sub-heading{
+            color: #262626;
+            margin-bottom: 05px;
+        }
+        table{
+            background-color: #fff;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table thead tr{
+            border: 1px solid #111;
+            background-color: #5961b3;
+        }
+        table td {
+            vertical-align: middle !important;
+            text-align: center;
+        }
+        table th, table td {
+            padding-top: 08px;
+            padding-bottom: 08px;
+        }
+        .table-bordered{
+            box-shadow: 0px 0px 5px 0.5px gray;
+        }
+        .table-bordered td, .table-bordered th {
+            border: 1px solid #dee2e6;
+        }
+        .text-right{
+            text-align: end;
+        }
+        .w-20{
+            width: 20%;
+        }
+        .float-right{
+            float: right;
+        }
+        @media only screen and (max-width: 600px) {
+            
+        }
 
+       
+    </style>
+    
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet"/>
 
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>

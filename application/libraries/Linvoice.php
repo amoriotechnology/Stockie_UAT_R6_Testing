@@ -305,6 +305,7 @@ class Linvoice {
 
 
         $purchase_detail = $CI->Invoices->ocean_export_tracking_details_data($purchase_id);
+        // print_r($purchase_detail); die();
 
      
 
@@ -349,6 +350,8 @@ class Linvoice {
         'ocean_import_tracking_id'      => $purchase_detail[0]['ocean_export_tracking_id'],
 
             'booking_no' => $purchase_detail[0]['booking_no'],
+
+            'supplier'    => $purchase_detail[0]['supplier_name'],
 
             'container_no'    => $purchase_detail[0]['container_no'],
             'company'    => $company_info[0]['company_name'],
@@ -547,6 +550,8 @@ class Linvoice {
          //$bank_list        = $CI->Web_settings->bank_list();
 
         $purchase_detail = $CI->Invoices->retrieve_trucking_editdata($purchase_id);
+
+        // print_r($purchase_detail); exit();
 
      
         $customer_id = $purchase_detail[0]['customer_id'];

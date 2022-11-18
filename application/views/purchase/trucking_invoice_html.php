@@ -55,73 +55,64 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
       <!-- <table id="tab"> -->
            
 <div class="container" id="content">
-    <div class="row">
-                <div class="col-lg-4">
-                    <img src="<?php echo  base_url().'assets/'.$logo; ?>" width="40%">
+        <div class="brand-section">
+            <div class="row">
+                <div class="col-6">
+                   <a> <img src="<?php echo  base_url().'assets/'.$logo; ?>" width="40%"><h4 class="text-white" style="margin-top: 10px;"><?php echo $cname; ?></h4></a>
                 </div>
-                <div class="col-lg-4">
-                  <h4 style="margin-top: 30px; text-align: center;"> <?php echo $cname; ?></h4>
-                </div>
-                <div class="col-lg-4">
+                <div class="col-6" style="color:#F6F6F6;">
                     <h4 style="margin-top: 30px; text-align: right;"> <?php echo $address; ?></h4>
-                  </div>
-            </div><br><br>
-        <div class="row">
-            
-            <div class="col-lg-6">
-                <h5>Trucking Invoice No: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $invoice_no;  ?></span></h5> 
-                <h5>Bill To: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $bill_to;  ?></span></h5> 
-                <h5>Container / Goods Pick up date: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $container_pickup_date;  ?></span></h5> 
-                <h5>Container Number: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $invoice_no;  ?></span></h5> 
+                </div>
             </div>
-        
+        </div>
+        <div class="body-section">
+            <div class="row">
+                <div class="col-6">
+                    <p class="sub-heading heading_name"> Trucking Invoice No: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo  $invoice_no;?></span></p>
+                    <p class="sub-heading heading_name">Bill to: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo  $supplier;?></span></p>
+                    <p class="sub-heading heading_name">Container/Goods Pick Up Date: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo  $container_pickup_date;?></span></p>
+                    <p class="sub-heading heading_name">Container Number: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo  $invoice_no;?></span></p>
 
-            
-            <div class="col-lg-6">
+                </div>
+                <div class="col-6">
+                    <p class="sub-heading heading_name">Invoice Date: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo  $invoice_date;?></span></p>
+                    <p class="sub-heading heading_name">Trucking company: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo  $shipment_company;?></span></p>
+                    <p class="sub-heading heading_name">Delivery Date: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo  $delivery_date;?></span></p>
+                    <p class="sub-heading heading_name">Shipment / BL Number: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo  $invoice_no;?></span></p>
 
-                <h5>Invoice Date: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php  echo $invoice_date;   ?></span></h5> 
-                <h5>Trucking Company: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php  echo $shipment_company;   ?></span></h5> 
-                <h5>Delivery date: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php  echo $delivery_date;   ?></span></h5> 
-                <!-- <h5>Shipment / BL Number: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $invoice_no;  ?></span></h5>  -->
+                </div>
             </div>
-        </div><br><br><br>
-<div class="row">
-    <div class="col-lg-12">
-        <table style="width:100%">
-            <tr>
-                <th>Date</th>
-                <th>Quantity</th>
-                <th>Description</th>
-                <th>Rate</th>
-                <th>Pro No / Reference</th>
-                <th>Total</th>
-                
-            </tr>
-            <tr>
-               <td><?php echo $truckingdate; ?></td>
-               <td><?php echo $qty; ?></td>
-               <td><?php echo $description; ?></td>
-               <td><?php echo $rate; ?></td>
-               <td><?php echo $pro_no_reference; ?></td>
-               <td><?php echo $total; ?></td>
-              
-            </tr>
-            <tr>
-              
-                <td colspan="5">Overall Total:</td>
-                <td><?php echo $total; ?></td>
-              
-            </tr>
-        </table><br><br>
-        
-    </div>
-</div>
-<h4>Remarks </h4>
-
-
-
-
-        
+        </div>
+        <div class="body-section">
+            <table class="table-bordered">
+                <thead>
+                    <tr>
+                        <th class="text-center text-white">Date</th>
+                        <th class="text-center text-white">Quantity</th>
+                        <th class="text-center text-white">Description</th>
+                        <th class="text-center text-white">Rate</th>
+                        <th class="text-center text-white">Pro No/Reference</th>
+                        <th class="text-center text-white">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="font-size: 16px;"><?php echo $truckingdate; ?></td>
+                        <td style="font-size: 16px;"><?php echo $qty; ?></td>
+                        <td style="font-size: 16px;"><?php echo $description; ?></td>
+                        <td style="font-size: 16px;">$<?php echo $rate; ?></td>
+                        <td style="font-size: 16px;"><?php echo $pro_no_reference; ?></td>
+                        <td style="font-size: 16px;">$<?php echo $total; ?></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" class="text-right">Overall Total:</td>
+                        <td style="font-size: 16px;">$<?php echo $total; ?></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+<h4>Remarks</h4><br><br><br>
+        </div>
     </div>
     </section> <!-- /.content -->
 </div> <!-- /.content-wrapper -->
@@ -129,17 +120,97 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
 
 
 <style>
-    .container {
-  width: 100%;
-  /*background-color: rgb(241, 248, 250);*/
-  margin-top: 50px;
-}
-    td,th{
-        border:1px solid rgb(0, 0, 0);
-        text-align: center;
-        padding: 3px;
-    }    
-</style>      
+        body{
+            background-color: #FCF8F8;
+            margin: 0;
+            padding: 0;
+        }
+        h1,h2,h3,h4,h5,h6{
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            margin: 0;
+            padding: 0;
+        }
+        .heading_name{
+            font-weight: bold;
+        }
+        .container{
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 50px;
+        }
+        .brand-section{
+           background-color: #5961B3;
+           padding: 10px 40px;
+        }
+        .logo{
+            width: 50%;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .col-6{
+            width: 50%;
+            flex: 0 0 auto;
+        }
+        .text-white{
+            color: #fff;
+        }
+        .company-details{
+            float: right;
+            text-align: right;
+        }
+        .body-section{
+            padding: 16px;
+            border: 1px solid gray;
+        }
+        .heading{
+            font-size: 20px;
+            margin-bottom: 08px;
+        }
+        .sub-heading{
+            color: #262626;
+            margin-bottom: 05px;
+        }
+        table{
+            background-color: #fff;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table thead tr{
+            border: 1px solid #111;
+            background-color: #5961B3;
+        }
+        table td {
+            vertical-align: middle !important;
+            text-align: center;
+        }
+        table th, table td {
+            padding-top: 08px;
+            padding-bottom: 08px;
+        }
+        .table-bordered{
+            box-shadow: 0px 0px 5px 0.5px gray;
+        }
+        .table-bordered td, .table-bordered th {
+            border: 1px solid #DEE2E6;
+        }
+        .text-right{
+            text-align: end;
+        }
+        .w-20{
+            width: 20%;
+        }
+        .float-right{
+            float: right;
+        }
+        @media only screen and (max-width: 600px) {
+        }
+    </style>    
 
 
 
@@ -148,7 +219,7 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet"/>
+
 
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>

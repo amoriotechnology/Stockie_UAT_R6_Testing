@@ -169,9 +169,9 @@ class Invoices extends CI_Model {
     $this->db->select('a.*,b.*');
     $this->db->from('profarma_invoice_details a');
     $this->db->join('profarma_invoice b', 'b.purchase_id = a.purchase_id');
+     // echo $this->db->last_query(); die();
     $this->db->where('b.purchase_id', $purchase_id);
 
-   
     
     $query = $this->db->get();
 
@@ -1735,7 +1735,7 @@ public function retrieve_packing_editdata($purchase_id) {
 
             $data = array(
 
-                'create_by'    =>$this->session->userdata('user_id'),
+            'create_by'    =>$this->session->userdata('user_id'),
             'customer_name'    => $this->input->post('customer_name',TRUE),
 
             'customer_address' => $this->input->post('customer_address',TRUE),
@@ -1747,11 +1747,6 @@ public function retrieve_packing_editdata($purchase_id) {
             'status'           => 2
 
             );
-
-
-
-        
-
 
 
             $this->db->insert('customer_information', $data);
@@ -2196,7 +2191,7 @@ public function retrieve_packing_editdata($purchase_id) {
 
         $rate                = $this->input->post('product_rate',TRUE);
 
-        $p_id                = $this->input->post('prodt',TRUE);
+        $p_id                = $this->input->post('product_id',TRUE);
 
         $total_amount        = $this->input->post('total_price',TRUE);
 
@@ -2210,7 +2205,7 @@ public function retrieve_packing_editdata($purchase_id) {
 
         $serial_n            = $this->input->post('serial_no',TRUE);
 
-$product_id=$this->input->post('product_id',TRUE);
+        $product_id=$this->input->post('product_id',TRUE);
 
         for ($i = 0, $n = count($p_id); $i < $n; $i++) {
 
@@ -2273,7 +2268,7 @@ $product_id=$this->input->post('product_id',TRUE);
 
             );
 
-//print_r($data1);
+// print_r($data1);
 
                 $this->db->insert('invoice_details', $data1);
 
