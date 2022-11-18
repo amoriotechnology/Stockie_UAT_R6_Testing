@@ -539,12 +539,10 @@ $CI = & get_instance();
         $data['supplier'] =$this->Purchases->get_supplier($invoice_no);
         $data['company_info'] =$this->Purchases->company_info();
 
+        // print_r($data['order']); die();
+
         $data['invoice_setting'] =$this->invoice_design->retrieve_data();
        
-   
-
-     
-
       
         $content = $this->load->view('purchase/purchase_order_invoice', $data, true);
         //$content='';

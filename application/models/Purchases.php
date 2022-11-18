@@ -2479,6 +2479,8 @@ public function company_info()
     $this->db->join('user_login u', 'u.cid = c.company_id'); 
     $this->db->where('u.user_id',$_SESSION['user_id']);
     $query = $this->db->get();
+
+    // echo $this->db->last_query(); die();
     
 
    if ($query->num_rows() > 0) {
@@ -2701,7 +2703,7 @@ public function company_info()
 
     //Retrieve purchase_details_data
     public function purchase_details_data($purchase_id) {
-        $this->db->select('a.*,b.*,c.*,e.purchase_details,d.product_id,d.product_name,d.product_model');
+        $this->db->select('a.*,b.*,c.*,e.*');
         $this->db->from('product_purchase a');
         $this->db->join('supplier_information b', 'b.supplier_id = a.supplier_id');
         $this->db->join('product_purchase_details c', 'c.purchase_id = a.purchase_id');

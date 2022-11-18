@@ -44,7 +44,7 @@ tbody tr{text-align:center}
    </style>
     <?php   ?>
     <!-- Main content -->
-    <div class="" id="content">
+    <div class="">
     <section class="content">
         <!-- Alert Message -->
         <?php
@@ -71,220 +71,173 @@ tbody tr{text-align:center}
         ?>
       <!-- <table id="tab"> -->
            
-      <?php if($invoice_setting[0]['template']==1)
-{
- ?>
- <div class="row">
-              <div class="col-sm-3" id="company_info">
-                  Company name:&nbsp;<?php echo $company_info[0]['company_name']; ?><br>
-                  Address:&nbsp;<?php echo $company_info[0]['address']; ?><br>
-                  Email:&nbsp;<?php echo $company_info[0]['email']; ?><br>
-                  Contact:&nbsp;<?php echo $company_info[0]['mobile']; ?><br>
-              </div>
-            <div class="col-sm-6 text-center"><h3><?php echo $invoice_setting[0]['header']; ?></h3></div>
-            <div class="col-sm-3"><img src="<?php echo base_url(); ?>assets/<?php echo $invoice_setting[0]['logo']; ?>" style="width: 50%;"></div>
-        </div>
-        <br> <br> <br>
-   
-        <div class="row">
-            
-            <div class="col-lg-6">
-                <h5>Packing List No: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $invoice;  ?></span></h5>
-                <h5>Gross Weight:  &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $gross; ?></span></h5>
-
+             
+    <div class="container" id="content">
+        <div class="brand-section">
+            <div class="row">
+                <div class="col-6">
+                   <a> <img src="<?php echo base_url(); ?>assets/<?php echo $invoice_setting[0]['logo']; ?>" style="width: 20%;"><h4 class="text-white" style="margin-top: 10px;"><?php echo $company_info[0]['company_name']; ?></h4></a>
+                </div>
+                <div class="col-6" style="color:#F6F6F6;">
+                    <h4 style="margin-top: 30px; text-align: right;"> <?php echo $company_info[0]['address']; ?></h4>
+                </div>
             </div>
+        </div>
+        <div class="body-section">
+            <div class="row">
+                <div class="col-6">
+                    <p class="sub-heading heading_name">Packing List NO: &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $invoice;  ?></span></p>
+                    <p class="sub-heading heading_name">Gross Weight: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $gross; ?></span></p>
+                </div>
+                <div class="col-6">
+                    <p class="sub-heading heading_name">Invoice Date: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $invoice_date; ?></span></p>
+                    <p class="sub-heading heading_name">Container No: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $container; ?></span></p>
+                </div>
+            </div>
+        </div>
+        <div class="body-section">
+            <table class="table-bordered">
+                <thead>
+                    <tr>
+                        <th class="text-center text-white">Product</th>
+                        <th class="text-center text-white">Description</th>
+                        <th class="text-center text-white">Thickness</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="font-size: 16px;"><?= $product; ?></td>
+                        <td style="font-size: 16px;"><?= $description; ?></td>
+                        <td style="font-size: 16px;"><?= $thickness; ?></td>
+                     </tr>
+                </tbody>
+            </table><br><br><br>
+            <table class="table-bordered">
+                <thead>
+                    <tr>
+                        <th class="text-center text-white">SLAB NO</th>
+                        <th class="text-center text-white">Net Measurement (Inches)</th>
+                        <th class="text-center text-white">Area (Sq. Ft)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="font-size: 16px;"><?= $slab; ?></td>
+                         <td style="font-size: 16px;"><p>Width: &nbsp; <?php echo $width; ?></p> <p >Height: &nbsp; <?php echo $height; ?></p></td>
+                        <td style="font-size: 16px;"><?= $area; ?></td>
+                       </tr>
+                       <tr>
+                        <td colspan="2" style="text-align: right;">Total:</td>
+                        <td style="font-size: 16px;"><?= $total; ?></td>
+                         </tr>
+                </tbody>
+            </table>
+            <br>
+<h4>Remarks/Conditions</h4><br><br><br>
+        </div>
+    </div>
+    
         
-
-            
-            <div class="col-lg-6">
-                <h5>Invoice Date: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $invoice_date; ?></span></h5>
-                <h5>Container No: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $container; ?></span></h5>
-                            </div>
-        </div><br><br>
-
-        <table style="width:100%">
-            <tr>
-              <th>Product</th>
-              <th>Description</th>
-              <th>Thickness</th>
-            </tr>
-            <tr>
-              <td><?php echo $product; ?></td>
-              <td><?php echo $description; ?></td>
-              <td><?php echo $thickness; ?></td>
-            </tr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </table><br>
-        <table style="width:100%">
-            <tr>
-                <th>SLAB NO</th>
-                <th>Net Measurement (Inches)</th>
-                <th>Area (Sq. Ft)</th>
-                <th>Action</th>
-            </tr>
-            <tr>
-                <td><?php echo $slab; ?></td>
-                <td><?php echo $width; ?></td>
-                <td><?php echo $height; ?></td>
-                <td><?php echo $area; ?></td>
-            </tr>
-         
-          </table><br><br>
-
-          
-
-<h4>Remarks </h4>
+    </div>        
         
     </div>
-    <?php } ?>
-                  <?php if($invoice_setting[0]['template']==2)
-{
- ?> 
- <div class="row">
-        <div class="col-sm-3"><img src="<?php echo base_url(); ?>assets/<?php echo $invoice_setting[0]['logo']; ?>" style="width: 50%;"></div>
-            <div class="col-sm-6 text-center"><h3><?php echo $invoice_setting[0]['header']; ?></h3></div>
-            <div class="col-sm-3" id="company_info">
-                  Company name:<?php echo $company_info[0]['company_name']; ?><br>
-                  Address:<?php echo $company_info[0]['address']; ?><br>
-                  Email:<?php echo $company_info[0]['email']; ?><br>
-                  Contact:<?php echo $company_info[0]['mobile']; ?><br>
-              </div>
-        </div>
-  <br>
-        <br>    
-   
-        <div class="row">
-            
-            <div class="col-lg-6">
-                <h5>Packing List No: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $invoice;  ?></span></h5>
-                <h5>Gross Weight:  &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $gross; ?></span></h5>
-
-            </div>
-        
-
-            
-            <div class="col-lg-6">
-                <h5>Invoice Date: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $invoice_date; ?></span></h5>
-                <h5>Container No: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $container; ?></span></h5>
-                            </div>
-        </div><br><br>
-
-        <table style="width:100%">
-            <tr>
-              <th>Product</th>
-              <th>Description</th>
-              <th>Thickness</th>
-            </tr>
-            <tr>
-              <td><?php echo $product; ?></td>
-              <td><?php echo $description; ?></td>
-              <td><?php echo $thickness; ?></td>
-            </tr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </table><br>
-        <table style="width:100%">
-            <tr>
-                <th>SLAB NO</th>
-                <th>Net Measurement (Inches)</th>
-                <th>Area (Sq. Ft)</th>
-                <th>Action</th>
-            </tr>
-            <tr>
-                <td><?php echo $slab; ?></td>
-                <td><?php echo $width; ?></td>
-                <td><?php echo $height; ?></td>
-                <td><?php echo $area; ?></td>
-            </tr>
-         
-          </table><br><br>
-
-          
-
-<h4>Remarks </h4>
-        
-    </div>
-    <?php } ?>
-                  <?php if($invoice_setting[0]['template']==3)
-{
- ?>   
-     <div class="row">
-        <div class="col-sm-3"><img src="<?php echo base_url(); ?>assets/<?php echo $invoice_setting[0]['logo']; ?>" style="width: 50%;"></div>
-            <div class="col-sm-6 text-center"><h3><?php echo $invoice_setting[0]['header']; ?></h3></div>
-        </div>
-        <br>
-  <br>
-        <br>    
-        <div class="row">
-            
-            <div class="col-sm-4">
-                <h5>Packing List No: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $invoice;  ?></span></h5>
-                <h5>Gross Weight:  &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $gross; ?></span></h5>
-
-            </div>
-        
-
-            
-            <div class="col-sm-4">
-                <h5>Invoice Date: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $invoice_date; ?></span></h5>
-                <h5>Container No: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $container; ?></span></h5>
-                            </div>
-                            <div class="col-sm-4" id="company_info">
-                  Company name:<?php echo $company_info[0]['company_name']; ?><br>
-                  Address:<?php echo $company_info[0]['address']; ?><br>
-                  Email:<?php echo $company_info[0]['email']; ?><br>
-                  Contact:<?php echo $company_info[0]['mobile']; ?><br>
-              </div>
-        </div><br><br>
-
-        <table style="width:100%">
-            <tr>
-              <th>Product</th>
-              <th>Description</th>
-              <th>Thickness</th>
-            </tr>
-            <tr>
-              <td><?php echo $product; ?></td>
-              <td><?php echo $description; ?></td>
-              <td><?php echo $thickness; ?></td>
-            </tr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </table><br>
-        <table style="width:100%">
-            <tr>
-                <th>SLAB NO</th>
-                <th>Net Measurement (Inches)</th>
-                <th>Area (Sq. Ft)</th>
-                <th>Action</th>
-            </tr>
-            <tr>
-                <td><?php echo $slab; ?></td>
-                <td><?php echo $width; ?></td>
-                <td><?php echo $height; ?></td>
-                <td><?php echo $area; ?></td>
-            </tr>
-         
-          </table><br><br>
-
-          
-
-<h4>Remarks </h4>
-        
-    </div>
-    <?php } ?>
     </section> <!-- /.content -->
 </div> <!-- /.content-wrapper -->
       <!-- </table> -->
 
 
 <style>
-    .container {
-  width: 100%;
-  /*background-color: rgb(241, 248, 250);*/
-  margin-top: 50px;
-}
-    td,th{
-        border:1px solid rgb(0, 0, 0);
-        text-align: center;
-        padding: 3px;
-    }    
-</style>      
+        body{
+            background-color: #FCF8F8;
+            margin: 0;
+            padding: 0;
+        }
+        h1,h2,h3,h4,h5,h6{
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            margin: 0;
+            padding: 0;
+        }
+        .heading_name{
+            font-weight: bold;
+        }
+        .container{
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 50px;
+        }
+        .brand-section{
+           background-color: #5961B3;
+           padding: 10px 40px;
+        }
+        .logo{
+            width: 50%;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .col-6{
+            width: 50%;
+            flex: 0 0 auto;
+        }
+        .text-white{
+            color: #fff;
+        }
+        .company-details{
+            float: right;
+            text-align: right;
+        }
+        .body-section{
+            padding: 16px;
+            border: 1px solid gray;
+        }
+        .heading{
+            font-size: 20px;
+            margin-bottom: 08px;
+        }
+        .sub-heading{
+            color: #262626;
+            margin-bottom: 05px;
+        }
+        table{
+            background-color: #fff;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table thead tr{
+            border: 1px solid #111;
+            background-color:  #5961B3;
+        }
+        table td {
+            vertical-align: middle !important;
+            text-align: center;
+        }
+        table th, table td {
+            padding-top: 08px;
+            padding-bottom: 08px;
+        }
+        .table-bordered{
+            box-shadow: 0px 0px 5px 0.5px gray;
+        }
+        .table-bordered td, .table-bordered th {
+            border: 1px solid #DEE2E6;
+        }
+        .text-right{
+            text-align: end;
+        }
+        .w-20{
+            width: 20%;
+        }
+        .float-right{
+            float: right;
+        }
+        @media only screen and (max-width: 600px) {
+        }
+    </style>     
 
 
 

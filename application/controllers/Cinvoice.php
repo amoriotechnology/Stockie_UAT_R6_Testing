@@ -110,10 +110,12 @@ class Cinvoice extends CI_Controller {
         // print_r($purchase_detail); die();
 
         $all_profarma = $CI->Invoices->all_profarma($purchase_id);
+
       
      $product_name = $this->db->select('*')->from('product_information')->where("product_id",$all_profarma[0]['product_id'])->get()->result_array();
+
+      // print_r($product_name);die();
         
-    // print_r($product_name);die();
 
         $profarma_details = $this->db->select('*')->from('profarma_invoice_details')->where("purchase_id",$purchase_detail[0]['purchase_id'])->get()->result_array();
 
@@ -152,6 +154,7 @@ class Cinvoice extends CI_Controller {
        $datacontent = $CI->invoice_content->retrieve_data();
       
        $customer = $this->db->select('*')->from('customer_information')->where("customer_id",$purchase_detail[0]['customer_id'])->get()->result_array();
+       // print_r($customer); die();
   //$prinfo = $this->db->select('*')->from('product_information')->where('product_id',$product_id)->get()->result_array();
         
               
@@ -172,6 +175,7 @@ class Cinvoice extends CI_Controller {
             'title'            => display('purchase_details'),
             'customer'  =>  $customer,
             'order'    =>$all_profarma,
+            'customer'      => $customer[0]['customer_name'],
             'purchase_id'      => $purchase_detail[0]['purchase_id'],
 
             'chalan_no' =>  $purchase_detail[0]['chalan_no'],
@@ -200,6 +204,7 @@ class Cinvoice extends CI_Controller {
 
              'product' => $product_name[0]['product_name'],
              'stock' => $product_name[0]['p_quantity'],
+            
 
              'quantity' => $profarma_details[0]['quantity'],
              'totalamount' => $profarma_details[0]['total_amount'],
@@ -2229,6 +2234,8 @@ $this->db->update('bootgrid_data');
 
         $invoice_detail = $CI->Invoices->invoice_pdf();
 
+        // print_r($invoice_detail); die();
+
         $all_invoice = $CI->Invoices->all_invoice();
 
          // print_r($all_invoice); die();
@@ -2238,6 +2245,8 @@ $this->db->update('bootgrid_data');
         $datacontent = $CC->invoice_content->retrieve_data();
 
         $customer = $this->db->select('*')->from('customer_information')->where("customer_id",$invoice_detail[0]['customer_id'])->get()->result_array();
+
+
 
          $product_name = $this->db->select('*')->from('product_information')->where("product_id",$all_invoice[0]['product_id'])->get()->result_array();
 
@@ -3255,6 +3264,8 @@ $this->db->update('bootgrid_data');
                  $this->db->insert('profarma_invoice', $data);
                  $avl = $this->input->post('available_quantity');
                  $p_id = $this->input->post('product_id');
+                 // print_r($p_id); exit();
+                 $p_id = $this->input->post('product_id');
                  $quantity = $this->input->post('product_quantity');
                  $rate = $this->input->post('product_rate');
                  $t_price = $this->input->post('total_price');
@@ -3289,8 +3300,7 @@ $this->db->update('bootgrid_data');
                     $this->session->set_userdata(array('message' => display('successfully_added')));
 
                     redirect('Cinvoice/manage_profarma_invoice');
-               
-
+            
 
      }
 

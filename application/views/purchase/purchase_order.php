@@ -122,7 +122,7 @@ textarea:focus, input:focus{
                                     </label>
                                     <div class="col-sm-8">
                                         <?php $date = date('Y-m-d'); ?>
-                                        <input type="text" required tabindex="2" class="form-control datepicker" name="purchase_date" value="<?php echo $date; ?>" id="date"  required/>
+                                        <input type="date" required tabindex="2" class="form-control datepicker" name="purchase_date" value="<?php echo $date; ?>" id="date"  required/>
                                     </div>
                                 </div>
                             </div>

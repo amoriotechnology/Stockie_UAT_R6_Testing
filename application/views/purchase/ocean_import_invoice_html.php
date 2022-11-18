@@ -67,181 +67,148 @@ tbody tr{text-align:center}
             $this->session->unset_userdata('error_message');
         }
         ?>
-      <div class="" id="ocean">
+
+    <div class="container" id="content">
+        <div class="brand-section">
             <div class="row">
-               <div class="document">
-                  <div class="spreadSheetGroup" id="print">
-                  <?php if($invoice_setting[0]['template']==1)
-{
- ?>
- <div class="row">
-              <div class="col-sm-3" id="company_info">
-                  Company name:&nbsp;<?php echo $company_info[0]['company_name']; ?><br>
-                  Address:&nbsp;<?php echo $company_info[0]['address']; ?><br>
-                  Email:&nbsp;<?php echo $company_info[0]['email']; ?><br>
-                  Contact:&nbsp;<?php echo $company_info[0]['mobile']; ?><br>
-              </div>
-            <div class="col-sm-6 text-center"><h3><?php echo $invoice_setting[0]['header']; ?></h3></div>
-            <div class="col-sm-3"><img src="<?php echo base_url(); ?>assets/<?php echo $invoice_setting[0]['logo']; ?>" style="width: 40%;"></div>
+                <div class="col-6">
+                   <a> <img src="<?php echo base_url(); ?>assets/<?php echo $invoice_setting[0]['logo']; ?>" style="width: 20%;"><h4 class="text-white" style="margin-top: 10px;"><?php echo $company_info[0]['company_name']; ?></h4></a>
+                </div>
+                <div class="col-6" style="color:#F6F6F6;">
+                    <h4 class="text-white" style="margin-top: 30px; text-align: right;"><?php echo $company_info[0]['address']; ?></h4>
+                </div>
+            </div>
         </div>
-        <br> <br> <br>
-        
-    <div class="container">
-        <div class="row">
-            
-            <div class="col-lg-6">
-            <form action="">
-    <label for="text">Shipper / Vendor :</label>&nbsp;<?php  echo $supplier_id ; ?><br><br>
-    <label for="text">Container No :</label>&nbsp;<?php  echo $container_no ; ?><br><br>
-    <label for="text">ETD (Estimated time of depature) :</label> &nbsp;<?php  echo $etd ; ?><br><br>
-    <label for="text">Ocean Import Tracking date :</label>&nbsp; <?php  echo $invoice_date ; ?><br><br>
-    <label for="text">Notify Party Email :</label>&nbsp;<?php  echo $notify_party ; ?>  <br><br>
-    <label for="text">Voyage No. :</label>&nbsp; <?php  echo $voyage_no ; ?><br><br>
-    <label for="text">Port of discharge :</label>&nbsp; <?php  echo $port_of_discharge ; ?><br><br>
-    <label for="text">Freight Forwarder :</label>&nbsp;<?php  echo $freight_forwarder ; ?> <br><br>
-    <label for="text">BL / Shipment created date :</label>&nbsp;<?php  echo $bl_shipment ; ?><br><br>
+        <div class="body-section">
+            <div class="row">
+                <div class="col-6">
+                    <p class="sub-heading heading_name">Shipper / Vendor: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $supplier_name;  ?></span></p>
 
-</form>
-            </div>
-        
+                    <p class="sub-heading heading_name">Container No: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $container_no;  ?></span></p>
 
-            
-            <div class="col-lg-6">
-                <form action="">
-                <label for="text">Booking / BL No :</label>&nbsp;<?php  echo $booking_no ; ?><br><br>
-                    <label for="text">Seal No :</label>&nbsp;<?php  echo $seal_no ; ?> <br><br>   
-                    <label for="text">ETA (Estimated time of Arrival) :</label>&nbsp;<?php  echo $eta ; ?> <br><br>
-                    <label for="number">Customer / Consignee :</label> &nbsp;<?php  echo $consignee ; ?> <br><br>
-                    <label for="number">Vessel :</label>&nbsp;<?php  echo $vessel ; ?>  <br><br>
-                    <label for="number">Port of loading :</label>&nbsp;<?php  echo $port_of_loading ; ?>  <br><br>
-                    <label for="number">Place of Delivery :</label>&nbsp;<?php  echo $place_of_delivery ; ?> <br><br> 
-                    <label for="number">Particulars :</label>&nbsp;<?php  echo $particular ; ?>  <br><br>
-                    <label for="number">Country of Origin :</label>&nbsp;<?php  echo $country_of_origin ; ?> <br><br> 
-                </form>
-                            </div>
-        </div><br><br><br>
+                    <p class="sub-heading heading_name">Estimated Time Of Depature): &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $etd;  ?></span></p>
 
-<h4>Remarks / Details</h4>
-        
-    </div>
-                  
-    <?php } ?>
-                  <?php if($invoice_setting[0]['template']==2)
-{
- ?> 
-           <div class="row">
-        <div class="col-sm-3"><img src="<?php echo base_url(); ?>assets/<?php echo $invoice_setting[0]['logo']; ?>" style="width: 40%;"></div>
-            <div class="col-sm-6 text-center"><h3><?php echo $invoice_setting[0]['header']; ?></h3></div>
-            <div class="col-sm-3" id="company_info">
-                  Company name:<?php echo $company_info[0]['company_name']; ?><br>
-                  Address:<?php echo $company_info[0]['address']; ?><br>
-                  Email:<?php echo $company_info[0]['email']; ?><br>
-                  Contact:<?php echo $company_info[0]['mobile']; ?><br>
-              </div>
+                    <p class="sub-heading heading_name">Ocean Import Tracking Date : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $invoice_date;  ?></span></p>
+                    <p class="sub-heading heading_name">Notify Party Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $notify_party;  ?></span></p>
+                    <p class="sub-heading heading_name">Voyage No: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $voyage_no;  ?></span></p>
+                    <p class="sub-heading heading_name">Port Of Discharge: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $port_of_discharge;  ?></span></p>
+                    <p class="sub-heading heading_name">Freight forwarder: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $freight_forwarder;  ?></span></p>
+                    <p class="sub-heading heading_name">BL / Shipment Created Date: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $bl_shipment;  ?></span></p>
+                    <p class="sub-heading heading_name">Country of Origin : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $origin;  ?></span></p>
+                </div>
+                <div class="col-6">
+                    <p class="sub-heading heading_name">Booking / BL No: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $booking_no;  ?></span></p>
+                    <p class="sub-heading heading_name">Seal NO: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $seal_no;  ?></span></p>
+                    <p class="sub-heading heading_name">Estimated Time Of Arrival: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $eta;  ?></span></p>
+                    <p class="sub-heading heading_name">Customer/Consignee: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $consignee;  ?></span></p>
+                    <p class="sub-heading heading_name">Vessel: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $vessel;  ?></span></p>
+                    <p class="sub-heading heading_name">Port of loading: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $port_of_loading;  ?></span></p>
+                    <p class="sub-heading heading_name">Place of Delivery: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $place_of_delivery;  ?></span></p>
+                    <p class="sub-heading heading_name">Particulars: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $particular;  ?></span></p>
+                </div>
+            </div><br><br><br>
+            <h4>Remarks/Details</h4><br><br><br>
         </div>
-  <br>
-        <br>    
-        <div class="container">
-        <div class="row">
-            
-            <div class="col-lg-6">
-<form action="">
-<label for="text">Shipper / Vendor :</label>&nbsp;<?php  echo $supplier_id ; ?><br><br>
-    <label for="text">Container No :</label>&nbsp;<?php  echo $container_no ; ?><br><br>
-    <label for="text">ETD (Estimated time of depature) :</label> &nbsp;<?php  echo $etd ; ?><br><br>
-    <label for="text">Ocean Import Tracking date :</label>&nbsp; <?php  echo $invoice_date ; ?><br><br>
-    <label for="text">Notify Party Email :</label>&nbsp;<?php  echo $notify_party ; ?>  <br><br>
-    <label for="text">Voyage No. :</label>&nbsp; <?php  echo $voyage_no ; ?><br><br>
-    <label for="text">Port of discharge :</label>&nbsp; <?php  echo $port_of_discharge ; ?><br><br>
-    <label for="text">Freight Forwarder :</label>&nbsp;<?php  echo $freight_forwarder ; ?> <br><br>
-    <label for="text">BL / Shipment created date :</label>&nbsp;<?php  echo $bl_shipment ; ?><br><br>
-
-</form>
-            </div>
-        
-
-            
-            <div class="col-lg-6">
-                <form action="">
-                    <label for="text">Booking / BL No :</label>&nbsp;<?php  echo $booking_no ; ?><br><br>
-                    <label for="text">Seal No :</label>&nbsp;<?php  echo $seal_no ; ?> <br><br>   
-                    <label for="text">ETA (Estimated time of Arrival) :</label>&nbsp;<?php  echo $eta ; ?> <br><br>
-                    <label for="number">Customer / Consignee :</label> &nbsp;<?php  echo $consignee ; ?> <br><br>
-                    <label for="number">Vessel :</label>&nbsp;<?php  echo $vessel ; ?>  <br><br>
-                    <label for="number">Port of loading :</label>&nbsp;<?php  echo $port_of_loading ; ?>  <br><br>
-                    <label for="number">Place of Delivery :</label>&nbsp;<?php  echo $place_of_delivery ; ?> <br><br> 
-                    <label for="number">Particulars :</label>&nbsp;<?php  echo $particular ; ?>  <br><br>
-                    <label for="number">Country of Origin :</label>&nbsp;<?php  echo $country_of_origin ; ?> <br><br> 
-                </form>
-                            </div>
-        </div><br><br><br>
-
-<h4>Remarks / Details</h4>
-        
-    </div>   
-    <?php } ?>
-                  <?php if($invoice_setting[0]['template']==3)
-{
- ?>   
-     <div class="row">
-        <div class="col-sm-3"><img src="<?php echo base_url(); ?>assets/<?php echo $invoice_setting[0]['logo']; ?>" style="width: 40%;"></div>
-            <div class="col-sm-6 text-center"><h3><?php echo $invoice_setting[0]['header']; ?></h3></div>
         </div>
-        <br>
-  <br>
-        <br>    
-        <div class="container">
-        <div class="row">
-            
-            <div class="col-sm-4">
-            <form action="">
-            <label for="text">Shipper / Vendor :</label>&nbsp;<?php  echo $supplier_id ; ?><br><br>
-    <label for="text">Container No :</label>&nbsp;<?php  echo $container_no ; ?><br><br>
-    <label for="text">ETD (Estimated time of depature) :</label> &nbsp;<?php  echo $etd ; ?><br><br>
-    <label for="text">Ocean Import Tracking date :</label>&nbsp; <?php  echo $invoice_date ; ?><br><br>
-    <label for="text">Notify Party Email :</label>&nbsp;<?php  echo $notify_party ; ?>  <br><br>
-    <label for="text">Voyage No. :</label>&nbsp; <?php  echo $voyage_no ; ?><br><br>
-    <label for="text">Port of discharge :</label>&nbsp; <?php  echo $port_of_discharge ; ?><br><br>
-    <label for="text">Freight Forwarder :</label>&nbsp;<?php  echo $freight_forwarder ; ?> <br><br>
-    <label for="text">BL / Shipment created date :</label>&nbsp;<?php  echo $bl_shipment ; ?><br><br>
-
-</form>
-            </div>
-        
-
-            
-            <div class="col-sm-4">
-                <form action="">
-                <label for="text">Booking / BL No :</label>&nbsp;<?php  echo $booking_no ; ?><br><br>
-                    <label for="text">Seal No :</label>&nbsp;<?php  echo $seal_no ; ?> <br><br>   
-                    <label for="text">ETA (Estimated time of Arrival) :</label>&nbsp;<?php  echo $eta ; ?> <br><br>
-                    <label for="number">Customer / Consignee :</label> &nbsp;<?php  echo $consignee ; ?> <br><br>
-                    <label for="number">Vessel :</label>&nbsp;<?php  echo $vessel ; ?>  <br><br>
-                    <label for="number">Port of loading :</label>&nbsp;<?php  echo $port_of_loading ; ?>  <br><br>
-                    <label for="number">Place of Delivery :</label>&nbsp;<?php  echo $place_of_delivery ; ?> <br><br> 
-                    <label for="number">Particulars :</label>&nbsp;<?php  echo $particular ; ?>  <br><br>
-                    <label for="number">Country of Origin :</label>&nbsp;<?php  echo $country_of_origin ; ?> <br><br> 
-                </form>
-                            </div>
-                            <div class="col-sm-4" id="company_info">
-                  Company name:<?php echo $company_info[0]['company_name']; ?><br>
-                  Address:<?php echo $company_info[0]['address']; ?><br>
-                  Email:<?php echo $company_info[0]['email']; ?><br>
-                  Contact:<?php echo $company_info[0]['mobile']; ?><br>
-              </div>
-        </div><br><br><br>
-
-<h4>Remarks / Details</h4>
-        
-    </div>  
- 
- <?php } ?>
-                  </div>
-               </div>
-            </div>
+     
          </div>
     </section> <!-- /.content -->
 </div> <!-- /.content-wrapper -->
+
+<style>
+        body{
+            background-color: #FCF8F8;
+            margin: 0;
+            padding: 0;
+        }
+        h1,h2,h3,h4,h5,h6{
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            margin: 0;
+            padding: 0;
+        }
+        .heading_name{
+            font-weight: bold;
+        }
+        .container{
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 50px;
+        }
+        .brand-section{
+           background-color: #5961B3;
+           padding: 10px 40px;
+        }
+        .logo{
+            width: 50%;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .col-6{
+            width: 50%;
+            flex: 0 0 auto;
+        }
+        .text-white{
+            color: #fff;
+        }
+        .company-details{
+            float: right;
+            text-align: right;
+        }
+        .body-section{
+            padding: 16px;
+            border: 1px solid gray;
+        }
+        .heading{
+            font-size: 20px;
+            margin-bottom: 08px;
+        }
+        .sub-heading{
+            color: #262626;
+            margin-bottom: 05px;
+        }
+        table{
+            background-color: #fff;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table thead tr{
+            border: 1px solid #111;
+            background-color:  #5961B3;
+        }
+        table td {
+            vertical-align: middle !important;
+            text-align: center;
+        }
+        table th, table td {
+            padding-top: 08px;
+            padding-bottom: 08px;
+        }
+        .table-bordered{
+            box-shadow: 0px 0px 5px 0.5px gray;
+        }
+        .table-bordered td, .table-bordered th {
+            border: 1px solid #DEE2E6;
+        }
+        .text-right{
+            text-align: end;
+        }
+        .w-20{
+            width: 20%;
+        }
+        .float-right{
+            float: right;
+        }
+        @media only screen and (max-width: 600px) {
+        }
+    </style>
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
@@ -261,7 +228,7 @@ $(document).ready(function () {
 
 
  var pdf = new jsPDF('p','pt','a4');
-    const invoice = document.getElementById("print");
+    const invoice = document.getElementById("content");
              console.log(invoice);
              console.log(window);
              var pageWidth = 8.5;

@@ -176,7 +176,7 @@
                                     </label>
                                     <div class="col-sm-8">
                                         <?php $date = date('Y-m-d'); ?>
-                                        <input type="text" required tabindex="2" class="form-control datepicker" name="bill_date" value="<?php echo $date; ?>" id="date"  />
+                                        <input type="date" required tabindex="2" class="form-control datepicker" name="bill_date" value="<?php echo $date; ?>" id="date"  />
                                     </div>
                                 </div>
                             </div>
@@ -201,7 +201,7 @@
                                     </label>
                                     <div class="col-sm-8">
                                         <?php $date = date('Y-m-d'); ?>
-                                        <input type="text" required tabindex="2" class="form-control datepicker" name="payment_due_date" value="<?php echo $date; ?>" id="date1"  />
+                                        <input type="date" required tabindex="2" class="form-control datepicker" name="payment_due_date" value="<?php echo $date; ?>" id="date1"  />
                                     </div>
                                 </div>
                             </div>
