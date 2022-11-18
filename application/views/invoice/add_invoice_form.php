@@ -912,8 +912,10 @@ function sumArray(array) {
 }
 
 $('#customer_name').on('change', function (e) {
+
     var data = {
         value: $('#customer_name').val()
+      //  defaultcurrency:'<?php //echo $currency; ?>'
      };
     data[csrfName] = csrfHash;
     $.ajax({
@@ -940,7 +942,14 @@ $('#customer_name').on('change', function (e) {
 
 
 });
+console.log('https://open.er-api.com/v6/latest/<?php echo $currency; ?>');
+$.getJSON('https://open.er-api.com/v6/latest/<?php echo $currency; ?>', 
+function(data) {
+   var Rate = 'rates: ' + parseFloat( data.rates["EUR"] ).toFixed(3);
+   console.log(Rate);
 
+});
+    
 
 function total_amt(id){
     var sum=0.0;
