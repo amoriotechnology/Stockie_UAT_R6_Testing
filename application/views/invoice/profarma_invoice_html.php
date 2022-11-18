@@ -77,22 +77,19 @@
 
         <div class="body-section">
             <table class="table-bordered">
-                <thead>
-                    <!-- <tr>
-                        <td colspan="4" style="text-align: right;">Tax:</td>
-                        <td></td>
-                    </tr> -->
-
-
-                    <tr>
-                        <th class="text-white text-center">Product Name</th>
-                        <th class="text-white text-center">In stock</th>
-                        <th class="text-white text-center">Quantity / Sq ft.</th>
-                        <th class="text-white text-center">Amount</th>
-                        <th class="text-white text-center">Total</th>
-                        
-                    </tr>
-                </thead>
+            <thead>
+      <tr>
+      <th data-column-id="id" class="ID"    style="width: 80px; height: 40.0114px;" >ID</th>
+        <th data-column-id="Invoice" class="Invoice No"    style="height: 45.0114px; width: 234.011px" >Invoice No</th>
+        <th data-column-id="Sale By" class="Sale By"     style="height: 42.0114px;"   >Sale By</th>
+        <th data-column-id="Customer Name" class="Customer Name"   style="width: 248.011px;"  >Customer Name</th>
+        <th data-column-id="date" class="Date"  style="width: 198.011px;" >Date</th>
+        <th data-column-id="total" class="Total Amount"    style="width: 190.011px; height: 44.0114px;">Total Amount</th>
+    
+         <th class="text-center Action" data-column-id="action" data-formatter="commands" data-sortable="false"    style="width: 255.011px; height: 39.0114px;" >Action</th>
+      
+      </tr>
+    </thead>
                 <tbody>
                     <tr>
                         <td style="font-size: 16px;"><?php echo $product; ?></td>

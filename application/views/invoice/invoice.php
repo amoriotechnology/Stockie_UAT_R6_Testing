@@ -179,16 +179,16 @@ $today = date('Y-m-d');
 
                     <div id="customers">
   <table class="table table-bordered" cellspacing="0" width="100%" id="ProfarmaInvList">
-    <thead>
+  <thead>
       <tr>
-      <th class="ID" data-resizable-column-id="1" style="width:50px;">ID</th>
-        <th class="Invoice No" data-resizable-column-id="2">Invoice No</th>
-        <th class="Sale By" data-resizable-column-id="3">Sale By</th>
-        <th class="Customer Name"  data-resizable-column-id="4">Customer Name</th>
-        <th class="Date" data-resizable-column-id="5">Date</th>
-        <th class="Total Amount" data-resizable-column-id="6">Total Amount</th>
+      <th class="ID" data-resizable-column-id="1"    style="width: 80px; height: 40.0114px;" >ID</th>
+        <th class="Invoice No" data-resizable-column-id="2"  style="height: 45.0114px; width: 234.011px" >Invoice No</th>
+        <th class="Sale By" data-resizable-column-id="3"  style="height: 42.0114px;"   >Sale By</th>
+        <th class="Customer Name"  data-resizable-column-id="4"  style="width: 248.011px;"        >Customer Name</th>
+        <th class="Date" data-resizable-column-id="5"    style="width: 198.011px;"       >Date</th>
+        <th class="Total Amount" data-resizable-column-id="6" style="width: 190.011px; height: 44.0114px;">Total Amount</th>
       <div class="myButtonClass Action"> 
-         <th class="Action text-center" data-column-id="action" data-formatter="commands" data-sortable="false">Action</th>
+         <th class="Action text-center" data-column-id="action" data-formatter="commands" data-sortable="false"   style="width: 255.011px; height: 39.0114px;"  >Action</th>
         </div>
       </tr>
     </thead>

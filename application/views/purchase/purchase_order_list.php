@@ -129,16 +129,16 @@ $today = date('Y-m-d');
                     <div class="panel-body">
                     <div id="customers">
   <table class="table table-bordered" cellspacing="0" width="100%" id="ProfarmaInvList">
-    <thead>
+  <thead>
       <tr>
-      <th data-column-id="id" class="ID">ID</th>
-        <th data-column-id="Invoice" class="Invoice No">Invoice No</th>
-        <th data-column-id="date" class="Purchase Date">Purchase Date</th>
-        <th data-column-id="Sale By" class="Supplier Name">Supplier Name</th>
-        <th data-column-id="Customer Name" class="Purchase Order ID" >Purchase Order ID</th>
-         <th data-column-id="total" class="Total Amount">Total Amount</th>
-      <div class="myButtonClass Action"> 
-         <th class="text-center Action" data-column-id="action" data-formatter="commands" data-sortable="false">Action</th>
+      <th data-column-id="id" class="ID" style="width: 100px; height: 43.0114px;">ID</th>
+        <th data-column-id="Invoice" class="Invoice No" style="height: 38.0114px; width: 196.011px;">Invoice No</th>
+        <th data-column-id="Customer Name" class="Purchase Order ID" style="height: 39.0114px; width: 230.011px;" >Purchase Order ID</th>
+        <th data-column-id="Sale By" class="Supplier Name" style="width: 268.011px; height: 43.0114px;">Supplier Name</th>
+        <th data-column-id="date" class="Purchase Date" style="width: 253.011px;">Purchase Date</th>
+         <th data-column-id="total" class="Total Amount" style="width: 199.011px; height: 37.0114px;">Total Amount</th>
+      <div class="myButtonClass Action">
+         <th class="text-center Action" data-column-id="action" data-formatter="commands" data-sortable="false" style="width: 185.011px;">Action</th>
         </div>
       </tr>
     </thead>
@@ -214,19 +214,19 @@ $count++;
             <div id="myModal_colSwitch" class="modal_colSwitch">
                     <div class="modal-content_colSwitch">
                           <span class="close_colSwitch">&times;</span>
-                          <input type="checkbox"  data-control-column="1" class="opt ID" value="ID"/> ID<br>
+                          <input type="checkbox"  data-control-column="1" checked = "checked" class="opt ID" value="ID"/> ID<br>
 
-    <input type="checkbox"  data-control-column="2" class="opt Invoice No" value="Invoice No"/>Invoice No<br>
+    <input type="checkbox"  data-control-column="2" checked = "checked" class="opt Invoice No" value="Invoice No"/>Invoice No<br>
  
-    <input type="checkbox"  data-control-column="3" class="opt Purchase Date" value="Purchase Date"/>Purchase Date<br>
+    <input type="checkbox"  data-control-column="3" checked = "checked" class="opt Purchase Date" value="Purchase Date"/>Purchase Date<br>
   
-    <input type="checkbox"  data-control-column="4" class="opt Supplier Name" value="Supplier Name"/>Supplier Name<br>
+    <input type="checkbox"  data-control-column="4" checked = "checked" class="opt Supplier Name" value="Supplier Name"/>Supplier Name<br>
 
-    <input type="checkbox"  data-control-column="5" class="opt Purchase Order ID" value="Purchase Order ID"/>Purchase Order ID<br>
+    <input type="checkbox"  data-control-column="5" checked = "checked" class="opt Purchase Order ID" value="Purchase Order ID"/>Purchase Order ID<br>
 
-    <input type="checkbox"  data-control-column="6" class="opt Total Amount" value="Total Amount"/>Total Amount<br>
+    <input type="checkbox"  data-control-column="6" checked = "checked" class="opt Total Amount" value="Total Amount"/>Total Amount<br>
 
-<input type="checkbox"  data-control-column="7" class="opt Action" value="Action"/>Action<br>
+<input type="checkbox"  data-control-column="7" checked = "checked" class="opt Action" value="Action"/>Action<br>
      <!--      <input type="submit" value="submit" id="submit"/>-->
                     </div>
                 </div>

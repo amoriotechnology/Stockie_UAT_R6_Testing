@@ -862,7 +862,7 @@ class Linvoice {
             'voucher_no' => $voucher_no,
                 'tax_name'=>'ww',
         );
-       
+      
         $invoiceForm = $CI->parser->parse('invoice/add_invoice_form', $data, true);
        // $invoiceForm = $CI->parser->parse('invoice/profarma_invoice', $data, true);
         return $invoiceForm;
