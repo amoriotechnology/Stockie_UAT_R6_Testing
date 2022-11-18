@@ -205,7 +205,7 @@ $today = date('Y-m-d');
    <td><?php   echo $arr['first_name'].' '.$arr['last_name'];  ?></td>
    <td><?php   echo $arr['customer_name'];  ?></td>
 <td><?php   echo $arr['date'];  ?></td>
-  <td><?php   echo $arr['total_amount'];  ?></td>
+  <td><?php   echo $currency." ".$arr['total_amount'];  ?></td>
   <!-- <td><a href="<?php //echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php //echo  $arr['invoice_id'];  ?>">edit</a><input type="button" value="delete"/></td> -->
   <div class="form-group">
   <td>

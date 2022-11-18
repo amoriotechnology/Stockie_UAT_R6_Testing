@@ -43,7 +43,8 @@ class Csupplier extends CI_Controller {
             'zip'           => $this->input->post('zip',TRUE),
             'country'       => $this->input->post('country',TRUE),
             'details'       => $this->input->post('details',TRUE),
-            'status'        => 1
+            'status'        => 1,
+            'currency_type'   => $this->input->post('currency1',TRUE)
         );
          
         $this->db->insert('supplier_information',$data);

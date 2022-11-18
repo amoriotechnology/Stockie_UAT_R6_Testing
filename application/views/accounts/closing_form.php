@@ -14,7 +14,20 @@
             </ol>
         </div>
     </section>
-
+    <style>
+            input {
+    border: none;
+    background-color: #eee;
+ }
+textarea:focus, input:focus{
+   
+    outline: none;
+}
+ .text-right {
+    text-align: left; 
+}
+   
+    </style>
     <section class="content">
         <!-- Alert Message -->
         <?php
@@ -73,29 +86,36 @@
                         <div class="form-group row">
                             <label for="last_day_closing" class="col-sm-3 col-form-label"><?php echo display('last_day_closing') ?></label>
                             <div class="col-sm-6">
-                                <input type="text" name="last_day_closing" class="form-control" id="last_day_closing" value="{last_day_closing}" readonly="readonly" />
+                            <span class='form-control' style='background-color: #eee;'><?php   echo $currency; ?>  
+                                <input type="text" name="last_day_closing"  id="last_day_closing" value="{last_day_closing}" readonly="readonly" />
+                                 </span>
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <label for="cash_in" class="col-sm-3 col-form-label"><?php echo display('receive') ?></label>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="cash_in" name="cash_in" value="{cash_in}" readonly="readonly" />
+                            <span class='form-control' style='background-color: #eee;'><?php   echo $currency; ?>  
+                                <input type="text"  id="cash_in" name="cash_in" value="{cash_in}" readonly="readonly" />
+                            </span>
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <label for="cash_out" class="col-sm-3 col-form-label"><?php echo display('payment') ?></label>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="cash_out" name="cash_out" value="{cash_out}" readonly="readonly" />
+                            <span class='form-control' style='background-color: #eee;'><?php   echo $currency; ?>  
+                                <input type="text"  id="cash_out" name="cash_out" value="{cash_out}" readonly="readonly" />
+                           </span>
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <label for="cash_in_hand" class="col-sm-3 col-form-label"><?php echo display('balance') ?></label>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="cash_in_hand" name="cash_in_hand" value="{cash_in_hand}" readonly="readonly" required />
-                            </div>
+                            <span class='form-control' style='background-color: #eee;'><?php   echo $currency; ?>  
+                                <input type="text"  id="cash_in_hand" name="cash_in_hand" value="{cash_in_hand}" readonly="readonly" required />
+                            </span></div>
                         </div>
 
 
@@ -128,58 +148,69 @@
                                  <tr>
                                     <td class="2000"><?php echo '2000'; ?></td>
                                     <td><input type="number" class="form-control text_0" name="thousands" onkeyup="cashCalculator()"  onchange="cashCalculator()"></td>
-                                    <td><input type="text" class="form-control text_0_bal" readonly=""></td>
+                                    <td><span class='form-control' style='background-color: #eee;'><?php   echo $currency; ?>  
+                                    <input type="text" class="text_0_bal" value="0" readonly=""></span></td>
                                 </tr> 
                                 <tr>
                                     <td class="1000"><?php echo display('1000') ?></td>
                                     <td><input type="number" class="form-control text_1" name="thousands" onkeyup="cashCalculator()"  onchange="cashCalculator()"></td>
-                                    <td><input type="text" class="form-control text_1_bal" readonly=""></td>
+                                    <td><span class='form-control' style='background-color: #eee;'><?php   echo $currency; ?>  
+                                    <input type="text" class="text_1_bal" value="0" readonly=""></span></td>
                                 </tr> 
                                 <tr>
                                     <td class="500"><?php echo display('500') ?></td>
                                     <td><input type="number" class="form-control text_2" name="fivehnd" onkeyup="cashCalculator()" onchange="cashCalculator()"></td>
-                                    <td><input type="text" class="form-control text_2_bal" readonly=""></td>
+                                    <td><span class='form-control' style='background-color: #eee;'><?php   echo $currency; ?>  
+                                    <input type="text" class="text_2_bal" value="0" readonly=""></span></td>
                                 </tr>   
                                 <tr>
                                     <td class="100"><?php echo display('100') ?></td>
                                     <td><input type="number" class="form-control text_3" name="hundrad" onkeyup="cashCalculator()" onchange="cashCalculator()"></td>
-                                    <td><input type="text" class="form-control text_3_bal" readonly=""></td>
+                                    <td><span class='form-control' style='background-color: #eee;'><?php   echo $currency; ?>  
+                                    <input type="text" class="text_3_bal" value="0" readonly=""></span></td>
                                 </tr>   
                                 <tr>
                                     <td class="50"><?php echo display('50') ?></td>
                                     <td><input type="number" class="form-control text_4" name="fifty" onkeyup="cashCalculator()" onchange="cashCalculator()"></td>
-                                    <td><input type="text" class="form-control text_4_bal" readonly=""></td>
+                                    <td><span class='form-control' style='background-color: #eee;'><?php   echo $currency; ?>  
+                                    <input type="text" class="text_4_bal" value="0" readonly=""></span></td>
                                 </tr>   
                                 <tr>
                                     <td class="20"><?php echo display('20') ?></td>
                                     <td><input type="number" class="form-control text_5" name="twenty" onkeyup="cashCalculator()" onchange="cashCalculator()"></td>
-                                    <td><input type="text" class="form-control text_5_bal" readonly=""></td>
+                                    <td><span class='form-control' style='background-color: #eee;'><?php   echo $currency; ?>  
+                                    <input type="text" class="text_5_bal" value="0" readonly=""></span></td>
                                 </tr>   
                                 <tr>
                                     <td class="10"><?php echo display('10') ?></td>
                                     <td><input type="number" class="form-control text_6" name="ten" onkeyup="cashCalculator()" onchange="cashCalculator()"></td>
-                                    <td><input type="text" class="form-control text_6_bal" readonly=""></td>
+                                    <td><span class='form-control' style='background-color: #eee;'><?php   echo $currency; ?>  
+                                    <input type="text" class="text_6_bal" value="0" readonly=""></span></td>
                                 </tr>   
                                 <tr>
                                     <td class="5"><?php echo display('5') ?></td>
                                     <td><input type="number" class="form-control text_7" name="five" onkeyup="cashCalculator()" onchange="cashCalculator()"></td>
-                                    <td><input type="text" class="form-control text_7_bal" readonly=""></td>
+                                    <td><span class='form-control' style='background-color: #eee;'><?php   echo $currency; ?>  
+                                    <input type="text" class="text_7_bal" value="0" readonly=""></span></td>
                                 </tr>   
                                 <tr>
                                     <td class="2"><?php echo display('2') ?></td>
                                     <td><input type="number" class="form-control text_8" name="two" onkeyup="cashCalculator()" onchange="cashCalculator()"></td>
-                                    <td><input type="text" class="form-control text_8_bal" readonly=""></td>
+                                    <td><span class='form-control' style='background-color: #eee;'><?php   echo $currency; ?>  
+                                    <input type="text" class="text_8_bal" value="0" readonly=""></span></td>
                                 </tr>
                                 <tr>
                                     <td class="1"><?php echo display('1') ?></td>
                                     <td><input type="number" class="form-control text_9" name="one" onkeyup="cashCalculator()" onchange="cashCalculator()"></td>
-                                    <td><input type="text" class="form-control text_9_bal" readonly=""></td>
+                                    <td><span class='form-control' style='background-color: #eee;'><?php   echo $currency; ?>  
+                                    <input type="text" class="text_9_bal" value="0" readonly=""></span></td>
                                 </tr>
                             </tbody>
                             <tfoot>
                                 <tr>
                                     <td colspan="2" align="right"><b><?php echo display('grand_total') ?></b></td>
-                                    <td class=""><input type="text" class="form-control total_money" readonly="" name="grndtotal"></td>
+                                    <td><span class='form-control' style='background-color: #eee;'><?php   echo $currency; ?>  
+                                    <input type="text" class="total_money" value="0.00" readonly="" name="grndtotal"></span></td>
                                 </tr>
                                 <?php echo form_close() ?>
                             </tfoot>

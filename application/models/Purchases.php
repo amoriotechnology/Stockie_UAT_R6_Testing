@@ -1269,7 +1269,7 @@ return $output;
         }
         return false;
     }
-
+  //  $this->db->select('*')->from('supplier_information')->where('supplier_id',$supplier_id)->get()->row();
     //Select All Supplier List
     public function select_all_supplier() {
         $query = $this->db->select('*')
@@ -1282,7 +1282,32 @@ return $output;
         }
         return false;
     }
-
+    public function select_supplier($value) {
+        $query = $this->db->select('*')
+                ->from('supplier_information')
+                ->where('created_by',$this->session->userdata('user_id'))
+                ->where('supplier_id',$value)
+                ->where('status', '1')
+                ->get();
+             
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        }
+      
+    }
+    public function select_supplierbyname($value) {
+        $query = $this->db->select('*')
+                ->from('supplier_information')
+                ->where('created_by',$this->session->userdata('user_id'))
+                ->where('supplier_name',$value)
+                ->where('status', '1')
+                ->get();
+             
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        }
+      
+    }
     //purchase Search  List
     public function purchase_by_search($supplier_id) {
         $this->db->select('a.*,b.supplier_name');

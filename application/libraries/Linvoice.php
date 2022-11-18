@@ -828,6 +828,7 @@ class Linvoice {
         $customer_details = $CI->Invoices->pos_customer_setup();
      
         $currency_details = $CI->Web_settings->retrieve_setting_editdata();
+       
         $taxfield1 = $CI->db->select('tax_id,tax')
         ->from('tax_information')
         ->get()
@@ -843,12 +844,14 @@ class Linvoice {
         ->result_array();
         $voucher_no = $CI->Invoices->commercial_inv_number();
         $data = array(
+            'currency'  =>$currency_details[0]['currency'],
             'title'         => display('add_new_invoice'),
             'discount_type' => $currency_details[0]['discount_type'],
             'taxes'         => $taxfield,
             'tax'           => $taxfield1,
             'product'       =>$prodt,
             'customer_details'   => $customer_details,
+             'customer_currency' =>isset($customer_details[0]['currency_type'])?$customer_details[0]['currency_type']:'',
             'customer_name' => isset($customer_details[0]['customer_name'])?$customer_details[0]['customer_name']:'',
             'customer_id'   => isset($customer_details[0]['customer_id'])?$customer_details[0]['customer_id']:'',
             'bank_list'     => $bank_list,
@@ -953,17 +956,24 @@ class Linvoice {
        // print_r($customer_details);
         $currency_details = $CI->Web_settings->retrieve_setting_editdata();
         $taxfield = $CI->db->select('tax_name,default_value')->from('tax_settings')->get()->result_array();
+        $taxfield1 = $CI->db->select('tax_id,tax')
+        ->from('tax_information')
+        ->get()
+        ->result_array();
         $bank_list = $CI->Web_settings->bank_list();
         $data = array(
+            'currency'  =>$currency_details[0]['currency'],
             'title'         => 'Add New Trucking Invoice',
             'discount_type' => $currency_details[0]['discount_type'],
             'all_supplier'  => $all_supplier,
             'taxes'         => $taxfield,
+            'tax'         => $taxfield1,
             'customer_name' => isset($customer_details[0]['customer_name'])?$customer_details[0]['customer_name']:'',
             'customer_id'   => isset($customer_details[0]['customer_id'])?$customer_details[0]['customer_id']:'',
             'bank_list'     => $bank_list,
             'customer_list' => $get_customer
         );
+    
         $invoiceForm = $CI->parser->parse('invoice/trucking', $data, true);
         return $invoiceForm;
     }

@@ -90,9 +90,11 @@ class Csettings extends CI_Controller {
 
     public function bank_transaction() {
         $bank_list = $this->Settings->get_bank_list();
+        $currency_details = $this->Web_settings->retrieve_setting_editdata();
         $data = array(
             'title' => display('bank_transaction'),
             'bank_list' => $bank_list,
+            'currency' => $currency_details[0]['currency']
         );
         $content = $this->parser->parse('settings/bank_debit_credit_manage', $data, true);
         $this->template->full_admin_html_view($content);

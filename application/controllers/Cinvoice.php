@@ -15,7 +15,8 @@ class Cinvoice extends CI_Controller {
     function __construct() {
 
         parent::__construct();
-
+        $this->load->model('Web_settings');
+       
         $this->db->query('SET SESSION sql_mode = ""');
 
     }
@@ -54,10 +55,12 @@ class Cinvoice extends CI_Controller {
 
         $CI->load->library('linvoice');
         $data=array();
+        $currency_details = $CI->Web_settings->retrieve_setting_editdata();
        // echo $content = $CI->linvoice->invoice_add_form();
        $CI->load->model('Invoices');
        $data['customer'] = $CI->Invoices->profarma_invoice_customer();
        $data=array(
+        'currency'  =>$currency_details[0]['currency'],
         'customer' => $CI->Invoices->profarma_invoice_customer(),
         'voucher_no' => $CI->Invoices->profarma_voucher_no()
        );
@@ -285,12 +288,39 @@ echo json_encode($data);
 
     
     }
+    public function getvendor(){
+        $CI = & get_instance();
+        $this->auth->check_admin_auth();
+        $CI->load->model('Purchases');
+        $value = $this->input->post('value',TRUE);
+        $vendor_info = $CI->Purchases->select_supplier($value);
+        echo json_encode($vendor_info);
+       
+    }
+    public function getvendorbyname(){
+        $CI = & get_instance();
+        $this->auth->check_admin_auth();
+        $CI->load->model('Purchases');
+        $value = $this->input->post('value',TRUE);
+        $vendor_info = $CI->Purchases->select_supplierbyname($value);
+        echo json_encode($vendor_info);
+       
+    }
     public function getcustomer_data(){
         $CI = & get_instance();
         $this->auth->check_admin_auth();
         $CI->load->model('Invoices');
         $value = $this->input->post('value',TRUE);
         $customer_info = $CI->Invoices->getcustomer_data($value);
+        echo json_encode($customer_info);
+    }
+    public function getcustomer_byID(){
+        $CI = & get_instance();
+        $this->auth->check_admin_auth();
+        $CI->load->model('Invoices');
+        $value = $this->input->post('value',TRUE);
+        $customer_info = $CI->Invoices->customerinfo_rpt($value);
+      
         echo json_encode($customer_info);
     }
     public function getdate(){
@@ -971,7 +1001,7 @@ echo json_encode($data);
         exit;
     }
 
-
+ 
 
     //Search Inovoice Item
 
@@ -1013,11 +1043,14 @@ echo json_encode($data);
         $value = $this->linvoice->invoice_list();
 
         $sale = $CI->Invoices->newsale($date);
+       // $CI->load->model('Web_settings');
 
+        $currency_details = $CI->Web_settings->retrieve_setting_editdata();
+        $data['currency']          = $currency_details[0]['currency'];
         // print_r($sale); die();
 
         $data = array(
-
+//'currency'   =>$currency_details[0]['currency'],
             'invoice'         =>  $value,
 
             'sale' => $sale
@@ -1106,9 +1139,10 @@ $uid=$_SESSION['user_id'];
       $invoice = $CI->Invoices->get_profarma_invoice();
       
       $sale = $CI->Invoices->sample($date);
-
+      $currency_details = $CI->Web_settings->retrieve_setting_editdata();
+ 
         $data = array(
-
+            'currency' =>$currency_details[0]['currency'],
             'invoice'         =>  $invoice,
 
             'sale' => $sale
@@ -1213,10 +1247,11 @@ $this->db->update('bootgrid_data');
         $CI->load->model('Invoices');
         $sale = $CI->Invoices->packing_list($date);
         $value = $this->linvoice->packing_invoice_list();
-
+      
+ 
         $data = array(
-
-            'invoice'         =>  $value,
+        
+             'invoice'         =>  $value,
 
             'sale' => $sale
 
@@ -1247,7 +1282,10 @@ $this->db->update('bootgrid_data');
         $sale = $CI->Invoices->ocean_export($date);
         $value = $this->linvoice->ocean_export_tracking_invoice_list();
 
+     
+ 
         $data = array(
+ 
 
             'invoice'         =>  $value,
 
@@ -1274,7 +1312,10 @@ $this->db->update('bootgrid_data');
         $value = $this->linvoice->trucking_invoice_list();
         $sale = $CI->Invoices->sale_trucking($date);
 
+        $currency_details = $CI->Web_settings->retrieve_setting_editdata();
+ 
         $data = array(
+            'currency' =>$currency_details[0]['currency'],
 
             'invoice'         =>  $value,
 
@@ -2349,6 +2390,7 @@ $this->db->update('bootgrid_data');
             'taxes'         => $taxfield,
             'tax'           => $taxfield1,
             'product'       =>$prodt,
+           
             'customer_name' => isset($customer_details[0]['customer_name'])?$customer_details[0]['customer_name']:'',
             'customer_id'   => isset($customer_details[0]['customer_id'])?$customer_details[0]['customer_id']:'',
             'bank_list'     => $bank_list,
@@ -3223,6 +3265,7 @@ $this->db->update('bootgrid_data');
                  $avl = $this->input->post('available_quantity');
                  $p_id = $this->input->post('product_id');
                  // print_r($p_id); exit();
+                 $p_id = $this->input->post('product_id');
                  $quantity = $this->input->post('product_quantity');
                  $rate = $this->input->post('product_rate');
                  $t_price = $this->input->post('total_price');

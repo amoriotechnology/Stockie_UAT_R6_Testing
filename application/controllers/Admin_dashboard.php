@@ -1114,7 +1114,12 @@ if (!empty($best_sales_product))
         $CI = & get_instance();
         $CI->load->model('Reports');
         $data = array('title' => "Reports | Daily Closing");
+        $currency_details    = $CI->Web_settings->retrieve_setting_editdata();
+        $data=array();
         $data = $this->Reports->accounts_closing_data();
+       $data['currency']=  $currency_details[0]['currency'];
+      
+      
         $content = $this->parser->parse('accounts/closing_form', $data, true);
         $this->template->full_admin_html_view($content);
     }

@@ -101,7 +101,7 @@ class Lpurchase {
 
 
         $data = array(
-
+            'currency' => $currency_details[0]['currency'],
             'title'         => display('add_purchase'),
 
             'all_supplier'  => $all_supplier,
@@ -320,7 +320,7 @@ class Lpurchase {
     
 
         $data = array(
-
+            'currency' => $currency_details[0]['currency'],
             'title'         => 'Add Purchase Order',
 
             'all_supplier'  => $all_supplier,
@@ -341,8 +341,7 @@ class Lpurchase {
 
         );
 
-        // echo "<pre>";
-        // print_r($data['category_list']);die();
+        // echo "<pre>";   print_r($data);die();
 
     
 

@@ -1,4 +1,18 @@
 <!-- Bank debit credit manage -->
+<style>
+            input {
+    border: none;
+    background-color: #eee;
+ }
+textarea:focus, input:focus{
+   
+    outline: none;
+}
+ .text-right {
+    text-align: left; 
+}
+   
+    </style>
 <div class="content-wrapper">
     <section class="content-header">
         <div class="header-icon">
@@ -103,7 +117,9 @@
                         <div class="form-group row">
                             <label for="ammount" class="col-sm-3 col-form-label"><?php echo display('ammount') ?> <i class="text-danger">*</i></label>
                             <div class="col-sm-6">
-                                <input type="number" class="form-control" name="ammount" id="ammount" required="" placeholder="<?php echo display('ammount') ?>" tabindex="5"/>
+                          <span class='form-control' style='background-color: #eee;'><?php   echo $currency; ?>  
+                                <input type="number" name="ammount" id="ammount" required="" placeholder="<?php echo display('ammount') ?>" tabindex="5"/>
+             </span>
                             </div>
                         </div>
 
