@@ -61,3 +61,13 @@
       
     </div>
   </div>
+<script type="text/javascript">
+function hide()
+{
+setTimeout(hide, 3000);
+function hide() {
+ $('#myModal').modal('hide');
+
+}
+}
+</script>

@@ -41,20 +41,7 @@ Product details page start -->
         }
         ?>
 
-        <div class="row">
-            <div class="col-sm-12">
-               
-
-                    <a href="<?php echo base_url('Cproduct') ?>" class="btn btn-info m-b-5 m-r-2"><i class="ti-plus"> </i> <?php echo display('add_product') ?> </a>
-
-                    <a href="<?php echo base_url('Cproduct/add_product_csv') ?>" class="btn btn-success m-b-5 m-r-2"><i class="ti-plus"> </i> <?php echo display('add_product_csv') ?> </a>
-
-                    <a href="<?php echo base_url('Cproduct/manage_product') ?>" class="btn btn-primary m-b-5 m-r-2"><i class="ti-align-justify"> </i>  <?php echo display('manage_product') ?> </a>
-
-                </div>
-            
-        </div>
-
+        
 
 
         <div class="row">
@@ -62,233 +49,83 @@ Product details page start -->
                 <div class="panel panel-bd lobidrag">
                     <div class="panel-heading">
                         <div class="panel-title">
-                            <h4><?php echo display('product_details') ?> </h4>
+                            <h4><?php echo display('product_details') ?></h4> </h4>
                         </div>
                     </div>
                     <div class="panel-body">
-                        <div class="col-sm-6">
-                        <h2> <span><?php echo display('product_name') ?>: </span><span>{product_name}</span></h2>
-                        <h4> <span ><?php echo display('model') ?>:</span> <span>{product_model}</span></h4>
-                        <h4> <span><?php echo display('price') ?>:</span> <span> 
-                                <?php echo (($position == 0) ? "$currency {price}" : "{price} $currency") ?></span></h4>
-                            </div>
-                            <div class="col-sm-6 text-right">
-                                <img src="<?php echo $img;?>" class="img" height="100" width="80">
-                            </div>
-                        <table class="table">
-                            <tr>
-                                <th><?php echo display('total_purchase') ?> = <span class="text-danger">{total_purchase}</span></th>
-                                <th><?php echo display('total_sales') ?> = <span class="text-danger"> {total_sales}</span></th>
-                                <th><?php echo display('stock') ?> = <span class="text-danger"> {stock}</span></th>
-                            </tr>
-                        </table>
+                     <div class="row">
+                        <div class="col-sm-4"><img src="
+                            <?php echo $product_details[0]['image']; ?>" style='width: 100%;'></div>
+                         <div class="col-sm-4">
+                             <table class="table table-bordered">
+                                 <tr >
+                                     <th colspan="2" style="text-align:center;">product Details</th>
+
+                                 </tr>
+                               <tr><td>Product Name</td><td><?php echo $product_details[0]['product_name']; ?></td></tr>
+                               <tr><td>Product model</td><td><?php echo $product_details[0]['product_model']; ?></td></tr>
+                               <tr><td>Avaailablity</td><td><?php echo $product_details[0]['p_quantity']; ?></td></tr>
+                               <tr><td>Product price</td><td><?php echo $product_details[0]['price']; ?></td></tr>
+                               <tr><td>supplier Price</td><td><?php echo $product_details[0]['supplier_price']; ?></td></tr>
+                              
+                              
+                             </table>
+                         </div>
+                         
+                         <div class="col-sm-4   ">
+
+                            <div class="card">
+  <img src="https://countryflagsapi.com/png/<?php echo $product_details[0]['iso3']; ?>" alt="John" style="width:30%;float: inherit;">
+  <h1><?php echo $product_details[0]['supplier_name']; ?></h1>
+  <p class="title"><?php echo $product_details[0]['address']; ?></p>
+  <p class="title"><?php echo $product_details[0]['email_address']; ?></p>
+  <p><?php echo $product_details[0]['country']; ?></p>
+  
+  
+</div>
+
+                           </div>
+                         <div class="col-sm-6"></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-sm-12">
+                             
+<ul class="nav nav-tabs" style="    border-bottom: 1px solid;">
+    <li class="active"><a data-toggle="tab" href="#home">Sales Invoice</a></li>
+    <li><a data-toggle="tab" href="#menu1">Packing Details</a></li>
+
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>Sales Invoice</h3>
+      <p>Sales Invoice</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Packing Details</h3>
+      <p>Packing</p>
+    </div>
+   
+   
+  </div>
+
+
+                        </div>
+
+                         
+                     </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Total Purchase report -->
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="panel panel-bd lobidrag">
-                    <div class="panel-heading">
-                        <div class="panel-title">
-                            <h4><?php echo display('purchase_report') ?> </h4>
-                        </div>
-                    </div>
-                    <div class="panel-body">
-                        <div class="table-responsive">
-                            <table id="datatable" class="table table-bordered table-striped table-hover">
-                                <thead>
-                                    <tr>
-                                        <th><?php echo display('date') ?></th>
-                                        <th><?php echo display('invoice_no') ?></th>
-                                        <th><?php echo display('invoice_id') ?></th>
-                                        <th><?php echo display('supplier_name') ?></th>
-                                        <th><?php echo display('quantity') ?></th>
-                                        <th><?php echo display('rate') ?></th>
-                                        <th class="text-right;"><?php echo display('total_ammount') ?></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php
-                                    if ($purchaseData) {
-                                        ?>
-                                        {purchaseData}
-                                        <tr>
-                                            <td>{final_date}</td>
-                                            <td>
-                                                <a href="<?php echo base_url() . 'Cpurchase/purchase_details_data/{purchase_id}'; ?>">
-                                                    {chalan_no}
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="<?php echo base_url() . 'Cpurchase/purchase_details_data/{purchase_id}'; ?>">
-                                                    {purchase_id}
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="<?php echo base_url() . 'Csupplier/supplier_ledger_info/{supplier_id}'; ?>">{supplier_name}</a>
-                                            </td>
-                                            <td  class="text-right;">{quantity}</td>
-                                            <td  class="text-right;"><?php echo (($position == 0) ? "$currency {rate}" : "{rate} $currency") ?></td>
-                                            <td class="text-right;"> <?php echo (($position == 0) ? "$currency {total_amount}" : "{total_amount} $currency") ?></td>
-                                        </tr>
-                                        {/purchaseData}
-                                        <?php
-                                    }
-                                    ?>
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <td colspan="4" class="text-right"><b><?php echo display('total') ?></b></td>
-                                        
-                                        <td  class="text-right"> {total_purchase}</td>
-                                        <td class="text-right"><b><?php echo display('grand_total') ?></b></td>
-                                        <td class="text-right"><b> <?php echo (($position == 0) ? "$currency {purchaseTotalAmount}" : "{purchaseTotalAmount} $currency") ?></b></td>
-                                    </tr>
-                                </tfoot>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    
 
         <!--Total sales report -->
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="panel panel-bd lobidrag">
-                    <div class="panel-heading">
-                        <div class="panel-title">
-                            <h4><?php echo display('sales_report') ?> </h4>
-                        </div>
-                    </div>
-                    <div class="panel-body">
-                        <div class="table-responsive">
-                            <table id="dataTableExample3" class="table table-bordered table-striped table-hover">
-                                <thead>
-                                    <tr>
-                                        <th><?php echo display('date') ?></th>
-                                        <th><?php echo display('invoice_id') ?></th>
-                                        <th><?php echo display('invoice_no') ?></th>
-                                        <th><?php echo display('customer_name') ?></th>
-                                        <th><?php echo display('quantity') ?></th>
-                                        <th><?php echo display('rate') ?></th>
-                                        <th class="text-right;"><?php echo display('total_ammount') ?></th>
-                                        <th class="text-right;">Invoice Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php
-                                    if ($salesData) {
-                                        ?>
-                                        {salesData}
-                                        <tr>
-                                            <td>{final_date}</td>
-                                            <td>
-                                                <a href="<?php echo base_url() . 'Cinvoice/invoice_inserted_data/{invoice_id}'; ?>">
-                                                    {invoice_id}
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="<?php echo base_url() . 'Cinvoice/invoice_inserted_data/{invoice_id}'; ?>">
-                                                    {invoice}
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="<?php echo base_url() . 'Ccustomer/customer_ledger_report'; ?>">{customer_name}</a>
-                                            </td>
-                                            <td  class="text-right;">{quantity}</td>
-                                            <td  class="text-right;"> <?php echo (($position == 0) ? "$currency {rate}" : "{rate} $currency") ?></td>
-                                            <td class="text-right;"> <?php echo (($position == 0) ? "$currency {total_price}" : "{total_price} $currency") ?></td>
-                                            <td class="text-right;"> <?php echo (($position == 0) ? "$currency {total_amount}" : "{total_amount} $currency") ?></td>
-                                        </tr>
-                                        {/salesData}
-                                        <?php
-                                    }
-                                    ?>
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <td colspan="3" class="text-right;"></td>
-                                        <td class="text-right"><b><?php echo display('total') ?></b></td>
-                                        <td  class="text-right;">{total_sales}</td>
-                                        <td colspan="2" class="text-right"><b><?php echo display('grand_total') ?></b></td>
-                                        <td  class="text-right;"><b> <?php echo (($position == 0) ? "$currency {salesTotalAmount}" : "{salesTotalAmount} $currency") ?></b></td>
-                                    </tr>
-                                </tfoot>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
 
-
-          <div class="row">
-            <div class="col-sm-12">
-                <div class="panel panel-bd lobidrag">
-                    <div class="panel-heading">
-                        <div class="panel-title">
-                            <h4>Packing List Report</h4>
-                        </div>
-                    </div>
-                    <div class="panel-body">
-                        <div class="table-responsive">
-                            <table id="dataTableExample3" class="table table-bordered table-striped table-hover">
-                                <thead>
-                                    <tr>
-                                        <th><?php echo display('date') ?></th>
-                                        <th><?php echo display('invoice_no') ?></th>
-                                        <th>Thickness</th>
-                                        <th>Height</th>
-                                        <th>Width</th>
-                                        <th>Area</th>
-                                  
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php
-                                    if ($packingListData) {
-                                        ?>
-                                        {packingListData}
-                                        <tr>
-                                            <td>{invoice_date}</td>
-                                            <td>
-                                                <a href="<?php echo base_url() . 'Cpurchase/packing_list_update_form/{expense_packing_id}'; ?>">
-                                                    {invoice_no}
-                                                </a>
-                                            </td>
-                                            <td>
-                                                {thickness}
-                                            </td>
-                                            <td>
-                                                {height}
-                                            </td>
-                                            <td class="text-right;">{width}</td>
-                                            <td class="text-right;">{area}</td>
-                                        </tr>
-                                        {/packingListData}
-                                        <?php
-                                    }
-                                    ?>
-                                </tbody>
-                              <!--   <tfoot>
-                                    <tr>
-                                        <td colspan="3" class="text-right;"></td>
-                                        <td class="text-right"><b><?php echo display('total') ?></b></td>
-                                        <td  class="text-right;">{total_sales}</td>
-                                        <td colspan="2" class="text-right"><b><?php echo display('grand_total') ?></b></td>
-                                        <td  class="text-right;"><b> <?php echo (($position == 0) ? "$currency {salesTotalAmount}" : "{salesTotalAmount} $currency") ?></b></td>
-                                    </tr>
-                                </tfoot> -->
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+          
 
 
     </section>

@@ -139,7 +139,7 @@ $today = date('Y-m-d');
       <tr>
       <th class="ID">ID</th>
         <th class="Invoice No">Invoice No</th>
-        <th class="Expense Packing ID">Expense Packing ID</th>
+        <th class="Expense Packing ID">Sales Packing ID</th>
         <th class="Gross Weight">Gross Weight</th>
         <th class="Container No.">Container No.</th>
          <th class="Invoice Date">Invoice Date</th>

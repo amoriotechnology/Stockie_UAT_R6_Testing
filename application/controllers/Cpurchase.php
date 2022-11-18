@@ -1,4 +1,4 @@
-<?php
+    <?php
 
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
@@ -280,18 +280,22 @@ $CI = & get_instance();
 
     //Insert purchase
     public function insert_purchase() {
+
+
+
+
         $CI = & get_instance();
         $CI->auth->check_admin_auth();
         $CI->load->model('Purchases');
-        $CI->Purchases->purchase_entry();
-        $this->session->set_userdata(array('message' => display('successfully_added')));
-        if (isset($_POST['add-purchase'])) {
-            redirect(base_url('Cpurchase/manage_purchase'));
-            exit;
-        } elseif (isset($_POST['add-purchase-another'])) {
-            redirect(base_url('Cpurchase'));
-            exit;
-        }
+        $data=$CI->Purchases->purchase_entry();
+
+           echo $data;  
+           $this->session->set_userdata(array('invoiceid' =>$data)); 
+           redirect('Cpurchase');
+         
+         
+    
+
     }
 
 

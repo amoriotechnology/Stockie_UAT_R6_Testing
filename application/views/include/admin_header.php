@@ -13,6 +13,23 @@ $out_of_stock = $CI->Reports->out_of_stock_count();
 
 <style>
 
+    .modal-header {
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #1c2350;
+    color:#fff;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+ }
+ .close {
+  color: #fff !important;
+}
+
+
 .navbar-custom-menu>.navbar-nav>li>.dropdown-menu {
     position: absolute;
     right: 0;

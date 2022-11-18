@@ -88,6 +88,7 @@ class Lpurchase {
 
         $all_product_list = $CI1->Products->all_product_list();
         $all_supplier = $CI1->Purchases->select_all_supplier();
+        $expense_packing_list        = $CI1->Purchases->expense_package();
            $supplier      = $CI->Suppliers->supplier_list("110", "0");
 
         $currency_details = $CI->Web_settings->retrieve_setting_editdata();
@@ -118,9 +119,13 @@ class Lpurchase {
             'discount_type' => $currency_details[0]['discount_type'],
 
             'bank_list'     => $bank_list,
+            'packinglist'=>$expense_packing_list,
 
         );
 
+      
+        // print_r($all_supplier); 
+        // exit();
     
         $purchaseForm = $CI->parser->parse('purchase/add_purchase_form', $data, true);
        

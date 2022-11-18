@@ -1,4 +1,3 @@
-            
 
 <!-- Invoice js -->
 
@@ -12,7 +11,7 @@
 
 <!-- Add New Invoice Start -->
 
-<div class="content-wrapper">
+<div class="content-wrapper" style="">
 
     <section class="content-header">
 
@@ -44,53 +43,10 @@
 
 
 
-    <section class="content">
+    <section class="content" >
 
-        <!-- Alert Message -->
 
-        <?php
-
-        $message = $this->session->userdata('message');
-
-        if (isset($message)) {
-
-            ?>
-
-            <div class="alert alert-info alert-dismissable">
-
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-
-                <?php echo $message ?>                    
-
-            </div>
-
-            <?php
-
-            $this->session->unset_userdata('message');
-
-        }
-
-        $error_message = $this->session->userdata('error_message');
-
-        if (isset($error_message)) {
-
-            ?>
-
-            <div class="alert alert-danger alert-dismissable">
-
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-
-                <?php echo $error_message ?>                    
-
-            </div>
-
-            <?php
-
-            $this->session->unset_userdata('error_message');
-
-        }
-
-        ?>
+        
 
         <div class="row">
 
@@ -146,7 +102,7 @@
 
                     <div class="panel-body">
 
-                        <?php echo form_open_multipart('Cinvoice/manual_sales_insert',array('class' => 'form-vertical', 'id' => 'insert_sale','name' => 'insert_sale'))?>
+                        <?php echo form_open_multipart('Cinvoice/Sale_manual_insert',array('class' => 'form-vertical', 'id' => 'insert_sale2','name' => 'insert_sale'))?>
 
                         <div class="row">
 
@@ -606,7 +562,7 @@
 
                                                
                                          
-                                                <button  class="btn btn-danger text-right red" type="button" value="<?php echo display('delete')?>" onclick="deleteRow(this)" tabindex="8"><i class="fa fa-close"></i></button>
+                                                <button  class="btn btn-danger text-right red" type="button" value="<?php echo display('delete')?>" onclick="deleteRow(this)" tabindex="8"><i class="fa fa-close" ></i></button>
                                             </td>
                                            
                                     </tr>
@@ -636,30 +592,35 @@
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-sm-6 ">
+                            <div class="col-sm-6">
                                 <table>
+                                   
                                 <tr>
                                     <td>
-                                    <input type="hidden" name="packing_id" value="" id="packing_id">
+    
                                         <input type="submit" id="add_purchase" class="btn btn-primary btn-large" name="add-packing-list" value="Save" />
                                     </td>
+                                    <?php 
+                                if($invoiceid !==''){ ?>
                                     <td>&nbsp;</td>
-                                    <td >
-                                        
-                                    <a href="<?php echo base_url('Cinvoice/invoice_inserted_data/'); ?><?php echo $this->session->userdata('invoiceid');?>" class="btn btn-primary" style="color:#fff;" id="send_email1">Pdf Download</a>
-
-                                        
-                                        
-
-
+                                    <td>
+    
+                                       <a href="" class="btn btn-primary" Style='color:#fff;'>Donwload</a>
                                     </td>
                                     <td>&nbsp;</td>
-                                    <td> <a href="<?php echo base_url('Cinvoice/manage_invoice/'); ?><?php echo $this->session->userdata('invoiceid');?>" class="btn btn-primary" id="send_email2" style="color:#fff;">Send Email with attachments</a></td>
-                                    <td>&nbsp;</td>
-                                    <td><a href="<?php echo base_url('Cinvoice/manage_invoice/'); ?><?php echo $this->session->userdata('invoiceid');?>" class="btn btn-primary" id="send_email3" style="color:#fff;">Submit</a></td>
-                                   
+                                     <td>
+    
+                                       <a href="" class="btn btn-primary" Style='color:#fff;'>Email invoice</a>
+                                    </td>
+                                     <td>
+                                        <td>&nbsp;</td>
+                <td>
+                                       <a href="" class="btn btn-primary" Style='color:#fff;'>Submit</a>
+                                    </td>
+
                                      
-                                   
+                                <?php }?>
+                                    
                                    
                                   
                                   
@@ -669,10 +630,7 @@
                             </div>
                         </div>
 
-  <div class="form-group row">
-      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#packmodal" id="packbutton">Choose Packing  Modal</button>
 
-  </div>
                            <div class="form-group row">
 
                                     <label for="billing_address" class="col-sm-4 col-form-label">Account Details/Additional Information</label>
@@ -936,7 +894,7 @@ gtotal();
 
           <div class="modal-body">
 
-            <?php echo form_open('Cinvoice/invoice_inserted_data_manual', array('class' => 'form-vertical', 'id' => '', 'name' => '')) ?>
+            <?php echo form_open('Cinvoice/Sale_manual_insert', array('class' => 'form-vertical', 'id' => '', 'name' => '')) ?>
 
             <div id="outputs" class="hide alert alert-danger"></div>
 
@@ -1166,7 +1124,7 @@ gtotal();
                                 <input type="submit" id="add-product" class="btn btn-primary btn-large" name="add-product" value="<?php echo display('save') ?>" tabindex="10"/>
 
                             
-                             
+                                <input type="submit" value="<?php echo display('save_and_add_another') ?>" name="add-product-another" class="btn btn-large btn-success" id="add-product-another" tabindex="9">
                             </div>
                         </div>
 
@@ -1577,93 +1535,14 @@ gtotal();
 		</div>
 	</div>
 </div>
-<!-- start Modal for all action -->
-<div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content" style="    margin-top: 190px;">
-        <div class="modal-header" style="">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title"><?php echo display('new_invoice') ?></h4>
-        </div>
-        <div class="modal-body">
-          
-          <h4>Succefully inserted</h4>
-     
-        </div>
-        <div class="modal-footer">
-          
-        </div>
-      </div>
-      
-    </div>
-  </div>
-
-  <!-- End Modal for all action -->
 <!-- Invoice Report End -->
 
-
-
-<div id="packmodal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content" style="width: 130%;">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Choose your Package </h4>
-      </div>
-      <div class="modal-body">
-        <table class="table table-bordered">
-            <tr>
-                <th>Choose your Package   </th>
-                <th>Sno</th>
-                <th>Novice No</th>
-                <th>Sales Packing ID</th>
-                <th>Gross Weight</th>
-                <th>Container NO</th>
-                   <th>Thickness</th>
-                 <th>Invoice Date</th>               
-            </tr>
-            <?php 
-            $i=0;
-            foreach($packinglist as $pack)
-                { ?>
-
-            <tr>
-                <td><input type="radio" name="packing" id="packing" onclick="packing('<?php echo $pack['invoice_no']; ?>')" ></td>
-                <td><?php echo $j=$i+1; ?></td>
-                <td><?php echo $pack['invoice_no']; ?></td>
-                <td><?php echo $pack['expense_packing_id']; ?></td>
-                <td><?php echo $pack['gross_weight']; ?></td>
-                
-                <td><?php echo $pack['container_no']; ?></td>
-                <td><?php echo $pack['thickness']; ?></td>
-                <td><?php echo $pack['invoice_date']; ?></td>
-
-            </tr>
-        <?php $i++; } ?>
-        </table>
-      </div>
-      
-    </div>
-
-  </div>
-</div>
 <script type="text/javascript">
     $('#add_purchase').on('click', function() {
-    $('#send_email1').show();
-    $('#send_email2').show();
-    $('#send_email3').show();
-     $('#myModal').modal('show');
-     hide();
+
     });
      $(function() { 
-        $('#send_email1').hide();
-        $('#send_email2').hide();
-        $('#send_email3 ').hide();
-
+        $('#send_email').hide();
        var data = {
     
        };
@@ -1869,20 +1748,16 @@ $(document).ready(function () {
     });
 });
 
-function packing(id)
-{
-    $('#packing_id').val(id);
-    alert('packing linked with your Invoice Please countinue the Invoice');
-     $("#packmodal").modal('hide');
-     $("#packbutton").hide();
-}
-
 </script>
 
 
 
 
-
+<script type="text/javascript">
+    $(window).load(function() {
+  $("html, body").animate({ scrollTop: $(document).height() }, 2000);
+});
+</script>
 
 
 

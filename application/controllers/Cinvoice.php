@@ -520,6 +520,8 @@ echo json_encode($data);
     public function manual_sales_insert(){
 
 
+
+
         $CI = & get_instance();
 
         $CI->auth->check_admin_auth();
@@ -561,8 +563,8 @@ echo json_encode($data);
         }
 
 
+        $this->session->set_userdata('invoiceid',$invoice_id);
 
-        echo json_encode($data);
 
     }
 

@@ -103,27 +103,16 @@
     <section class="content">
         <!-- Alert Message -->
         <?php
-            $message = $this->session->userdata('message');
+            $message = $this->session->userdata('alert');
             if (isset($message)) {
         ?>
-        <div class="alert alert-info alert-dismissable">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
-            <?php echo $message ?>                    
-        </div>
+       <script type="text/javascript">
+           alert(2);
+       </script>
         <?php 
-            $this->session->unset_userdata('message');
-            }
-            $error_message = $this->session->userdata('error_message');
-            if (isset($error_message)) {
-        ?>
-       <!-- <div class="alert alert-danger alert-dismissable">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-            <?php //echo $error_message ?>                    
-        </div>-->
-        <?php 
-            $this->session->unset_userdata('error_message');
-            }
-        ?>
+           
+           }
+           ?>
 
         <!-- Purchase report -->
         <div class="row">
@@ -454,6 +443,8 @@
                         <div class="row">
 
                             <div class="col-sm-12">
+                                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#packmodal" id="packbutton">Choose Packing  Modal</button>
+                            </div>
                                <div class="form-group row">
                                     <label for="eta" class="col-sm-2 col-form-label">Remarks / Details
                                     </label>
@@ -529,9 +520,21 @@
                         <div class="form-group row" style="
     margin-top: 1%;
 ">
+
                             <div class="col-sm-6">
-                                <input type="submit" id="add_purchase" class="btn btn-primary btn-large" name="add-purchase" value="Submit" />
-                                <input type="submit" value="Submit And Another One" name="add-purchase-another" class="btn btn-large btn-success" id="add_purchase_another" >
+                                <input type="hidden" name="packing_id" value="<?php echo $this->session->userdata('purchase_id');?>" id="packing_id2s">
+                                <input type="hidden" name="packing_id" value="" id="packing_id">
+                                <input type="submit" id="add_purchase" class="btn btn-primary btn-large" name="add-purchase" value="Save" />
+
+                                <?php 
+                                $purchase_id=$this->session->userdata('purchase_id');
+                                if(isset($purchase_id))
+                                    {?>
+                                     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+                                        <br>
+
+                                    <?php } ?>
+                            
                             </div>
                         </div>
 
@@ -559,7 +562,75 @@
         </div>
     </section>
 
-   
+
+  <!-- Modal -->
+ <!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+  
+
+   <div id="packmodal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content" style="width: 130%;">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Choose your Package </h4>
+      </div>
+      <div class="modal-body">
+        <table class="table table-bordered">
+            <tr>
+                <th>Choose your Package   </th>
+                <th>Sno</th>
+                <th>Novice No</th>
+                <th>Expense Packing ID</th>
+                <th>Gross Weight</th>
+                <th>Container NO</th>
+                   <th>Thickness</th>
+                 <th>Invoice Date</th>               
+            </tr>
+            <?php 
+            $i=0;
+            foreach($packinglist as $pack)
+                { ?>
+
+            <tr>
+                <td><input type="radio" name="packing" id="packing" onclick="packing('<?php echo $pack['invoice_no']; ?>')" ></td>
+                <td><?php echo $j=$i+1; ?></td>
+                <td><?php echo $pack['invoice_no']; ?></td>
+                <td><?php echo $pack['expense_packing_id']; ?></td>
+                <td><?php echo $pack['gross_weight']; ?></td>
+                
+                <td><?php echo $pack['container_no']; ?></td>
+                <td><?php echo $pack['thickness']; ?></td>
+                <td><?php echo $pack['invoice_date']; ?></td>
+
+            </tr>
+        <?php $i++; } ?>
+        </table>
+      </div>
+      
+    </div>
+
+  </div>
+</div>
 
 
 </div>
@@ -1087,5 +1158,13 @@ $('.remove-preview').on('click', function() {
 
 
  CKEDITOR.replace('remarks');
-                
+      
+
+      function packing(id)
+{
+    $('#packing_id').val(id);
+    alert('packing linked with your Invoice Please countinue the Invoice');
+     $("#packmodal").modal('hide');
+     $("#packbutton").hide();
+}          
   </script>
