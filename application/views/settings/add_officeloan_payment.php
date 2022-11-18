@@ -39,6 +39,18 @@
             $this->session->unset_userdata('error_message');
             }
         ?>
+                <style>
+            input {
+    border: none;
+    background-color: #eee;
+ }
+textarea:focus, input:focus{
+   
+    outline: none;
+}
+
+   
+    </style>
         <div class="row">
             <div class="col-sm-12">
                
@@ -88,7 +100,9 @@
                         <div class="form-group row">
                             <label for="ammount" class="col-sm-3 col-form-label"><?php echo display('ammount') ?> <i class="text-danger">*</i></label>
                             <div class="col-sm-6">
-                               <input type="number" class="form-control" name="ammount" id="ammount" required="" placeholder="<?php echo display('ammount') ?>" min="0" tabindex="3"/>
+                            <span class='form-control' style='background-color: #eee;'>$  
+                               <input type="number"  name="ammount" id="ammount" required="" placeholder="<?php echo display('ammount') ?>" min="0" tabindex="3"/>
+                  </span>
                             </div>
                         </div>
                            <div class="form-group row" id="payment_from">

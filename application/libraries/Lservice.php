@@ -132,7 +132,8 @@ class Lservice {
         $CI = & get_instance();
 
         $CI->load->model('Service');
-
+        $CI->load->model('Web_settings');
+        $currency_details    = $CI->Web_settings->retrieve_setting_editdata();
         $taxfield = $CI->db->select('tax_name,default_value')
 
                 ->from('tax_settings')
@@ -142,7 +143,7 @@ class Lservice {
                 ->result_array();
 
         $data = array(
-
+'currency'  => $currency_details[0]['currency'],
              'title'    => display('add_service'),
 
              'taxfield' => $taxfield
@@ -263,6 +264,7 @@ class Lservice {
                 ->result_array();
 
         $data = array(
+            'currency'    =>$currency_details[0]['currency'],
 
             'title'         => display('service_invoice'),
 

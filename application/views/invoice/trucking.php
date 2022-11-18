@@ -25,7 +25,19 @@
             </ol>
         </div>
     </section>
-
+    <style>
+        input {
+    border: none;
+    background-color: #eee;
+ }
+textarea:focus, input:focus{
+   
+    outline: none;
+}
+ .text-right {
+    text-align: left; 
+}
+</style>
     <section class="content">
         <!-- Alert Message -->
         <?php
@@ -225,6 +237,21 @@
 
 <br>
                         <div class="table-responsive">
+                        <table class="table table-bordered table-hover">
+                            <tr>
+                                <td style="width:80%;border:none;text-align:right;font-weight:bold;">Tax : 
+                                 </td>
+                                <td>
+                            <select name="tx" id="product_tax" class="form-control" onselect="gtotal();">
+                                <option value="Select the Tax" selected>Select the Tax</option>
+                              <?php foreach($tax as $tx){?>
+  
+                                    <option value="<?php echo $tx['tax_id'].'-'.$tx['tax'].'%';?>">  <?php echo $tx['tax_id'].'-'.$tx['tax'].'%';  ?></option>
+                                <?php } ?> 
+                            </select>
+                            </td>
+                            </tr>
+                        </table>
                             <table class="table table-bordered table-hover" id="truckingTable">
                                 <thead>
                                      <tr>
@@ -254,17 +281,17 @@
                                         <td class="text-right">
                                             <input type="text" name="description[]" id="" required="" min="0" class="form-control text-right" value=""  tabindex="6"/>
                                         </td>
-                                        <td class="test">
-                                            <input type="text" name="product_rate[]" required="" onkeyup="calculate_store(1);" onchange="calculate_store(1);" id="product_rate_1" class="form-control product_rate_1 text-right" placeholder="0.00" value="" min="0" tabindex="7"/>
-                                        </td>
+                                        <td><span class='form-control' style='background-color: #eee;'><?php echo $currency;  ?>
+                                            <input type="text" name="product_rate[]" required="" onkeyup="calculate_store(1);" onchange="calculate_store(1);" id="product_rate_1" class="product_rate_1" placeholder="0.00" value="" min="0" tabindex="7"/>
+                                  </span>  </td>
 
                                         <td class="text-right">
                                             <input class="form-control" type="text" name="pro_no[]" id="pro_no" value=""  />
                                         </td>
                                            
-                                        <td class="text-right">
-                                            <input class="form-control total_price text-right" type="text" name="total_price[]" id="total_price_1" value="0.00" readonly="readonly" />
-                                        </td>
+                                        <td><span class='form-control' style='background-color: #eee;'><?php echo $currency;  ?>
+                                            <input class="total_price" type="text" name="total_price[]" id="total_price_1" value="0.00" readonly="readonly" />
+                                  </span></td>
                                         <td>
                                             <button  class="btn btn-danger text-right red" type="button" value="<?php echo display('delete')?>" onclick="deleteRow(this)" tabindex="8"><i class="fa fa-close"></i></button>
                                         </td>
@@ -273,14 +300,42 @@
                                 <tfoot>
                                     <tr>
                                         
-                                        <td class="text-right" colspan="5"><b>Overall Total:</b></td>
-                                        <td class="text-right">
-                                            <input type="text" id="Total" class="text-right form-control" name="total" value="0.00" readonly="readonly" />
-                                        </td>
-                                        <td> <button type="button" id="add_invoice_item" class="btn btn-info" name="add-invoice-item"  onClick="addTruckingOrderField('addPurchaseItem')"  tabindex="9"/><i class="fa fa-plus"></i></button>
+                                        <td style="text-align:right;" colspan="5"><b>Overall Total:</b></td>
+                                        <td><span class='form-control' style='background-color: #eee;'><?php echo $currency;  ?>
+                                            <input type="text" id="Total"  name="total" value="0.00" readonly="readonly" />
+                                  </span></td>
+                                        
 
-                                       <input type="hidden" name="baseUrl" class="baseUrl" value="<?php echo base_url();?>"/></td>
+                                       <input type="hidden" name="baseUrl" class="baseUrl" value="<?php echo base_url();?>"/>
                                     </tr>
+                                    <tr>
+                                   
+                                   <td style="text-align:right;" colspan="5"><b>Tax Details :</b></td>
+                                   <td style="text-align:left;">
+                                 <span class="form-control" style="background-color: #eee;"><?php echo $currency;  ?>
+                                       <input type="text" id="tax_details" class="text-right" value="0.00" name="tax_details"  readonly="readonly" />
+                                       </span></td>
+                               
+                                      
+                               </tr>
+                               <tr> <td style="text-align:right;" colspan="5"><b><?php echo "Grand Total" ?>:</b></td>
+                                    <td><span class='form-control' style='background-color: #eee;'><?php echo $currency;  ?>
+                                            <input type="text" id="gtotal"  name="gtotal" value="0.00" readonly="readonly" />
+                                 </span></td>
+                                 <td> <button type="button" id="add_invoice_item" class="btn btn-info" name="add-invoice-item"  onClick="addTruckingOrderField('addPurchaseItem')"  tabindex="9"/><i class="fa fa-plus"></i></button></td>
+  </tr>
+                                    <tr> <td style="text-align:right;"  colspan="5"><b><?php echo "Grand Total" ?>:</b><br/><b>(Preferred Currency)</b></td>
+                                    <td>
+                                            <span class="form-control" style="background-color: #eee;" >
+                                            <input type="text" id="customer_gtotal"  name="customer_gtotal" value="0.00" readonly="readonly" />
+                                            </span></td>
+                                      
+
+                                            <input type="text" id="final_gtotal"  name="final_gtotal" />
+
+                                            <input type="hidden" name="baseUrl" class="baseUrl" value="<?php echo base_url();?>"/></td>
+                                    </tr>   
+                                </tfoot>
                                     <!--     <tr>
                                        
                                         <td class="text-right" colspan="4"><b><?php echo display('discounts') ?>:</b></td>
@@ -512,3 +567,116 @@
                 </div><!-- /.modal-dialog -->
 
             </div><!-- /.modal -->
+<script>
+        var csrfName = '<?php echo $this->security->get_csrf_token_name();?>';
+var csrfHash = '<?php echo $this->security->get_csrf_hash();?>';
+    var count = 2;
+    var limits = 500;
+     
+    function addTruckingOrderField(divName){
+
+        if (count == limits)  {
+            alert("You have reached the limit of adding " + count + " inputs");
+        }
+        else{
+            var newdiv = document.createElement('tr');
+            var tabin="product_name_"+count;
+             tabindex = count * 4 ,
+           newdiv = document.createElement("tr");
+            tab1 = tabindex + 1;
+            
+            tab2 = tabindex + 2;
+            tab3 = tabindex + 3;
+            tab4 = tabindex + 4;
+            tab5 = tabindex + 5;
+            tab6 = tab5 + 1;
+            tab7 = tab6 +1;
+           
+
+
+            newdiv.innerHTML ='<td class="span3 supplier"><input type="date" name="trucking_date[]" required="" class="form-control" tabindex="'+tab1+'" > <input type="hidden" class="autocomplete_hidden_value product_id_'+ count +'" name="product_id[]" id="SchoolHiddenId"/>  <input type="hidden" class="sl" value="'+ count +'">  </td> <td class="text-right"><input type="text" name="product_quantity[]" tabindex="'+tab2+'" required  id="cartoon_'+ count +'" class="form-control text-right store_cal_' + count + '" onkeyup="calculate_store(' + count + ');" onchange="calculate_store(' + count + ');" placeholder="0.00" value="" min="0"/></td><td class="text-right"><input class="form-control" type="text" name="description[]" id="pro_no" value=""  /></td><td><span class="form-control" style="background-color: #eee;"><?php  echo $currency." ";  ?> <input type="text" name="product_rate[]" onkeyup="calculate_store('+ count +');" onchange="calculate_store('+ count +');" id="product_rate_'+ count +'" class="product_rate_'+ count +'" placeholder="0.00" value="" min="0" tabindex="'+tab3+'"/></span></td><td class="text-right"><input class="form-control" type="text" name="pro_no[]" id="pro_no" value=""  /></td><td><span class="form-control" style="background-color: #eee;"><?php echo $currency." ";   ?> <input class="total_price total_price_'+ count +'" type="text" name="total_price[]" id="total_price_'+ count +'" value="0.00" readonly="readonly" /></span> </td><td> <input type="hidden" id="total_discount_1" class="" /><input type="hidden" id="all_discount_1" class="total_discount" /><button style="text-align: right;" class="btn btn-danger red" type="button"  onclick="deleteRow(this)" tabindex="8"><i class="fa fa-close"></i></button></td>';
+            document.getElementById(divName).appendChild(newdiv);
+            document.getElementById(tabin).focus();
+            document.getElementById("add_invoice_item").setAttribute("tabindex", tab5);
+            document.getElementById("add_purchase").setAttribute("tabindex", tab6);
+            document.getElementById("add_purchase_another").setAttribute("tabindex", tab7);
+           
+            count++;
+
+            $("select.form-control:not(.dont-select-me)").select2({
+                placeholder: "Select option",
+                allowClear: true
+            });
+        }
+    }
+    $(document).ready(function(){
+  
+  //  currency();
+    $('#product_tax').on('change', function (e) {
+        var first=$("#Total").val();
+    var tax= $('#product_tax').val();
+
+    // console.log(tax);
+
+var field = tax.split('-');
+
+var percent = field[1];
+var answer=0;
+  var answer = parseInt((percent / 100) * first);
+  // console.log(answer);
+  var gtotal = parseInt(first + answer);
+ // console.log(gtotal);
+ var final_g= $('#final_gtotal').val();
+ console.log(final_g);
+ $("#gtotal").val(parseInt(final_g)+parseInt(first));  
+
+});
+});
+
+$('#product_tax').on('change', function (e) {
+    var optionSelected = $("option:selected", this);
+    var valueSelected = this.value;
+    var total=$('#Total').val();
+var tax= $('#product_tax').val();
+
+var field = tax.split('-');
+
+var percent = field[1];
+percent=percent.replace("%","");
+ var answer = (percent / 100) * parseInt(total);
+$('#final_gtotal').val(answer);
+   $('#hdn').val(valueSelected);
+   // answer=answer.toFixed();
+   $('#tax_details').val(answer +" ( "+tax+" )");
+});
+$('#bill_to').on('change', function (e) {
+  
+  var data = {
+      value: $('#bill_to').val()
+   };
+  data[csrfName] = csrfHash;
+  $.ajax({
+      type:'POST',
+      data: data,
+   
+      //dataType tells jQuery to expect JSON response
+      dataType:"json",
+      url:'<?php echo base_url();?>Cinvoice/getcustomer_byID',
+      success: function(result, statut) {
+          if(result.csrfName){
+             //assign the new csrfName/Hash
+             csrfName = result.csrfName;
+             csrfHash = result.csrfHash;
+          }
+         // var parsedData = JSON.parse(result);
+        //  alert(result[0].p_quantity);
+        console.log(result[0]['currency_type']);
+      $("#customer_gtotal").val(result[0]['currency_type']);
+    
+    
+      }
+  });
+
+
+});
+    </script>

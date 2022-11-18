@@ -47,7 +47,10 @@ $CI = & get_instance();
         $content1 = $CI->lpurchase->packing_list();
         $expense = $CI->Purchases->packing_list($date);
 
+     
+ 
         $data = array(
+           
 
             'invoice'         =>  $content1,
 
@@ -70,7 +73,10 @@ $CI = & get_instance();
         $content1 = $this->lpurchase->purchase_list();
         $expense = $CI->Purchases->newexpense($date);
 
+        $currency_details = $CI->Web_settings->retrieve_setting_editdata();
+ 
         $data = array(
+            'currency' =>$currency_details[0]['currency'],
 
             'invoice'         =>  $content1,
 
@@ -91,7 +97,10 @@ $CI = & get_instance();
      //   $content1 = $this->lpurchase->purchase_order_list();
         $expense = $CI->Purchases->purchase_order($date);
 
+        $currency_details = $CI->Web_settings->retrieve_setting_editdata();
+ 
         $data = array(
+            'currency' =>$currency_details[0]['currency'],
 
          //   'invoice'         =>  $content1,
 

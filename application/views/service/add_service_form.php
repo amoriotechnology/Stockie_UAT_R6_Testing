@@ -53,7 +53,20 @@
               
             </div>
         </div>
-
+        <style>
+            input {
+    border: none;
+    background-color: #eee;
+ }
+textarea:focus, input:focus{
+   
+    outline: none;
+}
+ .text-right {
+    text-align: left; 
+}
+   
+    </style>
         <!-- New customer -->
         <div class="row">
             <div class="col-sm-12">
@@ -76,7 +89,9 @@
                    <div class="form-group row">
                             <label for="charge" class="col-sm-3 col-form-label"><?php echo display('charge') ?> <i class="text-danger">*</i></label>
                             <div class="col-sm-6">
-                                <input class="form-control" name ="charge" id="charge" type="text" placeholder="<?php echo display('charge') ?>"  required="">
+                            <span class='form-control' style='background-color: #eee;'><?php   echo $currency; ?>
+                                <input  name ="charge" id="charge" type="text" placeholder="Amount"  required="">
+</span>
                             </div>
                         </div>
 

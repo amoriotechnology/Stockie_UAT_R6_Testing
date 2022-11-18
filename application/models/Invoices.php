@@ -413,14 +413,7 @@ public function get_setting($user,$menu,$submenu){
      return $query;
 
 }
-public function getcustomer_data($value){
-    $this->db->select('*');
-    $this->db->from('customer_information');
-    $this->db->where('customer_name', $value);
-    $query = $this->db->get()->result();
-   echo json_encode($query);
 
-}
 public function availability($product_nam,$product_model){
  
     $this->db->select('p_quantity,price,product_id');
@@ -1616,10 +1609,7 @@ public function retrieve_packing_editdata($purchase_id) {
             return $query->result_array();
 
         }
-
-        return false;
-
-    }
+ }
 
 
 
@@ -4102,21 +4092,25 @@ public function service_invoice_taxinfo($invoice_id){
     }
 
 
-
+    public function getcustomer_data($value){
+        $this->db->select('*');
+        $this->db->from('customer_information');
+        $this->db->where('customer_name', $value);
+        $query = $this->db->get()->result();
+        return $query;
+    
+    }
 
 
 public function customerinfo_rpt($customer_id){
 
-       return $this->db->select('*')   
+       $this->db->select('*')   ;
+       $this->db->from('customer_information');
+       $this->db->where('customer_id', $customer_id);
+       $query = $this->db->get()->result();
+       return $query;
 
-            ->from('customer_information')
-
-            ->where('customer_id',$customer_id)
-            ->where('create_by',$this->session->userdata('user_id'))
-
-            ->get()
-
-            ->result_array(); 
+          
 
     }
 

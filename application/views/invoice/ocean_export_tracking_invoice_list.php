@@ -232,19 +232,19 @@ $count++;
                           <span class="close_colSwitch">&times;</span>
                           <input type="checkbox"  data-control-column="1" class="opt ID" value="ID" /> ID<br>
 
-    <input type="checkbox"  data-control-column="2" class="opt Booking Number" value="Booking Number"/>Booking Number<br>
+    <input type="checkbox"  data-control-column="2" checked = "checked" class="opt Booking Number" value="Booking Number"/>Booking Number<br>
  
-    <input type="checkbox"  data-control-column="3" class="opt Container Number" value="Container Number"/>Container Number<br>
+    <input type="checkbox"  data-control-column="3" checked = "checked" class="opt Container Number" value="Container Number"/>Container Number<br>
   
-    <input type="checkbox"  data-control-column="4" class="opt Seal Number" value="Seal Number"/>Seal Number<br>
+    <input type="checkbox"  data-control-column="4" checked = "checked" class="opt Seal Number" value="Seal Number"/>Seal Number<br>
 
-    <input type="checkbox"  data-control-column="5" class="opt Ocean Export ID" value="Ocean Import ID"/>Ocean Import ID<br>
+    <input type="checkbox"  data-control-column="5" checked = "checked" class="opt Ocean Export ID" value="Ocean Import ID"/>Ocean Import ID<br>
 
-    <input type="checkbox"  data-control-column="6" class="opt Supplier Name" value="Supplier Name"/>Supplier Name<br>
-	<input type="checkbox"  data-control-column="7" class="opt Purchase Date" value="Purchase Date"/>Purchase Date<br>
+    <input type="checkbox"  data-control-column="6" checked = "checked" class="opt Supplier Name" value="Supplier Name"/>Supplier Name<br>
+	<input type="checkbox"  data-control-column="7" checked = "checked" class="opt Purchase Date" value="Purchase Date"/>Purchase Date<br>
 
-	<input type="checkbox"  data-control-column="8" class="opt Place of Delivery" value="Place of Delivery"/>Place of Delivery<br>
-<input type="checkbox"  data-control-column="9" class="opt Action" />Action<br>
+	<input type="checkbox"  data-control-column="8" checked = "checked" class="opt Place of Delivery" value="Place of Delivery"/>Place of Delivery<br>
+<input type="checkbox"  data-control-column="9" checked = "checked" class="opt Action" />Action<br>
 <!--<input type="submit" value="submit" id="submit"/>-->
                      
                     </div>

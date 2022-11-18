@@ -158,7 +158,7 @@ $today = date('Y-m-d');
  <td class="Supplier Name"><?php   echo $arr['supplier_name'];  ?></td>
    <td class="Purchase Date"><?php   echo $arr['purchase_date'];  ?></td>
 
-  <td class="Total Amount"><?php   echo $arr['grand_total_amount'];  ?></td>
+  <td class="Total Amount"><?php   echo $currency." ".$arr['grand_total_amount'];  ?></td>
   <td class="Action">
 <a href="<?php echo base_url()?>Cpurchase/purchase_details_data/<?php echo  $arr['purchase_id'];  ?>" style='    background: #3ca5de;
     color: #fff;' class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="Expenses Details"><i class="fa fa-download" aria-hidden="true"></i></a> 

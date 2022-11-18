@@ -71,10 +71,10 @@ class Lsupplier {
         $CI->load->model('Web_settings');
 
         $currency_details = $CI->Web_settings->retrieve_setting_editdata();
-
+        $data['currency']          = $currency_details[0]['currency'];
         $data['total_supplier']    = $CI->Suppliers->count_supplier();
 
-        $data['currency']          = $currency_details[0]['currency'];
+       
 
         $data['company_info']      = $CI->Suppliers->retrieve_company();
 

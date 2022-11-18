@@ -146,10 +146,12 @@ class Ccustomer extends CI_Controller {
         $vouchar_no = $this->auth->generator(10);
 
          $data = array(
+           
             'customer_name'   => $this->input->post('customer_name',TRUE),
             'customer_address'=> $this->input->post('address',TRUE),
             'address2'        => $this->input->post('address2',TRUE),
             'customer_mobile' => $this->input->post('mobile',TRUE),
+            'currency_type'   => $this->input->post('currency1',TRUE),
             'phone'           => $this->input->post('phone',TRUE),
             'fax'             => $this->input->post('fax',TRUE),
             'contact'         => $this->input->post('contact',TRUE),
