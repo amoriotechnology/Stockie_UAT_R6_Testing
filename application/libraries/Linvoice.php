@@ -823,7 +823,9 @@ class Linvoice {
         $customer_details = $CI->Invoices->pos_customer_setup();
      
         $currency_details = $CI->Web_settings->retrieve_setting_editdata();
+        $curn_info_default = $CI->db->select('*')->from('currency_tbl')->where('icon',$currency_details[0]['currency'])->get()->result_array();
        
+        $curn_info_customer = $CI->db->select('*')->from('currency_tbl')->where('icon',$customer_details[0]['currency_type'])->get()->result_array();
         $taxfield1 = $CI->db->select('tax_id,tax')
         ->from('tax_information')
         ->get()
@@ -839,6 +841,8 @@ class Linvoice {
         ->result_array();
         $voucher_no = $CI->Invoices->commercial_inv_number();
         $data = array(
+            'curn_info_default' =>$curn_info_default[0]['currency_name'],
+            'curn_info_customer'=>$curn_info_customer[0]['currency_name'],
             'currency'  =>$currency_details[0]['currency'],
             'title'         => display('add_new_invoice'),
             'discount_type' => $currency_details[0]['discount_type'],
@@ -853,6 +857,7 @@ class Linvoice {
             'voucher_no' => $voucher_no,
                 'tax_name'=>'ww',
         );
+       
         $invoiceForm = $CI->parser->parse('invoice/add_invoice_form', $data, true);
        // $invoiceForm = $CI->parser->parse('invoice/profarma_invoice', $data, true);
         return $invoiceForm;

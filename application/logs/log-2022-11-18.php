@@ -11672,3 +11672,11006 @@ INFO - 2022-11-18 14:44:45 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\a
 INFO - 2022-11-18 14:44:45 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
 INFO - 2022-11-18 14:44:45 --> Final output sent to browser
 DEBUG - 2022-11-18 14:44:45 --> Total execution time: 0.4144
+ERROR - 2022-11-18 09:38:10 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:38:10 --> Config Class Initialized
+INFO - 2022-11-18 09:38:10 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:38:10 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:38:10 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:38:10 --> URI Class Initialized
+INFO - 2022-11-18 09:38:10 --> Router Class Initialized
+INFO - 2022-11-18 09:38:10 --> Output Class Initialized
+INFO - 2022-11-18 09:38:10 --> Security Class Initialized
+DEBUG - 2022-11-18 09:38:10 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:38:10 --> CSRF cookie sent
+INFO - 2022-11-18 09:38:10 --> Input Class Initialized
+INFO - 2022-11-18 09:38:10 --> Language Class Initialized
+INFO - 2022-11-18 09:38:10 --> Loader Class Initialized
+INFO - 2022-11-18 09:38:10 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:38:10 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:38:10 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:38:10 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:38:10 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:38:10 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:38:10 --> Parser Class Initialized
+INFO - 2022-11-18 09:38:10 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:38:10 --> Pagination Class Initialized
+INFO - 2022-11-18 09:38:10 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:38:10 --> Controller Class Initialized
+INFO - 2022-11-18 09:38:10 --> Model "Accounts_model" initialized
+INFO - 2022-11-18 09:38:10 --> Model "Web_settings" initialized
+INFO - 2022-11-18 09:38:10 --> Model "Purchases" initialized
+INFO - 2022-11-18 09:38:10 --> Model "Suppliers" initialized
+INFO - 2022-11-18 09:38:10 --> Model "Categories" initialized
+INFO - 2022-11-18 09:38:10 --> Model "Units" initialized
+INFO - 2022-11-18 09:38:10 --> Model "Products" initialized
+ERROR - 2022-11-18 09:38:10 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\purchase\add_purchase_form.php 851
+INFO - 2022-11-18 09:38:10 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\purchase/add_purchase_form.php
+DEBUG - 2022-11-18 09:38:10 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:38:10 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 09:38:10 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 15:08:10 --> Model "reports" initialized
+INFO - 2022-11-18 15:08:10 --> Model "Users" initialized
+INFO - 2022-11-18 15:08:10 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:08:10 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:08:10 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:08:10 --> Final output sent to browser
+DEBUG - 2022-11-18 15:08:10 --> Total execution time: 0.5084
+ERROR - 2022-11-18 09:39:58 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:39:58 --> Config Class Initialized
+INFO - 2022-11-18 09:39:58 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:39:58 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:39:58 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:39:58 --> URI Class Initialized
+INFO - 2022-11-18 09:39:58 --> Router Class Initialized
+INFO - 2022-11-18 09:39:58 --> Output Class Initialized
+INFO - 2022-11-18 09:39:58 --> Security Class Initialized
+DEBUG - 2022-11-18 09:39:58 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:39:58 --> CSRF cookie sent
+INFO - 2022-11-18 09:39:58 --> Input Class Initialized
+INFO - 2022-11-18 09:39:58 --> Language Class Initialized
+INFO - 2022-11-18 09:39:58 --> Loader Class Initialized
+INFO - 2022-11-18 09:39:58 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:39:58 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:39:58 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:39:58 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:39:58 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:39:58 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:39:58 --> Parser Class Initialized
+INFO - 2022-11-18 09:39:58 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:39:58 --> Pagination Class Initialized
+INFO - 2022-11-18 09:39:58 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:39:58 --> Controller Class Initialized
+INFO - 2022-11-18 09:39:58 --> Model "Accounts_model" initialized
+INFO - 2022-11-18 09:39:58 --> Model "Web_settings" initialized
+INFO - 2022-11-18 09:39:58 --> Model "Purchases" initialized
+INFO - 2022-11-18 09:39:58 --> Model "Suppliers" initialized
+INFO - 2022-11-18 09:39:58 --> Model "Categories" initialized
+INFO - 2022-11-18 09:39:58 --> Model "Units" initialized
+INFO - 2022-11-18 09:39:58 --> Model "Products" initialized
+ERROR - 2022-11-18 09:39:59 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\purchase\add_purchase_form.php 851
+INFO - 2022-11-18 09:39:59 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\purchase/add_purchase_form.php
+DEBUG - 2022-11-18 09:39:59 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:39:59 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 09:39:59 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 15:09:59 --> Model "reports" initialized
+INFO - 2022-11-18 15:09:59 --> Model "Users" initialized
+INFO - 2022-11-18 15:09:59 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:09:59 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:09:59 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:09:59 --> Final output sent to browser
+DEBUG - 2022-11-18 15:09:59 --> Total execution time: 0.4183
+ERROR - 2022-11-18 09:40:01 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 09:40:01 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:40:01 --> Config Class Initialized
+INFO - 2022-11-18 09:40:01 --> Hooks Class Initialized
+INFO - 2022-11-18 09:40:01 --> Config Class Initialized
+INFO - 2022-11-18 09:40:01 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:40:01 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:40:01 --> Utf8 Class Initialized
+DEBUG - 2022-11-18 09:40:01 --> UTF-8 Support Enabled
+ERROR - 2022-11-18 09:40:01 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:40:01 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:40:01 --> URI Class Initialized
+INFO - 2022-11-18 09:40:01 --> URI Class Initialized
+INFO - 2022-11-18 09:40:01 --> Config Class Initialized
+INFO - 2022-11-18 09:40:01 --> Router Class Initialized
+INFO - 2022-11-18 09:40:01 --> Hooks Class Initialized
+INFO - 2022-11-18 09:40:01 --> Router Class Initialized
+INFO - 2022-11-18 09:40:01 --> Output Class Initialized
+DEBUG - 2022-11-18 09:40:01 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:40:01 --> Output Class Initialized
+INFO - 2022-11-18 09:40:01 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:40:01 --> Security Class Initialized
+INFO - 2022-11-18 09:40:01 --> Security Class Initialized
+DEBUG - 2022-11-18 09:40:01 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-11-18 09:40:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:40:01 --> CSRF cookie sent
+INFO - 2022-11-18 09:40:01 --> CSRF cookie sent
+INFO - 2022-11-18 09:40:01 --> Input Class Initialized
+INFO - 2022-11-18 09:40:01 --> Input Class Initialized
+INFO - 2022-11-18 09:40:01 --> Language Class Initialized
+INFO - 2022-11-18 09:40:01 --> Language Class Initialized
+ERROR - 2022-11-18 09:40:01 --> 404 Page Not Found: Assets/datatables
+INFO - 2022-11-18 09:40:01 --> URI Class Initialized
+ERROR - 2022-11-18 09:40:01 --> 404 Page Not Found: Assets/js
+INFO - 2022-11-18 09:40:01 --> Router Class Initialized
+INFO - 2022-11-18 09:40:01 --> Output Class Initialized
+INFO - 2022-11-18 09:40:01 --> Security Class Initialized
+DEBUG - 2022-11-18 09:40:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:40:01 --> CSRF cookie sent
+INFO - 2022-11-18 09:40:01 --> Input Class Initialized
+INFO - 2022-11-18 09:40:01 --> Language Class Initialized
+ERROR - 2022-11-18 09:40:01 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 09:40:01 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:40:01 --> Config Class Initialized
+INFO - 2022-11-18 09:40:01 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:40:01 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:40:01 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:40:01 --> URI Class Initialized
+INFO - 2022-11-18 09:40:01 --> Router Class Initialized
+INFO - 2022-11-18 09:40:01 --> Output Class Initialized
+INFO - 2022-11-18 09:40:01 --> Security Class Initialized
+DEBUG - 2022-11-18 09:40:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:40:01 --> CSRF cookie sent
+INFO - 2022-11-18 09:40:01 --> Input Class Initialized
+INFO - 2022-11-18 09:40:01 --> Language Class Initialized
+ERROR - 2022-11-18 09:40:01 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 09:40:02 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:40:02 --> Config Class Initialized
+INFO - 2022-11-18 09:40:02 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:40:02 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:40:02 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:40:02 --> URI Class Initialized
+INFO - 2022-11-18 09:40:02 --> Router Class Initialized
+INFO - 2022-11-18 09:40:02 --> Output Class Initialized
+INFO - 2022-11-18 09:40:02 --> Security Class Initialized
+DEBUG - 2022-11-18 09:40:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:40:02 --> CSRF cookie sent
+INFO - 2022-11-18 09:40:02 --> Input Class Initialized
+INFO - 2022-11-18 09:40:02 --> Language Class Initialized
+INFO - 2022-11-18 09:40:02 --> Loader Class Initialized
+INFO - 2022-11-18 09:40:02 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:40:02 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:40:02 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:40:02 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:40:02 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:40:02 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:40:02 --> Parser Class Initialized
+INFO - 2022-11-18 09:40:02 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:40:02 --> Pagination Class Initialized
+INFO - 2022-11-18 09:40:02 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:40:02 --> Controller Class Initialized
+INFO - 2022-11-18 09:40:02 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:40:02 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:40:02 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:40:02 --> Model "Customers" initialized
+INFO - 2022-11-18 09:40:02 --> Model "Invoices" initialized
+INFO - 2022-11-18 09:40:02 --> Model "Permission_model" initialized
+ERROR - 2022-11-18 09:40:02 --> Severity: Notice --> Undefined variable: sale D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\invoice.php 201
+ERROR - 2022-11-18 09:40:02 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\invoice.php 201
+ERROR - 2022-11-18 09:40:02 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\invoice.php 201
+INFO - 2022-11-18 09:40:02 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/invoice.php
+INFO - 2022-11-18 09:40:02 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/invoice.php
+DEBUG - 2022-11-18 09:40:02 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:40:02 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 09:40:02 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 09:40:02 --> Model "Products" initialized
+INFO - 2022-11-18 15:10:02 --> Model "reports" initialized
+INFO - 2022-11-18 15:10:02 --> Model "Users" initialized
+INFO - 2022-11-18 15:10:02 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:10:02 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:10:02 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:10:02 --> Final output sent to browser
+DEBUG - 2022-11-18 15:10:02 --> Total execution time: 0.3482
+ERROR - 2022-11-18 09:40:03 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:40:03 --> Config Class Initialized
+INFO - 2022-11-18 09:40:03 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:40:03 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:40:03 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:40:03 --> URI Class Initialized
+INFO - 2022-11-18 09:40:03 --> Router Class Initialized
+INFO - 2022-11-18 09:40:03 --> Output Class Initialized
+INFO - 2022-11-18 09:40:03 --> Security Class Initialized
+DEBUG - 2022-11-18 09:40:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:40:03 --> CSRF cookie sent
+INFO - 2022-11-18 09:40:03 --> Input Class Initialized
+INFO - 2022-11-18 09:40:03 --> Language Class Initialized
+ERROR - 2022-11-18 09:40:03 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 09:40:03 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:40:03 --> Config Class Initialized
+INFO - 2022-11-18 09:40:03 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:40:03 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:40:03 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:40:03 --> URI Class Initialized
+INFO - 2022-11-18 09:40:03 --> Router Class Initialized
+INFO - 2022-11-18 09:40:03 --> Output Class Initialized
+INFO - 2022-11-18 09:40:03 --> Security Class Initialized
+DEBUG - 2022-11-18 09:40:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:40:03 --> CSRF cookie sent
+INFO - 2022-11-18 09:40:03 --> Input Class Initialized
+INFO - 2022-11-18 09:40:03 --> Language Class Initialized
+ERROR - 2022-11-18 09:40:03 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 09:40:03 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:40:03 --> Config Class Initialized
+INFO - 2022-11-18 09:40:03 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:40:03 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:40:03 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:40:03 --> URI Class Initialized
+INFO - 2022-11-18 09:40:03 --> Router Class Initialized
+INFO - 2022-11-18 09:40:03 --> Output Class Initialized
+INFO - 2022-11-18 09:40:03 --> Security Class Initialized
+DEBUG - 2022-11-18 09:40:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:40:03 --> CSRF cookie sent
+INFO - 2022-11-18 09:40:03 --> Input Class Initialized
+INFO - 2022-11-18 09:40:03 --> Language Class Initialized
+ERROR - 2022-11-18 09:40:03 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 09:40:03 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:40:03 --> Config Class Initialized
+INFO - 2022-11-18 09:40:03 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:40:03 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:40:03 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:40:03 --> URI Class Initialized
+INFO - 2022-11-18 09:40:03 --> Router Class Initialized
+INFO - 2022-11-18 09:40:03 --> Output Class Initialized
+INFO - 2022-11-18 09:40:03 --> Security Class Initialized
+DEBUG - 2022-11-18 09:40:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:40:03 --> CSRF cookie sent
+INFO - 2022-11-18 09:40:03 --> Input Class Initialized
+INFO - 2022-11-18 09:40:03 --> Language Class Initialized
+ERROR - 2022-11-18 09:40:03 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 09:40:03 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:40:03 --> Config Class Initialized
+INFO - 2022-11-18 09:40:03 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:40:03 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:40:03 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:40:03 --> URI Class Initialized
+INFO - 2022-11-18 09:40:03 --> Router Class Initialized
+INFO - 2022-11-18 09:40:03 --> Output Class Initialized
+INFO - 2022-11-18 09:40:03 --> Security Class Initialized
+DEBUG - 2022-11-18 09:40:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:40:03 --> CSRF cookie sent
+INFO - 2022-11-18 09:40:03 --> Input Class Initialized
+INFO - 2022-11-18 09:40:03 --> Language Class Initialized
+ERROR - 2022-11-18 09:40:03 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 09:40:03 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:40:03 --> Config Class Initialized
+INFO - 2022-11-18 09:40:03 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:40:03 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:40:03 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:40:03 --> URI Class Initialized
+INFO - 2022-11-18 09:40:03 --> Router Class Initialized
+INFO - 2022-11-18 09:40:03 --> Output Class Initialized
+INFO - 2022-11-18 09:40:03 --> Security Class Initialized
+DEBUG - 2022-11-18 09:40:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:40:03 --> CSRF cookie sent
+INFO - 2022-11-18 09:40:03 --> CSRF token verified
+INFO - 2022-11-18 09:40:03 --> Input Class Initialized
+INFO - 2022-11-18 09:40:03 --> Language Class Initialized
+INFO - 2022-11-18 09:40:03 --> Loader Class Initialized
+INFO - 2022-11-18 09:40:03 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:40:03 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:40:03 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:40:03 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:40:03 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:40:03 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:40:03 --> Parser Class Initialized
+INFO - 2022-11-18 09:40:03 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:40:03 --> Pagination Class Initialized
+INFO - 2022-11-18 09:40:03 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:40:03 --> Controller Class Initialized
+INFO - 2022-11-18 09:40:03 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:40:03 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:40:03 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:40:03 --> Model "Customers" initialized
+INFO - 2022-11-18 09:40:03 --> Model "Invoices" initialized
+ERROR - 2022-11-18 09:40:03 --> Severity: Notice --> Undefined offset: 0 D:\wamp\www\Stockie_UAT_R6_Testing\application\controllers\Cinvoice.php 1166
+ERROR - 2022-11-18 09:40:03 --> Severity: Notice --> Trying to get property 'menu' of non-object D:\wamp\www\Stockie_UAT_R6_Testing\application\controllers\Cinvoice.php 1166
+ERROR - 2022-11-18 09:40:03 --> Severity: Notice --> Undefined offset: 0 D:\wamp\www\Stockie_UAT_R6_Testing\application\controllers\Cinvoice.php 1167
+ERROR - 2022-11-18 09:40:03 --> Severity: Notice --> Trying to get property 'submenu' of non-object D:\wamp\www\Stockie_UAT_R6_Testing\application\controllers\Cinvoice.php 1167
+ERROR - 2022-11-18 09:40:03 --> Severity: Notice --> Undefined offset: 0 D:\wamp\www\Stockie_UAT_R6_Testing\application\controllers\Cinvoice.php 1168
+ERROR - 2022-11-18 09:40:03 --> Severity: Notice --> Trying to get property 'setting' of non-object D:\wamp\www\Stockie_UAT_R6_Testing\application\controllers\Cinvoice.php 1168
+INFO - 2022-11-18 09:40:03 --> Final output sent to browser
+DEBUG - 2022-11-18 09:40:03 --> Total execution time: 0.0772
+ERROR - 2022-11-18 09:40:04 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:40:04 --> Config Class Initialized
+INFO - 2022-11-18 09:40:04 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:40:04 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:40:04 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:40:04 --> URI Class Initialized
+INFO - 2022-11-18 09:40:04 --> Router Class Initialized
+INFO - 2022-11-18 09:40:04 --> Output Class Initialized
+INFO - 2022-11-18 09:40:04 --> Security Class Initialized
+DEBUG - 2022-11-18 09:40:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:40:04 --> CSRF cookie sent
+INFO - 2022-11-18 09:40:04 --> Input Class Initialized
+INFO - 2022-11-18 09:40:04 --> Language Class Initialized
+INFO - 2022-11-18 09:40:04 --> Loader Class Initialized
+INFO - 2022-11-18 09:40:04 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:40:04 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:40:04 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:40:04 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:40:04 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:40:04 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:40:04 --> Parser Class Initialized
+INFO - 2022-11-18 09:40:04 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:40:04 --> Pagination Class Initialized
+INFO - 2022-11-18 09:40:04 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:40:04 --> Controller Class Initialized
+INFO - 2022-11-18 09:40:04 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:40:04 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:40:04 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:40:04 --> Model "Customers" initialized
+INFO - 2022-11-18 09:40:04 --> Model "Tax" initialized
+DEBUG - 2022-11-18 09:40:04 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:40:04 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:40:04 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:40:04 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:40:04 --> Model "Invoices" initialized
+ERROR - 2022-11-18 09:40:04 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 09:40:05 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1137
+ERROR - 2022-11-18 09:40:05 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1167
+ERROR - 2022-11-18 09:40:05 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1190
+ERROR - 2022-11-18 09:40:05 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1190
+ERROR - 2022-11-18 09:40:05 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1221
+INFO - 2022-11-18 09:40:05 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 09:40:05 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:40:05 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 09:40:05 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 09:40:05 --> Model "Products" initialized
+INFO - 2022-11-18 15:10:05 --> Model "reports" initialized
+INFO - 2022-11-18 15:10:05 --> Model "Users" initialized
+INFO - 2022-11-18 15:10:05 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:10:05 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:10:05 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:10:05 --> Final output sent to browser
+DEBUG - 2022-11-18 15:10:05 --> Total execution time: 0.5586
+ERROR - 2022-11-18 09:40:05 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:40:05 --> Config Class Initialized
+INFO - 2022-11-18 09:40:05 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:40:05 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:40:05 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:40:05 --> URI Class Initialized
+INFO - 2022-11-18 09:40:05 --> Router Class Initialized
+INFO - 2022-11-18 09:40:05 --> Output Class Initialized
+INFO - 2022-11-18 09:40:05 --> Security Class Initialized
+DEBUG - 2022-11-18 09:40:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:40:05 --> CSRF cookie sent
+INFO - 2022-11-18 09:40:05 --> Input Class Initialized
+INFO - 2022-11-18 09:40:05 --> Language Class Initialized
+ERROR - 2022-11-18 09:40:05 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 09:40:05 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 09:40:05 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:40:05 --> Config Class Initialized
+INFO - 2022-11-18 09:40:05 --> Config Class Initialized
+INFO - 2022-11-18 09:40:05 --> Hooks Class Initialized
+INFO - 2022-11-18 09:40:05 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:40:05 --> UTF-8 Support Enabled
+DEBUG - 2022-11-18 09:40:05 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:40:05 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:40:05 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:40:05 --> URI Class Initialized
+INFO - 2022-11-18 09:40:05 --> URI Class Initialized
+INFO - 2022-11-18 09:40:05 --> Router Class Initialized
+INFO - 2022-11-18 09:40:05 --> Router Class Initialized
+INFO - 2022-11-18 09:40:05 --> Output Class Initialized
+INFO - 2022-11-18 09:40:05 --> Output Class Initialized
+INFO - 2022-11-18 09:40:05 --> Security Class Initialized
+INFO - 2022-11-18 09:40:05 --> Security Class Initialized
+DEBUG - 2022-11-18 09:40:05 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-11-18 09:40:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:40:05 --> CSRF cookie sent
+INFO - 2022-11-18 09:40:05 --> CSRF cookie sent
+INFO - 2022-11-18 09:40:05 --> Input Class Initialized
+INFO - 2022-11-18 09:40:05 --> Input Class Initialized
+INFO - 2022-11-18 09:40:05 --> Language Class Initialized
+INFO - 2022-11-18 09:40:05 --> Language Class Initialized
+ERROR - 2022-11-18 09:40:05 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 09:40:05 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 09:40:05 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:40:05 --> Config Class Initialized
+INFO - 2022-11-18 09:40:05 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:40:05 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:40:05 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:40:05 --> URI Class Initialized
+INFO - 2022-11-18 09:40:05 --> Router Class Initialized
+INFO - 2022-11-18 09:40:05 --> Output Class Initialized
+INFO - 2022-11-18 09:40:05 --> Security Class Initialized
+DEBUG - 2022-11-18 09:40:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:40:05 --> CSRF cookie sent
+INFO - 2022-11-18 09:40:05 --> Input Class Initialized
+INFO - 2022-11-18 09:40:05 --> Language Class Initialized
+ERROR - 2022-11-18 09:40:05 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 09:40:05 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:40:05 --> Config Class Initialized
+INFO - 2022-11-18 09:40:05 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:40:05 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:40:05 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:40:05 --> URI Class Initialized
+INFO - 2022-11-18 09:40:05 --> Router Class Initialized
+INFO - 2022-11-18 09:40:05 --> Output Class Initialized
+INFO - 2022-11-18 09:40:05 --> Security Class Initialized
+DEBUG - 2022-11-18 09:40:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:40:05 --> CSRF cookie sent
+INFO - 2022-11-18 09:40:05 --> CSRF token verified
+INFO - 2022-11-18 09:40:05 --> Input Class Initialized
+INFO - 2022-11-18 09:40:05 --> Language Class Initialized
+INFO - 2022-11-18 09:40:05 --> Loader Class Initialized
+INFO - 2022-11-18 09:40:05 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:40:05 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:40:05 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:40:05 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:40:05 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:40:05 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:40:05 --> Parser Class Initialized
+INFO - 2022-11-18 09:40:05 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:40:05 --> Pagination Class Initialized
+INFO - 2022-11-18 09:40:05 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:40:05 --> Controller Class Initialized
+INFO - 2022-11-18 09:40:05 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:40:05 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:40:05 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:40:05 --> Model "Customers" initialized
+INFO - 2022-11-18 09:40:05 --> Model "Invoices" initialized
+INFO - 2022-11-18 09:40:05 --> Final output sent to browser
+DEBUG - 2022-11-18 09:40:05 --> Total execution time: 0.0392
+ERROR - 2022-11-18 09:40:46 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:40:46 --> Config Class Initialized
+INFO - 2022-11-18 09:40:46 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:40:46 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:40:46 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:40:46 --> URI Class Initialized
+INFO - 2022-11-18 09:40:46 --> Router Class Initialized
+INFO - 2022-11-18 09:40:46 --> Output Class Initialized
+INFO - 2022-11-18 09:40:46 --> Security Class Initialized
+DEBUG - 2022-11-18 09:40:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:40:46 --> CSRF cookie sent
+INFO - 2022-11-18 09:40:46 --> Input Class Initialized
+INFO - 2022-11-18 09:40:46 --> Language Class Initialized
+INFO - 2022-11-18 09:40:46 --> Loader Class Initialized
+INFO - 2022-11-18 09:40:46 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:40:46 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:40:46 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:40:46 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:40:46 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:40:47 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:40:47 --> Parser Class Initialized
+INFO - 2022-11-18 09:40:47 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:40:47 --> Pagination Class Initialized
+INFO - 2022-11-18 09:40:47 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:40:47 --> Controller Class Initialized
+INFO - 2022-11-18 09:40:47 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:40:47 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:40:47 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:40:47 --> Model "Customers" initialized
+INFO - 2022-11-18 09:40:47 --> Model "Tax" initialized
+DEBUG - 2022-11-18 09:40:47 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:40:47 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:40:47 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:40:47 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:40:47 --> Model "Invoices" initialized
+ERROR - 2022-11-18 09:40:47 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 09:40:47 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1140
+ERROR - 2022-11-18 09:40:47 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1170
+ERROR - 2022-11-18 09:40:47 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1193
+ERROR - 2022-11-18 09:40:47 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1193
+ERROR - 2022-11-18 09:40:47 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1224
+INFO - 2022-11-18 09:40:47 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 09:40:47 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:40:47 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 09:40:47 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 09:40:47 --> Model "Products" initialized
+INFO - 2022-11-18 15:10:47 --> Model "reports" initialized
+INFO - 2022-11-18 15:10:47 --> Model "Users" initialized
+INFO - 2022-11-18 15:10:47 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:10:47 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:10:47 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:10:47 --> Final output sent to browser
+DEBUG - 2022-11-18 15:10:47 --> Total execution time: 0.4415
+ERROR - 2022-11-18 09:40:47 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:40:47 --> Config Class Initialized
+INFO - 2022-11-18 09:40:47 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:40:47 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:40:47 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:40:47 --> URI Class Initialized
+INFO - 2022-11-18 09:40:47 --> Router Class Initialized
+INFO - 2022-11-18 09:40:47 --> Output Class Initialized
+INFO - 2022-11-18 09:40:47 --> Security Class Initialized
+DEBUG - 2022-11-18 09:40:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:40:47 --> CSRF cookie sent
+INFO - 2022-11-18 09:40:47 --> Input Class Initialized
+INFO - 2022-11-18 09:40:47 --> Language Class Initialized
+ERROR - 2022-11-18 09:40:47 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 09:40:47 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:40:47 --> Config Class Initialized
+ERROR - 2022-11-18 09:40:47 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:40:47 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:40:47 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:40:47 --> Config Class Initialized
+INFO - 2022-11-18 09:40:47 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:40:47 --> Hooks Class Initialized
+INFO - 2022-11-18 09:40:47 --> URI Class Initialized
+DEBUG - 2022-11-18 09:40:47 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:40:47 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:40:47 --> Router Class Initialized
+INFO - 2022-11-18 09:40:47 --> URI Class Initialized
+INFO - 2022-11-18 09:40:47 --> Output Class Initialized
+INFO - 2022-11-18 09:40:47 --> Router Class Initialized
+INFO - 2022-11-18 09:40:47 --> Security Class Initialized
+INFO - 2022-11-18 09:40:47 --> Output Class Initialized
+DEBUG - 2022-11-18 09:40:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:40:47 --> Security Class Initialized
+INFO - 2022-11-18 09:40:47 --> CSRF cookie sent
+INFO - 2022-11-18 09:40:47 --> Input Class Initialized
+DEBUG - 2022-11-18 09:40:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:40:47 --> Language Class Initialized
+INFO - 2022-11-18 09:40:47 --> CSRF cookie sent
+INFO - 2022-11-18 09:40:47 --> Input Class Initialized
+ERROR - 2022-11-18 09:40:47 --> 404 Page Not Found: Assets/js
+INFO - 2022-11-18 09:40:47 --> Language Class Initialized
+ERROR - 2022-11-18 09:40:47 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 09:40:47 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:40:47 --> Config Class Initialized
+INFO - 2022-11-18 09:40:47 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:40:47 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:40:47 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:40:47 --> URI Class Initialized
+INFO - 2022-11-18 09:40:47 --> Router Class Initialized
+INFO - 2022-11-18 09:40:47 --> Output Class Initialized
+INFO - 2022-11-18 09:40:47 --> Security Class Initialized
+DEBUG - 2022-11-18 09:40:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:40:47 --> CSRF cookie sent
+INFO - 2022-11-18 09:40:47 --> Input Class Initialized
+INFO - 2022-11-18 09:40:47 --> Language Class Initialized
+ERROR - 2022-11-18 09:40:47 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 09:40:47 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:40:47 --> Config Class Initialized
+INFO - 2022-11-18 09:40:47 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:40:47 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:40:47 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:40:47 --> URI Class Initialized
+INFO - 2022-11-18 09:40:47 --> Router Class Initialized
+INFO - 2022-11-18 09:40:47 --> Output Class Initialized
+INFO - 2022-11-18 09:40:47 --> Security Class Initialized
+DEBUG - 2022-11-18 09:40:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:40:47 --> CSRF cookie sent
+INFO - 2022-11-18 09:40:47 --> CSRF token verified
+INFO - 2022-11-18 09:40:47 --> Input Class Initialized
+INFO - 2022-11-18 09:40:47 --> Language Class Initialized
+INFO - 2022-11-18 09:40:47 --> Loader Class Initialized
+INFO - 2022-11-18 09:40:47 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:40:47 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:40:47 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:40:47 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:40:47 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:40:47 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:40:47 --> Parser Class Initialized
+INFO - 2022-11-18 09:40:47 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:40:47 --> Pagination Class Initialized
+INFO - 2022-11-18 09:40:47 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:40:47 --> Controller Class Initialized
+INFO - 2022-11-18 09:40:47 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:40:47 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:40:47 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:40:47 --> Model "Customers" initialized
+INFO - 2022-11-18 09:40:47 --> Model "Invoices" initialized
+INFO - 2022-11-18 09:40:47 --> Final output sent to browser
+DEBUG - 2022-11-18 09:40:47 --> Total execution time: 0.0172
+ERROR - 2022-11-18 09:43:13 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:43:13 --> Config Class Initialized
+INFO - 2022-11-18 09:43:13 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:43:13 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:43:13 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:43:13 --> URI Class Initialized
+INFO - 2022-11-18 09:43:13 --> Router Class Initialized
+INFO - 2022-11-18 09:43:13 --> Output Class Initialized
+INFO - 2022-11-18 09:43:13 --> Security Class Initialized
+DEBUG - 2022-11-18 09:43:13 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:43:13 --> CSRF cookie sent
+INFO - 2022-11-18 09:43:13 --> Input Class Initialized
+INFO - 2022-11-18 09:43:13 --> Language Class Initialized
+INFO - 2022-11-18 09:43:13 --> Loader Class Initialized
+INFO - 2022-11-18 09:43:13 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:43:13 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:43:13 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:43:13 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:43:13 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:43:13 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:43:13 --> Parser Class Initialized
+INFO - 2022-11-18 09:43:13 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:43:13 --> Pagination Class Initialized
+INFO - 2022-11-18 09:43:13 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:43:13 --> Controller Class Initialized
+INFO - 2022-11-18 09:43:13 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:43:13 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:43:13 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:43:13 --> Model "Customers" initialized
+INFO - 2022-11-18 09:43:13 --> Model "Tax" initialized
+DEBUG - 2022-11-18 09:43:13 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:43:13 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:43:13 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:43:13 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:43:13 --> Model "Invoices" initialized
+ERROR - 2022-11-18 09:43:13 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 09:43:13 --> Severity: Notice --> Undefined variable: curn_info_default D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 946
+ERROR - 2022-11-18 09:43:13 --> Severity: Notice --> Undefined variable: curn_info_default D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 947
+ERROR - 2022-11-18 09:43:13 --> Severity: Notice --> Undefined variable: curn_info_customer D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 953
+ERROR - 2022-11-18 09:43:13 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1143
+ERROR - 2022-11-18 09:43:13 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1173
+ERROR - 2022-11-18 09:43:13 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1196
+ERROR - 2022-11-18 09:43:13 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1196
+ERROR - 2022-11-18 09:43:13 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1227
+INFO - 2022-11-18 09:43:13 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 09:43:13 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:43:13 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 09:43:13 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 09:43:13 --> Model "Products" initialized
+INFO - 2022-11-18 15:13:13 --> Model "reports" initialized
+INFO - 2022-11-18 15:13:13 --> Model "Users" initialized
+INFO - 2022-11-18 15:13:13 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:13:13 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:13:13 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:13:13 --> Final output sent to browser
+DEBUG - 2022-11-18 15:13:13 --> Total execution time: 0.4178
+ERROR - 2022-11-18 09:43:13 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:43:13 --> Config Class Initialized
+INFO - 2022-11-18 09:43:13 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:43:13 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:43:13 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:43:13 --> URI Class Initialized
+INFO - 2022-11-18 09:43:13 --> Router Class Initialized
+INFO - 2022-11-18 09:43:13 --> Output Class Initialized
+INFO - 2022-11-18 09:43:13 --> Security Class Initialized
+DEBUG - 2022-11-18 09:43:13 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:43:13 --> CSRF cookie sent
+INFO - 2022-11-18 09:43:13 --> Input Class Initialized
+INFO - 2022-11-18 09:43:13 --> Language Class Initialized
+ERROR - 2022-11-18 09:43:13 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 09:43:13 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:43:13 --> Config Class Initialized
+INFO - 2022-11-18 09:43:13 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:43:13 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:43:13 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:43:13 --> URI Class Initialized
+INFO - 2022-11-18 09:43:13 --> Router Class Initialized
+INFO - 2022-11-18 09:43:13 --> Output Class Initialized
+INFO - 2022-11-18 09:43:13 --> Security Class Initialized
+DEBUG - 2022-11-18 09:43:13 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:43:13 --> CSRF cookie sent
+INFO - 2022-11-18 09:43:13 --> Input Class Initialized
+INFO - 2022-11-18 09:43:13 --> Language Class Initialized
+ERROR - 2022-11-18 09:43:13 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 09:43:13 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 09:43:13 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:43:13 --> Config Class Initialized
+INFO - 2022-11-18 09:43:13 --> Config Class Initialized
+INFO - 2022-11-18 09:43:13 --> Hooks Class Initialized
+INFO - 2022-11-18 09:43:13 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:43:13 --> UTF-8 Support Enabled
+DEBUG - 2022-11-18 09:43:13 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:43:13 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:43:13 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:43:13 --> URI Class Initialized
+INFO - 2022-11-18 09:43:13 --> URI Class Initialized
+INFO - 2022-11-18 09:43:13 --> Router Class Initialized
+INFO - 2022-11-18 09:43:13 --> Router Class Initialized
+INFO - 2022-11-18 09:43:13 --> Output Class Initialized
+INFO - 2022-11-18 09:43:13 --> Output Class Initialized
+INFO - 2022-11-18 09:43:13 --> Security Class Initialized
+INFO - 2022-11-18 09:43:13 --> Security Class Initialized
+DEBUG - 2022-11-18 09:43:13 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:43:13 --> CSRF cookie sent
+DEBUG - 2022-11-18 09:43:13 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:43:13 --> Input Class Initialized
+INFO - 2022-11-18 09:43:13 --> CSRF cookie sent
+INFO - 2022-11-18 09:43:13 --> Language Class Initialized
+INFO - 2022-11-18 09:43:13 --> Input Class Initialized
+ERROR - 2022-11-18 09:43:13 --> 404 Page Not Found: Assets/js
+INFO - 2022-11-18 09:43:13 --> Language Class Initialized
+ERROR - 2022-11-18 09:43:13 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 09:45:17 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:45:17 --> Config Class Initialized
+INFO - 2022-11-18 09:45:17 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:45:17 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:45:17 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:45:17 --> URI Class Initialized
+INFO - 2022-11-18 09:45:17 --> Router Class Initialized
+INFO - 2022-11-18 09:45:17 --> Output Class Initialized
+INFO - 2022-11-18 09:45:17 --> Security Class Initialized
+DEBUG - 2022-11-18 09:45:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:45:17 --> CSRF cookie sent
+INFO - 2022-11-18 09:45:17 --> Input Class Initialized
+INFO - 2022-11-18 09:45:17 --> Language Class Initialized
+INFO - 2022-11-18 09:45:17 --> Loader Class Initialized
+INFO - 2022-11-18 09:45:17 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:45:17 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:45:17 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:45:17 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:45:17 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:45:17 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:45:17 --> Parser Class Initialized
+INFO - 2022-11-18 09:45:17 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:45:17 --> Pagination Class Initialized
+INFO - 2022-11-18 09:45:17 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:45:17 --> Controller Class Initialized
+INFO - 2022-11-18 09:45:17 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:45:17 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:45:17 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:45:17 --> Model "Customers" initialized
+INFO - 2022-11-18 09:45:17 --> Model "Tax" initialized
+DEBUG - 2022-11-18 09:45:17 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:45:17 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:45:17 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:45:17 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:45:17 --> Model "Invoices" initialized
+ERROR - 2022-11-18 09:45:17 --> Severity: Notice --> Undefined property: Linvoice::$db D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 826
+ERROR - 2022-11-18 09:45:17 --> Severity: error --> Exception: Call to a member function select() on null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Linvoice.php 826
+ERROR - 2022-11-18 09:45:28 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:45:28 --> Config Class Initialized
+INFO - 2022-11-18 09:45:28 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:45:28 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:45:28 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:45:28 --> URI Class Initialized
+INFO - 2022-11-18 09:45:28 --> Router Class Initialized
+INFO - 2022-11-18 09:45:28 --> Output Class Initialized
+INFO - 2022-11-18 09:45:28 --> Security Class Initialized
+DEBUG - 2022-11-18 09:45:28 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:45:28 --> CSRF cookie sent
+INFO - 2022-11-18 09:45:28 --> Input Class Initialized
+INFO - 2022-11-18 09:45:28 --> Language Class Initialized
+INFO - 2022-11-18 09:45:28 --> Loader Class Initialized
+INFO - 2022-11-18 09:45:28 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:45:28 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:45:28 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:45:28 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:45:28 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:45:28 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:45:28 --> Parser Class Initialized
+INFO - 2022-11-18 09:45:28 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:45:28 --> Pagination Class Initialized
+INFO - 2022-11-18 09:45:28 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:45:28 --> Controller Class Initialized
+INFO - 2022-11-18 09:45:28 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:45:28 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:45:28 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:45:28 --> Model "Customers" initialized
+INFO - 2022-11-18 09:45:28 --> Model "Tax" initialized
+DEBUG - 2022-11-18 09:45:28 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:45:28 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:45:28 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:45:28 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:45:28 --> Model "Invoices" initialized
+ERROR - 2022-11-18 09:45:28 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 09:45:28 --> Severity: Notice --> Undefined variable: curn_info_default D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 946
+ERROR - 2022-11-18 09:45:28 --> Severity: Notice --> Undefined variable: curn_info_default D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 947
+ERROR - 2022-11-18 09:45:28 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1143
+ERROR - 2022-11-18 09:45:28 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1173
+ERROR - 2022-11-18 09:45:28 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1196
+ERROR - 2022-11-18 09:45:28 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1196
+ERROR - 2022-11-18 09:45:28 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1227
+INFO - 2022-11-18 09:45:28 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 09:45:28 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:45:28 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 09:45:28 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 09:45:28 --> Model "Products" initialized
+INFO - 2022-11-18 15:15:28 --> Model "reports" initialized
+INFO - 2022-11-18 15:15:28 --> Model "Users" initialized
+INFO - 2022-11-18 15:15:28 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:15:28 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:15:28 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:15:28 --> Final output sent to browser
+DEBUG - 2022-11-18 15:15:28 --> Total execution time: 0.4163
+ERROR - 2022-11-18 09:45:28 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:45:28 --> Config Class Initialized
+INFO - 2022-11-18 09:45:28 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:45:28 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:45:28 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:45:28 --> URI Class Initialized
+INFO - 2022-11-18 09:45:28 --> Router Class Initialized
+INFO - 2022-11-18 09:45:28 --> Output Class Initialized
+INFO - 2022-11-18 09:45:28 --> Security Class Initialized
+DEBUG - 2022-11-18 09:45:28 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:45:28 --> CSRF cookie sent
+INFO - 2022-11-18 09:45:28 --> Input Class Initialized
+INFO - 2022-11-18 09:45:28 --> Language Class Initialized
+ERROR - 2022-11-18 09:45:28 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 09:45:28 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:45:28 --> Config Class Initialized
+INFO - 2022-11-18 09:45:28 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:45:28 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:45:28 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:45:28 --> URI Class Initialized
+INFO - 2022-11-18 09:45:28 --> Router Class Initialized
+INFO - 2022-11-18 09:45:28 --> Output Class Initialized
+INFO - 2022-11-18 09:45:28 --> Security Class Initialized
+DEBUG - 2022-11-18 09:45:28 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:45:28 --> CSRF cookie sent
+INFO - 2022-11-18 09:45:28 --> Input Class Initialized
+INFO - 2022-11-18 09:45:28 --> Language Class Initialized
+ERROR - 2022-11-18 09:45:28 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 09:45:28 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:45:28 --> Config Class Initialized
+INFO - 2022-11-18 09:45:28 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:45:28 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:45:28 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:45:28 --> URI Class Initialized
+INFO - 2022-11-18 09:45:28 --> Router Class Initialized
+INFO - 2022-11-18 09:45:28 --> Output Class Initialized
+INFO - 2022-11-18 09:45:28 --> Security Class Initialized
+DEBUG - 2022-11-18 09:45:28 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2022-11-18 09:45:28 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:45:28 --> CSRF cookie sent
+INFO - 2022-11-18 09:45:28 --> Input Class Initialized
+INFO - 2022-11-18 09:45:28 --> Language Class Initialized
+INFO - 2022-11-18 09:45:28 --> Config Class Initialized
+INFO - 2022-11-18 09:45:28 --> Hooks Class Initialized
+ERROR - 2022-11-18 09:45:28 --> 404 Page Not Found: Assets/js
+DEBUG - 2022-11-18 09:45:28 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:45:28 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:45:28 --> URI Class Initialized
+INFO - 2022-11-18 09:45:28 --> Router Class Initialized
+INFO - 2022-11-18 09:45:28 --> Output Class Initialized
+INFO - 2022-11-18 09:45:28 --> Security Class Initialized
+DEBUG - 2022-11-18 09:45:28 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:45:28 --> CSRF cookie sent
+INFO - 2022-11-18 09:45:28 --> Input Class Initialized
+INFO - 2022-11-18 09:45:28 --> Language Class Initialized
+ERROR - 2022-11-18 09:45:28 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 09:47:21 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:47:21 --> Config Class Initialized
+INFO - 2022-11-18 09:47:21 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:47:21 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:47:21 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:47:21 --> URI Class Initialized
+INFO - 2022-11-18 09:47:21 --> Router Class Initialized
+INFO - 2022-11-18 09:47:21 --> Output Class Initialized
+INFO - 2022-11-18 09:47:21 --> Security Class Initialized
+DEBUG - 2022-11-18 09:47:21 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:47:21 --> CSRF cookie sent
+INFO - 2022-11-18 09:47:21 --> Input Class Initialized
+INFO - 2022-11-18 09:47:21 --> Language Class Initialized
+INFO - 2022-11-18 09:47:21 --> Loader Class Initialized
+INFO - 2022-11-18 09:47:21 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:47:21 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:47:21 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:47:21 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:47:21 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:47:21 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:47:21 --> Parser Class Initialized
+INFO - 2022-11-18 09:47:21 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:47:21 --> Pagination Class Initialized
+INFO - 2022-11-18 09:47:21 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:47:21 --> Controller Class Initialized
+INFO - 2022-11-18 09:47:21 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:47:21 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:47:21 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:47:21 --> Model "Customers" initialized
+INFO - 2022-11-18 09:47:21 --> Model "Tax" initialized
+DEBUG - 2022-11-18 09:47:21 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:47:21 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:47:21 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:47:21 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:47:21 --> Model "Invoices" initialized
+ERROR - 2022-11-18 09:47:21 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 09:47:21 --> Severity: Notice --> Undefined variable: curn_info_default D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 946
+ERROR - 2022-11-18 09:47:21 --> Severity: Notice --> Undefined variable: curn_info_default D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 947
+ERROR - 2022-11-18 09:47:21 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1143
+ERROR - 2022-11-18 09:47:21 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1173
+ERROR - 2022-11-18 09:47:21 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1196
+ERROR - 2022-11-18 09:47:21 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1196
+ERROR - 2022-11-18 09:47:21 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1227
+INFO - 2022-11-18 09:47:21 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 09:47:21 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:47:21 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 09:47:21 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 09:47:21 --> Model "Products" initialized
+INFO - 2022-11-18 15:17:21 --> Model "reports" initialized
+INFO - 2022-11-18 15:17:21 --> Model "Users" initialized
+INFO - 2022-11-18 15:17:21 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:17:21 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:17:21 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:17:21 --> Final output sent to browser
+DEBUG - 2022-11-18 15:17:21 --> Total execution time: 0.4594
+ERROR - 2022-11-18 09:47:21 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:47:21 --> Config Class Initialized
+INFO - 2022-11-18 09:47:21 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:47:21 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:47:21 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:47:21 --> URI Class Initialized
+INFO - 2022-11-18 09:47:21 --> Router Class Initialized
+INFO - 2022-11-18 09:47:21 --> Output Class Initialized
+INFO - 2022-11-18 09:47:21 --> Security Class Initialized
+DEBUG - 2022-11-18 09:47:21 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:47:21 --> CSRF cookie sent
+INFO - 2022-11-18 09:47:21 --> Input Class Initialized
+INFO - 2022-11-18 09:47:21 --> Language Class Initialized
+ERROR - 2022-11-18 09:47:21 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 09:47:21 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:47:21 --> Config Class Initialized
+INFO - 2022-11-18 09:47:21 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:47:21 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:47:21 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:47:21 --> URI Class Initialized
+INFO - 2022-11-18 09:47:21 --> Router Class Initialized
+INFO - 2022-11-18 09:47:21 --> Output Class Initialized
+INFO - 2022-11-18 09:47:21 --> Security Class Initialized
+DEBUG - 2022-11-18 09:47:21 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:47:21 --> CSRF cookie sent
+INFO - 2022-11-18 09:47:21 --> Input Class Initialized
+INFO - 2022-11-18 09:47:21 --> Language Class Initialized
+ERROR - 2022-11-18 09:47:21 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 09:47:21 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 09:47:21 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:47:21 --> Config Class Initialized
+INFO - 2022-11-18 09:47:21 --> Config Class Initialized
+INFO - 2022-11-18 09:47:21 --> Hooks Class Initialized
+INFO - 2022-11-18 09:47:21 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:47:21 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:47:21 --> Utf8 Class Initialized
+DEBUG - 2022-11-18 09:47:21 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:47:21 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:47:21 --> URI Class Initialized
+INFO - 2022-11-18 09:47:21 --> Router Class Initialized
+INFO - 2022-11-18 09:47:21 --> Output Class Initialized
+INFO - 2022-11-18 09:47:21 --> URI Class Initialized
+INFO - 2022-11-18 09:47:21 --> Security Class Initialized
+INFO - 2022-11-18 09:47:21 --> Router Class Initialized
+DEBUG - 2022-11-18 09:47:21 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:47:21 --> CSRF cookie sent
+INFO - 2022-11-18 09:47:21 --> Output Class Initialized
+INFO - 2022-11-18 09:47:21 --> Input Class Initialized
+INFO - 2022-11-18 09:47:21 --> Security Class Initialized
+INFO - 2022-11-18 09:47:21 --> Language Class Initialized
+DEBUG - 2022-11-18 09:47:21 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2022-11-18 09:47:21 --> 404 Page Not Found: Assets/plugins
+INFO - 2022-11-18 09:47:21 --> CSRF cookie sent
+INFO - 2022-11-18 09:47:21 --> Input Class Initialized
+INFO - 2022-11-18 09:47:21 --> Language Class Initialized
+ERROR - 2022-11-18 09:47:21 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 09:47:44 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:47:44 --> Config Class Initialized
+INFO - 2022-11-18 09:47:44 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:47:44 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:47:44 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:47:44 --> URI Class Initialized
+INFO - 2022-11-18 09:47:44 --> Router Class Initialized
+INFO - 2022-11-18 09:47:44 --> Output Class Initialized
+INFO - 2022-11-18 09:47:44 --> Security Class Initialized
+DEBUG - 2022-11-18 09:47:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:47:44 --> CSRF cookie sent
+INFO - 2022-11-18 09:47:44 --> Input Class Initialized
+INFO - 2022-11-18 09:47:44 --> Language Class Initialized
+INFO - 2022-11-18 09:47:44 --> Loader Class Initialized
+INFO - 2022-11-18 09:47:44 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:47:44 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:47:44 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:47:44 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:47:44 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:47:44 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:47:44 --> Parser Class Initialized
+INFO - 2022-11-18 09:47:44 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:47:44 --> Pagination Class Initialized
+INFO - 2022-11-18 09:47:44 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:47:44 --> Controller Class Initialized
+INFO - 2022-11-18 09:47:44 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:47:44 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:47:44 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:47:44 --> Model "Customers" initialized
+INFO - 2022-11-18 09:47:44 --> Model "Tax" initialized
+DEBUG - 2022-11-18 09:47:44 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:47:44 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:47:44 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:47:44 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:47:44 --> Model "Invoices" initialized
+ERROR - 2022-11-18 09:48:03 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:48:03 --> Config Class Initialized
+INFO - 2022-11-18 09:48:03 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:48:03 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:48:03 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:48:03 --> URI Class Initialized
+INFO - 2022-11-18 09:48:03 --> Router Class Initialized
+INFO - 2022-11-18 09:48:03 --> Output Class Initialized
+INFO - 2022-11-18 09:48:03 --> Security Class Initialized
+DEBUG - 2022-11-18 09:48:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:48:03 --> CSRF cookie sent
+INFO - 2022-11-18 09:48:03 --> Input Class Initialized
+INFO - 2022-11-18 09:48:03 --> Language Class Initialized
+INFO - 2022-11-18 09:48:03 --> Loader Class Initialized
+INFO - 2022-11-18 09:48:03 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:48:03 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:48:03 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:48:03 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:48:03 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:48:03 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:48:03 --> Parser Class Initialized
+INFO - 2022-11-18 09:48:03 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:48:03 --> Pagination Class Initialized
+INFO - 2022-11-18 09:48:03 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:48:03 --> Controller Class Initialized
+INFO - 2022-11-18 09:48:03 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:48:03 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:48:03 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:48:03 --> Model "Customers" initialized
+INFO - 2022-11-18 09:48:03 --> Model "Tax" initialized
+DEBUG - 2022-11-18 09:48:03 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:48:03 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:48:03 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:48:03 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:48:03 --> Model "Invoices" initialized
+ERROR - 2022-11-18 09:48:03 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 09:48:03 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1143
+ERROR - 2022-11-18 09:48:03 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1173
+ERROR - 2022-11-18 09:48:03 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1196
+ERROR - 2022-11-18 09:48:03 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1196
+ERROR - 2022-11-18 09:48:03 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1227
+INFO - 2022-11-18 09:48:03 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 09:48:03 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:48:03 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 09:48:03 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 09:48:03 --> Model "Products" initialized
+INFO - 2022-11-18 15:18:03 --> Model "reports" initialized
+INFO - 2022-11-18 15:18:03 --> Model "Users" initialized
+INFO - 2022-11-18 15:18:03 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:18:03 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:18:03 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:18:03 --> Final output sent to browser
+DEBUG - 2022-11-18 15:18:03 --> Total execution time: 0.4474
+ERROR - 2022-11-18 09:48:03 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:48:03 --> Config Class Initialized
+INFO - 2022-11-18 09:48:03 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:48:03 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:48:03 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:48:03 --> URI Class Initialized
+INFO - 2022-11-18 09:48:03 --> Router Class Initialized
+INFO - 2022-11-18 09:48:03 --> Output Class Initialized
+INFO - 2022-11-18 09:48:03 --> Security Class Initialized
+DEBUG - 2022-11-18 09:48:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:48:03 --> CSRF cookie sent
+INFO - 2022-11-18 09:48:03 --> Input Class Initialized
+INFO - 2022-11-18 09:48:03 --> Language Class Initialized
+ERROR - 2022-11-18 09:48:03 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 09:48:03 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:48:03 --> Config Class Initialized
+INFO - 2022-11-18 09:48:03 --> Hooks Class Initialized
+ERROR - 2022-11-18 09:48:03 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+DEBUG - 2022-11-18 09:48:03 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:48:03 --> Utf8 Class Initialized
+ERROR - 2022-11-18 09:48:03 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:48:03 --> Config Class Initialized
+INFO - 2022-11-18 09:48:03 --> URI Class Initialized
+INFO - 2022-11-18 09:48:03 --> Hooks Class Initialized
+INFO - 2022-11-18 09:48:03 --> Config Class Initialized
+INFO - 2022-11-18 09:48:03 --> Hooks Class Initialized
+INFO - 2022-11-18 09:48:03 --> Router Class Initialized
+DEBUG - 2022-11-18 09:48:03 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:48:03 --> Utf8 Class Initialized
+DEBUG - 2022-11-18 09:48:03 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:48:03 --> Output Class Initialized
+INFO - 2022-11-18 09:48:03 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:48:03 --> URI Class Initialized
+INFO - 2022-11-18 09:48:03 --> Security Class Initialized
+INFO - 2022-11-18 09:48:03 --> URI Class Initialized
+INFO - 2022-11-18 09:48:03 --> Router Class Initialized
+DEBUG - 2022-11-18 09:48:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:48:03 --> Router Class Initialized
+INFO - 2022-11-18 09:48:03 --> CSRF cookie sent
+INFO - 2022-11-18 09:48:03 --> Output Class Initialized
+INFO - 2022-11-18 09:48:03 --> Input Class Initialized
+INFO - 2022-11-18 09:48:03 --> Output Class Initialized
+INFO - 2022-11-18 09:48:03 --> Security Class Initialized
+INFO - 2022-11-18 09:48:03 --> Language Class Initialized
+INFO - 2022-11-18 09:48:03 --> Security Class Initialized
+DEBUG - 2022-11-18 09:48:03 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2022-11-18 09:48:03 --> 404 Page Not Found: Assets/datatables
+DEBUG - 2022-11-18 09:48:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:48:03 --> CSRF cookie sent
+INFO - 2022-11-18 09:48:03 --> CSRF cookie sent
+INFO - 2022-11-18 09:48:03 --> Input Class Initialized
+INFO - 2022-11-18 09:48:03 --> Input Class Initialized
+INFO - 2022-11-18 09:48:03 --> Language Class Initialized
+INFO - 2022-11-18 09:48:03 --> Language Class Initialized
+ERROR - 2022-11-18 09:48:03 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 09:48:03 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 09:48:04 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:48:04 --> Config Class Initialized
+INFO - 2022-11-18 09:48:04 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:48:04 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:48:04 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:48:04 --> URI Class Initialized
+INFO - 2022-11-18 09:48:04 --> Router Class Initialized
+INFO - 2022-11-18 09:48:04 --> Output Class Initialized
+INFO - 2022-11-18 09:48:04 --> Security Class Initialized
+DEBUG - 2022-11-18 09:48:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:48:04 --> CSRF cookie sent
+INFO - 2022-11-18 09:48:04 --> CSRF token verified
+INFO - 2022-11-18 09:48:04 --> Input Class Initialized
+INFO - 2022-11-18 09:48:04 --> Language Class Initialized
+INFO - 2022-11-18 09:48:04 --> Loader Class Initialized
+INFO - 2022-11-18 09:48:04 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:48:04 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:48:04 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:48:04 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:48:04 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:48:04 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:48:04 --> Parser Class Initialized
+INFO - 2022-11-18 09:48:04 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:48:04 --> Pagination Class Initialized
+INFO - 2022-11-18 09:48:04 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:48:04 --> Controller Class Initialized
+INFO - 2022-11-18 09:48:04 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:48:04 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:48:04 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:48:04 --> Model "Customers" initialized
+INFO - 2022-11-18 09:48:04 --> Model "Invoices" initialized
+INFO - 2022-11-18 09:48:04 --> Final output sent to browser
+DEBUG - 2022-11-18 09:48:04 --> Total execution time: 0.0755
+ERROR - 2022-11-18 09:49:23 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:49:23 --> Config Class Initialized
+INFO - 2022-11-18 09:49:23 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:49:23 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:49:23 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:49:23 --> URI Class Initialized
+INFO - 2022-11-18 09:49:23 --> Router Class Initialized
+INFO - 2022-11-18 09:49:23 --> Output Class Initialized
+INFO - 2022-11-18 09:49:23 --> Security Class Initialized
+DEBUG - 2022-11-18 09:49:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:49:23 --> CSRF cookie sent
+INFO - 2022-11-18 09:49:23 --> Input Class Initialized
+INFO - 2022-11-18 09:49:23 --> Language Class Initialized
+INFO - 2022-11-18 09:49:23 --> Loader Class Initialized
+INFO - 2022-11-18 09:49:23 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:49:23 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:49:23 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:49:23 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:49:23 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:49:23 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:49:23 --> Parser Class Initialized
+INFO - 2022-11-18 09:49:23 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:49:23 --> Pagination Class Initialized
+INFO - 2022-11-18 09:49:23 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:49:23 --> Controller Class Initialized
+INFO - 2022-11-18 09:49:23 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:49:23 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:49:23 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:49:23 --> Model "Customers" initialized
+INFO - 2022-11-18 09:49:23 --> Model "Tax" initialized
+DEBUG - 2022-11-18 09:49:23 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:49:23 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:49:23 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:49:23 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:49:23 --> Model "Invoices" initialized
+ERROR - 2022-11-18 09:49:23 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 09:49:23 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1143
+ERROR - 2022-11-18 09:49:23 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1173
+ERROR - 2022-11-18 09:49:23 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1196
+ERROR - 2022-11-18 09:49:23 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1196
+ERROR - 2022-11-18 09:49:23 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1227
+INFO - 2022-11-18 09:49:23 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 09:49:23 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:49:23 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 09:49:23 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 09:49:23 --> Model "Products" initialized
+INFO - 2022-11-18 15:19:23 --> Model "reports" initialized
+INFO - 2022-11-18 15:19:23 --> Model "Users" initialized
+INFO - 2022-11-18 15:19:23 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:19:23 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:19:23 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:19:23 --> Final output sent to browser
+DEBUG - 2022-11-18 15:19:23 --> Total execution time: 0.4114
+ERROR - 2022-11-18 09:49:24 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:49:24 --> Config Class Initialized
+INFO - 2022-11-18 09:49:24 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:49:24 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:49:24 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:49:24 --> URI Class Initialized
+INFO - 2022-11-18 09:49:24 --> Router Class Initialized
+INFO - 2022-11-18 09:49:24 --> Output Class Initialized
+INFO - 2022-11-18 09:49:24 --> Security Class Initialized
+DEBUG - 2022-11-18 09:49:24 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:49:24 --> CSRF cookie sent
+INFO - 2022-11-18 09:49:24 --> Input Class Initialized
+INFO - 2022-11-18 09:49:24 --> Language Class Initialized
+ERROR - 2022-11-18 09:49:24 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 09:49:24 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:49:24 --> Config Class Initialized
+INFO - 2022-11-18 09:49:24 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:49:24 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:49:24 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:49:24 --> URI Class Initialized
+INFO - 2022-11-18 09:49:24 --> Router Class Initialized
+INFO - 2022-11-18 09:49:24 --> Output Class Initialized
+INFO - 2022-11-18 09:49:24 --> Security Class Initialized
+DEBUG - 2022-11-18 09:49:24 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:49:24 --> CSRF cookie sent
+INFO - 2022-11-18 09:49:24 --> Input Class Initialized
+INFO - 2022-11-18 09:49:24 --> Language Class Initialized
+ERROR - 2022-11-18 09:49:24 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 09:49:24 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 09:49:24 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:49:24 --> Config Class Initialized
+INFO - 2022-11-18 09:49:24 --> Config Class Initialized
+INFO - 2022-11-18 09:49:24 --> Hooks Class Initialized
+INFO - 2022-11-18 09:49:24 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:49:24 --> UTF-8 Support Enabled
+DEBUG - 2022-11-18 09:49:24 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:49:24 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:49:24 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:49:24 --> URI Class Initialized
+INFO - 2022-11-18 09:49:24 --> URI Class Initialized
+INFO - 2022-11-18 09:49:24 --> Router Class Initialized
+INFO - 2022-11-18 09:49:24 --> Output Class Initialized
+INFO - 2022-11-18 09:49:24 --> Router Class Initialized
+INFO - 2022-11-18 09:49:24 --> Security Class Initialized
+INFO - 2022-11-18 09:49:24 --> Output Class Initialized
+DEBUG - 2022-11-18 09:49:24 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:49:24 --> CSRF cookie sent
+INFO - 2022-11-18 09:49:24 --> Input Class Initialized
+INFO - 2022-11-18 09:49:24 --> Security Class Initialized
+INFO - 2022-11-18 09:49:24 --> Language Class Initialized
+ERROR - 2022-11-18 09:49:24 --> 404 Page Not Found: Assets/plugins
+DEBUG - 2022-11-18 09:49:24 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:49:24 --> CSRF cookie sent
+INFO - 2022-11-18 09:49:24 --> Input Class Initialized
+INFO - 2022-11-18 09:49:24 --> Language Class Initialized
+ERROR - 2022-11-18 09:49:24 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 09:49:24 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:49:24 --> Config Class Initialized
+INFO - 2022-11-18 09:49:24 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:49:24 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:49:24 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:49:24 --> URI Class Initialized
+INFO - 2022-11-18 09:49:24 --> Router Class Initialized
+INFO - 2022-11-18 09:49:24 --> Output Class Initialized
+INFO - 2022-11-18 09:49:24 --> Security Class Initialized
+DEBUG - 2022-11-18 09:49:24 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:49:24 --> CSRF cookie sent
+INFO - 2022-11-18 09:49:24 --> CSRF token verified
+INFO - 2022-11-18 09:49:24 --> Input Class Initialized
+INFO - 2022-11-18 09:49:24 --> Language Class Initialized
+INFO - 2022-11-18 09:49:24 --> Loader Class Initialized
+INFO - 2022-11-18 09:49:24 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:49:24 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:49:24 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:49:24 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:49:24 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:49:24 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:49:24 --> Parser Class Initialized
+INFO - 2022-11-18 09:49:24 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:49:24 --> Pagination Class Initialized
+INFO - 2022-11-18 09:49:24 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:49:24 --> Controller Class Initialized
+INFO - 2022-11-18 09:49:24 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:49:24 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:49:24 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:49:24 --> Model "Customers" initialized
+INFO - 2022-11-18 09:49:24 --> Model "Invoices" initialized
+INFO - 2022-11-18 09:49:24 --> Final output sent to browser
+DEBUG - 2022-11-18 09:49:24 --> Total execution time: 0.0281
+ERROR - 2022-11-18 09:51:03 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:51:03 --> Config Class Initialized
+INFO - 2022-11-18 09:51:03 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:51:03 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:51:03 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:51:03 --> URI Class Initialized
+INFO - 2022-11-18 09:51:03 --> Router Class Initialized
+INFO - 2022-11-18 09:51:03 --> Output Class Initialized
+INFO - 2022-11-18 09:51:03 --> Security Class Initialized
+DEBUG - 2022-11-18 09:51:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:51:03 --> CSRF cookie sent
+INFO - 2022-11-18 09:51:03 --> Input Class Initialized
+INFO - 2022-11-18 09:51:03 --> Language Class Initialized
+INFO - 2022-11-18 09:51:03 --> Loader Class Initialized
+INFO - 2022-11-18 09:51:03 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:51:03 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:51:03 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:51:03 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:51:03 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:51:03 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:51:03 --> Parser Class Initialized
+INFO - 2022-11-18 09:51:03 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:51:03 --> Pagination Class Initialized
+INFO - 2022-11-18 09:51:03 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:51:03 --> Controller Class Initialized
+INFO - 2022-11-18 09:51:03 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:51:03 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:51:03 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:51:03 --> Model "Customers" initialized
+INFO - 2022-11-18 09:51:03 --> Model "Tax" initialized
+DEBUG - 2022-11-18 09:51:03 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:51:03 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:51:03 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:51:03 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:51:03 --> Model "Invoices" initialized
+ERROR - 2022-11-18 09:51:03 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 09:51:03 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1143
+ERROR - 2022-11-18 09:51:03 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1173
+ERROR - 2022-11-18 09:51:03 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1196
+ERROR - 2022-11-18 09:51:03 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1196
+ERROR - 2022-11-18 09:51:03 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1227
+INFO - 2022-11-18 09:51:03 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 09:51:03 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:51:03 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 09:51:03 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 09:51:03 --> Model "Products" initialized
+INFO - 2022-11-18 15:21:03 --> Model "reports" initialized
+INFO - 2022-11-18 15:21:03 --> Model "Users" initialized
+INFO - 2022-11-18 15:21:03 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:21:03 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:21:03 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:21:03 --> Final output sent to browser
+DEBUG - 2022-11-18 15:21:03 --> Total execution time: 0.3792
+ERROR - 2022-11-18 09:51:04 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:51:04 --> Config Class Initialized
+INFO - 2022-11-18 09:51:04 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:51:04 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:51:04 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:51:04 --> URI Class Initialized
+INFO - 2022-11-18 09:51:04 --> Router Class Initialized
+INFO - 2022-11-18 09:51:04 --> Output Class Initialized
+INFO - 2022-11-18 09:51:04 --> Security Class Initialized
+DEBUG - 2022-11-18 09:51:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:51:04 --> CSRF cookie sent
+INFO - 2022-11-18 09:51:04 --> Input Class Initialized
+INFO - 2022-11-18 09:51:04 --> Language Class Initialized
+ERROR - 2022-11-18 09:51:04 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 09:51:04 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:51:04 --> Config Class Initialized
+INFO - 2022-11-18 09:51:04 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:51:04 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:51:04 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:51:04 --> URI Class Initialized
+INFO - 2022-11-18 09:51:04 --> Router Class Initialized
+INFO - 2022-11-18 09:51:04 --> Output Class Initialized
+INFO - 2022-11-18 09:51:04 --> Security Class Initialized
+DEBUG - 2022-11-18 09:51:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:51:04 --> CSRF cookie sent
+INFO - 2022-11-18 09:51:04 --> CSRF token verified
+INFO - 2022-11-18 09:51:04 --> Input Class Initialized
+INFO - 2022-11-18 09:51:04 --> Language Class Initialized
+ERROR - 2022-11-18 09:51:04 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:51:04 --> Loader Class Initialized
+INFO - 2022-11-18 09:51:04 --> Config Class Initialized
+INFO - 2022-11-18 09:51:04 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:51:04 --> Hooks Class Initialized
+INFO - 2022-11-18 09:51:04 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:51:04 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:51:04 --> Helper loaded: lang_helper
+DEBUG - 2022-11-18 09:51:04 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:51:04 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:51:04 --> Utf8 Class Initialized
+ERROR - 2022-11-18 09:51:04 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:51:04 --> URI Class Initialized
+INFO - 2022-11-18 09:51:04 --> Config Class Initialized
+INFO - 2022-11-18 09:51:04 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:51:04 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:51:04 --> Router Class Initialized
+INFO - 2022-11-18 09:51:04 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:51:04 --> Output Class Initialized
+INFO - 2022-11-18 09:51:04 --> URI Class Initialized
+INFO - 2022-11-18 09:51:04 --> Security Class Initialized
+INFO - 2022-11-18 09:51:04 --> Router Class Initialized
+DEBUG - 2022-11-18 09:51:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:51:04 --> CSRF cookie sent
+INFO - 2022-11-18 09:51:04 --> Output Class Initialized
+INFO - 2022-11-18 09:51:04 --> Input Class Initialized
+INFO - 2022-11-18 09:51:04 --> Security Class Initialized
+INFO - 2022-11-18 09:51:04 --> Language Class Initialized
+DEBUG - 2022-11-18 09:51:04 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2022-11-18 09:51:04 --> 404 Page Not Found: Assets/datatables
+INFO - 2022-11-18 09:51:04 --> CSRF cookie sent
+ERROR - 2022-11-18 09:51:04 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:51:04 --> Input Class Initialized
+INFO - 2022-11-18 09:51:04 --> Language Class Initialized
+INFO - 2022-11-18 09:51:04 --> Config Class Initialized
+ERROR - 2022-11-18 09:51:04 --> 404 Page Not Found: Assets/js
+INFO - 2022-11-18 09:51:04 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:51:04 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:51:04 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:51:04 --> URI Class Initialized
+INFO - 2022-11-18 09:51:04 --> Router Class Initialized
+INFO - 2022-11-18 09:51:04 --> Output Class Initialized
+INFO - 2022-11-18 09:51:04 --> Security Class Initialized
+DEBUG - 2022-11-18 09:51:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:51:04 --> CSRF cookie sent
+INFO - 2022-11-18 09:51:04 --> Input Class Initialized
+INFO - 2022-11-18 09:51:04 --> Language Class Initialized
+ERROR - 2022-11-18 09:51:04 --> 404 Page Not Found: Assets/plugins
+INFO - 2022-11-18 09:51:04 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:51:04 --> Parser Class Initialized
+INFO - 2022-11-18 09:51:04 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:51:04 --> Pagination Class Initialized
+INFO - 2022-11-18 09:51:04 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:51:04 --> Controller Class Initialized
+INFO - 2022-11-18 09:51:04 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:51:04 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:51:04 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:51:04 --> Model "Customers" initialized
+INFO - 2022-11-18 09:51:04 --> Model "Invoices" initialized
+INFO - 2022-11-18 09:51:04 --> Final output sent to browser
+DEBUG - 2022-11-18 09:51:04 --> Total execution time: 0.0952
+ERROR - 2022-11-18 09:52:36 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:52:36 --> Config Class Initialized
+INFO - 2022-11-18 09:52:36 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:52:36 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:52:36 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:52:36 --> URI Class Initialized
+INFO - 2022-11-18 09:52:36 --> Router Class Initialized
+INFO - 2022-11-18 09:52:36 --> Output Class Initialized
+INFO - 2022-11-18 09:52:36 --> Security Class Initialized
+DEBUG - 2022-11-18 09:52:36 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:52:36 --> CSRF cookie sent
+INFO - 2022-11-18 09:52:36 --> Input Class Initialized
+INFO - 2022-11-18 09:52:36 --> Language Class Initialized
+INFO - 2022-11-18 09:52:36 --> Loader Class Initialized
+INFO - 2022-11-18 09:52:36 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:52:36 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:52:36 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:52:36 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:52:36 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:52:36 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:52:36 --> Parser Class Initialized
+INFO - 2022-11-18 09:52:36 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:52:36 --> Pagination Class Initialized
+INFO - 2022-11-18 09:52:36 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:52:36 --> Controller Class Initialized
+INFO - 2022-11-18 09:52:36 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:52:36 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:52:36 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:52:36 --> Model "Customers" initialized
+INFO - 2022-11-18 09:52:36 --> Model "Tax" initialized
+DEBUG - 2022-11-18 09:52:36 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:52:36 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:52:36 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:52:36 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:52:36 --> Model "Invoices" initialized
+ERROR - 2022-11-18 09:52:36 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 09:52:36 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1145
+ERROR - 2022-11-18 09:52:36 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1175
+ERROR - 2022-11-18 09:52:36 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 09:52:36 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 09:52:36 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1229
+INFO - 2022-11-18 09:52:36 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 09:52:36 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:52:36 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 09:52:36 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 09:52:36 --> Model "Products" initialized
+INFO - 2022-11-18 15:22:36 --> Model "reports" initialized
+INFO - 2022-11-18 15:22:36 --> Model "Users" initialized
+INFO - 2022-11-18 15:22:37 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:22:37 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:22:37 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:22:37 --> Final output sent to browser
+DEBUG - 2022-11-18 15:22:37 --> Total execution time: 0.4140
+ERROR - 2022-11-18 09:52:37 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:52:37 --> Config Class Initialized
+INFO - 2022-11-18 09:52:37 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:52:37 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:52:37 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:52:37 --> URI Class Initialized
+INFO - 2022-11-18 09:52:37 --> Router Class Initialized
+INFO - 2022-11-18 09:52:37 --> Output Class Initialized
+INFO - 2022-11-18 09:52:37 --> Security Class Initialized
+DEBUG - 2022-11-18 09:52:37 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:52:37 --> CSRF cookie sent
+INFO - 2022-11-18 09:52:37 --> Input Class Initialized
+INFO - 2022-11-18 09:52:37 --> Language Class Initialized
+ERROR - 2022-11-18 09:52:37 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 09:52:37 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 09:52:37 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:52:37 --> Config Class Initialized
+INFO - 2022-11-18 09:52:37 --> Hooks Class Initialized
+INFO - 2022-11-18 09:52:37 --> Config Class Initialized
+INFO - 2022-11-18 09:52:37 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:52:37 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:52:37 --> Utf8 Class Initialized
+DEBUG - 2022-11-18 09:52:37 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:52:37 --> URI Class Initialized
+INFO - 2022-11-18 09:52:37 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:52:37 --> Router Class Initialized
+INFO - 2022-11-18 09:52:37 --> URI Class Initialized
+INFO - 2022-11-18 09:52:37 --> Output Class Initialized
+INFO - 2022-11-18 09:52:37 --> Router Class Initialized
+INFO - 2022-11-18 09:52:37 --> Security Class Initialized
+INFO - 2022-11-18 09:52:37 --> Output Class Initialized
+DEBUG - 2022-11-18 09:52:37 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:52:37 --> CSRF cookie sent
+INFO - 2022-11-18 09:52:37 --> Security Class Initialized
+INFO - 2022-11-18 09:52:37 --> Input Class Initialized
+DEBUG - 2022-11-18 09:52:37 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:52:37 --> Language Class Initialized
+INFO - 2022-11-18 09:52:37 --> CSRF cookie sent
+INFO - 2022-11-18 09:52:37 --> Input Class Initialized
+INFO - 2022-11-18 09:52:37 --> Language Class Initialized
+ERROR - 2022-11-18 09:52:37 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 09:52:37 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 09:52:37 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:52:37 --> Config Class Initialized
+INFO - 2022-11-18 09:52:37 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:52:37 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:52:37 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:52:37 --> URI Class Initialized
+INFO - 2022-11-18 09:52:37 --> Router Class Initialized
+INFO - 2022-11-18 09:52:37 --> Output Class Initialized
+INFO - 2022-11-18 09:52:37 --> Security Class Initialized
+DEBUG - 2022-11-18 09:52:37 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:52:37 --> CSRF cookie sent
+INFO - 2022-11-18 09:52:37 --> Input Class Initialized
+INFO - 2022-11-18 09:52:37 --> Language Class Initialized
+ERROR - 2022-11-18 09:52:37 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 09:52:37 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:52:37 --> Config Class Initialized
+INFO - 2022-11-18 09:52:37 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:52:37 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:52:37 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:52:37 --> URI Class Initialized
+INFO - 2022-11-18 09:52:37 --> Router Class Initialized
+INFO - 2022-11-18 09:52:37 --> Output Class Initialized
+INFO - 2022-11-18 09:52:37 --> Security Class Initialized
+DEBUG - 2022-11-18 09:52:37 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:52:37 --> CSRF cookie sent
+INFO - 2022-11-18 09:52:37 --> CSRF token verified
+INFO - 2022-11-18 09:52:37 --> Input Class Initialized
+INFO - 2022-11-18 09:52:37 --> Language Class Initialized
+INFO - 2022-11-18 09:52:37 --> Loader Class Initialized
+INFO - 2022-11-18 09:52:37 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:52:37 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:52:37 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:52:37 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:52:37 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:52:37 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:52:37 --> Parser Class Initialized
+INFO - 2022-11-18 09:52:37 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:52:37 --> Pagination Class Initialized
+INFO - 2022-11-18 09:52:37 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:52:37 --> Controller Class Initialized
+INFO - 2022-11-18 09:52:37 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:52:37 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:52:37 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:52:37 --> Model "Customers" initialized
+INFO - 2022-11-18 09:52:37 --> Model "Invoices" initialized
+INFO - 2022-11-18 09:52:37 --> Final output sent to browser
+DEBUG - 2022-11-18 09:52:37 --> Total execution time: 0.0141
+ERROR - 2022-11-18 09:52:59 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:52:59 --> Config Class Initialized
+INFO - 2022-11-18 09:52:59 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:52:59 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:52:59 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:52:59 --> URI Class Initialized
+INFO - 2022-11-18 09:52:59 --> Router Class Initialized
+INFO - 2022-11-18 09:52:59 --> Output Class Initialized
+INFO - 2022-11-18 09:52:59 --> Security Class Initialized
+DEBUG - 2022-11-18 09:52:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:52:59 --> CSRF cookie sent
+INFO - 2022-11-18 09:52:59 --> Input Class Initialized
+INFO - 2022-11-18 09:52:59 --> Language Class Initialized
+INFO - 2022-11-18 09:52:59 --> Loader Class Initialized
+INFO - 2022-11-18 09:52:59 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:52:59 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:52:59 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:52:59 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:52:59 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:52:59 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:52:59 --> Parser Class Initialized
+INFO - 2022-11-18 09:52:59 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:52:59 --> Pagination Class Initialized
+INFO - 2022-11-18 09:52:59 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:52:59 --> Controller Class Initialized
+INFO - 2022-11-18 09:52:59 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:52:59 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:52:59 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:52:59 --> Model "Customers" initialized
+INFO - 2022-11-18 09:52:59 --> Model "Tax" initialized
+DEBUG - 2022-11-18 09:52:59 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:52:59 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:52:59 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:52:59 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:52:59 --> Model "Invoices" initialized
+ERROR - 2022-11-18 09:52:59 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 09:52:59 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1145
+ERROR - 2022-11-18 09:52:59 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1175
+ERROR - 2022-11-18 09:53:00 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 09:53:00 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 09:53:00 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1229
+INFO - 2022-11-18 09:53:00 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 09:53:00 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:53:00 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 09:53:00 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 09:53:00 --> Model "Products" initialized
+INFO - 2022-11-18 15:23:00 --> Model "reports" initialized
+INFO - 2022-11-18 15:23:00 --> Model "Users" initialized
+INFO - 2022-11-18 15:23:00 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:23:00 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:23:00 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:23:00 --> Final output sent to browser
+DEBUG - 2022-11-18 15:23:00 --> Total execution time: 0.3678
+ERROR - 2022-11-18 09:53:00 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:53:00 --> Config Class Initialized
+INFO - 2022-11-18 09:53:00 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:53:00 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:53:00 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:53:00 --> URI Class Initialized
+INFO - 2022-11-18 09:53:00 --> Router Class Initialized
+INFO - 2022-11-18 09:53:00 --> Output Class Initialized
+INFO - 2022-11-18 09:53:00 --> Security Class Initialized
+DEBUG - 2022-11-18 09:53:00 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:53:00 --> CSRF cookie sent
+INFO - 2022-11-18 09:53:00 --> Input Class Initialized
+INFO - 2022-11-18 09:53:00 --> Language Class Initialized
+ERROR - 2022-11-18 09:53:00 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 09:53:00 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:53:00 --> Config Class Initialized
+INFO - 2022-11-18 09:53:00 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:53:00 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:53:00 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:53:00 --> URI Class Initialized
+INFO - 2022-11-18 09:53:00 --> Router Class Initialized
+INFO - 2022-11-18 09:53:00 --> Output Class Initialized
+INFO - 2022-11-18 09:53:00 --> Security Class Initialized
+DEBUG - 2022-11-18 09:53:00 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:53:00 --> CSRF cookie sent
+INFO - 2022-11-18 09:53:00 --> Input Class Initialized
+INFO - 2022-11-18 09:53:00 --> Language Class Initialized
+ERROR - 2022-11-18 09:53:00 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 09:53:00 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 09:53:00 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:53:00 --> Config Class Initialized
+INFO - 2022-11-18 09:53:00 --> Hooks Class Initialized
+INFO - 2022-11-18 09:53:00 --> Config Class Initialized
+DEBUG - 2022-11-18 09:53:00 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:53:00 --> Hooks Class Initialized
+INFO - 2022-11-18 09:53:00 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:53:00 --> URI Class Initialized
+DEBUG - 2022-11-18 09:53:00 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:53:00 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:53:00 --> Router Class Initialized
+INFO - 2022-11-18 09:53:00 --> URI Class Initialized
+INFO - 2022-11-18 09:53:00 --> Output Class Initialized
+INFO - 2022-11-18 09:53:00 --> Security Class Initialized
+INFO - 2022-11-18 09:53:00 --> Router Class Initialized
+DEBUG - 2022-11-18 09:53:00 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:53:00 --> Output Class Initialized
+INFO - 2022-11-18 09:53:00 --> CSRF cookie sent
+INFO - 2022-11-18 09:53:00 --> Input Class Initialized
+INFO - 2022-11-18 09:53:00 --> Security Class Initialized
+INFO - 2022-11-18 09:53:00 --> Language Class Initialized
+DEBUG - 2022-11-18 09:53:00 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:53:00 --> CSRF cookie sent
+ERROR - 2022-11-18 09:53:00 --> 404 Page Not Found: Assets/js
+INFO - 2022-11-18 09:53:00 --> Input Class Initialized
+INFO - 2022-11-18 09:53:00 --> Language Class Initialized
+ERROR - 2022-11-18 09:53:00 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 09:53:00 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:53:00 --> Config Class Initialized
+INFO - 2022-11-18 09:53:00 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:53:00 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:53:00 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:53:00 --> URI Class Initialized
+INFO - 2022-11-18 09:53:00 --> Router Class Initialized
+INFO - 2022-11-18 09:53:00 --> Output Class Initialized
+INFO - 2022-11-18 09:53:00 --> Security Class Initialized
+DEBUG - 2022-11-18 09:53:00 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:53:00 --> CSRF cookie sent
+INFO - 2022-11-18 09:53:00 --> CSRF token verified
+INFO - 2022-11-18 09:53:00 --> Input Class Initialized
+INFO - 2022-11-18 09:53:00 --> Language Class Initialized
+INFO - 2022-11-18 09:53:00 --> Loader Class Initialized
+INFO - 2022-11-18 09:53:00 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:53:00 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:53:00 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:53:00 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:53:00 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:53:00 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:53:00 --> Parser Class Initialized
+INFO - 2022-11-18 09:53:00 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:53:00 --> Pagination Class Initialized
+INFO - 2022-11-18 09:53:00 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:53:00 --> Controller Class Initialized
+INFO - 2022-11-18 09:53:00 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:53:00 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:53:00 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:53:00 --> Model "Customers" initialized
+INFO - 2022-11-18 09:53:00 --> Model "Invoices" initialized
+INFO - 2022-11-18 09:53:00 --> Final output sent to browser
+DEBUG - 2022-11-18 09:53:00 --> Total execution time: 0.0185
+ERROR - 2022-11-18 09:55:51 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:55:51 --> Config Class Initialized
+INFO - 2022-11-18 09:55:51 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:55:51 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:55:51 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:55:51 --> URI Class Initialized
+INFO - 2022-11-18 09:55:51 --> Router Class Initialized
+INFO - 2022-11-18 09:55:51 --> Output Class Initialized
+INFO - 2022-11-18 09:55:51 --> Security Class Initialized
+DEBUG - 2022-11-18 09:55:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:55:51 --> CSRF cookie sent
+INFO - 2022-11-18 09:55:51 --> Input Class Initialized
+INFO - 2022-11-18 09:55:51 --> Language Class Initialized
+INFO - 2022-11-18 09:55:51 --> Loader Class Initialized
+INFO - 2022-11-18 09:55:51 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:55:51 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:55:51 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:55:51 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:55:51 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:55:51 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:55:51 --> Parser Class Initialized
+INFO - 2022-11-18 09:55:51 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:55:51 --> Pagination Class Initialized
+INFO - 2022-11-18 09:55:51 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:55:51 --> Controller Class Initialized
+INFO - 2022-11-18 09:55:51 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:55:51 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:55:51 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:55:51 --> Model "Customers" initialized
+INFO - 2022-11-18 09:55:51 --> Model "Tax" initialized
+DEBUG - 2022-11-18 09:55:51 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:55:51 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:55:51 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:55:51 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:55:51 --> Model "Invoices" initialized
+ERROR - 2022-11-18 09:55:52 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 09:55:52 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1144
+ERROR - 2022-11-18 09:55:52 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1174
+ERROR - 2022-11-18 09:55:52 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1197
+ERROR - 2022-11-18 09:55:52 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1197
+ERROR - 2022-11-18 09:55:52 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1228
+INFO - 2022-11-18 09:55:52 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 09:55:52 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:55:52 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 09:55:52 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 09:55:52 --> Model "Products" initialized
+INFO - 2022-11-18 15:25:52 --> Model "reports" initialized
+INFO - 2022-11-18 15:25:52 --> Model "Users" initialized
+INFO - 2022-11-18 15:25:52 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:25:52 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:25:52 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:25:52 --> Final output sent to browser
+DEBUG - 2022-11-18 15:25:52 --> Total execution time: 0.4046
+ERROR - 2022-11-18 09:55:52 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:55:52 --> Config Class Initialized
+INFO - 2022-11-18 09:55:52 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:55:52 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:55:52 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:55:52 --> URI Class Initialized
+INFO - 2022-11-18 09:55:52 --> Router Class Initialized
+INFO - 2022-11-18 09:55:52 --> Output Class Initialized
+INFO - 2022-11-18 09:55:52 --> Security Class Initialized
+DEBUG - 2022-11-18 09:55:52 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:55:52 --> CSRF cookie sent
+INFO - 2022-11-18 09:55:52 --> Input Class Initialized
+INFO - 2022-11-18 09:55:52 --> Language Class Initialized
+ERROR - 2022-11-18 09:55:52 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 09:55:52 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:55:52 --> Config Class Initialized
+INFO - 2022-11-18 09:55:52 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:55:52 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:55:52 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:55:52 --> URI Class Initialized
+INFO - 2022-11-18 09:55:52 --> Router Class Initialized
+INFO - 2022-11-18 09:55:52 --> Output Class Initialized
+INFO - 2022-11-18 09:55:52 --> Security Class Initialized
+DEBUG - 2022-11-18 09:55:52 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:55:52 --> CSRF cookie sent
+INFO - 2022-11-18 09:55:52 --> Input Class Initialized
+INFO - 2022-11-18 09:55:52 --> Language Class Initialized
+ERROR - 2022-11-18 09:55:52 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 09:55:52 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 09:55:52 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:55:52 --> Config Class Initialized
+INFO - 2022-11-18 09:55:52 --> Config Class Initialized
+INFO - 2022-11-18 09:55:52 --> Hooks Class Initialized
+INFO - 2022-11-18 09:55:52 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:55:52 --> UTF-8 Support Enabled
+DEBUG - 2022-11-18 09:55:52 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:55:52 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:55:52 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:55:52 --> URI Class Initialized
+INFO - 2022-11-18 09:55:52 --> Router Class Initialized
+INFO - 2022-11-18 09:55:52 --> URI Class Initialized
+INFO - 2022-11-18 09:55:52 --> Output Class Initialized
+INFO - 2022-11-18 09:55:52 --> Router Class Initialized
+INFO - 2022-11-18 09:55:52 --> Security Class Initialized
+INFO - 2022-11-18 09:55:52 --> Output Class Initialized
+DEBUG - 2022-11-18 09:55:52 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:55:52 --> CSRF cookie sent
+INFO - 2022-11-18 09:55:52 --> Security Class Initialized
+INFO - 2022-11-18 09:55:52 --> Input Class Initialized
+INFO - 2022-11-18 09:55:52 --> Language Class Initialized
+DEBUG - 2022-11-18 09:55:52 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:55:52 --> CSRF cookie sent
+ERROR - 2022-11-18 09:55:52 --> 404 Page Not Found: Assets/datatables
+INFO - 2022-11-18 09:55:52 --> Input Class Initialized
+INFO - 2022-11-18 09:55:52 --> Language Class Initialized
+ERROR - 2022-11-18 09:55:52 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 09:55:52 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:55:52 --> Config Class Initialized
+INFO - 2022-11-18 09:55:52 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:55:52 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:55:52 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:55:52 --> URI Class Initialized
+INFO - 2022-11-18 09:55:52 --> Router Class Initialized
+INFO - 2022-11-18 09:55:52 --> Output Class Initialized
+INFO - 2022-11-18 09:55:52 --> Security Class Initialized
+DEBUG - 2022-11-18 09:55:52 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:55:52 --> CSRF cookie sent
+INFO - 2022-11-18 09:55:52 --> CSRF token verified
+INFO - 2022-11-18 09:55:52 --> Input Class Initialized
+INFO - 2022-11-18 09:55:52 --> Language Class Initialized
+INFO - 2022-11-18 09:55:52 --> Loader Class Initialized
+INFO - 2022-11-18 09:55:52 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:55:52 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:55:52 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:55:52 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:55:52 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:55:52 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:55:52 --> Parser Class Initialized
+INFO - 2022-11-18 09:55:52 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:55:52 --> Pagination Class Initialized
+INFO - 2022-11-18 09:55:52 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:55:52 --> Controller Class Initialized
+INFO - 2022-11-18 09:55:52 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:55:52 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:55:52 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:55:52 --> Model "Customers" initialized
+INFO - 2022-11-18 09:55:52 --> Model "Invoices" initialized
+INFO - 2022-11-18 09:55:52 --> Final output sent to browser
+DEBUG - 2022-11-18 09:55:52 --> Total execution time: 0.0624
+ERROR - 2022-11-18 09:56:11 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:56:11 --> Config Class Initialized
+INFO - 2022-11-18 09:56:11 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:56:11 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:56:11 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:56:11 --> URI Class Initialized
+INFO - 2022-11-18 09:56:11 --> Router Class Initialized
+INFO - 2022-11-18 09:56:11 --> Output Class Initialized
+INFO - 2022-11-18 09:56:11 --> Security Class Initialized
+DEBUG - 2022-11-18 09:56:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:56:11 --> CSRF cookie sent
+INFO - 2022-11-18 09:56:11 --> Input Class Initialized
+INFO - 2022-11-18 09:56:11 --> Language Class Initialized
+INFO - 2022-11-18 09:56:11 --> Loader Class Initialized
+INFO - 2022-11-18 09:56:11 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:56:11 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:56:11 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:56:11 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:56:11 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:56:11 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:56:11 --> Parser Class Initialized
+INFO - 2022-11-18 09:56:11 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:56:11 --> Pagination Class Initialized
+INFO - 2022-11-18 09:56:11 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:56:11 --> Controller Class Initialized
+INFO - 2022-11-18 09:56:11 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:56:11 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:56:11 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:56:11 --> Model "Customers" initialized
+INFO - 2022-11-18 09:56:11 --> Model "Tax" initialized
+DEBUG - 2022-11-18 09:56:11 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:56:11 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:56:11 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:56:11 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:56:11 --> Model "Invoices" initialized
+ERROR - 2022-11-18 09:56:11 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 09:56:11 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1144
+ERROR - 2022-11-18 09:56:11 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1174
+ERROR - 2022-11-18 09:56:11 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1197
+ERROR - 2022-11-18 09:56:11 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1197
+ERROR - 2022-11-18 09:56:11 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1228
+INFO - 2022-11-18 09:56:11 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 09:56:11 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:56:11 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 09:56:11 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 09:56:11 --> Model "Products" initialized
+INFO - 2022-11-18 15:26:11 --> Model "reports" initialized
+INFO - 2022-11-18 15:26:11 --> Model "Users" initialized
+INFO - 2022-11-18 15:26:11 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:26:11 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:26:11 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:26:11 --> Final output sent to browser
+DEBUG - 2022-11-18 15:26:11 --> Total execution time: 0.3940
+ERROR - 2022-11-18 09:56:11 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:56:11 --> Config Class Initialized
+INFO - 2022-11-18 09:56:11 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:56:11 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:56:11 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:56:11 --> URI Class Initialized
+INFO - 2022-11-18 09:56:11 --> Router Class Initialized
+INFO - 2022-11-18 09:56:11 --> Output Class Initialized
+INFO - 2022-11-18 09:56:11 --> Security Class Initialized
+DEBUG - 2022-11-18 09:56:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:56:11 --> CSRF cookie sent
+INFO - 2022-11-18 09:56:11 --> Input Class Initialized
+INFO - 2022-11-18 09:56:11 --> Language Class Initialized
+ERROR - 2022-11-18 09:56:11 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 09:56:12 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:56:12 --> Config Class Initialized
+INFO - 2022-11-18 09:56:12 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:56:12 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:56:12 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:56:12 --> URI Class Initialized
+INFO - 2022-11-18 09:56:12 --> Router Class Initialized
+INFO - 2022-11-18 09:56:12 --> Output Class Initialized
+INFO - 2022-11-18 09:56:12 --> Security Class Initialized
+DEBUG - 2022-11-18 09:56:12 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:56:12 --> CSRF cookie sent
+INFO - 2022-11-18 09:56:12 --> Input Class Initialized
+INFO - 2022-11-18 09:56:12 --> Language Class Initialized
+ERROR - 2022-11-18 09:56:12 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 09:56:12 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 09:56:12 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:56:12 --> Config Class Initialized
+INFO - 2022-11-18 09:56:12 --> Config Class Initialized
+INFO - 2022-11-18 09:56:12 --> Hooks Class Initialized
+INFO - 2022-11-18 09:56:12 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:56:12 --> UTF-8 Support Enabled
+DEBUG - 2022-11-18 09:56:12 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:56:12 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:56:12 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:56:12 --> URI Class Initialized
+INFO - 2022-11-18 09:56:12 --> URI Class Initialized
+INFO - 2022-11-18 09:56:12 --> Router Class Initialized
+INFO - 2022-11-18 09:56:12 --> Router Class Initialized
+INFO - 2022-11-18 09:56:12 --> Output Class Initialized
+INFO - 2022-11-18 09:56:12 --> Output Class Initialized
+INFO - 2022-11-18 09:56:12 --> Security Class Initialized
+INFO - 2022-11-18 09:56:12 --> Security Class Initialized
+DEBUG - 2022-11-18 09:56:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-11-18 09:56:12 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:56:12 --> CSRF cookie sent
+INFO - 2022-11-18 09:56:12 --> CSRF cookie sent
+INFO - 2022-11-18 09:56:12 --> Input Class Initialized
+INFO - 2022-11-18 09:56:12 --> Input Class Initialized
+INFO - 2022-11-18 09:56:12 --> Language Class Initialized
+INFO - 2022-11-18 09:56:12 --> Language Class Initialized
+ERROR - 2022-11-18 09:56:12 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 09:56:12 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 09:56:12 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:56:12 --> Config Class Initialized
+INFO - 2022-11-18 09:56:12 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:56:12 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:56:12 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:56:12 --> URI Class Initialized
+INFO - 2022-11-18 09:56:12 --> Router Class Initialized
+INFO - 2022-11-18 09:56:12 --> Output Class Initialized
+INFO - 2022-11-18 09:56:12 --> Security Class Initialized
+DEBUG - 2022-11-18 09:56:12 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:56:12 --> CSRF cookie sent
+INFO - 2022-11-18 09:56:12 --> CSRF token verified
+INFO - 2022-11-18 09:56:12 --> Input Class Initialized
+INFO - 2022-11-18 09:56:12 --> Language Class Initialized
+INFO - 2022-11-18 09:56:12 --> Loader Class Initialized
+INFO - 2022-11-18 09:56:12 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:56:12 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:56:12 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:56:12 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:56:12 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:56:12 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:56:12 --> Parser Class Initialized
+INFO - 2022-11-18 09:56:12 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:56:12 --> Pagination Class Initialized
+INFO - 2022-11-18 09:56:12 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:56:12 --> Controller Class Initialized
+INFO - 2022-11-18 09:56:12 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:56:12 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:56:12 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:56:12 --> Model "Customers" initialized
+INFO - 2022-11-18 09:56:12 --> Model "Invoices" initialized
+INFO - 2022-11-18 09:56:12 --> Final output sent to browser
+DEBUG - 2022-11-18 09:56:12 --> Total execution time: 0.0522
+ERROR - 2022-11-18 09:56:17 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:56:17 --> Config Class Initialized
+INFO - 2022-11-18 09:56:17 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:56:17 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:56:17 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:56:17 --> URI Class Initialized
+INFO - 2022-11-18 09:56:17 --> Router Class Initialized
+INFO - 2022-11-18 09:56:17 --> Output Class Initialized
+INFO - 2022-11-18 09:56:17 --> Security Class Initialized
+DEBUG - 2022-11-18 09:56:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:56:17 --> CSRF cookie sent
+INFO - 2022-11-18 09:56:17 --> Input Class Initialized
+INFO - 2022-11-18 09:56:17 --> Language Class Initialized
+INFO - 2022-11-18 09:56:17 --> Loader Class Initialized
+INFO - 2022-11-18 09:56:17 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:56:17 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:56:17 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:56:17 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:56:17 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:56:17 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:56:17 --> Parser Class Initialized
+INFO - 2022-11-18 09:56:17 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:56:17 --> Pagination Class Initialized
+INFO - 2022-11-18 09:56:17 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:56:17 --> Controller Class Initialized
+INFO - 2022-11-18 09:56:17 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:56:17 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:56:17 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:56:17 --> Model "Customers" initialized
+INFO - 2022-11-18 09:56:17 --> Model "Tax" initialized
+DEBUG - 2022-11-18 09:56:17 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:56:17 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:56:17 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:56:17 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:56:17 --> Model "Invoices" initialized
+ERROR - 2022-11-18 09:56:17 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 09:56:17 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1145
+ERROR - 2022-11-18 09:56:17 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1175
+ERROR - 2022-11-18 09:56:17 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 09:56:17 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 09:56:17 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1229
+INFO - 2022-11-18 09:56:17 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 09:56:17 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:56:17 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 09:56:17 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 09:56:17 --> Model "Products" initialized
+INFO - 2022-11-18 15:26:17 --> Model "reports" initialized
+INFO - 2022-11-18 15:26:17 --> Model "Users" initialized
+INFO - 2022-11-18 15:26:17 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:26:17 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:26:17 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:26:17 --> Final output sent to browser
+DEBUG - 2022-11-18 15:26:17 --> Total execution time: 0.3935
+ERROR - 2022-11-18 09:56:17 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:56:17 --> Config Class Initialized
+INFO - 2022-11-18 09:56:17 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:56:17 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:56:17 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:56:17 --> URI Class Initialized
+INFO - 2022-11-18 09:56:17 --> Router Class Initialized
+INFO - 2022-11-18 09:56:17 --> Output Class Initialized
+INFO - 2022-11-18 09:56:17 --> Security Class Initialized
+DEBUG - 2022-11-18 09:56:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:56:17 --> CSRF cookie sent
+INFO - 2022-11-18 09:56:17 --> Input Class Initialized
+INFO - 2022-11-18 09:56:17 --> Language Class Initialized
+ERROR - 2022-11-18 09:56:17 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 09:56:17 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 09:56:17 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:56:17 --> Config Class Initialized
+INFO - 2022-11-18 09:56:17 --> Config Class Initialized
+INFO - 2022-11-18 09:56:17 --> Hooks Class Initialized
+INFO - 2022-11-18 09:56:17 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:56:17 --> UTF-8 Support Enabled
+DEBUG - 2022-11-18 09:56:17 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:56:17 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:56:17 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:56:17 --> URI Class Initialized
+INFO - 2022-11-18 09:56:17 --> URI Class Initialized
+INFO - 2022-11-18 09:56:17 --> Router Class Initialized
+INFO - 2022-11-18 09:56:17 --> Router Class Initialized
+INFO - 2022-11-18 09:56:17 --> Output Class Initialized
+INFO - 2022-11-18 09:56:17 --> Output Class Initialized
+INFO - 2022-11-18 09:56:17 --> Security Class Initialized
+INFO - 2022-11-18 09:56:17 --> Security Class Initialized
+DEBUG - 2022-11-18 09:56:17 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-11-18 09:56:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:56:17 --> CSRF cookie sent
+INFO - 2022-11-18 09:56:17 --> CSRF cookie sent
+INFO - 2022-11-18 09:56:17 --> Input Class Initialized
+INFO - 2022-11-18 09:56:17 --> Input Class Initialized
+INFO - 2022-11-18 09:56:17 --> Language Class Initialized
+INFO - 2022-11-18 09:56:17 --> Language Class Initialized
+ERROR - 2022-11-18 09:56:17 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 09:56:17 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 09:56:17 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:56:17 --> Config Class Initialized
+INFO - 2022-11-18 09:56:17 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:56:17 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:56:17 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:56:17 --> URI Class Initialized
+INFO - 2022-11-18 09:56:17 --> Router Class Initialized
+INFO - 2022-11-18 09:56:17 --> Output Class Initialized
+INFO - 2022-11-18 09:56:17 --> Security Class Initialized
+DEBUG - 2022-11-18 09:56:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:56:17 --> CSRF cookie sent
+INFO - 2022-11-18 09:56:17 --> Input Class Initialized
+INFO - 2022-11-18 09:56:17 --> Language Class Initialized
+ERROR - 2022-11-18 09:56:17 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 09:56:17 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:56:17 --> Config Class Initialized
+INFO - 2022-11-18 09:56:17 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:56:17 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:56:17 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:56:17 --> URI Class Initialized
+INFO - 2022-11-18 09:56:17 --> Router Class Initialized
+INFO - 2022-11-18 09:56:17 --> Output Class Initialized
+INFO - 2022-11-18 09:56:17 --> Security Class Initialized
+DEBUG - 2022-11-18 09:56:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:56:17 --> CSRF cookie sent
+INFO - 2022-11-18 09:56:17 --> CSRF token verified
+INFO - 2022-11-18 09:56:17 --> Input Class Initialized
+INFO - 2022-11-18 09:56:17 --> Language Class Initialized
+INFO - 2022-11-18 09:56:17 --> Loader Class Initialized
+INFO - 2022-11-18 09:56:17 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:56:17 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:56:17 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:56:17 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:56:17 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:56:17 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:56:17 --> Parser Class Initialized
+INFO - 2022-11-18 09:56:17 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:56:17 --> Pagination Class Initialized
+INFO - 2022-11-18 09:56:17 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:56:17 --> Controller Class Initialized
+INFO - 2022-11-18 09:56:17 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:56:17 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:56:17 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:56:17 --> Model "Customers" initialized
+INFO - 2022-11-18 09:56:17 --> Model "Invoices" initialized
+INFO - 2022-11-18 09:56:17 --> Final output sent to browser
+DEBUG - 2022-11-18 09:56:17 --> Total execution time: 0.0276
+ERROR - 2022-11-18 09:56:18 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:56:18 --> Config Class Initialized
+INFO - 2022-11-18 09:56:18 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:56:18 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:56:18 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:56:18 --> URI Class Initialized
+INFO - 2022-11-18 09:56:18 --> Router Class Initialized
+INFO - 2022-11-18 09:56:18 --> Output Class Initialized
+INFO - 2022-11-18 09:56:18 --> Security Class Initialized
+DEBUG - 2022-11-18 09:56:18 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:56:18 --> CSRF cookie sent
+INFO - 2022-11-18 09:56:18 --> Input Class Initialized
+INFO - 2022-11-18 09:56:18 --> Language Class Initialized
+INFO - 2022-11-18 09:56:18 --> Loader Class Initialized
+INFO - 2022-11-18 09:56:18 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:56:18 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:56:18 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:56:18 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:56:18 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:56:18 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:56:18 --> Parser Class Initialized
+INFO - 2022-11-18 09:56:18 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:56:18 --> Pagination Class Initialized
+INFO - 2022-11-18 09:56:18 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:56:18 --> Controller Class Initialized
+INFO - 2022-11-18 09:56:18 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:56:18 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:56:18 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:56:18 --> Model "Customers" initialized
+INFO - 2022-11-18 09:56:18 --> Model "Tax" initialized
+DEBUG - 2022-11-18 09:56:18 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:56:18 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:56:18 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:56:18 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:56:18 --> Model "Invoices" initialized
+ERROR - 2022-11-18 09:56:18 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 09:56:18 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1145
+ERROR - 2022-11-18 09:56:18 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1175
+ERROR - 2022-11-18 09:56:18 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 09:56:18 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 09:56:18 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1229
+INFO - 2022-11-18 09:56:18 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 09:56:18 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:56:18 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 09:56:18 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 09:56:18 --> Model "Products" initialized
+INFO - 2022-11-18 15:26:18 --> Model "reports" initialized
+INFO - 2022-11-18 15:26:18 --> Model "Users" initialized
+INFO - 2022-11-18 15:26:19 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:26:19 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:26:19 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:26:19 --> Final output sent to browser
+DEBUG - 2022-11-18 15:26:19 --> Total execution time: 0.4092
+ERROR - 2022-11-18 09:56:19 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:56:19 --> Config Class Initialized
+INFO - 2022-11-18 09:56:19 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:56:19 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:56:19 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:56:19 --> URI Class Initialized
+INFO - 2022-11-18 09:56:19 --> Router Class Initialized
+INFO - 2022-11-18 09:56:19 --> Output Class Initialized
+INFO - 2022-11-18 09:56:19 --> Security Class Initialized
+DEBUG - 2022-11-18 09:56:19 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:56:19 --> CSRF cookie sent
+INFO - 2022-11-18 09:56:19 --> Input Class Initialized
+INFO - 2022-11-18 09:56:19 --> Language Class Initialized
+ERROR - 2022-11-18 09:56:19 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 09:56:19 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:56:19 --> Config Class Initialized
+INFO - 2022-11-18 09:56:19 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:56:19 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:56:19 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:56:19 --> URI Class Initialized
+INFO - 2022-11-18 09:56:19 --> Router Class Initialized
+INFO - 2022-11-18 09:56:19 --> Output Class Initialized
+INFO - 2022-11-18 09:56:19 --> Security Class Initialized
+DEBUG - 2022-11-18 09:56:19 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:56:19 --> CSRF cookie sent
+INFO - 2022-11-18 09:56:19 --> Input Class Initialized
+INFO - 2022-11-18 09:56:19 --> Language Class Initialized
+ERROR - 2022-11-18 09:56:19 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 09:56:19 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 09:56:19 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:56:19 --> Config Class Initialized
+INFO - 2022-11-18 09:56:19 --> Config Class Initialized
+INFO - 2022-11-18 09:56:19 --> Hooks Class Initialized
+INFO - 2022-11-18 09:56:19 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:56:19 --> UTF-8 Support Enabled
+DEBUG - 2022-11-18 09:56:19 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:56:19 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:56:19 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:56:19 --> URI Class Initialized
+INFO - 2022-11-18 09:56:19 --> URI Class Initialized
+INFO - 2022-11-18 09:56:19 --> Router Class Initialized
+INFO - 2022-11-18 09:56:19 --> Router Class Initialized
+INFO - 2022-11-18 09:56:19 --> Output Class Initialized
+INFO - 2022-11-18 09:56:19 --> Output Class Initialized
+INFO - 2022-11-18 09:56:19 --> Security Class Initialized
+INFO - 2022-11-18 09:56:19 --> Security Class Initialized
+DEBUG - 2022-11-18 09:56:19 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:56:19 --> CSRF cookie sent
+DEBUG - 2022-11-18 09:56:19 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:56:19 --> Input Class Initialized
+INFO - 2022-11-18 09:56:19 --> CSRF cookie sent
+INFO - 2022-11-18 09:56:19 --> Input Class Initialized
+INFO - 2022-11-18 09:56:19 --> Language Class Initialized
+INFO - 2022-11-18 09:56:19 --> Language Class Initialized
+ERROR - 2022-11-18 09:56:19 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 09:56:19 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 09:56:19 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:56:19 --> Config Class Initialized
+INFO - 2022-11-18 09:56:19 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:56:19 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:56:19 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:56:19 --> URI Class Initialized
+INFO - 2022-11-18 09:56:19 --> Router Class Initialized
+INFO - 2022-11-18 09:56:19 --> Output Class Initialized
+INFO - 2022-11-18 09:56:19 --> Security Class Initialized
+DEBUG - 2022-11-18 09:56:19 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:56:19 --> CSRF cookie sent
+INFO - 2022-11-18 09:56:19 --> CSRF token verified
+INFO - 2022-11-18 09:56:19 --> Input Class Initialized
+INFO - 2022-11-18 09:56:19 --> Language Class Initialized
+INFO - 2022-11-18 09:56:19 --> Loader Class Initialized
+INFO - 2022-11-18 09:56:19 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:56:19 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:56:19 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:56:19 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:56:19 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:56:19 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:56:19 --> Parser Class Initialized
+INFO - 2022-11-18 09:56:19 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:56:19 --> Pagination Class Initialized
+INFO - 2022-11-18 09:56:19 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:56:19 --> Controller Class Initialized
+INFO - 2022-11-18 09:56:19 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:56:19 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:56:19 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:56:19 --> Model "Customers" initialized
+INFO - 2022-11-18 09:56:19 --> Model "Invoices" initialized
+INFO - 2022-11-18 09:56:19 --> Final output sent to browser
+DEBUG - 2022-11-18 09:56:19 --> Total execution time: 0.0341
+ERROR - 2022-11-18 09:56:54 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:56:54 --> Config Class Initialized
+INFO - 2022-11-18 09:56:54 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:56:54 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:56:54 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:56:54 --> URI Class Initialized
+INFO - 2022-11-18 09:56:54 --> Router Class Initialized
+INFO - 2022-11-18 09:56:54 --> Output Class Initialized
+INFO - 2022-11-18 09:56:54 --> Security Class Initialized
+DEBUG - 2022-11-18 09:56:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:56:54 --> CSRF cookie sent
+INFO - 2022-11-18 09:56:54 --> Input Class Initialized
+INFO - 2022-11-18 09:56:54 --> Language Class Initialized
+INFO - 2022-11-18 09:56:54 --> Loader Class Initialized
+INFO - 2022-11-18 09:56:54 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:56:54 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:56:54 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:56:54 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:56:54 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:56:54 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:56:54 --> Parser Class Initialized
+INFO - 2022-11-18 09:56:54 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:56:54 --> Pagination Class Initialized
+INFO - 2022-11-18 09:56:54 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:56:54 --> Controller Class Initialized
+INFO - 2022-11-18 09:56:54 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:56:54 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:56:54 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:56:54 --> Model "Customers" initialized
+INFO - 2022-11-18 09:56:54 --> Model "Tax" initialized
+DEBUG - 2022-11-18 09:56:54 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:56:54 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:56:54 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:56:54 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:56:54 --> Model "Invoices" initialized
+ERROR - 2022-11-18 09:56:54 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 09:56:54 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1145
+ERROR - 2022-11-18 09:56:54 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1175
+ERROR - 2022-11-18 09:56:54 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 09:56:54 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 09:56:54 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1229
+INFO - 2022-11-18 09:56:54 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 09:56:54 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:56:54 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 09:56:54 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 09:56:54 --> Model "Products" initialized
+INFO - 2022-11-18 15:26:54 --> Model "reports" initialized
+INFO - 2022-11-18 15:26:54 --> Model "Users" initialized
+INFO - 2022-11-18 15:26:54 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:26:54 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:26:54 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:26:54 --> Final output sent to browser
+DEBUG - 2022-11-18 15:26:54 --> Total execution time: 0.3974
+ERROR - 2022-11-18 09:56:54 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:56:54 --> Config Class Initialized
+INFO - 2022-11-18 09:56:54 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:56:54 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:56:54 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:56:54 --> URI Class Initialized
+INFO - 2022-11-18 09:56:54 --> Router Class Initialized
+INFO - 2022-11-18 09:56:54 --> Output Class Initialized
+INFO - 2022-11-18 09:56:54 --> Security Class Initialized
+DEBUG - 2022-11-18 09:56:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:56:54 --> CSRF cookie sent
+INFO - 2022-11-18 09:56:54 --> Input Class Initialized
+INFO - 2022-11-18 09:56:54 --> Language Class Initialized
+ERROR - 2022-11-18 09:56:54 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 09:56:54 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:56:54 --> Config Class Initialized
+INFO - 2022-11-18 09:56:54 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:56:54 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:56:54 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:56:54 --> URI Class Initialized
+INFO - 2022-11-18 09:56:54 --> Router Class Initialized
+INFO - 2022-11-18 09:56:54 --> Output Class Initialized
+INFO - 2022-11-18 09:56:54 --> Security Class Initialized
+DEBUG - 2022-11-18 09:56:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:56:54 --> CSRF cookie sent
+INFO - 2022-11-18 09:56:54 --> Input Class Initialized
+INFO - 2022-11-18 09:56:54 --> Language Class Initialized
+ERROR - 2022-11-18 09:56:54 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 09:56:54 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:56:54 --> Config Class Initialized
+INFO - 2022-11-18 09:56:54 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:56:54 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:56:54 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:56:54 --> URI Class Initialized
+INFO - 2022-11-18 09:56:54 --> Router Class Initialized
+INFO - 2022-11-18 09:56:54 --> Output Class Initialized
+INFO - 2022-11-18 09:56:54 --> Security Class Initialized
+DEBUG - 2022-11-18 09:56:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:56:54 --> CSRF cookie sent
+INFO - 2022-11-18 09:56:54 --> Input Class Initialized
+INFO - 2022-11-18 09:56:54 --> Language Class Initialized
+ERROR - 2022-11-18 09:56:54 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 09:56:54 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:56:54 --> Config Class Initialized
+INFO - 2022-11-18 09:56:54 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:56:54 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:56:54 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:56:54 --> URI Class Initialized
+INFO - 2022-11-18 09:56:54 --> Router Class Initialized
+INFO - 2022-11-18 09:56:54 --> Output Class Initialized
+INFO - 2022-11-18 09:56:54 --> Security Class Initialized
+DEBUG - 2022-11-18 09:56:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:56:54 --> CSRF cookie sent
+INFO - 2022-11-18 09:56:54 --> Input Class Initialized
+INFO - 2022-11-18 09:56:54 --> Language Class Initialized
+ERROR - 2022-11-18 09:56:54 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 09:56:54 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:56:54 --> Config Class Initialized
+INFO - 2022-11-18 09:56:54 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:56:54 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:56:54 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:56:54 --> URI Class Initialized
+INFO - 2022-11-18 09:56:54 --> Router Class Initialized
+INFO - 2022-11-18 09:56:54 --> Output Class Initialized
+INFO - 2022-11-18 09:56:54 --> Security Class Initialized
+DEBUG - 2022-11-18 09:56:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:56:54 --> CSRF cookie sent
+INFO - 2022-11-18 09:56:54 --> CSRF token verified
+INFO - 2022-11-18 09:56:54 --> Input Class Initialized
+INFO - 2022-11-18 09:56:54 --> Language Class Initialized
+INFO - 2022-11-18 09:56:54 --> Loader Class Initialized
+INFO - 2022-11-18 09:56:54 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:56:54 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:56:54 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:56:54 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:56:54 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:56:54 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:56:54 --> Parser Class Initialized
+INFO - 2022-11-18 09:56:54 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:56:54 --> Pagination Class Initialized
+INFO - 2022-11-18 09:56:54 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:56:54 --> Controller Class Initialized
+INFO - 2022-11-18 09:56:54 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:56:54 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:56:54 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:56:54 --> Model "Customers" initialized
+INFO - 2022-11-18 09:56:54 --> Model "Invoices" initialized
+INFO - 2022-11-18 09:56:54 --> Final output sent to browser
+DEBUG - 2022-11-18 09:56:54 --> Total execution time: 0.0255
+ERROR - 2022-11-18 09:59:04 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:59:04 --> Config Class Initialized
+INFO - 2022-11-18 09:59:04 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:59:04 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:59:04 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:59:04 --> URI Class Initialized
+INFO - 2022-11-18 09:59:04 --> Router Class Initialized
+INFO - 2022-11-18 09:59:04 --> Output Class Initialized
+INFO - 2022-11-18 09:59:04 --> Security Class Initialized
+DEBUG - 2022-11-18 09:59:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:59:04 --> CSRF cookie sent
+INFO - 2022-11-18 09:59:04 --> Input Class Initialized
+INFO - 2022-11-18 09:59:04 --> Language Class Initialized
+INFO - 2022-11-18 09:59:04 --> Loader Class Initialized
+INFO - 2022-11-18 09:59:04 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:59:04 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:59:04 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:59:04 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:59:04 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:59:04 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:59:04 --> Parser Class Initialized
+INFO - 2022-11-18 09:59:04 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:59:04 --> Pagination Class Initialized
+INFO - 2022-11-18 09:59:04 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:59:04 --> Controller Class Initialized
+INFO - 2022-11-18 09:59:04 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:59:04 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:59:04 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:59:04 --> Model "Customers" initialized
+INFO - 2022-11-18 09:59:04 --> Model "Tax" initialized
+DEBUG - 2022-11-18 09:59:04 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:59:04 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:59:04 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:59:04 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:59:04 --> Model "Invoices" initialized
+ERROR - 2022-11-18 09:59:04 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 09:59:04 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1145
+ERROR - 2022-11-18 09:59:04 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1175
+ERROR - 2022-11-18 09:59:04 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 09:59:04 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 09:59:04 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1229
+INFO - 2022-11-18 09:59:04 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 09:59:04 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:59:04 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 09:59:04 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 09:59:04 --> Model "Products" initialized
+INFO - 2022-11-18 15:29:04 --> Model "reports" initialized
+INFO - 2022-11-18 15:29:04 --> Model "Users" initialized
+INFO - 2022-11-18 15:29:04 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:29:04 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:29:04 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:29:04 --> Final output sent to browser
+DEBUG - 2022-11-18 15:29:04 --> Total execution time: 0.3915
+ERROR - 2022-11-18 09:59:04 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:59:04 --> Config Class Initialized
+INFO - 2022-11-18 09:59:04 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:59:04 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:59:04 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:59:04 --> URI Class Initialized
+INFO - 2022-11-18 09:59:04 --> Router Class Initialized
+INFO - 2022-11-18 09:59:04 --> Output Class Initialized
+INFO - 2022-11-18 09:59:04 --> Security Class Initialized
+DEBUG - 2022-11-18 09:59:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:59:04 --> CSRF cookie sent
+INFO - 2022-11-18 09:59:04 --> Input Class Initialized
+INFO - 2022-11-18 09:59:04 --> Language Class Initialized
+ERROR - 2022-11-18 09:59:04 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 09:59:04 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:59:04 --> Config Class Initialized
+INFO - 2022-11-18 09:59:04 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:59:04 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:59:04 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:59:04 --> URI Class Initialized
+INFO - 2022-11-18 09:59:04 --> Router Class Initialized
+INFO - 2022-11-18 09:59:04 --> Output Class Initialized
+INFO - 2022-11-18 09:59:04 --> Security Class Initialized
+DEBUG - 2022-11-18 09:59:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:59:04 --> CSRF cookie sent
+INFO - 2022-11-18 09:59:04 --> Input Class Initialized
+INFO - 2022-11-18 09:59:04 --> Language Class Initialized
+ERROR - 2022-11-18 09:59:04 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 09:59:04 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:59:04 --> Config Class Initialized
+INFO - 2022-11-18 09:59:04 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:59:04 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:59:04 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:59:04 --> URI Class Initialized
+INFO - 2022-11-18 09:59:04 --> Router Class Initialized
+INFO - 2022-11-18 09:59:04 --> Output Class Initialized
+INFO - 2022-11-18 09:59:04 --> Security Class Initialized
+DEBUG - 2022-11-18 09:59:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:59:04 --> CSRF cookie sent
+INFO - 2022-11-18 09:59:04 --> Input Class Initialized
+INFO - 2022-11-18 09:59:04 --> Language Class Initialized
+ERROR - 2022-11-18 09:59:04 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 09:59:04 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:59:04 --> Config Class Initialized
+INFO - 2022-11-18 09:59:04 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:59:04 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:59:04 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:59:04 --> URI Class Initialized
+INFO - 2022-11-18 09:59:04 --> Router Class Initialized
+INFO - 2022-11-18 09:59:04 --> Output Class Initialized
+INFO - 2022-11-18 09:59:04 --> Security Class Initialized
+DEBUG - 2022-11-18 09:59:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:59:04 --> CSRF cookie sent
+INFO - 2022-11-18 09:59:04 --> Input Class Initialized
+INFO - 2022-11-18 09:59:04 --> Language Class Initialized
+ERROR - 2022-11-18 09:59:04 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 09:59:04 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:59:04 --> Config Class Initialized
+INFO - 2022-11-18 09:59:04 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:59:04 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:59:04 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:59:04 --> URI Class Initialized
+INFO - 2022-11-18 09:59:04 --> Router Class Initialized
+INFO - 2022-11-18 09:59:04 --> Output Class Initialized
+INFO - 2022-11-18 09:59:04 --> Security Class Initialized
+DEBUG - 2022-11-18 09:59:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:59:04 --> CSRF cookie sent
+INFO - 2022-11-18 09:59:04 --> CSRF token verified
+INFO - 2022-11-18 09:59:04 --> Input Class Initialized
+INFO - 2022-11-18 09:59:04 --> Language Class Initialized
+INFO - 2022-11-18 09:59:04 --> Loader Class Initialized
+INFO - 2022-11-18 09:59:04 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:59:04 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:59:04 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:59:04 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:59:04 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:59:04 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:59:04 --> Parser Class Initialized
+INFO - 2022-11-18 09:59:04 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:59:04 --> Pagination Class Initialized
+INFO - 2022-11-18 09:59:04 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:59:04 --> Controller Class Initialized
+INFO - 2022-11-18 09:59:04 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:59:04 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:59:04 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:59:04 --> Model "Customers" initialized
+INFO - 2022-11-18 09:59:04 --> Model "Invoices" initialized
+INFO - 2022-11-18 09:59:04 --> Final output sent to browser
+DEBUG - 2022-11-18 09:59:04 --> Total execution time: 0.0123
+ERROR - 2022-11-18 09:59:43 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:59:43 --> Config Class Initialized
+INFO - 2022-11-18 09:59:43 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:59:43 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:59:43 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:59:43 --> URI Class Initialized
+INFO - 2022-11-18 09:59:43 --> Router Class Initialized
+INFO - 2022-11-18 09:59:43 --> Output Class Initialized
+INFO - 2022-11-18 09:59:43 --> Security Class Initialized
+DEBUG - 2022-11-18 09:59:43 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:59:43 --> CSRF cookie sent
+INFO - 2022-11-18 09:59:43 --> Input Class Initialized
+INFO - 2022-11-18 09:59:43 --> Language Class Initialized
+INFO - 2022-11-18 09:59:43 --> Loader Class Initialized
+INFO - 2022-11-18 09:59:43 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:59:43 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:59:43 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:59:43 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:59:43 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:59:43 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:59:43 --> Parser Class Initialized
+INFO - 2022-11-18 09:59:43 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:59:43 --> Pagination Class Initialized
+INFO - 2022-11-18 09:59:43 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:59:43 --> Controller Class Initialized
+INFO - 2022-11-18 09:59:43 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:59:43 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:59:43 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:59:43 --> Model "Customers" initialized
+INFO - 2022-11-18 09:59:43 --> Model "Tax" initialized
+DEBUG - 2022-11-18 09:59:43 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:59:43 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:59:43 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:59:43 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:59:43 --> Model "Invoices" initialized
+ERROR - 2022-11-18 09:59:43 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 09:59:43 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1145
+ERROR - 2022-11-18 09:59:43 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1175
+ERROR - 2022-11-18 09:59:43 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 09:59:43 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 09:59:43 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1229
+INFO - 2022-11-18 09:59:43 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 09:59:43 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:59:43 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 09:59:43 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 09:59:43 --> Model "Products" initialized
+INFO - 2022-11-18 15:29:43 --> Model "reports" initialized
+INFO - 2022-11-18 15:29:43 --> Model "Users" initialized
+INFO - 2022-11-18 15:29:43 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:29:43 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:29:43 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:29:43 --> Final output sent to browser
+DEBUG - 2022-11-18 15:29:43 --> Total execution time: 0.3751
+ERROR - 2022-11-18 09:59:43 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:59:43 --> Config Class Initialized
+INFO - 2022-11-18 09:59:43 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:59:43 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:59:43 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:59:43 --> URI Class Initialized
+INFO - 2022-11-18 09:59:43 --> Router Class Initialized
+INFO - 2022-11-18 09:59:43 --> Output Class Initialized
+INFO - 2022-11-18 09:59:43 --> Security Class Initialized
+DEBUG - 2022-11-18 09:59:43 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:59:43 --> CSRF cookie sent
+INFO - 2022-11-18 09:59:43 --> Input Class Initialized
+INFO - 2022-11-18 09:59:43 --> Language Class Initialized
+ERROR - 2022-11-18 09:59:43 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 09:59:43 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 09:59:43 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:59:43 --> Config Class Initialized
+INFO - 2022-11-18 09:59:43 --> Hooks Class Initialized
+INFO - 2022-11-18 09:59:43 --> Config Class Initialized
+DEBUG - 2022-11-18 09:59:43 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:59:43 --> Hooks Class Initialized
+INFO - 2022-11-18 09:59:43 --> Utf8 Class Initialized
+DEBUG - 2022-11-18 09:59:43 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:59:43 --> URI Class Initialized
+INFO - 2022-11-18 09:59:43 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:59:43 --> Router Class Initialized
+INFO - 2022-11-18 09:59:43 --> URI Class Initialized
+INFO - 2022-11-18 09:59:43 --> Output Class Initialized
+INFO - 2022-11-18 09:59:43 --> Router Class Initialized
+INFO - 2022-11-18 09:59:43 --> Security Class Initialized
+INFO - 2022-11-18 09:59:43 --> Output Class Initialized
+DEBUG - 2022-11-18 09:59:43 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:59:43 --> CSRF cookie sent
+INFO - 2022-11-18 09:59:43 --> Input Class Initialized
+INFO - 2022-11-18 09:59:43 --> Security Class Initialized
+INFO - 2022-11-18 09:59:43 --> Language Class Initialized
+DEBUG - 2022-11-18 09:59:43 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2022-11-18 09:59:43 --> 404 Page Not Found: Assets/js
+INFO - 2022-11-18 09:59:43 --> CSRF cookie sent
+INFO - 2022-11-18 09:59:43 --> Input Class Initialized
+INFO - 2022-11-18 09:59:43 --> Language Class Initialized
+ERROR - 2022-11-18 09:59:43 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 09:59:43 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:59:43 --> Config Class Initialized
+INFO - 2022-11-18 09:59:43 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:59:43 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:59:43 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:59:43 --> URI Class Initialized
+INFO - 2022-11-18 09:59:43 --> Router Class Initialized
+INFO - 2022-11-18 09:59:43 --> Output Class Initialized
+INFO - 2022-11-18 09:59:43 --> Security Class Initialized
+DEBUG - 2022-11-18 09:59:43 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:59:43 --> CSRF cookie sent
+INFO - 2022-11-18 09:59:43 --> Input Class Initialized
+INFO - 2022-11-18 09:59:43 --> Language Class Initialized
+ERROR - 2022-11-18 09:59:43 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 09:59:43 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:59:43 --> Config Class Initialized
+INFO - 2022-11-18 09:59:43 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:59:43 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:59:43 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:59:43 --> URI Class Initialized
+INFO - 2022-11-18 09:59:43 --> Router Class Initialized
+INFO - 2022-11-18 09:59:43 --> Output Class Initialized
+INFO - 2022-11-18 09:59:43 --> Security Class Initialized
+DEBUG - 2022-11-18 09:59:43 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:59:43 --> CSRF cookie sent
+INFO - 2022-11-18 09:59:43 --> CSRF token verified
+INFO - 2022-11-18 09:59:43 --> Input Class Initialized
+INFO - 2022-11-18 09:59:43 --> Language Class Initialized
+INFO - 2022-11-18 09:59:43 --> Loader Class Initialized
+INFO - 2022-11-18 09:59:43 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:59:43 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:59:43 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:59:43 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:59:43 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:59:43 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:59:43 --> Parser Class Initialized
+INFO - 2022-11-18 09:59:43 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:59:43 --> Pagination Class Initialized
+INFO - 2022-11-18 09:59:43 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:59:43 --> Controller Class Initialized
+INFO - 2022-11-18 09:59:43 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:59:43 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:59:43 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:59:43 --> Model "Customers" initialized
+INFO - 2022-11-18 09:59:43 --> Model "Invoices" initialized
+INFO - 2022-11-18 09:59:43 --> Final output sent to browser
+DEBUG - 2022-11-18 09:59:43 --> Total execution time: 0.0408
+ERROR - 2022-11-18 09:59:53 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:59:53 --> Config Class Initialized
+INFO - 2022-11-18 09:59:53 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:59:53 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:59:53 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:59:53 --> URI Class Initialized
+INFO - 2022-11-18 09:59:53 --> Router Class Initialized
+INFO - 2022-11-18 09:59:53 --> Output Class Initialized
+INFO - 2022-11-18 09:59:53 --> Security Class Initialized
+DEBUG - 2022-11-18 09:59:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:59:53 --> CSRF cookie sent
+INFO - 2022-11-18 09:59:53 --> Input Class Initialized
+INFO - 2022-11-18 09:59:53 --> Language Class Initialized
+INFO - 2022-11-18 09:59:53 --> Loader Class Initialized
+INFO - 2022-11-18 09:59:53 --> Helper loaded: url_helper
+INFO - 2022-11-18 09:59:53 --> Helper loaded: file_helper
+INFO - 2022-11-18 09:59:53 --> Helper loaded: form_helper
+INFO - 2022-11-18 09:59:53 --> Helper loaded: lang_helper
+INFO - 2022-11-18 09:59:53 --> Database Driver Class Initialized
+INFO - 2022-11-18 09:59:53 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 09:59:53 --> Parser Class Initialized
+INFO - 2022-11-18 09:59:53 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 09:59:53 --> Pagination Class Initialized
+INFO - 2022-11-18 09:59:53 --> Form Validation Class Initialized
+INFO - 2022-11-18 09:59:53 --> Controller Class Initialized
+INFO - 2022-11-18 09:59:53 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 09:59:53 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:59:53 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:59:53 --> Model "Customers" initialized
+INFO - 2022-11-18 09:59:53 --> Model "Tax" initialized
+DEBUG - 2022-11-18 09:59:53 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:59:53 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:59:53 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 09:59:53 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:59:53 --> Model "Invoices" initialized
+ERROR - 2022-11-18 09:59:53 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 09:59:53 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1145
+ERROR - 2022-11-18 09:59:53 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1175
+ERROR - 2022-11-18 09:59:53 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 09:59:53 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 09:59:53 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1229
+INFO - 2022-11-18 09:59:53 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 09:59:53 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 09:59:53 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 09:59:53 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 09:59:53 --> Model "Products" initialized
+INFO - 2022-11-18 15:29:53 --> Model "reports" initialized
+INFO - 2022-11-18 15:29:53 --> Model "Users" initialized
+INFO - 2022-11-18 15:29:54 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:29:54 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:29:54 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:29:54 --> Final output sent to browser
+DEBUG - 2022-11-18 15:29:54 --> Total execution time: 0.3959
+ERROR - 2022-11-18 09:59:54 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:59:54 --> Config Class Initialized
+INFO - 2022-11-18 09:59:54 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:59:54 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:59:54 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:59:54 --> URI Class Initialized
+INFO - 2022-11-18 09:59:54 --> Router Class Initialized
+INFO - 2022-11-18 09:59:54 --> Output Class Initialized
+INFO - 2022-11-18 09:59:54 --> Security Class Initialized
+DEBUG - 2022-11-18 09:59:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:59:54 --> CSRF cookie sent
+INFO - 2022-11-18 09:59:54 --> Input Class Initialized
+INFO - 2022-11-18 09:59:54 --> Language Class Initialized
+ERROR - 2022-11-18 09:59:54 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 09:59:54 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:59:54 --> Config Class Initialized
+INFO - 2022-11-18 09:59:54 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:59:54 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:59:54 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:59:54 --> URI Class Initialized
+INFO - 2022-11-18 09:59:54 --> Router Class Initialized
+INFO - 2022-11-18 09:59:54 --> Output Class Initialized
+INFO - 2022-11-18 09:59:54 --> Security Class Initialized
+DEBUG - 2022-11-18 09:59:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:59:54 --> CSRF cookie sent
+INFO - 2022-11-18 09:59:54 --> Input Class Initialized
+INFO - 2022-11-18 09:59:54 --> Language Class Initialized
+ERROR - 2022-11-18 09:59:54 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 09:59:54 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 09:59:54 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 09:59:54 --> Config Class Initialized
+INFO - 2022-11-18 09:59:54 --> Config Class Initialized
+INFO - 2022-11-18 09:59:54 --> Hooks Class Initialized
+INFO - 2022-11-18 09:59:54 --> Hooks Class Initialized
+DEBUG - 2022-11-18 09:59:54 --> UTF-8 Support Enabled
+DEBUG - 2022-11-18 09:59:54 --> UTF-8 Support Enabled
+INFO - 2022-11-18 09:59:54 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:59:54 --> Utf8 Class Initialized
+INFO - 2022-11-18 09:59:54 --> URI Class Initialized
+INFO - 2022-11-18 09:59:54 --> URI Class Initialized
+INFO - 2022-11-18 09:59:54 --> Router Class Initialized
+INFO - 2022-11-18 09:59:54 --> Router Class Initialized
+INFO - 2022-11-18 09:59:54 --> Output Class Initialized
+INFO - 2022-11-18 09:59:54 --> Output Class Initialized
+INFO - 2022-11-18 09:59:54 --> Security Class Initialized
+INFO - 2022-11-18 09:59:54 --> Security Class Initialized
+DEBUG - 2022-11-18 09:59:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:59:54 --> CSRF cookie sent
+DEBUG - 2022-11-18 09:59:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 09:59:54 --> Input Class Initialized
+INFO - 2022-11-18 09:59:54 --> CSRF cookie sent
+INFO - 2022-11-18 09:59:54 --> Input Class Initialized
+INFO - 2022-11-18 09:59:54 --> Language Class Initialized
+INFO - 2022-11-18 09:59:54 --> Language Class Initialized
+ERROR - 2022-11-18 09:59:54 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 09:59:54 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:00:01 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:00:01 --> Config Class Initialized
+INFO - 2022-11-18 10:00:01 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:00:01 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:00:01 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:00:01 --> URI Class Initialized
+INFO - 2022-11-18 10:00:01 --> Router Class Initialized
+INFO - 2022-11-18 10:00:01 --> Output Class Initialized
+INFO - 2022-11-18 10:00:01 --> Security Class Initialized
+DEBUG - 2022-11-18 10:00:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:00:01 --> CSRF cookie sent
+INFO - 2022-11-18 10:00:01 --> Input Class Initialized
+INFO - 2022-11-18 10:00:01 --> Language Class Initialized
+INFO - 2022-11-18 10:00:01 --> Loader Class Initialized
+INFO - 2022-11-18 10:00:01 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:00:01 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:00:01 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:00:01 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:00:01 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:00:01 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:00:01 --> Parser Class Initialized
+INFO - 2022-11-18 10:00:01 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:00:01 --> Pagination Class Initialized
+INFO - 2022-11-18 10:00:01 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:00:01 --> Controller Class Initialized
+INFO - 2022-11-18 10:00:01 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:00:01 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:00:01 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:00:01 --> Model "Customers" initialized
+INFO - 2022-11-18 10:00:01 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:00:01 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:00:01 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:00:01 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:00:01 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:00:01 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:00:02 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:00:02 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1145
+ERROR - 2022-11-18 10:00:02 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1175
+ERROR - 2022-11-18 10:00:02 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:00:02 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:00:02 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1229
+INFO - 2022-11-18 10:00:02 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:00:02 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:00:02 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:00:02 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:00:02 --> Model "Products" initialized
+INFO - 2022-11-18 15:30:02 --> Model "reports" initialized
+INFO - 2022-11-18 15:30:02 --> Model "Users" initialized
+INFO - 2022-11-18 15:30:02 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:30:02 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:30:02 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:30:02 --> Final output sent to browser
+DEBUG - 2022-11-18 15:30:02 --> Total execution time: 0.4519
+ERROR - 2022-11-18 10:00:02 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:00:02 --> Config Class Initialized
+INFO - 2022-11-18 10:00:02 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:00:02 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:00:02 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:00:02 --> URI Class Initialized
+INFO - 2022-11-18 10:00:02 --> Router Class Initialized
+INFO - 2022-11-18 10:00:02 --> Output Class Initialized
+INFO - 2022-11-18 10:00:02 --> Security Class Initialized
+DEBUG - 2022-11-18 10:00:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:00:02 --> CSRF cookie sent
+INFO - 2022-11-18 10:00:02 --> Input Class Initialized
+INFO - 2022-11-18 10:00:02 --> Language Class Initialized
+ERROR - 2022-11-18 10:00:02 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:00:02 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:00:02 --> Config Class Initialized
+INFO - 2022-11-18 10:00:02 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:00:02 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:00:02 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:00:02 --> URI Class Initialized
+INFO - 2022-11-18 10:00:02 --> Router Class Initialized
+INFO - 2022-11-18 10:00:02 --> Output Class Initialized
+INFO - 2022-11-18 10:00:02 --> Security Class Initialized
+DEBUG - 2022-11-18 10:00:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:00:02 --> CSRF cookie sent
+INFO - 2022-11-18 10:00:02 --> Input Class Initialized
+INFO - 2022-11-18 10:00:02 --> Language Class Initialized
+ERROR - 2022-11-18 10:00:02 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:00:02 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:00:02 --> Config Class Initialized
+INFO - 2022-11-18 10:00:02 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:00:02 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:00:02 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:00:02 --> URI Class Initialized
+INFO - 2022-11-18 10:00:02 --> Router Class Initialized
+INFO - 2022-11-18 10:00:02 --> Output Class Initialized
+ERROR - 2022-11-18 10:00:02 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:00:02 --> Security Class Initialized
+INFO - 2022-11-18 10:00:02 --> Config Class Initialized
+DEBUG - 2022-11-18 10:00:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:00:02 --> Hooks Class Initialized
+INFO - 2022-11-18 10:00:02 --> CSRF cookie sent
+INFO - 2022-11-18 10:00:02 --> Input Class Initialized
+DEBUG - 2022-11-18 10:00:02 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:00:02 --> Language Class Initialized
+INFO - 2022-11-18 10:00:02 --> Utf8 Class Initialized
+ERROR - 2022-11-18 10:00:02 --> 404 Page Not Found: Assets/plugins
+INFO - 2022-11-18 10:00:02 --> URI Class Initialized
+INFO - 2022-11-18 10:00:02 --> Router Class Initialized
+INFO - 2022-11-18 10:00:02 --> Output Class Initialized
+INFO - 2022-11-18 10:00:02 --> Security Class Initialized
+DEBUG - 2022-11-18 10:00:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:00:02 --> CSRF cookie sent
+INFO - 2022-11-18 10:00:02 --> Input Class Initialized
+INFO - 2022-11-18 10:00:02 --> Language Class Initialized
+ERROR - 2022-11-18 10:00:02 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:00:02 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:00:02 --> Config Class Initialized
+INFO - 2022-11-18 10:00:02 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:00:02 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:00:02 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:00:02 --> URI Class Initialized
+INFO - 2022-11-18 10:00:02 --> Router Class Initialized
+INFO - 2022-11-18 10:00:02 --> Output Class Initialized
+INFO - 2022-11-18 10:00:02 --> Security Class Initialized
+DEBUG - 2022-11-18 10:00:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:00:02 --> CSRF cookie sent
+INFO - 2022-11-18 10:00:02 --> CSRF token verified
+INFO - 2022-11-18 10:00:02 --> Input Class Initialized
+INFO - 2022-11-18 10:00:02 --> Language Class Initialized
+INFO - 2022-11-18 10:00:02 --> Loader Class Initialized
+INFO - 2022-11-18 10:00:02 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:00:02 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:00:02 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:00:02 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:00:02 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:00:02 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:00:02 --> Parser Class Initialized
+INFO - 2022-11-18 10:00:02 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:00:02 --> Pagination Class Initialized
+INFO - 2022-11-18 10:00:02 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:00:02 --> Controller Class Initialized
+INFO - 2022-11-18 10:00:02 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:00:02 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:00:02 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:00:02 --> Model "Customers" initialized
+INFO - 2022-11-18 10:00:02 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:00:02 --> Final output sent to browser
+DEBUG - 2022-11-18 10:00:02 --> Total execution time: 0.0113
+ERROR - 2022-11-18 10:00:34 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:00:34 --> Config Class Initialized
+INFO - 2022-11-18 10:00:34 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:00:34 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:00:34 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:00:34 --> URI Class Initialized
+INFO - 2022-11-18 10:00:34 --> Router Class Initialized
+INFO - 2022-11-18 10:00:34 --> Output Class Initialized
+INFO - 2022-11-18 10:00:34 --> Security Class Initialized
+DEBUG - 2022-11-18 10:00:34 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:00:34 --> CSRF cookie sent
+INFO - 2022-11-18 10:00:34 --> Input Class Initialized
+INFO - 2022-11-18 10:00:34 --> Language Class Initialized
+INFO - 2022-11-18 10:00:34 --> Loader Class Initialized
+INFO - 2022-11-18 10:00:34 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:00:34 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:00:34 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:00:34 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:00:34 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:00:34 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:00:34 --> Parser Class Initialized
+INFO - 2022-11-18 10:00:34 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:00:34 --> Pagination Class Initialized
+INFO - 2022-11-18 10:00:34 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:00:34 --> Controller Class Initialized
+INFO - 2022-11-18 10:00:34 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:00:34 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:00:34 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:00:34 --> Model "Customers" initialized
+INFO - 2022-11-18 10:00:34 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:00:34 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:00:34 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:00:34 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:00:34 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:00:34 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:00:34 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:00:34 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1141
+ERROR - 2022-11-18 10:00:34 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1171
+ERROR - 2022-11-18 10:00:34 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1194
+ERROR - 2022-11-18 10:00:34 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1194
+ERROR - 2022-11-18 10:00:34 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1225
+INFO - 2022-11-18 10:00:34 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:00:34 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:00:34 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:00:34 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:00:34 --> Model "Products" initialized
+INFO - 2022-11-18 15:30:34 --> Model "reports" initialized
+INFO - 2022-11-18 15:30:34 --> Model "Users" initialized
+INFO - 2022-11-18 15:30:35 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:30:35 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:30:35 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:30:35 --> Final output sent to browser
+DEBUG - 2022-11-18 15:30:35 --> Total execution time: 0.4837
+ERROR - 2022-11-18 10:00:35 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:00:35 --> Config Class Initialized
+INFO - 2022-11-18 10:00:35 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:00:35 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:00:35 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:00:35 --> URI Class Initialized
+INFO - 2022-11-18 10:00:35 --> Router Class Initialized
+INFO - 2022-11-18 10:00:35 --> Output Class Initialized
+INFO - 2022-11-18 10:00:35 --> Security Class Initialized
+DEBUG - 2022-11-18 10:00:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:00:35 --> CSRF cookie sent
+INFO - 2022-11-18 10:00:35 --> Input Class Initialized
+INFO - 2022-11-18 10:00:35 --> Language Class Initialized
+ERROR - 2022-11-18 10:00:35 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:00:35 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:00:35 --> Config Class Initialized
+INFO - 2022-11-18 10:00:35 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:00:35 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:00:35 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:00:35 --> URI Class Initialized
+INFO - 2022-11-18 10:00:35 --> Router Class Initialized
+INFO - 2022-11-18 10:00:35 --> Output Class Initialized
+INFO - 2022-11-18 10:00:35 --> Security Class Initialized
+DEBUG - 2022-11-18 10:00:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:00:35 --> CSRF cookie sent
+INFO - 2022-11-18 10:00:35 --> Input Class Initialized
+INFO - 2022-11-18 10:00:35 --> Language Class Initialized
+ERROR - 2022-11-18 10:00:35 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:00:35 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:00:35 --> Config Class Initialized
+INFO - 2022-11-18 10:00:35 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:00:35 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:00:35 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:00:35 --> URI Class Initialized
+ERROR - 2022-11-18 10:00:35 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:00:35 --> Router Class Initialized
+INFO - 2022-11-18 10:00:35 --> Output Class Initialized
+INFO - 2022-11-18 10:00:35 --> Security Class Initialized
+DEBUG - 2022-11-18 10:00:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:00:35 --> Config Class Initialized
+INFO - 2022-11-18 10:00:35 --> CSRF cookie sent
+INFO - 2022-11-18 10:00:35 --> Hooks Class Initialized
+INFO - 2022-11-18 10:00:35 --> Input Class Initialized
+INFO - 2022-11-18 10:00:35 --> Language Class Initialized
+DEBUG - 2022-11-18 10:00:35 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:00:35 --> Utf8 Class Initialized
+ERROR - 2022-11-18 10:00:35 --> 404 Page Not Found: Assets/plugins
+INFO - 2022-11-18 10:00:35 --> URI Class Initialized
+INFO - 2022-11-18 10:00:35 --> Router Class Initialized
+INFO - 2022-11-18 10:00:35 --> Output Class Initialized
+INFO - 2022-11-18 10:00:35 --> Security Class Initialized
+DEBUG - 2022-11-18 10:00:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:00:35 --> CSRF cookie sent
+INFO - 2022-11-18 10:00:35 --> Input Class Initialized
+INFO - 2022-11-18 10:00:35 --> Language Class Initialized
+ERROR - 2022-11-18 10:00:35 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:00:35 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:00:35 --> Config Class Initialized
+INFO - 2022-11-18 10:00:35 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:00:35 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:00:35 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:00:35 --> URI Class Initialized
+INFO - 2022-11-18 10:00:35 --> Router Class Initialized
+INFO - 2022-11-18 10:00:35 --> Output Class Initialized
+INFO - 2022-11-18 10:00:35 --> Security Class Initialized
+DEBUG - 2022-11-18 10:00:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:00:35 --> CSRF cookie sent
+INFO - 2022-11-18 10:00:35 --> CSRF token verified
+INFO - 2022-11-18 10:00:35 --> Input Class Initialized
+INFO - 2022-11-18 10:00:35 --> Language Class Initialized
+INFO - 2022-11-18 10:00:35 --> Loader Class Initialized
+INFO - 2022-11-18 10:00:35 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:00:35 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:00:35 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:00:35 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:00:35 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:00:35 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:00:35 --> Parser Class Initialized
+INFO - 2022-11-18 10:00:35 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:00:35 --> Pagination Class Initialized
+INFO - 2022-11-18 10:00:35 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:00:35 --> Controller Class Initialized
+INFO - 2022-11-18 10:00:35 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:00:35 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:00:35 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:00:35 --> Model "Customers" initialized
+INFO - 2022-11-18 10:00:35 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:00:35 --> Final output sent to browser
+DEBUG - 2022-11-18 10:00:35 --> Total execution time: 0.0201
+ERROR - 2022-11-18 10:02:09 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:02:09 --> Config Class Initialized
+INFO - 2022-11-18 10:02:09 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:02:09 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:02:09 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:02:09 --> URI Class Initialized
+INFO - 2022-11-18 10:02:09 --> Router Class Initialized
+INFO - 2022-11-18 10:02:09 --> Output Class Initialized
+INFO - 2022-11-18 10:02:09 --> Security Class Initialized
+DEBUG - 2022-11-18 10:02:09 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:02:09 --> CSRF cookie sent
+INFO - 2022-11-18 10:02:09 --> Input Class Initialized
+INFO - 2022-11-18 10:02:09 --> Language Class Initialized
+INFO - 2022-11-18 10:02:09 --> Loader Class Initialized
+INFO - 2022-11-18 10:02:09 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:02:09 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:02:09 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:02:09 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:02:09 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:02:09 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:02:09 --> Parser Class Initialized
+INFO - 2022-11-18 10:02:09 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:02:09 --> Pagination Class Initialized
+INFO - 2022-11-18 10:02:09 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:02:09 --> Controller Class Initialized
+INFO - 2022-11-18 10:02:09 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:02:09 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:02:09 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:02:09 --> Model "Customers" initialized
+INFO - 2022-11-18 10:02:09 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:02:09 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:02:09 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:02:09 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:02:09 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:02:09 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:02:09 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:02:09 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 10:02:09 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 10:02:09 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:02:09 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:02:09 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 10:02:09 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:02:09 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:02:09 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:02:09 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:02:09 --> Model "Products" initialized
+INFO - 2022-11-18 15:32:09 --> Model "reports" initialized
+INFO - 2022-11-18 15:32:09 --> Model "Users" initialized
+INFO - 2022-11-18 15:32:10 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:32:10 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:32:10 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:32:10 --> Final output sent to browser
+DEBUG - 2022-11-18 15:32:10 --> Total execution time: 0.4174
+ERROR - 2022-11-18 10:02:10 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:02:10 --> Config Class Initialized
+INFO - 2022-11-18 10:02:10 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:02:10 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:02:10 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:02:10 --> URI Class Initialized
+INFO - 2022-11-18 10:02:10 --> Router Class Initialized
+INFO - 2022-11-18 10:02:10 --> Output Class Initialized
+INFO - 2022-11-18 10:02:10 --> Security Class Initialized
+DEBUG - 2022-11-18 10:02:10 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:02:10 --> CSRF cookie sent
+INFO - 2022-11-18 10:02:10 --> Input Class Initialized
+INFO - 2022-11-18 10:02:10 --> Language Class Initialized
+ERROR - 2022-11-18 10:02:10 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:02:10 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:02:10 --> Config Class Initialized
+INFO - 2022-11-18 10:02:10 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:02:10 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:02:10 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:02:10 --> URI Class Initialized
+INFO - 2022-11-18 10:02:10 --> Router Class Initialized
+INFO - 2022-11-18 10:02:10 --> Output Class Initialized
+INFO - 2022-11-18 10:02:10 --> Security Class Initialized
+DEBUG - 2022-11-18 10:02:10 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:02:10 --> CSRF cookie sent
+INFO - 2022-11-18 10:02:10 --> Input Class Initialized
+INFO - 2022-11-18 10:02:10 --> Language Class Initialized
+ERROR - 2022-11-18 10:02:10 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:02:10 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:02:10 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:02:10 --> Config Class Initialized
+INFO - 2022-11-18 10:02:10 --> Hooks Class Initialized
+INFO - 2022-11-18 10:02:10 --> Config Class Initialized
+INFO - 2022-11-18 10:02:10 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:02:10 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:02:10 --> Utf8 Class Initialized
+DEBUG - 2022-11-18 10:02:10 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:02:10 --> URI Class Initialized
+INFO - 2022-11-18 10:02:10 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:02:10 --> URI Class Initialized
+INFO - 2022-11-18 10:02:10 --> Router Class Initialized
+INFO - 2022-11-18 10:02:10 --> Output Class Initialized
+INFO - 2022-11-18 10:02:10 --> Router Class Initialized
+INFO - 2022-11-18 10:02:10 --> Security Class Initialized
+INFO - 2022-11-18 10:02:10 --> Output Class Initialized
+DEBUG - 2022-11-18 10:02:10 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:02:10 --> CSRF cookie sent
+INFO - 2022-11-18 10:02:10 --> Security Class Initialized
+INFO - 2022-11-18 10:02:10 --> Input Class Initialized
+INFO - 2022-11-18 10:02:10 --> Language Class Initialized
+DEBUG - 2022-11-18 10:02:10 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:02:10 --> CSRF cookie sent
+ERROR - 2022-11-18 10:02:10 --> 404 Page Not Found: Assets/plugins
+INFO - 2022-11-18 10:02:10 --> Input Class Initialized
+INFO - 2022-11-18 10:02:10 --> Language Class Initialized
+ERROR - 2022-11-18 10:02:10 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:02:10 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:02:10 --> Config Class Initialized
+INFO - 2022-11-18 10:02:10 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:02:10 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:02:10 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:02:10 --> URI Class Initialized
+INFO - 2022-11-18 10:02:10 --> Router Class Initialized
+INFO - 2022-11-18 10:02:10 --> Output Class Initialized
+INFO - 2022-11-18 10:02:10 --> Security Class Initialized
+DEBUG - 2022-11-18 10:02:10 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:02:10 --> CSRF cookie sent
+INFO - 2022-11-18 10:02:10 --> CSRF token verified
+INFO - 2022-11-18 10:02:10 --> Input Class Initialized
+INFO - 2022-11-18 10:02:10 --> Language Class Initialized
+INFO - 2022-11-18 10:02:10 --> Loader Class Initialized
+INFO - 2022-11-18 10:02:10 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:02:10 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:02:10 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:02:10 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:02:10 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:02:10 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:02:10 --> Parser Class Initialized
+INFO - 2022-11-18 10:02:10 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:02:10 --> Pagination Class Initialized
+INFO - 2022-11-18 10:02:10 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:02:10 --> Controller Class Initialized
+INFO - 2022-11-18 10:02:10 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:02:10 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:02:10 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:02:10 --> Model "Customers" initialized
+INFO - 2022-11-18 10:02:10 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:02:10 --> Final output sent to browser
+DEBUG - 2022-11-18 10:02:10 --> Total execution time: 0.0094
+ERROR - 2022-11-18 10:02:27 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:02:27 --> Config Class Initialized
+INFO - 2022-11-18 10:02:27 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:02:27 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:02:27 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:02:27 --> URI Class Initialized
+INFO - 2022-11-18 10:02:27 --> Router Class Initialized
+INFO - 2022-11-18 10:02:27 --> Output Class Initialized
+INFO - 2022-11-18 10:02:27 --> Security Class Initialized
+DEBUG - 2022-11-18 10:02:27 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:02:27 --> CSRF cookie sent
+INFO - 2022-11-18 10:02:27 --> Input Class Initialized
+INFO - 2022-11-18 10:02:27 --> Language Class Initialized
+INFO - 2022-11-18 10:02:27 --> Loader Class Initialized
+INFO - 2022-11-18 10:02:27 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:02:27 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:02:27 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:02:27 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:02:27 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:02:27 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:02:27 --> Parser Class Initialized
+INFO - 2022-11-18 10:02:27 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:02:27 --> Pagination Class Initialized
+INFO - 2022-11-18 10:02:27 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:02:27 --> Controller Class Initialized
+INFO - 2022-11-18 10:02:27 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:02:27 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:02:27 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:02:27 --> Model "Customers" initialized
+INFO - 2022-11-18 10:02:27 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:02:27 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:02:27 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:02:27 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:02:27 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:02:27 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:02:27 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:02:27 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 10:02:27 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 10:02:27 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:02:27 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:02:27 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 10:02:27 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:02:27 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:02:27 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:02:27 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:02:27 --> Model "Products" initialized
+INFO - 2022-11-18 15:32:27 --> Model "reports" initialized
+INFO - 2022-11-18 15:32:27 --> Model "Users" initialized
+INFO - 2022-11-18 15:32:27 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:32:27 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:32:27 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:32:27 --> Final output sent to browser
+DEBUG - 2022-11-18 15:32:27 --> Total execution time: 0.4619
+ERROR - 2022-11-18 10:02:28 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:02:28 --> Config Class Initialized
+INFO - 2022-11-18 10:02:28 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:02:28 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:02:28 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:02:28 --> URI Class Initialized
+INFO - 2022-11-18 10:02:28 --> Router Class Initialized
+INFO - 2022-11-18 10:02:28 --> Output Class Initialized
+INFO - 2022-11-18 10:02:28 --> Security Class Initialized
+DEBUG - 2022-11-18 10:02:28 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:02:28 --> CSRF cookie sent
+INFO - 2022-11-18 10:02:28 --> Input Class Initialized
+INFO - 2022-11-18 10:02:28 --> Language Class Initialized
+ERROR - 2022-11-18 10:02:28 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:02:28 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:02:28 --> Config Class Initialized
+INFO - 2022-11-18 10:02:28 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:02:28 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:02:28 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:02:28 --> URI Class Initialized
+INFO - 2022-11-18 10:02:28 --> Router Class Initialized
+INFO - 2022-11-18 10:02:28 --> Output Class Initialized
+INFO - 2022-11-18 10:02:28 --> Security Class Initialized
+DEBUG - 2022-11-18 10:02:28 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:02:28 --> CSRF cookie sent
+INFO - 2022-11-18 10:02:28 --> Input Class Initialized
+INFO - 2022-11-18 10:02:28 --> Language Class Initialized
+ERROR - 2022-11-18 10:02:28 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:02:28 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:02:28 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:02:28 --> Config Class Initialized
+INFO - 2022-11-18 10:02:28 --> Config Class Initialized
+INFO - 2022-11-18 10:02:28 --> Hooks Class Initialized
+INFO - 2022-11-18 10:02:28 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:02:28 --> UTF-8 Support Enabled
+DEBUG - 2022-11-18 10:02:28 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:02:28 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:02:28 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:02:28 --> URI Class Initialized
+INFO - 2022-11-18 10:02:28 --> URI Class Initialized
+INFO - 2022-11-18 10:02:28 --> Router Class Initialized
+INFO - 2022-11-18 10:02:28 --> Router Class Initialized
+INFO - 2022-11-18 10:02:28 --> Output Class Initialized
+INFO - 2022-11-18 10:02:28 --> Output Class Initialized
+INFO - 2022-11-18 10:02:28 --> Security Class Initialized
+INFO - 2022-11-18 10:02:28 --> Security Class Initialized
+DEBUG - 2022-11-18 10:02:28 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:02:28 --> CSRF cookie sent
+DEBUG - 2022-11-18 10:02:28 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:02:28 --> Input Class Initialized
+INFO - 2022-11-18 10:02:28 --> CSRF cookie sent
+INFO - 2022-11-18 10:02:28 --> Language Class Initialized
+INFO - 2022-11-18 10:02:28 --> Input Class Initialized
+ERROR - 2022-11-18 10:02:28 --> 404 Page Not Found: Assets/plugins
+INFO - 2022-11-18 10:02:28 --> Language Class Initialized
+ERROR - 2022-11-18 10:02:28 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:02:28 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:02:28 --> Config Class Initialized
+INFO - 2022-11-18 10:02:28 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:02:28 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:02:28 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:02:28 --> URI Class Initialized
+INFO - 2022-11-18 10:02:28 --> Router Class Initialized
+INFO - 2022-11-18 10:02:28 --> Output Class Initialized
+INFO - 2022-11-18 10:02:28 --> Security Class Initialized
+DEBUG - 2022-11-18 10:02:28 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:02:28 --> CSRF cookie sent
+INFO - 2022-11-18 10:02:28 --> CSRF token verified
+INFO - 2022-11-18 10:02:28 --> Input Class Initialized
+INFO - 2022-11-18 10:02:28 --> Language Class Initialized
+INFO - 2022-11-18 10:02:28 --> Loader Class Initialized
+INFO - 2022-11-18 10:02:28 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:02:28 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:02:28 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:02:28 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:02:28 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:02:28 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:02:28 --> Parser Class Initialized
+INFO - 2022-11-18 10:02:28 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:02:28 --> Pagination Class Initialized
+INFO - 2022-11-18 10:02:28 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:02:28 --> Controller Class Initialized
+INFO - 2022-11-18 10:02:28 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:02:28 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:02:28 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:02:28 --> Model "Customers" initialized
+INFO - 2022-11-18 10:02:28 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:02:28 --> Final output sent to browser
+DEBUG - 2022-11-18 10:02:28 --> Total execution time: 0.0211
+ERROR - 2022-11-18 10:04:15 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:04:15 --> Config Class Initialized
+INFO - 2022-11-18 10:04:15 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:04:15 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:04:15 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:04:15 --> URI Class Initialized
+INFO - 2022-11-18 10:04:15 --> Router Class Initialized
+INFO - 2022-11-18 10:04:15 --> Output Class Initialized
+INFO - 2022-11-18 10:04:15 --> Security Class Initialized
+DEBUG - 2022-11-18 10:04:15 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:04:15 --> CSRF cookie sent
+INFO - 2022-11-18 10:04:15 --> Input Class Initialized
+INFO - 2022-11-18 10:04:15 --> Language Class Initialized
+INFO - 2022-11-18 10:04:15 --> Loader Class Initialized
+INFO - 2022-11-18 10:04:15 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:04:15 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:04:15 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:04:15 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:04:15 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:04:15 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:04:15 --> Parser Class Initialized
+INFO - 2022-11-18 10:04:15 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:04:15 --> Pagination Class Initialized
+INFO - 2022-11-18 10:04:15 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:04:15 --> Controller Class Initialized
+INFO - 2022-11-18 10:04:15 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:04:15 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:04:15 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:04:15 --> Model "Customers" initialized
+INFO - 2022-11-18 10:04:15 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:04:15 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:04:15 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:04:15 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:04:15 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:04:15 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:04:15 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:04:15 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1147
+ERROR - 2022-11-18 10:04:15 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1177
+ERROR - 2022-11-18 10:04:15 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1200
+ERROR - 2022-11-18 10:04:15 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1200
+ERROR - 2022-11-18 10:04:15 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1231
+INFO - 2022-11-18 10:04:15 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:04:15 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:04:15 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:04:15 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:04:15 --> Model "Products" initialized
+INFO - 2022-11-18 15:34:15 --> Model "reports" initialized
+INFO - 2022-11-18 15:34:15 --> Model "Users" initialized
+INFO - 2022-11-18 15:34:16 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:34:16 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:34:16 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:34:16 --> Final output sent to browser
+DEBUG - 2022-11-18 15:34:16 --> Total execution time: 0.3776
+ERROR - 2022-11-18 10:04:16 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:04:16 --> Config Class Initialized
+INFO - 2022-11-18 10:04:16 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:04:16 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:04:16 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:04:16 --> URI Class Initialized
+INFO - 2022-11-18 10:04:16 --> Router Class Initialized
+INFO - 2022-11-18 10:04:16 --> Output Class Initialized
+INFO - 2022-11-18 10:04:16 --> Security Class Initialized
+DEBUG - 2022-11-18 10:04:16 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:04:16 --> CSRF cookie sent
+INFO - 2022-11-18 10:04:16 --> Input Class Initialized
+INFO - 2022-11-18 10:04:16 --> Language Class Initialized
+ERROR - 2022-11-18 10:04:16 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:04:16 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:04:16 --> Config Class Initialized
+INFO - 2022-11-18 10:04:16 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:04:16 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:04:16 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:04:16 --> URI Class Initialized
+INFO - 2022-11-18 10:04:16 --> Router Class Initialized
+INFO - 2022-11-18 10:04:16 --> Output Class Initialized
+INFO - 2022-11-18 10:04:16 --> Security Class Initialized
+DEBUG - 2022-11-18 10:04:16 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:04:16 --> CSRF cookie sent
+INFO - 2022-11-18 10:04:16 --> Input Class Initialized
+INFO - 2022-11-18 10:04:16 --> Language Class Initialized
+ERROR - 2022-11-18 10:04:16 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:04:46 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:04:46 --> Config Class Initialized
+INFO - 2022-11-18 10:04:46 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:04:46 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:04:46 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:04:46 --> URI Class Initialized
+INFO - 2022-11-18 10:04:46 --> Router Class Initialized
+INFO - 2022-11-18 10:04:46 --> Output Class Initialized
+INFO - 2022-11-18 10:04:46 --> Security Class Initialized
+DEBUG - 2022-11-18 10:04:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:04:46 --> CSRF cookie sent
+INFO - 2022-11-18 10:04:46 --> Input Class Initialized
+INFO - 2022-11-18 10:04:46 --> Language Class Initialized
+INFO - 2022-11-18 10:04:46 --> Loader Class Initialized
+INFO - 2022-11-18 10:04:46 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:04:46 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:04:46 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:04:46 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:04:46 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:04:46 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:04:46 --> Parser Class Initialized
+INFO - 2022-11-18 10:04:46 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:04:46 --> Pagination Class Initialized
+INFO - 2022-11-18 10:04:46 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:04:46 --> Controller Class Initialized
+INFO - 2022-11-18 10:04:46 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:04:46 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:04:46 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:04:46 --> Model "Customers" initialized
+INFO - 2022-11-18 10:04:46 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:04:46 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:04:46 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:04:46 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:04:46 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:04:46 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:04:46 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:04:47 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1145
+ERROR - 2022-11-18 10:04:47 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1175
+ERROR - 2022-11-18 10:04:47 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:04:47 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:04:47 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1229
+INFO - 2022-11-18 10:04:47 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:04:47 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:04:47 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:04:47 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:04:47 --> Model "Products" initialized
+INFO - 2022-11-18 15:34:47 --> Model "reports" initialized
+INFO - 2022-11-18 15:34:47 --> Model "Users" initialized
+INFO - 2022-11-18 15:34:47 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:34:47 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:34:47 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:34:47 --> Final output sent to browser
+DEBUG - 2022-11-18 15:34:47 --> Total execution time: 0.4290
+ERROR - 2022-11-18 10:04:47 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:04:47 --> Config Class Initialized
+INFO - 2022-11-18 10:04:47 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:04:47 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:04:47 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:04:47 --> URI Class Initialized
+INFO - 2022-11-18 10:04:47 --> Router Class Initialized
+INFO - 2022-11-18 10:04:47 --> Output Class Initialized
+INFO - 2022-11-18 10:04:47 --> Security Class Initialized
+DEBUG - 2022-11-18 10:04:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:04:47 --> CSRF cookie sent
+INFO - 2022-11-18 10:04:47 --> Input Class Initialized
+INFO - 2022-11-18 10:04:47 --> Language Class Initialized
+INFO - 2022-11-18 10:04:47 --> Loader Class Initialized
+INFO - 2022-11-18 10:04:47 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:04:47 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:04:47 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:04:47 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:04:47 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:04:47 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:04:47 --> Parser Class Initialized
+INFO - 2022-11-18 10:04:47 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:04:47 --> Pagination Class Initialized
+INFO - 2022-11-18 10:04:47 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:04:47 --> Controller Class Initialized
+INFO - 2022-11-18 10:04:47 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:04:47 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:04:47 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:04:47 --> Model "Customers" initialized
+INFO - 2022-11-18 10:04:47 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:04:47 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:04:47 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:04:47 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:04:47 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:04:47 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:04:47 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:04:47 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1145
+ERROR - 2022-11-18 10:04:47 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1175
+ERROR - 2022-11-18 10:04:47 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:04:47 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:04:47 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1229
+INFO - 2022-11-18 10:04:47 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:04:47 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:04:47 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:04:47 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:04:47 --> Model "Products" initialized
+INFO - 2022-11-18 15:34:47 --> Model "reports" initialized
+INFO - 2022-11-18 15:34:47 --> Model "Users" initialized
+INFO - 2022-11-18 15:34:48 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:34:48 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:34:48 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:34:48 --> Final output sent to browser
+DEBUG - 2022-11-18 15:34:48 --> Total execution time: 0.4421
+ERROR - 2022-11-18 10:04:54 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:04:54 --> Config Class Initialized
+INFO - 2022-11-18 10:04:54 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:04:54 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:04:54 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:04:54 --> URI Class Initialized
+INFO - 2022-11-18 10:04:54 --> Router Class Initialized
+INFO - 2022-11-18 10:04:54 --> Output Class Initialized
+INFO - 2022-11-18 10:04:54 --> Security Class Initialized
+DEBUG - 2022-11-18 10:04:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:04:54 --> CSRF cookie sent
+INFO - 2022-11-18 10:04:54 --> Input Class Initialized
+INFO - 2022-11-18 10:04:54 --> Language Class Initialized
+INFO - 2022-11-18 10:04:54 --> Loader Class Initialized
+INFO - 2022-11-18 10:04:54 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:04:54 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:04:54 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:04:54 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:04:54 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:04:54 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:04:54 --> Parser Class Initialized
+INFO - 2022-11-18 10:04:54 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:04:54 --> Pagination Class Initialized
+INFO - 2022-11-18 10:04:54 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:04:54 --> Controller Class Initialized
+INFO - 2022-11-18 10:04:54 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:04:54 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:04:54 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:04:54 --> Model "Customers" initialized
+INFO - 2022-11-18 10:04:54 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:04:54 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:04:54 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:04:54 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:04:54 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:04:54 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:04:54 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:04:54 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1145
+ERROR - 2022-11-18 10:04:54 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1175
+ERROR - 2022-11-18 10:04:54 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:04:54 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:04:54 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1229
+INFO - 2022-11-18 10:04:54 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:04:54 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:04:54 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:04:54 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:04:54 --> Model "Products" initialized
+INFO - 2022-11-18 15:34:54 --> Model "reports" initialized
+INFO - 2022-11-18 15:34:54 --> Model "Users" initialized
+INFO - 2022-11-18 15:34:55 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:34:55 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:34:55 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:34:55 --> Final output sent to browser
+DEBUG - 2022-11-18 15:34:55 --> Total execution time: 0.4192
+ERROR - 2022-11-18 10:04:56 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:04:56 --> Config Class Initialized
+INFO - 2022-11-18 10:04:56 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:04:56 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:04:56 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:04:56 --> URI Class Initialized
+INFO - 2022-11-18 10:04:56 --> Router Class Initialized
+INFO - 2022-11-18 10:04:56 --> Output Class Initialized
+INFO - 2022-11-18 10:04:56 --> Security Class Initialized
+DEBUG - 2022-11-18 10:04:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:04:56 --> CSRF cookie sent
+INFO - 2022-11-18 10:04:56 --> Input Class Initialized
+INFO - 2022-11-18 10:04:56 --> Language Class Initialized
+INFO - 2022-11-18 10:04:56 --> Loader Class Initialized
+INFO - 2022-11-18 10:04:56 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:04:56 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:04:56 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:04:56 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:04:56 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:04:56 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:04:56 --> Parser Class Initialized
+INFO - 2022-11-18 10:04:56 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:04:56 --> Pagination Class Initialized
+INFO - 2022-11-18 10:04:56 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:04:56 --> Controller Class Initialized
+INFO - 2022-11-18 10:04:56 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:04:56 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:04:56 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:04:56 --> Model "Customers" initialized
+INFO - 2022-11-18 10:04:56 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:04:56 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:04:56 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:04:56 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:04:56 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:04:56 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:04:56 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:04:56 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1145
+ERROR - 2022-11-18 10:04:56 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1175
+ERROR - 2022-11-18 10:04:56 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:04:56 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:04:56 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1229
+INFO - 2022-11-18 10:04:56 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:04:56 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:04:56 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:04:56 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:04:56 --> Model "Products" initialized
+INFO - 2022-11-18 15:34:56 --> Model "reports" initialized
+INFO - 2022-11-18 15:34:56 --> Model "Users" initialized
+INFO - 2022-11-18 15:34:56 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:34:56 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:34:56 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:34:56 --> Final output sent to browser
+DEBUG - 2022-11-18 15:34:56 --> Total execution time: 0.3998
+ERROR - 2022-11-18 10:05:04 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:05:04 --> Config Class Initialized
+INFO - 2022-11-18 10:05:04 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:05:04 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:05:04 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:05:04 --> URI Class Initialized
+INFO - 2022-11-18 10:05:04 --> Router Class Initialized
+INFO - 2022-11-18 10:05:04 --> Output Class Initialized
+INFO - 2022-11-18 10:05:04 --> Security Class Initialized
+DEBUG - 2022-11-18 10:05:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:05:04 --> CSRF cookie sent
+INFO - 2022-11-18 10:05:04 --> Input Class Initialized
+INFO - 2022-11-18 10:05:04 --> Language Class Initialized
+INFO - 2022-11-18 10:05:04 --> Loader Class Initialized
+INFO - 2022-11-18 10:05:04 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:05:04 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:05:04 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:05:04 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:05:04 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:05:04 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:05:04 --> Parser Class Initialized
+INFO - 2022-11-18 10:05:04 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:05:04 --> Pagination Class Initialized
+INFO - 2022-11-18 10:05:04 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:05:04 --> Controller Class Initialized
+INFO - 2022-11-18 10:05:04 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:05:04 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:05:04 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:05:04 --> Model "Customers" initialized
+INFO - 2022-11-18 10:05:04 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:05:04 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:05:04 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:05:04 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:05:04 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:05:04 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:05:05 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:05:05 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1145
+ERROR - 2022-11-18 10:05:05 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1175
+ERROR - 2022-11-18 10:05:05 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:05:05 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:05:05 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1229
+INFO - 2022-11-18 10:05:05 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:05:05 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:05:05 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:05:05 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:05:05 --> Model "Products" initialized
+INFO - 2022-11-18 15:35:05 --> Model "reports" initialized
+INFO - 2022-11-18 15:35:05 --> Model "Users" initialized
+INFO - 2022-11-18 15:35:05 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:35:05 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:35:05 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:35:05 --> Final output sent to browser
+DEBUG - 2022-11-18 15:35:05 --> Total execution time: 0.4000
+ERROR - 2022-11-18 10:05:05 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:05:05 --> Config Class Initialized
+INFO - 2022-11-18 10:05:05 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:05:05 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:05:05 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:05:05 --> URI Class Initialized
+INFO - 2022-11-18 10:05:05 --> Router Class Initialized
+INFO - 2022-11-18 10:05:05 --> Output Class Initialized
+INFO - 2022-11-18 10:05:05 --> Security Class Initialized
+DEBUG - 2022-11-18 10:05:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:05:05 --> CSRF cookie sent
+INFO - 2022-11-18 10:05:05 --> CSRF token verified
+INFO - 2022-11-18 10:05:05 --> Input Class Initialized
+INFO - 2022-11-18 10:05:05 --> Language Class Initialized
+INFO - 2022-11-18 10:05:05 --> Loader Class Initialized
+INFO - 2022-11-18 10:05:05 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:05:05 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:05:05 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:05:05 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:05:05 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:05:05 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:05:05 --> Parser Class Initialized
+INFO - 2022-11-18 10:05:05 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:05:05 --> Pagination Class Initialized
+INFO - 2022-11-18 10:05:05 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:05:05 --> Controller Class Initialized
+INFO - 2022-11-18 10:05:05 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:05:05 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:05:05 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:05:05 --> Model "Customers" initialized
+INFO - 2022-11-18 10:05:05 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:05:05 --> Final output sent to browser
+DEBUG - 2022-11-18 10:05:05 --> Total execution time: 0.0574
+ERROR - 2022-11-18 10:05:07 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:05:07 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:05:07 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:05:07 --> Config Class Initialized
+INFO - 2022-11-18 10:05:07 --> Config Class Initialized
+INFO - 2022-11-18 10:05:07 --> Hooks Class Initialized
+INFO - 2022-11-18 10:05:07 --> Config Class Initialized
+INFO - 2022-11-18 10:05:07 --> Hooks Class Initialized
+INFO - 2022-11-18 10:05:07 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:05:07 --> UTF-8 Support Enabled
+DEBUG - 2022-11-18 10:05:07 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:05:07 --> Utf8 Class Initialized
+DEBUG - 2022-11-18 10:05:07 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:05:07 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:05:07 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:05:07 --> URI Class Initialized
+INFO - 2022-11-18 10:05:07 --> URI Class Initialized
+INFO - 2022-11-18 10:05:07 --> URI Class Initialized
+INFO - 2022-11-18 10:05:07 --> Router Class Initialized
+INFO - 2022-11-18 10:05:07 --> Router Class Initialized
+INFO - 2022-11-18 10:05:07 --> Router Class Initialized
+INFO - 2022-11-18 10:05:07 --> Output Class Initialized
+INFO - 2022-11-18 10:05:07 --> Output Class Initialized
+INFO - 2022-11-18 10:05:07 --> Output Class Initialized
+INFO - 2022-11-18 10:05:07 --> Security Class Initialized
+INFO - 2022-11-18 10:05:07 --> Security Class Initialized
+INFO - 2022-11-18 10:05:07 --> Security Class Initialized
+DEBUG - 2022-11-18 10:05:07 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-11-18 10:05:07 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-11-18 10:05:07 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:05:07 --> CSRF cookie sent
+INFO - 2022-11-18 10:05:07 --> CSRF cookie sent
+INFO - 2022-11-18 10:05:07 --> CSRF cookie sent
+INFO - 2022-11-18 10:05:07 --> Input Class Initialized
+INFO - 2022-11-18 10:05:07 --> Input Class Initialized
+INFO - 2022-11-18 10:05:07 --> Input Class Initialized
+INFO - 2022-11-18 10:05:07 --> Language Class Initialized
+INFO - 2022-11-18 10:05:07 --> Language Class Initialized
+INFO - 2022-11-18 10:05:07 --> Language Class Initialized
+ERROR - 2022-11-18 10:05:07 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:05:07 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:05:07 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:05:07 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:05:07 --> Config Class Initialized
+INFO - 2022-11-18 10:05:07 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:05:07 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:05:07 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:05:07 --> URI Class Initialized
+INFO - 2022-11-18 10:05:07 --> Router Class Initialized
+INFO - 2022-11-18 10:05:07 --> Output Class Initialized
+INFO - 2022-11-18 10:05:07 --> Security Class Initialized
+DEBUG - 2022-11-18 10:05:07 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:05:07 --> CSRF cookie sent
+INFO - 2022-11-18 10:05:07 --> Input Class Initialized
+INFO - 2022-11-18 10:05:07 --> Language Class Initialized
+ERROR - 2022-11-18 10:05:07 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:05:25 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:05:25 --> Config Class Initialized
+INFO - 2022-11-18 10:05:25 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:05:25 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:05:25 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:05:25 --> URI Class Initialized
+INFO - 2022-11-18 10:05:25 --> Router Class Initialized
+INFO - 2022-11-18 10:05:25 --> Output Class Initialized
+INFO - 2022-11-18 10:05:25 --> Security Class Initialized
+DEBUG - 2022-11-18 10:05:25 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:05:25 --> CSRF cookie sent
+INFO - 2022-11-18 10:05:25 --> Input Class Initialized
+INFO - 2022-11-18 10:05:25 --> Language Class Initialized
+INFO - 2022-11-18 10:05:25 --> Loader Class Initialized
+INFO - 2022-11-18 10:05:25 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:05:25 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:05:25 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:05:25 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:05:25 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:05:25 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:05:25 --> Parser Class Initialized
+INFO - 2022-11-18 10:05:25 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:05:25 --> Pagination Class Initialized
+INFO - 2022-11-18 10:05:25 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:05:25 --> Controller Class Initialized
+INFO - 2022-11-18 10:05:25 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:05:25 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:05:25 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:05:25 --> Model "Customers" initialized
+INFO - 2022-11-18 10:05:25 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:05:25 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:05:25 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:05:25 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:05:25 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:05:25 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:05:25 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:05:25 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1145
+ERROR - 2022-11-18 10:05:25 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1175
+ERROR - 2022-11-18 10:05:25 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:05:25 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:05:25 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1229
+INFO - 2022-11-18 10:05:25 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:05:25 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:05:25 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:05:25 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:05:25 --> Model "Products" initialized
+INFO - 2022-11-18 15:35:25 --> Model "reports" initialized
+INFO - 2022-11-18 15:35:25 --> Model "Users" initialized
+INFO - 2022-11-18 15:35:25 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:35:25 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:35:25 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:35:25 --> Final output sent to browser
+DEBUG - 2022-11-18 15:35:25 --> Total execution time: 0.5160
+ERROR - 2022-11-18 10:05:25 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:05:25 --> Config Class Initialized
+INFO - 2022-11-18 10:05:25 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:05:25 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:05:25 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:05:25 --> URI Class Initialized
+INFO - 2022-11-18 10:05:25 --> Router Class Initialized
+INFO - 2022-11-18 10:05:25 --> Output Class Initialized
+INFO - 2022-11-18 10:05:25 --> Security Class Initialized
+DEBUG - 2022-11-18 10:05:25 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:05:25 --> CSRF cookie sent
+INFO - 2022-11-18 10:05:25 --> Input Class Initialized
+INFO - 2022-11-18 10:05:25 --> Language Class Initialized
+ERROR - 2022-11-18 10:05:25 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:05:25 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:05:25 --> Config Class Initialized
+INFO - 2022-11-18 10:05:25 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:05:25 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:05:25 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:05:25 --> URI Class Initialized
+INFO - 2022-11-18 10:05:25 --> Router Class Initialized
+INFO - 2022-11-18 10:05:25 --> Output Class Initialized
+INFO - 2022-11-18 10:05:25 --> Security Class Initialized
+DEBUG - 2022-11-18 10:05:25 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:05:25 --> CSRF cookie sent
+INFO - 2022-11-18 10:05:25 --> Input Class Initialized
+INFO - 2022-11-18 10:05:25 --> Language Class Initialized
+ERROR - 2022-11-18 10:05:25 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:05:25 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:05:25 --> Config Class Initialized
+INFO - 2022-11-18 10:05:25 --> Hooks Class Initialized
+ERROR - 2022-11-18 10:05:25 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+DEBUG - 2022-11-18 10:05:25 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:05:25 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:05:25 --> Config Class Initialized
+INFO - 2022-11-18 10:05:25 --> Hooks Class Initialized
+INFO - 2022-11-18 10:05:25 --> URI Class Initialized
+DEBUG - 2022-11-18 10:05:25 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:05:25 --> Router Class Initialized
+INFO - 2022-11-18 10:05:25 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:05:25 --> Output Class Initialized
+INFO - 2022-11-18 10:05:25 --> Security Class Initialized
+DEBUG - 2022-11-18 10:05:25 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:05:25 --> CSRF cookie sent
+INFO - 2022-11-18 10:05:25 --> Input Class Initialized
+INFO - 2022-11-18 10:05:25 --> URI Class Initialized
+INFO - 2022-11-18 10:05:25 --> Language Class Initialized
+INFO - 2022-11-18 10:05:25 --> Router Class Initialized
+ERROR - 2022-11-18 10:05:25 --> 404 Page Not Found: Assets/js
+INFO - 2022-11-18 10:05:25 --> Output Class Initialized
+INFO - 2022-11-18 10:05:25 --> Security Class Initialized
+DEBUG - 2022-11-18 10:05:25 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:05:25 --> CSRF cookie sent
+INFO - 2022-11-18 10:05:25 --> Input Class Initialized
+INFO - 2022-11-18 10:05:25 --> Language Class Initialized
+ERROR - 2022-11-18 10:05:25 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:05:26 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:05:26 --> Config Class Initialized
+INFO - 2022-11-18 10:05:26 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:05:26 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:05:26 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:05:26 --> URI Class Initialized
+INFO - 2022-11-18 10:05:26 --> Router Class Initialized
+INFO - 2022-11-18 10:05:26 --> Output Class Initialized
+INFO - 2022-11-18 10:05:26 --> Security Class Initialized
+DEBUG - 2022-11-18 10:05:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:05:26 --> CSRF cookie sent
+INFO - 2022-11-18 10:05:26 --> CSRF token verified
+INFO - 2022-11-18 10:05:26 --> Input Class Initialized
+INFO - 2022-11-18 10:05:26 --> Language Class Initialized
+INFO - 2022-11-18 10:05:26 --> Loader Class Initialized
+INFO - 2022-11-18 10:05:26 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:05:26 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:05:26 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:05:26 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:05:26 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:05:26 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:05:26 --> Parser Class Initialized
+INFO - 2022-11-18 10:05:26 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:05:26 --> Pagination Class Initialized
+INFO - 2022-11-18 10:05:26 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:05:26 --> Controller Class Initialized
+INFO - 2022-11-18 10:05:26 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:05:26 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:05:26 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:05:26 --> Model "Customers" initialized
+INFO - 2022-11-18 10:05:26 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:05:26 --> Final output sent to browser
+DEBUG - 2022-11-18 10:05:26 --> Total execution time: 0.0117
+ERROR - 2022-11-18 10:08:02 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:08:02 --> Config Class Initialized
+INFO - 2022-11-18 10:08:02 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:08:02 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:08:02 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:08:02 --> URI Class Initialized
+INFO - 2022-11-18 10:08:02 --> Router Class Initialized
+INFO - 2022-11-18 10:08:02 --> Output Class Initialized
+INFO - 2022-11-18 10:08:02 --> Security Class Initialized
+DEBUG - 2022-11-18 10:08:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:08:02 --> CSRF cookie sent
+INFO - 2022-11-18 10:08:02 --> Input Class Initialized
+INFO - 2022-11-18 10:08:02 --> Language Class Initialized
+INFO - 2022-11-18 10:08:02 --> Loader Class Initialized
+INFO - 2022-11-18 10:08:02 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:08:02 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:08:02 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:08:02 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:08:02 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:08:02 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:08:02 --> Parser Class Initialized
+INFO - 2022-11-18 10:08:02 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:08:02 --> Pagination Class Initialized
+INFO - 2022-11-18 10:08:02 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:08:02 --> Controller Class Initialized
+INFO - 2022-11-18 10:08:02 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:08:02 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:08:02 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:08:02 --> Model "Customers" initialized
+INFO - 2022-11-18 10:08:02 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:08:02 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:08:02 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:08:02 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:08:02 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:08:02 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:08:02 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:08:02 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 10:08:02 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 10:08:02 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:08:02 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:08:02 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 10:08:02 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:08:02 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:08:02 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:08:02 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:08:02 --> Model "Products" initialized
+INFO - 2022-11-18 15:38:02 --> Model "reports" initialized
+INFO - 2022-11-18 15:38:02 --> Model "Users" initialized
+INFO - 2022-11-18 15:38:02 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:38:02 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:38:02 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:38:02 --> Final output sent to browser
+DEBUG - 2022-11-18 15:38:02 --> Total execution time: 0.4182
+ERROR - 2022-11-18 10:08:04 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:08:04 --> Config Class Initialized
+INFO - 2022-11-18 10:08:04 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:08:04 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:08:04 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:08:04 --> URI Class Initialized
+INFO - 2022-11-18 10:08:04 --> Router Class Initialized
+INFO - 2022-11-18 10:08:04 --> Output Class Initialized
+INFO - 2022-11-18 10:08:04 --> Security Class Initialized
+DEBUG - 2022-11-18 10:08:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:08:04 --> CSRF cookie sent
+INFO - 2022-11-18 10:08:04 --> Input Class Initialized
+INFO - 2022-11-18 10:08:04 --> Language Class Initialized
+INFO - 2022-11-18 10:08:04 --> Loader Class Initialized
+INFO - 2022-11-18 10:08:04 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:08:04 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:08:04 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:08:04 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:08:04 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:08:04 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:08:04 --> Parser Class Initialized
+INFO - 2022-11-18 10:08:04 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:08:04 --> Pagination Class Initialized
+INFO - 2022-11-18 10:08:04 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:08:04 --> Controller Class Initialized
+INFO - 2022-11-18 10:08:04 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:08:04 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:08:04 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:08:04 --> Model "Customers" initialized
+INFO - 2022-11-18 10:08:04 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:08:04 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:08:04 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:08:04 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:08:04 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:08:04 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:08:04 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:08:04 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 10:08:04 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 10:08:04 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:08:04 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:08:04 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 10:08:04 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:08:04 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:08:04 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:08:04 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:08:04 --> Model "Products" initialized
+INFO - 2022-11-18 15:38:04 --> Model "reports" initialized
+INFO - 2022-11-18 15:38:04 --> Model "Users" initialized
+INFO - 2022-11-18 15:38:05 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:38:05 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:38:05 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:38:05 --> Final output sent to browser
+DEBUG - 2022-11-18 15:38:05 --> Total execution time: 0.4023
+ERROR - 2022-11-18 10:08:05 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:08:05 --> Config Class Initialized
+INFO - 2022-11-18 10:08:05 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:08:05 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:08:05 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:08:05 --> URI Class Initialized
+INFO - 2022-11-18 10:08:05 --> Router Class Initialized
+INFO - 2022-11-18 10:08:05 --> Output Class Initialized
+INFO - 2022-11-18 10:08:05 --> Security Class Initialized
+DEBUG - 2022-11-18 10:08:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:08:05 --> CSRF cookie sent
+INFO - 2022-11-18 10:08:05 --> Input Class Initialized
+INFO - 2022-11-18 10:08:05 --> Language Class Initialized
+ERROR - 2022-11-18 10:08:05 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:08:05 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:08:05 --> Config Class Initialized
+INFO - 2022-11-18 10:08:05 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:08:05 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:08:05 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:08:05 --> URI Class Initialized
+INFO - 2022-11-18 10:08:05 --> Router Class Initialized
+INFO - 2022-11-18 10:08:05 --> Output Class Initialized
+INFO - 2022-11-18 10:08:05 --> Security Class Initialized
+DEBUG - 2022-11-18 10:08:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:08:05 --> CSRF cookie sent
+INFO - 2022-11-18 10:08:05 --> Input Class Initialized
+INFO - 2022-11-18 10:08:05 --> Language Class Initialized
+ERROR - 2022-11-18 10:08:05 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:08:05 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:08:05 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:08:05 --> Config Class Initialized
+INFO - 2022-11-18 10:08:05 --> Hooks Class Initialized
+INFO - 2022-11-18 10:08:05 --> Config Class Initialized
+INFO - 2022-11-18 10:08:05 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:08:05 --> UTF-8 Support Enabled
+DEBUG - 2022-11-18 10:08:05 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:08:05 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:08:05 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:08:05 --> URI Class Initialized
+INFO - 2022-11-18 10:08:05 --> URI Class Initialized
+INFO - 2022-11-18 10:08:05 --> Router Class Initialized
+INFO - 2022-11-18 10:08:05 --> Router Class Initialized
+INFO - 2022-11-18 10:08:05 --> Output Class Initialized
+INFO - 2022-11-18 10:08:05 --> Output Class Initialized
+INFO - 2022-11-18 10:08:05 --> Security Class Initialized
+INFO - 2022-11-18 10:08:05 --> Security Class Initialized
+DEBUG - 2022-11-18 10:08:05 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-11-18 10:08:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:08:05 --> CSRF cookie sent
+INFO - 2022-11-18 10:08:05 --> CSRF cookie sent
+INFO - 2022-11-18 10:08:05 --> Input Class Initialized
+INFO - 2022-11-18 10:08:05 --> Input Class Initialized
+INFO - 2022-11-18 10:08:05 --> Language Class Initialized
+INFO - 2022-11-18 10:08:05 --> Language Class Initialized
+ERROR - 2022-11-18 10:08:05 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:08:05 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:08:05 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:08:05 --> Config Class Initialized
+INFO - 2022-11-18 10:08:05 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:08:05 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:08:05 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:08:05 --> URI Class Initialized
+INFO - 2022-11-18 10:08:05 --> Router Class Initialized
+INFO - 2022-11-18 10:08:05 --> Output Class Initialized
+INFO - 2022-11-18 10:08:05 --> Security Class Initialized
+DEBUG - 2022-11-18 10:08:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:08:05 --> CSRF cookie sent
+INFO - 2022-11-18 10:08:05 --> CSRF token verified
+INFO - 2022-11-18 10:08:05 --> Input Class Initialized
+INFO - 2022-11-18 10:08:05 --> Language Class Initialized
+INFO - 2022-11-18 10:08:05 --> Loader Class Initialized
+INFO - 2022-11-18 10:08:05 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:08:05 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:08:05 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:08:05 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:08:05 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:08:05 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:08:05 --> Parser Class Initialized
+INFO - 2022-11-18 10:08:05 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:08:05 --> Pagination Class Initialized
+INFO - 2022-11-18 10:08:05 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:08:05 --> Controller Class Initialized
+INFO - 2022-11-18 10:08:05 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:08:05 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:08:05 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:08:05 --> Model "Customers" initialized
+INFO - 2022-11-18 10:08:05 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:08:05 --> Final output sent to browser
+DEBUG - 2022-11-18 10:08:05 --> Total execution time: 0.0147
+ERROR - 2022-11-18 10:08:20 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:08:20 --> Config Class Initialized
+INFO - 2022-11-18 10:08:20 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:08:20 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:08:20 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:08:20 --> URI Class Initialized
+INFO - 2022-11-18 10:08:20 --> Router Class Initialized
+INFO - 2022-11-18 10:08:20 --> Output Class Initialized
+INFO - 2022-11-18 10:08:20 --> Security Class Initialized
+DEBUG - 2022-11-18 10:08:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:08:20 --> CSRF cookie sent
+INFO - 2022-11-18 10:08:20 --> Input Class Initialized
+INFO - 2022-11-18 10:08:20 --> Language Class Initialized
+INFO - 2022-11-18 10:08:20 --> Loader Class Initialized
+INFO - 2022-11-18 10:08:20 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:08:20 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:08:20 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:08:20 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:08:20 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:08:20 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:08:20 --> Parser Class Initialized
+INFO - 2022-11-18 10:08:20 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:08:20 --> Pagination Class Initialized
+INFO - 2022-11-18 10:08:20 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:08:20 --> Controller Class Initialized
+INFO - 2022-11-18 10:08:20 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:08:20 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:08:20 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:08:20 --> Model "Customers" initialized
+INFO - 2022-11-18 10:08:20 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:08:20 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:08:20 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:08:20 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:08:20 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:08:20 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:08:20 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:08:20 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 10:08:20 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 10:08:20 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:08:20 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:08:20 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 10:08:20 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:08:20 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:08:20 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:08:20 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:08:20 --> Model "Products" initialized
+INFO - 2022-11-18 15:38:20 --> Model "reports" initialized
+INFO - 2022-11-18 15:38:20 --> Model "Users" initialized
+INFO - 2022-11-18 15:38:20 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:38:20 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:38:20 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:38:20 --> Final output sent to browser
+DEBUG - 2022-11-18 15:38:20 --> Total execution time: 0.4027
+ERROR - 2022-11-18 10:08:20 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:08:20 --> Config Class Initialized
+INFO - 2022-11-18 10:08:20 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:08:20 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:08:20 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:08:20 --> URI Class Initialized
+INFO - 2022-11-18 10:08:20 --> Router Class Initialized
+INFO - 2022-11-18 10:08:20 --> Output Class Initialized
+INFO - 2022-11-18 10:08:20 --> Security Class Initialized
+DEBUG - 2022-11-18 10:08:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:08:20 --> CSRF cookie sent
+INFO - 2022-11-18 10:08:20 --> Input Class Initialized
+INFO - 2022-11-18 10:08:20 --> Language Class Initialized
+ERROR - 2022-11-18 10:08:20 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:08:20 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:08:20 --> Config Class Initialized
+INFO - 2022-11-18 10:08:20 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:08:20 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:08:20 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:08:20 --> URI Class Initialized
+INFO - 2022-11-18 10:08:20 --> Router Class Initialized
+INFO - 2022-11-18 10:08:20 --> Output Class Initialized
+INFO - 2022-11-18 10:08:20 --> Security Class Initialized
+DEBUG - 2022-11-18 10:08:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:08:20 --> CSRF cookie sent
+INFO - 2022-11-18 10:08:20 --> Input Class Initialized
+INFO - 2022-11-18 10:08:20 --> Language Class Initialized
+ERROR - 2022-11-18 10:08:20 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:08:20 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:08:20 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:08:20 --> Config Class Initialized
+INFO - 2022-11-18 10:08:20 --> Hooks Class Initialized
+INFO - 2022-11-18 10:08:20 --> Config Class Initialized
+DEBUG - 2022-11-18 10:08:20 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:08:20 --> Hooks Class Initialized
+INFO - 2022-11-18 10:08:20 --> Utf8 Class Initialized
+DEBUG - 2022-11-18 10:08:20 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:08:20 --> URI Class Initialized
+INFO - 2022-11-18 10:08:20 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:08:20 --> URI Class Initialized
+INFO - 2022-11-18 10:08:20 --> Router Class Initialized
+INFO - 2022-11-18 10:08:20 --> Output Class Initialized
+INFO - 2022-11-18 10:08:20 --> Router Class Initialized
+INFO - 2022-11-18 10:08:20 --> Security Class Initialized
+INFO - 2022-11-18 10:08:20 --> Output Class Initialized
+INFO - 2022-11-18 10:08:20 --> Security Class Initialized
+DEBUG - 2022-11-18 10:08:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:08:20 --> CSRF cookie sent
+DEBUG - 2022-11-18 10:08:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:08:20 --> Input Class Initialized
+INFO - 2022-11-18 10:08:20 --> CSRF cookie sent
+INFO - 2022-11-18 10:08:20 --> Language Class Initialized
+INFO - 2022-11-18 10:08:20 --> Input Class Initialized
+ERROR - 2022-11-18 10:08:20 --> 404 Page Not Found: Assets/js
+INFO - 2022-11-18 10:08:20 --> Language Class Initialized
+ERROR - 2022-11-18 10:08:20 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:08:20 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:08:20 --> Config Class Initialized
+INFO - 2022-11-18 10:08:20 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:08:20 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:08:20 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:08:20 --> URI Class Initialized
+INFO - 2022-11-18 10:08:20 --> Router Class Initialized
+INFO - 2022-11-18 10:08:20 --> Output Class Initialized
+INFO - 2022-11-18 10:08:20 --> Security Class Initialized
+DEBUG - 2022-11-18 10:08:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:08:20 --> CSRF cookie sent
+INFO - 2022-11-18 10:08:20 --> CSRF token verified
+INFO - 2022-11-18 10:08:20 --> Input Class Initialized
+INFO - 2022-11-18 10:08:20 --> Language Class Initialized
+INFO - 2022-11-18 10:08:20 --> Loader Class Initialized
+INFO - 2022-11-18 10:08:20 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:08:20 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:08:20 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:08:20 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:08:20 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:08:20 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:08:20 --> Parser Class Initialized
+INFO - 2022-11-18 10:08:20 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:08:20 --> Pagination Class Initialized
+INFO - 2022-11-18 10:08:20 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:08:20 --> Controller Class Initialized
+INFO - 2022-11-18 10:08:20 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:08:20 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:08:20 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:08:20 --> Model "Customers" initialized
+INFO - 2022-11-18 10:08:20 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:08:20 --> Final output sent to browser
+DEBUG - 2022-11-18 10:08:20 --> Total execution time: 0.0253
+ERROR - 2022-11-18 10:12:01 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:12:01 --> Config Class Initialized
+INFO - 2022-11-18 10:12:01 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:12:01 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:12:01 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:12:01 --> URI Class Initialized
+INFO - 2022-11-18 10:12:01 --> Router Class Initialized
+INFO - 2022-11-18 10:12:01 --> Output Class Initialized
+INFO - 2022-11-18 10:12:01 --> Security Class Initialized
+DEBUG - 2022-11-18 10:12:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:12:01 --> CSRF cookie sent
+INFO - 2022-11-18 10:12:01 --> Input Class Initialized
+INFO - 2022-11-18 10:12:01 --> Language Class Initialized
+INFO - 2022-11-18 10:12:01 --> Loader Class Initialized
+INFO - 2022-11-18 10:12:01 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:12:01 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:12:01 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:12:01 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:12:01 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:12:01 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:12:01 --> Parser Class Initialized
+INFO - 2022-11-18 10:12:01 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:12:01 --> Pagination Class Initialized
+INFO - 2022-11-18 10:12:01 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:12:01 --> Controller Class Initialized
+INFO - 2022-11-18 10:12:01 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:12:01 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:12:01 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:12:01 --> Model "Customers" initialized
+INFO - 2022-11-18 10:12:01 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:12:01 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:12:01 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:12:01 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:12:01 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:12:01 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:12:01 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:12:01 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 10:12:01 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 10:12:01 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:12:01 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:12:01 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 10:12:01 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:12:01 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:12:01 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:12:01 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:12:01 --> Model "Products" initialized
+INFO - 2022-11-18 15:42:01 --> Model "reports" initialized
+INFO - 2022-11-18 15:42:01 --> Model "Users" initialized
+INFO - 2022-11-18 15:42:02 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:42:02 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:42:02 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:42:02 --> Final output sent to browser
+DEBUG - 2022-11-18 15:42:02 --> Total execution time: 0.3682
+ERROR - 2022-11-18 10:12:02 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:12:02 --> Config Class Initialized
+INFO - 2022-11-18 10:12:02 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:12:02 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:12:02 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:12:02 --> URI Class Initialized
+INFO - 2022-11-18 10:12:02 --> Router Class Initialized
+INFO - 2022-11-18 10:12:02 --> Output Class Initialized
+INFO - 2022-11-18 10:12:02 --> Security Class Initialized
+DEBUG - 2022-11-18 10:12:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:12:02 --> CSRF cookie sent
+INFO - 2022-11-18 10:12:02 --> Input Class Initialized
+INFO - 2022-11-18 10:12:02 --> Language Class Initialized
+ERROR - 2022-11-18 10:12:02 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:12:02 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:12:02 --> Config Class Initialized
+INFO - 2022-11-18 10:12:02 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:12:02 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:12:02 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:12:02 --> URI Class Initialized
+INFO - 2022-11-18 10:12:02 --> Router Class Initialized
+INFO - 2022-11-18 10:12:02 --> Output Class Initialized
+INFO - 2022-11-18 10:12:02 --> Security Class Initialized
+DEBUG - 2022-11-18 10:12:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:12:02 --> CSRF cookie sent
+INFO - 2022-11-18 10:12:02 --> Input Class Initialized
+INFO - 2022-11-18 10:12:02 --> Language Class Initialized
+ERROR - 2022-11-18 10:12:02 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:12:02 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:12:02 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:12:02 --> Config Class Initialized
+INFO - 2022-11-18 10:12:02 --> Hooks Class Initialized
+INFO - 2022-11-18 10:12:02 --> Config Class Initialized
+INFO - 2022-11-18 10:12:02 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:12:02 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:12:02 --> Utf8 Class Initialized
+DEBUG - 2022-11-18 10:12:02 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:12:02 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:12:02 --> URI Class Initialized
+INFO - 2022-11-18 10:12:02 --> URI Class Initialized
+INFO - 2022-11-18 10:12:02 --> Router Class Initialized
+INFO - 2022-11-18 10:12:02 --> Router Class Initialized
+INFO - 2022-11-18 10:12:02 --> Output Class Initialized
+INFO - 2022-11-18 10:12:02 --> Output Class Initialized
+INFO - 2022-11-18 10:12:02 --> Security Class Initialized
+INFO - 2022-11-18 10:12:02 --> Security Class Initialized
+DEBUG - 2022-11-18 10:12:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:12:02 --> CSRF cookie sent
+DEBUG - 2022-11-18 10:12:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:12:02 --> Input Class Initialized
+INFO - 2022-11-18 10:12:02 --> CSRF cookie sent
+INFO - 2022-11-18 10:12:02 --> Language Class Initialized
+INFO - 2022-11-18 10:12:02 --> Input Class Initialized
+INFO - 2022-11-18 10:12:02 --> Language Class Initialized
+ERROR - 2022-11-18 10:12:02 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:12:02 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:12:12 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:12:12 --> Config Class Initialized
+INFO - 2022-11-18 10:12:12 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:12:12 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:12:12 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:12:12 --> URI Class Initialized
+INFO - 2022-11-18 10:12:12 --> Router Class Initialized
+INFO - 2022-11-18 10:12:12 --> Output Class Initialized
+INFO - 2022-11-18 10:12:12 --> Security Class Initialized
+DEBUG - 2022-11-18 10:12:12 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:12:12 --> CSRF cookie sent
+INFO - 2022-11-18 10:12:12 --> Input Class Initialized
+INFO - 2022-11-18 10:12:12 --> Language Class Initialized
+INFO - 2022-11-18 10:12:12 --> Loader Class Initialized
+INFO - 2022-11-18 10:12:12 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:12:12 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:12:12 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:12:12 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:12:12 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:12:12 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:12:12 --> Parser Class Initialized
+INFO - 2022-11-18 10:12:12 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:12:12 --> Pagination Class Initialized
+INFO - 2022-11-18 10:12:12 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:12:12 --> Controller Class Initialized
+INFO - 2022-11-18 10:12:12 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:12:12 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:12:12 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:12:12 --> Model "Customers" initialized
+INFO - 2022-11-18 10:12:12 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:12:12 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:12:12 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:12:12 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:12:12 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:12:12 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:12:12 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:12:12 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 10:12:12 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 10:12:12 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:12:12 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:12:12 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 10:12:13 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:12:13 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:12:13 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:12:13 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:12:13 --> Model "Products" initialized
+INFO - 2022-11-18 15:42:13 --> Model "reports" initialized
+INFO - 2022-11-18 15:42:13 --> Model "Users" initialized
+INFO - 2022-11-18 15:42:13 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:42:13 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:42:13 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:42:13 --> Final output sent to browser
+DEBUG - 2022-11-18 15:42:13 --> Total execution time: 0.3930
+ERROR - 2022-11-18 10:12:13 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:12:13 --> Config Class Initialized
+INFO - 2022-11-18 10:12:13 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:12:13 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:12:13 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:12:13 --> URI Class Initialized
+INFO - 2022-11-18 10:12:13 --> Router Class Initialized
+INFO - 2022-11-18 10:12:13 --> Output Class Initialized
+INFO - 2022-11-18 10:12:13 --> Security Class Initialized
+DEBUG - 2022-11-18 10:12:13 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:12:13 --> CSRF cookie sent
+INFO - 2022-11-18 10:12:13 --> Input Class Initialized
+INFO - 2022-11-18 10:12:13 --> Language Class Initialized
+ERROR - 2022-11-18 10:12:13 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:12:13 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:12:13 --> Config Class Initialized
+INFO - 2022-11-18 10:12:13 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:12:13 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:12:13 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:12:13 --> URI Class Initialized
+INFO - 2022-11-18 10:12:13 --> Router Class Initialized
+INFO - 2022-11-18 10:12:13 --> Output Class Initialized
+INFO - 2022-11-18 10:12:13 --> Security Class Initialized
+DEBUG - 2022-11-18 10:12:13 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:12:13 --> CSRF cookie sent
+INFO - 2022-11-18 10:12:13 --> Input Class Initialized
+INFO - 2022-11-18 10:12:13 --> Language Class Initialized
+ERROR - 2022-11-18 10:12:13 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:12:13 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:12:13 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:12:13 --> Config Class Initialized
+INFO - 2022-11-18 10:12:13 --> Hooks Class Initialized
+INFO - 2022-11-18 10:12:13 --> Config Class Initialized
+INFO - 2022-11-18 10:12:13 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:12:13 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:12:13 --> Utf8 Class Initialized
+DEBUG - 2022-11-18 10:12:13 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:12:13 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:12:13 --> URI Class Initialized
+INFO - 2022-11-18 10:12:13 --> URI Class Initialized
+INFO - 2022-11-18 10:12:13 --> Router Class Initialized
+INFO - 2022-11-18 10:12:13 --> Router Class Initialized
+INFO - 2022-11-18 10:12:13 --> Output Class Initialized
+INFO - 2022-11-18 10:12:13 --> Output Class Initialized
+INFO - 2022-11-18 10:12:13 --> Security Class Initialized
+INFO - 2022-11-18 10:12:13 --> Security Class Initialized
+DEBUG - 2022-11-18 10:12:13 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:12:13 --> CSRF cookie sent
+DEBUG - 2022-11-18 10:12:13 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:12:13 --> Input Class Initialized
+INFO - 2022-11-18 10:12:13 --> CSRF cookie sent
+INFO - 2022-11-18 10:12:13 --> Language Class Initialized
+INFO - 2022-11-18 10:12:13 --> Input Class Initialized
+INFO - 2022-11-18 10:12:13 --> Language Class Initialized
+ERROR - 2022-11-18 10:12:13 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:12:13 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:12:13 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:12:13 --> Config Class Initialized
+INFO - 2022-11-18 10:12:13 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:12:13 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:12:13 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:12:13 --> URI Class Initialized
+INFO - 2022-11-18 10:12:13 --> Router Class Initialized
+INFO - 2022-11-18 10:12:13 --> Output Class Initialized
+INFO - 2022-11-18 10:12:13 --> Security Class Initialized
+DEBUG - 2022-11-18 10:12:13 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:12:13 --> CSRF cookie sent
+INFO - 2022-11-18 10:12:13 --> CSRF token verified
+INFO - 2022-11-18 10:12:13 --> Input Class Initialized
+INFO - 2022-11-18 10:12:13 --> Language Class Initialized
+INFO - 2022-11-18 10:12:13 --> Loader Class Initialized
+INFO - 2022-11-18 10:12:13 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:12:13 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:12:13 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:12:13 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:12:13 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:12:13 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:12:13 --> Parser Class Initialized
+INFO - 2022-11-18 10:12:13 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:12:13 --> Pagination Class Initialized
+INFO - 2022-11-18 10:12:13 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:12:13 --> Controller Class Initialized
+INFO - 2022-11-18 10:12:13 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:12:13 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:12:13 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:12:13 --> Model "Customers" initialized
+INFO - 2022-11-18 10:12:13 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:12:13 --> Final output sent to browser
+DEBUG - 2022-11-18 10:12:13 --> Total execution time: 0.0135
+ERROR - 2022-11-18 10:12:30 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:12:30 --> Config Class Initialized
+INFO - 2022-11-18 10:12:30 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:12:30 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:12:30 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:12:30 --> URI Class Initialized
+INFO - 2022-11-18 10:12:30 --> Router Class Initialized
+INFO - 2022-11-18 10:12:30 --> Output Class Initialized
+INFO - 2022-11-18 10:12:30 --> Security Class Initialized
+DEBUG - 2022-11-18 10:12:30 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:12:30 --> CSRF cookie sent
+INFO - 2022-11-18 10:12:30 --> Input Class Initialized
+INFO - 2022-11-18 10:12:30 --> Language Class Initialized
+INFO - 2022-11-18 10:12:30 --> Loader Class Initialized
+INFO - 2022-11-18 10:12:30 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:12:30 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:12:30 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:12:30 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:12:30 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:12:30 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:12:30 --> Parser Class Initialized
+INFO - 2022-11-18 10:12:30 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:12:30 --> Pagination Class Initialized
+INFO - 2022-11-18 10:12:30 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:12:30 --> Controller Class Initialized
+INFO - 2022-11-18 10:12:30 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:12:30 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:12:30 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:12:30 --> Model "Customers" initialized
+INFO - 2022-11-18 10:12:30 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:12:30 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:12:30 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:12:30 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:12:30 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:12:30 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:12:30 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:12:30 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 10:12:30 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 10:12:30 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:12:30 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:12:30 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 10:12:31 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:12:31 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:12:31 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:12:31 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:12:31 --> Model "Products" initialized
+INFO - 2022-11-18 15:42:31 --> Model "reports" initialized
+INFO - 2022-11-18 15:42:31 --> Model "Users" initialized
+INFO - 2022-11-18 15:42:31 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:42:31 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:42:31 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:42:31 --> Final output sent to browser
+DEBUG - 2022-11-18 15:42:31 --> Total execution time: 0.4277
+ERROR - 2022-11-18 10:12:31 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:12:31 --> Config Class Initialized
+INFO - 2022-11-18 10:12:31 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:12:31 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:12:31 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:12:31 --> URI Class Initialized
+INFO - 2022-11-18 10:12:31 --> Router Class Initialized
+INFO - 2022-11-18 10:12:31 --> Output Class Initialized
+INFO - 2022-11-18 10:12:31 --> Security Class Initialized
+DEBUG - 2022-11-18 10:12:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:12:31 --> CSRF cookie sent
+INFO - 2022-11-18 10:12:31 --> Input Class Initialized
+INFO - 2022-11-18 10:12:31 --> Language Class Initialized
+ERROR - 2022-11-18 10:12:31 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:12:31 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:12:31 --> Config Class Initialized
+INFO - 2022-11-18 10:12:31 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:12:31 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:12:31 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:12:31 --> URI Class Initialized
+INFO - 2022-11-18 10:12:31 --> Router Class Initialized
+INFO - 2022-11-18 10:12:31 --> Output Class Initialized
+INFO - 2022-11-18 10:12:31 --> Security Class Initialized
+DEBUG - 2022-11-18 10:12:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:12:31 --> CSRF cookie sent
+INFO - 2022-11-18 10:12:31 --> Input Class Initialized
+INFO - 2022-11-18 10:12:31 --> Language Class Initialized
+ERROR - 2022-11-18 10:12:31 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:12:31 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:12:31 --> Config Class Initialized
+INFO - 2022-11-18 10:12:31 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:12:31 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:12:31 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:12:31 --> URI Class Initialized
+INFO - 2022-11-18 10:12:31 --> Router Class Initialized
+INFO - 2022-11-18 10:12:31 --> Output Class Initialized
+INFO - 2022-11-18 10:12:31 --> Security Class Initialized
+DEBUG - 2022-11-18 10:12:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:12:31 --> CSRF cookie sent
+INFO - 2022-11-18 10:12:31 --> Input Class Initialized
+ERROR - 2022-11-18 10:12:31 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:12:31 --> Language Class Initialized
+ERROR - 2022-11-18 10:12:31 --> 404 Page Not Found: Assets/js
+INFO - 2022-11-18 10:12:31 --> Config Class Initialized
+INFO - 2022-11-18 10:12:31 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:12:31 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:12:31 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:12:31 --> URI Class Initialized
+INFO - 2022-11-18 10:12:31 --> Router Class Initialized
+INFO - 2022-11-18 10:12:31 --> Output Class Initialized
+INFO - 2022-11-18 10:12:31 --> Security Class Initialized
+DEBUG - 2022-11-18 10:12:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:12:31 --> CSRF cookie sent
+INFO - 2022-11-18 10:12:31 --> Input Class Initialized
+INFO - 2022-11-18 10:12:31 --> Language Class Initialized
+ERROR - 2022-11-18 10:12:31 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:12:31 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:12:31 --> Config Class Initialized
+INFO - 2022-11-18 10:12:31 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:12:31 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:12:31 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:12:31 --> URI Class Initialized
+INFO - 2022-11-18 10:12:31 --> Router Class Initialized
+INFO - 2022-11-18 10:12:31 --> Output Class Initialized
+INFO - 2022-11-18 10:12:31 --> Security Class Initialized
+DEBUG - 2022-11-18 10:12:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:12:31 --> CSRF cookie sent
+INFO - 2022-11-18 10:12:31 --> CSRF token verified
+INFO - 2022-11-18 10:12:31 --> Input Class Initialized
+INFO - 2022-11-18 10:12:31 --> Language Class Initialized
+INFO - 2022-11-18 10:12:31 --> Loader Class Initialized
+INFO - 2022-11-18 10:12:31 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:12:31 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:12:31 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:12:31 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:12:31 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:12:31 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:12:31 --> Parser Class Initialized
+INFO - 2022-11-18 10:12:31 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:12:31 --> Pagination Class Initialized
+INFO - 2022-11-18 10:12:31 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:12:31 --> Controller Class Initialized
+INFO - 2022-11-18 10:12:31 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:12:31 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:12:31 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:12:31 --> Model "Customers" initialized
+INFO - 2022-11-18 10:12:31 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:12:31 --> Final output sent to browser
+DEBUG - 2022-11-18 10:12:31 --> Total execution time: 0.0141
+ERROR - 2022-11-18 10:12:39 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:12:39 --> Config Class Initialized
+INFO - 2022-11-18 10:12:39 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:12:39 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:12:39 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:12:39 --> URI Class Initialized
+INFO - 2022-11-18 10:12:39 --> Router Class Initialized
+INFO - 2022-11-18 10:12:39 --> Output Class Initialized
+INFO - 2022-11-18 10:12:39 --> Security Class Initialized
+DEBUG - 2022-11-18 10:12:39 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:12:39 --> CSRF cookie sent
+INFO - 2022-11-18 10:12:39 --> Input Class Initialized
+INFO - 2022-11-18 10:12:39 --> Language Class Initialized
+INFO - 2022-11-18 10:12:39 --> Loader Class Initialized
+INFO - 2022-11-18 10:12:39 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:12:39 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:12:39 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:12:39 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:12:39 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:12:39 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:12:39 --> Parser Class Initialized
+INFO - 2022-11-18 10:12:39 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:12:39 --> Pagination Class Initialized
+INFO - 2022-11-18 10:12:39 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:12:39 --> Controller Class Initialized
+INFO - 2022-11-18 10:12:39 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:12:39 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:12:39 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:12:39 --> Model "Customers" initialized
+INFO - 2022-11-18 10:12:39 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:12:39 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:12:39 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:12:39 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:12:39 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:12:39 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:12:39 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:12:39 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 10:12:39 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 10:12:39 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:12:39 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:12:39 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 10:12:39 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:12:39 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:12:39 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:12:39 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:12:39 --> Model "Products" initialized
+INFO - 2022-11-18 15:42:39 --> Model "reports" initialized
+INFO - 2022-11-18 15:42:39 --> Model "Users" initialized
+INFO - 2022-11-18 15:42:40 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:42:40 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:42:40 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:42:40 --> Final output sent to browser
+DEBUG - 2022-11-18 15:42:40 --> Total execution time: 0.4020
+ERROR - 2022-11-18 10:12:40 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:12:40 --> Config Class Initialized
+INFO - 2022-11-18 10:12:40 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:12:40 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:12:40 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:12:40 --> URI Class Initialized
+INFO - 2022-11-18 10:12:40 --> Router Class Initialized
+INFO - 2022-11-18 10:12:40 --> Output Class Initialized
+INFO - 2022-11-18 10:12:40 --> Security Class Initialized
+DEBUG - 2022-11-18 10:12:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:12:40 --> CSRF cookie sent
+INFO - 2022-11-18 10:12:40 --> Input Class Initialized
+INFO - 2022-11-18 10:12:40 --> Language Class Initialized
+ERROR - 2022-11-18 10:12:40 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:12:40 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:12:40 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:12:40 --> Config Class Initialized
+ERROR - 2022-11-18 10:12:40 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:12:40 --> Hooks Class Initialized
+INFO - 2022-11-18 10:12:40 --> Config Class Initialized
+INFO - 2022-11-18 10:12:40 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:12:40 --> UTF-8 Support Enabled
+DEBUG - 2022-11-18 10:12:40 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:12:40 --> Config Class Initialized
+INFO - 2022-11-18 10:12:40 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:12:40 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:12:40 --> Hooks Class Initialized
+INFO - 2022-11-18 10:12:40 --> URI Class Initialized
+INFO - 2022-11-18 10:12:40 --> URI Class Initialized
+DEBUG - 2022-11-18 10:12:40 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:12:40 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:12:40 --> Router Class Initialized
+INFO - 2022-11-18 10:12:40 --> Router Class Initialized
+INFO - 2022-11-18 10:12:40 --> URI Class Initialized
+INFO - 2022-11-18 10:12:40 --> Output Class Initialized
+INFO - 2022-11-18 10:12:40 --> Output Class Initialized
+INFO - 2022-11-18 10:12:40 --> Security Class Initialized
+INFO - 2022-11-18 10:12:40 --> Router Class Initialized
+INFO - 2022-11-18 10:12:40 --> Security Class Initialized
+DEBUG - 2022-11-18 10:12:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:12:40 --> Output Class Initialized
+INFO - 2022-11-18 10:12:40 --> CSRF cookie sent
+DEBUG - 2022-11-18 10:12:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:12:40 --> Input Class Initialized
+INFO - 2022-11-18 10:12:40 --> Security Class Initialized
+INFO - 2022-11-18 10:12:40 --> CSRF cookie sent
+INFO - 2022-11-18 10:12:40 --> Language Class Initialized
+INFO - 2022-11-18 10:12:40 --> Input Class Initialized
+DEBUG - 2022-11-18 10:12:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:12:40 --> CSRF cookie sent
+ERROR - 2022-11-18 10:12:40 --> 404 Page Not Found: Assets/js
+INFO - 2022-11-18 10:12:40 --> Language Class Initialized
+INFO - 2022-11-18 10:12:40 --> Input Class Initialized
+INFO - 2022-11-18 10:12:40 --> Language Class Initialized
+ERROR - 2022-11-18 10:12:40 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:12:40 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:12:40 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:12:40 --> Config Class Initialized
+INFO - 2022-11-18 10:12:40 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:12:40 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:12:40 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:12:40 --> URI Class Initialized
+INFO - 2022-11-18 10:12:40 --> Router Class Initialized
+INFO - 2022-11-18 10:12:40 --> Output Class Initialized
+INFO - 2022-11-18 10:12:40 --> Security Class Initialized
+DEBUG - 2022-11-18 10:12:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:12:40 --> CSRF cookie sent
+INFO - 2022-11-18 10:12:40 --> CSRF token verified
+INFO - 2022-11-18 10:12:40 --> Input Class Initialized
+INFO - 2022-11-18 10:12:40 --> Language Class Initialized
+INFO - 2022-11-18 10:12:40 --> Loader Class Initialized
+INFO - 2022-11-18 10:12:40 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:12:40 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:12:40 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:12:40 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:12:40 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:12:40 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:12:40 --> Parser Class Initialized
+INFO - 2022-11-18 10:12:40 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:12:40 --> Pagination Class Initialized
+INFO - 2022-11-18 10:12:40 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:12:40 --> Controller Class Initialized
+INFO - 2022-11-18 10:12:40 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:12:40 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:12:40 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:12:40 --> Model "Customers" initialized
+INFO - 2022-11-18 10:12:40 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:12:40 --> Final output sent to browser
+DEBUG - 2022-11-18 10:12:40 --> Total execution time: 0.0114
+ERROR - 2022-11-18 10:13:05 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:13:05 --> Config Class Initialized
+INFO - 2022-11-18 10:13:05 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:13:05 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:13:05 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:13:05 --> URI Class Initialized
+INFO - 2022-11-18 10:13:05 --> Router Class Initialized
+INFO - 2022-11-18 10:13:05 --> Output Class Initialized
+INFO - 2022-11-18 10:13:05 --> Security Class Initialized
+DEBUG - 2022-11-18 10:13:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:13:05 --> CSRF cookie sent
+INFO - 2022-11-18 10:13:05 --> Input Class Initialized
+INFO - 2022-11-18 10:13:05 --> Language Class Initialized
+INFO - 2022-11-18 10:13:05 --> Loader Class Initialized
+INFO - 2022-11-18 10:13:05 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:13:05 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:13:05 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:13:05 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:13:05 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:13:05 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:13:05 --> Parser Class Initialized
+INFO - 2022-11-18 10:13:05 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:13:05 --> Pagination Class Initialized
+INFO - 2022-11-18 10:13:05 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:13:05 --> Controller Class Initialized
+INFO - 2022-11-18 10:13:05 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:13:05 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:13:05 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:13:05 --> Model "Customers" initialized
+INFO - 2022-11-18 10:13:05 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:13:05 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:13:05 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:13:05 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:13:05 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:13:05 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:13:05 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:13:05 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 10:13:05 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 10:13:05 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:13:05 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:13:05 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 10:13:05 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:13:05 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:13:05 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:13:05 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:13:05 --> Model "Products" initialized
+INFO - 2022-11-18 15:43:05 --> Model "reports" initialized
+INFO - 2022-11-18 15:43:05 --> Model "Users" initialized
+INFO - 2022-11-18 15:43:05 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:43:05 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:43:05 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:43:05 --> Final output sent to browser
+DEBUG - 2022-11-18 15:43:05 --> Total execution time: 0.4133
+ERROR - 2022-11-18 10:13:05 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:13:05 --> Config Class Initialized
+INFO - 2022-11-18 10:13:05 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:13:05 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:13:05 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:13:05 --> URI Class Initialized
+INFO - 2022-11-18 10:13:05 --> Router Class Initialized
+INFO - 2022-11-18 10:13:05 --> Output Class Initialized
+INFO - 2022-11-18 10:13:05 --> Security Class Initialized
+DEBUG - 2022-11-18 10:13:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:13:05 --> CSRF cookie sent
+INFO - 2022-11-18 10:13:05 --> Input Class Initialized
+INFO - 2022-11-18 10:13:05 --> Language Class Initialized
+ERROR - 2022-11-18 10:13:05 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:13:05 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:13:05 --> Config Class Initialized
+INFO - 2022-11-18 10:13:05 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:13:05 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:13:05 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:13:05 --> URI Class Initialized
+INFO - 2022-11-18 10:13:05 --> Router Class Initialized
+INFO - 2022-11-18 10:13:05 --> Output Class Initialized
+INFO - 2022-11-18 10:13:05 --> Security Class Initialized
+DEBUG - 2022-11-18 10:13:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:13:05 --> CSRF cookie sent
+INFO - 2022-11-18 10:13:05 --> Input Class Initialized
+INFO - 2022-11-18 10:13:05 --> Language Class Initialized
+ERROR - 2022-11-18 10:13:05 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:13:06 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:13:06 --> Config Class Initialized
+INFO - 2022-11-18 10:13:06 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:13:06 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:13:06 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:13:06 --> URI Class Initialized
+INFO - 2022-11-18 10:13:06 --> Router Class Initialized
+INFO - 2022-11-18 10:13:06 --> Output Class Initialized
+INFO - 2022-11-18 10:13:06 --> Security Class Initialized
+DEBUG - 2022-11-18 10:13:06 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:13:06 --> CSRF cookie sent
+INFO - 2022-11-18 10:13:06 --> Input Class Initialized
+INFO - 2022-11-18 10:13:06 --> Language Class Initialized
+ERROR - 2022-11-18 10:13:06 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:13:06 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:13:06 --> Config Class Initialized
+INFO - 2022-11-18 10:13:06 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:13:06 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:13:06 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:13:06 --> URI Class Initialized
+INFO - 2022-11-18 10:13:06 --> Router Class Initialized
+INFO - 2022-11-18 10:13:06 --> Output Class Initialized
+INFO - 2022-11-18 10:13:06 --> Security Class Initialized
+DEBUG - 2022-11-18 10:13:06 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:13:06 --> CSRF cookie sent
+INFO - 2022-11-18 10:13:06 --> Input Class Initialized
+INFO - 2022-11-18 10:13:06 --> Language Class Initialized
+ERROR - 2022-11-18 10:13:06 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:13:06 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:13:06 --> Config Class Initialized
+INFO - 2022-11-18 10:13:06 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:13:06 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:13:06 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:13:06 --> URI Class Initialized
+INFO - 2022-11-18 10:13:06 --> Router Class Initialized
+INFO - 2022-11-18 10:13:06 --> Output Class Initialized
+INFO - 2022-11-18 10:13:06 --> Security Class Initialized
+DEBUG - 2022-11-18 10:13:06 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:13:06 --> CSRF cookie sent
+INFO - 2022-11-18 10:13:06 --> CSRF token verified
+INFO - 2022-11-18 10:13:06 --> Input Class Initialized
+INFO - 2022-11-18 10:13:06 --> Language Class Initialized
+INFO - 2022-11-18 10:13:06 --> Loader Class Initialized
+INFO - 2022-11-18 10:13:06 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:13:06 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:13:06 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:13:06 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:13:06 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:13:06 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:13:06 --> Parser Class Initialized
+INFO - 2022-11-18 10:13:06 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:13:06 --> Pagination Class Initialized
+INFO - 2022-11-18 10:13:06 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:13:06 --> Controller Class Initialized
+INFO - 2022-11-18 10:13:06 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:13:06 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:13:06 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:13:06 --> Model "Customers" initialized
+INFO - 2022-11-18 10:13:06 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:13:06 --> Final output sent to browser
+DEBUG - 2022-11-18 10:13:06 --> Total execution time: 0.0270
+ERROR - 2022-11-18 10:13:06 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:13:06 --> Config Class Initialized
+INFO - 2022-11-18 10:13:06 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:13:06 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:13:06 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:13:06 --> URI Class Initialized
+INFO - 2022-11-18 10:13:06 --> Router Class Initialized
+INFO - 2022-11-18 10:13:06 --> Output Class Initialized
+INFO - 2022-11-18 10:13:06 --> Security Class Initialized
+DEBUG - 2022-11-18 10:13:06 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:13:06 --> CSRF cookie sent
+INFO - 2022-11-18 10:13:06 --> Input Class Initialized
+INFO - 2022-11-18 10:13:06 --> Language Class Initialized
+INFO - 2022-11-18 10:13:06 --> Loader Class Initialized
+INFO - 2022-11-18 10:13:06 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:13:06 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:13:06 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:13:06 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:13:06 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:13:06 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:13:06 --> Parser Class Initialized
+INFO - 2022-11-18 10:13:06 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:13:06 --> Pagination Class Initialized
+INFO - 2022-11-18 10:13:06 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:13:06 --> Controller Class Initialized
+INFO - 2022-11-18 10:13:06 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:13:06 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:13:06 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:13:06 --> Model "Customers" initialized
+INFO - 2022-11-18 10:13:06 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:13:06 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:13:06 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:13:06 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:13:06 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:13:06 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:13:07 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:13:07 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 10:13:07 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 10:13:07 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:13:07 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:13:07 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 10:13:07 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:13:07 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:13:07 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:13:07 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:13:07 --> Model "Products" initialized
+INFO - 2022-11-18 15:43:07 --> Model "reports" initialized
+INFO - 2022-11-18 15:43:07 --> Model "Users" initialized
+INFO - 2022-11-18 15:43:07 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:43:07 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:43:07 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:43:07 --> Final output sent to browser
+DEBUG - 2022-11-18 15:43:07 --> Total execution time: 0.8031
+ERROR - 2022-11-18 10:13:07 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:13:07 --> Config Class Initialized
+INFO - 2022-11-18 10:13:07 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:13:07 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:13:07 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:13:07 --> URI Class Initialized
+INFO - 2022-11-18 10:13:07 --> Router Class Initialized
+INFO - 2022-11-18 10:13:07 --> Output Class Initialized
+INFO - 2022-11-18 10:13:07 --> Security Class Initialized
+DEBUG - 2022-11-18 10:13:07 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:13:07 --> CSRF cookie sent
+INFO - 2022-11-18 10:13:07 --> Input Class Initialized
+INFO - 2022-11-18 10:13:07 --> Language Class Initialized
+ERROR - 2022-11-18 10:13:07 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:13:07 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:13:07 --> Config Class Initialized
+INFO - 2022-11-18 10:13:07 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:13:07 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:13:07 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:13:07 --> URI Class Initialized
+INFO - 2022-11-18 10:13:07 --> Router Class Initialized
+INFO - 2022-11-18 10:13:07 --> Output Class Initialized
+INFO - 2022-11-18 10:13:07 --> Security Class Initialized
+DEBUG - 2022-11-18 10:13:07 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:13:07 --> CSRF cookie sent
+INFO - 2022-11-18 10:13:07 --> Input Class Initialized
+INFO - 2022-11-18 10:13:07 --> Language Class Initialized
+ERROR - 2022-11-18 10:13:07 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:13:07 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:13:07 --> Config Class Initialized
+INFO - 2022-11-18 10:13:07 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:13:07 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:13:07 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:13:07 --> URI Class Initialized
+INFO - 2022-11-18 10:13:07 --> Router Class Initialized
+INFO - 2022-11-18 10:13:07 --> Output Class Initialized
+INFO - 2022-11-18 10:13:07 --> Security Class Initialized
+DEBUG - 2022-11-18 10:13:07 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:13:07 --> CSRF cookie sent
+INFO - 2022-11-18 10:13:07 --> Input Class Initialized
+INFO - 2022-11-18 10:13:07 --> Language Class Initialized
+ERROR - 2022-11-18 10:13:07 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:13:07 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:13:07 --> Config Class Initialized
+INFO - 2022-11-18 10:13:07 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:13:07 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:13:07 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:13:07 --> URI Class Initialized
+INFO - 2022-11-18 10:13:07 --> Router Class Initialized
+INFO - 2022-11-18 10:13:07 --> Output Class Initialized
+INFO - 2022-11-18 10:13:07 --> Security Class Initialized
+DEBUG - 2022-11-18 10:13:07 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:13:07 --> CSRF cookie sent
+INFO - 2022-11-18 10:13:07 --> Input Class Initialized
+INFO - 2022-11-18 10:13:07 --> Language Class Initialized
+ERROR - 2022-11-18 10:13:07 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:13:07 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:13:07 --> Config Class Initialized
+INFO - 2022-11-18 10:13:07 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:13:07 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:13:07 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:13:07 --> URI Class Initialized
+INFO - 2022-11-18 10:13:07 --> Router Class Initialized
+INFO - 2022-11-18 10:13:07 --> Output Class Initialized
+INFO - 2022-11-18 10:13:07 --> Security Class Initialized
+DEBUG - 2022-11-18 10:13:07 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:13:07 --> CSRF cookie sent
+INFO - 2022-11-18 10:13:07 --> CSRF token verified
+INFO - 2022-11-18 10:13:07 --> Input Class Initialized
+INFO - 2022-11-18 10:13:07 --> Language Class Initialized
+INFO - 2022-11-18 10:13:07 --> Loader Class Initialized
+INFO - 2022-11-18 10:13:07 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:13:07 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:13:07 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:13:07 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:13:07 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:13:07 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:13:07 --> Parser Class Initialized
+INFO - 2022-11-18 10:13:07 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:13:07 --> Pagination Class Initialized
+INFO - 2022-11-18 10:13:07 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:13:07 --> Controller Class Initialized
+INFO - 2022-11-18 10:13:07 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:13:07 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:13:07 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:13:07 --> Model "Customers" initialized
+INFO - 2022-11-18 10:13:07 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:13:07 --> Final output sent to browser
+DEBUG - 2022-11-18 10:13:07 --> Total execution time: 0.0081
+ERROR - 2022-11-18 10:14:14 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:14:14 --> Config Class Initialized
+INFO - 2022-11-18 10:14:14 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:14:14 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:14:14 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:14:14 --> URI Class Initialized
+INFO - 2022-11-18 10:14:14 --> Router Class Initialized
+INFO - 2022-11-18 10:14:14 --> Output Class Initialized
+INFO - 2022-11-18 10:14:14 --> Security Class Initialized
+DEBUG - 2022-11-18 10:14:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:14:14 --> CSRF cookie sent
+INFO - 2022-11-18 10:14:14 --> Input Class Initialized
+INFO - 2022-11-18 10:14:14 --> Language Class Initialized
+INFO - 2022-11-18 10:14:14 --> Loader Class Initialized
+INFO - 2022-11-18 10:14:14 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:14:14 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:14:14 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:14:14 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:14:14 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:14:14 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:14:14 --> Parser Class Initialized
+INFO - 2022-11-18 10:14:14 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:14:14 --> Pagination Class Initialized
+INFO - 2022-11-18 10:14:14 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:14:14 --> Controller Class Initialized
+INFO - 2022-11-18 10:14:14 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:14:14 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:14:14 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:14:14 --> Model "Customers" initialized
+INFO - 2022-11-18 10:14:14 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:14:14 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:14:14 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:14:14 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:14:14 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:14:14 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:14:14 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:14:14 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 10:14:14 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 10:14:14 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:14:14 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:14:14 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 10:14:14 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:14:14 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:14:14 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:14:14 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:14:14 --> Model "Products" initialized
+INFO - 2022-11-18 15:44:14 --> Model "reports" initialized
+INFO - 2022-11-18 15:44:14 --> Model "Users" initialized
+INFO - 2022-11-18 15:44:14 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:44:14 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:44:14 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:44:14 --> Final output sent to browser
+DEBUG - 2022-11-18 15:44:14 --> Total execution time: 0.4247
+ERROR - 2022-11-18 10:14:14 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:14:14 --> Config Class Initialized
+INFO - 2022-11-18 10:14:14 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:14:14 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:14:14 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:14:14 --> URI Class Initialized
+INFO - 2022-11-18 10:14:14 --> Router Class Initialized
+ERROR - 2022-11-18 10:14:14 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:14:14 --> Output Class Initialized
+INFO - 2022-11-18 10:14:14 --> Security Class Initialized
+INFO - 2022-11-18 10:14:14 --> Config Class Initialized
+INFO - 2022-11-18 10:14:14 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:14:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:14:14 --> CSRF cookie sent
+INFO - 2022-11-18 10:14:14 --> Input Class Initialized
+DEBUG - 2022-11-18 10:14:14 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:14:14 --> Language Class Initialized
+INFO - 2022-11-18 10:14:14 --> Utf8 Class Initialized
+ERROR - 2022-11-18 10:14:14 --> 404 Page Not Found: Assets/css
+INFO - 2022-11-18 10:14:14 --> URI Class Initialized
+INFO - 2022-11-18 10:14:14 --> Router Class Initialized
+INFO - 2022-11-18 10:14:14 --> Output Class Initialized
+INFO - 2022-11-18 10:14:14 --> Security Class Initialized
+DEBUG - 2022-11-18 10:14:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:14:14 --> CSRF cookie sent
+INFO - 2022-11-18 10:14:14 --> Input Class Initialized
+INFO - 2022-11-18 10:14:14 --> Language Class Initialized
+ERROR - 2022-11-18 10:14:14 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:14:14 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:14:14 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:14:14 --> Config Class Initialized
+INFO - 2022-11-18 10:14:14 --> Config Class Initialized
+INFO - 2022-11-18 10:14:14 --> Hooks Class Initialized
+INFO - 2022-11-18 10:14:14 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:14:14 --> UTF-8 Support Enabled
+DEBUG - 2022-11-18 10:14:14 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:14:14 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:14:14 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:14:14 --> URI Class Initialized
+INFO - 2022-11-18 10:14:14 --> URI Class Initialized
+INFO - 2022-11-18 10:14:14 --> Router Class Initialized
+INFO - 2022-11-18 10:14:14 --> Router Class Initialized
+INFO - 2022-11-18 10:14:14 --> Output Class Initialized
+INFO - 2022-11-18 10:14:14 --> Output Class Initialized
+INFO - 2022-11-18 10:14:14 --> Security Class Initialized
+INFO - 2022-11-18 10:14:14 --> Security Class Initialized
+DEBUG - 2022-11-18 10:14:14 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-11-18 10:14:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:14:14 --> CSRF cookie sent
+INFO - 2022-11-18 10:14:14 --> CSRF cookie sent
+INFO - 2022-11-18 10:14:14 --> Input Class Initialized
+INFO - 2022-11-18 10:14:14 --> Input Class Initialized
+INFO - 2022-11-18 10:14:14 --> Language Class Initialized
+INFO - 2022-11-18 10:14:14 --> Language Class Initialized
+ERROR - 2022-11-18 10:14:14 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:14:14 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:14:26 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:14:26 --> Config Class Initialized
+INFO - 2022-11-18 10:14:26 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:14:26 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:14:26 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:14:26 --> URI Class Initialized
+INFO - 2022-11-18 10:14:26 --> Router Class Initialized
+INFO - 2022-11-18 10:14:26 --> Output Class Initialized
+INFO - 2022-11-18 10:14:26 --> Security Class Initialized
+DEBUG - 2022-11-18 10:14:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:14:26 --> CSRF cookie sent
+INFO - 2022-11-18 10:14:26 --> Input Class Initialized
+INFO - 2022-11-18 10:14:26 --> Language Class Initialized
+INFO - 2022-11-18 10:14:26 --> Loader Class Initialized
+INFO - 2022-11-18 10:14:26 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:14:26 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:14:26 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:14:26 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:14:26 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:14:26 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:14:26 --> Parser Class Initialized
+INFO - 2022-11-18 10:14:26 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:14:26 --> Pagination Class Initialized
+INFO - 2022-11-18 10:14:26 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:14:26 --> Controller Class Initialized
+INFO - 2022-11-18 10:14:26 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:14:26 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:14:26 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:14:26 --> Model "Customers" initialized
+INFO - 2022-11-18 10:14:26 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:14:26 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:14:26 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:14:26 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:14:26 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:14:26 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:14:26 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:14:26 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 10:14:26 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 10:14:26 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:14:26 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:14:26 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 10:14:26 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:14:26 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:14:26 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:14:26 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:14:26 --> Model "Products" initialized
+INFO - 2022-11-18 15:44:26 --> Model "reports" initialized
+INFO - 2022-11-18 15:44:26 --> Model "Users" initialized
+INFO - 2022-11-18 15:44:26 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:44:26 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:44:26 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:44:26 --> Final output sent to browser
+DEBUG - 2022-11-18 15:44:26 --> Total execution time: 0.3734
+ERROR - 2022-11-18 10:14:26 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:14:26 --> Config Class Initialized
+INFO - 2022-11-18 10:14:26 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:14:26 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:14:26 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:14:26 --> URI Class Initialized
+INFO - 2022-11-18 10:14:26 --> Router Class Initialized
+INFO - 2022-11-18 10:14:26 --> Output Class Initialized
+INFO - 2022-11-18 10:14:26 --> Security Class Initialized
+DEBUG - 2022-11-18 10:14:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:14:26 --> CSRF cookie sent
+INFO - 2022-11-18 10:14:26 --> Input Class Initialized
+INFO - 2022-11-18 10:14:26 --> Language Class Initialized
+ERROR - 2022-11-18 10:14:26 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:14:26 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:14:26 --> Config Class Initialized
+INFO - 2022-11-18 10:14:26 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:14:26 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:14:26 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:14:26 --> URI Class Initialized
+INFO - 2022-11-18 10:14:26 --> Router Class Initialized
+INFO - 2022-11-18 10:14:26 --> Output Class Initialized
+INFO - 2022-11-18 10:14:26 --> Security Class Initialized
+DEBUG - 2022-11-18 10:14:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:14:26 --> CSRF cookie sent
+INFO - 2022-11-18 10:14:26 --> Input Class Initialized
+INFO - 2022-11-18 10:14:26 --> Language Class Initialized
+ERROR - 2022-11-18 10:14:26 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:14:26 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:14:26 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:14:26 --> Config Class Initialized
+INFO - 2022-11-18 10:14:26 --> Config Class Initialized
+INFO - 2022-11-18 10:14:26 --> Hooks Class Initialized
+INFO - 2022-11-18 10:14:26 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:14:26 --> UTF-8 Support Enabled
+DEBUG - 2022-11-18 10:14:26 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:14:26 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:14:26 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:14:26 --> URI Class Initialized
+INFO - 2022-11-18 10:14:26 --> URI Class Initialized
+INFO - 2022-11-18 10:14:26 --> Router Class Initialized
+INFO - 2022-11-18 10:14:26 --> Router Class Initialized
+INFO - 2022-11-18 10:14:26 --> Output Class Initialized
+INFO - 2022-11-18 10:14:26 --> Output Class Initialized
+INFO - 2022-11-18 10:14:26 --> Security Class Initialized
+INFO - 2022-11-18 10:14:26 --> Security Class Initialized
+DEBUG - 2022-11-18 10:14:26 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-11-18 10:14:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:14:26 --> CSRF cookie sent
+INFO - 2022-11-18 10:14:26 --> CSRF cookie sent
+INFO - 2022-11-18 10:14:26 --> Input Class Initialized
+INFO - 2022-11-18 10:14:26 --> Input Class Initialized
+INFO - 2022-11-18 10:14:26 --> Language Class Initialized
+INFO - 2022-11-18 10:14:26 --> Language Class Initialized
+ERROR - 2022-11-18 10:14:26 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:14:26 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:14:26 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:14:26 --> Config Class Initialized
+INFO - 2022-11-18 10:14:26 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:14:26 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:14:26 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:14:26 --> URI Class Initialized
+INFO - 2022-11-18 10:14:26 --> Router Class Initialized
+INFO - 2022-11-18 10:14:26 --> Output Class Initialized
+INFO - 2022-11-18 10:14:26 --> Security Class Initialized
+DEBUG - 2022-11-18 10:14:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:14:26 --> CSRF cookie sent
+INFO - 2022-11-18 10:14:26 --> CSRF token verified
+INFO - 2022-11-18 10:14:26 --> Input Class Initialized
+INFO - 2022-11-18 10:14:26 --> Language Class Initialized
+INFO - 2022-11-18 10:14:26 --> Loader Class Initialized
+INFO - 2022-11-18 10:14:26 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:14:26 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:14:26 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:14:26 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:14:26 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:14:26 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:14:26 --> Parser Class Initialized
+INFO - 2022-11-18 10:14:26 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:14:26 --> Pagination Class Initialized
+INFO - 2022-11-18 10:14:26 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:14:26 --> Controller Class Initialized
+INFO - 2022-11-18 10:14:26 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:14:26 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:14:26 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:14:26 --> Model "Customers" initialized
+INFO - 2022-11-18 10:14:26 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:14:26 --> Final output sent to browser
+DEBUG - 2022-11-18 10:14:26 --> Total execution time: 0.0390
+ERROR - 2022-11-18 10:15:00 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:15:00 --> Config Class Initialized
+INFO - 2022-11-18 10:15:00 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:15:00 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:15:00 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:15:00 --> URI Class Initialized
+INFO - 2022-11-18 10:15:00 --> Router Class Initialized
+INFO - 2022-11-18 10:15:00 --> Output Class Initialized
+INFO - 2022-11-18 10:15:00 --> Security Class Initialized
+DEBUG - 2022-11-18 10:15:00 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:15:00 --> CSRF cookie sent
+INFO - 2022-11-18 10:15:00 --> Input Class Initialized
+INFO - 2022-11-18 10:15:00 --> Language Class Initialized
+INFO - 2022-11-18 10:15:00 --> Loader Class Initialized
+INFO - 2022-11-18 10:15:00 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:15:00 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:15:00 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:15:00 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:15:00 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:15:00 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:15:00 --> Parser Class Initialized
+INFO - 2022-11-18 10:15:00 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:15:00 --> Pagination Class Initialized
+INFO - 2022-11-18 10:15:00 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:15:00 --> Controller Class Initialized
+INFO - 2022-11-18 10:15:00 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:15:00 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:15:00 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:15:00 --> Model "Customers" initialized
+INFO - 2022-11-18 10:15:00 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:15:00 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:15:00 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:15:00 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:15:00 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:15:00 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:15:00 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:15:00 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 10:15:00 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 10:15:00 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:15:00 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:15:00 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 10:15:00 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:15:00 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:15:00 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:15:00 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:15:00 --> Model "Products" initialized
+INFO - 2022-11-18 15:45:00 --> Model "reports" initialized
+INFO - 2022-11-18 15:45:00 --> Model "Users" initialized
+INFO - 2022-11-18 15:45:00 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:45:00 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:45:00 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:45:00 --> Final output sent to browser
+DEBUG - 2022-11-18 15:45:00 --> Total execution time: 0.3786
+ERROR - 2022-11-18 10:15:01 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:15:01 --> Config Class Initialized
+INFO - 2022-11-18 10:15:01 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:15:01 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:15:01 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:15:01 --> URI Class Initialized
+INFO - 2022-11-18 10:15:01 --> Router Class Initialized
+INFO - 2022-11-18 10:15:01 --> Output Class Initialized
+INFO - 2022-11-18 10:15:01 --> Security Class Initialized
+DEBUG - 2022-11-18 10:15:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:15:01 --> CSRF cookie sent
+INFO - 2022-11-18 10:15:01 --> Input Class Initialized
+INFO - 2022-11-18 10:15:01 --> Language Class Initialized
+ERROR - 2022-11-18 10:15:01 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:15:01 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:15:01 --> Config Class Initialized
+INFO - 2022-11-18 10:15:01 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:15:01 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:15:01 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:15:01 --> URI Class Initialized
+INFO - 2022-11-18 10:15:01 --> Router Class Initialized
+INFO - 2022-11-18 10:15:01 --> Output Class Initialized
+INFO - 2022-11-18 10:15:01 --> Security Class Initialized
+DEBUG - 2022-11-18 10:15:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:15:01 --> CSRF cookie sent
+INFO - 2022-11-18 10:15:01 --> Input Class Initialized
+INFO - 2022-11-18 10:15:01 --> Language Class Initialized
+ERROR - 2022-11-18 10:15:01 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:15:01 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:15:01 --> Config Class Initialized
+INFO - 2022-11-18 10:15:01 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:15:01 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:15:01 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:15:01 --> URI Class Initialized
+INFO - 2022-11-18 10:15:01 --> Router Class Initialized
+INFO - 2022-11-18 10:15:01 --> Output Class Initialized
+INFO - 2022-11-18 10:15:01 --> Security Class Initialized
+DEBUG - 2022-11-18 10:15:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:15:01 --> CSRF cookie sent
+INFO - 2022-11-18 10:15:01 --> Input Class Initialized
+INFO - 2022-11-18 10:15:01 --> Language Class Initialized
+ERROR - 2022-11-18 10:15:01 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:15:01 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:15:01 --> Config Class Initialized
+INFO - 2022-11-18 10:15:01 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:15:01 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:15:01 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:15:01 --> URI Class Initialized
+INFO - 2022-11-18 10:15:01 --> Router Class Initialized
+INFO - 2022-11-18 10:15:01 --> Output Class Initialized
+INFO - 2022-11-18 10:15:01 --> Security Class Initialized
+DEBUG - 2022-11-18 10:15:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:15:01 --> CSRF cookie sent
+INFO - 2022-11-18 10:15:01 --> Input Class Initialized
+INFO - 2022-11-18 10:15:01 --> Language Class Initialized
+ERROR - 2022-11-18 10:15:01 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:15:08 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:15:08 --> Config Class Initialized
+INFO - 2022-11-18 10:15:08 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:15:08 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:15:08 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:15:08 --> URI Class Initialized
+INFO - 2022-11-18 10:15:08 --> Router Class Initialized
+INFO - 2022-11-18 10:15:08 --> Output Class Initialized
+INFO - 2022-11-18 10:15:08 --> Security Class Initialized
+DEBUG - 2022-11-18 10:15:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:15:08 --> CSRF cookie sent
+INFO - 2022-11-18 10:15:08 --> Input Class Initialized
+INFO - 2022-11-18 10:15:08 --> Language Class Initialized
+INFO - 2022-11-18 10:15:08 --> Loader Class Initialized
+INFO - 2022-11-18 10:15:08 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:15:08 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:15:08 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:15:08 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:15:08 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:15:08 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:15:08 --> Parser Class Initialized
+INFO - 2022-11-18 10:15:08 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:15:08 --> Pagination Class Initialized
+INFO - 2022-11-18 10:15:08 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:15:08 --> Controller Class Initialized
+INFO - 2022-11-18 10:15:08 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:15:08 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:15:08 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:15:08 --> Model "Customers" initialized
+INFO - 2022-11-18 10:15:08 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:15:08 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:15:08 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:15:08 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:15:08 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:15:08 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:15:08 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:15:08 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 10:15:08 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 10:15:08 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:15:08 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:15:08 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 10:15:08 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:15:08 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:15:08 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:15:08 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:15:08 --> Model "Products" initialized
+INFO - 2022-11-18 15:45:08 --> Model "reports" initialized
+INFO - 2022-11-18 15:45:08 --> Model "Users" initialized
+INFO - 2022-11-18 15:45:08 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:45:08 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:45:08 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:45:08 --> Final output sent to browser
+DEBUG - 2022-11-18 15:45:08 --> Total execution time: 0.3688
+ERROR - 2022-11-18 10:15:08 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:15:08 --> Config Class Initialized
+INFO - 2022-11-18 10:15:08 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:15:08 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:15:08 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:15:08 --> URI Class Initialized
+INFO - 2022-11-18 10:15:08 --> Router Class Initialized
+INFO - 2022-11-18 10:15:08 --> Output Class Initialized
+INFO - 2022-11-18 10:15:08 --> Security Class Initialized
+DEBUG - 2022-11-18 10:15:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:15:08 --> CSRF cookie sent
+INFO - 2022-11-18 10:15:08 --> Input Class Initialized
+INFO - 2022-11-18 10:15:08 --> Language Class Initialized
+ERROR - 2022-11-18 10:15:08 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:15:08 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:15:08 --> Config Class Initialized
+INFO - 2022-11-18 10:15:08 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:15:08 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:15:08 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:15:08 --> URI Class Initialized
+INFO - 2022-11-18 10:15:08 --> Router Class Initialized
+INFO - 2022-11-18 10:15:08 --> Output Class Initialized
+INFO - 2022-11-18 10:15:08 --> Security Class Initialized
+DEBUG - 2022-11-18 10:15:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:15:08 --> CSRF cookie sent
+INFO - 2022-11-18 10:15:08 --> Input Class Initialized
+INFO - 2022-11-18 10:15:08 --> Language Class Initialized
+ERROR - 2022-11-18 10:15:08 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:15:08 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:15:08 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:15:08 --> Config Class Initialized
+INFO - 2022-11-18 10:15:08 --> Config Class Initialized
+INFO - 2022-11-18 10:15:08 --> Hooks Class Initialized
+INFO - 2022-11-18 10:15:08 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:15:08 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:15:08 --> Utf8 Class Initialized
+DEBUG - 2022-11-18 10:15:08 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:15:08 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:15:08 --> URI Class Initialized
+INFO - 2022-11-18 10:15:08 --> URI Class Initialized
+INFO - 2022-11-18 10:15:08 --> Router Class Initialized
+INFO - 2022-11-18 10:15:08 --> Router Class Initialized
+INFO - 2022-11-18 10:15:08 --> Output Class Initialized
+INFO - 2022-11-18 10:15:08 --> Output Class Initialized
+INFO - 2022-11-18 10:15:08 --> Security Class Initialized
+INFO - 2022-11-18 10:15:08 --> Security Class Initialized
+DEBUG - 2022-11-18 10:15:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:15:08 --> CSRF cookie sent
+DEBUG - 2022-11-18 10:15:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:15:08 --> Input Class Initialized
+INFO - 2022-11-18 10:15:08 --> CSRF cookie sent
+INFO - 2022-11-18 10:15:08 --> Input Class Initialized
+INFO - 2022-11-18 10:15:08 --> Language Class Initialized
+INFO - 2022-11-18 10:15:08 --> Language Class Initialized
+ERROR - 2022-11-18 10:15:08 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:15:08 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:15:09 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:15:09 --> Config Class Initialized
+INFO - 2022-11-18 10:15:09 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:15:09 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:15:09 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:15:09 --> URI Class Initialized
+INFO - 2022-11-18 10:15:09 --> Router Class Initialized
+INFO - 2022-11-18 10:15:09 --> Output Class Initialized
+INFO - 2022-11-18 10:15:09 --> Security Class Initialized
+DEBUG - 2022-11-18 10:15:09 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:15:09 --> CSRF cookie sent
+INFO - 2022-11-18 10:15:09 --> Input Class Initialized
+INFO - 2022-11-18 10:15:09 --> Language Class Initialized
+INFO - 2022-11-18 10:15:09 --> Loader Class Initialized
+INFO - 2022-11-18 10:15:09 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:15:09 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:15:09 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:15:09 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:15:09 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:15:09 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:15:09 --> Parser Class Initialized
+INFO - 2022-11-18 10:15:09 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:15:09 --> Pagination Class Initialized
+INFO - 2022-11-18 10:15:09 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:15:09 --> Controller Class Initialized
+INFO - 2022-11-18 10:15:09 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:15:09 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:15:09 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:15:09 --> Model "Customers" initialized
+INFO - 2022-11-18 10:15:09 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:15:09 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:15:09 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:15:09 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:15:09 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:15:09 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:15:09 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:15:09 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 10:15:09 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 10:15:09 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:15:09 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:15:09 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 10:15:09 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:15:09 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:15:09 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:15:09 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:15:09 --> Model "Products" initialized
+INFO - 2022-11-18 15:45:09 --> Model "reports" initialized
+INFO - 2022-11-18 15:45:09 --> Model "Users" initialized
+INFO - 2022-11-18 15:45:10 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:45:10 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:45:10 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:45:10 --> Final output sent to browser
+DEBUG - 2022-11-18 15:45:10 --> Total execution time: 0.5256
+ERROR - 2022-11-18 10:15:10 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:15:10 --> Config Class Initialized
+INFO - 2022-11-18 10:15:10 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:15:10 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:15:10 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:15:10 --> URI Class Initialized
+INFO - 2022-11-18 10:15:10 --> Router Class Initialized
+INFO - 2022-11-18 10:15:10 --> Output Class Initialized
+INFO - 2022-11-18 10:15:10 --> Security Class Initialized
+DEBUG - 2022-11-18 10:15:10 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:15:10 --> CSRF cookie sent
+INFO - 2022-11-18 10:15:10 --> Input Class Initialized
+INFO - 2022-11-18 10:15:10 --> Language Class Initialized
+ERROR - 2022-11-18 10:15:10 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:15:10 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:15:10 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:15:10 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:15:10 --> Config Class Initialized
+INFO - 2022-11-18 10:15:10 --> Config Class Initialized
+INFO - 2022-11-18 10:15:10 --> Hooks Class Initialized
+INFO - 2022-11-18 10:15:10 --> Config Class Initialized
+INFO - 2022-11-18 10:15:10 --> Hooks Class Initialized
+INFO - 2022-11-18 10:15:10 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:15:10 --> UTF-8 Support Enabled
+DEBUG - 2022-11-18 10:15:10 --> UTF-8 Support Enabled
+DEBUG - 2022-11-18 10:15:10 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:15:10 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:15:10 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:15:10 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:15:10 --> URI Class Initialized
+INFO - 2022-11-18 10:15:10 --> URI Class Initialized
+INFO - 2022-11-18 10:15:10 --> URI Class Initialized
+INFO - 2022-11-18 10:15:10 --> Router Class Initialized
+INFO - 2022-11-18 10:15:10 --> Router Class Initialized
+INFO - 2022-11-18 10:15:10 --> Router Class Initialized
+INFO - 2022-11-18 10:15:10 --> Output Class Initialized
+INFO - 2022-11-18 10:15:10 --> Output Class Initialized
+INFO - 2022-11-18 10:15:10 --> Output Class Initialized
+INFO - 2022-11-18 10:15:10 --> Security Class Initialized
+INFO - 2022-11-18 10:15:10 --> Security Class Initialized
+INFO - 2022-11-18 10:15:10 --> Security Class Initialized
+DEBUG - 2022-11-18 10:15:10 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-11-18 10:15:10 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-11-18 10:15:10 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:15:10 --> CSRF cookie sent
+INFO - 2022-11-18 10:15:10 --> CSRF cookie sent
+INFO - 2022-11-18 10:15:10 --> CSRF cookie sent
+INFO - 2022-11-18 10:15:10 --> Input Class Initialized
+INFO - 2022-11-18 10:15:10 --> Input Class Initialized
+INFO - 2022-11-18 10:15:10 --> Input Class Initialized
+INFO - 2022-11-18 10:15:10 --> Language Class Initialized
+INFO - 2022-11-18 10:15:10 --> Language Class Initialized
+INFO - 2022-11-18 10:15:10 --> Language Class Initialized
+ERROR - 2022-11-18 10:15:10 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:15:10 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:15:10 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:28:51 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:28:51 --> Config Class Initialized
+INFO - 2022-11-18 10:28:51 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:28:51 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:28:51 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:28:51 --> URI Class Initialized
+INFO - 2022-11-18 10:28:51 --> Router Class Initialized
+INFO - 2022-11-18 10:28:51 --> Output Class Initialized
+INFO - 2022-11-18 10:28:51 --> Security Class Initialized
+DEBUG - 2022-11-18 10:28:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:28:51 --> CSRF cookie sent
+INFO - 2022-11-18 10:28:51 --> Input Class Initialized
+INFO - 2022-11-18 10:28:51 --> Language Class Initialized
+INFO - 2022-11-18 10:28:51 --> Loader Class Initialized
+INFO - 2022-11-18 10:28:51 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:28:51 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:28:51 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:28:51 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:28:51 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:28:51 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:28:51 --> Parser Class Initialized
+INFO - 2022-11-18 10:28:51 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:28:51 --> Pagination Class Initialized
+INFO - 2022-11-18 10:28:51 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:28:51 --> Controller Class Initialized
+INFO - 2022-11-18 10:28:51 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:28:51 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:28:51 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:28:51 --> Model "Customers" initialized
+INFO - 2022-11-18 10:28:51 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:28:51 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:28:51 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:28:51 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:28:51 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:28:51 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:28:51 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:28:51 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1145
+ERROR - 2022-11-18 10:28:51 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1175
+ERROR - 2022-11-18 10:28:51 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:28:51 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:28:51 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1229
+INFO - 2022-11-18 10:28:51 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:28:51 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:28:51 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:28:51 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:28:51 --> Model "Products" initialized
+INFO - 2022-11-18 15:58:51 --> Model "reports" initialized
+INFO - 2022-11-18 15:58:51 --> Model "Users" initialized
+INFO - 2022-11-18 15:58:51 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:58:51 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:58:51 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:58:51 --> Final output sent to browser
+DEBUG - 2022-11-18 15:58:51 --> Total execution time: 0.4772
+ERROR - 2022-11-18 10:28:51 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:28:51 --> Config Class Initialized
+INFO - 2022-11-18 10:28:51 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:28:51 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:28:51 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:28:51 --> URI Class Initialized
+INFO - 2022-11-18 10:28:51 --> Router Class Initialized
+INFO - 2022-11-18 10:28:51 --> Output Class Initialized
+INFO - 2022-11-18 10:28:51 --> Security Class Initialized
+DEBUG - 2022-11-18 10:28:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:28:51 --> CSRF cookie sent
+INFO - 2022-11-18 10:28:51 --> Input Class Initialized
+INFO - 2022-11-18 10:28:51 --> Language Class Initialized
+ERROR - 2022-11-18 10:28:51 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:28:51 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:28:51 --> Config Class Initialized
+INFO - 2022-11-18 10:28:51 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:28:51 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:28:51 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:28:51 --> URI Class Initialized
+INFO - 2022-11-18 10:28:51 --> Router Class Initialized
+INFO - 2022-11-18 10:28:51 --> Output Class Initialized
+INFO - 2022-11-18 10:28:51 --> Security Class Initialized
+DEBUG - 2022-11-18 10:28:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:28:51 --> CSRF cookie sent
+INFO - 2022-11-18 10:28:51 --> Input Class Initialized
+INFO - 2022-11-18 10:28:51 --> Language Class Initialized
+ERROR - 2022-11-18 10:28:51 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:28:51 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:28:51 --> Config Class Initialized
+INFO - 2022-11-18 10:28:51 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:28:51 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:28:51 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:28:51 --> URI Class Initialized
+INFO - 2022-11-18 10:28:51 --> Router Class Initialized
+INFO - 2022-11-18 10:28:51 --> Output Class Initialized
+INFO - 2022-11-18 10:28:51 --> Security Class Initialized
+DEBUG - 2022-11-18 10:28:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:28:51 --> CSRF cookie sent
+INFO - 2022-11-18 10:28:51 --> Input Class Initialized
+INFO - 2022-11-18 10:28:51 --> Language Class Initialized
+ERROR - 2022-11-18 10:28:51 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:28:51 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:28:51 --> Config Class Initialized
+INFO - 2022-11-18 10:28:51 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:28:51 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:28:51 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:28:51 --> URI Class Initialized
+INFO - 2022-11-18 10:28:51 --> Router Class Initialized
+INFO - 2022-11-18 10:28:51 --> Output Class Initialized
+INFO - 2022-11-18 10:28:51 --> Security Class Initialized
+DEBUG - 2022-11-18 10:28:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:28:51 --> CSRF cookie sent
+INFO - 2022-11-18 10:28:51 --> Input Class Initialized
+INFO - 2022-11-18 10:28:51 --> Language Class Initialized
+ERROR - 2022-11-18 10:28:51 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:28:51 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:28:51 --> Config Class Initialized
+INFO - 2022-11-18 10:28:51 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:28:51 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:28:51 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:28:51 --> URI Class Initialized
+INFO - 2022-11-18 10:28:51 --> Router Class Initialized
+INFO - 2022-11-18 10:28:51 --> Output Class Initialized
+INFO - 2022-11-18 10:28:51 --> Security Class Initialized
+DEBUG - 2022-11-18 10:28:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:28:51 --> CSRF cookie sent
+INFO - 2022-11-18 10:28:51 --> CSRF token verified
+INFO - 2022-11-18 10:28:51 --> Input Class Initialized
+INFO - 2022-11-18 10:28:51 --> Language Class Initialized
+INFO - 2022-11-18 10:28:51 --> Loader Class Initialized
+INFO - 2022-11-18 10:28:51 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:28:51 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:28:51 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:28:51 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:28:51 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:28:51 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:28:51 --> Parser Class Initialized
+INFO - 2022-11-18 10:28:51 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:28:51 --> Pagination Class Initialized
+INFO - 2022-11-18 10:28:51 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:28:51 --> Controller Class Initialized
+INFO - 2022-11-18 10:28:51 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:28:51 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:28:51 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:28:51 --> Model "Customers" initialized
+INFO - 2022-11-18 10:28:51 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:28:51 --> Final output sent to browser
+DEBUG - 2022-11-18 10:28:51 --> Total execution time: 0.0344
+ERROR - 2022-11-18 10:29:04 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:29:04 --> Config Class Initialized
+INFO - 2022-11-18 10:29:04 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:29:04 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:29:04 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:29:04 --> URI Class Initialized
+INFO - 2022-11-18 10:29:04 --> Router Class Initialized
+INFO - 2022-11-18 10:29:04 --> Output Class Initialized
+INFO - 2022-11-18 10:29:04 --> Security Class Initialized
+DEBUG - 2022-11-18 10:29:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:29:04 --> CSRF cookie sent
+INFO - 2022-11-18 10:29:04 --> Input Class Initialized
+INFO - 2022-11-18 10:29:04 --> Language Class Initialized
+INFO - 2022-11-18 10:29:04 --> Loader Class Initialized
+INFO - 2022-11-18 10:29:04 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:29:04 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:29:04 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:29:04 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:29:04 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:29:04 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:29:04 --> Parser Class Initialized
+INFO - 2022-11-18 10:29:04 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:29:04 --> Pagination Class Initialized
+INFO - 2022-11-18 10:29:04 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:29:04 --> Controller Class Initialized
+INFO - 2022-11-18 10:29:04 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:29:04 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:29:04 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:29:04 --> Model "Customers" initialized
+INFO - 2022-11-18 10:29:04 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:29:04 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:29:04 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:29:04 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:29:04 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:29:04 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:29:04 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:29:04 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1145
+ERROR - 2022-11-18 10:29:04 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1175
+ERROR - 2022-11-18 10:29:04 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:29:04 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:29:04 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1229
+INFO - 2022-11-18 10:29:04 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:29:04 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:29:04 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:29:04 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:29:04 --> Model "Products" initialized
+INFO - 2022-11-18 15:59:04 --> Model "reports" initialized
+INFO - 2022-11-18 15:59:04 --> Model "Users" initialized
+INFO - 2022-11-18 15:59:05 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:59:05 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:59:05 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:59:05 --> Final output sent to browser
+DEBUG - 2022-11-18 15:59:05 --> Total execution time: 0.4409
+ERROR - 2022-11-18 10:29:05 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:29:05 --> Config Class Initialized
+INFO - 2022-11-18 10:29:05 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:29:05 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:29:05 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:29:05 --> URI Class Initialized
+INFO - 2022-11-18 10:29:05 --> Router Class Initialized
+INFO - 2022-11-18 10:29:05 --> Output Class Initialized
+INFO - 2022-11-18 10:29:05 --> Security Class Initialized
+DEBUG - 2022-11-18 10:29:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:29:05 --> CSRF cookie sent
+INFO - 2022-11-18 10:29:05 --> Input Class Initialized
+INFO - 2022-11-18 10:29:05 --> Language Class Initialized
+ERROR - 2022-11-18 10:29:05 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:29:05 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:29:05 --> Config Class Initialized
+INFO - 2022-11-18 10:29:05 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:29:05 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:29:05 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:29:05 --> URI Class Initialized
+INFO - 2022-11-18 10:29:05 --> Router Class Initialized
+INFO - 2022-11-18 10:29:05 --> Output Class Initialized
+INFO - 2022-11-18 10:29:05 --> Security Class Initialized
+DEBUG - 2022-11-18 10:29:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:29:05 --> CSRF cookie sent
+INFO - 2022-11-18 10:29:05 --> Input Class Initialized
+INFO - 2022-11-18 10:29:05 --> Language Class Initialized
+ERROR - 2022-11-18 10:29:05 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:29:05 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:29:05 --> Config Class Initialized
+INFO - 2022-11-18 10:29:05 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:29:05 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:29:05 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:29:05 --> URI Class Initialized
+INFO - 2022-11-18 10:29:05 --> Router Class Initialized
+INFO - 2022-11-18 10:29:05 --> Output Class Initialized
+INFO - 2022-11-18 10:29:05 --> Security Class Initialized
+DEBUG - 2022-11-18 10:29:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:29:05 --> CSRF cookie sent
+INFO - 2022-11-18 10:29:05 --> Input Class Initialized
+INFO - 2022-11-18 10:29:05 --> Language Class Initialized
+ERROR - 2022-11-18 10:29:05 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:29:05 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:29:05 --> Config Class Initialized
+INFO - 2022-11-18 10:29:05 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:29:05 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:29:05 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:29:05 --> URI Class Initialized
+INFO - 2022-11-18 10:29:05 --> Router Class Initialized
+INFO - 2022-11-18 10:29:05 --> Output Class Initialized
+INFO - 2022-11-18 10:29:05 --> Security Class Initialized
+DEBUG - 2022-11-18 10:29:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:29:05 --> CSRF cookie sent
+INFO - 2022-11-18 10:29:05 --> Input Class Initialized
+INFO - 2022-11-18 10:29:05 --> Language Class Initialized
+ERROR - 2022-11-18 10:29:05 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:29:05 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:29:05 --> Config Class Initialized
+INFO - 2022-11-18 10:29:05 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:29:05 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:29:05 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:29:05 --> URI Class Initialized
+INFO - 2022-11-18 10:29:05 --> Router Class Initialized
+INFO - 2022-11-18 10:29:05 --> Output Class Initialized
+INFO - 2022-11-18 10:29:05 --> Security Class Initialized
+DEBUG - 2022-11-18 10:29:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:29:05 --> CSRF cookie sent
+INFO - 2022-11-18 10:29:05 --> CSRF token verified
+INFO - 2022-11-18 10:29:05 --> Input Class Initialized
+INFO - 2022-11-18 10:29:05 --> Language Class Initialized
+INFO - 2022-11-18 10:29:05 --> Loader Class Initialized
+INFO - 2022-11-18 10:29:05 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:29:05 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:29:05 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:29:05 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:29:05 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:29:05 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:29:05 --> Parser Class Initialized
+INFO - 2022-11-18 10:29:05 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:29:05 --> Pagination Class Initialized
+INFO - 2022-11-18 10:29:05 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:29:05 --> Controller Class Initialized
+INFO - 2022-11-18 10:29:05 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:29:05 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:29:05 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:29:05 --> Model "Customers" initialized
+INFO - 2022-11-18 10:29:05 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:29:05 --> Final output sent to browser
+DEBUG - 2022-11-18 10:29:05 --> Total execution time: 0.0347
+ERROR - 2022-11-18 10:29:35 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:29:35 --> Config Class Initialized
+INFO - 2022-11-18 10:29:35 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:29:35 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:29:35 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:29:35 --> URI Class Initialized
+INFO - 2022-11-18 10:29:35 --> Router Class Initialized
+INFO - 2022-11-18 10:29:35 --> Output Class Initialized
+INFO - 2022-11-18 10:29:35 --> Security Class Initialized
+DEBUG - 2022-11-18 10:29:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:29:35 --> CSRF cookie sent
+INFO - 2022-11-18 10:29:35 --> Input Class Initialized
+INFO - 2022-11-18 10:29:35 --> Language Class Initialized
+INFO - 2022-11-18 10:29:35 --> Loader Class Initialized
+INFO - 2022-11-18 10:29:35 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:29:35 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:29:35 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:29:35 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:29:35 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:29:35 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:29:35 --> Parser Class Initialized
+INFO - 2022-11-18 10:29:35 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:29:35 --> Pagination Class Initialized
+INFO - 2022-11-18 10:29:35 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:29:35 --> Controller Class Initialized
+INFO - 2022-11-18 10:29:35 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:29:35 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:29:35 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:29:35 --> Model "Customers" initialized
+INFO - 2022-11-18 10:29:35 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:29:35 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:29:35 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:29:35 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:29:35 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:29:35 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:29:35 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:29:35 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1145
+ERROR - 2022-11-18 10:29:35 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1175
+ERROR - 2022-11-18 10:29:35 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:29:35 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:29:35 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1229
+INFO - 2022-11-18 10:29:35 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:29:35 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:29:35 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:29:35 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:29:35 --> Model "Products" initialized
+INFO - 2022-11-18 15:59:35 --> Model "reports" initialized
+INFO - 2022-11-18 15:59:35 --> Model "Users" initialized
+INFO - 2022-11-18 15:59:35 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 15:59:35 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 15:59:35 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 15:59:35 --> Final output sent to browser
+DEBUG - 2022-11-18 15:59:35 --> Total execution time: 0.4354
+ERROR - 2022-11-18 10:29:35 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:29:35 --> Config Class Initialized
+INFO - 2022-11-18 10:29:35 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:29:35 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:29:35 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:29:35 --> URI Class Initialized
+INFO - 2022-11-18 10:29:35 --> Router Class Initialized
+INFO - 2022-11-18 10:29:35 --> Output Class Initialized
+INFO - 2022-11-18 10:29:35 --> Security Class Initialized
+DEBUG - 2022-11-18 10:29:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:29:35 --> CSRF cookie sent
+INFO - 2022-11-18 10:29:35 --> Input Class Initialized
+INFO - 2022-11-18 10:29:35 --> Language Class Initialized
+ERROR - 2022-11-18 10:29:35 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:29:35 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:29:35 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:29:35 --> Config Class Initialized
+INFO - 2022-11-18 10:29:35 --> Hooks Class Initialized
+INFO - 2022-11-18 10:29:35 --> Config Class Initialized
+DEBUG - 2022-11-18 10:29:35 --> UTF-8 Support Enabled
+ERROR - 2022-11-18 10:29:35 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:29:35 --> Hooks Class Initialized
+INFO - 2022-11-18 10:29:35 --> Utf8 Class Initialized
+DEBUG - 2022-11-18 10:29:35 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:29:35 --> Config Class Initialized
+INFO - 2022-11-18 10:29:35 --> URI Class Initialized
+INFO - 2022-11-18 10:29:35 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:29:35 --> Hooks Class Initialized
+INFO - 2022-11-18 10:29:35 --> URI Class Initialized
+INFO - 2022-11-18 10:29:35 --> Router Class Initialized
+DEBUG - 2022-11-18 10:29:35 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:29:35 --> Router Class Initialized
+INFO - 2022-11-18 10:29:35 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:29:35 --> Output Class Initialized
+INFO - 2022-11-18 10:29:35 --> Output Class Initialized
+INFO - 2022-11-18 10:29:35 --> URI Class Initialized
+INFO - 2022-11-18 10:29:35 --> Security Class Initialized
+INFO - 2022-11-18 10:29:35 --> Security Class Initialized
+DEBUG - 2022-11-18 10:29:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:29:35 --> Router Class Initialized
+DEBUG - 2022-11-18 10:29:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:29:35 --> CSRF cookie sent
+INFO - 2022-11-18 10:29:35 --> CSRF cookie sent
+INFO - 2022-11-18 10:29:35 --> Input Class Initialized
+INFO - 2022-11-18 10:29:35 --> Output Class Initialized
+INFO - 2022-11-18 10:29:35 --> Input Class Initialized
+INFO - 2022-11-18 10:29:35 --> Language Class Initialized
+INFO - 2022-11-18 10:29:35 --> Security Class Initialized
+INFO - 2022-11-18 10:29:35 --> Language Class Initialized
+ERROR - 2022-11-18 10:29:35 --> 404 Page Not Found: Assets/js
+DEBUG - 2022-11-18 10:29:35 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2022-11-18 10:29:35 --> 404 Page Not Found: Assets/datatables
+INFO - 2022-11-18 10:29:35 --> CSRF cookie sent
+INFO - 2022-11-18 10:29:35 --> Input Class Initialized
+INFO - 2022-11-18 10:29:35 --> Language Class Initialized
+ERROR - 2022-11-18 10:29:35 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:29:35 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:29:35 --> Config Class Initialized
+INFO - 2022-11-18 10:29:35 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:29:35 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:29:35 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:29:35 --> URI Class Initialized
+INFO - 2022-11-18 10:29:35 --> Router Class Initialized
+INFO - 2022-11-18 10:29:35 --> Output Class Initialized
+INFO - 2022-11-18 10:29:35 --> Security Class Initialized
+DEBUG - 2022-11-18 10:29:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:29:35 --> CSRF cookie sent
+INFO - 2022-11-18 10:29:35 --> CSRF token verified
+INFO - 2022-11-18 10:29:35 --> Input Class Initialized
+INFO - 2022-11-18 10:29:35 --> Language Class Initialized
+INFO - 2022-11-18 10:29:35 --> Loader Class Initialized
+INFO - 2022-11-18 10:29:35 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:29:35 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:29:35 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:29:35 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:29:35 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:29:35 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:29:35 --> Parser Class Initialized
+INFO - 2022-11-18 10:29:35 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:29:35 --> Pagination Class Initialized
+INFO - 2022-11-18 10:29:35 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:29:35 --> Controller Class Initialized
+INFO - 2022-11-18 10:29:35 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:29:35 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:29:35 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:29:35 --> Model "Customers" initialized
+INFO - 2022-11-18 10:29:35 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:29:35 --> Final output sent to browser
+DEBUG - 2022-11-18 10:29:35 --> Total execution time: 0.0257
+ERROR - 2022-11-18 10:31:57 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:31:57 --> Config Class Initialized
+INFO - 2022-11-18 10:31:57 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:31:57 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:31:57 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:31:57 --> URI Class Initialized
+INFO - 2022-11-18 10:31:57 --> Router Class Initialized
+INFO - 2022-11-18 10:31:57 --> Output Class Initialized
+INFO - 2022-11-18 10:31:57 --> Security Class Initialized
+DEBUG - 2022-11-18 10:31:57 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:31:57 --> CSRF cookie sent
+INFO - 2022-11-18 10:31:57 --> Input Class Initialized
+INFO - 2022-11-18 10:31:57 --> Language Class Initialized
+INFO - 2022-11-18 10:31:57 --> Loader Class Initialized
+INFO - 2022-11-18 10:31:57 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:31:57 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:31:57 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:31:57 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:31:57 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:31:57 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:31:57 --> Parser Class Initialized
+INFO - 2022-11-18 10:31:57 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:31:57 --> Pagination Class Initialized
+INFO - 2022-11-18 10:31:57 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:31:57 --> Controller Class Initialized
+INFO - 2022-11-18 10:31:57 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:31:57 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:31:57 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:31:57 --> Model "Customers" initialized
+INFO - 2022-11-18 10:31:57 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:31:57 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:31:57 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:31:57 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:31:57 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:31:57 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:31:57 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:31:57 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1145
+ERROR - 2022-11-18 10:31:57 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1175
+ERROR - 2022-11-18 10:31:57 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:31:57 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:31:57 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1229
+INFO - 2022-11-18 10:31:57 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:31:57 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:31:57 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:31:57 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:31:57 --> Model "Products" initialized
+INFO - 2022-11-18 16:01:57 --> Model "reports" initialized
+INFO - 2022-11-18 16:01:57 --> Model "Users" initialized
+INFO - 2022-11-18 16:01:57 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:01:57 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:01:57 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:01:57 --> Final output sent to browser
+DEBUG - 2022-11-18 16:01:57 --> Total execution time: 0.4031
+ERROR - 2022-11-18 10:31:57 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:31:57 --> Config Class Initialized
+INFO - 2022-11-18 10:31:57 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:31:57 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:31:57 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:31:57 --> URI Class Initialized
+INFO - 2022-11-18 10:31:57 --> Router Class Initialized
+INFO - 2022-11-18 10:31:57 --> Output Class Initialized
+INFO - 2022-11-18 10:31:57 --> Security Class Initialized
+DEBUG - 2022-11-18 10:31:57 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:31:57 --> CSRF cookie sent
+INFO - 2022-11-18 10:31:57 --> Input Class Initialized
+INFO - 2022-11-18 10:31:57 --> Language Class Initialized
+ERROR - 2022-11-18 10:31:57 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:31:57 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:31:57 --> Config Class Initialized
+INFO - 2022-11-18 10:31:57 --> Hooks Class Initialized
+ERROR - 2022-11-18 10:31:57 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+DEBUG - 2022-11-18 10:31:57 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:31:57 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:31:57 --> Config Class Initialized
+INFO - 2022-11-18 10:31:57 --> URI Class Initialized
+INFO - 2022-11-18 10:31:57 --> Hooks Class Initialized
+ERROR - 2022-11-18 10:31:57 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+DEBUG - 2022-11-18 10:31:57 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:31:57 --> Router Class Initialized
+INFO - 2022-11-18 10:31:57 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:31:57 --> Config Class Initialized
+INFO - 2022-11-18 10:31:57 --> Output Class Initialized
+INFO - 2022-11-18 10:31:57 --> URI Class Initialized
+INFO - 2022-11-18 10:31:57 --> Hooks Class Initialized
+INFO - 2022-11-18 10:31:57 --> Security Class Initialized
+DEBUG - 2022-11-18 10:31:57 --> UTF-8 Support Enabled
+DEBUG - 2022-11-18 10:31:57 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:31:57 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:31:57 --> Router Class Initialized
+INFO - 2022-11-18 10:31:57 --> CSRF cookie sent
+INFO - 2022-11-18 10:31:57 --> Input Class Initialized
+INFO - 2022-11-18 10:31:57 --> URI Class Initialized
+INFO - 2022-11-18 10:31:57 --> Output Class Initialized
+INFO - 2022-11-18 10:31:57 --> Language Class Initialized
+INFO - 2022-11-18 10:31:57 --> Router Class Initialized
+INFO - 2022-11-18 10:31:57 --> Security Class Initialized
+INFO - 2022-11-18 10:31:57 --> Output Class Initialized
+ERROR - 2022-11-18 10:31:57 --> 404 Page Not Found: Assets/datatables
+DEBUG - 2022-11-18 10:31:57 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:31:57 --> Security Class Initialized
+INFO - 2022-11-18 10:31:57 --> CSRF cookie sent
+INFO - 2022-11-18 10:31:57 --> Input Class Initialized
+DEBUG - 2022-11-18 10:31:57 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:31:57 --> Language Class Initialized
+INFO - 2022-11-18 10:31:57 --> CSRF cookie sent
+INFO - 2022-11-18 10:31:57 --> Input Class Initialized
+ERROR - 2022-11-18 10:31:57 --> 404 Page Not Found: Assets/js
+INFO - 2022-11-18 10:31:57 --> Language Class Initialized
+ERROR - 2022-11-18 10:31:57 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:31:57 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:31:57 --> Config Class Initialized
+INFO - 2022-11-18 10:31:57 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:31:57 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:31:57 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:31:57 --> URI Class Initialized
+INFO - 2022-11-18 10:31:57 --> Router Class Initialized
+INFO - 2022-11-18 10:31:57 --> Output Class Initialized
+INFO - 2022-11-18 10:31:57 --> Security Class Initialized
+DEBUG - 2022-11-18 10:31:57 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:31:57 --> CSRF cookie sent
+INFO - 2022-11-18 10:31:57 --> CSRF token verified
+INFO - 2022-11-18 10:31:57 --> Input Class Initialized
+INFO - 2022-11-18 10:31:57 --> Language Class Initialized
+INFO - 2022-11-18 10:31:57 --> Loader Class Initialized
+INFO - 2022-11-18 10:31:57 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:31:57 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:31:57 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:31:57 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:31:57 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:31:57 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:31:57 --> Parser Class Initialized
+INFO - 2022-11-18 10:31:57 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:31:57 --> Pagination Class Initialized
+INFO - 2022-11-18 10:31:57 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:31:57 --> Controller Class Initialized
+INFO - 2022-11-18 10:31:57 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:31:57 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:31:57 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:31:57 --> Model "Customers" initialized
+INFO - 2022-11-18 10:31:57 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:31:57 --> Final output sent to browser
+DEBUG - 2022-11-18 10:31:57 --> Total execution time: 0.0123
+ERROR - 2022-11-18 10:31:58 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:31:58 --> Config Class Initialized
+INFO - 2022-11-18 10:31:58 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:31:58 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:31:58 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:31:58 --> URI Class Initialized
+INFO - 2022-11-18 10:31:58 --> Router Class Initialized
+INFO - 2022-11-18 10:31:58 --> Output Class Initialized
+INFO - 2022-11-18 10:31:58 --> Security Class Initialized
+DEBUG - 2022-11-18 10:31:58 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:31:58 --> CSRF cookie sent
+INFO - 2022-11-18 10:31:58 --> Input Class Initialized
+INFO - 2022-11-18 10:31:58 --> Language Class Initialized
+INFO - 2022-11-18 10:31:58 --> Loader Class Initialized
+INFO - 2022-11-18 10:31:58 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:31:58 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:31:58 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:31:58 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:31:58 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:31:58 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:31:58 --> Parser Class Initialized
+INFO - 2022-11-18 10:31:58 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:31:58 --> Pagination Class Initialized
+INFO - 2022-11-18 10:31:58 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:31:58 --> Controller Class Initialized
+INFO - 2022-11-18 10:31:58 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:31:58 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:31:58 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:31:58 --> Model "Customers" initialized
+INFO - 2022-11-18 10:31:58 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:31:58 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:31:58 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:31:58 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:31:58 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:31:58 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:31:58 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:31:58 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1145
+ERROR - 2022-11-18 10:31:58 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1175
+ERROR - 2022-11-18 10:31:58 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:31:58 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:31:58 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1229
+INFO - 2022-11-18 10:31:58 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:31:58 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:31:58 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:31:58 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:31:58 --> Model "Products" initialized
+INFO - 2022-11-18 16:01:58 --> Model "reports" initialized
+INFO - 2022-11-18 16:01:58 --> Model "Users" initialized
+INFO - 2022-11-18 16:01:59 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:01:59 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:01:59 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:01:59 --> Final output sent to browser
+DEBUG - 2022-11-18 16:01:59 --> Total execution time: 0.7256
+ERROR - 2022-11-18 10:31:59 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:31:59 --> Config Class Initialized
+INFO - 2022-11-18 10:31:59 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:31:59 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:31:59 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:31:59 --> URI Class Initialized
+INFO - 2022-11-18 10:31:59 --> Router Class Initialized
+INFO - 2022-11-18 10:31:59 --> Output Class Initialized
+INFO - 2022-11-18 10:31:59 --> Security Class Initialized
+DEBUG - 2022-11-18 10:31:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:31:59 --> CSRF cookie sent
+INFO - 2022-11-18 10:31:59 --> Input Class Initialized
+INFO - 2022-11-18 10:31:59 --> Language Class Initialized
+ERROR - 2022-11-18 10:31:59 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:31:59 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:31:59 --> Config Class Initialized
+INFO - 2022-11-18 10:31:59 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:31:59 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:31:59 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:31:59 --> URI Class Initialized
+INFO - 2022-11-18 10:31:59 --> Router Class Initialized
+INFO - 2022-11-18 10:31:59 --> Output Class Initialized
+INFO - 2022-11-18 10:31:59 --> Security Class Initialized
+DEBUG - 2022-11-18 10:31:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:31:59 --> CSRF cookie sent
+INFO - 2022-11-18 10:31:59 --> Input Class Initialized
+INFO - 2022-11-18 10:31:59 --> Language Class Initialized
+ERROR - 2022-11-18 10:31:59 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:31:59 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:31:59 --> Config Class Initialized
+INFO - 2022-11-18 10:31:59 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:31:59 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:31:59 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:31:59 --> URI Class Initialized
+INFO - 2022-11-18 10:31:59 --> Router Class Initialized
+INFO - 2022-11-18 10:31:59 --> Output Class Initialized
+INFO - 2022-11-18 10:31:59 --> Security Class Initialized
+DEBUG - 2022-11-18 10:31:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:31:59 --> CSRF cookie sent
+INFO - 2022-11-18 10:31:59 --> Input Class Initialized
+INFO - 2022-11-18 10:31:59 --> Language Class Initialized
+ERROR - 2022-11-18 10:31:59 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:31:59 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:31:59 --> Config Class Initialized
+INFO - 2022-11-18 10:31:59 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:31:59 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:31:59 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:31:59 --> URI Class Initialized
+INFO - 2022-11-18 10:31:59 --> Router Class Initialized
+INFO - 2022-11-18 10:31:59 --> Output Class Initialized
+INFO - 2022-11-18 10:31:59 --> Security Class Initialized
+DEBUG - 2022-11-18 10:31:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:31:59 --> CSRF cookie sent
+INFO - 2022-11-18 10:31:59 --> Input Class Initialized
+INFO - 2022-11-18 10:31:59 --> Language Class Initialized
+ERROR - 2022-11-18 10:31:59 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:31:59 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:31:59 --> Config Class Initialized
+INFO - 2022-11-18 10:31:59 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:31:59 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:31:59 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:31:59 --> URI Class Initialized
+INFO - 2022-11-18 10:31:59 --> Router Class Initialized
+INFO - 2022-11-18 10:31:59 --> Output Class Initialized
+INFO - 2022-11-18 10:31:59 --> Security Class Initialized
+DEBUG - 2022-11-18 10:31:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:31:59 --> CSRF cookie sent
+INFO - 2022-11-18 10:31:59 --> CSRF token verified
+INFO - 2022-11-18 10:31:59 --> Input Class Initialized
+INFO - 2022-11-18 10:31:59 --> Language Class Initialized
+INFO - 2022-11-18 10:31:59 --> Loader Class Initialized
+INFO - 2022-11-18 10:31:59 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:31:59 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:31:59 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:31:59 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:31:59 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:31:59 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:31:59 --> Parser Class Initialized
+INFO - 2022-11-18 10:31:59 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:31:59 --> Pagination Class Initialized
+INFO - 2022-11-18 10:31:59 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:31:59 --> Controller Class Initialized
+INFO - 2022-11-18 10:31:59 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:31:59 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:31:59 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:31:59 --> Model "Customers" initialized
+INFO - 2022-11-18 10:31:59 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:31:59 --> Final output sent to browser
+DEBUG - 2022-11-18 10:31:59 --> Total execution time: 0.0108
+ERROR - 2022-11-18 10:32:22 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:32:22 --> Config Class Initialized
+INFO - 2022-11-18 10:32:22 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:32:22 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:32:22 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:32:22 --> URI Class Initialized
+INFO - 2022-11-18 10:32:22 --> Router Class Initialized
+INFO - 2022-11-18 10:32:22 --> Output Class Initialized
+INFO - 2022-11-18 10:32:22 --> Security Class Initialized
+DEBUG - 2022-11-18 10:32:22 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:32:22 --> CSRF cookie sent
+INFO - 2022-11-18 10:32:22 --> Input Class Initialized
+INFO - 2022-11-18 10:32:22 --> Language Class Initialized
+INFO - 2022-11-18 10:32:22 --> Loader Class Initialized
+INFO - 2022-11-18 10:32:22 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:32:22 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:32:22 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:32:22 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:32:22 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:32:22 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:32:22 --> Parser Class Initialized
+INFO - 2022-11-18 10:32:22 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:32:22 --> Pagination Class Initialized
+INFO - 2022-11-18 10:32:22 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:32:22 --> Controller Class Initialized
+INFO - 2022-11-18 10:32:22 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:32:22 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:32:22 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:32:22 --> Model "Customers" initialized
+INFO - 2022-11-18 10:32:22 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:32:22 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:32:22 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:32:22 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:32:22 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:32:22 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:32:22 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:32:22 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1145
+ERROR - 2022-11-18 10:32:22 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1175
+ERROR - 2022-11-18 10:32:22 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:32:22 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:32:22 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1229
+INFO - 2022-11-18 10:32:22 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:32:22 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:32:22 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:32:22 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:32:22 --> Model "Products" initialized
+INFO - 2022-11-18 16:02:22 --> Model "reports" initialized
+INFO - 2022-11-18 16:02:22 --> Model "Users" initialized
+INFO - 2022-11-18 16:02:22 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:02:22 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:02:22 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:02:22 --> Final output sent to browser
+DEBUG - 2022-11-18 16:02:22 --> Total execution time: 0.3980
+ERROR - 2022-11-18 10:32:22 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:32:22 --> Config Class Initialized
+INFO - 2022-11-18 10:32:22 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:32:22 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:32:22 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:32:22 --> URI Class Initialized
+INFO - 2022-11-18 10:32:22 --> Router Class Initialized
+INFO - 2022-11-18 10:32:22 --> Output Class Initialized
+INFO - 2022-11-18 10:32:22 --> Security Class Initialized
+DEBUG - 2022-11-18 10:32:22 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:32:22 --> CSRF cookie sent
+INFO - 2022-11-18 10:32:22 --> Input Class Initialized
+INFO - 2022-11-18 10:32:22 --> Language Class Initialized
+ERROR - 2022-11-18 10:32:22 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:32:23 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:32:23 --> Config Class Initialized
+INFO - 2022-11-18 10:32:23 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:32:23 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:32:23 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:32:23 --> URI Class Initialized
+INFO - 2022-11-18 10:32:23 --> Router Class Initialized
+INFO - 2022-11-18 10:32:23 --> Output Class Initialized
+INFO - 2022-11-18 10:32:23 --> Security Class Initialized
+DEBUG - 2022-11-18 10:32:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:32:23 --> CSRF cookie sent
+INFO - 2022-11-18 10:32:23 --> Input Class Initialized
+INFO - 2022-11-18 10:32:23 --> Language Class Initialized
+ERROR - 2022-11-18 10:32:23 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:32:23 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:32:23 --> Config Class Initialized
+INFO - 2022-11-18 10:32:23 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:32:23 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:32:23 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:32:23 --> URI Class Initialized
+INFO - 2022-11-18 10:32:23 --> Router Class Initialized
+INFO - 2022-11-18 10:32:23 --> Output Class Initialized
+INFO - 2022-11-18 10:32:23 --> Security Class Initialized
+DEBUG - 2022-11-18 10:32:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:32:23 --> CSRF cookie sent
+INFO - 2022-11-18 10:32:23 --> Input Class Initialized
+INFO - 2022-11-18 10:32:23 --> Language Class Initialized
+ERROR - 2022-11-18 10:32:23 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:32:23 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:32:23 --> Config Class Initialized
+INFO - 2022-11-18 10:32:23 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:32:23 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:32:23 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:32:23 --> URI Class Initialized
+INFO - 2022-11-18 10:32:23 --> Router Class Initialized
+INFO - 2022-11-18 10:32:23 --> Output Class Initialized
+INFO - 2022-11-18 10:32:23 --> Security Class Initialized
+DEBUG - 2022-11-18 10:32:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:32:23 --> CSRF cookie sent
+INFO - 2022-11-18 10:32:23 --> Input Class Initialized
+INFO - 2022-11-18 10:32:23 --> Language Class Initialized
+ERROR - 2022-11-18 10:32:23 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:32:23 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:32:23 --> Config Class Initialized
+INFO - 2022-11-18 10:32:23 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:32:23 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:32:23 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:32:23 --> URI Class Initialized
+INFO - 2022-11-18 10:32:23 --> Router Class Initialized
+INFO - 2022-11-18 10:32:23 --> Output Class Initialized
+INFO - 2022-11-18 10:32:23 --> Security Class Initialized
+DEBUG - 2022-11-18 10:32:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:32:23 --> CSRF cookie sent
+INFO - 2022-11-18 10:32:23 --> CSRF token verified
+INFO - 2022-11-18 10:32:23 --> Input Class Initialized
+INFO - 2022-11-18 10:32:23 --> Language Class Initialized
+INFO - 2022-11-18 10:32:23 --> Loader Class Initialized
+INFO - 2022-11-18 10:32:23 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:32:23 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:32:23 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:32:23 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:32:23 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:32:23 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:32:23 --> Parser Class Initialized
+INFO - 2022-11-18 10:32:23 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:32:23 --> Pagination Class Initialized
+INFO - 2022-11-18 10:32:23 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:32:23 --> Controller Class Initialized
+INFO - 2022-11-18 10:32:23 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:32:23 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:32:23 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:32:23 --> Model "Customers" initialized
+INFO - 2022-11-18 10:32:23 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:32:23 --> Final output sent to browser
+DEBUG - 2022-11-18 10:32:23 --> Total execution time: 0.0157
+ERROR - 2022-11-18 10:32:23 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:32:23 --> Config Class Initialized
+INFO - 2022-11-18 10:32:23 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:32:23 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:32:23 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:32:23 --> URI Class Initialized
+INFO - 2022-11-18 10:32:24 --> Router Class Initialized
+INFO - 2022-11-18 10:32:24 --> Output Class Initialized
+INFO - 2022-11-18 10:32:24 --> Security Class Initialized
+DEBUG - 2022-11-18 10:32:24 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:32:24 --> CSRF cookie sent
+INFO - 2022-11-18 10:32:24 --> Input Class Initialized
+INFO - 2022-11-18 10:32:24 --> Language Class Initialized
+INFO - 2022-11-18 10:32:24 --> Loader Class Initialized
+INFO - 2022-11-18 10:32:24 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:32:24 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:32:24 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:32:24 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:32:24 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:32:24 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:32:24 --> Parser Class Initialized
+INFO - 2022-11-18 10:32:24 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:32:24 --> Pagination Class Initialized
+INFO - 2022-11-18 10:32:24 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:32:24 --> Controller Class Initialized
+INFO - 2022-11-18 10:32:24 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:32:24 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:32:24 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:32:24 --> Model "Customers" initialized
+INFO - 2022-11-18 10:32:24 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:32:24 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:32:24 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:32:24 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:32:24 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:32:24 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:32:24 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:32:24 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1145
+ERROR - 2022-11-18 10:32:24 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1175
+ERROR - 2022-11-18 10:32:24 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:32:24 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:32:24 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1229
+INFO - 2022-11-18 10:32:24 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:32:24 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:32:24 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:32:24 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:32:24 --> Model "Products" initialized
+INFO - 2022-11-18 16:02:24 --> Model "reports" initialized
+INFO - 2022-11-18 16:02:24 --> Model "Users" initialized
+INFO - 2022-11-18 16:02:24 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:02:24 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:02:24 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:02:24 --> Final output sent to browser
+DEBUG - 2022-11-18 16:02:24 --> Total execution time: 0.4233
+ERROR - 2022-11-18 10:32:24 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:32:24 --> Config Class Initialized
+INFO - 2022-11-18 10:32:24 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:32:24 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:32:24 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:32:24 --> URI Class Initialized
+INFO - 2022-11-18 10:32:24 --> Router Class Initialized
+INFO - 2022-11-18 10:32:24 --> Output Class Initialized
+INFO - 2022-11-18 10:32:24 --> Security Class Initialized
+DEBUG - 2022-11-18 10:32:24 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:32:24 --> CSRF cookie sent
+INFO - 2022-11-18 10:32:24 --> Input Class Initialized
+INFO - 2022-11-18 10:32:24 --> Language Class Initialized
+ERROR - 2022-11-18 10:32:24 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:32:24 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:32:24 --> Config Class Initialized
+INFO - 2022-11-18 10:32:24 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:32:24 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:32:24 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:32:24 --> URI Class Initialized
+INFO - 2022-11-18 10:32:24 --> Router Class Initialized
+INFO - 2022-11-18 10:32:24 --> Output Class Initialized
+INFO - 2022-11-18 10:32:24 --> Security Class Initialized
+DEBUG - 2022-11-18 10:32:24 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:32:24 --> CSRF cookie sent
+INFO - 2022-11-18 10:32:24 --> Input Class Initialized
+INFO - 2022-11-18 10:32:24 --> Language Class Initialized
+ERROR - 2022-11-18 10:32:24 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:32:24 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:32:24 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:32:24 --> Config Class Initialized
+INFO - 2022-11-18 10:32:24 --> Hooks Class Initialized
+INFO - 2022-11-18 10:32:24 --> Config Class Initialized
+INFO - 2022-11-18 10:32:24 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:32:24 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:32:24 --> Utf8 Class Initialized
+DEBUG - 2022-11-18 10:32:24 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:32:24 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:32:24 --> URI Class Initialized
+INFO - 2022-11-18 10:32:24 --> URI Class Initialized
+INFO - 2022-11-18 10:32:24 --> Router Class Initialized
+INFO - 2022-11-18 10:32:24 --> Router Class Initialized
+INFO - 2022-11-18 10:32:24 --> Output Class Initialized
+INFO - 2022-11-18 10:32:24 --> Output Class Initialized
+INFO - 2022-11-18 10:32:24 --> Security Class Initialized
+INFO - 2022-11-18 10:32:24 --> Security Class Initialized
+DEBUG - 2022-11-18 10:32:24 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-11-18 10:32:24 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:32:24 --> CSRF cookie sent
+INFO - 2022-11-18 10:32:24 --> CSRF cookie sent
+INFO - 2022-11-18 10:32:24 --> Input Class Initialized
+INFO - 2022-11-18 10:32:24 --> Input Class Initialized
+INFO - 2022-11-18 10:32:24 --> Language Class Initialized
+INFO - 2022-11-18 10:32:24 --> Language Class Initialized
+ERROR - 2022-11-18 10:32:24 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:32:24 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:32:24 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:32:24 --> Config Class Initialized
+INFO - 2022-11-18 10:32:24 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:32:24 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:32:24 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:32:24 --> URI Class Initialized
+INFO - 2022-11-18 10:32:24 --> Router Class Initialized
+INFO - 2022-11-18 10:32:24 --> Output Class Initialized
+INFO - 2022-11-18 10:32:24 --> Security Class Initialized
+DEBUG - 2022-11-18 10:32:24 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:32:24 --> CSRF cookie sent
+INFO - 2022-11-18 10:32:24 --> CSRF token verified
+INFO - 2022-11-18 10:32:24 --> Input Class Initialized
+INFO - 2022-11-18 10:32:24 --> Language Class Initialized
+INFO - 2022-11-18 10:32:24 --> Loader Class Initialized
+INFO - 2022-11-18 10:32:24 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:32:24 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:32:24 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:32:24 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:32:24 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:32:24 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:32:24 --> Parser Class Initialized
+INFO - 2022-11-18 10:32:24 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:32:24 --> Pagination Class Initialized
+INFO - 2022-11-18 10:32:24 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:32:24 --> Controller Class Initialized
+INFO - 2022-11-18 10:32:24 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:32:24 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:32:24 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:32:24 --> Model "Customers" initialized
+INFO - 2022-11-18 10:32:24 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:32:24 --> Final output sent to browser
+DEBUG - 2022-11-18 10:32:24 --> Total execution time: 0.0237
+ERROR - 2022-11-18 10:32:25 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:32:25 --> Config Class Initialized
+INFO - 2022-11-18 10:32:25 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:32:25 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:32:25 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:32:25 --> URI Class Initialized
+INFO - 2022-11-18 10:32:25 --> Router Class Initialized
+INFO - 2022-11-18 10:32:25 --> Output Class Initialized
+INFO - 2022-11-18 10:32:25 --> Security Class Initialized
+DEBUG - 2022-11-18 10:32:25 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:32:25 --> CSRF cookie sent
+INFO - 2022-11-18 10:32:25 --> Input Class Initialized
+INFO - 2022-11-18 10:32:25 --> Language Class Initialized
+INFO - 2022-11-18 10:32:25 --> Loader Class Initialized
+INFO - 2022-11-18 10:32:25 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:32:25 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:32:25 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:32:25 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:32:25 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:32:25 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:32:25 --> Parser Class Initialized
+INFO - 2022-11-18 10:32:25 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:32:25 --> Pagination Class Initialized
+INFO - 2022-11-18 10:32:25 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:32:25 --> Controller Class Initialized
+INFO - 2022-11-18 10:32:25 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:32:25 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:32:25 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:32:25 --> Model "Customers" initialized
+INFO - 2022-11-18 10:32:25 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:32:25 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:32:25 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:32:25 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:32:25 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:32:25 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:32:25 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:32:25 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1145
+ERROR - 2022-11-18 10:32:25 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1175
+ERROR - 2022-11-18 10:32:25 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:32:25 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:32:25 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1229
+INFO - 2022-11-18 10:32:25 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:32:25 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:32:25 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:32:25 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:32:25 --> Model "Products" initialized
+INFO - 2022-11-18 16:02:25 --> Model "reports" initialized
+INFO - 2022-11-18 16:02:25 --> Model "Users" initialized
+INFO - 2022-11-18 16:02:25 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:02:25 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:02:25 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:02:25 --> Final output sent to browser
+DEBUG - 2022-11-18 16:02:25 --> Total execution time: 0.4789
+ERROR - 2022-11-18 10:32:26 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:32:26 --> Config Class Initialized
+INFO - 2022-11-18 10:32:26 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:32:26 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:32:26 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:32:26 --> URI Class Initialized
+INFO - 2022-11-18 10:32:26 --> Router Class Initialized
+INFO - 2022-11-18 10:32:26 --> Output Class Initialized
+INFO - 2022-11-18 10:32:26 --> Security Class Initialized
+DEBUG - 2022-11-18 10:32:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:32:26 --> CSRF cookie sent
+INFO - 2022-11-18 10:32:26 --> Input Class Initialized
+INFO - 2022-11-18 10:32:26 --> Language Class Initialized
+ERROR - 2022-11-18 10:32:26 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:32:26 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:32:26 --> Config Class Initialized
+INFO - 2022-11-18 10:32:26 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:32:26 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:32:26 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:32:26 --> URI Class Initialized
+INFO - 2022-11-18 10:32:26 --> Router Class Initialized
+INFO - 2022-11-18 10:32:26 --> Output Class Initialized
+INFO - 2022-11-18 10:32:26 --> Security Class Initialized
+DEBUG - 2022-11-18 10:32:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:32:26 --> CSRF cookie sent
+INFO - 2022-11-18 10:32:26 --> Input Class Initialized
+INFO - 2022-11-18 10:32:26 --> Language Class Initialized
+ERROR - 2022-11-18 10:32:26 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:32:26 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:32:26 --> Config Class Initialized
+INFO - 2022-11-18 10:32:26 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:32:26 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:32:26 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:32:26 --> URI Class Initialized
+INFO - 2022-11-18 10:32:26 --> Router Class Initialized
+INFO - 2022-11-18 10:32:26 --> Output Class Initialized
+INFO - 2022-11-18 10:32:26 --> Security Class Initialized
+DEBUG - 2022-11-18 10:32:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:32:26 --> CSRF cookie sent
+INFO - 2022-11-18 10:32:26 --> Input Class Initialized
+INFO - 2022-11-18 10:32:26 --> Language Class Initialized
+ERROR - 2022-11-18 10:32:26 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:32:26 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:32:26 --> Config Class Initialized
+INFO - 2022-11-18 10:32:26 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:32:26 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:32:26 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:32:26 --> URI Class Initialized
+INFO - 2022-11-18 10:32:26 --> Router Class Initialized
+INFO - 2022-11-18 10:32:26 --> Output Class Initialized
+INFO - 2022-11-18 10:32:26 --> Security Class Initialized
+DEBUG - 2022-11-18 10:32:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:32:26 --> CSRF cookie sent
+INFO - 2022-11-18 10:32:26 --> Input Class Initialized
+INFO - 2022-11-18 10:32:26 --> Language Class Initialized
+ERROR - 2022-11-18 10:32:26 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:32:26 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:32:26 --> Config Class Initialized
+INFO - 2022-11-18 10:32:26 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:32:26 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:32:26 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:32:26 --> URI Class Initialized
+INFO - 2022-11-18 10:32:26 --> Router Class Initialized
+INFO - 2022-11-18 10:32:26 --> Output Class Initialized
+INFO - 2022-11-18 10:32:26 --> Security Class Initialized
+DEBUG - 2022-11-18 10:32:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:32:26 --> CSRF cookie sent
+INFO - 2022-11-18 10:32:26 --> CSRF token verified
+INFO - 2022-11-18 10:32:26 --> Input Class Initialized
+INFO - 2022-11-18 10:32:26 --> Language Class Initialized
+INFO - 2022-11-18 10:32:26 --> Loader Class Initialized
+INFO - 2022-11-18 10:32:26 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:32:26 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:32:26 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:32:26 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:32:26 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:32:26 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:32:26 --> Parser Class Initialized
+INFO - 2022-11-18 10:32:26 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:32:26 --> Pagination Class Initialized
+INFO - 2022-11-18 10:32:26 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:32:26 --> Controller Class Initialized
+INFO - 2022-11-18 10:32:26 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:32:26 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:32:26 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:32:26 --> Model "Customers" initialized
+INFO - 2022-11-18 10:32:26 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:32:26 --> Final output sent to browser
+DEBUG - 2022-11-18 10:32:26 --> Total execution time: 0.0105
+ERROR - 2022-11-18 10:34:01 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:34:01 --> Config Class Initialized
+INFO - 2022-11-18 10:34:01 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:34:01 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:34:01 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:34:01 --> URI Class Initialized
+INFO - 2022-11-18 10:34:01 --> Router Class Initialized
+INFO - 2022-11-18 10:34:01 --> Output Class Initialized
+INFO - 2022-11-18 10:34:01 --> Security Class Initialized
+DEBUG - 2022-11-18 10:34:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:34:01 --> CSRF cookie sent
+INFO - 2022-11-18 10:34:01 --> Input Class Initialized
+INFO - 2022-11-18 10:34:01 --> Language Class Initialized
+INFO - 2022-11-18 10:34:01 --> Loader Class Initialized
+INFO - 2022-11-18 10:34:01 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:34:01 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:34:01 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:34:01 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:34:01 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:34:01 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:34:01 --> Parser Class Initialized
+INFO - 2022-11-18 10:34:01 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:34:01 --> Pagination Class Initialized
+INFO - 2022-11-18 10:34:01 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:34:01 --> Controller Class Initialized
+INFO - 2022-11-18 10:34:01 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:34:01 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:34:01 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:34:01 --> Model "Customers" initialized
+INFO - 2022-11-18 10:34:01 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:34:01 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:34:01 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:34:01 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:34:01 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:34:01 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:34:01 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:34:01 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1145
+ERROR - 2022-11-18 10:34:01 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1175
+ERROR - 2022-11-18 10:34:01 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:34:01 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:34:01 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1229
+INFO - 2022-11-18 10:34:01 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:34:01 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:34:01 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:34:01 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:34:01 --> Model "Products" initialized
+INFO - 2022-11-18 16:04:01 --> Model "reports" initialized
+INFO - 2022-11-18 16:04:01 --> Model "Users" initialized
+INFO - 2022-11-18 16:04:01 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:04:01 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:04:01 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:04:01 --> Final output sent to browser
+DEBUG - 2022-11-18 16:04:01 --> Total execution time: 0.4213
+ERROR - 2022-11-18 10:34:01 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:34:01 --> Config Class Initialized
+INFO - 2022-11-18 10:34:01 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:34:01 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:34:01 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:34:01 --> URI Class Initialized
+INFO - 2022-11-18 10:34:01 --> Router Class Initialized
+INFO - 2022-11-18 10:34:01 --> Output Class Initialized
+INFO - 2022-11-18 10:34:01 --> Security Class Initialized
+DEBUG - 2022-11-18 10:34:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:34:01 --> CSRF cookie sent
+INFO - 2022-11-18 10:34:01 --> Input Class Initialized
+INFO - 2022-11-18 10:34:01 --> Language Class Initialized
+ERROR - 2022-11-18 10:34:02 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:34:02 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:34:02 --> Config Class Initialized
+INFO - 2022-11-18 10:34:02 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:34:02 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:34:02 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:34:02 --> URI Class Initialized
+INFO - 2022-11-18 10:34:02 --> Router Class Initialized
+INFO - 2022-11-18 10:34:02 --> Output Class Initialized
+INFO - 2022-11-18 10:34:02 --> Security Class Initialized
+DEBUG - 2022-11-18 10:34:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:34:02 --> CSRF cookie sent
+INFO - 2022-11-18 10:34:02 --> Input Class Initialized
+INFO - 2022-11-18 10:34:02 --> Language Class Initialized
+ERROR - 2022-11-18 10:34:02 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:34:02 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:34:02 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:34:02 --> Config Class Initialized
+INFO - 2022-11-18 10:34:02 --> Hooks Class Initialized
+INFO - 2022-11-18 10:34:02 --> Config Class Initialized
+INFO - 2022-11-18 10:34:02 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:34:02 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:34:02 --> Utf8 Class Initialized
+DEBUG - 2022-11-18 10:34:02 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:34:02 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:34:02 --> URI Class Initialized
+INFO - 2022-11-18 10:34:02 --> URI Class Initialized
+INFO - 2022-11-18 10:34:02 --> Router Class Initialized
+INFO - 2022-11-18 10:34:02 --> Router Class Initialized
+INFO - 2022-11-18 10:34:02 --> Output Class Initialized
+INFO - 2022-11-18 10:34:02 --> Output Class Initialized
+INFO - 2022-11-18 10:34:02 --> Security Class Initialized
+INFO - 2022-11-18 10:34:02 --> Security Class Initialized
+DEBUG - 2022-11-18 10:34:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:34:02 --> CSRF cookie sent
+INFO - 2022-11-18 10:34:02 --> Input Class Initialized
+DEBUG - 2022-11-18 10:34:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:34:02 --> Language Class Initialized
+INFO - 2022-11-18 10:34:02 --> CSRF cookie sent
+INFO - 2022-11-18 10:34:02 --> Input Class Initialized
+ERROR - 2022-11-18 10:34:02 --> 404 Page Not Found: Assets/plugins
+INFO - 2022-11-18 10:34:02 --> Language Class Initialized
+ERROR - 2022-11-18 10:34:02 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:34:16 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:34:16 --> Config Class Initialized
+INFO - 2022-11-18 10:34:16 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:34:16 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:34:16 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:34:16 --> URI Class Initialized
+INFO - 2022-11-18 10:34:16 --> Router Class Initialized
+INFO - 2022-11-18 10:34:16 --> Output Class Initialized
+INFO - 2022-11-18 10:34:16 --> Security Class Initialized
+DEBUG - 2022-11-18 10:34:16 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:34:16 --> CSRF cookie sent
+INFO - 2022-11-18 10:34:16 --> Input Class Initialized
+INFO - 2022-11-18 10:34:16 --> Language Class Initialized
+INFO - 2022-11-18 10:34:16 --> Loader Class Initialized
+INFO - 2022-11-18 10:34:16 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:34:16 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:34:16 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:34:16 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:34:16 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:34:16 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:34:16 --> Parser Class Initialized
+INFO - 2022-11-18 10:34:16 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:34:16 --> Pagination Class Initialized
+INFO - 2022-11-18 10:34:16 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:34:16 --> Controller Class Initialized
+INFO - 2022-11-18 10:34:16 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:34:16 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:34:16 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:34:16 --> Model "Customers" initialized
+INFO - 2022-11-18 10:34:16 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:34:16 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:34:16 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:34:16 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:34:16 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:34:16 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:34:16 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:34:16 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1145
+ERROR - 2022-11-18 10:34:16 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1175
+ERROR - 2022-11-18 10:34:16 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:34:16 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:34:16 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1229
+INFO - 2022-11-18 10:34:16 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:34:16 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:34:16 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:34:16 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:34:16 --> Model "Products" initialized
+INFO - 2022-11-18 16:04:16 --> Model "reports" initialized
+INFO - 2022-11-18 16:04:16 --> Model "Users" initialized
+INFO - 2022-11-18 16:04:16 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:04:16 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:04:16 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:04:16 --> Final output sent to browser
+DEBUG - 2022-11-18 16:04:16 --> Total execution time: 0.3935
+ERROR - 2022-11-18 10:34:16 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:34:16 --> Config Class Initialized
+INFO - 2022-11-18 10:34:16 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:34:16 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:34:16 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:34:16 --> URI Class Initialized
+INFO - 2022-11-18 10:34:16 --> Router Class Initialized
+INFO - 2022-11-18 10:34:16 --> Output Class Initialized
+INFO - 2022-11-18 10:34:16 --> Security Class Initialized
+DEBUG - 2022-11-18 10:34:16 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:34:16 --> CSRF cookie sent
+INFO - 2022-11-18 10:34:16 --> Input Class Initialized
+INFO - 2022-11-18 10:34:16 --> Language Class Initialized
+ERROR - 2022-11-18 10:34:16 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:34:16 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:34:16 --> Config Class Initialized
+INFO - 2022-11-18 10:34:16 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:34:16 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:34:16 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:34:16 --> URI Class Initialized
+INFO - 2022-11-18 10:34:16 --> Router Class Initialized
+INFO - 2022-11-18 10:34:16 --> Output Class Initialized
+INFO - 2022-11-18 10:34:16 --> Security Class Initialized
+DEBUG - 2022-11-18 10:34:16 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:34:16 --> CSRF cookie sent
+INFO - 2022-11-18 10:34:16 --> Input Class Initialized
+INFO - 2022-11-18 10:34:16 --> Language Class Initialized
+ERROR - 2022-11-18 10:34:16 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:34:16 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:34:16 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:34:16 --> Config Class Initialized
+INFO - 2022-11-18 10:34:16 --> Config Class Initialized
+INFO - 2022-11-18 10:34:16 --> Hooks Class Initialized
+INFO - 2022-11-18 10:34:16 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:34:16 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:34:16 --> Utf8 Class Initialized
+DEBUG - 2022-11-18 10:34:16 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:34:16 --> URI Class Initialized
+INFO - 2022-11-18 10:34:16 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:34:16 --> Router Class Initialized
+INFO - 2022-11-18 10:34:16 --> URI Class Initialized
+INFO - 2022-11-18 10:34:16 --> Output Class Initialized
+INFO - 2022-11-18 10:34:16 --> Router Class Initialized
+INFO - 2022-11-18 10:34:16 --> Security Class Initialized
+INFO - 2022-11-18 10:34:16 --> Output Class Initialized
+DEBUG - 2022-11-18 10:34:16 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:34:16 --> Security Class Initialized
+INFO - 2022-11-18 10:34:16 --> CSRF cookie sent
+DEBUG - 2022-11-18 10:34:16 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:34:16 --> Input Class Initialized
+INFO - 2022-11-18 10:34:16 --> CSRF cookie sent
+INFO - 2022-11-18 10:34:16 --> Input Class Initialized
+INFO - 2022-11-18 10:34:16 --> Language Class Initialized
+INFO - 2022-11-18 10:34:16 --> Language Class Initialized
+ERROR - 2022-11-18 10:34:16 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:34:16 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:34:17 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:34:17 --> Config Class Initialized
+INFO - 2022-11-18 10:34:17 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:34:17 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:34:17 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:34:17 --> URI Class Initialized
+INFO - 2022-11-18 10:34:17 --> Router Class Initialized
+INFO - 2022-11-18 10:34:17 --> Output Class Initialized
+INFO - 2022-11-18 10:34:17 --> Security Class Initialized
+DEBUG - 2022-11-18 10:34:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:34:17 --> CSRF cookie sent
+INFO - 2022-11-18 10:34:17 --> CSRF token verified
+INFO - 2022-11-18 10:34:17 --> Input Class Initialized
+INFO - 2022-11-18 10:34:17 --> Language Class Initialized
+INFO - 2022-11-18 10:34:17 --> Loader Class Initialized
+INFO - 2022-11-18 10:34:17 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:34:17 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:34:17 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:34:17 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:34:17 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:34:17 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:34:17 --> Parser Class Initialized
+INFO - 2022-11-18 10:34:17 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:34:17 --> Pagination Class Initialized
+INFO - 2022-11-18 10:34:17 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:34:17 --> Controller Class Initialized
+INFO - 2022-11-18 10:34:17 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:34:17 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:34:17 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:34:17 --> Model "Customers" initialized
+INFO - 2022-11-18 10:34:17 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:34:17 --> Final output sent to browser
+DEBUG - 2022-11-18 10:34:17 --> Total execution time: 0.0238
+ERROR - 2022-11-18 10:34:17 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:34:17 --> Config Class Initialized
+INFO - 2022-11-18 10:34:17 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:34:17 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:34:17 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:34:17 --> URI Class Initialized
+INFO - 2022-11-18 10:34:17 --> Router Class Initialized
+INFO - 2022-11-18 10:34:17 --> Output Class Initialized
+INFO - 2022-11-18 10:34:17 --> Security Class Initialized
+DEBUG - 2022-11-18 10:34:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:34:17 --> CSRF cookie sent
+INFO - 2022-11-18 10:34:17 --> Input Class Initialized
+INFO - 2022-11-18 10:34:17 --> Language Class Initialized
+INFO - 2022-11-18 10:34:17 --> Loader Class Initialized
+INFO - 2022-11-18 10:34:17 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:34:17 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:34:17 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:34:17 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:34:17 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:34:17 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:34:17 --> Parser Class Initialized
+INFO - 2022-11-18 10:34:17 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:34:17 --> Pagination Class Initialized
+INFO - 2022-11-18 10:34:17 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:34:17 --> Controller Class Initialized
+INFO - 2022-11-18 10:34:17 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:34:17 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:34:17 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:34:17 --> Model "Customers" initialized
+INFO - 2022-11-18 10:34:17 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:34:17 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:34:17 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:34:17 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:34:17 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:34:17 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:34:17 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:34:17 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1145
+ERROR - 2022-11-18 10:34:17 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1175
+ERROR - 2022-11-18 10:34:17 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:34:17 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:34:17 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1229
+INFO - 2022-11-18 10:34:17 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:34:17 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:34:17 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:34:17 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:34:17 --> Model "Products" initialized
+INFO - 2022-11-18 16:04:17 --> Model "reports" initialized
+INFO - 2022-11-18 16:04:17 --> Model "Users" initialized
+INFO - 2022-11-18 16:04:17 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:04:17 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:04:17 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:04:17 --> Final output sent to browser
+DEBUG - 2022-11-18 16:04:17 --> Total execution time: 0.5216
+ERROR - 2022-11-18 10:34:18 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:34:18 --> Config Class Initialized
+INFO - 2022-11-18 10:34:18 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:34:18 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:34:18 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:34:18 --> URI Class Initialized
+INFO - 2022-11-18 10:34:18 --> Router Class Initialized
+INFO - 2022-11-18 10:34:18 --> Output Class Initialized
+INFO - 2022-11-18 10:34:18 --> Security Class Initialized
+DEBUG - 2022-11-18 10:34:18 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:34:18 --> CSRF cookie sent
+INFO - 2022-11-18 10:34:18 --> Input Class Initialized
+INFO - 2022-11-18 10:34:18 --> Language Class Initialized
+ERROR - 2022-11-18 10:34:18 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:34:18 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:34:18 --> Config Class Initialized
+INFO - 2022-11-18 10:34:18 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:34:18 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:34:18 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:34:18 --> URI Class Initialized
+INFO - 2022-11-18 10:34:18 --> Router Class Initialized
+INFO - 2022-11-18 10:34:18 --> Output Class Initialized
+INFO - 2022-11-18 10:34:18 --> Security Class Initialized
+DEBUG - 2022-11-18 10:34:18 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:34:18 --> CSRF cookie sent
+INFO - 2022-11-18 10:34:18 --> Input Class Initialized
+INFO - 2022-11-18 10:34:18 --> Language Class Initialized
+ERROR - 2022-11-18 10:34:18 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:34:18 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:34:18 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:34:18 --> Config Class Initialized
+INFO - 2022-11-18 10:34:18 --> Hooks Class Initialized
+INFO - 2022-11-18 10:34:18 --> Config Class Initialized
+INFO - 2022-11-18 10:34:18 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:34:18 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:34:18 --> Utf8 Class Initialized
+DEBUG - 2022-11-18 10:34:18 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:34:18 --> URI Class Initialized
+INFO - 2022-11-18 10:34:18 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:34:18 --> URI Class Initialized
+INFO - 2022-11-18 10:34:18 --> Router Class Initialized
+INFO - 2022-11-18 10:34:18 --> Output Class Initialized
+INFO - 2022-11-18 10:34:18 --> Router Class Initialized
+INFO - 2022-11-18 10:34:18 --> Security Class Initialized
+INFO - 2022-11-18 10:34:18 --> Output Class Initialized
+DEBUG - 2022-11-18 10:34:18 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:34:18 --> CSRF cookie sent
+INFO - 2022-11-18 10:34:18 --> Security Class Initialized
+INFO - 2022-11-18 10:34:18 --> Input Class Initialized
+INFO - 2022-11-18 10:34:18 --> Language Class Initialized
+DEBUG - 2022-11-18 10:34:18 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:34:18 --> CSRF cookie sent
+ERROR - 2022-11-18 10:34:18 --> 404 Page Not Found: Assets/plugins
+INFO - 2022-11-18 10:34:18 --> Input Class Initialized
+INFO - 2022-11-18 10:34:18 --> Language Class Initialized
+ERROR - 2022-11-18 10:34:18 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:34:18 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:34:18 --> Config Class Initialized
+INFO - 2022-11-18 10:34:18 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:34:18 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:34:18 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:34:18 --> URI Class Initialized
+INFO - 2022-11-18 10:34:18 --> Router Class Initialized
+INFO - 2022-11-18 10:34:18 --> Output Class Initialized
+INFO - 2022-11-18 10:34:18 --> Security Class Initialized
+DEBUG - 2022-11-18 10:34:18 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:34:18 --> CSRF cookie sent
+INFO - 2022-11-18 10:34:18 --> CSRF token verified
+INFO - 2022-11-18 10:34:18 --> Input Class Initialized
+INFO - 2022-11-18 10:34:18 --> Language Class Initialized
+INFO - 2022-11-18 10:34:18 --> Loader Class Initialized
+INFO - 2022-11-18 10:34:18 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:34:18 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:34:18 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:34:18 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:34:18 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:34:18 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:34:18 --> Parser Class Initialized
+INFO - 2022-11-18 10:34:18 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:34:18 --> Pagination Class Initialized
+INFO - 2022-11-18 10:34:18 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:34:18 --> Controller Class Initialized
+INFO - 2022-11-18 10:34:18 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:34:18 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:34:18 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:34:18 --> Model "Customers" initialized
+INFO - 2022-11-18 10:34:18 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:34:18 --> Final output sent to browser
+DEBUG - 2022-11-18 10:34:18 --> Total execution time: 0.0077
+ERROR - 2022-11-18 10:35:20 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:35:20 --> Config Class Initialized
+INFO - 2022-11-18 10:35:20 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:35:20 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:35:20 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:35:20 --> URI Class Initialized
+INFO - 2022-11-18 10:35:20 --> Router Class Initialized
+INFO - 2022-11-18 10:35:20 --> Output Class Initialized
+INFO - 2022-11-18 10:35:20 --> Security Class Initialized
+DEBUG - 2022-11-18 10:35:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:35:20 --> CSRF cookie sent
+INFO - 2022-11-18 10:35:20 --> Input Class Initialized
+INFO - 2022-11-18 10:35:20 --> Language Class Initialized
+INFO - 2022-11-18 10:35:20 --> Loader Class Initialized
+INFO - 2022-11-18 10:35:20 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:35:20 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:35:20 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:35:20 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:35:20 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:35:20 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:35:20 --> Parser Class Initialized
+INFO - 2022-11-18 10:35:20 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:35:20 --> Pagination Class Initialized
+INFO - 2022-11-18 10:35:20 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:35:20 --> Controller Class Initialized
+INFO - 2022-11-18 10:35:20 --> Model "Web_settings" initialized
+ERROR - 2022-11-18 10:35:20 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:35:20 --> Config Class Initialized
+INFO - 2022-11-18 10:35:20 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:35:20 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:35:20 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:35:20 --> URI Class Initialized
+INFO - 2022-11-18 10:35:20 --> Router Class Initialized
+INFO - 2022-11-18 10:35:20 --> Output Class Initialized
+INFO - 2022-11-18 10:35:20 --> Security Class Initialized
+DEBUG - 2022-11-18 10:35:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:35:20 --> CSRF cookie sent
+INFO - 2022-11-18 10:35:20 --> Input Class Initialized
+INFO - 2022-11-18 10:35:20 --> Language Class Initialized
+INFO - 2022-11-18 10:35:20 --> Loader Class Initialized
+INFO - 2022-11-18 10:35:20 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:35:20 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:35:20 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:35:20 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:35:20 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:35:20 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:35:20 --> Parser Class Initialized
+INFO - 2022-11-18 10:35:20 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:35:20 --> Pagination Class Initialized
+INFO - 2022-11-18 10:35:20 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:35:20 --> Controller Class Initialized
+INFO - 2022-11-18 10:35:20 --> Model "Web_settings" initialized
+INFO - 2022-11-18 10:35:20 --> Model "reports" initialized
+INFO - 2022-11-18 10:35:20 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\user/admin_login_form.php
+DEBUG - 2022-11-18 10:35:20 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:35:20 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:35:20 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:35:20 --> Model "Products" initialized
+INFO - 2022-11-18 16:05:20 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:05:20 --> Final output sent to browser
+DEBUG - 2022-11-18 16:05:20 --> Total execution time: 0.0541
+ERROR - 2022-11-18 10:35:21 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:35:21 --> Config Class Initialized
+INFO - 2022-11-18 10:35:21 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:35:21 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:35:21 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:35:21 --> URI Class Initialized
+INFO - 2022-11-18 10:35:21 --> Router Class Initialized
+INFO - 2022-11-18 10:35:21 --> Output Class Initialized
+INFO - 2022-11-18 10:35:21 --> Security Class Initialized
+DEBUG - 2022-11-18 10:35:21 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:35:21 --> CSRF cookie sent
+INFO - 2022-11-18 10:35:21 --> Input Class Initialized
+INFO - 2022-11-18 10:35:21 --> Language Class Initialized
+ERROR - 2022-11-18 10:35:21 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:35:21 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:35:21 --> Config Class Initialized
+INFO - 2022-11-18 10:35:21 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:35:21 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:35:21 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:35:21 --> URI Class Initialized
+INFO - 2022-11-18 10:35:21 --> Router Class Initialized
+INFO - 2022-11-18 10:35:21 --> Output Class Initialized
+INFO - 2022-11-18 10:35:21 --> Security Class Initialized
+DEBUG - 2022-11-18 10:35:21 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:35:21 --> CSRF cookie sent
+INFO - 2022-11-18 10:35:21 --> Input Class Initialized
+INFO - 2022-11-18 10:35:21 --> Language Class Initialized
+ERROR - 2022-11-18 10:35:21 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:35:21 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:35:21 --> Config Class Initialized
+INFO - 2022-11-18 10:35:21 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:35:21 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:35:21 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:35:21 --> URI Class Initialized
+INFO - 2022-11-18 10:35:21 --> Router Class Initialized
+INFO - 2022-11-18 10:35:21 --> Output Class Initialized
+INFO - 2022-11-18 10:35:21 --> Security Class Initialized
+DEBUG - 2022-11-18 10:35:21 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:35:21 --> CSRF cookie sent
+INFO - 2022-11-18 10:35:21 --> Input Class Initialized
+INFO - 2022-11-18 10:35:21 --> Language Class Initialized
+ERROR - 2022-11-18 10:35:21 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:35:21 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:35:21 --> Config Class Initialized
+INFO - 2022-11-18 10:35:21 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:35:21 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:35:21 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:35:21 --> URI Class Initialized
+INFO - 2022-11-18 10:35:21 --> Router Class Initialized
+INFO - 2022-11-18 10:35:21 --> Output Class Initialized
+INFO - 2022-11-18 10:35:21 --> Security Class Initialized
+DEBUG - 2022-11-18 10:35:21 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:35:21 --> CSRF cookie sent
+INFO - 2022-11-18 10:35:21 --> Input Class Initialized
+INFO - 2022-11-18 10:35:21 --> Language Class Initialized
+ERROR - 2022-11-18 10:35:21 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:35:29 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:35:29 --> Config Class Initialized
+INFO - 2022-11-18 10:35:29 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:35:29 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:35:29 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:35:29 --> URI Class Initialized
+INFO - 2022-11-18 10:35:29 --> Router Class Initialized
+INFO - 2022-11-18 10:35:29 --> Output Class Initialized
+INFO - 2022-11-18 10:35:29 --> Security Class Initialized
+DEBUG - 2022-11-18 10:35:29 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:35:29 --> CSRF cookie sent
+INFO - 2022-11-18 10:35:29 --> CSRF token verified
+INFO - 2022-11-18 10:35:29 --> Input Class Initialized
+INFO - 2022-11-18 10:35:29 --> Language Class Initialized
+INFO - 2022-11-18 10:35:29 --> Loader Class Initialized
+INFO - 2022-11-18 10:35:29 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:35:29 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:35:29 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:35:29 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:35:29 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:35:29 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:35:29 --> Parser Class Initialized
+INFO - 2022-11-18 10:35:29 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:35:29 --> Pagination Class Initialized
+INFO - 2022-11-18 10:35:29 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:35:29 --> Controller Class Initialized
+INFO - 2022-11-18 10:35:29 --> Model "Web_settings" initialized
+INFO - 2022-11-18 10:35:29 --> Model "reports" initialized
+INFO - 2022-11-18 10:35:29 --> Email Class Initialized
+ERROR - 2022-11-18 10:35:31 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\wamp\www\Stockie_UAT_R6_Testing\system\libraries\Email.php 1902
+INFO - 2022-11-18 10:35:31 --> Language file loaded: language/english/email_lang.php
+ERROR - 2022-11-18 10:35:31 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:35:31 --> Config Class Initialized
+INFO - 2022-11-18 10:35:31 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:35:31 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:35:31 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:35:31 --> URI Class Initialized
+INFO - 2022-11-18 10:35:31 --> Router Class Initialized
+INFO - 2022-11-18 10:35:31 --> Output Class Initialized
+INFO - 2022-11-18 10:35:31 --> Security Class Initialized
+DEBUG - 2022-11-18 10:35:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:35:31 --> CSRF cookie sent
+INFO - 2022-11-18 10:35:31 --> Input Class Initialized
+INFO - 2022-11-18 10:35:31 --> Language Class Initialized
+INFO - 2022-11-18 10:35:31 --> Loader Class Initialized
+INFO - 2022-11-18 10:35:31 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:35:31 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:35:31 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:35:31 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:35:31 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:35:31 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:35:31 --> Parser Class Initialized
+INFO - 2022-11-18 10:35:31 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:35:31 --> Pagination Class Initialized
+INFO - 2022-11-18 10:35:31 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:35:31 --> Controller Class Initialized
+INFO - 2022-11-18 10:35:31 --> Model "Web_settings" initialized
+INFO - 2022-11-18 10:35:31 --> Model "reports" initialized
+INFO - 2022-11-18 10:35:31 --> Model "Users" initialized
+INFO - 2022-11-18 10:35:31 --> Final output sent to browser
+DEBUG - 2022-11-18 10:35:31 --> Total execution time: 0.0386
+ERROR - 2022-11-18 10:35:31 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:35:31 --> Config Class Initialized
+INFO - 2022-11-18 10:35:31 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:35:31 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:35:31 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:35:31 --> URI Class Initialized
+DEBUG - 2022-11-18 10:35:31 --> No URI present. Default controller set.
+INFO - 2022-11-18 10:35:31 --> Router Class Initialized
+INFO - 2022-11-18 10:35:31 --> Output Class Initialized
+INFO - 2022-11-18 10:35:31 --> Security Class Initialized
+DEBUG - 2022-11-18 10:35:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:35:31 --> CSRF cookie sent
+INFO - 2022-11-18 10:35:31 --> Input Class Initialized
+INFO - 2022-11-18 10:35:31 --> Language Class Initialized
+INFO - 2022-11-18 10:35:31 --> Loader Class Initialized
+INFO - 2022-11-18 10:35:31 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:35:31 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:35:31 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:35:31 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:35:31 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:35:31 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:35:31 --> Parser Class Initialized
+INFO - 2022-11-18 10:35:31 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:35:31 --> Pagination Class Initialized
+INFO - 2022-11-18 10:35:31 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:35:31 --> Controller Class Initialized
+INFO - 2022-11-18 10:35:31 --> Model "Web_settings" initialized
+INFO - 2022-11-18 10:35:31 --> Model "reports" initialized
+INFO - 2022-11-18 10:35:31 --> Model "Customers" initialized
+INFO - 2022-11-18 10:35:31 --> Model "Products" initialized
+INFO - 2022-11-18 10:35:31 --> Model "Suppliers" initialized
+DEBUG - 2022-11-18 10:35:31 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:35:31 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:35:31 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:35:31 --> Model "Purchases" initialized
+ERROR - 2022-11-18 10:35:32 --> Severity: Notice --> Undefined variable: vendor D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include\admin_home.php 258
+ERROR - 2022-11-18 10:35:32 --> Severity: Notice --> Undefined variable: chart_label D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include\admin_home.php 576
+INFO - 2022-11-18 10:35:32 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_home.php
+DEBUG - 2022-11-18 10:35:32 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:35:32 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:35:32 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 16:05:32 --> Model "Users" initialized
+INFO - 2022-11-18 16:05:32 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:05:32 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:05:32 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:05:32 --> Final output sent to browser
+DEBUG - 2022-11-18 16:05:32 --> Total execution time: 0.2958
+ERROR - 2022-11-18 10:35:32 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:35:32 --> Config Class Initialized
+INFO - 2022-11-18 10:35:32 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:35:32 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:35:32 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:35:32 --> URI Class Initialized
+INFO - 2022-11-18 10:35:32 --> Router Class Initialized
+INFO - 2022-11-18 10:35:32 --> Output Class Initialized
+INFO - 2022-11-18 10:35:32 --> Security Class Initialized
+DEBUG - 2022-11-18 10:35:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:35:32 --> CSRF cookie sent
+INFO - 2022-11-18 10:35:32 --> Input Class Initialized
+INFO - 2022-11-18 10:35:32 --> Language Class Initialized
+ERROR - 2022-11-18 10:35:32 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:35:32 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:35:32 --> Config Class Initialized
+INFO - 2022-11-18 10:35:32 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:35:32 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:35:32 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:35:32 --> URI Class Initialized
+INFO - 2022-11-18 10:35:32 --> Router Class Initialized
+INFO - 2022-11-18 10:35:32 --> Output Class Initialized
+INFO - 2022-11-18 10:35:32 --> Security Class Initialized
+ERROR - 2022-11-18 10:35:32 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+DEBUG - 2022-11-18 10:35:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:35:32 --> CSRF cookie sent
+INFO - 2022-11-18 10:35:32 --> Config Class Initialized
+INFO - 2022-11-18 10:35:32 --> Input Class Initialized
+INFO - 2022-11-18 10:35:32 --> Hooks Class Initialized
+INFO - 2022-11-18 10:35:32 --> Language Class Initialized
+DEBUG - 2022-11-18 10:35:32 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:35:32 --> Utf8 Class Initialized
+ERROR - 2022-11-18 10:35:32 --> 404 Page Not Found: Assets/datatables
+INFO - 2022-11-18 10:35:32 --> URI Class Initialized
+INFO - 2022-11-18 10:35:32 --> Router Class Initialized
+INFO - 2022-11-18 10:35:32 --> Output Class Initialized
+INFO - 2022-11-18 10:35:32 --> Security Class Initialized
+DEBUG - 2022-11-18 10:35:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:35:32 --> CSRF cookie sent
+INFO - 2022-11-18 10:35:32 --> Input Class Initialized
+INFO - 2022-11-18 10:35:32 --> Language Class Initialized
+ERROR - 2022-11-18 10:35:32 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:35:32 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:35:32 --> Config Class Initialized
+INFO - 2022-11-18 10:35:32 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:35:32 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:35:32 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:35:32 --> URI Class Initialized
+INFO - 2022-11-18 10:35:32 --> Router Class Initialized
+INFO - 2022-11-18 10:35:32 --> Output Class Initialized
+INFO - 2022-11-18 10:35:32 --> Security Class Initialized
+DEBUG - 2022-11-18 10:35:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:35:32 --> CSRF cookie sent
+INFO - 2022-11-18 10:35:32 --> Input Class Initialized
+INFO - 2022-11-18 10:35:32 --> Language Class Initialized
+ERROR - 2022-11-18 10:35:32 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:35:32 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:35:32 --> Config Class Initialized
+INFO - 2022-11-18 10:35:32 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:35:32 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:35:32 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:35:32 --> URI Class Initialized
+INFO - 2022-11-18 10:35:32 --> Router Class Initialized
+INFO - 2022-11-18 10:35:32 --> Output Class Initialized
+INFO - 2022-11-18 10:35:32 --> Security Class Initialized
+DEBUG - 2022-11-18 10:35:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:35:32 --> CSRF cookie sent
+INFO - 2022-11-18 10:35:32 --> Input Class Initialized
+INFO - 2022-11-18 10:35:32 --> Language Class Initialized
+INFO - 2022-11-18 10:35:32 --> Loader Class Initialized
+INFO - 2022-11-18 10:35:32 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:35:32 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:35:32 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:35:32 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:35:32 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:35:32 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:35:32 --> Parser Class Initialized
+INFO - 2022-11-18 10:35:32 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:35:32 --> Pagination Class Initialized
+INFO - 2022-11-18 10:35:32 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:35:32 --> Controller Class Initialized
+INFO - 2022-11-18 10:35:32 --> Model "Web_settings" initialized
+INFO - 2022-11-18 10:35:32 --> Model "reports" initialized
+INFO - 2022-11-18 10:35:32 --> Final output sent to browser
+DEBUG - 2022-11-18 10:35:32 --> Total execution time: 0.0132
+ERROR - 2022-11-18 10:35:39 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:35:39 --> Config Class Initialized
+INFO - 2022-11-18 10:35:39 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:35:39 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:35:39 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:35:39 --> URI Class Initialized
+INFO - 2022-11-18 10:35:39 --> Router Class Initialized
+INFO - 2022-11-18 10:35:39 --> Output Class Initialized
+INFO - 2022-11-18 10:35:39 --> Security Class Initialized
+DEBUG - 2022-11-18 10:35:39 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:35:39 --> CSRF cookie sent
+INFO - 2022-11-18 10:35:39 --> Input Class Initialized
+INFO - 2022-11-18 10:35:39 --> Language Class Initialized
+INFO - 2022-11-18 10:35:39 --> Loader Class Initialized
+INFO - 2022-11-18 10:35:39 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:35:39 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:35:39 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:35:39 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:35:39 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:35:39 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:35:39 --> Parser Class Initialized
+INFO - 2022-11-18 10:35:39 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:35:39 --> Pagination Class Initialized
+INFO - 2022-11-18 10:35:39 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:35:39 --> Controller Class Initialized
+INFO - 2022-11-18 10:35:39 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:35:39 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:35:39 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:35:39 --> Model "Customers" initialized
+INFO - 2022-11-18 10:35:39 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:35:39 --> Model "Permission_model" initialized
+ERROR - 2022-11-18 10:35:39 --> Severity: Notice --> Undefined variable: sale D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\invoice.php 201
+ERROR - 2022-11-18 10:35:39 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\invoice.php 201
+ERROR - 2022-11-18 10:35:39 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\invoice.php 201
+INFO - 2022-11-18 10:35:39 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/invoice.php
+INFO - 2022-11-18 10:35:39 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/invoice.php
+DEBUG - 2022-11-18 10:35:39 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:35:39 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:35:39 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:35:39 --> Model "Products" initialized
+INFO - 2022-11-18 16:05:39 --> Model "reports" initialized
+INFO - 2022-11-18 16:05:39 --> Model "Users" initialized
+INFO - 2022-11-18 16:05:39 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:05:39 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:05:39 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:05:39 --> Final output sent to browser
+DEBUG - 2022-11-18 16:05:39 --> Total execution time: 0.3017
+ERROR - 2022-11-18 10:35:39 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:35:39 --> Config Class Initialized
+INFO - 2022-11-18 10:35:39 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:35:39 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:35:39 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:35:39 --> URI Class Initialized
+INFO - 2022-11-18 10:35:39 --> Router Class Initialized
+INFO - 2022-11-18 10:35:39 --> Output Class Initialized
+INFO - 2022-11-18 10:35:39 --> Security Class Initialized
+DEBUG - 2022-11-18 10:35:39 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:35:39 --> CSRF cookie sent
+INFO - 2022-11-18 10:35:39 --> Input Class Initialized
+INFO - 2022-11-18 10:35:39 --> Language Class Initialized
+ERROR - 2022-11-18 10:35:39 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:35:39 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:35:39 --> Config Class Initialized
+INFO - 2022-11-18 10:35:39 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:35:39 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:35:39 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:35:39 --> URI Class Initialized
+INFO - 2022-11-18 10:35:39 --> Router Class Initialized
+INFO - 2022-11-18 10:35:39 --> Output Class Initialized
+INFO - 2022-11-18 10:35:39 --> Security Class Initialized
+DEBUG - 2022-11-18 10:35:39 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:35:39 --> CSRF cookie sent
+INFO - 2022-11-18 10:35:39 --> Input Class Initialized
+INFO - 2022-11-18 10:35:39 --> Language Class Initialized
+ERROR - 2022-11-18 10:35:39 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:35:41 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:35:41 --> Config Class Initialized
+INFO - 2022-11-18 10:35:41 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:35:41 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:35:41 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:35:41 --> URI Class Initialized
+INFO - 2022-11-18 10:35:41 --> Router Class Initialized
+INFO - 2022-11-18 10:35:41 --> Output Class Initialized
+INFO - 2022-11-18 10:35:41 --> Security Class Initialized
+DEBUG - 2022-11-18 10:35:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:35:41 --> CSRF cookie sent
+INFO - 2022-11-18 10:35:41 --> Input Class Initialized
+INFO - 2022-11-18 10:35:41 --> Language Class Initialized
+ERROR - 2022-11-18 10:35:41 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:35:41 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:35:41 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:35:41 --> Config Class Initialized
+INFO - 2022-11-18 10:35:41 --> Config Class Initialized
+INFO - 2022-11-18 10:35:41 --> Hooks Class Initialized
+INFO - 2022-11-18 10:35:41 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:35:41 --> UTF-8 Support Enabled
+DEBUG - 2022-11-18 10:35:41 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:35:41 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:35:41 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:35:41 --> URI Class Initialized
+INFO - 2022-11-18 10:35:41 --> URI Class Initialized
+INFO - 2022-11-18 10:35:41 --> Router Class Initialized
+INFO - 2022-11-18 10:35:41 --> Router Class Initialized
+INFO - 2022-11-18 10:35:41 --> Output Class Initialized
+INFO - 2022-11-18 10:35:41 --> Output Class Initialized
+INFO - 2022-11-18 10:35:41 --> Security Class Initialized
+INFO - 2022-11-18 10:35:41 --> Security Class Initialized
+DEBUG - 2022-11-18 10:35:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:35:41 --> CSRF cookie sent
+DEBUG - 2022-11-18 10:35:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:35:41 --> Input Class Initialized
+INFO - 2022-11-18 10:35:41 --> CSRF cookie sent
+INFO - 2022-11-18 10:35:41 --> Language Class Initialized
+INFO - 2022-11-18 10:35:41 --> Input Class Initialized
+INFO - 2022-11-18 10:35:41 --> Language Class Initialized
+ERROR - 2022-11-18 10:35:41 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:35:41 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:35:41 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:35:41 --> Config Class Initialized
+INFO - 2022-11-18 10:35:41 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:35:41 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:35:41 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:35:41 --> URI Class Initialized
+INFO - 2022-11-18 10:35:41 --> Router Class Initialized
+INFO - 2022-11-18 10:35:41 --> Output Class Initialized
+INFO - 2022-11-18 10:35:41 --> Security Class Initialized
+DEBUG - 2022-11-18 10:35:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:35:41 --> CSRF cookie sent
+INFO - 2022-11-18 10:35:41 --> CSRF token verified
+INFO - 2022-11-18 10:35:41 --> Input Class Initialized
+INFO - 2022-11-18 10:35:41 --> Language Class Initialized
+INFO - 2022-11-18 10:35:41 --> Loader Class Initialized
+INFO - 2022-11-18 10:35:41 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:35:41 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:35:41 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:35:41 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:35:41 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:35:41 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:35:41 --> Parser Class Initialized
+INFO - 2022-11-18 10:35:41 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:35:41 --> Pagination Class Initialized
+INFO - 2022-11-18 10:35:41 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:35:41 --> Controller Class Initialized
+INFO - 2022-11-18 10:35:41 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:35:41 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:35:41 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:35:41 --> Model "Customers" initialized
+INFO - 2022-11-18 10:35:41 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:35:41 --> Severity: Notice --> Undefined offset: 0 D:\wamp\www\Stockie_UAT_R6_Testing\application\controllers\Cinvoice.php 1166
+ERROR - 2022-11-18 10:35:41 --> Severity: Notice --> Trying to get property 'menu' of non-object D:\wamp\www\Stockie_UAT_R6_Testing\application\controllers\Cinvoice.php 1166
+ERROR - 2022-11-18 10:35:41 --> Severity: Notice --> Undefined offset: 0 D:\wamp\www\Stockie_UAT_R6_Testing\application\controllers\Cinvoice.php 1167
+ERROR - 2022-11-18 10:35:41 --> Severity: Notice --> Trying to get property 'submenu' of non-object D:\wamp\www\Stockie_UAT_R6_Testing\application\controllers\Cinvoice.php 1167
+ERROR - 2022-11-18 10:35:41 --> Severity: Notice --> Undefined offset: 0 D:\wamp\www\Stockie_UAT_R6_Testing\application\controllers\Cinvoice.php 1168
+ERROR - 2022-11-18 10:35:41 --> Severity: Notice --> Trying to get property 'setting' of non-object D:\wamp\www\Stockie_UAT_R6_Testing\application\controllers\Cinvoice.php 1168
+INFO - 2022-11-18 10:35:41 --> Final output sent to browser
+DEBUG - 2022-11-18 10:35:41 --> Total execution time: 0.0250
+ERROR - 2022-11-18 10:35:42 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:35:42 --> Config Class Initialized
+INFO - 2022-11-18 10:35:42 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:35:42 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:35:42 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:35:42 --> URI Class Initialized
+INFO - 2022-11-18 10:35:42 --> Router Class Initialized
+INFO - 2022-11-18 10:35:42 --> Output Class Initialized
+INFO - 2022-11-18 10:35:42 --> Security Class Initialized
+DEBUG - 2022-11-18 10:35:42 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:35:42 --> CSRF cookie sent
+INFO - 2022-11-18 10:35:42 --> Input Class Initialized
+INFO - 2022-11-18 10:35:42 --> Language Class Initialized
+INFO - 2022-11-18 10:35:42 --> Loader Class Initialized
+INFO - 2022-11-18 10:35:42 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:35:42 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:35:42 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:35:42 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:35:42 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:35:43 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:35:43 --> Parser Class Initialized
+INFO - 2022-11-18 10:35:43 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:35:43 --> Pagination Class Initialized
+INFO - 2022-11-18 10:35:43 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:35:43 --> Controller Class Initialized
+INFO - 2022-11-18 10:35:43 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:35:43 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:35:43 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:35:43 --> Model "Customers" initialized
+INFO - 2022-11-18 10:35:43 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:35:43 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:35:43 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:35:43 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:35:43 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:35:43 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:35:43 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:35:43 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1145
+ERROR - 2022-11-18 10:35:43 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1175
+ERROR - 2022-11-18 10:35:43 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:35:43 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1198
+ERROR - 2022-11-18 10:35:43 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1229
+INFO - 2022-11-18 10:35:43 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:35:43 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:35:43 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:35:43 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:35:43 --> Model "Products" initialized
+INFO - 2022-11-18 16:05:43 --> Model "reports" initialized
+INFO - 2022-11-18 16:05:43 --> Model "Users" initialized
+INFO - 2022-11-18 16:05:43 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:05:43 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:05:43 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:05:43 --> Final output sent to browser
+DEBUG - 2022-11-18 16:05:43 --> Total execution time: 0.4234
+ERROR - 2022-11-18 10:35:43 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:35:43 --> Config Class Initialized
+INFO - 2022-11-18 10:35:43 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:35:43 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:35:43 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:35:43 --> URI Class Initialized
+INFO - 2022-11-18 10:35:43 --> Router Class Initialized
+INFO - 2022-11-18 10:35:43 --> Output Class Initialized
+INFO - 2022-11-18 10:35:43 --> Security Class Initialized
+DEBUG - 2022-11-18 10:35:43 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:35:43 --> CSRF cookie sent
+INFO - 2022-11-18 10:35:43 --> Input Class Initialized
+INFO - 2022-11-18 10:35:43 --> Language Class Initialized
+ERROR - 2022-11-18 10:35:43 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:35:43 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:35:43 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:35:43 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:35:43 --> Config Class Initialized
+INFO - 2022-11-18 10:35:43 --> Config Class Initialized
+INFO - 2022-11-18 10:35:43 --> Config Class Initialized
+INFO - 2022-11-18 10:35:43 --> Hooks Class Initialized
+INFO - 2022-11-18 10:35:43 --> Hooks Class Initialized
+INFO - 2022-11-18 10:35:43 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:35:43 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:35:43 --> Utf8 Class Initialized
+DEBUG - 2022-11-18 10:35:43 --> UTF-8 Support Enabled
+DEBUG - 2022-11-18 10:35:43 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:35:43 --> URI Class Initialized
+INFO - 2022-11-18 10:35:43 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:35:43 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:35:43 --> Router Class Initialized
+INFO - 2022-11-18 10:35:43 --> URI Class Initialized
+INFO - 2022-11-18 10:35:43 --> URI Class Initialized
+INFO - 2022-11-18 10:35:43 --> Output Class Initialized
+INFO - 2022-11-18 10:35:43 --> Router Class Initialized
+INFO - 2022-11-18 10:35:43 --> Security Class Initialized
+INFO - 2022-11-18 10:35:43 --> Router Class Initialized
+INFO - 2022-11-18 10:35:43 --> Output Class Initialized
+DEBUG - 2022-11-18 10:35:43 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:35:43 --> Output Class Initialized
+INFO - 2022-11-18 10:35:43 --> CSRF cookie sent
+INFO - 2022-11-18 10:35:43 --> Security Class Initialized
+INFO - 2022-11-18 10:35:43 --> Input Class Initialized
+INFO - 2022-11-18 10:35:43 --> Security Class Initialized
+DEBUG - 2022-11-18 10:35:43 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:35:43 --> Language Class Initialized
+INFO - 2022-11-18 10:35:43 --> CSRF cookie sent
+DEBUG - 2022-11-18 10:35:43 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:35:43 --> Input Class Initialized
+ERROR - 2022-11-18 10:35:43 --> 404 Page Not Found: Assets/js
+INFO - 2022-11-18 10:35:43 --> CSRF cookie sent
+INFO - 2022-11-18 10:35:43 --> Language Class Initialized
+INFO - 2022-11-18 10:35:43 --> Input Class Initialized
+ERROR - 2022-11-18 10:35:43 --> 404 Page Not Found: Assets/plugins
+INFO - 2022-11-18 10:35:43 --> Language Class Initialized
+ERROR - 2022-11-18 10:35:43 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:35:43 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:35:43 --> Config Class Initialized
+INFO - 2022-11-18 10:35:43 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:35:43 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:35:43 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:35:43 --> URI Class Initialized
+INFO - 2022-11-18 10:35:43 --> Router Class Initialized
+INFO - 2022-11-18 10:35:43 --> Output Class Initialized
+INFO - 2022-11-18 10:35:43 --> Security Class Initialized
+DEBUG - 2022-11-18 10:35:43 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:35:43 --> CSRF cookie sent
+INFO - 2022-11-18 10:35:43 --> CSRF token verified
+INFO - 2022-11-18 10:35:43 --> Input Class Initialized
+INFO - 2022-11-18 10:35:43 --> Language Class Initialized
+INFO - 2022-11-18 10:35:43 --> Loader Class Initialized
+INFO - 2022-11-18 10:35:43 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:35:43 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:35:43 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:35:43 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:35:43 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:35:43 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:35:43 --> Parser Class Initialized
+INFO - 2022-11-18 10:35:43 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:35:43 --> Pagination Class Initialized
+INFO - 2022-11-18 10:35:43 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:35:43 --> Controller Class Initialized
+INFO - 2022-11-18 10:35:43 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:35:43 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:35:43 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:35:43 --> Model "Customers" initialized
+INFO - 2022-11-18 10:35:43 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:35:43 --> Final output sent to browser
+DEBUG - 2022-11-18 10:35:43 --> Total execution time: 0.0334
+ERROR - 2022-11-18 10:36:05 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:36:05 --> Config Class Initialized
+INFO - 2022-11-18 10:36:05 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:36:05 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:36:05 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:36:05 --> URI Class Initialized
+INFO - 2022-11-18 10:36:05 --> Router Class Initialized
+INFO - 2022-11-18 10:36:05 --> Output Class Initialized
+INFO - 2022-11-18 10:36:05 --> Security Class Initialized
+DEBUG - 2022-11-18 10:36:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:36:05 --> CSRF cookie sent
+INFO - 2022-11-18 10:36:05 --> Input Class Initialized
+INFO - 2022-11-18 10:36:05 --> Language Class Initialized
+INFO - 2022-11-18 10:36:05 --> Loader Class Initialized
+INFO - 2022-11-18 10:36:05 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:36:05 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:36:05 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:36:05 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:36:05 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:36:05 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:36:05 --> Parser Class Initialized
+INFO - 2022-11-18 10:36:05 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:36:05 --> Pagination Class Initialized
+INFO - 2022-11-18 10:36:05 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:36:05 --> Controller Class Initialized
+INFO - 2022-11-18 10:36:05 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:36:05 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:36:05 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:36:05 --> Model "Customers" initialized
+INFO - 2022-11-18 10:36:05 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:36:05 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:36:05 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:36:05 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:36:05 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:36:05 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:36:06 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:36:06 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 10:36:06 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 10:36:06 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:36:06 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:36:06 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 10:36:06 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:36:06 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:36:06 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:36:06 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:36:06 --> Model "Products" initialized
+INFO - 2022-11-18 16:06:06 --> Model "reports" initialized
+INFO - 2022-11-18 16:06:06 --> Model "Users" initialized
+INFO - 2022-11-18 16:06:06 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:06:06 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:06:06 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:06:06 --> Final output sent to browser
+DEBUG - 2022-11-18 16:06:06 --> Total execution time: 0.4079
+ERROR - 2022-11-18 10:36:06 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:36:06 --> Config Class Initialized
+INFO - 2022-11-18 10:36:06 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:36:06 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:36:06 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:36:06 --> URI Class Initialized
+INFO - 2022-11-18 10:36:06 --> Router Class Initialized
+INFO - 2022-11-18 10:36:06 --> Output Class Initialized
+INFO - 2022-11-18 10:36:06 --> Security Class Initialized
+DEBUG - 2022-11-18 10:36:06 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:36:06 --> CSRF cookie sent
+INFO - 2022-11-18 10:36:06 --> Input Class Initialized
+INFO - 2022-11-18 10:36:06 --> Language Class Initialized
+ERROR - 2022-11-18 10:36:06 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:36:55 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:36:55 --> Config Class Initialized
+INFO - 2022-11-18 10:36:55 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:36:55 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:36:55 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:36:55 --> URI Class Initialized
+INFO - 2022-11-18 10:36:55 --> Router Class Initialized
+INFO - 2022-11-18 10:36:55 --> Output Class Initialized
+INFO - 2022-11-18 10:36:55 --> Security Class Initialized
+DEBUG - 2022-11-18 10:36:55 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:36:55 --> CSRF cookie sent
+INFO - 2022-11-18 10:36:55 --> Input Class Initialized
+INFO - 2022-11-18 10:36:55 --> Language Class Initialized
+INFO - 2022-11-18 10:36:55 --> Loader Class Initialized
+INFO - 2022-11-18 10:36:55 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:36:55 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:36:55 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:36:55 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:36:55 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:36:55 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:36:55 --> Parser Class Initialized
+INFO - 2022-11-18 10:36:55 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:36:55 --> Pagination Class Initialized
+INFO - 2022-11-18 10:36:55 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:36:55 --> Controller Class Initialized
+INFO - 2022-11-18 10:36:55 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:36:55 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:36:55 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:36:55 --> Model "Customers" initialized
+INFO - 2022-11-18 10:36:55 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:36:55 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:36:55 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:36:55 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:36:55 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:36:55 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:36:55 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:36:55 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 10:36:55 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 10:36:55 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:36:55 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:36:55 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 10:36:55 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:36:55 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:36:55 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:36:55 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:36:55 --> Model "Products" initialized
+INFO - 2022-11-18 16:06:55 --> Model "reports" initialized
+INFO - 2022-11-18 16:06:55 --> Model "Users" initialized
+INFO - 2022-11-18 16:06:55 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:06:55 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:06:55 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:06:55 --> Final output sent to browser
+DEBUG - 2022-11-18 16:06:55 --> Total execution time: 0.3966
+ERROR - 2022-11-18 10:36:55 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:36:55 --> Config Class Initialized
+INFO - 2022-11-18 10:36:55 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:36:55 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:36:55 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:36:55 --> URI Class Initialized
+INFO - 2022-11-18 10:36:55 --> Router Class Initialized
+INFO - 2022-11-18 10:36:55 --> Output Class Initialized
+INFO - 2022-11-18 10:36:55 --> Security Class Initialized
+DEBUG - 2022-11-18 10:36:55 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:36:55 --> CSRF cookie sent
+INFO - 2022-11-18 10:36:55 --> Input Class Initialized
+INFO - 2022-11-18 10:36:55 --> Language Class Initialized
+ERROR - 2022-11-18 10:36:55 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:36:56 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:36:56 --> Config Class Initialized
+INFO - 2022-11-18 10:36:56 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:36:56 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:36:56 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:36:56 --> URI Class Initialized
+INFO - 2022-11-18 10:36:56 --> Router Class Initialized
+INFO - 2022-11-18 10:36:56 --> Output Class Initialized
+INFO - 2022-11-18 10:36:56 --> Security Class Initialized
+DEBUG - 2022-11-18 10:36:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:36:56 --> CSRF cookie sent
+INFO - 2022-11-18 10:36:56 --> Input Class Initialized
+INFO - 2022-11-18 10:36:56 --> Language Class Initialized
+INFO - 2022-11-18 10:36:56 --> Loader Class Initialized
+INFO - 2022-11-18 10:36:56 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:36:56 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:36:56 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:36:56 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:36:56 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:36:56 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:36:56 --> Parser Class Initialized
+INFO - 2022-11-18 10:36:56 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:36:56 --> Pagination Class Initialized
+INFO - 2022-11-18 10:36:56 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:36:56 --> Controller Class Initialized
+INFO - 2022-11-18 10:36:56 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:36:56 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:36:56 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:36:56 --> Model "Customers" initialized
+INFO - 2022-11-18 10:36:56 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:36:56 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:36:56 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:36:56 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:36:56 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:36:56 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:36:56 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:36:56 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 10:36:56 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 10:36:56 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:36:56 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:36:56 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 10:36:56 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:36:56 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:36:56 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:36:56 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:36:56 --> Model "Products" initialized
+INFO - 2022-11-18 16:06:56 --> Model "reports" initialized
+INFO - 2022-11-18 16:06:56 --> Model "Users" initialized
+INFO - 2022-11-18 16:06:56 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:06:56 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:06:56 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:06:56 --> Final output sent to browser
+DEBUG - 2022-11-18 16:06:56 --> Total execution time: 0.3747
+ERROR - 2022-11-18 10:36:56 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:36:56 --> Config Class Initialized
+INFO - 2022-11-18 10:36:56 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:36:56 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:36:56 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:36:56 --> URI Class Initialized
+INFO - 2022-11-18 10:36:56 --> Router Class Initialized
+INFO - 2022-11-18 10:36:56 --> Output Class Initialized
+INFO - 2022-11-18 10:36:56 --> Security Class Initialized
+DEBUG - 2022-11-18 10:36:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:36:56 --> CSRF cookie sent
+INFO - 2022-11-18 10:36:56 --> Input Class Initialized
+INFO - 2022-11-18 10:36:56 --> Language Class Initialized
+ERROR - 2022-11-18 10:36:56 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:37:01 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:37:01 --> Config Class Initialized
+INFO - 2022-11-18 10:37:01 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:37:01 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:37:01 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:37:01 --> URI Class Initialized
+INFO - 2022-11-18 10:37:01 --> Router Class Initialized
+INFO - 2022-11-18 10:37:01 --> Output Class Initialized
+INFO - 2022-11-18 10:37:01 --> Security Class Initialized
+DEBUG - 2022-11-18 10:37:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:37:01 --> CSRF cookie sent
+INFO - 2022-11-18 10:37:01 --> Input Class Initialized
+INFO - 2022-11-18 10:37:01 --> Language Class Initialized
+INFO - 2022-11-18 10:37:01 --> Loader Class Initialized
+INFO - 2022-11-18 10:37:01 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:37:01 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:37:01 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:37:01 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:37:01 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:37:01 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:37:01 --> Parser Class Initialized
+INFO - 2022-11-18 10:37:01 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:37:01 --> Pagination Class Initialized
+INFO - 2022-11-18 10:37:01 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:37:01 --> Controller Class Initialized
+INFO - 2022-11-18 10:37:01 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:37:01 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:37:01 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:37:01 --> Model "Customers" initialized
+INFO - 2022-11-18 10:37:01 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:37:01 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:37:01 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:37:01 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:37:01 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:37:01 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:37:01 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:37:02 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 10:37:02 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 10:37:02 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:37:02 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:37:02 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 10:37:02 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:37:02 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:37:02 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:37:02 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:37:02 --> Model "Products" initialized
+INFO - 2022-11-18 16:07:02 --> Model "reports" initialized
+INFO - 2022-11-18 16:07:02 --> Model "Users" initialized
+INFO - 2022-11-18 16:07:02 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:07:02 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:07:02 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:07:02 --> Final output sent to browser
+DEBUG - 2022-11-18 16:07:02 --> Total execution time: 0.3908
+ERROR - 2022-11-18 10:37:02 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:37:02 --> Config Class Initialized
+INFO - 2022-11-18 10:37:02 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:37:02 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:37:02 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:37:02 --> URI Class Initialized
+INFO - 2022-11-18 10:37:02 --> Router Class Initialized
+INFO - 2022-11-18 10:37:02 --> Output Class Initialized
+INFO - 2022-11-18 10:37:02 --> Security Class Initialized
+DEBUG - 2022-11-18 10:37:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:37:02 --> CSRF cookie sent
+INFO - 2022-11-18 10:37:02 --> Input Class Initialized
+INFO - 2022-11-18 10:37:02 --> Language Class Initialized
+ERROR - 2022-11-18 10:37:02 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:37:25 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:37:25 --> Config Class Initialized
+INFO - 2022-11-18 10:37:25 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:37:25 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:37:25 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:37:25 --> URI Class Initialized
+INFO - 2022-11-18 10:37:25 --> Router Class Initialized
+INFO - 2022-11-18 10:37:25 --> Output Class Initialized
+INFO - 2022-11-18 10:37:25 --> Security Class Initialized
+DEBUG - 2022-11-18 10:37:25 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:37:25 --> CSRF cookie sent
+INFO - 2022-11-18 10:37:25 --> Input Class Initialized
+INFO - 2022-11-18 10:37:25 --> Language Class Initialized
+INFO - 2022-11-18 10:37:25 --> Loader Class Initialized
+INFO - 2022-11-18 10:37:25 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:37:25 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:37:25 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:37:25 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:37:25 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:37:25 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:37:25 --> Parser Class Initialized
+INFO - 2022-11-18 10:37:25 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:37:25 --> Pagination Class Initialized
+INFO - 2022-11-18 10:37:25 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:37:25 --> Controller Class Initialized
+INFO - 2022-11-18 10:37:25 --> Model "Web_settings" initialized
+ERROR - 2022-11-18 10:37:25 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:37:25 --> Config Class Initialized
+INFO - 2022-11-18 10:37:25 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:37:25 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:37:25 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:37:25 --> URI Class Initialized
+INFO - 2022-11-18 10:37:25 --> Router Class Initialized
+INFO - 2022-11-18 10:37:25 --> Output Class Initialized
+INFO - 2022-11-18 10:37:25 --> Security Class Initialized
+DEBUG - 2022-11-18 10:37:25 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:37:25 --> CSRF cookie sent
+INFO - 2022-11-18 10:37:25 --> Input Class Initialized
+INFO - 2022-11-18 10:37:25 --> Language Class Initialized
+INFO - 2022-11-18 10:37:25 --> Loader Class Initialized
+INFO - 2022-11-18 10:37:25 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:37:25 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:37:25 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:37:25 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:37:25 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:37:25 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:37:25 --> Parser Class Initialized
+INFO - 2022-11-18 10:37:25 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:37:25 --> Pagination Class Initialized
+INFO - 2022-11-18 10:37:25 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:37:25 --> Controller Class Initialized
+INFO - 2022-11-18 10:37:25 --> Model "Web_settings" initialized
+INFO - 2022-11-18 10:37:25 --> Model "reports" initialized
+INFO - 2022-11-18 10:37:25 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\user/admin_login_form.php
+DEBUG - 2022-11-18 10:37:25 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:37:25 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:37:25 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:37:25 --> Model "Products" initialized
+INFO - 2022-11-18 16:07:25 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:07:25 --> Final output sent to browser
+DEBUG - 2022-11-18 16:07:25 --> Total execution time: 0.0732
+ERROR - 2022-11-18 10:37:25 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:37:25 --> Config Class Initialized
+INFO - 2022-11-18 10:37:25 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:37:25 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:37:25 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:37:25 --> URI Class Initialized
+INFO - 2022-11-18 10:37:25 --> Router Class Initialized
+INFO - 2022-11-18 10:37:25 --> Output Class Initialized
+INFO - 2022-11-18 10:37:25 --> Security Class Initialized
+DEBUG - 2022-11-18 10:37:25 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:37:25 --> CSRF cookie sent
+INFO - 2022-11-18 10:37:25 --> Input Class Initialized
+INFO - 2022-11-18 10:37:25 --> Language Class Initialized
+ERROR - 2022-11-18 10:37:25 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:37:25 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:37:25 --> Config Class Initialized
+INFO - 2022-11-18 10:37:25 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:37:25 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:37:25 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:37:25 --> URI Class Initialized
+INFO - 2022-11-18 10:37:25 --> Router Class Initialized
+INFO - 2022-11-18 10:37:25 --> Output Class Initialized
+INFO - 2022-11-18 10:37:25 --> Security Class Initialized
+DEBUG - 2022-11-18 10:37:25 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:37:25 --> CSRF cookie sent
+INFO - 2022-11-18 10:37:25 --> Input Class Initialized
+INFO - 2022-11-18 10:37:25 --> Language Class Initialized
+ERROR - 2022-11-18 10:37:25 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:37:25 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:37:25 --> Config Class Initialized
+INFO - 2022-11-18 10:37:25 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:37:25 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:37:25 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:37:25 --> URI Class Initialized
+INFO - 2022-11-18 10:37:25 --> Router Class Initialized
+INFO - 2022-11-18 10:37:25 --> Output Class Initialized
+INFO - 2022-11-18 10:37:25 --> Security Class Initialized
+DEBUG - 2022-11-18 10:37:25 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:37:25 --> CSRF cookie sent
+INFO - 2022-11-18 10:37:25 --> Input Class Initialized
+INFO - 2022-11-18 10:37:25 --> Language Class Initialized
+ERROR - 2022-11-18 10:37:25 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:37:25 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:37:25 --> Config Class Initialized
+INFO - 2022-11-18 10:37:25 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:37:25 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:37:25 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:37:25 --> URI Class Initialized
+INFO - 2022-11-18 10:37:25 --> Router Class Initialized
+INFO - 2022-11-18 10:37:25 --> Output Class Initialized
+INFO - 2022-11-18 10:37:25 --> Security Class Initialized
+DEBUG - 2022-11-18 10:37:25 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:37:25 --> CSRF cookie sent
+INFO - 2022-11-18 10:37:25 --> Input Class Initialized
+INFO - 2022-11-18 10:37:25 --> Language Class Initialized
+ERROR - 2022-11-18 10:37:25 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:37:32 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:37:32 --> Config Class Initialized
+INFO - 2022-11-18 10:37:32 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:37:32 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:37:32 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:37:32 --> URI Class Initialized
+INFO - 2022-11-18 10:37:32 --> Router Class Initialized
+INFO - 2022-11-18 10:37:32 --> Output Class Initialized
+INFO - 2022-11-18 10:37:32 --> Security Class Initialized
+DEBUG - 2022-11-18 10:37:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:37:32 --> CSRF cookie sent
+INFO - 2022-11-18 10:37:32 --> CSRF token verified
+INFO - 2022-11-18 10:37:32 --> Input Class Initialized
+INFO - 2022-11-18 10:37:32 --> Language Class Initialized
+INFO - 2022-11-18 10:37:32 --> Loader Class Initialized
+INFO - 2022-11-18 10:37:32 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:37:32 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:37:32 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:37:32 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:37:32 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:37:32 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:37:32 --> Parser Class Initialized
+INFO - 2022-11-18 10:37:32 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:37:32 --> Pagination Class Initialized
+INFO - 2022-11-18 10:37:32 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:37:32 --> Controller Class Initialized
+INFO - 2022-11-18 10:37:32 --> Model "Web_settings" initialized
+INFO - 2022-11-18 10:37:32 --> Model "reports" initialized
+INFO - 2022-11-18 10:37:32 --> Email Class Initialized
+ERROR - 2022-11-18 10:37:34 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\wamp\www\Stockie_UAT_R6_Testing\system\libraries\Email.php 1902
+INFO - 2022-11-18 10:37:34 --> Language file loaded: language/english/email_lang.php
+ERROR - 2022-11-18 10:37:34 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:37:34 --> Config Class Initialized
+INFO - 2022-11-18 10:37:34 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:37:34 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:37:34 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:37:34 --> URI Class Initialized
+INFO - 2022-11-18 10:37:34 --> Router Class Initialized
+INFO - 2022-11-18 10:37:34 --> Output Class Initialized
+INFO - 2022-11-18 10:37:34 --> Security Class Initialized
+DEBUG - 2022-11-18 10:37:34 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:37:34 --> CSRF cookie sent
+INFO - 2022-11-18 10:37:34 --> Input Class Initialized
+INFO - 2022-11-18 10:37:34 --> Language Class Initialized
+INFO - 2022-11-18 10:37:34 --> Loader Class Initialized
+INFO - 2022-11-18 10:37:34 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:37:34 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:37:34 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:37:34 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:37:34 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:37:34 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:37:34 --> Parser Class Initialized
+INFO - 2022-11-18 10:37:34 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:37:34 --> Pagination Class Initialized
+INFO - 2022-11-18 10:37:34 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:37:34 --> Controller Class Initialized
+INFO - 2022-11-18 10:37:34 --> Model "Web_settings" initialized
+INFO - 2022-11-18 10:37:34 --> Model "reports" initialized
+INFO - 2022-11-18 10:37:34 --> Model "Users" initialized
+ERROR - 2022-11-18 10:37:34 --> Severity: Notice --> Trying to access array offset on value of type bool D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Auth.php 11
+ERROR - 2022-11-18 10:37:34 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Auth.php 11
+ERROR - 2022-11-18 10:37:34 --> Severity: Notice --> Trying to access array offset on value of type bool D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Auth.php 16
+ERROR - 2022-11-18 10:37:34 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Auth.php 16
+INFO - 2022-11-18 10:37:34 --> Final output sent to browser
+DEBUG - 2022-11-18 10:37:34 --> Total execution time: 0.0314
+ERROR - 2022-11-18 10:37:34 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:37:34 --> Config Class Initialized
+INFO - 2022-11-18 10:37:34 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:37:34 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:37:34 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:37:34 --> URI Class Initialized
+INFO - 2022-11-18 10:37:34 --> Router Class Initialized
+INFO - 2022-11-18 10:37:34 --> Output Class Initialized
+INFO - 2022-11-18 10:37:34 --> Security Class Initialized
+DEBUG - 2022-11-18 10:37:34 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:37:34 --> CSRF cookie sent
+INFO - 2022-11-18 10:37:34 --> Input Class Initialized
+INFO - 2022-11-18 10:37:34 --> Language Class Initialized
+INFO - 2022-11-18 10:37:34 --> Loader Class Initialized
+INFO - 2022-11-18 10:37:34 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:37:34 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:37:34 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:37:34 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:37:34 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:37:34 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:37:34 --> Parser Class Initialized
+INFO - 2022-11-18 10:37:34 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:37:34 --> Pagination Class Initialized
+INFO - 2022-11-18 10:37:34 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:37:34 --> Controller Class Initialized
+INFO - 2022-11-18 10:37:34 --> Model "Web_settings" initialized
+INFO - 2022-11-18 10:37:34 --> Model "reports" initialized
+INFO - 2022-11-18 10:37:34 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\user/admin_login_form.php
+DEBUG - 2022-11-18 10:37:34 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:37:34 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:37:34 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:37:34 --> Model "Products" initialized
+INFO - 2022-11-18 16:07:34 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:07:34 --> Final output sent to browser
+DEBUG - 2022-11-18 16:07:34 --> Total execution time: 0.0505
+ERROR - 2022-11-18 10:37:42 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:37:42 --> Config Class Initialized
+INFO - 2022-11-18 10:37:42 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:37:42 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:37:42 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:37:42 --> URI Class Initialized
+INFO - 2022-11-18 10:37:42 --> Router Class Initialized
+INFO - 2022-11-18 10:37:42 --> Output Class Initialized
+INFO - 2022-11-18 10:37:42 --> Security Class Initialized
+DEBUG - 2022-11-18 10:37:42 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:37:42 --> CSRF cookie sent
+INFO - 2022-11-18 10:37:42 --> CSRF token verified
+INFO - 2022-11-18 10:37:42 --> Input Class Initialized
+INFO - 2022-11-18 10:37:42 --> Language Class Initialized
+INFO - 2022-11-18 10:37:42 --> Loader Class Initialized
+INFO - 2022-11-18 10:37:42 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:37:42 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:37:42 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:37:42 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:37:42 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:37:42 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:37:42 --> Parser Class Initialized
+INFO - 2022-11-18 10:37:42 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:37:42 --> Pagination Class Initialized
+INFO - 2022-11-18 10:37:42 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:37:42 --> Controller Class Initialized
+INFO - 2022-11-18 10:37:42 --> Model "Web_settings" initialized
+INFO - 2022-11-18 10:37:42 --> Model "reports" initialized
+INFO - 2022-11-18 10:37:42 --> Email Class Initialized
+ERROR - 2022-11-18 10:37:44 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\wamp\www\Stockie_UAT_R6_Testing\system\libraries\Email.php 1902
+INFO - 2022-11-18 10:37:44 --> Language file loaded: language/english/email_lang.php
+ERROR - 2022-11-18 10:37:44 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:37:44 --> Config Class Initialized
+INFO - 2022-11-18 10:37:44 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:37:44 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:37:44 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:37:44 --> URI Class Initialized
+INFO - 2022-11-18 10:37:44 --> Router Class Initialized
+INFO - 2022-11-18 10:37:44 --> Output Class Initialized
+INFO - 2022-11-18 10:37:44 --> Security Class Initialized
+DEBUG - 2022-11-18 10:37:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:37:44 --> CSRF cookie sent
+INFO - 2022-11-18 10:37:44 --> Input Class Initialized
+INFO - 2022-11-18 10:37:44 --> Language Class Initialized
+INFO - 2022-11-18 10:37:44 --> Loader Class Initialized
+INFO - 2022-11-18 10:37:44 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:37:44 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:37:44 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:37:44 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:37:44 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:37:44 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:37:44 --> Parser Class Initialized
+INFO - 2022-11-18 10:37:44 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:37:44 --> Pagination Class Initialized
+INFO - 2022-11-18 10:37:44 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:37:44 --> Controller Class Initialized
+INFO - 2022-11-18 10:37:44 --> Model "Web_settings" initialized
+INFO - 2022-11-18 10:37:44 --> Model "reports" initialized
+INFO - 2022-11-18 10:37:44 --> Model "Users" initialized
+INFO - 2022-11-18 10:37:44 --> Final output sent to browser
+DEBUG - 2022-11-18 10:37:44 --> Total execution time: 0.0366
+ERROR - 2022-11-18 10:37:44 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:37:44 --> Config Class Initialized
+INFO - 2022-11-18 10:37:44 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:37:44 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:37:44 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:37:44 --> URI Class Initialized
+DEBUG - 2022-11-18 10:37:44 --> No URI present. Default controller set.
+INFO - 2022-11-18 10:37:44 --> Router Class Initialized
+INFO - 2022-11-18 10:37:44 --> Output Class Initialized
+INFO - 2022-11-18 10:37:44 --> Security Class Initialized
+DEBUG - 2022-11-18 10:37:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:37:44 --> CSRF cookie sent
+INFO - 2022-11-18 10:37:44 --> Input Class Initialized
+INFO - 2022-11-18 10:37:44 --> Language Class Initialized
+INFO - 2022-11-18 10:37:44 --> Loader Class Initialized
+INFO - 2022-11-18 10:37:44 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:37:44 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:37:44 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:37:44 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:37:44 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:37:44 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:37:44 --> Parser Class Initialized
+INFO - 2022-11-18 10:37:44 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:37:44 --> Pagination Class Initialized
+INFO - 2022-11-18 10:37:44 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:37:44 --> Controller Class Initialized
+INFO - 2022-11-18 10:37:44 --> Model "Web_settings" initialized
+INFO - 2022-11-18 10:37:44 --> Model "reports" initialized
+INFO - 2022-11-18 10:37:44 --> Model "Customers" initialized
+INFO - 2022-11-18 10:37:44 --> Model "Products" initialized
+INFO - 2022-11-18 10:37:44 --> Model "Suppliers" initialized
+DEBUG - 2022-11-18 10:37:44 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:37:44 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:37:44 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:37:44 --> Model "Purchases" initialized
+ERROR - 2022-11-18 10:37:44 --> Severity: Notice --> Undefined variable: vendor D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include\admin_home.php 258
+ERROR - 2022-11-18 10:37:44 --> Severity: Notice --> Undefined variable: chart_label D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include\admin_home.php 576
+INFO - 2022-11-18 10:37:44 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_home.php
+DEBUG - 2022-11-18 10:37:44 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:37:44 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:37:44 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 16:07:44 --> Model "Users" initialized
+INFO - 2022-11-18 16:07:44 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:07:44 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:07:44 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:07:44 --> Final output sent to browser
+DEBUG - 2022-11-18 16:07:44 --> Total execution time: 0.2798
+ERROR - 2022-11-18 10:37:45 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:37:45 --> Config Class Initialized
+INFO - 2022-11-18 10:37:45 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:37:45 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:37:45 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:37:45 --> URI Class Initialized
+INFO - 2022-11-18 10:37:45 --> Router Class Initialized
+INFO - 2022-11-18 10:37:45 --> Output Class Initialized
+INFO - 2022-11-18 10:37:45 --> Security Class Initialized
+DEBUG - 2022-11-18 10:37:45 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:37:45 --> CSRF cookie sent
+INFO - 2022-11-18 10:37:45 --> Input Class Initialized
+INFO - 2022-11-18 10:37:45 --> Language Class Initialized
+INFO - 2022-11-18 10:37:45 --> Loader Class Initialized
+INFO - 2022-11-18 10:37:45 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:37:45 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:37:45 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:37:45 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:37:45 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:37:45 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:37:45 --> Parser Class Initialized
+INFO - 2022-11-18 10:37:45 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:37:45 --> Pagination Class Initialized
+INFO - 2022-11-18 10:37:45 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:37:45 --> Controller Class Initialized
+INFO - 2022-11-18 10:37:45 --> Model "Web_settings" initialized
+INFO - 2022-11-18 10:37:45 --> Model "reports" initialized
+INFO - 2022-11-18 10:37:45 --> Final output sent to browser
+DEBUG - 2022-11-18 10:37:45 --> Total execution time: 0.0084
+ERROR - 2022-11-18 10:37:48 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:37:48 --> Config Class Initialized
+INFO - 2022-11-18 10:37:48 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:37:48 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:37:48 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:37:48 --> URI Class Initialized
+INFO - 2022-11-18 10:37:48 --> Router Class Initialized
+INFO - 2022-11-18 10:37:48 --> Output Class Initialized
+INFO - 2022-11-18 10:37:48 --> Security Class Initialized
+DEBUG - 2022-11-18 10:37:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:37:48 --> CSRF cookie sent
+INFO - 2022-11-18 10:37:48 --> Input Class Initialized
+INFO - 2022-11-18 10:37:48 --> Language Class Initialized
+INFO - 2022-11-18 10:37:48 --> Loader Class Initialized
+INFO - 2022-11-18 10:37:48 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:37:48 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:37:48 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:37:48 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:37:48 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:37:48 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:37:48 --> Parser Class Initialized
+INFO - 2022-11-18 10:37:48 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:37:48 --> Pagination Class Initialized
+INFO - 2022-11-18 10:37:48 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:37:48 --> Controller Class Initialized
+INFO - 2022-11-18 10:37:48 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:37:48 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:37:48 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:37:48 --> Model "Customers" initialized
+INFO - 2022-11-18 10:37:48 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:37:48 --> Model "Permission_model" initialized
+ERROR - 2022-11-18 10:37:48 --> Severity: Notice --> Undefined variable: sale D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\invoice.php 201
+ERROR - 2022-11-18 10:37:48 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\invoice.php 201
+ERROR - 2022-11-18 10:37:48 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\invoice.php 201
+INFO - 2022-11-18 10:37:48 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/invoice.php
+INFO - 2022-11-18 10:37:48 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/invoice.php
+DEBUG - 2022-11-18 10:37:48 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:37:48 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:37:48 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:37:48 --> Model "Products" initialized
+INFO - 2022-11-18 16:07:48 --> Model "reports" initialized
+INFO - 2022-11-18 16:07:48 --> Model "Users" initialized
+INFO - 2022-11-18 16:07:48 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:07:48 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:07:48 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:07:48 --> Final output sent to browser
+DEBUG - 2022-11-18 16:07:48 --> Total execution time: 0.2950
+ERROR - 2022-11-18 10:37:50 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:37:50 --> Config Class Initialized
+INFO - 2022-11-18 10:37:50 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:37:50 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:37:50 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:37:50 --> URI Class Initialized
+INFO - 2022-11-18 10:37:50 --> Router Class Initialized
+INFO - 2022-11-18 10:37:50 --> Output Class Initialized
+INFO - 2022-11-18 10:37:50 --> Security Class Initialized
+DEBUG - 2022-11-18 10:37:50 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:37:50 --> CSRF cookie sent
+INFO - 2022-11-18 10:37:50 --> CSRF token verified
+INFO - 2022-11-18 10:37:50 --> Input Class Initialized
+INFO - 2022-11-18 10:37:50 --> Language Class Initialized
+INFO - 2022-11-18 10:37:50 --> Loader Class Initialized
+INFO - 2022-11-18 10:37:50 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:37:50 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:37:50 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:37:50 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:37:50 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:37:50 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:37:50 --> Parser Class Initialized
+INFO - 2022-11-18 10:37:50 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:37:50 --> Pagination Class Initialized
+INFO - 2022-11-18 10:37:50 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:37:50 --> Controller Class Initialized
+INFO - 2022-11-18 10:37:50 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:37:50 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:37:50 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:37:50 --> Model "Customers" initialized
+INFO - 2022-11-18 10:37:50 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:37:50 --> Severity: Notice --> Undefined offset: 0 D:\wamp\www\Stockie_UAT_R6_Testing\application\controllers\Cinvoice.php 1166
+ERROR - 2022-11-18 10:37:50 --> Severity: Notice --> Trying to get property 'menu' of non-object D:\wamp\www\Stockie_UAT_R6_Testing\application\controllers\Cinvoice.php 1166
+ERROR - 2022-11-18 10:37:50 --> Severity: Notice --> Undefined offset: 0 D:\wamp\www\Stockie_UAT_R6_Testing\application\controllers\Cinvoice.php 1167
+ERROR - 2022-11-18 10:37:50 --> Severity: Notice --> Trying to get property 'submenu' of non-object D:\wamp\www\Stockie_UAT_R6_Testing\application\controllers\Cinvoice.php 1167
+ERROR - 2022-11-18 10:37:50 --> Severity: Notice --> Undefined offset: 0 D:\wamp\www\Stockie_UAT_R6_Testing\application\controllers\Cinvoice.php 1168
+ERROR - 2022-11-18 10:37:50 --> Severity: Notice --> Trying to get property 'setting' of non-object D:\wamp\www\Stockie_UAT_R6_Testing\application\controllers\Cinvoice.php 1168
+INFO - 2022-11-18 10:37:50 --> Final output sent to browser
+DEBUG - 2022-11-18 10:37:50 --> Total execution time: 0.0128
+ERROR - 2022-11-18 10:37:51 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:37:51 --> Config Class Initialized
+INFO - 2022-11-18 10:37:51 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:37:51 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:37:51 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:37:51 --> URI Class Initialized
+INFO - 2022-11-18 10:37:51 --> Router Class Initialized
+INFO - 2022-11-18 10:37:51 --> Output Class Initialized
+INFO - 2022-11-18 10:37:51 --> Security Class Initialized
+DEBUG - 2022-11-18 10:37:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:37:51 --> CSRF cookie sent
+INFO - 2022-11-18 10:37:51 --> Input Class Initialized
+INFO - 2022-11-18 10:37:51 --> Language Class Initialized
+INFO - 2022-11-18 10:37:51 --> Loader Class Initialized
+INFO - 2022-11-18 10:37:51 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:37:51 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:37:51 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:37:51 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:37:51 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:37:51 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:37:51 --> Parser Class Initialized
+INFO - 2022-11-18 10:37:51 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:37:51 --> Pagination Class Initialized
+INFO - 2022-11-18 10:37:51 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:37:51 --> Controller Class Initialized
+INFO - 2022-11-18 10:37:51 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:37:51 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:37:51 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:37:51 --> Model "Customers" initialized
+INFO - 2022-11-18 10:37:51 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:37:51 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:37:51 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:37:51 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:37:51 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:37:51 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:37:51 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:37:51 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 10:37:51 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 10:37:51 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:37:51 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:37:51 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 10:37:51 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:37:51 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:37:51 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:37:51 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:37:51 --> Model "Products" initialized
+INFO - 2022-11-18 16:07:51 --> Model "reports" initialized
+INFO - 2022-11-18 16:07:51 --> Model "Users" initialized
+INFO - 2022-11-18 16:07:51 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:07:51 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:07:51 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:07:51 --> Final output sent to browser
+DEBUG - 2022-11-18 16:07:51 --> Total execution time: 0.4001
+ERROR - 2022-11-18 10:37:52 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:37:52 --> Config Class Initialized
+INFO - 2022-11-18 10:37:52 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:37:52 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:37:52 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:37:52 --> URI Class Initialized
+INFO - 2022-11-18 10:37:52 --> Router Class Initialized
+INFO - 2022-11-18 10:37:52 --> Output Class Initialized
+INFO - 2022-11-18 10:37:52 --> Security Class Initialized
+DEBUG - 2022-11-18 10:37:52 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:37:52 --> CSRF cookie sent
+INFO - 2022-11-18 10:37:52 --> CSRF token verified
+INFO - 2022-11-18 10:37:52 --> Input Class Initialized
+INFO - 2022-11-18 10:37:52 --> Language Class Initialized
+INFO - 2022-11-18 10:37:52 --> Loader Class Initialized
+INFO - 2022-11-18 10:37:52 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:37:52 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:37:52 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:37:52 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:37:52 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:37:52 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:37:52 --> Parser Class Initialized
+INFO - 2022-11-18 10:37:52 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:37:52 --> Pagination Class Initialized
+INFO - 2022-11-18 10:37:52 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:37:52 --> Controller Class Initialized
+INFO - 2022-11-18 10:37:52 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:37:52 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:37:52 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:37:52 --> Model "Customers" initialized
+INFO - 2022-11-18 10:37:52 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:37:52 --> Final output sent to browser
+DEBUG - 2022-11-18 10:37:52 --> Total execution time: 0.0394
+ERROR - 2022-11-18 10:37:53 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:37:53 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:37:53 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:37:53 --> Config Class Initialized
+INFO - 2022-11-18 10:37:53 --> Hooks Class Initialized
+INFO - 2022-11-18 10:37:53 --> Config Class Initialized
+DEBUG - 2022-11-18 10:37:53 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:37:53 --> Config Class Initialized
+INFO - 2022-11-18 10:37:53 --> Hooks Class Initialized
+INFO - 2022-11-18 10:37:53 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:37:53 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:37:53 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:37:53 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:37:53 --> URI Class Initialized
+DEBUG - 2022-11-18 10:37:53 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:37:53 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:37:53 --> URI Class Initialized
+INFO - 2022-11-18 10:37:53 --> Router Class Initialized
+INFO - 2022-11-18 10:37:53 --> URI Class Initialized
+INFO - 2022-11-18 10:37:53 --> Router Class Initialized
+INFO - 2022-11-18 10:37:53 --> Output Class Initialized
+INFO - 2022-11-18 10:37:53 --> Output Class Initialized
+INFO - 2022-11-18 10:37:53 --> Router Class Initialized
+INFO - 2022-11-18 10:37:53 --> Security Class Initialized
+INFO - 2022-11-18 10:37:53 --> Security Class Initialized
+INFO - 2022-11-18 10:37:53 --> Output Class Initialized
+DEBUG - 2022-11-18 10:37:53 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-11-18 10:37:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:37:53 --> CSRF cookie sent
+INFO - 2022-11-18 10:37:53 --> Security Class Initialized
+INFO - 2022-11-18 10:37:53 --> CSRF cookie sent
+INFO - 2022-11-18 10:37:53 --> Input Class Initialized
+INFO - 2022-11-18 10:37:53 --> Input Class Initialized
+DEBUG - 2022-11-18 10:37:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:37:53 --> Language Class Initialized
+INFO - 2022-11-18 10:37:53 --> CSRF cookie sent
+INFO - 2022-11-18 10:37:53 --> Language Class Initialized
+INFO - 2022-11-18 10:37:53 --> Input Class Initialized
+ERROR - 2022-11-18 10:37:53 --> 404 Page Not Found: Assets/plugins
+INFO - 2022-11-18 10:37:53 --> Language Class Initialized
+ERROR - 2022-11-18 10:37:53 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:37:53 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:37:53 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:37:53 --> Config Class Initialized
+INFO - 2022-11-18 10:37:53 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:37:53 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:37:53 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:37:53 --> URI Class Initialized
+INFO - 2022-11-18 10:37:53 --> Router Class Initialized
+INFO - 2022-11-18 10:37:53 --> Output Class Initialized
+INFO - 2022-11-18 10:37:53 --> Security Class Initialized
+DEBUG - 2022-11-18 10:37:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:37:53 --> CSRF cookie sent
+INFO - 2022-11-18 10:37:53 --> Input Class Initialized
+INFO - 2022-11-18 10:37:53 --> Language Class Initialized
+ERROR - 2022-11-18 10:37:53 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:38:05 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:38:05 --> Config Class Initialized
+INFO - 2022-11-18 10:38:05 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:38:05 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:38:05 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:38:05 --> URI Class Initialized
+INFO - 2022-11-18 10:38:05 --> Router Class Initialized
+INFO - 2022-11-18 10:38:05 --> Output Class Initialized
+INFO - 2022-11-18 10:38:05 --> Security Class Initialized
+DEBUG - 2022-11-18 10:38:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:38:05 --> CSRF cookie sent
+INFO - 2022-11-18 10:38:05 --> CSRF token verified
+INFO - 2022-11-18 10:38:05 --> Input Class Initialized
+INFO - 2022-11-18 10:38:05 --> Language Class Initialized
+INFO - 2022-11-18 10:38:05 --> Loader Class Initialized
+INFO - 2022-11-18 10:38:05 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:38:05 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:38:05 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:38:05 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:38:05 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:38:05 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:38:05 --> Parser Class Initialized
+INFO - 2022-11-18 10:38:05 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:38:05 --> Pagination Class Initialized
+INFO - 2022-11-18 10:38:05 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:38:05 --> Controller Class Initialized
+INFO - 2022-11-18 10:38:05 --> Model "Web_settings" initialized
+INFO - 2022-11-18 10:38:05 --> Model "reports" initialized
+INFO - 2022-11-18 10:38:05 --> Email Class Initialized
+ERROR - 2022-11-18 10:38:07 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\wamp\www\Stockie_UAT_R6_Testing\system\libraries\Email.php 1902
+INFO - 2022-11-18 10:38:07 --> Language file loaded: language/english/email_lang.php
+ERROR - 2022-11-18 10:38:07 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:38:07 --> Config Class Initialized
+INFO - 2022-11-18 10:38:07 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:38:07 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:38:07 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:38:07 --> URI Class Initialized
+INFO - 2022-11-18 10:38:07 --> Router Class Initialized
+INFO - 2022-11-18 10:38:07 --> Output Class Initialized
+INFO - 2022-11-18 10:38:07 --> Security Class Initialized
+DEBUG - 2022-11-18 10:38:07 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:38:07 --> CSRF cookie sent
+INFO - 2022-11-18 10:38:07 --> Input Class Initialized
+INFO - 2022-11-18 10:38:07 --> Language Class Initialized
+INFO - 2022-11-18 10:38:07 --> Loader Class Initialized
+INFO - 2022-11-18 10:38:07 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:38:07 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:38:07 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:38:07 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:38:07 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:38:07 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:38:07 --> Parser Class Initialized
+INFO - 2022-11-18 10:38:07 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:38:07 --> Pagination Class Initialized
+INFO - 2022-11-18 10:38:07 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:38:07 --> Controller Class Initialized
+INFO - 2022-11-18 10:38:07 --> Model "Web_settings" initialized
+INFO - 2022-11-18 10:38:07 --> Model "reports" initialized
+INFO - 2022-11-18 10:38:07 --> Model "Users" initialized
+ERROR - 2022-11-18 10:38:07 --> Severity: Notice --> Trying to access array offset on value of type bool D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Auth.php 11
+ERROR - 2022-11-18 10:38:07 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Auth.php 11
+ERROR - 2022-11-18 10:38:07 --> Severity: Notice --> Trying to access array offset on value of type bool D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Auth.php 16
+ERROR - 2022-11-18 10:38:07 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\libraries\Auth.php 16
+INFO - 2022-11-18 10:38:07 --> Final output sent to browser
+DEBUG - 2022-11-18 10:38:07 --> Total execution time: 0.0370
+ERROR - 2022-11-18 10:38:07 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:38:07 --> Config Class Initialized
+INFO - 2022-11-18 10:38:07 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:38:07 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:38:07 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:38:07 --> URI Class Initialized
+INFO - 2022-11-18 10:38:07 --> Router Class Initialized
+INFO - 2022-11-18 10:38:07 --> Output Class Initialized
+INFO - 2022-11-18 10:38:07 --> Security Class Initialized
+DEBUG - 2022-11-18 10:38:07 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:38:07 --> CSRF cookie sent
+INFO - 2022-11-18 10:38:07 --> Input Class Initialized
+INFO - 2022-11-18 10:38:07 --> Language Class Initialized
+INFO - 2022-11-18 10:38:07 --> Loader Class Initialized
+INFO - 2022-11-18 10:38:07 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:38:07 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:38:07 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:38:07 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:38:07 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:38:07 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:38:07 --> Parser Class Initialized
+INFO - 2022-11-18 10:38:07 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:38:07 --> Pagination Class Initialized
+INFO - 2022-11-18 10:38:07 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:38:07 --> Controller Class Initialized
+INFO - 2022-11-18 10:38:07 --> Model "Web_settings" initialized
+INFO - 2022-11-18 10:38:07 --> Model "reports" initialized
+INFO - 2022-11-18 10:38:07 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\user/admin_login_form.php
+DEBUG - 2022-11-18 10:38:07 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:38:07 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:38:07 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:38:07 --> Model "Products" initialized
+INFO - 2022-11-18 16:08:07 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:08:07 --> Final output sent to browser
+DEBUG - 2022-11-18 16:08:07 --> Total execution time: 0.0553
+ERROR - 2022-11-18 10:38:07 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:38:07 --> Config Class Initialized
+INFO - 2022-11-18 10:38:07 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:38:07 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:38:07 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:38:07 --> URI Class Initialized
+INFO - 2022-11-18 10:38:07 --> Router Class Initialized
+INFO - 2022-11-18 10:38:07 --> Output Class Initialized
+INFO - 2022-11-18 10:38:07 --> Security Class Initialized
+DEBUG - 2022-11-18 10:38:07 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:38:07 --> CSRF cookie sent
+INFO - 2022-11-18 10:38:07 --> Input Class Initialized
+INFO - 2022-11-18 10:38:07 --> Language Class Initialized
+INFO - 2022-11-18 10:38:07 --> Loader Class Initialized
+INFO - 2022-11-18 10:38:07 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:38:07 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:38:07 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:38:07 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:38:07 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:38:07 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:38:07 --> Parser Class Initialized
+INFO - 2022-11-18 10:38:07 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:38:07 --> Pagination Class Initialized
+INFO - 2022-11-18 10:38:07 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:38:07 --> Controller Class Initialized
+INFO - 2022-11-18 10:38:07 --> Model "Web_settings" initialized
+INFO - 2022-11-18 10:38:07 --> Model "reports" initialized
+INFO - 2022-11-18 10:38:07 --> Model "Customers" initialized
+INFO - 2022-11-18 10:38:07 --> Model "Products" initialized
+INFO - 2022-11-18 10:38:07 --> Model "Suppliers" initialized
+DEBUG - 2022-11-18 10:38:07 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:38:07 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:38:07 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:38:07 --> Model "Purchases" initialized
+ERROR - 2022-11-18 10:38:07 --> Severity: Notice --> Undefined variable: vendor D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include\admin_home.php 258
+ERROR - 2022-11-18 10:38:07 --> Severity: Notice --> Undefined variable: chart_label D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include\admin_home.php 576
+INFO - 2022-11-18 10:38:07 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_home.php
+DEBUG - 2022-11-18 10:38:07 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:38:07 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:38:07 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 16:08:07 --> Model "Users" initialized
+INFO - 2022-11-18 16:08:08 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:08:08 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:08:08 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:08:08 --> Final output sent to browser
+DEBUG - 2022-11-18 16:08:08 --> Total execution time: 0.3109
+ERROR - 2022-11-18 10:38:08 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:38:08 --> Config Class Initialized
+INFO - 2022-11-18 10:38:08 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:38:08 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:38:08 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:38:08 --> URI Class Initialized
+INFO - 2022-11-18 10:38:08 --> Router Class Initialized
+INFO - 2022-11-18 10:38:08 --> Output Class Initialized
+INFO - 2022-11-18 10:38:08 --> Security Class Initialized
+DEBUG - 2022-11-18 10:38:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:38:08 --> CSRF cookie sent
+INFO - 2022-11-18 10:38:08 --> Input Class Initialized
+INFO - 2022-11-18 10:38:08 --> Language Class Initialized
+ERROR - 2022-11-18 10:38:08 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:38:08 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:38:08 --> Config Class Initialized
+INFO - 2022-11-18 10:38:08 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:38:08 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:38:08 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:38:08 --> URI Class Initialized
+INFO - 2022-11-18 10:38:08 --> Router Class Initialized
+INFO - 2022-11-18 10:38:08 --> Output Class Initialized
+INFO - 2022-11-18 10:38:08 --> Security Class Initialized
+DEBUG - 2022-11-18 10:38:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:38:08 --> CSRF cookie sent
+INFO - 2022-11-18 10:38:08 --> Input Class Initialized
+INFO - 2022-11-18 10:38:08 --> Language Class Initialized
+ERROR - 2022-11-18 10:38:08 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:38:08 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:38:08 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:38:08 --> Config Class Initialized
+INFO - 2022-11-18 10:38:08 --> Config Class Initialized
+INFO - 2022-11-18 10:38:08 --> Hooks Class Initialized
+INFO - 2022-11-18 10:38:08 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:38:08 --> UTF-8 Support Enabled
+DEBUG - 2022-11-18 10:38:08 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:38:08 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:38:08 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:38:08 --> URI Class Initialized
+INFO - 2022-11-18 10:38:08 --> URI Class Initialized
+INFO - 2022-11-18 10:38:08 --> Router Class Initialized
+INFO - 2022-11-18 10:38:08 --> Router Class Initialized
+INFO - 2022-11-18 10:38:08 --> Output Class Initialized
+INFO - 2022-11-18 10:38:08 --> Output Class Initialized
+INFO - 2022-11-18 10:38:08 --> Security Class Initialized
+INFO - 2022-11-18 10:38:08 --> Security Class Initialized
+DEBUG - 2022-11-18 10:38:08 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-11-18 10:38:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:38:08 --> CSRF cookie sent
+INFO - 2022-11-18 10:38:08 --> CSRF cookie sent
+INFO - 2022-11-18 10:38:08 --> Input Class Initialized
+INFO - 2022-11-18 10:38:08 --> Input Class Initialized
+INFO - 2022-11-18 10:38:08 --> Language Class Initialized
+INFO - 2022-11-18 10:38:08 --> Language Class Initialized
+ERROR - 2022-11-18 10:38:08 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:38:08 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:38:08 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:38:08 --> Config Class Initialized
+INFO - 2022-11-18 10:38:08 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:38:08 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:38:08 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:38:08 --> URI Class Initialized
+INFO - 2022-11-18 10:38:08 --> Router Class Initialized
+INFO - 2022-11-18 10:38:08 --> Output Class Initialized
+INFO - 2022-11-18 10:38:08 --> Security Class Initialized
+DEBUG - 2022-11-18 10:38:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:38:08 --> CSRF cookie sent
+INFO - 2022-11-18 10:38:08 --> Input Class Initialized
+INFO - 2022-11-18 10:38:08 --> Language Class Initialized
+INFO - 2022-11-18 10:38:08 --> Loader Class Initialized
+INFO - 2022-11-18 10:38:08 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:38:08 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:38:08 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:38:08 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:38:08 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:38:08 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:38:08 --> Parser Class Initialized
+INFO - 2022-11-18 10:38:08 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:38:08 --> Pagination Class Initialized
+INFO - 2022-11-18 10:38:08 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:38:08 --> Controller Class Initialized
+INFO - 2022-11-18 10:38:08 --> Model "Web_settings" initialized
+INFO - 2022-11-18 10:38:08 --> Model "reports" initialized
+INFO - 2022-11-18 10:38:08 --> Final output sent to browser
+DEBUG - 2022-11-18 10:38:08 --> Total execution time: 0.0101
+ERROR - 2022-11-18 10:38:11 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:38:11 --> Config Class Initialized
+INFO - 2022-11-18 10:38:11 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:38:11 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:38:11 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:38:11 --> URI Class Initialized
+INFO - 2022-11-18 10:38:11 --> Router Class Initialized
+INFO - 2022-11-18 10:38:11 --> Output Class Initialized
+INFO - 2022-11-18 10:38:11 --> Security Class Initialized
+DEBUG - 2022-11-18 10:38:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:38:11 --> CSRF cookie sent
+INFO - 2022-11-18 10:38:11 --> Input Class Initialized
+INFO - 2022-11-18 10:38:11 --> Language Class Initialized
+INFO - 2022-11-18 10:38:11 --> Loader Class Initialized
+INFO - 2022-11-18 10:38:11 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:38:11 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:38:11 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:38:11 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:38:11 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:38:11 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:38:11 --> Parser Class Initialized
+INFO - 2022-11-18 10:38:11 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:38:11 --> Pagination Class Initialized
+INFO - 2022-11-18 10:38:11 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:38:11 --> Controller Class Initialized
+INFO - 2022-11-18 10:38:11 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:38:11 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:38:11 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:38:11 --> Model "Customers" initialized
+INFO - 2022-11-18 10:38:11 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:38:11 --> Model "Permission_model" initialized
+ERROR - 2022-11-18 10:38:11 --> Severity: Notice --> Undefined variable: sale D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\invoice.php 201
+ERROR - 2022-11-18 10:38:11 --> Severity: Notice --> Trying to access array offset on value of type null D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\invoice.php 201
+ERROR - 2022-11-18 10:38:11 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\invoice.php 201
+INFO - 2022-11-18 10:38:11 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/invoice.php
+INFO - 2022-11-18 10:38:11 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/invoice.php
+DEBUG - 2022-11-18 10:38:11 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:38:11 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:38:11 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:38:11 --> Model "Products" initialized
+INFO - 2022-11-18 16:08:11 --> Model "reports" initialized
+INFO - 2022-11-18 16:08:11 --> Model "Users" initialized
+INFO - 2022-11-18 16:08:11 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:08:11 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:08:11 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:08:11 --> Final output sent to browser
+DEBUG - 2022-11-18 16:08:11 --> Total execution time: 0.2681
+ERROR - 2022-11-18 10:38:11 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:38:11 --> Config Class Initialized
+INFO - 2022-11-18 10:38:11 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:38:11 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:38:11 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:38:11 --> URI Class Initialized
+INFO - 2022-11-18 10:38:11 --> Router Class Initialized
+INFO - 2022-11-18 10:38:11 --> Output Class Initialized
+INFO - 2022-11-18 10:38:11 --> Security Class Initialized
+DEBUG - 2022-11-18 10:38:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:38:11 --> CSRF cookie sent
+INFO - 2022-11-18 10:38:11 --> Input Class Initialized
+INFO - 2022-11-18 10:38:11 --> Language Class Initialized
+ERROR - 2022-11-18 10:38:11 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:38:11 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:38:11 --> Config Class Initialized
+INFO - 2022-11-18 10:38:11 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:38:11 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:38:11 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:38:11 --> URI Class Initialized
+INFO - 2022-11-18 10:38:11 --> Router Class Initialized
+INFO - 2022-11-18 10:38:11 --> Output Class Initialized
+INFO - 2022-11-18 10:38:11 --> Security Class Initialized
+DEBUG - 2022-11-18 10:38:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:38:11 --> CSRF cookie sent
+INFO - 2022-11-18 10:38:11 --> Input Class Initialized
+INFO - 2022-11-18 10:38:11 --> Language Class Initialized
+ERROR - 2022-11-18 10:38:11 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:38:12 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:38:12 --> Config Class Initialized
+INFO - 2022-11-18 10:38:12 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:38:12 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:38:12 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:38:12 --> URI Class Initialized
+INFO - 2022-11-18 10:38:12 --> Router Class Initialized
+INFO - 2022-11-18 10:38:12 --> Output Class Initialized
+INFO - 2022-11-18 10:38:12 --> Security Class Initialized
+DEBUG - 2022-11-18 10:38:12 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:38:12 --> CSRF cookie sent
+INFO - 2022-11-18 10:38:12 --> Input Class Initialized
+INFO - 2022-11-18 10:38:12 --> Language Class Initialized
+ERROR - 2022-11-18 10:38:12 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:38:12 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:38:12 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:38:12 --> Config Class Initialized
+INFO - 2022-11-18 10:38:12 --> Hooks Class Initialized
+INFO - 2022-11-18 10:38:12 --> Config Class Initialized
+INFO - 2022-11-18 10:38:12 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:38:12 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:38:12 --> Utf8 Class Initialized
+DEBUG - 2022-11-18 10:38:12 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:38:12 --> URI Class Initialized
+INFO - 2022-11-18 10:38:12 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:38:12 --> URI Class Initialized
+INFO - 2022-11-18 10:38:12 --> Router Class Initialized
+INFO - 2022-11-18 10:38:12 --> Output Class Initialized
+INFO - 2022-11-18 10:38:12 --> Router Class Initialized
+INFO - 2022-11-18 10:38:12 --> Security Class Initialized
+INFO - 2022-11-18 10:38:12 --> Output Class Initialized
+DEBUG - 2022-11-18 10:38:12 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:38:12 --> CSRF cookie sent
+INFO - 2022-11-18 10:38:12 --> Security Class Initialized
+INFO - 2022-11-18 10:38:12 --> Input Class Initialized
+DEBUG - 2022-11-18 10:38:12 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:38:12 --> Language Class Initialized
+INFO - 2022-11-18 10:38:12 --> CSRF cookie sent
+INFO - 2022-11-18 10:38:12 --> Input Class Initialized
+ERROR - 2022-11-18 10:38:12 --> 404 Page Not Found: Assets/datatables
+INFO - 2022-11-18 10:38:12 --> Language Class Initialized
+ERROR - 2022-11-18 10:38:12 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:38:12 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:38:12 --> Config Class Initialized
+INFO - 2022-11-18 10:38:12 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:38:12 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:38:12 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:38:12 --> URI Class Initialized
+INFO - 2022-11-18 10:38:12 --> Router Class Initialized
+INFO - 2022-11-18 10:38:12 --> Output Class Initialized
+INFO - 2022-11-18 10:38:12 --> Security Class Initialized
+DEBUG - 2022-11-18 10:38:12 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:38:12 --> CSRF cookie sent
+INFO - 2022-11-18 10:38:12 --> CSRF token verified
+INFO - 2022-11-18 10:38:12 --> Input Class Initialized
+INFO - 2022-11-18 10:38:12 --> Language Class Initialized
+INFO - 2022-11-18 10:38:12 --> Loader Class Initialized
+INFO - 2022-11-18 10:38:12 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:38:12 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:38:12 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:38:12 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:38:12 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:38:12 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:38:12 --> Parser Class Initialized
+INFO - 2022-11-18 10:38:12 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:38:12 --> Pagination Class Initialized
+INFO - 2022-11-18 10:38:12 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:38:12 --> Controller Class Initialized
+INFO - 2022-11-18 10:38:12 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:38:12 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:38:12 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:38:12 --> Model "Customers" initialized
+INFO - 2022-11-18 10:38:12 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:38:12 --> Severity: Notice --> Undefined offset: 0 D:\wamp\www\Stockie_UAT_R6_Testing\application\controllers\Cinvoice.php 1166
+ERROR - 2022-11-18 10:38:12 --> Severity: Notice --> Trying to get property 'menu' of non-object D:\wamp\www\Stockie_UAT_R6_Testing\application\controllers\Cinvoice.php 1166
+ERROR - 2022-11-18 10:38:12 --> Severity: Notice --> Undefined offset: 0 D:\wamp\www\Stockie_UAT_R6_Testing\application\controllers\Cinvoice.php 1167
+ERROR - 2022-11-18 10:38:12 --> Severity: Notice --> Trying to get property 'submenu' of non-object D:\wamp\www\Stockie_UAT_R6_Testing\application\controllers\Cinvoice.php 1167
+ERROR - 2022-11-18 10:38:12 --> Severity: Notice --> Undefined offset: 0 D:\wamp\www\Stockie_UAT_R6_Testing\application\controllers\Cinvoice.php 1168
+ERROR - 2022-11-18 10:38:12 --> Severity: Notice --> Trying to get property 'setting' of non-object D:\wamp\www\Stockie_UAT_R6_Testing\application\controllers\Cinvoice.php 1168
+INFO - 2022-11-18 10:38:12 --> Final output sent to browser
+DEBUG - 2022-11-18 10:38:12 --> Total execution time: 0.0402
+ERROR - 2022-11-18 10:38:13 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:38:13 --> Config Class Initialized
+INFO - 2022-11-18 10:38:13 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:38:13 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:38:13 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:38:13 --> URI Class Initialized
+INFO - 2022-11-18 10:38:13 --> Router Class Initialized
+INFO - 2022-11-18 10:38:13 --> Output Class Initialized
+INFO - 2022-11-18 10:38:13 --> Security Class Initialized
+DEBUG - 2022-11-18 10:38:13 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:38:13 --> CSRF cookie sent
+INFO - 2022-11-18 10:38:13 --> Input Class Initialized
+INFO - 2022-11-18 10:38:13 --> Language Class Initialized
+INFO - 2022-11-18 10:38:13 --> Loader Class Initialized
+INFO - 2022-11-18 10:38:13 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:38:13 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:38:13 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:38:13 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:38:13 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:38:13 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:38:13 --> Parser Class Initialized
+INFO - 2022-11-18 10:38:13 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:38:13 --> Pagination Class Initialized
+INFO - 2022-11-18 10:38:13 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:38:13 --> Controller Class Initialized
+INFO - 2022-11-18 10:38:13 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:38:13 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:38:13 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:38:13 --> Model "Customers" initialized
+INFO - 2022-11-18 10:38:13 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:38:13 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:38:13 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:38:13 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:38:13 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:38:13 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:38:13 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:38:13 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 10:38:13 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 10:38:13 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:38:13 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:38:13 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 10:38:13 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:38:13 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:38:13 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:38:13 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:38:13 --> Model "Products" initialized
+INFO - 2022-11-18 16:08:13 --> Model "reports" initialized
+INFO - 2022-11-18 16:08:13 --> Model "Users" initialized
+INFO - 2022-11-18 16:08:13 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:08:13 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:08:13 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:08:13 --> Final output sent to browser
+DEBUG - 2022-11-18 16:08:13 --> Total execution time: 0.4119
+ERROR - 2022-11-18 10:38:14 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:38:14 --> Config Class Initialized
+INFO - 2022-11-18 10:38:14 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:38:14 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:38:14 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:38:14 --> URI Class Initialized
+INFO - 2022-11-18 10:38:14 --> Router Class Initialized
+INFO - 2022-11-18 10:38:14 --> Output Class Initialized
+INFO - 2022-11-18 10:38:14 --> Security Class Initialized
+DEBUG - 2022-11-18 10:38:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:38:14 --> CSRF cookie sent
+INFO - 2022-11-18 10:38:14 --> Input Class Initialized
+INFO - 2022-11-18 10:38:14 --> Language Class Initialized
+ERROR - 2022-11-18 10:38:14 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:40:00 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:40:00 --> Config Class Initialized
+INFO - 2022-11-18 10:40:00 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:40:00 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:40:00 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:40:00 --> URI Class Initialized
+INFO - 2022-11-18 10:40:00 --> Router Class Initialized
+INFO - 2022-11-18 10:40:00 --> Output Class Initialized
+INFO - 2022-11-18 10:40:00 --> Security Class Initialized
+DEBUG - 2022-11-18 10:40:00 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:40:00 --> CSRF cookie sent
+INFO - 2022-11-18 10:40:00 --> Input Class Initialized
+INFO - 2022-11-18 10:40:00 --> Language Class Initialized
+INFO - 2022-11-18 10:40:00 --> Loader Class Initialized
+INFO - 2022-11-18 10:40:00 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:40:00 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:40:00 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:40:00 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:40:00 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:40:00 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:40:00 --> Parser Class Initialized
+INFO - 2022-11-18 10:40:00 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:40:00 --> Pagination Class Initialized
+INFO - 2022-11-18 10:40:00 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:40:00 --> Controller Class Initialized
+INFO - 2022-11-18 10:40:00 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:40:00 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:40:00 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:40:00 --> Model "Customers" initialized
+INFO - 2022-11-18 10:40:00 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:40:00 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:40:00 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:40:00 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:40:00 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:40:00 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:40:00 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:40:00 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 10:40:00 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 10:40:00 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:40:00 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:40:00 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 10:40:00 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:40:00 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:40:00 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:40:00 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:40:00 --> Model "Products" initialized
+INFO - 2022-11-18 16:10:00 --> Model "reports" initialized
+INFO - 2022-11-18 16:10:00 --> Model "Users" initialized
+INFO - 2022-11-18 16:10:00 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:10:00 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:10:00 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:10:00 --> Final output sent to browser
+DEBUG - 2022-11-18 16:10:00 --> Total execution time: 0.5352
+ERROR - 2022-11-18 10:40:00 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:40:00 --> Config Class Initialized
+INFO - 2022-11-18 10:40:00 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:40:00 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:40:00 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:40:00 --> URI Class Initialized
+INFO - 2022-11-18 10:40:00 --> Router Class Initialized
+INFO - 2022-11-18 10:40:00 --> Output Class Initialized
+INFO - 2022-11-18 10:40:00 --> Security Class Initialized
+DEBUG - 2022-11-18 10:40:00 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:40:00 --> CSRF cookie sent
+INFO - 2022-11-18 10:40:00 --> Input Class Initialized
+INFO - 2022-11-18 10:40:00 --> Language Class Initialized
+ERROR - 2022-11-18 10:40:00 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:40:04 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:40:04 --> Config Class Initialized
+INFO - 2022-11-18 10:40:04 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:40:04 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:40:04 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:40:04 --> URI Class Initialized
+INFO - 2022-11-18 10:40:04 --> Router Class Initialized
+INFO - 2022-11-18 10:40:04 --> Output Class Initialized
+INFO - 2022-11-18 10:40:04 --> Security Class Initialized
+DEBUG - 2022-11-18 10:40:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:40:04 --> CSRF cookie sent
+INFO - 2022-11-18 10:40:04 --> Input Class Initialized
+INFO - 2022-11-18 10:40:04 --> Language Class Initialized
+ERROR - 2022-11-18 10:40:04 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:40:04 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:40:04 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:40:04 --> Config Class Initialized
+INFO - 2022-11-18 10:40:04 --> Config Class Initialized
+INFO - 2022-11-18 10:40:04 --> Hooks Class Initialized
+INFO - 2022-11-18 10:40:04 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:40:04 --> UTF-8 Support Enabled
+DEBUG - 2022-11-18 10:40:04 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:40:04 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:40:04 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:40:04 --> URI Class Initialized
+INFO - 2022-11-18 10:40:04 --> URI Class Initialized
+INFO - 2022-11-18 10:40:04 --> Router Class Initialized
+INFO - 2022-11-18 10:40:04 --> Router Class Initialized
+INFO - 2022-11-18 10:40:04 --> Output Class Initialized
+INFO - 2022-11-18 10:40:04 --> Output Class Initialized
+INFO - 2022-11-18 10:40:04 --> Security Class Initialized
+INFO - 2022-11-18 10:40:04 --> Security Class Initialized
+DEBUG - 2022-11-18 10:40:04 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-11-18 10:40:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:40:04 --> CSRF cookie sent
+INFO - 2022-11-18 10:40:04 --> CSRF cookie sent
+INFO - 2022-11-18 10:40:04 --> Input Class Initialized
+INFO - 2022-11-18 10:40:04 --> Input Class Initialized
+INFO - 2022-11-18 10:40:04 --> Language Class Initialized
+INFO - 2022-11-18 10:40:04 --> Language Class Initialized
+ERROR - 2022-11-18 10:40:04 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:40:04 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:40:23 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:40:23 --> Config Class Initialized
+INFO - 2022-11-18 10:40:23 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:40:23 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:40:23 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:40:23 --> URI Class Initialized
+INFO - 2022-11-18 10:40:23 --> Router Class Initialized
+INFO - 2022-11-18 10:40:23 --> Output Class Initialized
+INFO - 2022-11-18 10:40:23 --> Security Class Initialized
+DEBUG - 2022-11-18 10:40:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:40:23 --> CSRF cookie sent
+INFO - 2022-11-18 10:40:23 --> Input Class Initialized
+INFO - 2022-11-18 10:40:23 --> Language Class Initialized
+INFO - 2022-11-18 10:40:23 --> Loader Class Initialized
+INFO - 2022-11-18 10:40:23 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:40:23 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:40:23 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:40:23 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:40:23 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:40:23 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:40:23 --> Parser Class Initialized
+INFO - 2022-11-18 10:40:23 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:40:23 --> Pagination Class Initialized
+INFO - 2022-11-18 10:40:23 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:40:23 --> Controller Class Initialized
+INFO - 2022-11-18 10:40:23 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:40:23 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:40:23 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:40:23 --> Model "Customers" initialized
+INFO - 2022-11-18 10:40:23 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:40:23 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:40:23 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:40:23 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:40:23 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:40:23 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:40:23 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:40:23 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 10:40:24 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 10:40:24 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:40:24 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:40:24 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 10:40:24 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:40:24 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:40:24 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:40:24 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:40:24 --> Model "Products" initialized
+INFO - 2022-11-18 16:10:24 --> Model "reports" initialized
+INFO - 2022-11-18 16:10:24 --> Model "Users" initialized
+INFO - 2022-11-18 16:10:24 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:10:24 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:10:24 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:10:24 --> Final output sent to browser
+DEBUG - 2022-11-18 16:10:24 --> Total execution time: 0.4529
+ERROR - 2022-11-18 10:40:24 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:40:24 --> Config Class Initialized
+INFO - 2022-11-18 10:40:24 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:40:24 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:40:24 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:40:24 --> URI Class Initialized
+INFO - 2022-11-18 10:40:24 --> Router Class Initialized
+INFO - 2022-11-18 10:40:24 --> Output Class Initialized
+INFO - 2022-11-18 10:40:24 --> Security Class Initialized
+DEBUG - 2022-11-18 10:40:24 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:40:24 --> CSRF cookie sent
+INFO - 2022-11-18 10:40:24 --> Input Class Initialized
+INFO - 2022-11-18 10:40:24 --> Language Class Initialized
+ERROR - 2022-11-18 10:40:24 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:40:56 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:40:56 --> Config Class Initialized
+INFO - 2022-11-18 10:40:56 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:40:56 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:40:56 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:40:56 --> URI Class Initialized
+INFO - 2022-11-18 10:40:56 --> Router Class Initialized
+INFO - 2022-11-18 10:40:56 --> Output Class Initialized
+INFO - 2022-11-18 10:40:56 --> Security Class Initialized
+DEBUG - 2022-11-18 10:40:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:40:56 --> CSRF cookie sent
+INFO - 2022-11-18 10:40:56 --> Input Class Initialized
+INFO - 2022-11-18 10:40:56 --> Language Class Initialized
+INFO - 2022-11-18 10:40:56 --> Loader Class Initialized
+INFO - 2022-11-18 10:40:56 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:40:56 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:40:56 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:40:56 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:40:56 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:40:56 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:40:56 --> Parser Class Initialized
+INFO - 2022-11-18 10:40:56 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:40:56 --> Pagination Class Initialized
+INFO - 2022-11-18 10:40:56 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:40:56 --> Controller Class Initialized
+INFO - 2022-11-18 10:40:56 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:40:56 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:40:56 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:40:56 --> Model "Customers" initialized
+INFO - 2022-11-18 10:40:56 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:40:56 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:40:56 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:40:56 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:40:56 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:40:56 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:40:56 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:40:56 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 10:40:56 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 10:40:56 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:40:56 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:40:56 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 10:40:56 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:40:56 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:40:56 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:40:56 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:40:56 --> Model "Products" initialized
+INFO - 2022-11-18 16:10:56 --> Model "reports" initialized
+INFO - 2022-11-18 16:10:56 --> Model "Users" initialized
+INFO - 2022-11-18 16:10:56 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:10:56 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:10:56 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:10:56 --> Final output sent to browser
+DEBUG - 2022-11-18 16:10:56 --> Total execution time: 0.3900
+ERROR - 2022-11-18 10:40:56 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:40:56 --> Config Class Initialized
+INFO - 2022-11-18 10:40:56 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:40:56 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:40:56 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:40:56 --> URI Class Initialized
+INFO - 2022-11-18 10:40:56 --> Router Class Initialized
+INFO - 2022-11-18 10:40:56 --> Output Class Initialized
+INFO - 2022-11-18 10:40:56 --> Security Class Initialized
+DEBUG - 2022-11-18 10:40:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:40:56 --> CSRF cookie sent
+INFO - 2022-11-18 10:40:56 --> Input Class Initialized
+INFO - 2022-11-18 10:40:56 --> Language Class Initialized
+ERROR - 2022-11-18 10:40:56 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:40:57 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:40:57 --> Config Class Initialized
+INFO - 2022-11-18 10:40:57 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:40:57 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:40:57 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:40:57 --> URI Class Initialized
+INFO - 2022-11-18 10:40:57 --> Router Class Initialized
+INFO - 2022-11-18 10:40:57 --> Output Class Initialized
+INFO - 2022-11-18 10:40:57 --> Security Class Initialized
+DEBUG - 2022-11-18 10:40:57 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:40:57 --> CSRF cookie sent
+INFO - 2022-11-18 10:40:57 --> Input Class Initialized
+INFO - 2022-11-18 10:40:57 --> Language Class Initialized
+ERROR - 2022-11-18 10:40:57 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:40:57 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:40:57 --> Config Class Initialized
+INFO - 2022-11-18 10:40:57 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:40:57 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:40:57 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:40:57 --> URI Class Initialized
+INFO - 2022-11-18 10:40:57 --> Router Class Initialized
+INFO - 2022-11-18 10:40:57 --> Output Class Initialized
+INFO - 2022-11-18 10:40:57 --> Security Class Initialized
+DEBUG - 2022-11-18 10:40:57 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:40:57 --> CSRF cookie sent
+INFO - 2022-11-18 10:40:57 --> Input Class Initialized
+INFO - 2022-11-18 10:40:57 --> Language Class Initialized
+ERROR - 2022-11-18 10:40:57 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:40:57 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:40:57 --> Config Class Initialized
+INFO - 2022-11-18 10:40:57 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:40:57 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:40:57 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:40:57 --> URI Class Initialized
+INFO - 2022-11-18 10:40:57 --> Router Class Initialized
+INFO - 2022-11-18 10:40:57 --> Output Class Initialized
+INFO - 2022-11-18 10:40:57 --> Security Class Initialized
+DEBUG - 2022-11-18 10:40:57 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:40:57 --> CSRF cookie sent
+INFO - 2022-11-18 10:40:57 --> Input Class Initialized
+INFO - 2022-11-18 10:40:57 --> Language Class Initialized
+ERROR - 2022-11-18 10:40:57 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:40:57 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:40:57 --> Config Class Initialized
+INFO - 2022-11-18 10:40:57 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:40:57 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:40:57 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:40:57 --> URI Class Initialized
+INFO - 2022-11-18 10:40:57 --> Router Class Initialized
+INFO - 2022-11-18 10:40:57 --> Output Class Initialized
+INFO - 2022-11-18 10:40:57 --> Security Class Initialized
+DEBUG - 2022-11-18 10:40:57 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:40:57 --> CSRF cookie sent
+INFO - 2022-11-18 10:40:57 --> CSRF token verified
+INFO - 2022-11-18 10:40:57 --> Input Class Initialized
+INFO - 2022-11-18 10:40:57 --> Language Class Initialized
+INFO - 2022-11-18 10:40:57 --> Loader Class Initialized
+INFO - 2022-11-18 10:40:57 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:40:57 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:40:57 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:40:57 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:40:57 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:40:57 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:40:57 --> Parser Class Initialized
+INFO - 2022-11-18 10:40:57 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:40:57 --> Pagination Class Initialized
+INFO - 2022-11-18 10:40:57 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:40:57 --> Controller Class Initialized
+INFO - 2022-11-18 10:40:57 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:40:57 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:40:57 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:40:57 --> Model "Customers" initialized
+INFO - 2022-11-18 10:40:57 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:40:57 --> Final output sent to browser
+DEBUG - 2022-11-18 10:40:57 --> Total execution time: 0.0197
+ERROR - 2022-11-18 10:41:01 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:41:01 --> Config Class Initialized
+INFO - 2022-11-18 10:41:01 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:41:01 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:01 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:01 --> URI Class Initialized
+INFO - 2022-11-18 10:41:01 --> Router Class Initialized
+INFO - 2022-11-18 10:41:01 --> Output Class Initialized
+INFO - 2022-11-18 10:41:01 --> Security Class Initialized
+DEBUG - 2022-11-18 10:41:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:01 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:01 --> Input Class Initialized
+INFO - 2022-11-18 10:41:01 --> Language Class Initialized
+INFO - 2022-11-18 10:41:01 --> Loader Class Initialized
+INFO - 2022-11-18 10:41:01 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:41:01 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:41:01 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:41:01 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:41:01 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:41:01 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:41:01 --> Parser Class Initialized
+INFO - 2022-11-18 10:41:01 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:41:01 --> Pagination Class Initialized
+INFO - 2022-11-18 10:41:01 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:41:01 --> Controller Class Initialized
+INFO - 2022-11-18 10:41:01 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:41:01 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:41:01 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:41:01 --> Model "Customers" initialized
+INFO - 2022-11-18 10:41:01 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:41:01 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:41:01 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:41:01 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:41:01 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:41:01 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:41:01 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:41:01 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 10:41:01 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 10:41:01 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:41:01 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:41:01 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 10:41:01 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:41:01 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:41:01 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:41:01 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:41:01 --> Model "Products" initialized
+INFO - 2022-11-18 16:11:01 --> Model "reports" initialized
+INFO - 2022-11-18 16:11:01 --> Model "Users" initialized
+INFO - 2022-11-18 16:11:01 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:11:01 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:11:01 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:11:01 --> Final output sent to browser
+DEBUG - 2022-11-18 16:11:01 --> Total execution time: 0.4079
+ERROR - 2022-11-18 10:41:01 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:41:01 --> Config Class Initialized
+INFO - 2022-11-18 10:41:01 --> Hooks Class Initialized
+ERROR - 2022-11-18 10:41:01 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+DEBUG - 2022-11-18 10:41:01 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:01 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:01 --> Config Class Initialized
+INFO - 2022-11-18 10:41:01 --> URI Class Initialized
+INFO - 2022-11-18 10:41:01 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:41:01 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:01 --> Router Class Initialized
+INFO - 2022-11-18 10:41:01 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:01 --> Output Class Initialized
+INFO - 2022-11-18 10:41:01 --> URI Class Initialized
+INFO - 2022-11-18 10:41:01 --> Security Class Initialized
+INFO - 2022-11-18 10:41:01 --> Router Class Initialized
+DEBUG - 2022-11-18 10:41:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:01 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:01 --> Output Class Initialized
+INFO - 2022-11-18 10:41:01 --> Input Class Initialized
+INFO - 2022-11-18 10:41:01 --> Security Class Initialized
+INFO - 2022-11-18 10:41:01 --> Language Class Initialized
+DEBUG - 2022-11-18 10:41:01 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2022-11-18 10:41:01 --> 404 Page Not Found: Assets/css
+INFO - 2022-11-18 10:41:01 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:01 --> Input Class Initialized
+INFO - 2022-11-18 10:41:01 --> Language Class Initialized
+ERROR - 2022-11-18 10:41:01 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:41:01 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:41:01 --> Config Class Initialized
+INFO - 2022-11-18 10:41:01 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:41:01 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:01 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:01 --> URI Class Initialized
+INFO - 2022-11-18 10:41:01 --> Router Class Initialized
+INFO - 2022-11-18 10:41:01 --> Output Class Initialized
+INFO - 2022-11-18 10:41:01 --> Security Class Initialized
+DEBUG - 2022-11-18 10:41:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:01 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:01 --> Input Class Initialized
+INFO - 2022-11-18 10:41:01 --> Language Class Initialized
+ERROR - 2022-11-18 10:41:01 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:41:01 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:41:01 --> Config Class Initialized
+INFO - 2022-11-18 10:41:01 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:41:01 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:01 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:01 --> URI Class Initialized
+INFO - 2022-11-18 10:41:01 --> Router Class Initialized
+INFO - 2022-11-18 10:41:01 --> Output Class Initialized
+INFO - 2022-11-18 10:41:01 --> Security Class Initialized
+DEBUG - 2022-11-18 10:41:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:01 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:01 --> Input Class Initialized
+INFO - 2022-11-18 10:41:01 --> Language Class Initialized
+ERROR - 2022-11-18 10:41:01 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:41:01 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:41:01 --> Config Class Initialized
+INFO - 2022-11-18 10:41:01 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:41:01 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:01 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:01 --> URI Class Initialized
+INFO - 2022-11-18 10:41:01 --> Router Class Initialized
+INFO - 2022-11-18 10:41:01 --> Output Class Initialized
+INFO - 2022-11-18 10:41:01 --> Security Class Initialized
+DEBUG - 2022-11-18 10:41:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:01 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:01 --> CSRF token verified
+INFO - 2022-11-18 10:41:01 --> Input Class Initialized
+INFO - 2022-11-18 10:41:01 --> Language Class Initialized
+INFO - 2022-11-18 10:41:01 --> Loader Class Initialized
+INFO - 2022-11-18 10:41:01 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:41:01 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:41:01 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:41:01 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:41:01 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:41:01 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:41:01 --> Parser Class Initialized
+INFO - 2022-11-18 10:41:01 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:41:01 --> Pagination Class Initialized
+INFO - 2022-11-18 10:41:01 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:41:01 --> Controller Class Initialized
+INFO - 2022-11-18 10:41:01 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:41:01 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:41:01 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:41:01 --> Model "Customers" initialized
+INFO - 2022-11-18 10:41:01 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:41:01 --> Final output sent to browser
+DEBUG - 2022-11-18 10:41:01 --> Total execution time: 0.0415
+ERROR - 2022-11-18 10:41:03 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:41:03 --> Config Class Initialized
+INFO - 2022-11-18 10:41:03 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:41:03 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:03 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:03 --> URI Class Initialized
+INFO - 2022-11-18 10:41:03 --> Router Class Initialized
+INFO - 2022-11-18 10:41:03 --> Output Class Initialized
+INFO - 2022-11-18 10:41:03 --> Security Class Initialized
+DEBUG - 2022-11-18 10:41:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:03 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:03 --> Input Class Initialized
+INFO - 2022-11-18 10:41:03 --> Language Class Initialized
+INFO - 2022-11-18 10:41:03 --> Loader Class Initialized
+INFO - 2022-11-18 10:41:03 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:41:03 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:41:03 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:41:03 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:41:03 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:41:03 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:41:03 --> Parser Class Initialized
+INFO - 2022-11-18 10:41:03 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:41:03 --> Pagination Class Initialized
+INFO - 2022-11-18 10:41:03 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:41:03 --> Controller Class Initialized
+INFO - 2022-11-18 10:41:03 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:41:03 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:41:03 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:41:03 --> Model "Customers" initialized
+INFO - 2022-11-18 10:41:03 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:41:03 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:41:03 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:41:03 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:41:03 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:41:03 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:41:03 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:41:03 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 10:41:03 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 10:41:03 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:41:03 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:41:03 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 10:41:03 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:41:03 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:41:03 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:41:03 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:41:03 --> Model "Products" initialized
+INFO - 2022-11-18 16:11:03 --> Model "reports" initialized
+INFO - 2022-11-18 16:11:03 --> Model "Users" initialized
+INFO - 2022-11-18 16:11:04 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:11:04 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:11:04 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:11:04 --> Final output sent to browser
+DEBUG - 2022-11-18 16:11:04 --> Total execution time: 0.4451
+ERROR - 2022-11-18 10:41:04 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:41:04 --> Config Class Initialized
+INFO - 2022-11-18 10:41:04 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:41:04 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:04 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:04 --> URI Class Initialized
+INFO - 2022-11-18 10:41:04 --> Router Class Initialized
+INFO - 2022-11-18 10:41:04 --> Output Class Initialized
+INFO - 2022-11-18 10:41:04 --> Security Class Initialized
+DEBUG - 2022-11-18 10:41:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:04 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:04 --> Input Class Initialized
+INFO - 2022-11-18 10:41:04 --> Language Class Initialized
+ERROR - 2022-11-18 10:41:04 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:41:04 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:41:04 --> Config Class Initialized
+INFO - 2022-11-18 10:41:04 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:41:04 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:04 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:04 --> URI Class Initialized
+INFO - 2022-11-18 10:41:04 --> Router Class Initialized
+INFO - 2022-11-18 10:41:04 --> Output Class Initialized
+INFO - 2022-11-18 10:41:04 --> Security Class Initialized
+DEBUG - 2022-11-18 10:41:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:04 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:04 --> Input Class Initialized
+INFO - 2022-11-18 10:41:04 --> Language Class Initialized
+ERROR - 2022-11-18 10:41:04 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:41:04 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:41:04 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:41:04 --> Config Class Initialized
+INFO - 2022-11-18 10:41:04 --> Config Class Initialized
+INFO - 2022-11-18 10:41:04 --> Hooks Class Initialized
+INFO - 2022-11-18 10:41:04 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:41:04 --> UTF-8 Support Enabled
+DEBUG - 2022-11-18 10:41:04 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:04 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:04 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:04 --> URI Class Initialized
+INFO - 2022-11-18 10:41:04 --> URI Class Initialized
+INFO - 2022-11-18 10:41:04 --> Router Class Initialized
+INFO - 2022-11-18 10:41:04 --> Router Class Initialized
+INFO - 2022-11-18 10:41:04 --> Output Class Initialized
+INFO - 2022-11-18 10:41:04 --> Output Class Initialized
+INFO - 2022-11-18 10:41:04 --> Security Class Initialized
+INFO - 2022-11-18 10:41:04 --> Security Class Initialized
+DEBUG - 2022-11-18 10:41:04 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-11-18 10:41:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:04 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:04 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:04 --> Input Class Initialized
+INFO - 2022-11-18 10:41:04 --> Input Class Initialized
+INFO - 2022-11-18 10:41:04 --> Language Class Initialized
+INFO - 2022-11-18 10:41:04 --> Language Class Initialized
+ERROR - 2022-11-18 10:41:04 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:41:04 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:41:04 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:41:04 --> Config Class Initialized
+INFO - 2022-11-18 10:41:04 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:41:04 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:04 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:04 --> URI Class Initialized
+INFO - 2022-11-18 10:41:04 --> Router Class Initialized
+INFO - 2022-11-18 10:41:04 --> Output Class Initialized
+INFO - 2022-11-18 10:41:04 --> Security Class Initialized
+DEBUG - 2022-11-18 10:41:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:04 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:04 --> CSRF token verified
+INFO - 2022-11-18 10:41:04 --> Input Class Initialized
+INFO - 2022-11-18 10:41:04 --> Language Class Initialized
+INFO - 2022-11-18 10:41:04 --> Loader Class Initialized
+INFO - 2022-11-18 10:41:04 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:41:04 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:41:04 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:41:04 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:41:04 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:41:04 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:41:04 --> Parser Class Initialized
+INFO - 2022-11-18 10:41:04 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:41:04 --> Pagination Class Initialized
+INFO - 2022-11-18 10:41:04 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:41:04 --> Controller Class Initialized
+INFO - 2022-11-18 10:41:04 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:41:04 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:41:04 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:41:04 --> Model "Customers" initialized
+INFO - 2022-11-18 10:41:04 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:41:04 --> Final output sent to browser
+DEBUG - 2022-11-18 10:41:04 --> Total execution time: 0.0098
+ERROR - 2022-11-18 10:41:05 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:41:05 --> Config Class Initialized
+INFO - 2022-11-18 10:41:05 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:41:05 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:05 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:05 --> URI Class Initialized
+INFO - 2022-11-18 10:41:05 --> Router Class Initialized
+INFO - 2022-11-18 10:41:05 --> Output Class Initialized
+INFO - 2022-11-18 10:41:05 --> Security Class Initialized
+DEBUG - 2022-11-18 10:41:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:05 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:05 --> Input Class Initialized
+INFO - 2022-11-18 10:41:05 --> Language Class Initialized
+INFO - 2022-11-18 10:41:05 --> Loader Class Initialized
+INFO - 2022-11-18 10:41:05 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:41:05 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:41:05 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:41:05 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:41:05 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:41:05 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:41:05 --> Parser Class Initialized
+INFO - 2022-11-18 10:41:05 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:41:05 --> Pagination Class Initialized
+INFO - 2022-11-18 10:41:05 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:41:05 --> Controller Class Initialized
+INFO - 2022-11-18 10:41:05 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:41:05 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:41:05 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:41:05 --> Model "Customers" initialized
+INFO - 2022-11-18 10:41:05 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:41:05 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:41:05 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:41:05 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:41:05 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:41:05 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:41:05 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:41:05 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 10:41:05 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 10:41:05 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:41:05 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:41:05 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 10:41:05 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:41:05 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:41:05 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:41:05 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:41:05 --> Model "Products" initialized
+INFO - 2022-11-18 16:11:05 --> Model "reports" initialized
+INFO - 2022-11-18 16:11:05 --> Model "Users" initialized
+INFO - 2022-11-18 16:11:05 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:11:05 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:11:05 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:11:05 --> Final output sent to browser
+DEBUG - 2022-11-18 16:11:05 --> Total execution time: 0.4732
+ERROR - 2022-11-18 10:41:05 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:41:05 --> Config Class Initialized
+INFO - 2022-11-18 10:41:05 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:41:05 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:05 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:05 --> URI Class Initialized
+INFO - 2022-11-18 10:41:05 --> Router Class Initialized
+INFO - 2022-11-18 10:41:05 --> Output Class Initialized
+INFO - 2022-11-18 10:41:05 --> Security Class Initialized
+DEBUG - 2022-11-18 10:41:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:05 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:05 --> Input Class Initialized
+INFO - 2022-11-18 10:41:05 --> Language Class Initialized
+ERROR - 2022-11-18 10:41:05 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:41:05 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:41:05 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:41:05 --> Config Class Initialized
+INFO - 2022-11-18 10:41:05 --> Config Class Initialized
+INFO - 2022-11-18 10:41:05 --> Hooks Class Initialized
+INFO - 2022-11-18 10:41:05 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:41:05 --> UTF-8 Support Enabled
+DEBUG - 2022-11-18 10:41:05 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:05 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:05 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:05 --> URI Class Initialized
+INFO - 2022-11-18 10:41:05 --> URI Class Initialized
+INFO - 2022-11-18 10:41:05 --> Router Class Initialized
+INFO - 2022-11-18 10:41:05 --> Router Class Initialized
+INFO - 2022-11-18 10:41:05 --> Output Class Initialized
+INFO - 2022-11-18 10:41:05 --> Output Class Initialized
+INFO - 2022-11-18 10:41:05 --> Security Class Initialized
+INFO - 2022-11-18 10:41:05 --> Security Class Initialized
+DEBUG - 2022-11-18 10:41:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:05 --> CSRF cookie sent
+DEBUG - 2022-11-18 10:41:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:05 --> Input Class Initialized
+INFO - 2022-11-18 10:41:05 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:05 --> Input Class Initialized
+INFO - 2022-11-18 10:41:05 --> Language Class Initialized
+INFO - 2022-11-18 10:41:05 --> Language Class Initialized
+ERROR - 2022-11-18 10:41:05 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:41:05 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:41:05 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:41:05 --> Config Class Initialized
+INFO - 2022-11-18 10:41:05 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:41:05 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:05 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:05 --> URI Class Initialized
+INFO - 2022-11-18 10:41:05 --> Router Class Initialized
+INFO - 2022-11-18 10:41:05 --> Output Class Initialized
+INFO - 2022-11-18 10:41:05 --> Security Class Initialized
+DEBUG - 2022-11-18 10:41:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:05 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:05 --> Input Class Initialized
+INFO - 2022-11-18 10:41:05 --> Language Class Initialized
+ERROR - 2022-11-18 10:41:05 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:41:05 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:41:05 --> Config Class Initialized
+INFO - 2022-11-18 10:41:05 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:41:05 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:05 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:05 --> URI Class Initialized
+INFO - 2022-11-18 10:41:05 --> Router Class Initialized
+INFO - 2022-11-18 10:41:05 --> Output Class Initialized
+INFO - 2022-11-18 10:41:05 --> Security Class Initialized
+DEBUG - 2022-11-18 10:41:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:05 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:05 --> CSRF token verified
+INFO - 2022-11-18 10:41:05 --> Input Class Initialized
+INFO - 2022-11-18 10:41:05 --> Language Class Initialized
+INFO - 2022-11-18 10:41:05 --> Loader Class Initialized
+INFO - 2022-11-18 10:41:05 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:41:05 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:41:05 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:41:05 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:41:05 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:41:05 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:41:05 --> Parser Class Initialized
+INFO - 2022-11-18 10:41:05 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:41:05 --> Pagination Class Initialized
+INFO - 2022-11-18 10:41:05 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:41:05 --> Controller Class Initialized
+INFO - 2022-11-18 10:41:05 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:41:05 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:41:05 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:41:05 --> Model "Customers" initialized
+INFO - 2022-11-18 10:41:05 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:41:05 --> Final output sent to browser
+DEBUG - 2022-11-18 10:41:05 --> Total execution time: 0.0305
+ERROR - 2022-11-18 10:41:22 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:41:22 --> Config Class Initialized
+INFO - 2022-11-18 10:41:22 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:41:22 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:22 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:22 --> URI Class Initialized
+INFO - 2022-11-18 10:41:22 --> Router Class Initialized
+INFO - 2022-11-18 10:41:22 --> Output Class Initialized
+INFO - 2022-11-18 10:41:22 --> Security Class Initialized
+DEBUG - 2022-11-18 10:41:22 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:22 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:22 --> Input Class Initialized
+INFO - 2022-11-18 10:41:22 --> Language Class Initialized
+INFO - 2022-11-18 10:41:22 --> Loader Class Initialized
+INFO - 2022-11-18 10:41:22 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:41:22 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:41:22 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:41:22 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:41:22 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:41:22 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:41:22 --> Parser Class Initialized
+INFO - 2022-11-18 10:41:22 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:41:22 --> Pagination Class Initialized
+INFO - 2022-11-18 10:41:22 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:41:22 --> Controller Class Initialized
+INFO - 2022-11-18 10:41:22 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:41:22 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:41:22 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:41:22 --> Model "Customers" initialized
+INFO - 2022-11-18 10:41:22 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:41:22 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:41:22 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:41:22 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:41:22 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:41:22 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:41:23 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:41:23 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 10:41:23 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 10:41:23 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:41:23 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:41:23 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 10:41:23 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:41:23 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:41:23 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:41:23 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:41:23 --> Model "Products" initialized
+INFO - 2022-11-18 16:11:23 --> Model "reports" initialized
+INFO - 2022-11-18 16:11:23 --> Model "Users" initialized
+INFO - 2022-11-18 16:11:23 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:11:23 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:11:23 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:11:23 --> Final output sent to browser
+DEBUG - 2022-11-18 16:11:23 --> Total execution time: 0.4540
+ERROR - 2022-11-18 10:41:23 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:41:23 --> Config Class Initialized
+INFO - 2022-11-18 10:41:23 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:41:23 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:23 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:23 --> URI Class Initialized
+INFO - 2022-11-18 10:41:23 --> Router Class Initialized
+INFO - 2022-11-18 10:41:23 --> Output Class Initialized
+INFO - 2022-11-18 10:41:23 --> Security Class Initialized
+DEBUG - 2022-11-18 10:41:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:23 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:23 --> Input Class Initialized
+INFO - 2022-11-18 10:41:23 --> Language Class Initialized
+ERROR - 2022-11-18 10:41:23 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:41:23 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:41:23 --> Config Class Initialized
+INFO - 2022-11-18 10:41:23 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:41:23 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:23 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:23 --> URI Class Initialized
+INFO - 2022-11-18 10:41:23 --> Router Class Initialized
+INFO - 2022-11-18 10:41:23 --> Output Class Initialized
+INFO - 2022-11-18 10:41:23 --> Security Class Initialized
+DEBUG - 2022-11-18 10:41:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:23 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:23 --> Input Class Initialized
+INFO - 2022-11-18 10:41:23 --> Language Class Initialized
+ERROR - 2022-11-18 10:41:23 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:41:23 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:41:23 --> Config Class Initialized
+INFO - 2022-11-18 10:41:23 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:41:23 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:23 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:23 --> URI Class Initialized
+INFO - 2022-11-18 10:41:23 --> Router Class Initialized
+INFO - 2022-11-18 10:41:23 --> Output Class Initialized
+INFO - 2022-11-18 10:41:23 --> Security Class Initialized
+DEBUG - 2022-11-18 10:41:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:23 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:23 --> Input Class Initialized
+INFO - 2022-11-18 10:41:23 --> Language Class Initialized
+ERROR - 2022-11-18 10:41:23 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:41:23 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:41:23 --> Config Class Initialized
+INFO - 2022-11-18 10:41:23 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:41:23 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:23 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:23 --> URI Class Initialized
+INFO - 2022-11-18 10:41:23 --> Router Class Initialized
+INFO - 2022-11-18 10:41:23 --> Output Class Initialized
+INFO - 2022-11-18 10:41:23 --> Security Class Initialized
+DEBUG - 2022-11-18 10:41:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:23 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:23 --> Input Class Initialized
+INFO - 2022-11-18 10:41:23 --> Language Class Initialized
+ERROR - 2022-11-18 10:41:23 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:41:23 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:41:23 --> Config Class Initialized
+INFO - 2022-11-18 10:41:23 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:41:23 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:23 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:23 --> URI Class Initialized
+INFO - 2022-11-18 10:41:23 --> Router Class Initialized
+INFO - 2022-11-18 10:41:23 --> Output Class Initialized
+INFO - 2022-11-18 10:41:23 --> Security Class Initialized
+DEBUG - 2022-11-18 10:41:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:23 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:23 --> CSRF token verified
+INFO - 2022-11-18 10:41:23 --> Input Class Initialized
+INFO - 2022-11-18 10:41:23 --> Language Class Initialized
+INFO - 2022-11-18 10:41:23 --> Loader Class Initialized
+INFO - 2022-11-18 10:41:23 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:41:23 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:41:23 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:41:23 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:41:23 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:41:23 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:41:23 --> Parser Class Initialized
+INFO - 2022-11-18 10:41:23 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:41:23 --> Pagination Class Initialized
+INFO - 2022-11-18 10:41:23 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:41:23 --> Controller Class Initialized
+INFO - 2022-11-18 10:41:23 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:41:23 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:41:23 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:41:23 --> Model "Customers" initialized
+INFO - 2022-11-18 10:41:23 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:41:23 --> Final output sent to browser
+DEBUG - 2022-11-18 10:41:23 --> Total execution time: 0.0122
+ERROR - 2022-11-18 10:41:35 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:41:35 --> Config Class Initialized
+INFO - 2022-11-18 10:41:35 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:41:35 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:35 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:35 --> URI Class Initialized
+INFO - 2022-11-18 10:41:35 --> Router Class Initialized
+INFO - 2022-11-18 10:41:35 --> Output Class Initialized
+INFO - 2022-11-18 10:41:35 --> Security Class Initialized
+DEBUG - 2022-11-18 10:41:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:35 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:35 --> Input Class Initialized
+INFO - 2022-11-18 10:41:35 --> Language Class Initialized
+INFO - 2022-11-18 10:41:35 --> Loader Class Initialized
+INFO - 2022-11-18 10:41:35 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:41:35 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:41:35 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:41:35 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:41:35 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:41:35 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:41:35 --> Parser Class Initialized
+INFO - 2022-11-18 10:41:35 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:41:35 --> Pagination Class Initialized
+INFO - 2022-11-18 10:41:35 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:41:35 --> Controller Class Initialized
+INFO - 2022-11-18 10:41:35 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:41:35 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:41:35 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:41:35 --> Model "Customers" initialized
+INFO - 2022-11-18 10:41:35 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:41:35 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:41:35 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:41:35 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:41:35 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:41:35 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:41:35 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:41:35 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 10:41:35 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 10:41:35 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:41:35 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:41:35 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 10:41:35 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:41:35 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:41:35 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:41:35 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:41:35 --> Model "Products" initialized
+INFO - 2022-11-18 16:11:35 --> Model "reports" initialized
+INFO - 2022-11-18 16:11:35 --> Model "Users" initialized
+INFO - 2022-11-18 16:11:36 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:11:36 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:11:36 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:11:36 --> Final output sent to browser
+DEBUG - 2022-11-18 16:11:36 --> Total execution time: 0.3970
+ERROR - 2022-11-18 10:41:36 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:41:36 --> Config Class Initialized
+INFO - 2022-11-18 10:41:36 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:41:36 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:36 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:36 --> URI Class Initialized
+INFO - 2022-11-18 10:41:36 --> Router Class Initialized
+INFO - 2022-11-18 10:41:36 --> Output Class Initialized
+INFO - 2022-11-18 10:41:36 --> Security Class Initialized
+DEBUG - 2022-11-18 10:41:36 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:36 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:36 --> Input Class Initialized
+INFO - 2022-11-18 10:41:36 --> Language Class Initialized
+ERROR - 2022-11-18 10:41:36 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:41:36 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:41:36 --> Config Class Initialized
+INFO - 2022-11-18 10:41:36 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:41:36 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:36 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:36 --> URI Class Initialized
+INFO - 2022-11-18 10:41:36 --> Router Class Initialized
+INFO - 2022-11-18 10:41:36 --> Output Class Initialized
+INFO - 2022-11-18 10:41:36 --> Security Class Initialized
+DEBUG - 2022-11-18 10:41:36 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:36 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:36 --> Input Class Initialized
+INFO - 2022-11-18 10:41:36 --> Language Class Initialized
+ERROR - 2022-11-18 10:41:36 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:41:36 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:41:36 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:41:36 --> Config Class Initialized
+INFO - 2022-11-18 10:41:36 --> Config Class Initialized
+INFO - 2022-11-18 10:41:36 --> Hooks Class Initialized
+INFO - 2022-11-18 10:41:36 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:41:36 --> UTF-8 Support Enabled
+DEBUG - 2022-11-18 10:41:36 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:36 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:36 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:36 --> URI Class Initialized
+INFO - 2022-11-18 10:41:36 --> URI Class Initialized
+INFO - 2022-11-18 10:41:36 --> Router Class Initialized
+INFO - 2022-11-18 10:41:36 --> Router Class Initialized
+INFO - 2022-11-18 10:41:36 --> Output Class Initialized
+INFO - 2022-11-18 10:41:36 --> Output Class Initialized
+INFO - 2022-11-18 10:41:36 --> Security Class Initialized
+INFO - 2022-11-18 10:41:36 --> Security Class Initialized
+DEBUG - 2022-11-18 10:41:36 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-11-18 10:41:36 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:36 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:36 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:36 --> Input Class Initialized
+INFO - 2022-11-18 10:41:36 --> Input Class Initialized
+INFO - 2022-11-18 10:41:36 --> Language Class Initialized
+INFO - 2022-11-18 10:41:36 --> Language Class Initialized
+ERROR - 2022-11-18 10:41:36 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:41:36 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:41:36 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:41:36 --> Config Class Initialized
+INFO - 2022-11-18 10:41:36 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:41:36 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:36 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:36 --> URI Class Initialized
+INFO - 2022-11-18 10:41:36 --> Router Class Initialized
+INFO - 2022-11-18 10:41:36 --> Output Class Initialized
+INFO - 2022-11-18 10:41:36 --> Security Class Initialized
+DEBUG - 2022-11-18 10:41:36 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:36 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:36 --> CSRF token verified
+INFO - 2022-11-18 10:41:36 --> Input Class Initialized
+INFO - 2022-11-18 10:41:36 --> Language Class Initialized
+INFO - 2022-11-18 10:41:36 --> Loader Class Initialized
+INFO - 2022-11-18 10:41:36 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:41:36 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:41:36 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:41:36 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:41:36 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:41:36 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:41:36 --> Parser Class Initialized
+INFO - 2022-11-18 10:41:36 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:41:36 --> Pagination Class Initialized
+INFO - 2022-11-18 10:41:36 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:41:36 --> Controller Class Initialized
+INFO - 2022-11-18 10:41:36 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:41:36 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:41:36 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:41:36 --> Model "Customers" initialized
+INFO - 2022-11-18 10:41:36 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:41:36 --> Final output sent to browser
+DEBUG - 2022-11-18 10:41:36 --> Total execution time: 0.0186
+ERROR - 2022-11-18 10:41:40 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:41:40 --> Config Class Initialized
+INFO - 2022-11-18 10:41:40 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:41:40 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:40 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:40 --> URI Class Initialized
+INFO - 2022-11-18 10:41:40 --> Router Class Initialized
+INFO - 2022-11-18 10:41:40 --> Output Class Initialized
+INFO - 2022-11-18 10:41:40 --> Security Class Initialized
+DEBUG - 2022-11-18 10:41:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:40 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:40 --> Input Class Initialized
+INFO - 2022-11-18 10:41:40 --> Language Class Initialized
+INFO - 2022-11-18 10:41:40 --> Loader Class Initialized
+INFO - 2022-11-18 10:41:40 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:41:40 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:41:40 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:41:40 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:41:40 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:41:40 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:41:40 --> Parser Class Initialized
+INFO - 2022-11-18 10:41:40 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:41:40 --> Pagination Class Initialized
+INFO - 2022-11-18 10:41:40 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:41:40 --> Controller Class Initialized
+INFO - 2022-11-18 10:41:40 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:41:40 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:41:40 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:41:40 --> Model "Customers" initialized
+INFO - 2022-11-18 10:41:40 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:41:40 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:41:40 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:41:40 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:41:40 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:41:40 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:41:40 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:41:40 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 10:41:40 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 10:41:40 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:41:40 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 10:41:40 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 10:41:40 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:41:40 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:41:40 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:41:40 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:41:40 --> Model "Products" initialized
+INFO - 2022-11-18 16:11:40 --> Model "reports" initialized
+INFO - 2022-11-18 16:11:40 --> Model "Users" initialized
+INFO - 2022-11-18 16:11:41 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:11:41 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:11:41 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:11:41 --> Final output sent to browser
+DEBUG - 2022-11-18 16:11:41 --> Total execution time: 0.4156
+ERROR - 2022-11-18 10:41:41 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:41:41 --> Config Class Initialized
+INFO - 2022-11-18 10:41:41 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:41:41 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:41 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:41 --> URI Class Initialized
+INFO - 2022-11-18 10:41:41 --> Router Class Initialized
+INFO - 2022-11-18 10:41:41 --> Output Class Initialized
+INFO - 2022-11-18 10:41:41 --> Security Class Initialized
+DEBUG - 2022-11-18 10:41:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:41 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:41 --> Input Class Initialized
+INFO - 2022-11-18 10:41:41 --> Language Class Initialized
+ERROR - 2022-11-18 10:41:41 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:41:41 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:41:41 --> Config Class Initialized
+INFO - 2022-11-18 10:41:41 --> Hooks Class Initialized
+ERROR - 2022-11-18 10:41:41 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+DEBUG - 2022-11-18 10:41:41 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:41 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:41 --> Config Class Initialized
+INFO - 2022-11-18 10:41:41 --> URI Class Initialized
+INFO - 2022-11-18 10:41:41 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:41:41 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:41 --> Router Class Initialized
+INFO - 2022-11-18 10:41:41 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:41 --> Output Class Initialized
+INFO - 2022-11-18 10:41:41 --> URI Class Initialized
+INFO - 2022-11-18 10:41:41 --> Security Class Initialized
+INFO - 2022-11-18 10:41:41 --> Router Class Initialized
+DEBUG - 2022-11-18 10:41:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:41 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:41 --> Output Class Initialized
+INFO - 2022-11-18 10:41:41 --> Input Class Initialized
+INFO - 2022-11-18 10:41:41 --> Language Class Initialized
+INFO - 2022-11-18 10:41:41 --> Security Class Initialized
+ERROR - 2022-11-18 10:41:41 --> 404 Page Not Found: Assets/datatables
+DEBUG - 2022-11-18 10:41:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:41 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:41 --> Input Class Initialized
+INFO - 2022-11-18 10:41:41 --> Language Class Initialized
+ERROR - 2022-11-18 10:41:41 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:41:41 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:41:41 --> Config Class Initialized
+INFO - 2022-11-18 10:41:41 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:41:41 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:41 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:41 --> URI Class Initialized
+INFO - 2022-11-18 10:41:41 --> Router Class Initialized
+INFO - 2022-11-18 10:41:41 --> Output Class Initialized
+INFO - 2022-11-18 10:41:41 --> Security Class Initialized
+DEBUG - 2022-11-18 10:41:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:41 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:41 --> Input Class Initialized
+INFO - 2022-11-18 10:41:41 --> Language Class Initialized
+ERROR - 2022-11-18 10:41:41 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:41:41 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:41:41 --> Config Class Initialized
+INFO - 2022-11-18 10:41:41 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:41:41 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:41:41 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:41:41 --> URI Class Initialized
+INFO - 2022-11-18 10:41:41 --> Router Class Initialized
+INFO - 2022-11-18 10:41:41 --> Output Class Initialized
+INFO - 2022-11-18 10:41:41 --> Security Class Initialized
+DEBUG - 2022-11-18 10:41:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:41:41 --> CSRF cookie sent
+INFO - 2022-11-18 10:41:41 --> CSRF token verified
+INFO - 2022-11-18 10:41:41 --> Input Class Initialized
+INFO - 2022-11-18 10:41:41 --> Language Class Initialized
+INFO - 2022-11-18 10:41:41 --> Loader Class Initialized
+INFO - 2022-11-18 10:41:41 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:41:41 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:41:41 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:41:41 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:41:41 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:41:41 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:41:41 --> Parser Class Initialized
+INFO - 2022-11-18 10:41:41 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:41:41 --> Pagination Class Initialized
+INFO - 2022-11-18 10:41:41 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:41:41 --> Controller Class Initialized
+INFO - 2022-11-18 10:41:41 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:41:41 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:41:41 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:41:41 --> Model "Customers" initialized
+INFO - 2022-11-18 10:41:41 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:41:41 --> Final output sent to browser
+DEBUG - 2022-11-18 10:41:41 --> Total execution time: 0.0082
+ERROR - 2022-11-18 10:44:46 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:44:46 --> Config Class Initialized
+INFO - 2022-11-18 10:44:46 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:44:46 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:44:46 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:44:46 --> URI Class Initialized
+INFO - 2022-11-18 10:44:46 --> Router Class Initialized
+INFO - 2022-11-18 10:44:46 --> Output Class Initialized
+INFO - 2022-11-18 10:44:46 --> Security Class Initialized
+DEBUG - 2022-11-18 10:44:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:44:46 --> CSRF cookie sent
+INFO - 2022-11-18 10:44:46 --> Input Class Initialized
+INFO - 2022-11-18 10:44:46 --> Language Class Initialized
+INFO - 2022-11-18 10:44:46 --> Loader Class Initialized
+INFO - 2022-11-18 10:44:46 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:44:46 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:44:46 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:44:46 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:44:46 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:44:46 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:44:46 --> Parser Class Initialized
+INFO - 2022-11-18 10:44:46 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:44:46 --> Pagination Class Initialized
+INFO - 2022-11-18 10:44:46 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:44:46 --> Controller Class Initialized
+INFO - 2022-11-18 10:44:46 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:44:46 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:44:46 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:44:46 --> Model "Customers" initialized
+INFO - 2022-11-18 10:44:46 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:44:46 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:44:46 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:44:46 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:44:46 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:44:46 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:44:46 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:44:46 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1149
+ERROR - 2022-11-18 10:44:46 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1179
+ERROR - 2022-11-18 10:44:46 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1202
+ERROR - 2022-11-18 10:44:46 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1202
+ERROR - 2022-11-18 10:44:46 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1233
+INFO - 2022-11-18 10:44:46 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:44:46 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:44:46 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:44:46 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:44:46 --> Model "Products" initialized
+INFO - 2022-11-18 16:14:46 --> Model "reports" initialized
+INFO - 2022-11-18 16:14:46 --> Model "Users" initialized
+INFO - 2022-11-18 16:14:46 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:14:46 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:14:46 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:14:46 --> Final output sent to browser
+DEBUG - 2022-11-18 16:14:46 --> Total execution time: 0.4045
+ERROR - 2022-11-18 10:44:46 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:44:46 --> Config Class Initialized
+INFO - 2022-11-18 10:44:46 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:44:46 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:44:46 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:44:46 --> URI Class Initialized
+INFO - 2022-11-18 10:44:46 --> Router Class Initialized
+INFO - 2022-11-18 10:44:46 --> Output Class Initialized
+INFO - 2022-11-18 10:44:46 --> Security Class Initialized
+DEBUG - 2022-11-18 10:44:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:44:46 --> CSRF cookie sent
+INFO - 2022-11-18 10:44:46 --> Input Class Initialized
+INFO - 2022-11-18 10:44:46 --> Language Class Initialized
+ERROR - 2022-11-18 10:44:46 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:44:46 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:44:46 --> Config Class Initialized
+INFO - 2022-11-18 10:44:46 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:44:46 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:44:46 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:44:46 --> URI Class Initialized
+INFO - 2022-11-18 10:44:46 --> Router Class Initialized
+INFO - 2022-11-18 10:44:46 --> Output Class Initialized
+INFO - 2022-11-18 10:44:46 --> Security Class Initialized
+DEBUG - 2022-11-18 10:44:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:44:46 --> CSRF cookie sent
+INFO - 2022-11-18 10:44:46 --> Input Class Initialized
+INFO - 2022-11-18 10:44:46 --> Language Class Initialized
+ERROR - 2022-11-18 10:44:46 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:44:46 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:44:46 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:44:46 --> Config Class Initialized
+INFO - 2022-11-18 10:44:46 --> Config Class Initialized
+INFO - 2022-11-18 10:44:46 --> Hooks Class Initialized
+INFO - 2022-11-18 10:44:46 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:44:46 --> UTF-8 Support Enabled
+DEBUG - 2022-11-18 10:44:46 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:44:46 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:44:46 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:44:46 --> URI Class Initialized
+INFO - 2022-11-18 10:44:46 --> URI Class Initialized
+INFO - 2022-11-18 10:44:46 --> Router Class Initialized
+INFO - 2022-11-18 10:44:46 --> Router Class Initialized
+INFO - 2022-11-18 10:44:46 --> Output Class Initialized
+INFO - 2022-11-18 10:44:46 --> Output Class Initialized
+INFO - 2022-11-18 10:44:46 --> Security Class Initialized
+INFO - 2022-11-18 10:44:46 --> Security Class Initialized
+DEBUG - 2022-11-18 10:44:46 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-11-18 10:44:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:44:46 --> CSRF cookie sent
+INFO - 2022-11-18 10:44:46 --> CSRF cookie sent
+INFO - 2022-11-18 10:44:46 --> Input Class Initialized
+INFO - 2022-11-18 10:44:46 --> Input Class Initialized
+INFO - 2022-11-18 10:44:46 --> Language Class Initialized
+INFO - 2022-11-18 10:44:46 --> Language Class Initialized
+ERROR - 2022-11-18 10:44:46 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 10:44:46 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:44:46 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:44:46 --> Config Class Initialized
+INFO - 2022-11-18 10:44:46 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:44:46 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:44:46 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:44:46 --> URI Class Initialized
+INFO - 2022-11-18 10:44:46 --> Router Class Initialized
+INFO - 2022-11-18 10:44:46 --> Output Class Initialized
+INFO - 2022-11-18 10:44:46 --> Security Class Initialized
+DEBUG - 2022-11-18 10:44:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:44:46 --> CSRF cookie sent
+INFO - 2022-11-18 10:44:46 --> CSRF token verified
+INFO - 2022-11-18 10:44:46 --> Input Class Initialized
+INFO - 2022-11-18 10:44:46 --> Language Class Initialized
+INFO - 2022-11-18 10:44:46 --> Loader Class Initialized
+INFO - 2022-11-18 10:44:46 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:44:46 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:44:46 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:44:46 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:44:46 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:44:46 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:44:46 --> Parser Class Initialized
+INFO - 2022-11-18 10:44:46 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:44:46 --> Pagination Class Initialized
+INFO - 2022-11-18 10:44:46 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:44:46 --> Controller Class Initialized
+INFO - 2022-11-18 10:44:46 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:44:46 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:44:46 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:44:46 --> Model "Customers" initialized
+INFO - 2022-11-18 10:44:46 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:44:46 --> Final output sent to browser
+DEBUG - 2022-11-18 10:44:46 --> Total execution time: 0.0111
+ERROR - 2022-11-18 10:45:36 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:45:36 --> Config Class Initialized
+INFO - 2022-11-18 10:45:36 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:45:36 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:45:36 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:45:36 --> URI Class Initialized
+INFO - 2022-11-18 10:45:36 --> Router Class Initialized
+INFO - 2022-11-18 10:45:36 --> Output Class Initialized
+INFO - 2022-11-18 10:45:36 --> Security Class Initialized
+DEBUG - 2022-11-18 10:45:36 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:45:36 --> CSRF cookie sent
+INFO - 2022-11-18 10:45:36 --> Input Class Initialized
+INFO - 2022-11-18 10:45:36 --> Language Class Initialized
+INFO - 2022-11-18 10:45:36 --> Loader Class Initialized
+INFO - 2022-11-18 10:45:36 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:45:36 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:45:36 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:45:36 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:45:36 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:45:36 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:45:36 --> Parser Class Initialized
+INFO - 2022-11-18 10:45:36 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:45:36 --> Pagination Class Initialized
+INFO - 2022-11-18 10:45:36 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:45:36 --> Controller Class Initialized
+INFO - 2022-11-18 10:45:36 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:45:36 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:45:36 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:45:36 --> Model "Customers" initialized
+INFO - 2022-11-18 10:45:36 --> Model "Tax" initialized
+DEBUG - 2022-11-18 10:45:36 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:45:36 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:45:36 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:45:36 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:45:36 --> Model "Invoices" initialized
+ERROR - 2022-11-18 10:45:36 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 10:45:36 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1149
+ERROR - 2022-11-18 10:45:36 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1179
+ERROR - 2022-11-18 10:45:36 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1202
+ERROR - 2022-11-18 10:45:36 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1202
+ERROR - 2022-11-18 10:45:36 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1233
+INFO - 2022-11-18 10:45:36 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 10:45:36 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:45:36 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 10:45:36 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 10:45:36 --> Model "Products" initialized
+INFO - 2022-11-18 16:15:36 --> Model "reports" initialized
+INFO - 2022-11-18 16:15:36 --> Model "Users" initialized
+INFO - 2022-11-18 16:15:36 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:15:36 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:15:36 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:15:36 --> Final output sent to browser
+DEBUG - 2022-11-18 16:15:36 --> Total execution time: 0.3805
+ERROR - 2022-11-18 10:45:36 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:45:36 --> Config Class Initialized
+INFO - 2022-11-18 10:45:36 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:45:36 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:45:36 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:45:36 --> URI Class Initialized
+INFO - 2022-11-18 10:45:36 --> Router Class Initialized
+INFO - 2022-11-18 10:45:36 --> Output Class Initialized
+INFO - 2022-11-18 10:45:36 --> Security Class Initialized
+DEBUG - 2022-11-18 10:45:36 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:45:36 --> CSRF cookie sent
+INFO - 2022-11-18 10:45:36 --> Input Class Initialized
+INFO - 2022-11-18 10:45:36 --> Language Class Initialized
+ERROR - 2022-11-18 10:45:36 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 10:45:37 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:45:37 --> Config Class Initialized
+INFO - 2022-11-18 10:45:37 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:45:37 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:45:37 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:45:37 --> URI Class Initialized
+INFO - 2022-11-18 10:45:37 --> Router Class Initialized
+INFO - 2022-11-18 10:45:37 --> Output Class Initialized
+INFO - 2022-11-18 10:45:37 --> Security Class Initialized
+DEBUG - 2022-11-18 10:45:37 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:45:37 --> CSRF cookie sent
+INFO - 2022-11-18 10:45:37 --> Input Class Initialized
+INFO - 2022-11-18 10:45:37 --> Language Class Initialized
+ERROR - 2022-11-18 10:45:37 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 10:45:37 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 10:45:37 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:45:37 --> Config Class Initialized
+INFO - 2022-11-18 10:45:37 --> Config Class Initialized
+INFO - 2022-11-18 10:45:37 --> Hooks Class Initialized
+INFO - 2022-11-18 10:45:37 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:45:37 --> UTF-8 Support Enabled
+DEBUG - 2022-11-18 10:45:37 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:45:37 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:45:37 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:45:37 --> URI Class Initialized
+INFO - 2022-11-18 10:45:37 --> URI Class Initialized
+INFO - 2022-11-18 10:45:37 --> Router Class Initialized
+INFO - 2022-11-18 10:45:37 --> Output Class Initialized
+INFO - 2022-11-18 10:45:37 --> Router Class Initialized
+INFO - 2022-11-18 10:45:37 --> Security Class Initialized
+INFO - 2022-11-18 10:45:37 --> Output Class Initialized
+DEBUG - 2022-11-18 10:45:37 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:45:37 --> Security Class Initialized
+INFO - 2022-11-18 10:45:37 --> CSRF cookie sent
+DEBUG - 2022-11-18 10:45:37 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:45:37 --> Input Class Initialized
+INFO - 2022-11-18 10:45:37 --> CSRF cookie sent
+INFO - 2022-11-18 10:45:37 --> Language Class Initialized
+INFO - 2022-11-18 10:45:37 --> Input Class Initialized
+ERROR - 2022-11-18 10:45:37 --> 404 Page Not Found: Assets/plugins
+INFO - 2022-11-18 10:45:37 --> Language Class Initialized
+ERROR - 2022-11-18 10:45:37 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 10:45:37 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 10:45:37 --> Config Class Initialized
+INFO - 2022-11-18 10:45:37 --> Hooks Class Initialized
+DEBUG - 2022-11-18 10:45:37 --> UTF-8 Support Enabled
+INFO - 2022-11-18 10:45:37 --> Utf8 Class Initialized
+INFO - 2022-11-18 10:45:37 --> URI Class Initialized
+INFO - 2022-11-18 10:45:37 --> Router Class Initialized
+INFO - 2022-11-18 10:45:37 --> Output Class Initialized
+INFO - 2022-11-18 10:45:37 --> Security Class Initialized
+DEBUG - 2022-11-18 10:45:37 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 10:45:37 --> CSRF cookie sent
+INFO - 2022-11-18 10:45:37 --> CSRF token verified
+INFO - 2022-11-18 10:45:37 --> Input Class Initialized
+INFO - 2022-11-18 10:45:37 --> Language Class Initialized
+INFO - 2022-11-18 10:45:37 --> Loader Class Initialized
+INFO - 2022-11-18 10:45:37 --> Helper loaded: url_helper
+INFO - 2022-11-18 10:45:37 --> Helper loaded: file_helper
+INFO - 2022-11-18 10:45:37 --> Helper loaded: form_helper
+INFO - 2022-11-18 10:45:37 --> Helper loaded: lang_helper
+INFO - 2022-11-18 10:45:37 --> Database Driver Class Initialized
+INFO - 2022-11-18 10:45:37 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 10:45:37 --> Parser Class Initialized
+INFO - 2022-11-18 10:45:37 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 10:45:37 --> Pagination Class Initialized
+INFO - 2022-11-18 10:45:37 --> Form Validation Class Initialized
+INFO - 2022-11-18 10:45:37 --> Controller Class Initialized
+INFO - 2022-11-18 10:45:37 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 10:45:37 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 10:45:37 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 10:45:37 --> Model "Customers" initialized
+INFO - 2022-11-18 10:45:37 --> Model "Invoices" initialized
+INFO - 2022-11-18 10:45:37 --> Final output sent to browser
+DEBUG - 2022-11-18 10:45:37 --> Total execution time: 0.0088
+ERROR - 2022-11-18 11:00:30 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 11:00:30 --> Config Class Initialized
+INFO - 2022-11-18 11:00:30 --> Hooks Class Initialized
+DEBUG - 2022-11-18 11:00:30 --> UTF-8 Support Enabled
+INFO - 2022-11-18 11:00:30 --> Utf8 Class Initialized
+INFO - 2022-11-18 11:00:30 --> URI Class Initialized
+INFO - 2022-11-18 11:00:30 --> Router Class Initialized
+INFO - 2022-11-18 11:00:30 --> Output Class Initialized
+INFO - 2022-11-18 11:00:30 --> Security Class Initialized
+DEBUG - 2022-11-18 11:00:30 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 11:00:30 --> CSRF cookie sent
+INFO - 2022-11-18 11:00:30 --> Input Class Initialized
+INFO - 2022-11-18 11:00:30 --> Language Class Initialized
+INFO - 2022-11-18 11:00:30 --> Loader Class Initialized
+INFO - 2022-11-18 11:00:30 --> Helper loaded: url_helper
+INFO - 2022-11-18 11:00:30 --> Helper loaded: file_helper
+INFO - 2022-11-18 11:00:30 --> Helper loaded: form_helper
+INFO - 2022-11-18 11:00:30 --> Helper loaded: lang_helper
+INFO - 2022-11-18 11:00:30 --> Database Driver Class Initialized
+INFO - 2022-11-18 11:00:30 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 11:00:30 --> Parser Class Initialized
+INFO - 2022-11-18 11:00:30 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 11:00:30 --> Pagination Class Initialized
+INFO - 2022-11-18 11:00:30 --> Form Validation Class Initialized
+INFO - 2022-11-18 11:00:30 --> Controller Class Initialized
+INFO - 2022-11-18 11:00:30 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 11:00:30 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 11:00:30 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 11:00:30 --> Model "Customers" initialized
+INFO - 2022-11-18 11:00:30 --> Model "Tax" initialized
+DEBUG - 2022-11-18 11:00:30 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 11:00:30 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 11:00:30 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 11:00:30 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 11:00:30 --> Model "Invoices" initialized
+ERROR - 2022-11-18 11:00:30 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 11:00:30 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 11:00:30 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 11:00:30 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 11:00:30 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 11:00:30 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 11:00:30 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 11:00:30 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 11:00:30 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 11:00:30 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 11:00:30 --> Model "Products" initialized
+INFO - 2022-11-18 16:30:30 --> Model "reports" initialized
+INFO - 2022-11-18 16:30:30 --> Model "Users" initialized
+INFO - 2022-11-18 16:30:30 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:30:30 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:30:30 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:30:30 --> Final output sent to browser
+DEBUG - 2022-11-18 16:30:30 --> Total execution time: 0.3999
+ERROR - 2022-11-18 11:00:31 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 11:00:31 --> Config Class Initialized
+INFO - 2022-11-18 11:00:31 --> Hooks Class Initialized
+DEBUG - 2022-11-18 11:00:31 --> UTF-8 Support Enabled
+INFO - 2022-11-18 11:00:31 --> Utf8 Class Initialized
+INFO - 2022-11-18 11:00:31 --> URI Class Initialized
+INFO - 2022-11-18 11:00:31 --> Router Class Initialized
+INFO - 2022-11-18 11:00:31 --> Output Class Initialized
+INFO - 2022-11-18 11:00:31 --> Security Class Initialized
+DEBUG - 2022-11-18 11:00:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 11:00:31 --> CSRF cookie sent
+INFO - 2022-11-18 11:00:31 --> Input Class Initialized
+INFO - 2022-11-18 11:00:31 --> Language Class Initialized
+ERROR - 2022-11-18 11:00:31 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 11:00:31 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 11:00:31 --> Config Class Initialized
+INFO - 2022-11-18 11:00:31 --> Hooks Class Initialized
+DEBUG - 2022-11-18 11:00:31 --> UTF-8 Support Enabled
+INFO - 2022-11-18 11:00:31 --> Utf8 Class Initialized
+INFO - 2022-11-18 11:00:31 --> URI Class Initialized
+INFO - 2022-11-18 11:00:31 --> Router Class Initialized
+INFO - 2022-11-18 11:00:31 --> Output Class Initialized
+INFO - 2022-11-18 11:00:31 --> Security Class Initialized
+DEBUG - 2022-11-18 11:00:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 11:00:31 --> CSRF cookie sent
+INFO - 2022-11-18 11:00:31 --> Input Class Initialized
+INFO - 2022-11-18 11:00:31 --> Language Class Initialized
+ERROR - 2022-11-18 11:00:31 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 11:00:31 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 11:00:31 --> Config Class Initialized
+INFO - 2022-11-18 11:00:31 --> Hooks Class Initialized
+DEBUG - 2022-11-18 11:00:31 --> UTF-8 Support Enabled
+INFO - 2022-11-18 11:00:31 --> Utf8 Class Initialized
+INFO - 2022-11-18 11:00:31 --> URI Class Initialized
+INFO - 2022-11-18 11:00:31 --> Router Class Initialized
+INFO - 2022-11-18 11:00:31 --> Output Class Initialized
+INFO - 2022-11-18 11:00:31 --> Security Class Initialized
+DEBUG - 2022-11-18 11:00:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 11:00:31 --> CSRF cookie sent
+INFO - 2022-11-18 11:00:31 --> Input Class Initialized
+INFO - 2022-11-18 11:00:31 --> Language Class Initialized
+ERROR - 2022-11-18 11:00:31 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 11:00:31 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 11:00:31 --> Config Class Initialized
+INFO - 2022-11-18 11:00:31 --> Hooks Class Initialized
+DEBUG - 2022-11-18 11:00:31 --> UTF-8 Support Enabled
+INFO - 2022-11-18 11:00:31 --> Utf8 Class Initialized
+INFO - 2022-11-18 11:00:31 --> URI Class Initialized
+INFO - 2022-11-18 11:00:31 --> Router Class Initialized
+INFO - 2022-11-18 11:00:31 --> Output Class Initialized
+INFO - 2022-11-18 11:00:31 --> Security Class Initialized
+DEBUG - 2022-11-18 11:00:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 11:00:31 --> CSRF cookie sent
+INFO - 2022-11-18 11:00:31 --> Input Class Initialized
+INFO - 2022-11-18 11:00:31 --> Language Class Initialized
+ERROR - 2022-11-18 11:00:31 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 11:00:31 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 11:00:31 --> Config Class Initialized
+INFO - 2022-11-18 11:00:31 --> Hooks Class Initialized
+DEBUG - 2022-11-18 11:00:31 --> UTF-8 Support Enabled
+INFO - 2022-11-18 11:00:31 --> Utf8 Class Initialized
+INFO - 2022-11-18 11:00:31 --> URI Class Initialized
+INFO - 2022-11-18 11:00:31 --> Router Class Initialized
+INFO - 2022-11-18 11:00:31 --> Output Class Initialized
+INFO - 2022-11-18 11:00:31 --> Security Class Initialized
+DEBUG - 2022-11-18 11:00:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 11:00:31 --> CSRF cookie sent
+INFO - 2022-11-18 11:00:31 --> CSRF token verified
+INFO - 2022-11-18 11:00:31 --> Input Class Initialized
+INFO - 2022-11-18 11:00:31 --> Language Class Initialized
+INFO - 2022-11-18 11:00:31 --> Loader Class Initialized
+INFO - 2022-11-18 11:00:31 --> Helper loaded: url_helper
+INFO - 2022-11-18 11:00:31 --> Helper loaded: file_helper
+INFO - 2022-11-18 11:00:31 --> Helper loaded: form_helper
+INFO - 2022-11-18 11:00:31 --> Helper loaded: lang_helper
+INFO - 2022-11-18 11:00:31 --> Database Driver Class Initialized
+INFO - 2022-11-18 11:00:31 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 11:00:31 --> Parser Class Initialized
+INFO - 2022-11-18 11:00:31 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 11:00:31 --> Pagination Class Initialized
+INFO - 2022-11-18 11:00:31 --> Form Validation Class Initialized
+INFO - 2022-11-18 11:00:31 --> Controller Class Initialized
+INFO - 2022-11-18 11:00:31 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 11:00:31 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 11:00:31 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 11:00:31 --> Model "Customers" initialized
+INFO - 2022-11-18 11:00:31 --> Model "Invoices" initialized
+INFO - 2022-11-18 11:00:31 --> Final output sent to browser
+DEBUG - 2022-11-18 11:00:31 --> Total execution time: 0.0104
+ERROR - 2022-11-18 11:00:40 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 11:00:40 --> Config Class Initialized
+INFO - 2022-11-18 11:00:40 --> Hooks Class Initialized
+DEBUG - 2022-11-18 11:00:40 --> UTF-8 Support Enabled
+INFO - 2022-11-18 11:00:40 --> Utf8 Class Initialized
+INFO - 2022-11-18 11:00:40 --> URI Class Initialized
+INFO - 2022-11-18 11:00:40 --> Router Class Initialized
+INFO - 2022-11-18 11:00:40 --> Output Class Initialized
+INFO - 2022-11-18 11:00:40 --> Security Class Initialized
+DEBUG - 2022-11-18 11:00:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 11:00:40 --> CSRF cookie sent
+INFO - 2022-11-18 11:00:40 --> Input Class Initialized
+INFO - 2022-11-18 11:00:40 --> Language Class Initialized
+INFO - 2022-11-18 11:00:40 --> Loader Class Initialized
+INFO - 2022-11-18 11:00:40 --> Helper loaded: url_helper
+INFO - 2022-11-18 11:00:40 --> Helper loaded: file_helper
+INFO - 2022-11-18 11:00:40 --> Helper loaded: form_helper
+INFO - 2022-11-18 11:00:40 --> Helper loaded: lang_helper
+INFO - 2022-11-18 11:00:40 --> Database Driver Class Initialized
+INFO - 2022-11-18 11:00:40 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 11:00:40 --> Parser Class Initialized
+INFO - 2022-11-18 11:00:40 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 11:00:40 --> Pagination Class Initialized
+INFO - 2022-11-18 11:00:40 --> Form Validation Class Initialized
+INFO - 2022-11-18 11:00:40 --> Controller Class Initialized
+INFO - 2022-11-18 11:00:40 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 11:00:40 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 11:00:40 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 11:00:40 --> Model "Customers" initialized
+INFO - 2022-11-18 11:00:40 --> Model "Tax" initialized
+DEBUG - 2022-11-18 11:00:40 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 11:00:40 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 11:00:40 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 11:00:40 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 11:00:40 --> Model "Invoices" initialized
+ERROR - 2022-11-18 11:00:40 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 11:00:40 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 11:00:40 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 11:00:40 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 11:00:40 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 11:00:40 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 11:00:40 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 11:00:40 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 11:00:40 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 11:00:40 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 11:00:40 --> Model "Products" initialized
+INFO - 2022-11-18 16:30:40 --> Model "reports" initialized
+INFO - 2022-11-18 16:30:40 --> Model "Users" initialized
+INFO - 2022-11-18 16:30:40 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:30:40 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:30:40 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:30:40 --> Final output sent to browser
+DEBUG - 2022-11-18 16:30:40 --> Total execution time: 0.4112
+ERROR - 2022-11-18 11:00:40 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 11:00:40 --> Config Class Initialized
+INFO - 2022-11-18 11:00:40 --> Hooks Class Initialized
+DEBUG - 2022-11-18 11:00:40 --> UTF-8 Support Enabled
+INFO - 2022-11-18 11:00:40 --> Utf8 Class Initialized
+INFO - 2022-11-18 11:00:40 --> URI Class Initialized
+INFO - 2022-11-18 11:00:40 --> Router Class Initialized
+INFO - 2022-11-18 11:00:40 --> Output Class Initialized
+INFO - 2022-11-18 11:00:40 --> Security Class Initialized
+DEBUG - 2022-11-18 11:00:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 11:00:40 --> CSRF cookie sent
+INFO - 2022-11-18 11:00:40 --> Input Class Initialized
+INFO - 2022-11-18 11:00:40 --> Language Class Initialized
+ERROR - 2022-11-18 11:00:40 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 11:00:40 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 11:00:40 --> Config Class Initialized
+INFO - 2022-11-18 11:00:40 --> Hooks Class Initialized
+DEBUG - 2022-11-18 11:00:40 --> UTF-8 Support Enabled
+INFO - 2022-11-18 11:00:40 --> Utf8 Class Initialized
+INFO - 2022-11-18 11:00:40 --> URI Class Initialized
+INFO - 2022-11-18 11:00:40 --> Router Class Initialized
+INFO - 2022-11-18 11:00:40 --> Output Class Initialized
+INFO - 2022-11-18 11:00:40 --> Security Class Initialized
+DEBUG - 2022-11-18 11:00:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 11:00:40 --> CSRF cookie sent
+INFO - 2022-11-18 11:00:40 --> Input Class Initialized
+INFO - 2022-11-18 11:00:40 --> Language Class Initialized
+ERROR - 2022-11-18 11:00:40 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 11:00:41 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 11:00:41 --> Config Class Initialized
+ERROR - 2022-11-18 11:00:41 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 11:00:41 --> Hooks Class Initialized
+DEBUG - 2022-11-18 11:00:41 --> UTF-8 Support Enabled
+INFO - 2022-11-18 11:00:41 --> Config Class Initialized
+INFO - 2022-11-18 11:00:41 --> Utf8 Class Initialized
+INFO - 2022-11-18 11:00:41 --> Hooks Class Initialized
+DEBUG - 2022-11-18 11:00:41 --> UTF-8 Support Enabled
+INFO - 2022-11-18 11:00:41 --> URI Class Initialized
+INFO - 2022-11-18 11:00:41 --> Utf8 Class Initialized
+INFO - 2022-11-18 11:00:41 --> URI Class Initialized
+INFO - 2022-11-18 11:00:41 --> Router Class Initialized
+INFO - 2022-11-18 11:00:41 --> Router Class Initialized
+INFO - 2022-11-18 11:00:41 --> Output Class Initialized
+INFO - 2022-11-18 11:00:41 --> Output Class Initialized
+INFO - 2022-11-18 11:00:41 --> Security Class Initialized
+INFO - 2022-11-18 11:00:41 --> Security Class Initialized
+DEBUG - 2022-11-18 11:00:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 11:00:41 --> CSRF cookie sent
+DEBUG - 2022-11-18 11:00:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 11:00:41 --> Input Class Initialized
+INFO - 2022-11-18 11:00:41 --> CSRF cookie sent
+INFO - 2022-11-18 11:00:41 --> Input Class Initialized
+INFO - 2022-11-18 11:00:41 --> Language Class Initialized
+INFO - 2022-11-18 11:00:41 --> Language Class Initialized
+ERROR - 2022-11-18 11:00:41 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 11:00:41 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 11:00:41 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 11:00:41 --> Config Class Initialized
+INFO - 2022-11-18 11:00:41 --> Hooks Class Initialized
+DEBUG - 2022-11-18 11:00:41 --> UTF-8 Support Enabled
+INFO - 2022-11-18 11:00:41 --> Utf8 Class Initialized
+INFO - 2022-11-18 11:00:41 --> URI Class Initialized
+INFO - 2022-11-18 11:00:41 --> Router Class Initialized
+INFO - 2022-11-18 11:00:41 --> Output Class Initialized
+INFO - 2022-11-18 11:00:41 --> Security Class Initialized
+DEBUG - 2022-11-18 11:00:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 11:00:41 --> CSRF cookie sent
+INFO - 2022-11-18 11:00:41 --> CSRF token verified
+INFO - 2022-11-18 11:00:41 --> Input Class Initialized
+INFO - 2022-11-18 11:00:41 --> Language Class Initialized
+INFO - 2022-11-18 11:00:41 --> Loader Class Initialized
+INFO - 2022-11-18 11:00:41 --> Helper loaded: url_helper
+INFO - 2022-11-18 11:00:41 --> Helper loaded: file_helper
+INFO - 2022-11-18 11:00:41 --> Helper loaded: form_helper
+INFO - 2022-11-18 11:00:41 --> Helper loaded: lang_helper
+INFO - 2022-11-18 11:00:41 --> Database Driver Class Initialized
+INFO - 2022-11-18 11:00:41 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 11:00:41 --> Parser Class Initialized
+INFO - 2022-11-18 11:00:41 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 11:00:41 --> Pagination Class Initialized
+INFO - 2022-11-18 11:00:41 --> Form Validation Class Initialized
+INFO - 2022-11-18 11:00:41 --> Controller Class Initialized
+INFO - 2022-11-18 11:00:41 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 11:00:41 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 11:00:41 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 11:00:41 --> Model "Customers" initialized
+INFO - 2022-11-18 11:00:41 --> Model "Invoices" initialized
+INFO - 2022-11-18 11:00:41 --> Final output sent to browser
+DEBUG - 2022-11-18 11:00:41 --> Total execution time: 0.0128
+ERROR - 2022-11-18 11:01:00 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 11:01:00 --> Config Class Initialized
+INFO - 2022-11-18 11:01:00 --> Hooks Class Initialized
+DEBUG - 2022-11-18 11:01:00 --> UTF-8 Support Enabled
+INFO - 2022-11-18 11:01:00 --> Utf8 Class Initialized
+INFO - 2022-11-18 11:01:00 --> URI Class Initialized
+INFO - 2022-11-18 11:01:00 --> Router Class Initialized
+INFO - 2022-11-18 11:01:00 --> Output Class Initialized
+INFO - 2022-11-18 11:01:00 --> Security Class Initialized
+DEBUG - 2022-11-18 11:01:00 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 11:01:00 --> CSRF cookie sent
+INFO - 2022-11-18 11:01:00 --> Input Class Initialized
+INFO - 2022-11-18 11:01:00 --> Language Class Initialized
+INFO - 2022-11-18 11:01:00 --> Loader Class Initialized
+INFO - 2022-11-18 11:01:00 --> Helper loaded: url_helper
+INFO - 2022-11-18 11:01:00 --> Helper loaded: file_helper
+INFO - 2022-11-18 11:01:00 --> Helper loaded: form_helper
+INFO - 2022-11-18 11:01:00 --> Helper loaded: lang_helper
+INFO - 2022-11-18 11:01:00 --> Database Driver Class Initialized
+INFO - 2022-11-18 11:01:00 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 11:01:00 --> Parser Class Initialized
+INFO - 2022-11-18 11:01:00 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 11:01:00 --> Pagination Class Initialized
+INFO - 2022-11-18 11:01:00 --> Form Validation Class Initialized
+INFO - 2022-11-18 11:01:00 --> Controller Class Initialized
+INFO - 2022-11-18 11:01:00 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 11:01:00 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 11:01:00 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 11:01:00 --> Model "Customers" initialized
+INFO - 2022-11-18 11:01:00 --> Model "Tax" initialized
+DEBUG - 2022-11-18 11:01:00 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 11:01:00 --> Lcustomer class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 11:01:00 --> Smsgateway class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 11:01:00 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 11:01:00 --> Model "Invoices" initialized
+ERROR - 2022-11-18 11:01:00 --> Severity: Notice --> Undefined variable: invoice_id D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 686
+ERROR - 2022-11-18 11:01:00 --> Severity: Notice --> Undefined variable: category_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1146
+ERROR - 2022-11-18 11:01:00 --> Severity: Notice --> Undefined variable: unit_list D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1176
+ERROR - 2022-11-18 11:01:00 --> Severity: Notice --> Undefined variable: taxfield D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 11:01:00 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1199
+ERROR - 2022-11-18 11:01:00 --> Severity: Notice --> Undefined variable: supplier D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice\add_invoice_form.php 1230
+INFO - 2022-11-18 11:01:00 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\invoice/add_invoice_form.php
+DEBUG - 2022-11-18 11:01:00 --> Parser class already loaded. Second attempt ignored.
+INFO - 2022-11-18 11:01:00 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/top_menu.php
+INFO - 2022-11-18 11:01:00 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_loggedin_info.php
+INFO - 2022-11-18 11:01:00 --> Model "Products" initialized
+INFO - 2022-11-18 16:31:00 --> Model "reports" initialized
+INFO - 2022-11-18 16:31:00 --> Model "Users" initialized
+INFO - 2022-11-18 16:31:00 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_header.php
+INFO - 2022-11-18 16:31:00 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\include/admin_footer.php
+INFO - 2022-11-18 16:31:00 --> File loaded: D:\wamp\www\Stockie_UAT_R6_Testing\application\views\admin_html_template.php
+INFO - 2022-11-18 16:31:00 --> Final output sent to browser
+DEBUG - 2022-11-18 16:31:00 --> Total execution time: 0.5221
+ERROR - 2022-11-18 11:01:00 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 11:01:00 --> Config Class Initialized
+INFO - 2022-11-18 11:01:00 --> Hooks Class Initialized
+DEBUG - 2022-11-18 11:01:00 --> UTF-8 Support Enabled
+INFO - 2022-11-18 11:01:00 --> Utf8 Class Initialized
+INFO - 2022-11-18 11:01:00 --> URI Class Initialized
+INFO - 2022-11-18 11:01:00 --> Router Class Initialized
+INFO - 2022-11-18 11:01:00 --> Output Class Initialized
+INFO - 2022-11-18 11:01:00 --> Security Class Initialized
+DEBUG - 2022-11-18 11:01:00 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 11:01:00 --> CSRF cookie sent
+INFO - 2022-11-18 11:01:00 --> Input Class Initialized
+INFO - 2022-11-18 11:01:00 --> Language Class Initialized
+ERROR - 2022-11-18 11:01:00 --> 404 Page Not Found: Assets/css
+ERROR - 2022-11-18 11:01:01 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 11:01:01 --> Config Class Initialized
+INFO - 2022-11-18 11:01:01 --> Hooks Class Initialized
+DEBUG - 2022-11-18 11:01:01 --> UTF-8 Support Enabled
+INFO - 2022-11-18 11:01:01 --> Utf8 Class Initialized
+INFO - 2022-11-18 11:01:01 --> URI Class Initialized
+INFO - 2022-11-18 11:01:01 --> Router Class Initialized
+INFO - 2022-11-18 11:01:01 --> Output Class Initialized
+INFO - 2022-11-18 11:01:01 --> Security Class Initialized
+DEBUG - 2022-11-18 11:01:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 11:01:01 --> CSRF cookie sent
+INFO - 2022-11-18 11:01:01 --> Input Class Initialized
+INFO - 2022-11-18 11:01:01 --> Language Class Initialized
+ERROR - 2022-11-18 11:01:01 --> 404 Page Not Found: Assets/datatables
+ERROR - 2022-11-18 11:01:01 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+ERROR - 2022-11-18 11:01:01 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 11:01:01 --> Config Class Initialized
+INFO - 2022-11-18 11:01:01 --> Config Class Initialized
+INFO - 2022-11-18 11:01:01 --> Hooks Class Initialized
+INFO - 2022-11-18 11:01:01 --> Hooks Class Initialized
+DEBUG - 2022-11-18 11:01:01 --> UTF-8 Support Enabled
+INFO - 2022-11-18 11:01:01 --> Utf8 Class Initialized
+DEBUG - 2022-11-18 11:01:01 --> UTF-8 Support Enabled
+INFO - 2022-11-18 11:01:01 --> URI Class Initialized
+INFO - 2022-11-18 11:01:01 --> Utf8 Class Initialized
+INFO - 2022-11-18 11:01:01 --> URI Class Initialized
+INFO - 2022-11-18 11:01:01 --> Router Class Initialized
+INFO - 2022-11-18 11:01:01 --> Router Class Initialized
+INFO - 2022-11-18 11:01:01 --> Output Class Initialized
+INFO - 2022-11-18 11:01:01 --> Output Class Initialized
+INFO - 2022-11-18 11:01:01 --> Security Class Initialized
+INFO - 2022-11-18 11:01:01 --> Security Class Initialized
+DEBUG - 2022-11-18 11:01:01 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-11-18 11:01:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 11:01:01 --> CSRF cookie sent
+INFO - 2022-11-18 11:01:01 --> CSRF cookie sent
+INFO - 2022-11-18 11:01:01 --> Input Class Initialized
+INFO - 2022-11-18 11:01:01 --> Input Class Initialized
+INFO - 2022-11-18 11:01:01 --> Language Class Initialized
+INFO - 2022-11-18 11:01:01 --> Language Class Initialized
+ERROR - 2022-11-18 11:01:01 --> 404 Page Not Found: Assets/js
+ERROR - 2022-11-18 11:01:01 --> 404 Page Not Found: Assets/plugins
+ERROR - 2022-11-18 11:01:01 --> $config['composer_autoload'] is set to TRUE but D:\wamp\www\Stockie_UAT_R6_Testing\application\vendor/autoload.php was not found.
+INFO - 2022-11-18 11:01:01 --> Config Class Initialized
+INFO - 2022-11-18 11:01:01 --> Hooks Class Initialized
+DEBUG - 2022-11-18 11:01:01 --> UTF-8 Support Enabled
+INFO - 2022-11-18 11:01:01 --> Utf8 Class Initialized
+INFO - 2022-11-18 11:01:01 --> URI Class Initialized
+INFO - 2022-11-18 11:01:01 --> Router Class Initialized
+INFO - 2022-11-18 11:01:01 --> Output Class Initialized
+INFO - 2022-11-18 11:01:01 --> Security Class Initialized
+DEBUG - 2022-11-18 11:01:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-11-18 11:01:01 --> CSRF cookie sent
+INFO - 2022-11-18 11:01:01 --> CSRF token verified
+INFO - 2022-11-18 11:01:01 --> Input Class Initialized
+INFO - 2022-11-18 11:01:01 --> Language Class Initialized
+INFO - 2022-11-18 11:01:01 --> Loader Class Initialized
+INFO - 2022-11-18 11:01:01 --> Helper loaded: url_helper
+INFO - 2022-11-18 11:01:01 --> Helper loaded: file_helper
+INFO - 2022-11-18 11:01:01 --> Helper loaded: form_helper
+INFO - 2022-11-18 11:01:01 --> Helper loaded: lang_helper
+INFO - 2022-11-18 11:01:01 --> Database Driver Class Initialized
+INFO - 2022-11-18 11:01:01 --> Session: Class initialized using 'files' driver.
+INFO - 2022-11-18 11:01:01 --> Parser Class Initialized
+INFO - 2022-11-18 11:01:01 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2022-11-18 11:01:01 --> Pagination Class Initialized
+INFO - 2022-11-18 11:01:01 --> Form Validation Class Initialized
+INFO - 2022-11-18 11:01:01 --> Controller Class Initialized
+INFO - 2022-11-18 11:01:01 --> Model "Web_settings" initialized
+DEBUG - 2022-11-18 11:01:01 --> Auth class already loaded. Second attempt ignored.
+DEBUG - 2022-11-18 11:01:01 --> Session class already loaded. Second attempt ignored.
+INFO - 2022-11-18 11:01:01 --> Model "Customers" initialized
+INFO - 2022-11-18 11:01:01 --> Model "Invoices" initialized
+INFO - 2022-11-18 11:01:01 --> Final output sent to browser
+DEBUG - 2022-11-18 11:01:01 --> Total execution time: 0.0363

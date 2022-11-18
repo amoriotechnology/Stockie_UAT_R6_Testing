@@ -942,10 +942,23 @@ $('#customer_name').on('change', function (e) {
 
 
 });
-console.log('https://open.er-api.com/v6/latest/<?php echo $currency; ?>');
-$.getJSON('https://open.er-api.com/v6/latest/<?php echo $currency; ?>', 
+
+console.log('https://open.er-api.com/v6/latest/<?php echo $curn_info_default; ?>');
+$.getJSON('https://open.er-api.com/v6/latest/<?php echo $curn_info_default; ?>', 
 function(data) {
-   var Rate = 'rates: ' + parseFloat( data.rates["EUR"] ).toFixed(3);
+
+   // console.log(data);
+  
+    var custo_currency=<?php  echo '"'.$curn_info_customer.'"'; ?>; 
+   
+  //  var x=JSON.stringify(data['rates']);
+    ////x.split(custo_currency).pop().split(',')[0]; 
+ 
+//console.log(x);
+
+  
+   var Rate = 'rates: ' + parseFloat(data['rates'][custo_currency] ).toFixed(3);
+   var vl=data.rates.custo_currency;
    console.log(Rate);
 
 });
