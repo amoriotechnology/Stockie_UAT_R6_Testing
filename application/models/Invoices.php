@@ -4085,8 +4085,15 @@ public function service_invoice_taxinfo($invoice_id){
             ->result_array(); 
 
     }
-
-
+  /*  public function getcusto_currency(){
+        $this->db->select('*');
+        $this->db->from('currency_tbl');
+        $this->db->where('customer_name', $value);
+        $query = $this->db->get()->result();
+        return $query;
+        $curn_info_customer = $CI->db->select('*')->from('currency_tbl')->where('icon',$value)->get()->result_array();
+    }
+*/
     public function getcustomer_data($value){
         $this->db->select('*');
         $this->db->from('customer_information');

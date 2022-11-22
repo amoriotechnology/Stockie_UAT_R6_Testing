@@ -56,10 +56,15 @@ class Cinvoice extends CI_Controller {
         $CI->load->library('linvoice');
         $data=array();
         $currency_details = $CI->Web_settings->retrieve_setting_editdata();
+        $curn_info_default = $CI->db->select('*')->from('currency_tbl')->where('icon',$currency_details[0]['currency'])->get()->result_array();
+      
        // echo $content = $CI->linvoice->invoice_add_form();
        $CI->load->model('Invoices');
        $data['customer'] = $CI->Invoices->profarma_invoice_customer();
        $data=array(
+        'curn_info_default' =>$curn_info_default[0]['currency_name'],
+        //  'curn_info_customer'=>$curn_info_customer[0]['currency_name'],
+          'currency'  =>$currency_details[0]['currency'],
         'currency'  =>$currency_details[0]['currency'],
         'customer' => $CI->Invoices->profarma_invoice_customer(),
         'voucher_no' => $CI->Invoices->profarma_voucher_no()
@@ -306,6 +311,19 @@ echo json_encode($data);
         echo json_encode($vendor_info);
        
     }
+ /*   public function getcusto_currency(){
+       
+        $CI = & get_instance();
+        $this->auth->check_admin_auth();
+        $CI->load->model('Invoices');
+        $value = $this->input->post('value1',TRUE);
+        $customer_info = $CI->Invoices->getcusto_currency($value);
+        echo json_encode($customer_info);
+  
+
+   print_r($curn_info_customer);die();
+}
+*/
     public function getcustomer_data(){
         $CI = & get_instance();
         $this->auth->check_admin_auth();

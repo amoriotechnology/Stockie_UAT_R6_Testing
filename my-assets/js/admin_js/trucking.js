@@ -1,5 +1,44 @@
+
     var count = 2;
     var limits = 500;
+        "use strict";
+    function addTruckingOrderField(divName){
+  
+        if (count == limits)  {
+            alert("You have reached the limit of adding " + count + " inputs");
+        }
+        else{
+            var newdiv = document.createElement('tr');
+            var tabin="product_name_"+count;
+             tabindex = count * 4 ,
+           newdiv = document.createElement("tr");
+            tab1 = tabindex + 1;
+            
+            tab2 = tabindex + 2;
+            tab3 = tabindex + 3;
+            tab4 = tabindex + 4;
+            tab5 = tabindex + 5;
+            tab6 = tab5 + 1;
+            tab7 = tab6 +1;
+           
+
+
+            newdiv.innerHTML ='<td class="span3 supplier"><input type="text" name="trucking_date[]" required="" class="form-control" tabindex="'+tab1+'" > <input type="hidden" class="autocomplete_hidden_value product_id_'+ count +'" name="product_id[]" id="SchoolHiddenId"/>  <input type="hidden" class="sl" value="'+ count +'">  </td> <td class="text-right"><input type="text" name="product_quantity[]" tabindex="'+tab2+'" required  id="cartoon_'+ count +'" class="form-control text-right store_cal_' + count + '" onkeyup="calculate_store(' + count + ');" onchange="calculate_store(' + count + ');" placeholder="0.00" value="" min="0"/></td><td class="text-right"><input class="form-control" type="text" name="description[]" id="pro_no" value=""  /></td><td class="test"><input type="text" name="product_rate[]" onkeyup="calculate_store('+ count +');" onchange="calculate_store('+ count +');" id="product_rate_'+ count +'" class="form-control product_rate_'+ count +' text-right" placeholder="0.00" value="" min="0" tabindex="'+tab3+'"/></td><td class="text-right"><input class="form-control" type="text" name="pro_no[]" id="pro_no" value=""  /></td><td class="text-right"><input class="form-control total_price text-right total_price_'+ count +'" type="text" name="total_price[]" id="total_price_'+ count +'" value="0.00" readonly="readonly" /> </td><td> <input type="hidden" id="total_discount_1" class="" /><input type="hidden" id="all_discount_1" class="total_discount" /><button style="text-align: right;" class="btn btn-danger red" type="button"  onclick="deleteRow(this)" tabindex="8"><i class="fa fa-close"></i></button></td>';
+            document.getElementById(divName).appendChild(newdiv);
+            document.getElementById(tabin).focus();
+            document.getElementById("add_invoice_item").setAttribute("tabindex", tab5);
+            document.getElementById("add_purchase").setAttribute("tabindex", tab6);
+            document.getElementById("add_purchase_another").setAttribute("tabindex", tab7);
+           
+            count++;
+
+            $("select.form-control:not(.dont-select-me)").select2({
+                placeholder: "Select option",
+                allowClear: true
+            });
+        }
+    }
+
    "use strict";
     function addPurchaseOrderField2(divName){
   

@@ -830,7 +830,7 @@ class Linvoice {
         $currency_details = $CI->Web_settings->retrieve_setting_editdata();
         $curn_info_default = $CI->db->select('*')->from('currency_tbl')->where('icon',$currency_details[0]['currency'])->get()->result_array();
        
-        $curn_info_customer = $CI->db->select('*')->from('currency_tbl')->where('icon',$customer_details[0]['currency_type'])->get()->result_array();
+       // $curn_info_customer = $CI->db->select('*')->from('currency_tbl')->where('icon',$customer_details[0]['currency_type'])->get()->result_array();
         $taxfield1 = $CI->db->select('tax_id,tax')
         ->from('tax_information')
         ->get()
@@ -847,7 +847,7 @@ class Linvoice {
         $voucher_no = $CI->Invoices->commercial_inv_number();
         $data = array(
             'curn_info_default' =>$curn_info_default[0]['currency_name'],
-            'curn_info_customer'=>$curn_info_customer[0]['currency_name'],
+          //  'curn_info_customer'=>$curn_info_customer[0]['currency_name'],
             'currency'  =>$currency_details[0]['currency'],
             'title'         => display('add_new_invoice'),
             'discount_type' => $currency_details[0]['discount_type'],
@@ -862,7 +862,7 @@ class Linvoice {
             'voucher_no' => $voucher_no,
                 'tax_name'=>'ww',
         );
-      
+    
         $invoiceForm = $CI->parser->parse('invoice/add_invoice_form', $data, true);
        // $invoiceForm = $CI->parser->parse('invoice/profarma_invoice', $data, true);
         return $invoiceForm;
@@ -889,8 +889,11 @@ class Linvoice {
         $CI->load->model('Invoices');
         $CI->load->model('Web_settings');
         $customer_details = $CI->Invoices->pos_customer_setup();
-     
+       
+       
         $currency_details = $CI->Web_settings->retrieve_setting_editdata();
+        $curn_info_default = $CI->db->select('*')->from('currency_tbl')->where('icon',$currency_details[0]['currency'])->get()->result_array();
+       
         $taxfield1 = $CI->db->select('tax_id,tax')
         ->from('tax_information')
         ->get()
@@ -906,17 +909,22 @@ class Linvoice {
         ->result_array();
         $voucher_no = $CI->Invoices->commercial_inv_number();
         $data = array(
+            'curn_info_default' =>$curn_info_default[0]['currency_name'],
+            //  'curn_info_customer'=>$curn_info_customer[0]['currency_name'],
+              'currency'  =>$currency_details[0]['currency'],
             'title'         => display('add_new_invoice'),
             'discount_type' => $currency_details[0]['discount_type'],
             'taxes'         => $taxfield,
             'tax'           => $taxfield1,
             'product'       =>$prodt,
+            'customer_currency' =>isset($customer_details[0]['currency_type'])?$customer_details[0]['currency_type']:'',
             'customer_name' => isset($customer_details[0]['customer_name'])?$customer_details[0]['customer_name']:'',
             'customer_id'   => isset($customer_details[0]['customer_id'])?$customer_details[0]['customer_id']:'',
             'bank_list'     => $bank_list,
             'voucher_no' => $voucher_no,
                 'tax_name'=>'ww',
         );
+     
       //  $invoiceForm = $CI->parser->parse('invoice/add_invoice_form', $data, true);
         $invoiceForm = $CI->parser->parse('invoice/profarma_invoice', $data, true);
         return $invoiceForm;
@@ -960,6 +968,8 @@ class Linvoice {
         $get_customer= $CI->Accounts_model->get_customer();
        // print_r($customer_details);
         $currency_details = $CI->Web_settings->retrieve_setting_editdata();
+        $curn_info_default = $CI->db->select('*')->from('currency_tbl')->where('icon',$currency_details[0]['currency'])->get()->result_array();
+      
         $taxfield = $CI->db->select('tax_name,default_value')->from('tax_settings')->get()->result_array();
         $taxfield1 = $CI->db->select('tax_id,tax')
         ->from('tax_information')
@@ -967,6 +977,7 @@ class Linvoice {
         ->result_array();
         $bank_list = $CI->Web_settings->bank_list();
         $data = array(
+            'curn_info_default' =>$curn_info_default[0]['currency_name'],
             'currency'  =>$currency_details[0]['currency'],
             'title'         => 'Add New Trucking Invoice',
             'discount_type' => $currency_details[0]['discount_type'],
