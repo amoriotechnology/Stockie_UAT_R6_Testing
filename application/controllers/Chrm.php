@@ -37,7 +37,11 @@ class Chrm extends CI_Controller {
         public function add_office_loan() {
     // $data['person_list'] = $this->Settings->office_loan_person();
     //         $data['bank_list']   = $this->Web_settings->bank_list();
+    $CI = & get_instance();
+    $CI->load->model('Web_settings');
+    $currency_details    = $CI->Web_settings->retrieve_setting_editdata();
              $data['title'] = display('add_office_loan');
+             $data['currency']=  $currency_details[0]['currency'];
     $content = $this->parser->parse('hr/add_office_loan', $data, true);
     $this->template->full_admin_html_view($content);
 
@@ -46,7 +50,11 @@ class Chrm extends CI_Controller {
 
     public function add_expense_item()
     {
+        $CI = & get_instance();
+        $CI->load->model('Web_settings');
+        $currency_details    = $CI->Web_settings->retrieve_setting_editdata();
         $data['title'] = display('expense_item_form');
+        $data['currency']=  $currency_details[0]['currency'];
     $content = $this->parser->parse('hr/expense_item_form', $data, true);
     $this->template->full_admin_html_view($content);
     }

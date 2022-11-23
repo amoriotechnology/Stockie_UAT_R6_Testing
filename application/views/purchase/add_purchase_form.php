@@ -527,10 +527,14 @@
                                 <input type="submit" id="add_purchase" class="btn btn-primary btn-large" name="add-purchase" value="Save" />
 
                                 <?php 
-                                $purchase_id=$this->session->userdata('purchase_id');
+                                $purchase_id=$this->session->userdata('newexpenseid');
                                 if(isset($purchase_id))
                                     {?>
-                                     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+                                         <a href="<?php echo base_url('Cpurchase/manage_purchase'); ?>" class="btn btn btn-primary" Style='color: #fff;'>Submit</a>
+                                     <a href="<?php echo base_url('Cpurchase/purchase_details_data/'); ?><?php echo $this->session->userdata('newexpenseid');?>" class=" btn btn-primary" Style='color: #fff;'>Download</a>
+
+                                        <br>
+                                        <br>
                                         <br>
 
                                     <?php } ?>
@@ -561,35 +565,38 @@
             </div>
         </div>
     </section>
-
-
-  <!-- Modal -->
- <!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
+<div class="modal fade" id="myModal1" role="dialog" >
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="    margin-top: 190px;">
+        <div class="modal-header" style="">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Expenses</h4>
+        </div>
+        <div class="modal-body">
+          
+          <h4>New  Expenses  Created Succefully</h4>
+     
+        </div>
+        <div class="modal-footer">
+          
+        </div>
       </div>
-      <div class="modal-body">
-        <p>Some text in the modal.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
+      
     </div>
-
   </div>
+
+
+  <!-- Pack  Modal -->
+    
   
 
    <div id="packmodal" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
     <!-- Modal content-->
-    <div class="modal-content" style="width: 130%;">
+    <div class="modal-content" style="width: 163%;">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <h4 class="modal-title">Choose your Package </h4>
@@ -632,7 +639,25 @@
   </div>
 </div>
 
+<!-- Modal -->
+<div id="mymodal1" class="modal fade" role="dialog">
+  <div class="modal-dialog">
 
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Expenses Invoice</h4>
+      </div>
+      <div class="modal-body">
+        <p>Expense invoice Successfully creartedp  </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
 </div>
 
 
@@ -1168,3 +1193,23 @@ $('.remove-preview').on('click', function() {
      $("#packbutton").hide();
 }          
   </script>
+
+  <script type="text/javascript">
+    $(window).on('load', function() {
+        $('#alert').modal('show');
+    });
+</script>
+<?php 
+
+    if(isset($_SESSION['newexpenseid']))
+        { ?>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+
+           $('#myModal1').modal('show');
+           hide();
+        });
+    </script>
+    <?php } ?>

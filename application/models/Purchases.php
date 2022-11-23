@@ -1278,7 +1278,7 @@ return $output;
         }
         return false;
     }
-
+  //  $this->db->select('*')->from('supplier_information')->where('supplier_id',$supplier_id)->get()->row();
     //Select All Supplier List
     public function select_all_supplier() {
         $query = $this->db->select('*')
@@ -1291,7 +1291,32 @@ return $output;
         }
         return false;
     }
-
+    public function select_supplier($value) {
+        $query = $this->db->select('*')
+                ->from('supplier_information')
+                ->where('created_by',$this->session->userdata('user_id'))
+                ->where('supplier_id',$value)
+                ->where('status', '1')
+                ->get();
+             
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        }
+      
+    }
+    public function select_supplierbyname($value) {
+        $query = $this->db->select('*')
+                ->from('supplier_information')
+                ->where('created_by',$this->session->userdata('user_id'))
+                ->where('supplier_name',$value)
+                ->where('status', '1')
+                ->get();
+             
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        }
+      
+    }
     //purchase Search  List
     public function purchase_by_search($supplier_id) {
         $this->db->select('a.*,b.supplier_name');
@@ -1674,7 +1699,7 @@ return $output;
             }
         }
 
-        return $data1;
+        return $purchase_id;
     }
 
 
@@ -1710,8 +1735,7 @@ return $output;
             $value = $this->product_supplier_check($product_id, $supplier_id);
             if ($value == 0) {
                 $this->session->set_flashdata('error_message', display('product_and_supplier_did_not_match'));
-                redirect(base_url('Cpurchase'));
-                exit();
+             
             }
         }
 
@@ -1896,7 +1920,7 @@ return $output;
         }
     
 
-        return true;
+        return $purchase_id;
     }
 
 
@@ -1966,7 +1990,7 @@ return $output;
           $query= $this->db->insert('ocean_import_tracking', $data);
      
 
-       // return true;
+       return $purchase_id;
     }
 
         public function voucher_no()
@@ -2095,7 +2119,7 @@ return $output;
             }
         }
 
-        return true;
+        return $purchase_id;
     }
 
     //Retrieve purchase Edit Data
@@ -2464,6 +2488,8 @@ public function company_info()
     $this->db->join('user_login u', 'u.cid = c.company_id'); 
     $this->db->where('u.user_id',$_SESSION['user_id']);
     $query = $this->db->get();
+
+    // echo $this->db->last_query(); die();
     
 
    if ($query->num_rows() > 0) {
@@ -2686,7 +2712,7 @@ public function company_info()
 
     //Retrieve purchase_details_data
     public function purchase_details_data($purchase_id) {
-        $this->db->select('a.*,b.*,c.*,e.purchase_details,d.product_id,d.product_name,d.product_model');
+        $this->db->select('a.*,b.*,c.*,e.*');
         $this->db->from('product_purchase a');
         $this->db->join('supplier_information b', 'b.supplier_id = a.supplier_id');
         $this->db->join('product_purchase_details c', 'c.purchase_id = a.purchase_id');

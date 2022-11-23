@@ -91,25 +91,6 @@ a{
     color: #fff;
 }
 
-.card-single:hover,
-.card:hover,
-.light .card {
-   
-}
-
-.light .card:hover{
-  
-}
-
-.card-single:hover h1,
-.card-single:hover div:last-child span {
-
-}
-
-.card-single:hover h1,
-.card-single:hover div:last-child span {
- 
-}
 
 .recent-grid {
     margin-top: 3.5rem;
@@ -211,7 +192,7 @@ a{
                             <span style="background-color: #489D86;padding:5px;border-radius:10px;"> <i class="fa fa-users" style="color: #fff;"></i></span>
                         </div>
                         <div>
-                            <span> <h1><span class="count-number"><?php if($total_sales_invoice==''){echo 0;}else{echo html_escape($total_sales_invoice);} ?></span></h1>
+                            <span> <h1><span class="count-number"><?php if($total_sales_invoice==''){echo 0;}else{echo $currency." ".html_escape($total_sales_invoice);} ?></span></h1>
                             <p><?php echo "Sales Invoice"?></p></span>
 
                         </div>
@@ -227,7 +208,7 @@ a{
                             <span style="background-color: #B68448;padding:5px;border-radius:10px;"> <i class="fa fa-file-text-o" style="color: #fff;"></i></span>
                         </div>
                         <div>
-                            <span> <h1><span class="count-number"><?php if($overall_purchase_amt==''){echo 0;}else{echo html_escape($overall_purchase_amt);} ?></span></h1>
+                            <span> <h1><span class="count-number"><?php if($overall_purchase_amt==''){echo 0;}else{echo $currency." ".html_escape($overall_purchase_amt);} ?></span></h1>
                             <p><?php echo "Expense Invoice"?></p></span>
 
                         </div>

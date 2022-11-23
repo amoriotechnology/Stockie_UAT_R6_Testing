@@ -165,7 +165,7 @@ $today = date('Y-m-d');
 <td class="Shipment Company"><?php   echo $arr['shipment_company'];  ?></td>
   <td class="Bill To"><?php   echo $arr['customer_name'];  ?></td>
   <td class="Invoice Date"><?php   echo $arr['invoice_date'];  ?></td>
-  <td class="Total Amount"><?php   echo $arr['grand_total_amount'];  ?></td>
+  <td class="Total Amount"><?php   echo $currency." ".$arr['grand_total_amount'];  ?></td>
   <!-- <td><a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cinvoice/trucking_update_form/<?php echo  $arr['purchase_order_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td></tr> -->
 
   <div class="form-group">

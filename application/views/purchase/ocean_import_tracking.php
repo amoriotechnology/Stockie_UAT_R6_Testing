@@ -18,7 +18,7 @@
             <h1>Ocean Import Tracking</h1>
             <small>Generate New Ocean Import Tracking</small>
             <ol class="breadcrumb">
-                <li><a href="<?php echo base_url()?>"><i class="pe-7s-home"></i> <?php echo display('home') ?></a></li>
+                <li><a href="<?php echo base_url()?>"><i class="pe-7s-home"></i> <?php echo display('home') ?><?php echo $_SESSION['purchaseid']; ?></a></li>
                 <li><a href="#">Ocean Import Tracking</a></li>
                 <li class="active">Generate New Ocean Import Tracking</li>
             </ol>
@@ -370,8 +370,16 @@
 
                         <div class="form-group row">
                             <div class="col-sm-6">
-                                <input type="submit" id="add_purchase" class="btn btn-primary btn-large" name="add-ocean-import" value="<?php echo display('submit') ?>" />
-                                <input type="submit" value="<?php echo display('submit_and_add_another') ?>" name="add-ocean-import-another" class="btn btn-large btn-success" id="" >
+                                <input type="submit" id="add_purchase"  class="btn btn-primary btn-large" name="add-ocean-import" value="<?php echo display('save') ?>" />
+                                
+
+                                <?php 
+                                if(isset($_SESSION['expenseoceanid']))
+                                { 
+                                    ?>
+                                    <a href="<?php echo base_url('Ccpurchase/manage_ocean_import_tracking/'); ?>" style="color:#fff;" class="btn btn-primary">Submit</a>
+                                    <a  href="<?php echo  base_url('Cpurchase/ocean_import_tracking_details_data/'); ?><?php echo $_SESSION['expenseoceanid']; ?>" class="btn btn-primary">Download</a>
+                                <?php } ?>
                             </div>
                         </div>
 
@@ -560,6 +568,28 @@
                 </div><!-- /.modal-dialog -->
 
             </div><!-- /.modal -->
+            <div class="modal fade" id="myModal1" role="dialog" >
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="    margin-top: 190px;">
+        <div class="modal-header" style="">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Ocean Import</h4>
+        </div>
+        <div class="modal-body">
+          
+          <h4>Ocean Import  Created Succefully</h4>
+     
+        </div>
+        <div class="modal-footer">
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
 
 <script src="https://cdn.ckeditor.com/4.17.1/standard/ckeditor.js"></script>
 
@@ -567,3 +597,19 @@
             <script type="text/javascript">
              CKEDITOR.replace('remarks');
          </script>
+
+
+<?php 
+
+    if(isset($_SESSION['expenseoceanid']))
+        { ?>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+
+           $('#myModal1').modal('show');
+           hide();
+        });
+    </script>
+    <?php } ?>

@@ -29,7 +29,20 @@
 
     </section>
 
-
+    <style>
+            input {
+    border: none;
+    background-color: #eee;
+ }
+textarea:focus, input:focus{
+   
+    outline: none;
+}
+ .text-right {
+    text-align: left; 
+}
+   
+    </style>
 
  <section class="content emply_form">
 
@@ -129,16 +142,17 @@
                         <label for="designation" class="col-sm-2 col-form-div">Amount <i class="text-danger">*</i></label>
 
                         <div class="col-sm-4">
-                <input name="amount" class="form-control" type="text" placeholder="$" required id="amount">
-                  
+                        <span class='form-control' style='background-color: #eee;'><?php   echo $currency; ?>
+                <input name="amount"  type="text" placeholder="Amount" required id="amount">
+    </span>
                         </div>
 
                          <label for="phone" class="col-sm-2 col-form-div">Total Amount<i class="text-danger">*</i></label>
 
                         <div class="col-sm-4">
-
-                            <input name="total_amount" class="form-control" type="text" placeholder="total_amount" id="phone" required>
-
+                        <span class='form-control' style='background-color: #eee;'><?php   echo $currency; ?>
+                            <input name="total_amount"  type="text" placeholder="Total_amount" id="phone" required>
+    </span>
                         </div>
 
                     </div>

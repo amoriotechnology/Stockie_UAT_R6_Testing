@@ -209,7 +209,7 @@ $today = date('Y-m-d');
    <td><?php   echo $arr['first_name'].' '.$arr['last_name'];  ?></td>
    <td><?php   echo $arr['customer_name'];  ?></td>
 <td><?php   echo $arr['purchase_date'];  ?></td>
-  <td><?php   echo $arr['sales_by'];  ?></td>
+  <td><?php   echo $currency." ".$arr['total'];  ?></td>
 
   <div class="form-group">
   <td>
@@ -298,7 +298,7 @@ $count++;
 
                 <input type="hidden" id="total_invoice" value="<?php echo $total_invoice;?>" name="">
 
-                 <input type="hidden" id="currency" value="{currency}" name="">
+                 <input type="hidden" id="currency" value="<?php echo $currency;  ?>" name="">
 
             </div>
 

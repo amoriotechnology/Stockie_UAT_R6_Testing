@@ -305,6 +305,7 @@ class Linvoice {
 
 
         $purchase_detail = $CI->Invoices->ocean_export_tracking_details_data($purchase_id);
+        // print_r($purchase_detail); die();
 
      
 
@@ -349,6 +350,8 @@ class Linvoice {
         'ocean_import_tracking_id'      => $purchase_detail[0]['ocean_export_tracking_id'],
 
             'booking_no' => $purchase_detail[0]['booking_no'],
+
+            'supplier'    => $purchase_detail[0]['supplier_name'],
 
             'container_no'    => $purchase_detail[0]['container_no'],
             'company'    => $company_info[0]['company_name'],
@@ -547,6 +550,8 @@ class Linvoice {
          //$bank_list        = $CI->Web_settings->bank_list();
 
         $purchase_detail = $CI->Invoices->retrieve_trucking_editdata($purchase_id);
+
+        // print_r($purchase_detail); exit();
 
      
         $customer_id = $purchase_detail[0]['customer_id'];
@@ -823,6 +828,9 @@ class Linvoice {
         $customer_details = $CI->Invoices->pos_customer_setup();
      
         $currency_details = $CI->Web_settings->retrieve_setting_editdata();
+        $curn_info_default = $CI->db->select('*')->from('currency_tbl')->where('icon',$currency_details[0]['currency'])->get()->result_array();
+       
+        $curn_info_customer = $CI->db->select('*')->from('currency_tbl')->where('icon',$customer_details[0]['currency_type'])->get()->result_array();
         $taxfield1 = $CI->db->select('tax_id,tax')
         ->from('tax_information')
         ->get()
@@ -839,12 +847,16 @@ class Linvoice {
         $voucher_no = $CI->Invoices->commercial_inv_number();
         $sales_packing_list = $CI->Invoices->sales_packing_list();
         $data = array(
+            'curn_info_default' =>$curn_info_default[0]['currency_name'],
+           // 'curn_info_customer'=>$curn_info_customer[0]['currency_name'],
+            'currency'  =>$currency_details[0]['currency'],
             'title'         => display('add_new_invoice'),
             'discount_type' => $currency_details[0]['discount_type'],
             'taxes'         => $taxfield,
             'tax'           => $taxfield1,
             'product'       =>$prodt,
             'customer_details'   => $customer_details,
+             'customer_currency' =>isset($customer_details[0]['currency_type'])?$customer_details[0]['currency_type']:'',
             'customer_name' => isset($customer_details[0]['customer_name'])?$customer_details[0]['customer_name']:'',
             'customer_id'   => isset($customer_details[0]['customer_id'])?$customer_details[0]['customer_id']:'',
             'bank_list'     => $bank_list,
@@ -954,17 +966,24 @@ class Linvoice {
        // print_r($customer_details);
         $currency_details = $CI->Web_settings->retrieve_setting_editdata();
         $taxfield = $CI->db->select('tax_name,default_value')->from('tax_settings')->get()->result_array();
+        $taxfield1 = $CI->db->select('tax_id,tax')
+        ->from('tax_information')
+        ->get()
+        ->result_array();
         $bank_list = $CI->Web_settings->bank_list();
         $data = array(
+            'currency'  =>$currency_details[0]['currency'],
             'title'         => 'Add New Trucking Invoice',
             'discount_type' => $currency_details[0]['discount_type'],
             'all_supplier'  => $all_supplier,
             'taxes'         => $taxfield,
+            'tax'         => $taxfield1,
             'customer_name' => isset($customer_details[0]['customer_name'])?$customer_details[0]['customer_name']:'',
             'customer_id'   => isset($customer_details[0]['customer_id'])?$customer_details[0]['customer_id']:'',
             'bank_list'     => $bank_list,
             'customer_list' => $get_customer
         );
+    
         $invoiceForm = $CI->parser->parse('invoice/trucking', $data, true);
         return $invoiceForm;
     }

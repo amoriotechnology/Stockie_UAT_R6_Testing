@@ -59,7 +59,19 @@ border: 2px solid #dce4ec;
             $this->session->unset_userdata('error_message');
             }
         ?>
-    
+      <style>
+        input {
+    border: none;
+    background-color: #eee;
+ }
+textarea:focus, input:focus{
+   
+    outline: none;
+}
+ .text-right {
+    text-align: left; 
+}
+</style>
         <!-- Purchase report -->
         <div class="row">
             <div class="col-sm-12">
@@ -305,14 +317,14 @@ border: 2px solid #dce4ec;
                                             <td class="text-right">
                                                 <input type="text" name="product_quantity[]" id="cartoon_1" required="" min="0" class="form-control text-right store_cal_1"  onchange='total_amt(1);'  placeholder="0.00" value=""  tabindex="6"/>
                                             </td>
-                                            <td class="test">
-                                                <input type="text" name="product_rate[]" required=""   id="product_rate_1" class="form-control product_rate_1 text-right" placeholder="0.00" value="" min="0" tabindex="7"/>
-                                            </td>
+                                            <td><span class='form-control' style='background-color: #eee;'><?php echo $currency;  ?>
+                                                <input type="text" name="product_rate[]" required=""   id="product_rate_1" class="product_rate_1 text-right" placeholder="0.00" value="" min="0" tabindex="7" readonly/>
+                                 </span> </td>
                                            
 
-                                            <td class="text-right">
-                                                <input class="form-control total_price text-right" type="text" name="total_price[]" id="total_price_1" value="0.00" readonly="readonly" />
-                                            </td>
+                                            <td><span class='form-control' style='background-color: #eee;'><?php echo $currency;  ?>
+                                                <input class="total_price" type="text" name="total_price[]" id="total_price_1" value="0.00" readonly="readonly" />
+                                 </span> </td>
                                             <td>
 
                                                
@@ -324,23 +336,40 @@ border: 2px solid #dce4ec;
                                 <tfoot>
                                     <tr>
                                         
-                                        <td class="text-right" colspan="4"><b><?php echo display('total') ?>:</b></td>
-                                        <td class="text-right">
-                                            <input type="text" id="Total" class="text-right form-control" name="total" value="0.00" readonly="readonly" />
-                                        </td>
+                                        <td style="text-align:right;" colspan="4"><b><?php echo display('total') ?>:</b></td>
+                                        <td><span class='form-control' style='background-color: #eee;'><?php echo $currency;  ?>
+                                            <input type="text" id="Total"  name="total" value="0.00" readonly="readonly" />
+                                 </span>   </td>
                                        
                                     </tr>
-           
+                                    <tr>
+                                   
+                                   <td style="text-align:right;" colspan="4"><b>Tax Details :</b></td>
+                                   <td style="text-align:left;">
+                                 <span class="form-control" style="background-color: #eee;"><?php echo $currency;  ?>
+                                       <input type="text" id="tax_details" class="text-right" value="0.00" name="tax_details"  readonly="readonly" />
+                                       </span></td>
+                               
+                                      
+                               </tr>
 
-                                    <tr> <td class="text-right" colspan="4"><b><?php echo "Grand Total" ?>:</b></td>
-                                        <td class="text-right">
-                                            <input type="text" id="gtotal" class="text-right form-control" name="gtotal" value="0.00" readonly="readonly" />
-                                        </td>
+                                    <tr> <td style="text-align:right;" colspan="4"><b><?php echo "Grand Total" ?>:</b></td>
+                                    <td><span class='form-control' style='background-color: #eee;'><?php echo $currency;  ?>
+                                            <input type="text" id="gtotal"  name="gtotal" value="0.00" readonly="readonly" />
+                                 </span></td>
                                         <td> <button type="button" id="add_invoice_item" class="btn btn-info" name="add-invoice-item"  onClick="addInputField('addPurchaseItem');addprod();"  tabindex="9"><i class="fa fa-plus"></i></button>
+  </tr>
+                                    <tr> <td style="text-align:right;"  colspan="4"><b><?php echo "Grand Total" ?>:</b><br/><b>(Preferred Currency)</b></td>
+                                    <td>
+                                            <span class="form-control" style="background-color: #eee;" >
+                                            <input type="text" id="customer_gtotal"  name="customer_gtotal" value="0.00" readonly="readonly" />
+                                            </span></td>
+                                      
 
-                                        <input type="hidden" name="baseUrl" class="baseUrl" value="<?php echo base_url();?>"/></td>
-                                    </tr>
-                                        
+                                            <input type="hidden" id="final_gtotal"  name="final_gtotal" />
+
+                                            <input type="hidden" name="baseUrl" class="baseUrl" value="<?php echo base_url();?>"/></td>
+                                    </tr>   
                                 </tfoot>
                             </table>
                                          
@@ -377,23 +406,29 @@ border: 2px solid #dce4ec;
                                     <td>
                                         <input type="hidden" name="uid" value="<?php echo $_SESSION['user_id']; ?>">
     
-                                        <input type="submit" id="add_purchase" class="btn btn-primary btn-large"  onclick="  $('#btn1_download').css('display','block');
-                                        $('#btn1_email').css('display','block');"name="add-purchase" value="<?php echo display('Save') ?>" />
+                                        <input type="submit"  class="btn btn-primary btn-large"  onclick="  $('#btn1_download').css('display','block');
+                                        $('#btn1_email').css('display','block');" id='add_purchase' name="add-purchase" value="<?php echo display('Save') ?>" />
                                     </td>
                                     <td>&nbsp;</td>
                                     <td id="btn1_download">
                                         
-                                        <a href="<?php echo base_url('Cinvoice/performa_pdf/'.$purchase_id);?>" id="down" class="btn btn-primary">
-                                            Download 
+                                        <?php if(isset( $_SESSION['perfarma_invoice_id'])){?>
+
+                                            <a href="<?php echo base_url('Cinvoice/manage_profarma_invoice/'); ?><?php echo $_SESSION['perfarma_invoice_id'];?>" id="down" class="btn btn-primary">
+                                            submit  
                                         </a>
+                                        <a href="<?php echo base_url('Cinvoice/performa_pdf/'); ?><?php echo $_SESSION['perfarma_invoice_id'];?>" id="down" class="btn btn-primary">
+                                            Donwload  
+                                        </a>
+                                        <a href="<?php echo base_url('Cinvoice/proforma_mail/'); ?><?php echo $this->session->userdata('perfarma_invoice_id');?>" id="down" class="btn btn-primary">
+                                            Send mail with attachments
+                                        </a>
+                                        
+                                    <?php } ?>
 
                                     </td>
                                     <td>&nbsp;</td>
-                                    <td id="btn1_email">
-                                        <a href="" id="send" class="btn btn-primary">
-                                            Sendmail with attachment
-                                        </a>
-                                    </td>
+                                    
                                   
                                   
                                     
@@ -410,6 +445,34 @@ border: 2px solid #dce4ec;
 
             </div>
         </div>
+        <?php 
+
+        if(isset($_SESSION['perfarma_invoice_id']))
+        {
+        ?>
+        <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="    margin-top: 190px;">
+        <div class="modal-header" style="">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Performa invoice</h4>
+        </div>
+        <div class="modal-body">
+          
+          <h4>Performa Invoice  Created Succefully</h4>
+     
+        </div>
+        <div class="modal-footer">
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+<?php } ?>
+
     </section>
 
 
@@ -423,7 +486,9 @@ display:none;
     </style>
 
     <script>
-       function currency(){
+
+
+      /* function currency(){
 
 var data = {};
   data[csrfName] = csrfHash;
@@ -431,7 +496,7 @@ $.ajax({
     type:'POST',
     data: data, 
     dataType:"json",
-    url:'<?php echo base_url();?>Cproduct/scrape',
+    url:'<?php //echo// base_url();?>Cproduct/scrape',
     success: function(result, statut) {
         if(result.csrfName){
            csrfName = result.csrfName;
@@ -443,7 +508,7 @@ $.ajax({
         }
 
     });
-}
+}*/
 
 
         var csrfName = '<?php echo $this->security->get_csrf_token_name();?>';
@@ -451,23 +516,72 @@ var csrfHash = '<?php echo $this->security->get_csrf_hash();?>';
 $(document).ready(function(){
     addprod();
     addtax();
-    currency();
+  //  currency();
     $('#product_tax').on('change', function (e) {
+        var first=$("#Total").val();
+    var tax= $('#product_tax').val();
+
+    // console.log(tax);
+
+var field = tax.split('-');
+
+var percent = field[1];
+var answer=0;
+  var answer = parseInt((percent / 100) * first);
+  // console.log(answer);
+  var gtotal = parseInt(first + answer);
+ // console.log(gtotal);
+ var final_g= $('#final_gtotal').val();
+ console.log(final_g);
+ $("#gtotal").val(parseInt(final_g)+parseInt(first));  
+
+});
+});
+$('#customer_id').on('change', function (e) {
+  
+    var data = {
+        value: $('#customer_id').val()
+     };
+    data[csrfName] = csrfHash;
+    $.ajax({
+        type:'POST',
+        data: data,
+     
+        //dataType tells jQuery to expect JSON response
+        dataType:"json",
+        url:'<?php echo base_url();?>Cinvoice/getcustomer_byID',
+        success: function(result, statut) {
+            if(result.csrfName){
+               //assign the new csrfName/Hash
+               csrfName = result.csrfName;
+               csrfHash = result.csrfHash;
+            }
+           // var parsedData = JSON.parse(result);
+          //  alert(result[0].p_quantity);
+          console.log(result[0]['currency_type']);
+        $("#customer_gtotal").val(result[0]['currency_type']);
+      
+      
+        }
+    });
+
+
+});
+$('#product_tax').on('change', function (e) {
+    var optionSelected = $("option:selected", this);
+    var valueSelected = this.value;
     var total=$('#Total').val();
-var tax=$('#product_tax').val();
-//console.log(total + "///"+tax);
+var tax= $('#product_tax').val();
+
 var field = tax.split('-');
 
 var percent = field[1];
 percent=percent.replace("%","");
-//alert(percent);
-    var grand=parseInt(total) * parseInt(percent);
-    var final=grand + parseInt(total);
-    final = isNaN(final) ? 0 : final;
-    $('#gtotal').val(final);
-    console.log("Gtotal  : "+final);
-
-});
+ var answer = (percent / 100) * parseInt(total);
+$('#final_gtotal').val(answer);
+   $('#hdn').val(valueSelected);
+   // answer=answer.toFixed();
+   $('#tax_details').val(answer +" ( "+tax+" )");
 });
 function addtax(){
 
@@ -673,7 +787,7 @@ function addInputField(t) {
         tab12 = tabindex + 12;
         e.innerHTML = "<td><select name='product_name[]' id='prodt_" + count + "' class='form-control product_name' onchange='available_quantity("+ count +");'>"+
         "<option value='Select the Product' selected>Select the Product</option></select>"+
-        "<input type='hidden' class='autocomplete_hidden_value product_id_"+ count +"' name='product_id[]' id='SchoolHiddenId'/><td><input type='text' name='available_quantity[]' id='' class='form-control text-right common_avail_qnt available_quantity_" + count + "' placeholder='0.00' readonly='readonly' /></td><td> <input type='text' name='product_quantity[]'  required='required' onkeyup='quantity_calculate(" + count + ");' onchange='quantity_calculate(" + count + ");' id='cartoon_" + count + "' class='form-control text-right store_cal_" + count + "'  placeholder='0.00' min='0' tabindex='" + tab3 + "'/></td><td><input type='text' name='product_rate[]' onkeyup='quantity_calculate(" + count + ");' onchange='quantity_calculate(" + count + ");' id='product_rate_" + count + "' class='form-control product_rate_" + count + " text-right' required placeholder='0.00' min='0' tabindex='" + tab4 + "'/></td><td class='text-right'><input class='common_total_price total_price form-control text-right' type='text' name='total_price[]' id='total_price_" + count + "' value='0.00' readonly='readonly'/></td><td>"+tbfild+"<input type='hidden' id='all_discount_" + count + "' class='total_discount dppr' name='discount_amount[]'/><button tabindex='" + tab5 + "' style='text-align: right;' class='btn btn-danger' type='button' value='Delete' onclick='deleteRow(this)'><i class='fa fa-close'></i></button></td>",
+        "<input type='hidden' class='autocomplete_hidden_value product_id_"+ count +"' name='product_id[]' id='SchoolHiddenId'/><td><input type='text' name='available_quantity[]' id='' class='form-control text-right common_avail_qnt available_quantity_" + count + "' placeholder='0.00' readonly='readonly' /></td><td> <input type='text' name='product_quantity[]'  required='required' onkeyup='quantity_calculate(" + count + ");' onchange='quantity_calculate(" + count + ");' id='cartoon_" + count + "' class='form-control text-right store_cal_" + count + "'  placeholder='0.00' min='0' tabindex='" + tab3 + "'/></td>   <td><span class='form-control' style='background-color: #eee;'><?php echo $currency." ";  ?><input type='text' name='product_rate[]' onkeyup='quantity_calculate(" + count + ");' onchange='quantity_calculate(" + count + ");' id='product_rate_" + count + "' class='product_rate_" + count + "' required placeholder='0.00' min='0' tabindex='" + tab4 + "'/></span></td>   <td><span class='form-control' style='background-color: #eee;'><?php echo $currency." " ; ?><input class='common_total_price total_price' type='text' name='total_price[]' id='total_price_" + count + "' value='0.00' readonly='readonly'/></span></td><td>"+tbfild+"<input type='hidden' id='all_discount_" + count + "' class='total_discount dppr' name='discount_amount[]'/><button tabindex='" + tab5 + "' style='text-align: right;' class='btn btn-danger' type='button' value='Delete' onclick='deleteRow(this)'><i class='fa fa-close'></i></button></td>",
             
         document.getElementById(t).appendChild(e),
              
@@ -812,3 +926,14 @@ $.ajax({
      
 </script>
 
+</td>
+<?php 
+if(isset($_SESSION['']))
+{ ?>
+<script type="text/javascript">
+
+      $('#myModal1').modal('show');
+      hide();
+  
+</script>
+<?php } ?>

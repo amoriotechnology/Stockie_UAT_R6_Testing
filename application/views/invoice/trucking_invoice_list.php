@@ -101,7 +101,7 @@ $today = date('Y-m-d');
                 
       <li><a href="#" onclick="generate()"> <img src="<?php echo base_url()?>assets/images/pdf.png" width="24px"> PDF</a></li>
       
-      <li class="divider"></li> 		
+      <li class="divider"></li>         
                   
                   <li><a href="#" onclick="$('#ProfarmaInvList').tableExport({type:'excel',escape:'false'});"> <img src="<?php echo base_url()?>assets/images/xls.png" width="24px"> XLS</a></li>
                  
@@ -161,7 +161,7 @@ $today = date('Y-m-d');
 <td><?php   echo $arr['trucking_id'];  ?></td>
   <td><?php   echo $arr['container_pickup_date'];  ?></td>
   <td><?php   echo $arr['delivery_date'];  ?></td>
-  <td><?php   echo $arr['grand_total_amount'];  ?></td>
+  <td><?php   echo $currency." ".$arr['grand_total_amount'];  ?></td>
   <!-- <td><a class="btn btn-success btn-sm" style="background-color: #3ca5de;" href="<?php echo base_url()?>Cinvoice/trucking_update_form/<?php echo  $arr['trucking_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a></td> -->
 
   <div class="form-group">
@@ -300,7 +300,7 @@ $editor = $('#submit'),
        };
        data[csrfName] = csrfHash;
 $.ajax({
-	
+    
     type: "POST",  
     url:'<?php echo base_url();?>Cinvoice/setting',
    
@@ -326,7 +326,7 @@ $.ajax({
       console.log(page[0]+"-"+page[1]);
        data[csrfName] = csrfHash;
     $.ajax({
-	
+    
     type: "POST",  
     url:'<?php echo base_url();?>Cinvoice/get_setting',
    

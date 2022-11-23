@@ -1256,7 +1256,7 @@ class Llpurchase {
         $CI1 = & get_instance();
         $CI1->load->model('Purchases');
         $all_supplier = $CI1->Purchases->select_all_supplier();
-          // print_r($purchase_detail); die();
+          // print_r($all_supplier); die();
        $dataw = $CII->invoice_design->retrieve_data();
        $datacontent = $CI->invoice_content->retrieve_data();
         // print_r($datacontent); die();
@@ -1277,6 +1277,8 @@ class Llpurchase {
             'trucking_id'      => $purchase_detail[0]['trucking_id'],
             'grand_total' => $purchase_detail[0]['grand_total_amount'],
             'invoice_no' =>  $purchase_detail[0]['invoice_no'],
+
+            'supplier' => $all_supplier[0]['supplier_name'],
 
             'invoice_date' => $purchase_detail[0]['invoice_date'],
 

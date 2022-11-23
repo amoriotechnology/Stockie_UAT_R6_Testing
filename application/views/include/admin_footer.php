@@ -66,7 +66,7 @@ function hide()
 {
 setTimeout(hide, 3000);
 function hide() {
- $('#myModal').modal('hide');
+ $('#myModal1').modal('hide');
 
 }
 }

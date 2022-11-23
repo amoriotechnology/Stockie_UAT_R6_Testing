@@ -169,9 +169,9 @@ class Invoices extends CI_Model {
     $this->db->select('a.*,b.*');
     $this->db->from('profarma_invoice_details a');
     $this->db->join('profarma_invoice b', 'b.purchase_id = a.purchase_id');
+     // echo $this->db->last_query(); die();
     $this->db->where('b.purchase_id', $purchase_id);
 
-   
     
     $query = $this->db->get();
 
@@ -295,7 +295,7 @@ class Invoices extends CI_Model {
             $this->db->insert('sale_packing_list_detail', $data1);
         }
     }
-    return true;
+    return $purchase_id;
 }
 
 
@@ -413,14 +413,7 @@ public function get_setting($user,$menu,$submenu){
      return $query;
 
 }
-public function getcustomer_data($value){
-    $this->db->select('*');
-    $this->db->from('customer_information');
-    $this->db->where('customer_name', $value);
-    $query = $this->db->get()->result();
-   echo json_encode($query);
 
-}
 public function availability($product_nam,$product_model){
  
     $this->db->select('p_quantity,price,product_id');
@@ -1616,10 +1609,7 @@ public function retrieve_packing_editdata($purchase_id) {
             return $query->result_array();
 
         }
-
-        return false;
-
-    }
+ }
 
 
 
@@ -1735,7 +1725,7 @@ public function retrieve_packing_editdata($purchase_id) {
 
             $data = array(
 
-                'create_by'    =>$this->session->userdata('user_id'),
+            'create_by'    =>$this->session->userdata('user_id'),
             'customer_name'    => $this->input->post('customer_name',TRUE),
 
             'customer_address' => $this->input->post('customer_address',TRUE),
@@ -1747,11 +1737,6 @@ public function retrieve_packing_editdata($purchase_id) {
             'status'           => 2
 
             );
-
-
-
-        
-
 
 
             $this->db->insert('customer_information', $data);
@@ -2198,7 +2183,7 @@ public function retrieve_packing_editdata($purchase_id) {
 
         $rate                = $this->input->post('product_rate',TRUE);
 
-        $p_id                = $this->input->post('prodt',TRUE);
+        $p_id                = $this->input->post('product_id',TRUE);
 
         $total_amount        = $this->input->post('total_price',TRUE);
 
@@ -2212,7 +2197,7 @@ public function retrieve_packing_editdata($purchase_id) {
 
         $serial_n            = $this->input->post('serial_no',TRUE);
 
-$product_id=$this->input->post('product_id',TRUE);
+        $product_id=$this->input->post('product_id',TRUE);
 
         for ($i = 0, $n = count($product_id); $i < $n; $i++) {
 
@@ -2277,9 +2262,7 @@ $product_id=$this->input->post('product_id',TRUE);
 
             );
 
-
-
-                $this->db->insert('invoice_details', $data1);
+              $this->db->insert('invoice_details', $data1);
 
             
 
@@ -2481,7 +2464,7 @@ $product_id=$this->input->post('product_id',TRUE);
           $query= $this->db->insert('ocean_export_tracking', $data);
   
 
-        return true;
+        return $purchase_id;
     }
 
 
@@ -4106,21 +4089,25 @@ public function service_invoice_taxinfo($invoice_id){
     }
 
 
-
+    public function getcustomer_data($value){
+        $this->db->select('*');
+        $this->db->from('customer_information');
+        $this->db->where('customer_name', $value);
+        $query = $this->db->get()->result();
+        return $query;
+    
+    }
 
 
 public function customerinfo_rpt($customer_id){
 
-       return $this->db->select('*')   
+       $this->db->select('*')   ;
+       $this->db->from('customer_information');
+       $this->db->where('customer_id', $customer_id);
+       $query = $this->db->get()->result();
+       return $query;
 
-            ->from('customer_information')
-
-            ->where('customer_id',$customer_id)
-            ->where('create_by',$this->session->userdata('user_id'))
-
-            ->get()
-
-            ->result_array(); 
+          
 
     }
 
@@ -4886,7 +4873,7 @@ return $output;
 
 
 
-        return true;
+        return $purchase_id;
     }
 
 

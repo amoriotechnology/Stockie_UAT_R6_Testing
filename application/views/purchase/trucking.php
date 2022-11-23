@@ -6,7 +6,6 @@
 <script src="<?php echo base_url()?>my-assets/js/admin_js/purchase.js" type="text/javascript"></script>
 
 
-<script src="<?php echo base_url()?>my-assets/js/admin_js/trucking.js" type="text/javascript"></script>
 
 
 <!-- Add New Purchase Start -->
@@ -19,7 +18,7 @@
             <h1>Trucking</h1>
             <small>Generate New Trucking Invoice</small>
             <ol class="breadcrumb">
-                <li><a href="#"><i class="pe-7s-home"></i> <?php echo display('home') ?></a></li>
+                <li><a href="#"><i class="pe-7s-home"></i> <?php echo display('home') ?>       </a></li>
                 <li><a href="#">Trucking</a></li>
                 <li class="active">Trucking Invoice</li>
             </ol>
@@ -50,7 +49,20 @@
             $this->session->unset_userdata('error_message');
             }
         ?>
+<style>
+            input {
+    border: none;
+    background-color: #eee;
+ }
+textarea:focus, input:focus{
+   
+    outline: none;
+}
+ .text-right {
+    text-align: left; 
+}
 
+</style>
         <!-- Purchase report -->
         <div class="row">
             <div class="col-sm-12">
@@ -62,7 +74,7 @@
                     </div>
 
                     <div class="panel-body">
-                    <?php echo form_open_multipart('Ccpurchase/insert_trucking',array('class' => 'form-vertical', 'id' => 'insert_trucking','name' => 'insert_trucking'))?>
+                    <?php echo form_open_multipart('Cpurchase/insert_trucking',array('class' => 'form-vertical', 'id' => 'insert_trucking','name' => 'insert_trucking'))?>
                         
 
                         <div class="row">
@@ -273,18 +285,18 @@
                                             <td class="text-right">
                                                 <input type="text" name="description[]" id="" required="" min="0" class="form-control text-right" value=""  tabindex="6"/>
                                             </td>
-                                            <td class="test">
-                                                <input type="text" name="product_rate[]" required="" onkeyup="calculate_store(1);" onchange="calculate_store(1);" id="product_rate_1" class="form-control product_rate_1 text-right" placeholder="0.00" value="" min="0" tabindex="7"/>
-                                            </td>
+                                            <td><span class='form-control' style='background-color: #eee;'><?php  //echo $currency; ?> 
+                                                <input type="text" name="product_rate[]" required="" onkeyup="calculate_store(1);" onchange="calculate_store(1);" id="product_rate_1" class="product_rate_1" placeholder="0.00" value="" min="0" tabindex="7"/>
+                                           </span> </td>
 
                                             <td class="text-right">
                                                 <input class="form-control" type="text" name="pro_no[]" id="pro_no" value=""  />
                                             </td>
                                            
 
-                                            <td class="text-right">
-                                                <input class="form-control total_price text-right" type="text" name="total_price[]" id="total_price_1" value="0.00" readonly="readonly" />
-                                            </td>
+                                            <td><span class='form-control' style='background-color: #eee;'><?php  //echo $currency; ?> 
+                                                <input class="total_price" type="text" name="total_price[]" id="total_price_1" value="0.00" readonly="readonly" />
+                                           </span></td>
                                             <td>
 
                                                
@@ -294,16 +306,30 @@
                                     </tr>
                                 </tbody>
                                 <tfoot>
-                                    <tr>
+                                <tr>
                                         
-                                        <td class="text-right" colspan="5"><b>Overall Total:</b></td>
-                                        <td class="text-right">
-                                            <input type="text" id="Total" class="text-right form-control" name="total" value="0.00" readonly="readonly" />
-                                        </td>
+                                        <td style="text-align:right;" colspan="5"><b>Grand Total</b></td>
+                                        <td><span class='form-control' style='background-color: #eee;'><?php  //echo $currency; ?>
+                                            <input type="text" id="Total"  name="total" value="0.00" readonly="readonly" />
+                                        </span></td>
                                         <td> <button type="button" id="add_invoice_item" class="btn btn-info" name="add-invoice-item"  onClick="addTruckingOrderField('addPurchaseItem')"  tabindex="9"/><i class="fa fa-plus"></i></button>
 
-                                       <input type="hidden" name="baseUrl" class="baseUrl" value="<?php echo base_url();?>"/></td>
+                                            <input type="hidden" name="baseUrl" class="baseUrl" value="<?php echo base_url();?>"/></td>
                                     </tr>
+                                  
+                                    <tr> <td style="text-align:right;"  colspan="5"><b><?php echo "Grand Total" ?>:</b><br/><b>(Preferred Currency)</b></td>
+                                    <td>
+                                            <span class="form-control" style="background-color: #eee;" >
+                                            <input type="text" id="vendor_gtotal"  name="vendor_gtotal" value="0.00" readonly="readonly" />
+                                            </span></td>
+                                      
+
+                                            <input type="hidden" id="final_gtotal"  name="final_gtotal" />
+
+                                            <input type="hidden" name="baseUrl" class="baseUrl" value="<?php echo base_url();?>"/></td>
+                                    </tr>
+
+
                                     <!--     <tr>
                                        
                                         <td class="text-right" colspan="4"><b><?php echo display('discounts') ?>:</b></td>
@@ -390,23 +416,26 @@
                                     <td>
                                         <input type="hidden" name="uid" value="<?php echo $_SESSION['user_id']; ?>">
     
-                                        <input type="submit" id="add_purchase" class="btn btn-primary btn-large" name="add-trucking" onclick="  $('#btn1_download').css('display','block');
-                                        $('#btn1_email').css('display','block');"name="add-purchase" value="<?php echo display('Save') ?>" />
+                                        <input type="submit" id="add_purchase" class="btn btn-primary btn-large" name="add-trucking"  value="<?php echo display('Save') ?>" />
+
+                                        <?php 
+                                       if(isset($_SESSION['expensetruckingid']))
+                                        {
+                                            ?>
+                                            <a href="<?php echo base_url('Ccpurchase/manage_trucking'); ?>" style="color: #fff;" class='btn btn-primary'>Submit</a>
+
+                                              <a href="<?php echo base_url('Ccpurchase/trucking_details_data/'); ?><?php echo $_SESSION['expensetruckingid']; ?>" style="color: #fff;" class='btn btn-primary'>Download</a>
                                     </td>
                                     <td>&nbsp;</td>
                                     <td id="btn1_download">
                                         
-                                        <a  href="<?php echo base_url('Cinvoice/performa_pdf/');?>" id="down" class="btn btn-primary text-white">
-                                            Download 
-                                        </a>
+                                        
 
                                     </td>
-                                    <td>&nbsp;</td>
-                                    <td id="btn1_email">
-                                        <a href="" id="send" class="btn btn-primary text-white">
-                                            Sendmail with attachment
-                                        </a>
-                                    </td>
+                                     <?php
+                                        }
+
+                                        ?>
                                   
                                   
                                     
@@ -421,7 +450,30 @@
             </div>
         </div>
     </section>
+
 </div>
+<div class="modal fade" id="myModal1" role="dialog" >
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="    margin-top: 190px;">
+        <div class="modal-header" style="">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"><?php echo display('new_invoice') ?></h4>
+        </div>
+        <div class="modal-body">
+          
+          <h4>Trucking Invoice  Created Succefully</h4>
+     
+        </div>
+        <div class="modal-footer">
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
 <!-- Purchase Report End -->
 
 
@@ -601,9 +653,78 @@
 
 
 <script type="text/javascript">
-    $('.select2-selection__arrow').click(function(){
-        alert(3);
-    });
+   // $('.select2-selection__arrow').click(function(){
+    //    alert(3);
+  //  });
+
+    var count = 2;
+    var limits = 500;
+    "use strict";
+    function addTruckingOrderField(divName){
+        if (count == limits)  {
+        alert("You have reached the limit of adding " + count + " inputs");
+    }
+    else{
+        var newdiv = document.createElement('tr');
+        var tabin="cartoon_"+count;
+         tabindex = count * 4 ,
+       newdiv = document.createElement("tr");
+        tab1 = tabindex + 1;
+        
+        tab2 = tabindex + 2;
+        tab3 = tabindex + 3;
+        tab4 = tabindex + 4;
+        tab5 = tabindex + 5;
+        tab6 = tab5 + 1;
+        tab7 = tab6 +1;
+       
+        newdiv.innerHTML ='<td class="span3 supplier"><input type="date" name="trucking_date[]" required="" class="form-control" tabindex="'+tab1+'" > <input type="hidden" class="autocomplete_hidden_value product_id_'+ count +'" name="product_id[]" id="SchoolHiddenId"/>  <input type="hidden" class="sl" value="'+ count +'">  </td> <td class="text-right"><input type="text" name="product_quantity[]" tabindex="'+tab2+'" required  id="cartoon_'+ count +'" class="form-control text-right store_cal_' + count + '" onkeyup="calculate_store(' + count + ');" onchange="calculate_store(' + count + ');" placeholder="0.00" value="" min="0"/></td><td class="text-right"><input class="form-control" type="text" name="description[]" id="pro_no" value=""  /></td><td><span class="form-control" style="background-color: #eee;"><?php  echo $currency." ";  ?> <input type="text" name="product_rate[]" onkeyup="calculate_store('+ count +');" onchange="calculate_store('+ count +');" id="product_rate_'+ count +'" class="product_rate_'+ count +'" placeholder="0.00" value="" min="0" tabindex="'+tab3+'"/></span></td><td class="text-right"><input class="form-control" type="text" name="pro_no[]" id="pro_no" value=""  /></td><td><span class="form-control" style="background-color: #eee;"><?php echo $currency." "; ?> <input class="total_price total_price_'+ count +'" type="text" name="total_price[]" id="total_price_'+ count +'" value="0.00" readonly="readonly" /></span> </td><td> <input type="hidden" id="total_discount_1" class="" /><input type="hidden" id="all_discount_1" class="total_discount" /><button style="text-align: right;" class="btn btn-danger red" type="button"  onclick="deleteRow(this)" tabindex="8"><i class="fa fa-close"></i></button></td>';
+
+
+  document.getElementById(divName).appendChild(newdiv);
+        document.getElementById(tabin).focus();
+        document.getElementById("add_invoice_item").setAttribute("tabindex", tab5);
+        document.getElementById("add_purchase").setAttribute("tabindex", tab6);
+  
+       
+        count++;
+
+        $("select.form-control:not(.dont-select-me)").select2({
+            placeholder: "Select option",
+            allowClear: true
+        });
+    }
+}
+
+$('#supplier_id').on('change', function (e) {
+ 
+    var csrfName = '<?php echo $this->security->get_csrf_token_name();?>';
+var csrfHash = '<?php echo $this->security->get_csrf_hash();?>';
+  var data = {
+      value: $('#supplier_id').val()
+   };
+  data[csrfName] = csrfHash;
+  $.ajax({
+      type:'POST',
+      data: data,
+   
+      //dataType tells jQuery to expect JSON response
+      dataType:"json",
+      url:'<?php echo base_url();?>Cinvoice/getvendorbyname',
+      success: function(result, statut) {
+        
+         // var parsedData = JSON.parse(result);
+        //  alert(result[0].p_quantity);
+        console.log(result[0]['currency_type']);
+      $("#vendor_gtotal").val(result[0]['currency_type']);
+    
+    
+      }
+  });
+
+
+});
+         
 </script>
 
 
@@ -615,3 +736,18 @@ display:none;
         display:none;
      }
     </style>
+<?php 
+
+    if(isset($_SESSION['expensetruckingid']))
+        { ?>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+
+           $('#myModal1').modal('show');
+           hide();
+          
+        });
+    </script>
+    <?php } ?>

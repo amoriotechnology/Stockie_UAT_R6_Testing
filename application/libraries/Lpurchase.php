@@ -102,7 +102,7 @@ class Lpurchase {
 
 
         $data = array(
-
+            'currency' => $currency_details[0]['currency'],
             'title'         => display('add_purchase'),
 
             'all_supplier'  => $all_supplier,
@@ -325,7 +325,7 @@ class Lpurchase {
     
 
         $data = array(
-
+            'currency' => $currency_details[0]['currency'],
             'title'         => 'Add Purchase Order',
 
             'all_supplier'  => $all_supplier,
@@ -346,8 +346,7 @@ class Lpurchase {
 
         );
 
-        // echo "<pre>";
-        // print_r($data['category_list']);die();
+        // echo "<pre>";   print_r($data);die();
 
     
 
@@ -1237,9 +1236,6 @@ class Lpurchase {
 public function purchase_details_data($purchase_id) {
 
 
-
-
-
     $CI = & get_instance();
 
     $CI->load->model('Purchases');
@@ -1253,7 +1249,9 @@ public function purchase_details_data($purchase_id) {
 
 
     $purchase_detail = $CI->Purchases->purchase_details_data($purchase_id);
+      // print_r($purchase_detail); die();
     $Products = $CI->Products->get_invoice_product($purchase_id);
+  
 
     $get_invoice_design = $CI->Purchases->get_invoice_design();
             
@@ -1310,7 +1308,16 @@ public function purchase_details_data($purchase_id) {
 
         'remarks'  => $purchase_detail[0]['remarks'],
 
+
+        'product'  => $Products[0]['product_name'],
+
         'supplier_name'    => $purchase_detail[0]['supplier_name'],
+
+        'desc'    => $purchase_detail[0]['description'],
+
+        'qty'    => $purchase_detail[0]['quantity'],
+
+        'rate'    => $purchase_detail[0]['rate'],
 
         'final_date'       => $purchase_detail[0]['convert_date'],
         'payment_due_date'       => $purchase_detail[0]['payment_due_date'],
@@ -1413,7 +1420,7 @@ public function purchase_details_data($purchase_id) {
             'booking_no' => $purchase_detail[0]['booking_no'],
 'remarks' => $purchase_detail[0]['remarks'],
             'container_no'    => $purchase_detail[0]['container_no'],
-'country_of_origin'  =>$purchase_detail[0]['country_origin'],
+'origin'  =>$purchase_detail[0]['country_origin'],
             'seal_no'       => $purchase_detail[0]['seal_no'],
             'etd' => $purchase_detail[0]['etd'],
             'eta' => $purchase_detail[0]['eta'],

@@ -19,7 +19,20 @@
             </ol>
         </div>
     </section>
-
+    <style>
+            input {
+    border: none;
+    background-color: #eee;
+ }
+textarea:focus, input:focus{
+   
+    outline: none;
+}
+ .text-right {
+    text-align: left; 
+}
+   
+    </style>
     <section class="content">
         <!-- Alert Message -->
         <?php
@@ -180,7 +193,9 @@
 
 
                                         <td class="invoice_fields">
-                                            <input class="total_price form-control text-right" type="text" name="total_price[]" id="total_price_1" value="0.00" readonly="readonly" />
+                                        <span class='form-control' style='background-color: #eee;'><?php   echo $currency; ?>
+                                            <input class="total_price" type="text" name="total_price[]" id="total_price_1" value="0.00" readonly="readonly" />
+                                        </span>
                                         </td>
 
                                         <td>
@@ -210,7 +225,7 @@
                                 <center><label  for="details" class="  col-form-label text-center"><?php echo display('invoice_details') ?></label></center>
                                 <textarea name="inva_details" class="form-control" placeholder="<?php echo display('invoice_details') ?>"></textarea>
                                 </td>
-                                <td class="text-right" colspan="1"><b><?php echo display('service_discount') ?>:</b></td>
+                                <td style="text-align:right;" colspan="1"><b><?php echo display('service_discount') ?>:</b></td>
                                 <td class="text-right">
                                     <input type="text" onkeyup="quantity_calculate(1);"  onchange="quantity_calculate(1);" id="invoice_discount" class="form-control text-right" name="invoice_discount" placeholder="0.00"  />
                                         <input type="hidden" id="txfieldnum">
@@ -221,7 +236,7 @@
                      
                                 <tr>
                                     
-                                    <td class="text-right" colspan="1"><b><?php echo display('total_discount') ?>:</b></td>
+                                    <td style="text-align:right;" colspan="1"><b><?php echo display('total_discount') ?>:</b></td>
                                     <td class="text-right">
                                         <input type="text" id="total_discount_ammount" class="form-control text-right" name="total_discount" value="0.00" readonly="readonly" />
                                     </td>
@@ -231,7 +246,7 @@
                                      foreach($taxes as $taxfldt){?>
                                     <tr class="hideableRow hiddenRow">
                                        
-                                <td class="text-right" colspan="4"><b><?php echo $taxfldt['tax_name'] ?></b></td>
+                                <td style="text-align:right;" colspan="4"><b><?php echo $taxfldt['tax_name'] ?></b></td>
                                 <td class="text-right">
                                     <input id="total_tax_ammount<?php echo $x;?>" tabindex="-1" class="form-control text-right valid totalTax" name="total_tax<?php echo $x;?>" value="0.00" readonly="readonly" aria-invalid="false" type="text">
                                 </td>
@@ -243,38 +258,44 @@
                                  
                     <tr>
                                     <td colspan="3"></td>
-                                    <td class="text-right" colspan="1"><b><?php echo display('total_tax') ?>:</b></td>
+                                    <td style="text-align:right;" colspan="1"><b><?php echo display('total_tax') ?>:</b></td>
                                     <td class="text-right">
-                                        <input type="text" id="total_tax_amount" class="form-control text-right" name="total_tax_amount" value="0.00" readonly="readonly" />
-                                    </td>
+                                    <span class='form-control' style='background-color: #eee;'><?php   echo $currency; ?>
+                                        <input type="text" id="total_tax_amount"  name="total_tax_amount" value="0.00" readonly="readonly" />
+                                     </span> </td>
                                     <td><button type="button" class="toggle btn-warning">
                 <i class="fa fa-angle-double-down"></i>
               </button></td>
                                 </tr>                
 
                                  <tr>
-                                    <td class="text-right" colspan="4"><b><?php echo display('shipping_cost') ?>:</b></td>
-                                    <td class="text-right">
-                                        <input type="text" id="shipping_cost" class="form-control text-right" name="shipping_cost" onkeyup="quantity_calculate(1);"  onchange="quantity_calculate(1);"  placeholder="0.00"  />
-                                    </td>
+                                    <td style="text-align:right;"  colspan="4"><b><?php echo display('shipping_cost') ?>:</b></td>
+                                    <td >
+                                    <span class='form-control' style='background-color: #eee;'><?php   echo $currency; ?>
+                                        <input type="text" id="shipping_cost"  name="shipping_cost" onkeyup="quantity_calculate(1);"  onchange="quantity_calculate(1);"  placeholder="0.00"  />
+                                     </span> </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="4"  class="text-right"><b><?php echo display('grand_total') ?>:</b></td>
-                                    <td class="text-right">
-                                        <input type="text" id="grandTotal" class="form-control text-right" name="grand_total_price" value="0.00" readonly="readonly" />
-                                    </td>
+                                    <td style="text-align:right;" colspan="4"  class="text-right"><b><?php echo display('grand_total') ?>:</b></td>
+                                    <td >
+                                    <span class='form-control' style='background-color: #eee;'><?php   echo $currency; ?>
+                                        <input type="text" id="grandTotal"  name="grand_total_price" value="0.00" readonly="readonly" />
+                                     </span></td>
                                 </tr>
                                  <tr>
-                                    <td colspan="4"  class="text-right"><b><?php echo display('previous'); ?>:</b></td>
-                                    <td class="text-right">
-                                        <input type="text" id="previous" class="form-control text-right" name="previous" value="0.00" readonly="readonly" />
+                                    <td style="text-align:right;" colspan="4"  class="text-right"><b><?php echo display('previous'); ?>:</b></td>
+                                    <td >
+                                    <span class='form-control' style='background-color: #eee;'><?php   echo $currency; ?>
+                                        <input type="text" id="previous"  name="previous" value="0.00" readonly="readonly" />
+                                     </span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="4"  class="text-right"><b><?php echo display('net_total'); ?>:</b></td>
-                                    <td class="text-right">
-                                        <input type="text" id="n_total" class="form-control text-right" name="n_total" value="0" readonly="readonly" placeholder="" />
-                                    </td>
+                                    <td style="text-align:right;" colspan="4"  class="text-right"><b><?php echo display('net_total'); ?>:</b></td>
+                                    <td >
+                                    <span class='form-control' style='background-color: #eee;'><?php   echo $currency; ?>
+                                        <input type="text" id="n_total"  name="n_total" value="0" readonly="readonly" placeholder="" />
+                                     </span> </td>
                                 </tr>
                                 <tr>
                                     <td align="center">
@@ -282,11 +303,12 @@
 
                                         <input type="hidden" name="baseUrl" class="baseUrl" value="<?php echo base_url(); ?>"/>
                                     </td>
-                                    <td class="text-right" colspan="3"><b><?php echo display('paid_ammount') ?>:</b></td>
-                                    <td class="text-right">
+                                    <td style="text-align:right;" colspan="3"><b><?php echo display('paid_ammount') ?>:</b></td>
+                                    <td>
+                                    <span class='form-control' style='background-color: #eee;'><?php   echo $currency; ?>
                                         <input type="text" id="paidAmount" 
-                                               onkeyup="invoice_paidamount();" class="form-control text-right" name="paid_amount" placeholder="0.00" tabindex="13" value=""/>
-                                    </td>
+                                               onkeyup="invoice_paidamount();"  name="paid_amount" placeholder="0.00" tabindex="13" value=""/>
+                                     </span> </td>
                                 </tr>
                                 <tr>
                                     <td align="center">
@@ -295,10 +317,11 @@
                                         <input type="submit" id="add_invoice" class="btn btn-success" name="add-invoice" value="<?php echo display('submit') ?>" tabindex="15"/>
                                     </td>
 
-                                    <td class="text-right" colspan="3"><b><?php echo display('due') ?>:</b></td>
-                                    <td class="text-right">
-                                        <input type="text" id="dueAmmount" class="form-control text-right" name="due_amount" value="0.00" readonly="readonly"/>
-                                    </td>
+                                    <td style="text-align:right;" colspan="3"><b><?php echo display('due') ?>:</b></td>
+                                    <td>
+                                    <span class='form-control' style='background-color: #eee;'><?php   echo $currency; ?>
+                                        <input type="text" id="dueAmmount"  name="due_amount" value="0.00" readonly="readonly"/>
+                                     </span></td>
                                 </tr>
                                 </tfoot>
                             </table>
