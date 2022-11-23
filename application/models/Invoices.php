@@ -166,13 +166,14 @@ class Invoices extends CI_Model {
 
   }
   public function all_profarma($purchase_id) {
-    $this->db->select('a.*,b.*');
+    $this->db->select('a.*,b.*,c.*');
     $this->db->from('profarma_invoice_details a');
+    $this->db->join('product_information c', 'a.product_id = c.product_id');
     $this->db->join('profarma_invoice b', 'b.purchase_id = a.purchase_id');
-     // echo $this->db->last_query(); die();
-    $this->db->where('b.purchase_id', $purchase_id);
 
-    
+    $this->db->where('b.purchase_id', $purchase_id);
+    $this->db->group_by('a.product_id');
+   
     $query = $this->db->get();
 
    //   if ($query->num_rows() > 0) {
@@ -332,6 +333,8 @@ public function add_profarma_invoice()
                'country_goods'=>$this->input->post('country_goods'),
                'country_destination'=>$this->input->post('country_destination'),
                'loading'=>$this->input->post('loading'),
+               'tax_details'=>$this->input->post('tax_details'),
+               'gtotal'=>$this->input->post('gtotal'),
                'discharge'=>$this->input->post('discharge'),
                'terms_payment'=>$this->input->post('terms_payment'),
                'description_goods'=>$this->input->post('description_goods'),
@@ -339,7 +342,7 @@ public function add_profarma_invoice()
                'ac_details'=>$this->input->post('ac_details'),
                 'sales_by'        => $this->session->userdata('user_id')
             );
-
+print_r($data);die();
         //   $CI->load->model('Invoices');
           //  $this->Invoices->add_profarma_invoice($data);
             $this->db->insert('profarma_invoice', $data);

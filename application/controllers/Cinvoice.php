@@ -119,7 +119,7 @@ class Cinvoice extends CI_Controller {
       
      $product_name = $this->db->select('*')->from('product_information')->where("product_id",$all_profarma[0]['product_id'])->get()->result_array();
 
-      // print_r($product_name);die();
+      
         
 
         $profarma_details = $this->db->select('*')->from('profarma_invoice_details')->where("purchase_id",$purchase_detail[0]['purchase_id'])->get()->result_array();
@@ -152,7 +152,9 @@ class Cinvoice extends CI_Controller {
         $CC->load->model('invoice_content');
         $CI1 = & get_instance();
         $CI1->load->model('Purchases');
-
+        $currency_details = $CI->Web_settings->retrieve_setting_editdata();
+        $curn_info_default = $CI->db->select('*')->from('currency_tbl')->where('icon',$currency_details[0]['currency'])->get()->result_array();
+      
         $all_supplier = $CI1->Purchases->select_all_supplier();
         $dataw = $CII->invoice_design->retrieve_data();
         // print_r($dataw); exit();
@@ -164,6 +166,8 @@ class Cinvoice extends CI_Controller {
         
               
         $data = array(
+            'curn_info_default' =>$curn_info_default[0]['currency_name'],
+            'currency'  =>$currency_details[0]['currency'],
             'header'=> $dataw[0]['header'],
             'logo'=> $dataw[0]['logo'],
             'color'=> $dataw[0]['color'],
@@ -204,7 +208,7 @@ class Cinvoice extends CI_Controller {
             'description_goods' => $purchase_detail[0]['description_goods'],
 
             'total' => $purchase_detail[0]['total'],
-
+            'remarks' => $purchase_detail[0]['remarks'],
             'ac_details' =>  $purchase_detail[0]['ac_details'],
 
              'product' => $product_name[0]['product_name'],
@@ -220,7 +224,7 @@ class Cinvoice extends CI_Controller {
 
         );
 
-        
+       
 
 
 
@@ -3264,6 +3268,9 @@ $this->db->update('bootgrid_data');
                     'customer_id'=>$this->input->post('customer_id'),
                     'pre_carriage'=>$this->input->post('pre_carriage'),
                     'receipt'=>$this->input->post('receipt'),
+                    'remarks'=>$this->input->post('remarks'),
+                    'tax_details'=>$this->input->post('tax_details'),
+               'gtotal'=>$this->input->post('gtotal'),
                     'country_goods'=>$this->input->post('country_goods'),
                     'country_destination'=>$this->input->post('country_destination'),
                     'loading'=>$this->input->post('loading'),
