@@ -134,19 +134,17 @@ $today = date('Y-m-d');
                     <div class="panel-body">
                     <div id="customers">
   <table class="table table-bordered" cellspacing="0" width="100%" id="ProfarmaInvList">
-    <thead>
+  <thead>
       <tr>
-      <th class="ID">ID</th>
-        <th class="Trucking ID">Trucking ID</th>
-        <th class="Container Pick Up Date">Container Pick Up Date</th>
-        <th class="Delivery Date">Delivery Date</th>
-        <th class="Shipment Company">Shipment Company</th>
-         <th class="Bill To">Bill To</th>
-		 <th class="Invoice Date">Invoice Date</th>
-		 <th class="Total Amount">Total Amount</th>
-     
-         <th class="text-center Action" data-column-id="action" data-formatter="commands" data-sortable="false">Action</th>
-       
+      <th class="ID" style="width: 100px; height: 37.0114px;">ID</th>
+        <th class="Trucking ID" style="height: 47.0114px; width: 204.011px;">Trucking ID</th>
+        <th class="Container Pick Up Date" style="width: 245.011px; height: 47.0114px;">Container Pick Up Date</th>
+        <th class="Delivery Date" style="width: 138.011px; height: 42.0114px;">Delivery Date</th>
+        <th class="Shipment Company" style="width: 209.011px; height: 44.0114px;">Shipment Company</th>
+         <th class="Bill To" style="width: 126.011px; height: 45.0114px;">Bill To</th>
+         <th class="Invoice Date" style="width: 135.011px; height: 44.0114px;">Invoice Date</th>
+         <th class="Total Amount" style="width: 135.011px; height: 42.0114px;">Total Amount</th>
+         <th class="text-center Action" data-column-id="action" data-formatter="commands" data-sortable="false" style="width: 134.011px;">Action</th>
       </tr>
     </thead>
     <tbody>

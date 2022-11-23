@@ -145,7 +145,7 @@ $today = date('Y-m-d');
          <th class="Invoice Date">Invoice Date</th>
 		 <th class="Thickness">Thickness</th>
       <div class="myButtonClass"> 
-         <th class="text-center Action" data-column-id="action" data-formatter="commands" data-sortable="false">Action</th>
+         <th class="text-center Action" data-column-id="action" data-formatter="commands" data-sortable="false"  style="width: 223.011px; height: 44.0114px;">Action</th>
         </div>
       </tr>
     </thead>

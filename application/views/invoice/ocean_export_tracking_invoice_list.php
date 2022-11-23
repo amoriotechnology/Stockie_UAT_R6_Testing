@@ -134,19 +134,19 @@ $today = date('Y-m-d');
                     <div class="panel-body">
                     <div id="customers">
   <table class="table table-bordered" cellspacing="0" width="100%" id="ProfarmaInvList">
-    <thead>
+  <thead>
       <tr>
-      <th class="ID">ID</th>
-        <th class="Booking Number">Booking Number</th>
-        <th class="Container Number">Container Number</th>
-        <th class="Seal Number">Seal Number</th>
-        <th class="Ocean Export ID">Ocean Export ID</th>
-         <th class="Supplier Name">Supplier Name</th>
-		 <th class="Purchase Date">Purchase Date</th>
+      <th class="ID"    style="width: 100px; height: 39.0114px;"               >ID</th>
+        <th class="Booking Number"      style="height: 45.0114px; width: 167.011px;"    >Booking Number</th>
+        <th class="Container Number"   style="height: 44.0114px; width: 193.011px;"     >Container Number</th>
+        <th class="Seal Number"        style="width: 127.011px; height: 46.0114px;"   >Seal Number</th>
+        <th class="Ocean Export ID"      style="width: 185.011px; height: 47.0114px;"   > Ocean Export ID</th>
+         <th class="Supplier Name"    style="height: 42.0114px; width: 151.011px;"  >Supplier Name</th>
+		 <th class="Purchase Date"    style="width: 149.011px;"    >Purchase Date</th>
 		 
-		 <th class="Place of Delivery">Place of Delivery</th>
+		 <th class="Place of Delivery"    style="height: 42.0114px; width: 171.011px;"       >Place of Delivery</th>
       <div class="myButtonClass"> 
-         <th class="text-center Action" data-column-id="action" data-formatter="commands" data-sortable="false">Action</th>
+         <th class="text-center Action" data-column-id="action" data-formatter="commands" data-sortable="false" style="width: 183.011px; height: 45.0114px;"     >Action</th>
         </div>
       </tr>
     </thead>
@@ -230,7 +230,7 @@ $count++;
             <div id="myModal_colSwitch" class="modal_colSwitch">
                     <div class="modal-content_colSwitch">
                           <span class="close_colSwitch">&times;</span>
-                          <input type="checkbox"  data-control-column="1" class="opt ID" value="ID" /> ID<br>
+                          <input type="checkbox"  data-control-column="1" checked = "checked" class="opt ID" value="ID" /> ID<br>
 
     <input type="checkbox"  data-control-column="2" checked = "checked" class="opt Booking Number" value="Booking Number"/>Booking Number<br>
  
