@@ -64,6 +64,8 @@ class Ccpurchase extends CI_Controller {
 
 
      public function manage_trucking() {
+
+        $this->session->unset_userdata('expensetruckingid');
         $date = $this->input->post("daterange");
         $this->load->library('Llpurchase');
         $content1 = $this->llpurchase->trucking_list();

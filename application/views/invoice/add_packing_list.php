@@ -1,4 +1,3 @@
-<!-- Product Purchase js -->
 
 <script src="<?php echo base_url()?>my-assets/js/admin_js/json/product_purchase.js.php" ></script>
 <!-- Supplier Js -->
@@ -20,8 +19,7 @@
             <small>Generate New Packing List Invoice</small>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="pe-7s-home"></i> <?php echo display('home') ?></a></li>
-                <li><a href="#">Packing List</a></li>
-                <li class="active">Packing List Invoice</li>
+                <li><a href="#">Packing List</a></lia                <li class="active">Packing List Invoice</li>
             </ol>
         </div>
     </section>
@@ -339,19 +337,24 @@
                                         <input type="submit" id="add_purchase" class="btn btn-primary btn-large" name="add-packing-list" value="Save" />
                                     </td>
                                     <td>&nbsp;</td>
+                                    <?php  if(isset($_SESSION['packingid']))    {?>    
                                     <td>
-                                        
-                                        <a href="" id="download" style="display:none;" class="btn btn-primary">
+                                       <a href="<?php echo base_url('Cinvoice/manage_packing_list/'); ?>" style="color: #fff ;" id="save_another" class="btn btn-primary">
+                                           Submit
+                                        </a>
+                                        <a href="<?php echo base_url('Cinvoice/invoice_inserted_data/'); ?><?php echo $this->session->userdata('packingid');?>" id="download" class="btn btn-primary">
                                             Download 
                                         </a>
 
                                     </td>
                                     <td>&nbsp;</td>
                                     <td>
-                                        <a href="" style="display:none; color: #fff ;" id="save_another" class="btn btn-primary">
+                                        <a href="<?php echo base_url('Cinvoice/packing_with_attachments/'); ?><?php echo $this->session->userdata('packingid');?>" style="color: #fff ;" id="save_another" class="btn btn-primary">
                                             Sendmail with attachment
                                         </a>
+                                         
                                     </td>
+                                <?php } ?>
                                   
                                   
                                     
@@ -395,7 +398,43 @@
             </div>
         </div>
     </section>
+    <div class="modal fade" id="myModal1" role="dialog" >
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="    margin-top: 190px;">
+        <div class="modal-header" style="">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Packing Invoice</h4>
+        </div>
+        <div class="modal-body">
+          
+          <h4>Packing Invoice  Created Succefully</h4>
+     
+        </div>
+        <div class="modal-footer">
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
 </div>
+
+<?php 
+if(isset($_SESSION['packingid']))
+{
+
+?>
+<script type="text/javascript">
+     $(document).ready(function(){
+
+     $('#myModal1').modal('show');
+     hide();
+     });
+     
+</script>
+<?php } ?>
 <!-- Purchase Report End -->
 
 <script type="text/javascript">
@@ -416,13 +455,13 @@
 <script type="text/javascript">
 $(document).ready(function () {
     $("#add_purchase").click(function () {
-        $("#save_another").toggle();
+       
     });
 });
 
 $(document).ready(function () {
     $("#add_purchase").click(function () {
-        $("#download").toggle();
+      
     });
 });
 

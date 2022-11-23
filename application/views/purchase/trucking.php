@@ -18,7 +18,7 @@
             <h1>Trucking</h1>
             <small>Generate New Trucking Invoice</small>
             <ol class="breadcrumb">
-                <li><a href="#"><i class="pe-7s-home"></i> <?php echo display('home') ?></a></li>
+                <li><a href="#"><i class="pe-7s-home"></i> <?php echo display('home') ?>       </a></li>
                 <li><a href="#">Trucking</a></li>
                 <li class="active">Trucking Invoice</li>
             </ol>
@@ -74,7 +74,7 @@ textarea:focus, input:focus{
                     </div>
 
                     <div class="panel-body">
-                    <?php echo form_open_multipart('Ccpurchase/insert_trucking',array('class' => 'form-vertical', 'id' => 'insert_trucking','name' => 'insert_trucking'))?>
+                    <?php echo form_open_multipart('Cpurchase/insert_trucking',array('class' => 'form-vertical', 'id' => 'insert_trucking','name' => 'insert_trucking'))?>
                         
 
                         <div class="row">
@@ -285,7 +285,7 @@ textarea:focus, input:focus{
                                             <td class="text-right">
                                                 <input type="text" name="description[]" id="" required="" min="0" class="form-control text-right" value=""  tabindex="6"/>
                                             </td>
-                                            <td><span class='form-control' style='background-color: #eee;'><?php  echo $currency; ?> 
+                                            <td><span class='form-control' style='background-color: #eee;'><?php  //echo $currency; ?> 
                                                 <input type="text" name="product_rate[]" required="" onkeyup="calculate_store(1);" onchange="calculate_store(1);" id="product_rate_1" class="product_rate_1" placeholder="0.00" value="" min="0" tabindex="7"/>
                                            </span> </td>
 
@@ -294,7 +294,7 @@ textarea:focus, input:focus{
                                             </td>
                                            
 
-                                            <td><span class='form-control' style='background-color: #eee;'><?php  echo $currency; ?> 
+                                            <td><span class='form-control' style='background-color: #eee;'><?php  //echo $currency; ?> 
                                                 <input class="total_price" type="text" name="total_price[]" id="total_price_1" value="0.00" readonly="readonly" />
                                            </span></td>
                                             <td>
@@ -309,7 +309,7 @@ textarea:focus, input:focus{
                                 <tr>
                                         
                                         <td style="text-align:right;" colspan="5"><b>Grand Total</b></td>
-                                        <td><span class='form-control' style='background-color: #eee;'><?php  echo $currency; ?>
+                                        <td><span class='form-control' style='background-color: #eee;'><?php  //echo $currency; ?>
                                             <input type="text" id="Total"  name="total" value="0.00" readonly="readonly" />
                                         </span></td>
                                         <td> <button type="button" id="add_invoice_item" class="btn btn-info" name="add-invoice-item"  onClick="addTruckingOrderField('addPurchaseItem')"  tabindex="9"/><i class="fa fa-plus"></i></button>
@@ -416,23 +416,26 @@ textarea:focus, input:focus{
                                     <td>
                                         <input type="hidden" name="uid" value="<?php echo $_SESSION['user_id']; ?>">
     
-                                        <input type="submit" id="add_purchase" class="btn btn-primary btn-large" name="add-trucking" onclick="  $('#btn1_download').css('display','block');
-                                        $('#btn1_email').css('display','block');"name="add-purchase" value="<?php echo display('Save') ?>" />
+                                        <input type="submit" id="add_purchase" class="btn btn-primary btn-large" name="add-trucking"  value="<?php echo display('Save') ?>" />
+
+                                        <?php 
+                                       if(isset($_SESSION['expensetruckingid']))
+                                        {
+                                            ?>
+                                            <a href="<?php echo base_url('Ccpurchase/manage_trucking'); ?>" style="color: #fff;" class='btn btn-primary'>Submit</a>
+
+                                              <a href="<?php echo base_url('Ccpurchase/trucking_details_data/'); ?><?php echo $_SESSION['expensetruckingid']; ?>" style="color: #fff;" class='btn btn-primary'>Download</a>
                                     </td>
                                     <td>&nbsp;</td>
                                     <td id="btn1_download">
                                         
-                                        <a  href="<?php echo base_url('Cinvoice/performa_pdf/');?>" id="down" class="btn btn-primary text-white">
-                                            Download 
-                                        </a>
+                                        
 
                                     </td>
-                                    <td>&nbsp;</td>
-                                    <td id="btn1_email">
-                                        <a href="" id="send" class="btn btn-primary text-white">
-                                            Sendmail with attachment
-                                        </a>
-                                    </td>
+                                     <?php
+                                        }
+
+                                        ?>
                                   
                                   
                                     
@@ -447,7 +450,30 @@ textarea:focus, input:focus{
             </div>
         </div>
     </section>
+
 </div>
+<div class="modal fade" id="myModal1" role="dialog" >
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="    margin-top: 190px;">
+        <div class="modal-header" style="">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"><?php echo display('new_invoice') ?></h4>
+        </div>
+        <div class="modal-body">
+          
+          <h4>Trucking Invoice  Created Succefully</h4>
+     
+        </div>
+        <div class="modal-footer">
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
 <!-- Purchase Report End -->
 
 
@@ -710,3 +736,18 @@ display:none;
         display:none;
      }
     </style>
+<?php 
+
+    if(isset($_SESSION['expensetruckingid']))
+        { ?>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+
+           $('#myModal1').modal('show');
+           hide();
+          
+        });
+    </script>
+    <?php } ?>

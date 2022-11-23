@@ -26,6 +26,15 @@ class Purchases extends CI_Model {
         return false;
     }
 
+    public function expense_package()
+    {
+        $sql='select * from expense_packing_list where create_by='.$_SESSION['user_id'];
+        $query=$this->db->query($sql);
+ if ($query->num_rows() > 0) {
+            return $query->result_array();
+        }
+        return false;
+    }
 
         //Count purchase
     public function count_purchase_order() {
@@ -1376,9 +1385,9 @@ return $output;
             $product_id = $p_id[$i];
             $value = $this->product_supplier_check($product_id, $supplier_id);
             if ($value == 0) {
-                $this->session->set_flashdata('error_message', display('product_and_supplier_did_not_match'));
-                redirect(base_url('Cpurchase'));
-                exit();
+                $this->session->set_flashdata('message', display('product_and_supplier_did_not_match'));
+              //  redirect(base_url('Cpurchase/'));
+               
             }
         }
 
@@ -1550,10 +1559,11 @@ return $output;
 
             if (!empty($quantity)) {
                 $this->db->insert('product_purchase_details', $data1);
+                $this->session->set_userdata(array('purchase_id' =>$purchase_id));
             }
         }
 
-        return true;
+        return $purchase_id;
     }
 
 
@@ -1689,7 +1699,7 @@ return $output;
             }
         }
 
-        return $data1;
+        return $purchase_id;
     }
 
 
@@ -1725,8 +1735,7 @@ return $output;
             $value = $this->product_supplier_check($product_id, $supplier_id);
             if ($value == 0) {
                 $this->session->set_flashdata('error_message', display('product_and_supplier_did_not_match'));
-                redirect(base_url('Cpurchase'));
-                exit();
+             
             }
         }
 
@@ -1911,7 +1920,7 @@ return $output;
         }
     
 
-        return true;
+        return $purchase_id;
     }
 
 
@@ -1981,7 +1990,7 @@ return $output;
           $query= $this->db->insert('ocean_import_tracking', $data);
      
 
-       // return true;
+       return $purchase_id;
     }
 
         public function voucher_no()
@@ -2110,7 +2119,7 @@ return $output;
             }
         }
 
-        return true;
+        return $purchase_id;
     }
 
     //Retrieve purchase Edit Data

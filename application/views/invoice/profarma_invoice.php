@@ -412,23 +412,29 @@ textarea:focus, input:focus{
                                     <td>
                                         <input type="hidden" name="uid" value="<?php echo $_SESSION['user_id']; ?>">
     
-                                        <input type="submit" id="add_purchase" class="btn btn-primary btn-large"  onclick="  $('#btn1_download').css('display','block');
-                                        $('#btn1_email').css('display','block');"name="add-purchase" value="<?php echo display('Save') ?>" />
+                                        <input type="submit"  class="btn btn-primary btn-large"  onclick="  $('#btn1_download').css('display','block');
+                                        $('#btn1_email').css('display','block');" id='add_purchase' name="add-purchase" value="<?php echo display('Save') ?>" />
                                     </td>
                                     <td>&nbsp;</td>
                                     <td id="btn1_download">
                                         
-                                        <a href="<?php echo base_url('Cinvoice/performa_pdf/'.$purchase_id);?>" id="down" class="btn btn-primary">
-                                            Download 
+                                        <?php if(isset( $_SESSION['perfarma_invoice_id'])){?>
+
+                                            <a href="<?php echo base_url('Cinvoice/manage_profarma_invoice/'); ?><?php echo $_SESSION['perfarma_invoice_id'];?>" id="down" class="btn btn-primary">
+                                            submit  
                                         </a>
+                                        <a href="<?php echo base_url('Cinvoice/performa_pdf/'); ?><?php echo $_SESSION['perfarma_invoice_id'];?>" id="down" class="btn btn-primary">
+                                            Donwload  
+                                        </a>
+                                        <a href="<?php echo base_url('Cinvoice/proforma_mail/'); ?><?php echo $this->session->userdata('perfarma_invoice_id');?>" id="down" class="btn btn-primary">
+                                            Send mail with attachments
+                                        </a>
+                                        
+                                    <?php } ?>
 
                                     </td>
                                     <td>&nbsp;</td>
-                                    <td id="btn1_email">
-                                        <a href="" id="send" class="btn btn-primary">
-                                            Sendmail with attachment
-                                        </a>
-                                    </td>
+                                    
                                   
                                   
                                     
@@ -445,6 +451,34 @@ textarea:focus, input:focus{
 
             </div>
         </div>
+        <?php 
+
+        if(isset($_SESSION['perfarma_invoice_id']))
+        {
+        ?>
+        <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="    margin-top: 190px;">
+        <div class="modal-header" style="">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Performa invoice</h4>
+        </div>
+        <div class="modal-body">
+          
+          <h4>Performa Invoice  Created Succefully</h4>
+     
+        </div>
+        <div class="modal-footer">
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+<?php } ?>
+
     </section>
     <input type="hidden" id="hdn"/>
 <input type="text" id="gtotal_dup"/>
@@ -461,6 +495,8 @@ display:none;
     </style>
 
     <script>
+
+
       /* function currency(){
 
 var data = {};
@@ -1037,3 +1073,14 @@ $.ajax({
      
 </script>
 
+</td>
+<?php 
+if(isset($_SESSION['']))
+{ ?>
+<script type="text/javascript">
+
+      $('#myModal1').modal('show');
+      hide();
+  
+</script>
+<?php } ?>

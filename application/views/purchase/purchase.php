@@ -34,27 +34,20 @@
 
 		<!-- Alert Message -->
 	    <?php
-	        $message = $this->session->userdata('message');
+	         $message = $this->session->userdata('alert');
 	        if (isset($message)) {
 	    ?>
-	    <div class="alert alert-info alert-dismissable">
-	        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-	        <?php echo $message ?>                    
-	    </div>
-	    <?php 
-	        $this->session->unset_userdata('message');
-	        }
-	        $error_message = $this->session->userdata('error_message');
-	        if (isset($error_message)) {
-	    ?>
-	    <div class="alert alert-danger alert-dismissable">
-	        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-	        <?php echo $error_message ?>                    
-	    </div>
-	    <?php 
-	        $this->session->unset_userdata('error_message');
-	        }
-	    ?>
+        
+<script type="text/javascript">
+    $(window).on('load', function() {
+        $('#myModal').modal('show');
+    });
+</script>
+	   
+       <?php } 
+
+       ?>
+	    
 	            
 			
 			
@@ -248,6 +241,9 @@ $count++;
 
     </section>
 
+
+  
+</div>
 </div>
 <script type="text/javascript" src="<?php echo base_url()?>my-assets/js/profarma.js"></script>
 <input type="hidden" value="Purchase/Purchase" id="url"/>
@@ -350,6 +346,14 @@ $('tr').each(function(){
 
 
 
+<script type="text/javascript">
+$('document').ready(function(){
+setTimeout(hide, 3000);
+function hide() {
+ $('#myModal').modal('hide');
 
+}
+});
+</script>
 
 

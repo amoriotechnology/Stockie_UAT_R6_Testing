@@ -845,9 +845,10 @@ class Linvoice {
         ->get()
         ->result_array();
         $voucher_no = $CI->Invoices->commercial_inv_number();
+        $sales_packing_list = $CI->Invoices->sales_packing_list();
         $data = array(
             'curn_info_default' =>$curn_info_default[0]['currency_name'],
-          //  'curn_info_customer'=>$curn_info_customer[0]['currency_name'],
+           // 'curn_info_customer'=>$curn_info_customer[0]['currency_name'],
             'currency'  =>$currency_details[0]['currency'],
             'title'         => display('add_new_invoice'),
             'discount_type' => $currency_details[0]['discount_type'],
@@ -861,8 +862,12 @@ class Linvoice {
             'bank_list'     => $bank_list,
             'voucher_no' => $voucher_no,
                 'tax_name'=>'ww',
+                'packinglist'=>$sales_packing_list,
+
+
         );
-    
+
+
         $invoiceForm = $CI->parser->parse('invoice/add_invoice_form', $data, true);
        // $invoiceForm = $CI->parser->parse('invoice/profarma_invoice', $data, true);
         return $invoiceForm;

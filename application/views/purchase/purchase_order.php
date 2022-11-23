@@ -24,29 +24,7 @@
     </section>
 
     <section class="content">
-        <!-- Alert Message -->
-        <?php
-            $message = $this->session->userdata('message');
-            if (isset($message)) {
-        ?>
-        <div class="alert alert-info alert-dismissable">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
-            <?php echo $message ?>                    
-        </div>
-        <?php 
-            $this->session->unset_userdata('message');
-            }
-            $error_message = $this->session->userdata('error_message');
-            if (isset($error_message)) {
-        ?>
-        <div class="alert alert-danger alert-dismissable">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-            <?php echo $error_message ?>                    
-        </div>
-        <?php 
-            $this->session->unset_userdata('error_message');
-            }
-        ?>
+        
 <style>
             input {
     border: none;
@@ -84,8 +62,8 @@ textarea:focus, input:focus{
                                         <i class="text-danger">*</i>
                                     </label>
                                     <div class="col-sm-7">
-                                        <select name="supplier_id" id="supplier_id" class="form-control " required="" tabindex="1"> 
-                                            <option value=" "><?php echo display('select_one') ?></option>
+                                        <select name="supplier_id" id="supplier_id" class="form-control " required tabindex="1"> 
+                                            <option value=""><?php echo display('select_one') ?></option>
                                             {all_supplier}
                                             <option value="{supplier_id}">{supplier_name}</option>
                                             {/all_supplier}
@@ -476,7 +454,19 @@ textarea:focus, input:focus{
                          <div class="form-group row">
                             <div class="col-sm-6">
                                 <input type="submit" id="add_purchase" class="btn btn-primary btn-large" name="add-purchase-order" value="Save" />
-                                <input type="submit" value="<?php echo display('submit_and_add_another') ?>" name="add-purchase-order-another" class="btn btn-large btn-success" id="add_purchase_order_another" >
+                                
+                                <?php 
+                                if(isset($_SESSION['purchase_orderid']))
+                                {
+                                    ?>
+                                 <a href="<?php echo base_url('Cpurchase/manage_purchase_order'); ?>" class='btn btn-primary' style='color: #fff;'>Submit</a>
+                                 <a class="btn btn-primary" style="color: #fff;" href="<?php echo base_url('Cpurchase/purchase_order_details_data/'); ?><?php echo $_SESSION['purchase_orderid']; ?> ">Download</a>
+                                 
+                                    <?php 
+                                }
+                                 ?>
+
+                                </div
                             </div>
                         </div>
 
@@ -490,6 +480,27 @@ textarea:focus, input:focus{
         </div>
     </section>
 </div>
+<div class="modal fade" id="myModal1" role="dialog" >
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="    margin-top: 190px;">
+        <div class="modal-header" style="">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Purchase Order</h4>
+        </div>
+        <div class="modal-body">
+          
+          <h4>Purchase order  Created Succefully</h4>
+     
+        </div>
+        <div class="modal-footer">
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
 
 
      <!------ add new product-->  
@@ -966,7 +977,19 @@ $('#supplier_id').on('change', function (e) {
 
 });
     </script>
+<?php 
+    if($_SESSION['purchase_orderid'])
+        { ?>
 
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+
+           $('#myModal1').modal('show');
+           hide();
+        });
+    </script>
+    <?php } ?>
 
 
 

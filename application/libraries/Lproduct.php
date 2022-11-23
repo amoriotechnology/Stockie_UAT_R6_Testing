@@ -29,13 +29,49 @@ class Lproduct {
         $company_info = $CI->Products->retrieve_company();
 
         $data['total_product']    = $CI->Products->count_product();
+        $data['products']    = $CI->Products->get_all_products();
 
         $data['company_info']     = $company_info;
+        $data['sale_count']     = $CI->Products->sales_product_all();
+        $data['expense_count']     = $CI->Products->expense_product_all();
+
+
+        // print_r($data['expense_count']);
+        // exit;       
+
 
         if(isset($cat_id))
         $data['category_id'] = $cat_id;
 
         $productList = $CI->parser->parse('product/product',$data,true);
+
+        return $productList;
+
+    }
+
+     public function product_view($id="")
+
+    {
+
+        $CI =& get_instance();
+
+        $CI->load->model('Products');
+
+        $CI->load->model('Web_settings');
+
+        $company_info = $CI->Products->retrieve_company();
+
+     
+        $data['product_details']    = $CI->Products->product_details($id);
+        $data['stock']= count($data['product_details']);
+    
+        $data['total_sales']    = $CI->Products->sales_products($id);
+        $data['total_expenses']    = $CI->Products->expense_products($id);
+
+        $data['company_info']     = $company_info;
+     
+
+        $productList = $CI->parser->parse('product/product_details',$data,true);
 
         return $productList;
 

@@ -103,27 +103,16 @@
     <section class="content">
         <!-- Alert Message -->
         <?php
-            $message = $this->session->userdata('message');
+            $message = $this->session->userdata('alert');
             if (isset($message)) {
         ?>
-        <div class="alert alert-info alert-dismissable">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
-            <?php echo $message ?>                    
-        </div>
+       <script type="text/javascript">
+           alert(2);
+       </script>
         <?php 
-            $this->session->unset_userdata('message');
-            }
-            $error_message = $this->session->userdata('error_message');
-            if (isset($error_message)) {
-        ?>
-       <!-- <div class="alert alert-danger alert-dismissable">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-            <?php //echo $error_message ?>                    
-        </div>-->
-        <?php 
-            $this->session->unset_userdata('error_message');
-            }
-        ?>
+           
+           }
+           ?>
 
         <!-- Purchase report -->
         <div class="row">
@@ -176,7 +165,7 @@
                                     </label>
                                     <div class="col-sm-8">
                                         <?php $date = date('Y-m-d'); ?>
-                                        <input type="date" required tabindex="2" class="form-control datepicker" name="bill_date" value="<?php echo $date; ?>" id="date"  />
+                                        <input type="text" required tabindex="2" class="form-control datepicker" name="bill_date" value="<?php echo $date; ?>" id="date"  />
                                     </div>
                                 </div>
                             </div>
@@ -201,7 +190,7 @@
                                     </label>
                                     <div class="col-sm-8">
                                         <?php $date = date('Y-m-d'); ?>
-                                        <input type="date" required tabindex="2" class="form-control datepicker" name="payment_due_date" value="<?php echo $date; ?>" id="date1"  />
+                                        <input type="text" required tabindex="2" class="form-control datepicker" name="payment_due_date" value="<?php echo $date; ?>" id="date1"  />
                                     </div>
                                 </div>
                             </div>
@@ -339,19 +328,7 @@
                             </div>
                         </div>
                         </div> -->
-                        <style>
-        input {
-    border: none;
-    background-color: #eee;
- }
-textarea:focus, input:focus{
-   
-    outline: none;
-}
- .text-right {
-    text-align: left; 
-}
-</style>
+
 <br>
                            <div class="table-responsive">
                             <table class="table table-bordered table-hover" id="purchaseTable">
@@ -394,14 +371,14 @@ textarea:focus, input:focus{
                                                      <option value="Square Feet">Square Feet</option>
                                                 </select>
                                             </td>
-                                            <td><span class='form-control' style='background-color: #eee;'><?php  echo $currency; ?>
-                                                <input type="text" name="product_rate[]" required="" onkeyup="calculate_store(1);" onchange="calculate_store(1);" id="product_rate_1" class="product_rate_1" placeholder="0.00" value="" min="0" tabindex="7"/>
-                                             </span></td>
+                                            <td class="test">
+                                                <input type="text" name="product_rate[]" required="" onkeyup="calculate_store(1);" onchange="calculate_store(1);" id="product_rate_1" class="form-control product_rate_1 text-right" placeholder="0.00" value="" min="0" tabindex="7"/>
+                                            </td>
                                            
 
-                                             <td><span class='form-control' style='background-color: #eee;'><?php  echo $currency; ?>
-                                                <input class="total_price" type="text" name="total_price[]" id="total_price_1" value="0.00" readonly="readonly" />
-                                            <span></td>
+                                            <td class="text-right">
+                                                <input class="form-control total_price text-right" type="text" name="total_price[]" id="total_price_1" value="0.00" readonly="readonly" />
+                                            </td>
                                             <td>
 
                                                
@@ -413,26 +390,14 @@ textarea:focus, input:focus{
                                 <tfoot>
                                     <tr>
                                         
-                                        <td style="text-align:right;" colspan="4"><b>Grand Total</b></td>
-                                        <td><span class='form-control' style='background-color: #eee;'><?php  echo $currency; ?>
-                                            <input type="text" id="Total"  name="total" value="0.00" readonly="readonly" />
-                                        </span></td>
+                                        <td class="text-right" colspan="4"><b>Overall Total</b></td>
+                                        <td class="text-right">
+                                            <input type="text" id="Total" class="text-right form-control" name="total" value="0.00" readonly="readonly" />
+                                        </td>
                                         <td> <button type="button" id="add_invoice_item" class="btn btn-info" name="add-invoice-item"  onClick="addPurchaseOrderField1('addPurchaseItem')"  tabindex="9"/><i class="fa fa-plus"></i></button>
 
                                             <input type="hidden" name="baseUrl" class="baseUrl" value="<?php echo base_url();?>"/></td>
                                     </tr>
-                                  
-                                    <tr> <td style="text-align:right;"  colspan="4"><b><?php echo "Grand Total" ?>:</b><br/><b>(Preferred Currency)</b></td>
-                                    <td>
-                                            <span class="form-control" style="background-color: #eee;" >
-                                            <input type="text" id="vendor_gtotal"  name="vendor_gtotal" value="0.00" readonly="readonly" />
-                                            </span></td>
-                                      
-
-                                            <input type="hidden" id="final_gtotal"  name="final_gtotal" />
-
-                                            <input type="hidden" name="baseUrl" class="baseUrl" value="<?php echo base_url();?>"/></td>
-                                    </tr> 
                                   <!--       <tr>
                                        
                                         <td class="text-right" colspan="4"><b><?php echo display('discounts') ?>:</b></td>
@@ -478,6 +443,8 @@ textarea:focus, input:focus{
                         <div class="row">
 
                             <div class="col-sm-12">
+                                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#packmodal" id="packbutton">Choose Packing  Modal</button>
+                            </div>
                                <div class="form-group row">
                                     <label for="eta" class="col-sm-2 col-form-label">Remarks / Details
                                     </label>
@@ -553,9 +520,25 @@ textarea:focus, input:focus{
                         <div class="form-group row" style="
     margin-top: 1%;
 ">
+
                             <div class="col-sm-6">
-                                <input type="submit" id="add_purchase" class="btn btn-primary btn-large" name="add-purchase" value="Submit" />
-                                <input type="submit" value="Submit And Another One" name="add-purchase-another" class="btn btn-large btn-success" id="add_purchase_another" >
+                                <input type="hidden" name="packing_id" value="<?php echo $this->session->userdata('purchase_id');?>" id="packing_id2s">
+                                <input type="hidden" name="packing_id" value="" id="packing_id">
+                                <input type="submit" id="add_purchase" class="btn btn-primary btn-large" name="add-purchase" value="Save" />
+
+                                <?php 
+                                $purchase_id=$this->session->userdata('newexpenseid');
+                                if(isset($purchase_id))
+                                    {?>
+                                         <a href="<?php echo base_url('Cpurchase/manage_purchase'); ?>" class="btn btn btn-primary" Style='color: #fff;'>Submit</a>
+                                     <a href="<?php echo base_url('Cpurchase/purchase_details_data/'); ?><?php echo $this->session->userdata('newexpenseid');?>" class=" btn btn-primary" Style='color: #fff;'>Download</a>
+
+                                        <br>
+                                        <br>
+                                        <br>
+
+                                    <?php } ?>
+                            
                             </div>
                         </div>
 
@@ -582,10 +565,99 @@ textarea:focus, input:focus{
             </div>
         </div>
     </section>
+<div class="modal fade" id="myModal1" role="dialog" >
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="    margin-top: 190px;">
+        <div class="modal-header" style="">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Expenses</h4>
+        </div>
+        <div class="modal-body">
+          
+          <h4>New  Expenses  Created Succefully</h4>
+     
+        </div>
+        <div class="modal-footer">
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
 
-   
 
+  <!-- Pack  Modal -->
+    
+  
 
+   <div id="packmodal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content" style="width: 163%;">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Choose your Package </h4>
+      </div>
+      <div class="modal-body">
+        <table class="table table-bordered">
+            <tr>
+                <th>Choose your Package   </th>
+                <th>Sno</th>
+                <th>Novice No</th>
+                <th>Expense Packing ID</th>
+                <th>Gross Weight</th>
+                <th>Container NO</th>
+                   <th>Thickness</th>
+                 <th>Invoice Date</th>               
+            </tr>
+            <?php 
+            $i=0;
+            foreach($packinglist as $pack)
+                { ?>
+
+            <tr>
+                <td><input type="radio" name="packing" id="packing" onclick="packing('<?php echo $pack['invoice_no']; ?>')" ></td>
+                <td><?php echo $j=$i+1; ?></td>
+                <td><?php echo $pack['invoice_no']; ?></td>
+                <td><?php echo $pack['expense_packing_id']; ?></td>
+                <td><?php echo $pack['gross_weight']; ?></td>
+                
+                <td><?php echo $pack['container_no']; ?></td>
+                <td><?php echo $pack['thickness']; ?></td>
+                <td><?php echo $pack['invoice_date']; ?></td>
+
+            </tr>
+        <?php $i++; } ?>
+        </table>
+      </div>
+      
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="mymodal1" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Expenses Invoice</h4>
+      </div>
+      <div class="modal-body">
+        <p>Expense invoice Successfully creartedp  </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
 </div>
 
 
@@ -987,13 +1059,24 @@ textarea:focus, input:focus{
 
 
 
+<script type="text/javascript">
 
+$(function() {
+ 
+  $('table th').resizable({
+    handles: 'e',
+    stop: function(e, ui) {
+      $(this).width(ui.size.width);
+    }
+  });
+
+});
+
+</script>
 </script>
 <input type="hidden" name="<?php echo $this->security->get_csrf_token_name();?>" value="<?php echo $this->security->get_csrf_hash();?>">
               
 <script type="text/javascript">
-            var csrfName = '<?php echo $this->security->get_csrf_token_name();?>';
-var csrfHash = '<?php echo $this->security->get_csrf_hash();?>';
  $("#supplier_id").change(function() {
         var csrfName = '<?php echo $this->security->get_csrf_token_name();?>';
 var csrfHash = '<?php echo $this->security->get_csrf_hash();?>';
@@ -1100,81 +1183,33 @@ $('.remove-preview').on('click', function() {
 
 
  CKEDITOR.replace('remarks');
-                
+      
+
+      function packing(id)
+{
+    $('#packing_id').val(id);
+    alert('packing linked with your Invoice Please countinue the Invoice');
+     $("#packmodal").modal('hide');
+     $("#packbutton").hide();
+}          
   </script>
-  <script>
- var count = 2;
-var limits = 500;
-    "use strict";
-function addPurchaseOrderField1(divName){
 
-    if (count == limits)  {
-        alert("You have reached the limit of adding " + count + " inputs");
-    }
-    else{
-        var newdiv = document.createElement('tr');
-        var tabin="product_name_"+count;
-         tabindex = count * 4 ,
-       newdiv = document.createElement("tr");
-        tab1 = tabindex + 1;
-        
-        tab2 = tabindex + 2;
-        tab3 = tabindex + 3;
-        tab4 = tabindex + 4;
-        tab5 = tabindex + 5;
-        tab6 = tab5 + 1;
-        tab7 = tab6 +1;
-       
+  <script type="text/javascript">
+    $(window).on('load', function() {
+        $('#alert').modal('show');
+    });
+</script>
+<?php 
+
+    if(isset($_SESSION['newexpenseid']))
+        { ?>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
 
 
-        newdiv.innerHTML ='<td class="span3 supplier"><input type="text" name="product_name" required="" class="form-control product_name productSelection" onkeypress="product_pur_or_list('+ count +');" placeholder="Product Name" id="product_name_'+ count +'" tabindex="'+tab1+'" > <input type="hidden" class="autocomplete_hidden_value product_id_'+ count +'" name="product_id[]" id="SchoolHiddenId"/>  <input type="hidden" class="sl" value="'+ count +'">  </td>  <td class="wt"> <input type="text" id="" class="form-control" name="description[]" /></td><td class="text-right"><input type="text" name="product_quantity[]" tabindex="'+tab2+'" required  id="cartoon_'+ count +'" class="form-control text-right store_cal_' + count + '" onkeyup="calculate_store(' + count + ');" onchange="calculate_store(' + count + ');" placeholder="0.00" value="" min="0"/><select class="form-control"><option value="Slabs">Slabs</option><option value="Square Feet">Slabs/Sq. ft</option></select> </td><td><span class="form-control" style="background-color: #eee;"><?php  echo $currency." "; ?><input type="text" name="product_rate[]" onkeyup="calculate_store('+ count +');" onchange="calculate_store('+ count +');" id="product_rate_'+ count +'" class="product_rate_'+ count +'" placeholder="0.00" value="" min="0" tabindex="'+tab3+'"/></span></td><td><span class="form-control" style="background-color: #eee;"><?php  echo $currency." ";  ?><input class="total_price total_price_'+ count +'" type="text" name="total_price[]" id="total_price_'+ count +'" value="0.00" readonly="readonly" /></span> </td><td> <input type="hidden" id="total_discount_1" class="" /><input type="hidden" id="all_discount_1" class="total_discount" /><button style="text-align: right;" class="btn btn-danger red" type="button"  onclick="deleteRow(this)" tabindex="8"><i class="fa fa-close"></i></button></td>';
-        document.getElementById(divName).appendChild(newdiv);
-        document.getElementById(tabin).focus();
-        document.getElementById("add_invoice_item").setAttribute("tabindex", tab5);
-        document.getElementById("add_purchase").setAttribute("tabindex", tab6);
-     document.getElementById("add_purchase_another").setAttribute("tabindex", tab7);
-       
-        count++;
-
-        $("select.form-control:not(.dont-select-me)").select2({
-            placeholder: "Select option",
-            allowClear: true
+           $('#myModal1').modal('show');
+           hide();
         });
-    }
-}
-$('#supplier_id').on('change', function (e) {
-  
-  var data = {
-      value: $('#supplier_id').val()
-   };
-  data[csrfName] = csrfHash;
-  $.ajax({
-      type:'POST',
-      data: data,
-   
-      //dataType tells jQuery to expect JSON response
-      dataType:"json",
-      url:'<?php echo base_url();?>Cinvoice/getvendor',
-      success: function(result, statut) {
-          if(result.csrfName){
-             //assign the new csrfName/Hash
-             csrfName = result.csrfName;
-             csrfHash = result.csrfHash;
-          }
-         // var parsedData = JSON.parse(result);
-        //  alert(result[0].p_quantity);
-        console.log(result[0]['currency_type']);
-      $("#vendor_gtotal").val(result[0]['currency_type']);
-    
-    
-      }
-  });
-
-
-});
-   </script>
-  
-  
-  
-  
-           
+    </script>
+    <?php } ?>

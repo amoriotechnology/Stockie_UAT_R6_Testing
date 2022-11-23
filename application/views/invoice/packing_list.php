@@ -137,13 +137,13 @@ $today = date('Y-m-d');
   <table class="table table-bordered" cellspacing="0" width="100%" id="ProfarmaInvList">
   <thead>
       <tr>
-      <th class="ID"  style="width: 100px; height: 30.0114px;">ID</th>
-        <th class="Invoice No"  style="height: 45.0114px; width: 180.011px;">Invoice No</th>
-        <th class="Expense Packing ID" style="width: 245.011px; height: 42.0114px;" >Expense Packing ID</th>
-        <th class="Gross Weight" style="height: 42.0114px; width: 169.011px;" >Gross Weight</th>
-        <th class="Container No."   style="width: 220.011px; height: 44.0114px;">Container No.</th>
-         <th class="Invoice Date" style="width: 158.011px; height: 42.0114px;"   >Invoice Date</th>
-		 <th class="Thickness" style="width: 133.011px; height: 42.0114px;"  >Thickness</th>
+      <th class="ID">ID</th>
+        <th class="Invoice No">Invoice No</th>
+        <th class="Expense Packing ID">Sales Packing ID</th>
+        <th class="Gross Weight">Gross Weight</th>
+        <th class="Container No.">Container No.</th>
+         <th class="Invoice Date">Invoice Date</th>
+		 <th class="Thickness">Thickness</th>
       <div class="myButtonClass"> 
          <th class="text-center Action" data-column-id="action" data-formatter="commands" data-sortable="false"  style="width: 223.011px; height: 44.0114px;">Action</th>
         </div>

@@ -101,7 +101,7 @@ $today = date('Y-m-d');
                 
       <li><a href="#" onclick="generate()"> <img src="<?php echo base_url()?>assets/images/pdf.png" width="24px"> PDF</a></li>
       
-      <li class="divider"></li> 		
+      <li class="divider"></li>         
                   
                   <li><a href="#" onclick="$('#ProfarmaInvList').tableExport({type:'excel',escape:'false'});"> <img src="<?php echo base_url()?>assets/images/xls.png" width="24px"> XLS</a></li>
                  
@@ -300,7 +300,7 @@ $editor = $('#submit'),
        };
        data[csrfName] = csrfHash;
 $.ajax({
-	
+    
     type: "POST",  
     url:'<?php echo base_url();?>Cinvoice/setting',
    
@@ -326,7 +326,7 @@ $.ajax({
       console.log(page[0]+"-"+page[1]);
        data[csrfName] = csrfHash;
     $.ajax({
-	
+    
     type: "POST",  
     url:'<?php echo base_url();?>Cinvoice/get_setting',
    

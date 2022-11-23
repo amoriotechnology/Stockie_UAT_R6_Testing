@@ -28,6 +28,41 @@
         </div>
     </section>
 
+   <?php 
+if(isset($_SESSION['oceanid']))
+{
+
+?>
+<script type="text/javascript">
+     $(document).ready(function(){
+
+     $('#myModal1').modal('show');
+     hide();
+     });
+     
+</script>
+<?php } ?>
+<div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="    margin-top: 190px;">
+        <div class="modal-header" style="">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Ocean Export Tracking</h4>
+        </div>
+        <div class="modal-body">
+          
+          <h4>Ocean Export Invoice  Created Succefully</h4>
+     
+        </div>
+        <div class="modal-footer">
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
     <section class="content">
         <!-- Alert Message -->
         <?php
@@ -370,23 +405,28 @@
                                     <td>
                                         <input type="hidden" name="uid" value="<?php echo $_SESSION['user_id']; ?>">
     
-                                        <input type="submit" id="ocean_export_tracking" class="btn btn-primary btn-large" name="add-ocean-export" onclick="  $('#btn1_download').css('display','block');
-                                        $('#btn1_email').css('display','block');"name="add-purchase" value="<?php echo display('Save') ?>" />
+                                        <input type="submit" id="ocean_export_tracking" class="btn btn-primary btn-large" name="add-ocean-export" onclick="  
+                                        "name="add-purchase" value="<?php echo display('Save') ?>" />
                                     </td>
                                     <td>&nbsp;</td>
-                                    <td id="btn1_download">
-                                        
-                                        <a href="" id="down" class="btn btn-primary text-white">
+                                   <?php  if(isset($_SESSION['oceanid']))    {?>    
+                                    <td>
+                                       <a href="<?php echo base_url('Cinvoice/manage_ocean_export_tracking/'); ?>" style="color: #fff ;" id="save_another" class="btn btn-primary">
+                                           Submit
+                                        </a>
+                                        <a href="<?php echo base_url('Cinvoice/invoice_inserted_data/'); ?><?php echo $this->session->userdata('oceanid');?>" id="download" class="btn btn-primary">
                                             Download 
                                         </a>
 
                                     </td>
                                     <td>&nbsp;</td>
-                                    <td id="btn1_email">
-                                        <a href="" id="send" class="btn btn-primary text-white">
+                                    <td>
+                                        <a href="<?php echo base_url('Cinvoice/ocean_with_attachments/'); ?><?php echo $this->session->userdata('oceanid');?>" style="color: #fff ;" id="save_another" class="btn btn-primary">
                                             Sendmail with attachment
                                         </a>
+                                         
                                     </td>
+                                <?php } ?>
                                   
                                   
                                     

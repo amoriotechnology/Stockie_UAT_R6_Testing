@@ -296,7 +296,7 @@ class Invoices extends CI_Model {
             $this->db->insert('sale_packing_list_detail', $data1);
         }
     }
-    return true;
+    return $purchase_id;
 }
 
 
@@ -2182,6 +2182,8 @@ public function retrieve_packing_editdata($purchase_id) {
 
 
 
+     $packingid=$this->input->post('packing_id',TRUE);
+
         $rate                = $this->input->post('product_rate',TRUE);
 
         $p_id                = $this->input->post('product_id',TRUE);
@@ -2200,7 +2202,7 @@ public function retrieve_packing_editdata($purchase_id) {
 
         $product_id=$this->input->post('product_id',TRUE);
 
-        for ($i = 0, $n = count($p_id); $i < $n; $i++) {
+        for ($i = 0, $n = count($product_id); $i < $n; $i++) {
 
             $product_quantity = $quantity[$i];
 
@@ -2232,6 +2234,7 @@ public function retrieve_packing_editdata($purchase_id) {
                 'invoice_details_id' => $this->generator(15),
 
                 'invoice_id'         => $invoice_id,
+                'pack_id'         => $packingid,
 
                 'product_id'         =>$product_id,
 
@@ -2257,13 +2260,12 @@ public function retrieve_packing_editdata($purchase_id) {
 
                 'total_price'        => $total_price,
 
-                'status'             => 1
+                'status'             => 1,
+                
 
             );
 
-// print_r($data1);
-
-                $this->db->insert('invoice_details', $data1);
+              $this->db->insert('invoice_details', $data1);
 
             
 
@@ -2465,7 +2467,7 @@ public function retrieve_packing_editdata($purchase_id) {
           $query= $this->db->insert('ocean_export_tracking', $data);
   
 
-        return true;
+        return $purchase_id;
     }
 
 
@@ -4881,7 +4883,7 @@ return $output;
 
 
 
-        return true;
+        return $purchase_id;
     }
 
 
@@ -4985,6 +4987,22 @@ public function get_datas()
 
 
             $query = $this->db->query($sql);
+
+            if ($query->num_rows() > 0) {
+
+                return $query->result_array();
+
+    }
+
+
+
+}
+
+public function sales_packing_list()
+{
+    $sql='select a.*,b.product_name from sale_packing_list a join product_information b on b.product_id=a.product_id where a.create_by='.$_SESSION['user_id'];
+
+     $query = $this->db->query($sql);
 
             if ($query->num_rows() > 0) {
 

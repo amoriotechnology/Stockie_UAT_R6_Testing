@@ -471,14 +471,18 @@ echo json_encode($data);
 
 
       public function insert_trucking() {
+
+
+       
         $CI = & get_instance();
         $CI->auth->check_admin_auth();
          $CI->load->model('Invoices');
-        $CI->Invoices->trucking_entry();
-        $this->session->set_userdata(array('message' => display('successfully_added')));
+        $invoiceid=$CI->Invoices->trucking_entry();
+
+        $this->session->set_userdata(array('truckid' => $invoiceid));
         if (isset($_POST['add-trucking'])) {
           //  print_r($_POST['add-trucking']);
-            redirect(base_url('Cinvoice/manage_trucking'));
+            redirect(base_url('Cinvoice/trucking'));
             exit;
         } elseif (isset($_POST['add-trucking-another'])) {
            // print_r($_POST['add-trucking-another']);
@@ -577,6 +581,8 @@ echo json_encode($data);
     public function manual_sales_insert(){
 
 
+
+
         $CI = & get_instance();
 
         $CI->auth->check_admin_auth();
@@ -618,8 +624,8 @@ echo json_encode($data);
         }
 
 
+        $this->session->set_userdata('invoiceid',$invoice_id);
 
-        echo json_encode($data);
 
     }
 
@@ -630,8 +636,10 @@ echo json_encode($data);
         $CI = & get_instance();
         $CI->auth->check_admin_auth();
         $CI->load->model('Invoices');
-        $CI->Invoices->ocean_export_entry();
-        $this->session->set_userdata(array('message' => display('successfully_added')));
+        $invoice_id=$CI->Invoices->ocean_export_entry();
+
+        
+        $this->session->set_userdata(array('oceanid' =>$invoice_id));
         if (isset($_POST['add-ocean-export'])) {
            // print_r($_POST['add-ocean-export']);
           redirect(base_url('Cinvoice/ocean_export_tracking'));
@@ -1051,7 +1059,9 @@ echo json_encode($data);
 
     public function manage_invoice() {
 
-// echo 3;
+$this->session->unset_userdata('invoiceid');
+
+        $this->session->unset_userdata('nation');
         $date = $this->input->post("daterange");
 
         $CI = & get_instance();
@@ -1148,6 +1158,9 @@ $uid=$_SESSION['user_id'];
 
 
       public function manage_profarma_invoice() {
+
+        $this->session->unset_userdata('perfarma_invoice_id');
+
 
         $date = $this->input->post("daterange");
         $CI = & get_instance();
@@ -1247,18 +1260,20 @@ $this->db->update('bootgrid_data');
         $CI = & get_instance();
         $CI->auth->check_admin_auth();
         $CI->load->model('Invoices');
-        $CI->Invoices->packing_list_entry();
-        $this->session->set_userdata(array('message' => display('successfully_added')));
+        $invoice_id=$CI->Invoices->packing_list_entry();
+      
+     
+        $this->session->set_userdata(array('packingid' => $invoice_id));
         if (isset($_POST['add-packing-list'])) {
-            redirect(base_url('Cinvoice/manage_packing_list'));
-            exit;
-        } elseif (isset($_POST['add-packing-list-another'])) {
             redirect(base_url('Cinvoice/add_packing_list'));
             exit;
-        }
+        } 
     }
 
      public function manage_packing_list() {
+
+        $this->session->unset_userdata('packingid');
+
         $date = $this->input->post("daterange");
         $CI = & get_instance();
 
@@ -1293,6 +1308,8 @@ $this->db->update('bootgrid_data');
         $this->template->full_admin_html_view($content);
     } 
       public function manage_ocean_export_tracking() {
+        $this->session->unset_userdata('oceanid');
+
 
         $CI = & get_instance();
         $date = $this->input->post("daterange");
@@ -1322,6 +1339,8 @@ $this->db->update('bootgrid_data');
     }
 
        public function manage_trucking() {
+        $this->session->unset_userdata('truckid');
+
 
         $CI = & get_instance();
         $date = $this->input->post("daterange");
@@ -3322,9 +3341,11 @@ $this->db->update('bootgrid_data');
                     
                 }
                    
-                    $this->session->set_userdata(array('message' => display('successfully_added')));
+                    $this->session->set_userdata(array('perfarma_invoice_id' => $purchase_id));
 
-                    redirect('Cinvoice/manage_profarma_invoice');
+
+                    redirect('Cinvoice/profarma_invoice');
+                    
             
 
      }

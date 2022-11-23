@@ -224,7 +224,7 @@ textarea:focus, input:focus{
                                     <label for="supplier_sss" class="col-sm-4 col-form-label">Attachment
                                     </label>
                                      <div class="col-sm-6">
-                                        <input type="file" class="form-control" required tabindex="2" class="form-control " name="upload_image" id="upload_image"/>
+                                        <input type="file" class="form-control"  tabindex="2" class="form-control " name="upload_image" id="upload_image"/>
                                     </div>
                                 
                                 </div> 
@@ -384,17 +384,28 @@ textarea:focus, input:focus{
                             </table>
                         </div>
                         <div class="form-group row">
-                            <div class="col-sm-6">
-                                <input type="submit" id="add_trucking" class="btn btn-primary btn-large" name="add-trucking" value="Save" />
-                                <input type="submit" value="Save & Sales bill expenses" name="add-trucking-another" class="btn btn-large btn-success" id="add_purchase_another">
-                            </div>
-                        </div>
-                        <div class="form-group row">
                             <label for="remarks" class="col-sm-4 col-form-label">Remarks</label>
                             <div class="col-sm-8">
                                 <textarea rows="4" cols="50" name="remarks" class=" form-control" placeholder="Remarks" id=""></textarea>
                             </div>
-                        </div> 
+                        </div>
+
+                        
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <input type="submit" id="add_trucking" class="btn btn-primary btn-large" name="add-trucking" value="Save" />
+                                <?php 
+                        if($this->session->userdata('truckid'))
+                            { ?>
+                                 <a href="<?php echo base_url('Cinvoice/manage_trucking/'); ?>" class="btn btn-primary">Submit   </a>
+                            <a  class="btn btn-primary" href="<?php echo base_url('Cinvoice/invoice_inserted_data/'); ?><?php echo $this->session->userdata('truckid');?>">Download</a>
+                            <a class="btn btn-primary" href="<?php echo base_url('Cinvoice/truck_with_attachments/'); ?><?php echo $this->session->userdata('truckid');?>">Send email with atachment</a>
+                             <?php } ?>
+                           
+                            </div>
+                        </div>
+                   
+                         
                     <?php echo form_close()?>
                     </div>
                 </div>
@@ -575,6 +586,29 @@ textarea:focus, input:focus{
                 </div><!-- /.modal-dialog -->
 
             </div><!-- /.modal -->
+
+
+             <div class="modal fade" id="myModal1" role="dialog" >
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="    margin-top: 190px;">
+        <div class="modal-header" style="">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Trucking invoice</h4>
+        </div>
+        <div class="modal-body">
+          
+          <h4>Trucking invoice  Created Succefully</h4>
+     
+        </div>
+        <div class="modal-footer">
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
 <script>
         var csrfName = '<?php echo $this->security->get_csrf_token_name();?>';
 var csrfHash = '<?php echo $this->security->get_csrf_hash();?>';
@@ -911,3 +945,18 @@ $('#customer_gtotal').val(custo_final);
 
 
     </script>
+
+    <?php 
+
+    if(isset($_SESSION['truckid']))
+        { ?>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+
+           $('#myModal1').modal('show');
+           hide();
+        });
+    </script>
+     <?php } ?>
