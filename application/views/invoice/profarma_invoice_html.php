@@ -44,8 +44,15 @@
 
 <div class="container" id="content">
 <?php
+
+   $myArray = explode('(',$tax); 
+ $tax_amt=$myArray[0];
+ $tax_des=$myArray[1];
+ $tax_des=str_replace(")","%)", $tax_des);
+
+
             //////////////Design one///////////// 
-            if($template==1)
+            if($template==2)
             {
             ?>
         <div class="brand-section">
@@ -124,8 +131,13 @@
                         <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $total;  ?></td>
                     </tr>
                     <tr>
+                       
+                    <td colspan="4" style="text-align:right;font-weight:bold;"><?php echo  "Tax (".$tax_des;  ?></td>
+                        <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $tax_amt;  ?></td>
+                    </tr>
+                    <tr>
                         <td colspan="4" style="text-align:right;font-weight:bold;">Grand Total:</td>
-                        <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $total;  ?></td>
+                        <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $gtotal;  ?></td>
                     </tr>
                     </tfoot>
             </table>
@@ -142,7 +154,7 @@
     <?php 
 
 }
-elseif($template==2)
+elseif($template==1)
 {
 ?>     
    <div class="brand-section">
@@ -221,8 +233,13 @@ elseif($template==2)
                         <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $total;  ?></td>
                     </tr>
                     <tr>
+                       
+                        <td colspan="4" style="text-align:right;font-weight:bold;"><?php echo  "Tax (".$tax_des;  ?></td>
+                        <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $tax_amt;  ?></td>
+                    </tr>
+                    <tr>
                         <td colspan="4" style="text-align:right;font-weight:bold;">Grand Total:</td>
-                        <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $total;  ?></td>
+                        <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $gtotal;  ?></td>
                     </tr>
                     </tfoot>
             </table>
@@ -323,12 +340,17 @@ elseif($template==3)
                     </tbody>
                     <tfoot>
                     <tr>
-                        <td colspan="4"  class="text-right" style="text-align:right;font-weight:bold;">Total:</td>
+                        <td colspan="4" style="text-align:right;font-weight:bold;">Total:</td>
                         <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $total;  ?></td>
                     </tr>
                     <tr>
-                        <td colspan="4" class="text-right" style="text-align:right;font-weight:bold;">Grand Total:</td>
-                        <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $total;  ?></td>
+                       
+                        <td colspan="4" style="text-align:right;font-weight:bold;"><?php echo  "Tax (".$tax_des;  ?></td>
+                        <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $tax_amt;  ?></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="text-align:right;font-weight:bold;">Grand Total:</td>
+                        <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $gtotal;  ?></td>
                     </tr>
                     </tfoot>
             </table>
@@ -487,6 +509,7 @@ font-weight:bold;
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
 <script>
+  
 $(document).ready(function () {
  
  var pdf = new jsPDF('p','pt','letter');
@@ -513,11 +536,11 @@ $(document).ready(function () {
   }
 
   }).save();
-    var timer = setTimeout(function() {
+  var timer = setTimeout(function() {
             window.location='<?php  echo base_url();   ?>'+'Cinvoice/manage_profarma_invoice'
      }, 1000);
    });
- /*
+
  
- */ 
+ 
    </script>

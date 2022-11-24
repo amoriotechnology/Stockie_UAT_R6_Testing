@@ -346,7 +346,7 @@
 
                                     <div class="col-sm-8">
 
-                                        <select type="text" name="" name="number_of_days" id=number_of_days class=" form-control" placeholder='Number of days' id="number_of_days"> 
+                                        <select type="text"  name="number_of_days" id=number_of_days class=" form-control" placeholder='Number of days' id="number_of_days"> 
                                             <option value="">number_of_days</option>
                                             <?php 
                                             for($i=1;$i<100;$i++)
@@ -800,6 +800,7 @@ var answer=0;
    console.log("Answer : "+answer);
   var gtotal = parseInt(first + answer);
   console.log("gtotal :" +gtotal);
+  
  var final_g= $('#final_gtotal').val();
 
 
@@ -810,7 +811,7 @@ var answer=0;
  var value=parseInt(num*custo_amt);
  var custo_final = isNaN(parseInt(value)) ? 0 : parseInt(value)
 $('#customer_gtotal').val(custo_final);  
-
+calculate();
 });
 });
 $( document ).ready(function() {

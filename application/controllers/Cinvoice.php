@@ -209,6 +209,8 @@ class Cinvoice extends CI_Controller {
 
             'total' => $purchase_detail[0]['total'],
             'remarks' => $purchase_detail[0]['remarks'],
+            'tax' => $purchase_detail[0]['tax_details'],
+            'gtotal' => $purchase_detail[0]['gtotal'],
             'ac_details' =>  $purchase_detail[0]['ac_details'],
 
              'product' => $product_name[0]['product_name'],
@@ -1993,7 +1995,8 @@ $this->db->update('bootgrid_data');
  
 
 
-    public function packing_list_details_data() {
+    public function packing_list_details_data($expense_id) {
+      
         $CI = & get_instance();
         $CC = & get_instance();
         $CA = & get_instance();
@@ -2011,33 +2014,38 @@ $this->db->update('bootgrid_data');
         // print_r($dataw); die();
         $datacontent = $CI->invoice_content->retrieve_data();
 
-        $packing_details = $CB->Invoices->packing_details_data();
+        $packing_details = $CB->Invoices->packing_details_data($expense_id);
 
         // print_r($packing_details); exit();
 
         $data=array(
+           
             'header'=> $dataw[0]['header'],
             'logo'=> $dataw[0]['logo'],
             'color'=> $dataw[0]['color'],
             'template'=> $dataw[0]['template'],
             'company' => $company_info[0]['company_name'],
             'address' => $company_info[0]['address'],
+            'email' => $company_info[0]['email'],
+            'phone' => $company_info[0]['mobile'],
             'invoice'  =>$packing_details[0]['invoice_no'],
             'invoice_date' => $packing_details[0]['invoice_date'],
+            'expense_packing_id'=>$packing_details[0]['expense_packing_id'],
             'gross' => $packing_details[0]['gross_weight'],
             'container' => $packing_details[0]['container_no'],
+            'remarks' => $packing_details[0]['remarks'],
             'description' => $packing_details[0]['description'],
             'thickness' => $packing_details[0]['thickness'],
             'total' => $packing_details[0]['grand_total_amount'],
             'serial' => $packing_details[0]['serial_no'],
             'slab' => $packing_details[0]['slab_no'],
             'width' => $packing_details[0]['width'],
+            'packing_details'=>$packing_details,
             'height' => $packing_details[0]['height'],
             'area' => $packing_details[0]['area'],
             'product' => $packing_details[0]['product_name']
         );
-     
-        // print_r($data); exit();
+
        // echo $content = $CI->linvoice->invoice_add_form();
         $content = $this->load->view('invoice/packing_list_invoice_html', $data, true);
         //$content='';
@@ -2258,7 +2266,7 @@ $this->db->update('bootgrid_data');
 
     //Retrive right now inserted data to cretae html
 
-    public function invoice_inserted_data() {
+    public function invoice_inserted_data($invoice_id) {
 
        // echo $invoice_id; die();
 
@@ -2273,13 +2281,12 @@ $this->db->update('bootgrid_data');
         $CA->load->model('invoice_design');
         $CC->load->model('invoice_content');
 
-        $invoice_detail = $CI->Invoices->invoice_pdf();
+        $invoice_detail = $CI->Invoices->invoice_pdf($invoice_id);
 
-        // print_r($invoice_detail); die();
+        
 
-        $all_invoice = $CI->Invoices->all_invoice();
+        $all_invoice = $CI->Invoices->all_invoice($invoice_id);
 
-         // print_r($all_invoice); die();
 
         $dataw = $CA->invoice_design->retrieve_data();
        
@@ -2287,15 +2294,17 @@ $this->db->update('bootgrid_data');
 
         $customer = $this->db->select('*')->from('customer_information')->where("customer_id",$invoice_detail[0]['customer_id'])->get()->result_array();
 
+        $product_name = $CI->Invoices->product($invoice_id);
+       
+        $currency_details = $CI->Web_settings->retrieve_setting_editdata();
+        $curn_info_default = $CI->db->select('*')->from('currency_tbl')->where('icon',$currency_details[0]['currency'])->get()->result_array();
+      
 
-
-         $product_name = $this->db->select('*')->from('product_information')->where("product_id",$all_invoice[0]['product_id'])->get()->result_array();
-
-        //  echo $this->db->last_query(); die();
-
-          // print_r($product_name); die();
+       print_r($product_name);die();
 
         $data=array(
+            'curn_info_default' =>$curn_info_default[0]['currency_name'],
+            'currency'  =>$currency_details[0]['currency'],
             'header'=> $dataw[0]['header'],
             'logo'=> $dataw[0]['logo'],
             'color'=> $dataw[0]['color'],
@@ -2316,10 +2325,17 @@ $this->db->update('bootgrid_data');
             'port'=> $invoice_detail[0]['port_of_discharge'],
             'paymentdue'=> $invoice_detail[0]['payment_due_date'],
             'product'=> $product_name[0]['product_name'],
+            'all_products'=>$product_name,
             'stock'=> $product_name[0]['p_quantity'],
             'quantity'=> $all_invoice[0]['quantity'],
             'rate'=> $all_invoice[0]['rate'],
+            'ac_details'=> $all_invoice[0]['ac_details'],
+            'remark'=> $all_invoice[0]['remark'],
             'total'=> $all_invoice[0]['total_price'],
+            'tax_details'=> $all_invoice[0]['total_tax'],
+            'etd'=> $all_invoice[0]['etd'],
+            'eta'=> $all_invoice[0]['eta'],
+            'gtotal'       => $all_invoice[0]['gtotal']
         );
      
     

@@ -112,11 +112,11 @@ class Invoices extends CI_Model {
 
 
     
-     public function invoice_pdf() {
+     public function invoice_pdf($invoice_id) {
         $this->db->select('in.*, ci.customer_name');
         $this->db->from('invoice in');
         $this->db->join('customer_information ci', 'ci.customer_id = in.customer_id');
-      //  $this->db->where('in.invoice_id', $invoice_id);
+        $this->db->where('in.invoice_id', $invoice_id);
        
         $query = $this->db->get();
 
@@ -135,18 +135,18 @@ class Invoices extends CI_Model {
     
   
 
-    public function all_invoice() {
+    public function all_invoice($invoice_id) {
     $this->db->select('a.*,b.*');
     $this->db->from('invoice_details a');
     $this->db->join('invoice b', 'b.invoice_id = a.invoice_id');
-
+    $this->db->where('b.invoice_id', $invoice_id);
     
     $query = $this->db->get();
-   
+
       if ($query->num_rows() > 0) {
           return $query->result_array();
       }
-      return false;
+    
 }
 
 
@@ -183,14 +183,19 @@ class Invoices extends CI_Model {
 }
 
 
-    public function packing_details_data() {
-        $sql = 'SELECT * FROM sale_packing_list as a JOIN sale_packing_list_detail as ac JOIN product_information as b ON b.product_id = a.product_id';
-        $query = $this->db->query($sql);
-
+    public function packing_details_data($expense_id) {
+        $this->db->select('a.*,b.*,c.*');
+        $this->db->from('sale_packing_list a');
+        $this->db->join('sale_packing_list_detail b', 'a.expense_packing_id = b.expense_packing_id');
+        $this->db->join('product_information c', 'c.product_id = a.product_id');
+    
+        $this->db->where('b.expense_packing_id',$expense_id);
+       // $sql = 'SELECT * FROM sale_packing_list as a JOIN sale_packing_list_detail as ac JOIN product_information as b ON b.product_id = a.product_id';
+       $query = $this->db->get(); 
         if ($query->num_rows() > 0) {
             return $query->result_array();
         }
-        return false;
+       
     }
 
 
@@ -232,6 +237,7 @@ class Invoices extends CI_Model {
         'invoice_no'          => $this->input->post('invoice_no',TRUE),
         'invoice_date'        => $this->input->post('invoice_date',TRUE),
         'gross_weight' => $this->input->post('gross_weight',TRUE),
+        'remarks' => $this->input->post('remarks',TRUE),
         'thickness' => $this->input->post('thickness',TRUE),
         'description'=> $this->input->post('description',TRUE),
         'product_id' => $this->input->post('product_id',TRUE),
@@ -1728,7 +1734,7 @@ public function retrieve_packing_editdata($purchase_id) {
 
             $data = array(
 
-            'create_by'    =>$this->session->userdata('user_id'),
+                'create_by'    =>$this->session->userdata('user_id'),
             'customer_name'    => $this->input->post('customer_name',TRUE),
 
             'customer_address' => $this->input->post('customer_address',TRUE),
@@ -1740,6 +1746,11 @@ public function retrieve_packing_editdata($purchase_id) {
             'status'           => 2
 
             );
+
+
+
+        
+
 
 
             $this->db->insert('customer_information', $data);
@@ -1901,12 +1912,16 @@ public function retrieve_packing_editdata($purchase_id) {
             'container_no' => $this->input->post('container_number',TRUE),
 
             'bl_no' => $this->input->post('bl_no',TRUE),
-
+            'etd' => $this->input->post('etd',TRUE),
+            'eta' => $this->input->post('eta',TRUE),
+            'ac_details' => $this->input->post('ac_details',TRUE),
+            'remark' => $this->input->post('remark',TRUE),
             'port_of_discharge' => $this->input->post('port_of_discharge',TRUE),
 
             'total_amount'    => $this->input->post('total',TRUE),
 
-            'total_tax'       => $this->input->post('total_tax',TRUE),
+            'total_tax'       => $this->input->post('tax_details',TRUE),
+            'gtotal'       => $this->input->post('gtotal',TRUE),
 
             'invoice'         => $invoice_no_generated,
 
@@ -2182,11 +2197,9 @@ public function retrieve_packing_editdata($purchase_id) {
 
 
 
-     $packingid=$this->input->post('packing_id',TRUE);
-
         $rate                = $this->input->post('product_rate',TRUE);
 
-        $p_id                = $this->input->post('product_id',TRUE);
+        $p_id                = $this->input->post('prodt',TRUE);
 
         $total_amount        = $this->input->post('total_price',TRUE);
 
@@ -2199,10 +2212,10 @@ public function retrieve_packing_editdata($purchase_id) {
         $invoice_description = $this->input->post('desc',TRUE);
 
         $serial_n            = $this->input->post('serial_no',TRUE);
-
-        $product_id=$this->input->post('product_id',TRUE);
-
-        for ($i = 0, $n = count($product_id); $i < $n; $i++) {
+        $rowCount = count($this->input->post('product_id',TRUE));
+$product_id=$this->input->post('product_id',TRUE);
+for ($i = 0; $i < $rowCount; $i++) {
+    
 
             $product_quantity = $quantity[$i];
 
@@ -2215,7 +2228,7 @@ public function retrieve_packing_editdata($purchase_id) {
             $total_price = $total_amount[$i];
 
             $supplier_rate = $this->supplier_price($product_id);
-
+print_r($supplier_rate);die();
             // $disper = $discount_per[$i];
 
             $disper = 0;
@@ -2234,7 +2247,6 @@ public function retrieve_packing_editdata($purchase_id) {
                 'invoice_details_id' => $this->generator(15),
 
                 'invoice_id'         => $invoice_id,
-                'pack_id'         => $packingid,
 
                 'product_id'         =>$product_id,
 
@@ -2260,12 +2272,13 @@ public function retrieve_packing_editdata($purchase_id) {
 
                 'total_price'        => $total_price,
 
-                'status'             => 1,
-                
+                'status'             => 1
 
             );
 
-              $this->db->insert('invoice_details', $data1);
+print_r($data1);die();
+
+                $this->db->insert('invoice_details', $data1);
 
             
 
@@ -2306,6 +2319,7 @@ public function retrieve_packing_editdata($purchase_id) {
         return $invoice_id;
 
     }
+
 
     private function stripHTMLtags($str)
     {
@@ -3107,7 +3121,7 @@ if(!empty($this->input->post('paid_amount',TRUE))){
 
             );
 
-            $this->db->insert('invoice_details', $data1);
+         //   $this->db->insert('invoice_details', $data1);
 
 
 
@@ -4815,7 +4829,10 @@ return $output;
             'shipment_company'   => $this->input->post('shipment_company',TRUE),
             'container_pickup_date'   => $this->input->post('container_pick_up_date',TRUE),
             'delivery_date' => $this->input->post('delivery_date',TRUE),
-            'grand_total_amount' => $this->input->post('total',TRUE),
+            'total_amt' => $this->input->post('total',TRUE),
+            'tax' => $this->input->post('tax_details',TRUE),
+            'grand_total_amount' => $this->input->post('gtotal',TRUE),
+            'remarks' => $this->input->post('remarks',TRUE),
             'status'             => 1,
           
         );
@@ -4957,19 +4974,17 @@ return $output;
       public function product($invoice_id)
     {
         
-        
+        $this->db->select('a.*,b.*');
+        $this->db->from('invoice_details a');
+        $this->db->join('product_information b', 'a.product_id=b.product_id');
+        $this->db->where('a.invoice_id', $invoice_id);
+       
+        $query = $this->db->get();
+echo $this->db->last_query();
 
 
-              $sql='SELECT b.* FROM `invoice_details` as a join product_information b on a.product_id=b.product_name where a.invoice_id='.$invoice_id;
-
-
-            $query = $this->db->query($sql);
-
-            if ($query->num_rows() > 0) {
-
-                return $query->result_array();
-
-    }
+return $query->result_array();
+    
 
 }
 
