@@ -2063,6 +2063,7 @@ return $output;
             'bill_to'      =>$this->input->post('bill_to',TRUE),
             'shipment_company'   => $this->input->post('shipment_company',TRUE),
             'container_pickup_date'   => $this->input->post('container_pickup_date',TRUE),
+        'container_no'   => $this->input->post('container_number',TRUE),
             'delivery_date' => $this->input->post('delivery_date',TRUE),
             'grand_total_amount' => $this->input->post('total',TRUE),
             'status'             => 1,

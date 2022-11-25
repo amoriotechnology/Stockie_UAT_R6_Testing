@@ -644,7 +644,7 @@ textarea:focus, input:focus{
 
                                                
                                          
-                                                <button  class="btn btn-danger text-right red" type="button" value="<?php echo display('delete')?>" onclick="calculate();total_amt(1);deleteRow(this)" tabindex="8"><i class="fa fa-close"></i></button>
+                                                <button  class="btn btn-danger text-right red" type="button" value="<?php echo display('delete')?>" onclick="calculateSum();deleteRow(this)" tabindex="8"><i class="fa fa-close"></i></button>
                                             </td>
                                            
                                     </tr>
