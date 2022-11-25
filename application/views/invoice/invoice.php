@@ -222,14 +222,26 @@ $today = date('Y-m-d');
         <h4 class="modal-title">Select Email Template </h4>
       </div>
       <div class="modal-body">
-     <input type="radio" id="html" name="temp" value="standard">
-<label for="html">Standard</label><br>
-<input type="radio" id="css" name="temp" value="custom">
-<label for="css">custom</label><br>
+     <div class="row">
+        <div class="col-sm-6" style="border: 1px solid #6666;text-align: center;">  <p style="font-weight: bold;">Standard</p>
+            <br>
+            <i>Standard Email Temeplate</i>
+            <br>
+            <br>
+         <a href="<?php echo base_url('Cinvoice/newsale_with_attachment_stand/').$arr['invoice_id'];  ?>" class="btn btn-default">Select</a></div>
+        <div class="col-sm-6" style="border: 1px solid #6666;text-align: center;">  <p style="font-weight: bold;">Custom</p>
+            <br>
+            <i>Custom Email Temeplate</i>
+            <br>
+            <br>
+         <a class="btn btn-default" href="<?php echo base_url('Cinvoice/newsale_with_attachment_cus/').$arr['invoice_id'];  ?>">Select</a></div>
+       
+     </div>
 
+
+</div>
       <div class="modal-footer">
-       <input type="submit" name="" value="Next" class="btn btn-primary">
-       </form>
+      
       </div>
     </div>
 

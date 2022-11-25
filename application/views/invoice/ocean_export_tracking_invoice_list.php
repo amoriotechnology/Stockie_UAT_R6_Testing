@@ -172,7 +172,43 @@ $today = date('Y-m-d');
    <div class="form-group">
   <td>
   <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/ocean_export_tracking_details_data/<?php echo  $arr['ocean_export_tracking_id'];  ?>"><i class="fa fa-download" aria-hidden="true"></i></a>
-  <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/profarma_invoice_update_form/<?php echo  $arr['ocean_export_tracking_id'];  ?>"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+<a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;"  data-toggle="modal" data-target="#emailmodal"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+
+  <!-- Modal -->
+<div id="emailmodal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+<form action="insert_role">    <!-- Modal content-->
+    <div class="modal-content" >
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Select Email Template </h4>
+      </div>
+      <div class="modal-body">
+     <div class="row">
+        <div class="col-sm-6" style="border: 1px solid #6666;text-align: center;">  <p style="font-weight: bold;">Standard</p>
+            <br>
+            <i>Standard Email Temeplate</i>
+            <br>
+            <br>
+         <a href="<?php echo base_url('Cinvoice/ocean_with_attachment_stand/').$arr['ocean_export_tracking_id'];  ?>" class="btn btn-default">Select</a></div>
+        <div class="col-sm-6" style="border: 1px solid #6666;text-align: center;">  <p style="font-weight: bold;">Custom</p>
+            <br>
+            <i>Custom Email Temeplate</i>
+            <br>
+            <br>
+         <a class="btn btn-default" href="<?php echo base_url('Cinvoice/ocean_with_attachment_cus/').$arr['ocean_export_tracking_id'];  ?>">Select</a></div>
+       
+     </div>
+
+
+</div>
+      <div class="modal-footer">
+      
+      </div>
+    </div>
+
+  </div>
+</div>
     <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/ocean_export_tracking_update_form/<?php echo  $arr['ocean_export_tracking_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
   </td>
   </div>

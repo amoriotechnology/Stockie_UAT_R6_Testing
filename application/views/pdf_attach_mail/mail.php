@@ -7,7 +7,18 @@
 
 
 <?php 
+if(isset($mail))
+{
+$subject=$mail[0]['subject'];
+$greeting=$mail[0]['greeting'];
+$message=$mail[0]['message'];
+}
+else
+{
 
+    $subject='Sales Invoice';
+
+}
 require 'includes/PHPMailer.php';
 require 'includes/SMTP.php';
 require 'includes/Exception.php';
@@ -37,11 +48,23 @@ try {
     // $mail->setFrom('suryavenkatesh3093@gmail.com', 'Name');           
     // $mail->addAddress('krramji@amoriotech.com');
         $mail->setFrom('suryavenkatesh3093@gmail.com', 'Surya');           
-    $mail->addAddress('madhu.amoriotech@gmail.com');
+    $mail->addAddress('rammg1985@gmail.com');
   
        
-    $mail->isHTML(true);                                  
-    $mail->Subject = 'Sales Invoice';
+    $mail->isHTML(true);  
+    if(isset($mail))
+{
+  
+ $mail->Subject =$Subject;
+    $mail->Body    =$greeting.'<br></br>'.$message.'<br><br>regards<br><br>
+
+    '.$company_info[0]['company_name'].'<br>
+    '.$company_info[0]['address'].'<br>
+    '.$company_info[0]['email'].'<br>';
+ }
+ else 
+ {
+   $mail->Subject = 'Sales Invoice';
     $mail->Body    = 'Dear sir,<br><br>
     Please find the attached<br>
 
@@ -51,8 +74,12 @@ try {
     '.$company_info[0]['address'].'<br>
     '.$company_info[0]['email'].'<br>
 
-    ';
+    '; 
+ }                                
+    
     $mail->AltBody = 'Body in plain text for non-HTML mail clients';
+
+
     $mail->addAttachment($file_name,$file_name);
     $mail->send();
      echo "<script type='text/javascript'>
@@ -64,6 +91,8 @@ try {
    {
 
         unlink($file_name);
+
+
 
     } 
 
@@ -78,23 +107,5 @@ catch (Exception $e) {
 ?>
 
 
-<div style="background-color: #fff;" class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <!-- <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Basic Modal</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div> -->
-      <div class="modal-body">
-        <h3>Email Send Successfully</h3>
-      </div>
-      <div class="modal-footer">
-        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
-        <button type="button" class="btn btn-primary">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+
 

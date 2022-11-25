@@ -74,36 +74,55 @@ if(1==1)
 
     <table>
       <tr>
-        <th style="border: none">Vendor :'.$customer_info[0]['customer_name'].'</th>
-        <th style="border: none">Expense / Bill Date :'.$invoice[0]['prevous_due'].'</th>
+        <th style="border: none">Date :'.$invoice[0]['purchase_date'].'</th>
+        <th style="border: none">Buyer / Customer:</th>
       </tr>
 
       <tr>
-        <th style="border: none">Invoice No :'.$invoice[0]['invoice_id'].'</th>
-        <th style="border: none">Payment Due Date:'.$invoice[0]['payment_due_date'].'</th>
+        <th style="border: none">Invoive No :'.$invoice[0]['purchase_id'].'</th>
+        <th style="border: none">Place og Receipt:</th>
+      </tr>
+
+      <tr>
+        <th style="border: none">Pre Carriage By :'.$invoice[0]['pre_carriage'].'</th>
+        <th style="border: none">Country of Final Destination:</th>
+      </tr>
+
+      <tr>
+        <th style="border: none">Port of Loading :</th>
+        <th style="border: none">Port of Discharge :</th>
+      </tr>
+
+      <tr>
+        <th style="border: none">Terms of Payment & Delivery :</th>
+        <th style="border: none">Description of Goods :</th>
       </tr>
     </table>
 
     <br /><br />
     <table>
-      <tr>
-        <th>Product</th>
-        <th>Description</th>
-        <th>Quantity</th>
-        <th>Rate</th>
+      <tr class="table_view">
+        <th>Product Name</th>
+        <th>In stock</th>
+        <th>Quantity / Sq ft.</th>
+        <th>Amount</th>
         <th>Total</th>
       </tr>
-
       <tr>
-        <td>'.$product_info[0]['product_name'].'</td>
-        <td>'.$product_info[0]['product_details'].'</td>
-        <td>'.$product_info[0]['p_quantity'].'</td>
-        <td>'.$product_info[0]['price'].'</td>
-        <td>'.$total=$product_info[0]['p_quantity']*$product_info[0]['price'].'</td>
-      
-       
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+        <td>Germany</td>
+        <td>2000</td>
       </tr>
-     
+      <tr>
+        <td colspan="4" style="text-align: right">Total:</td>
+        <td>2000</td>
+      </tr>
+      <tr>
+        <td colspan="4" style="text-align: right">Grand Total:</td>
+        <td>2000</td>
+      </tr>
     </table>
   </body>
 </html>

@@ -1,5 +1,6 @@
 <?php                
 
+
 include_once('tcpdf_6_2_13/tcpdf.php'); 
 
          
@@ -74,35 +75,37 @@ if(1==1)
 
     <table>
       <tr>
-        <th style="border: none">Vendor :'.$customer_info[0]['customer_name'].'</th>
-        <th style="border: none">Expense / Bill Date :'.$invoice[0]['prevous_due'].'</th>
+        <th style="border: none">Packing List No :'.$invoice[0]['invoice_no'].'</th>
+        <th style="border: none">Invoice Date:'.$invoice[0]['invoice_date'].'</th>
       </tr>
 
       <tr>
-        <th style="border: none">Invoice No :'.$invoice[0]['invoice_id'].'</th>
-        <th style="border: none">Payment Due Date:'.$invoice[0]['payment_due_date'].'</th>
+        <th style="border: none">Gross Weight :'.$invoice[0]['gross_weight'].'</th>
+        <th style="border: none">Container No:'.$invoice[0]['container_no'].'</th>
       </tr>
     </table>
 
     <br /><br />
+    
+
+    <br /><br />
     <table>
-      <tr>
-        <th>Product</th>
-        <th>Description</th>
-        <th>Quantity</th>
-        <th>Rate</th>
-        <th>Total</th>
+      <tr class="table_view">
+        <th style="color: #fff; text-align: center">Product Name</th>
+        <th style="color: #fff; text-align: center">In stock</th>
+        <th style="color: #fff; text-align: center">Quantity / Sq ft.</th>
+        <th style="color: #fff; text-align: center">Amount</th>
+       
       </tr>
 
       <tr>
         <td>'.$product_info[0]['product_name'].'</td>
-        <td>'.$product_info[0]['product_details'].'</td>
         <td>'.$product_info[0]['p_quantity'].'</td>
+        <td>'.$product_info[0]['unit'].'</td>
         <td>'.$product_info[0]['price'].'</td>
-        <td>'.$total=$product_info[0]['p_quantity']*$product_info[0]['price'].'</td>
       
-       
-      </tr>
+      
+     
      
     </table>
   </body>

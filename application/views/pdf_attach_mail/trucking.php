@@ -74,36 +74,48 @@ if(1==1)
 
     <table>
       <tr>
-        <th style="border: none">Vendor :'.$customer_info[0]['customer_name'].'</th>
-        <th style="border: none">Expense / Bill Date :'.$invoice[0]['prevous_due'].'</th>
+        <th style="border: none">Invoice No :'.$sale_trucking[0]['trucking_id'].'</th>
+        <th style="border: none">Invoice Date:'.$sale_trucking[0]['invoice_date'].'</th>
       </tr>
+      <br />
 
       <tr>
-        <th style="border: none">Invoice No :'.$invoice[0]['invoice_id'].'</th>
-        <th style="border: none">Payment Due Date:'.$invoice[0]['payment_due_date'].'</th>
+        <th style="border: none">Bill To :'.$customer_info[0]['customer_name'].'</th>
+        <th style="border: none">Shipping Company:'.$company_info[0]['company_name'].'</th>
       </tr>
-    </table>
+      <br />
 
+      <tr>
+        <th style="border: none">Container / Goods pickup date :'.$sale_trucking[0]['container_pickup_date'].'</th>
+        <th style="border: none">Delivery Date:</th>
+      </tr>
+      <br />
+    </table>
     <br /><br />
     <table>
-      <tr>
-        <th>Product</th>
-        <th>Description</th>
-        <th>Quantity</th>
-        <th>Rate</th>
-        <th>Total</th>
+      <tr class="table_view">
+        <th style="color: #fff; text-align: center">Date</th>
+        <th style="color: #fff; text-align: center">Quantity</th>
+             <th style="color: #fff; text-align: center">Description</th>
+        <th style="color: #fff; text-align: center">Rate</th>
+        <th style="color: #fff; text-align: center">Pro no/Reference</th>
+        <th style="color: #fff; text-align: center">Total</th>
       </tr>
-
-      <tr>
-        <td>'.$product_info[0]['product_name'].'</td>
-        <td>'.$product_info[0]['product_details'].'</td>
-        <td>'.$product_info[0]['p_quantity'].'</td>
-        <td>'.$product_info[0]['price'].'</td>
-        <td>'.$total=$product_info[0]['p_quantity']*$product_info[0]['price'].'</td>
-      
+      <tr class="table_view">
+        <th style="color: #fff; text-align: center">'.$sale_trucking_details[0]['trucking_date'].'</th>
+        <th style="color: #fff; text-align: center">'.$sale_trucking_details[0]['qty'].'</th>
+        <th style="color: #fff; text-align: center">'.$sale_trucking_details[0]['description'].'</th>
+        <th style="color: #fff; text-align: center">'.$sale_trucking_details[0]['rate'].'</th>
+        <th style="color: #fff; text-align: center">'.$sale_trucking_details[0]['pro_no_reference'].'</th>
+        <th style="color: #fff; text-align: center">'.$sale_trucking_details[0]['total'].'</th>
        
       </tr>
-     
+
+      
+      <tr>
+        <td colspan="4" style="text-align: right">Total:</td>
+        <td>$2000</td>
+      </tr>
     </table>
   </body>
 </html>

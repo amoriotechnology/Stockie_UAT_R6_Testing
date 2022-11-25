@@ -1,3 +1,4 @@
+
 <?php                
 
 include_once('tcpdf_6_2_13/tcpdf.php'); 
@@ -74,37 +75,54 @@ if(1==1)
 
     <table>
       <tr>
-        <th style="border: none">Vendor :'.$customer_info[0]['customer_name'].'</th>
-        <th style="border: none">Expense / Bill Date :'.$invoice[0]['prevous_due'].'</th>
+        <th style="border: none">Shipper :'.$company_info[0]['company_name'].'</th>
+        <th style="border: none">Booking No:</th>
       </tr>
+      <br />
 
       <tr>
-        <th style="border: none">Invoice No :'.$invoice[0]['invoice_id'].'</th>
-        <th style="border: none">Payment Due Date:'.$invoice[0]['payment_due_date'].'</th>
+        <th style="border: none">Invoive Date :'.$ocean[0]['invoice_date'].'</th>
+        <th style="border: none">Customer / Consignee:'.$ocean[0]['consignee'].'</th>
       </tr>
+      <br />
+
+      <tr>
+        <th style="border: none">Notify Party :'.$ocean[0]['notify_party'].''.$ocean[0]['consignee'].''.$ocean[0]['consignee'].'</th>
+        <th style="border: none">Vessel:'.$ocean[0]['consignee'].''.$ocean[0]['consignee'].'</th>
+      </tr>
+      <br />
+
+      <tr>
+        <th style="border: none">Voyage No :'.$ocean[0]['voyage_no'].'</th>
+        <th style="border: none">Port Of Loading :'.$ocean[0]['port_of_loading'].'</th>
+      </tr>
+      <br />
+
+      <tr>
+        <th style="border: none">Port of Discharge :'.$ocean[0]['port_of_discharge'].'</th>
+        <th style="border: none">Place of Delivery :'.$ocean[0]['consignee'].'</th>
+      </tr>
+      <br />
+
+      <tr>
+        <th style="border: none">Container No :'.$ocean[0]['container_no'].'</th>
+        <th style="border: none">Seal No :'.$ocean[0]['seal_no'].'</th>
+      </tr>
+      <br />
+
+      <tr>
+        <th style="border: none">Freight Forwarder :'.$ocean[0]['freight_forwarder'].'</th>
+        <th style="border: none">Estimate time of arrival :'.$ocean[0]['eta'].'</th>
+      </tr>
+      <br />
+
+      <tr>
+        <th style="border: none">Estimate time of depature :'.$ocean[0]['etd'].'</th>
+        <th style="border: none">Particulars :'.$ocean[0]['particular'].'</th>
+      </tr>
+      <br />
     </table>
-
-    <br /><br />
-    <table>
-      <tr>
-        <th>Product</th>
-        <th>Description</th>
-        <th>Quantity</th>
-        <th>Rate</th>
-        <th>Total</th>
-      </tr>
-
-      <tr>
-        <td>'.$product_info[0]['product_name'].'</td>
-        <td>'.$product_info[0]['product_details'].'</td>
-        <td>'.$product_info[0]['p_quantity'].'</td>
-        <td>'.$product_info[0]['price'].'</td>
-        <td>'.$total=$product_info[0]['p_quantity']*$product_info[0]['price'].'</td>
-      
-       
-      </tr>
-     
-    </table>
+    <br />
   </body>
 </html>
 '; 
