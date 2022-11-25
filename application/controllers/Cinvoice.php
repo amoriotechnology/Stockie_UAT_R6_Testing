@@ -65,7 +65,7 @@ class Cinvoice extends CI_Controller {
         'curn_info_default' =>$curn_info_default[0]['currency_name'],
         //  'curn_info_customer'=>$curn_info_customer[0]['currency_name'],
           'currency'  =>$currency_details[0]['currency'],
-        'currency'  =>$currency_details[0]['currency'],
+  
         'customer' => $CI->Invoices->profarma_invoice_customer(),
         'voucher_no' => $CI->Invoices->profarma_voucher_no()
        );
@@ -119,7 +119,7 @@ class Cinvoice extends CI_Controller {
       
      $product_name = $this->db->select('*')->from('product_information')->where("product_id",$all_profarma[0]['product_id'])->get()->result_array();
 
-      
+      // print_r($product_name);die();
         
 
         $profarma_details = $this->db->select('*')->from('profarma_invoice_details')->where("purchase_id",$purchase_detail[0]['purchase_id'])->get()->result_array();
@@ -226,7 +226,7 @@ class Cinvoice extends CI_Controller {
 
         );
 
-       
+        
 
 
 
@@ -579,10 +579,7 @@ echo json_encode($data);
 
     
     // ================= manual sale insert ============================
-
     public function manual_sales_insert(){
-
-
 
 
         $CI = & get_instance();
@@ -592,7 +589,8 @@ echo json_encode($data);
         $CI->load->model('Invoices');
 
         $invoice_id = $CI->Invoices->invoice_entry();
-// print_r($invoice_id);
+print_r($invoice_id);
+die();
         if(!empty($invoice_id)){
 
         $data['status'] = true;
@@ -625,9 +623,9 @@ echo json_encode($data);
 
         }
 
+print_r($data);
 
-        $this->session->set_userdata('invoiceid',$invoice_id);
-
+        echo json_encode($data);
 
     }
 
@@ -1121,7 +1119,6 @@ $uid=$_SESSION['user_id'];
     $query=$this->db->query($sql);
 
     $customer_info=$query->result_array();
-
 
 
 
@@ -1997,7 +1994,7 @@ $this->db->update('bootgrid_data');
 
     public function packing_list_details_data($expense_id) {
       
-        $CI = & get_instance();
+       $CI = & get_instance();
         $CC = & get_instance();
         $CA = & get_instance();
         $CB = & get_instance();
@@ -2019,7 +2016,6 @@ $this->db->update('bootgrid_data');
         // print_r($packing_details); exit();
 
         $data=array(
-           
             'header'=> $dataw[0]['header'],
             'logo'=> $dataw[0]['logo'],
             'color'=> $dataw[0]['color'],
@@ -2045,7 +2041,8 @@ $this->db->update('bootgrid_data');
             'area' => $packing_details[0]['area'],
             'product' => $packing_details[0]['product_name']
         );
-
+     
+        // print_r($data); exit();
        // echo $content = $CI->linvoice->invoice_add_form();
         $content = $this->load->view('invoice/packing_list_invoice_html', $data, true);
         //$content='';
@@ -2283,10 +2280,11 @@ $this->db->update('bootgrid_data');
 
         $invoice_detail = $CI->Invoices->invoice_pdf($invoice_id);
 
-        
+        // print_r($invoice_detail); die();
 
         $all_invoice = $CI->Invoices->all_invoice($invoice_id);
 
+         // print_r($all_invoice); die();
 
         $dataw = $CA->invoice_design->retrieve_data();
        
@@ -2294,13 +2292,15 @@ $this->db->update('bootgrid_data');
 
         $customer = $this->db->select('*')->from('customer_information')->where("customer_id",$invoice_detail[0]['customer_id'])->get()->result_array();
 
-        $product_name = $CI->Invoices->product($invoice_id);
-       
         $currency_details = $CI->Web_settings->retrieve_setting_editdata();
         $curn_info_default = $CI->db->select('*')->from('currency_tbl')->where('icon',$currency_details[0]['currency'])->get()->result_array();
       
 
-       print_r($product_name);die();
+         $product_name = $this->db->select('*')->from('product_information')->where("product_id",$all_invoice[0]['product_id'])->get()->result_array();
+
+        //  echo $this->db->last_query(); die();
+
+          // print_r($product_name); die();
 
         $data=array(
             'curn_info_default' =>$curn_info_default[0]['currency_name'],
@@ -2309,8 +2309,8 @@ $this->db->update('bootgrid_data');
             'logo'=> $dataw[0]['logo'],
             'color'=> $dataw[0]['color'],
             'template'=> $dataw[0]['template'],
-            'company'=> $company_info[0]['company_name'],
-            'address'=> $company_info[0]['address'],
+            'company'=> $company_info,
+          
             'customername'=> $customer[0]['customer_name'],
             'payment'=> $invoice_detail[0]['payment_type'],
             'billing'=> $invoice_detail[0]['billing_address'],
@@ -2324,9 +2324,9 @@ $this->db->update('bootgrid_data');
             'blno'=> $invoice_detail[0]['bl_no'],
             'port'=> $invoice_detail[0]['port_of_discharge'],
             'paymentdue'=> $invoice_detail[0]['payment_due_date'],
-            'product'=> $product_name[0]['product_name'],
+           
             'all_products'=>$product_name,
-            'stock'=> $product_name[0]['p_quantity'],
+           'all_invoice'=>$all_invoice,
             'quantity'=> $all_invoice[0]['quantity'],
             'rate'=> $all_invoice[0]['rate'],
             'ac_details'=> $all_invoice[0]['ac_details'],
@@ -2337,7 +2337,7 @@ $this->db->update('bootgrid_data');
             'eta'=> $all_invoice[0]['eta'],
             'gtotal'       => $all_invoice[0]['gtotal']
         );
-     
+   
     
 
     $content = $this->load->view('invoice/new_invoice_pdf_html', $data, true);
@@ -3483,9 +3483,125 @@ $this->db->update('bootgrid_data');
          echo json_encode($data);
 
         }
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////////mail function///////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////
+
+
+//         public function newsale_with_attachment_stand($invoiceid)
+// {
 
 
 
+// $uid=$_SESSION['user_id'];
+
+//  $sql='select c.* from company_information c 
+    
+//     join 
+//     user_login as u 
+//     on u.cid=c.company_id
+//     where u.user_id='.$uid;
+//     $query=$this->db->query($sql);
+
+//     $company_info=$query->result_array();
+
+
+//  $sql='SELECT c.* from invoice i JOIN customer_information c on c.customer_id=i.customer_id where i.invoice_id='.$uid;
+//     $query=$this->db->query($sql);
+
+//     $customer_info=$query->result_array();
+
+
+
+
+
+//   $sql='SELECT p.* FROM `invoice_details` i JOIN
+
+//  product_information p
+//  on p.product_id=i.product_id
+
+//  where 
+//  i.invoice_id="'.$invoiceid.'";
+//  ';
+
+//     $query=$this->db->query($sql);
+
+//     $product_info=$query->result_array();
+
+
+
+//     $data['company_info']=$company_info;
+//     $data['customer_info']=$customer_info;
+//     $data['product_info']=$product_info;
+//     $data['invoiceid']=$invoiceid;
+
+
+
+
+//     $content = $this->load->view('pdf_attach_mail/new_sale', $data, true);
+//     if($content)
+//     {
+//   redirect("Cinvoice/manage_invoice");
+// }
+//          // $this->template->full_admin_html_view($content);
+// }   
+
+public function newsale_with_attachment_stand($invoiceid)
+  {
+    echo $invoiceid;
+  }
+
+  public function newsale_with_attachment_cus($invoiceid)
+  {
+    echo $invoiceid;
+  }
+
+
+  /////////////////////proforma//////////////////////////////////
+
+  public function proforma_with_attachment_stand($invoiceid)
+  {
+    echo $invoiceid;
+  }
+
+  public function proforma_with_attachment_cus($invoiceid)
+  {
+    echo $invoiceid;
+  }
+
+  /////////////////////packing//////////////////////////////////
+
+  public function packing_with_attachment_stand($invoiceid)
+  {
+    echo $invoiceid;
+  }
+
+  public function packing_with_attachment_cus($invoiceid)
+  {
+    echo $invoiceid;
+  }
+  /////////////////////Ocean//////////////////////////////////
+
+  public function ocean_with_attachment_stand($invoiceid)
+  {
+    echo $invoiceid;
+  }
+
+  public function ocean_with_attachment_cus($invoiceid)
+  {
+    echo $invoiceid;
+  }
+  /////////////////////Trucking//////////////////////////////////
+
+  public function trucking_with_attachment_stand($invoiceid)
+  {
+    echo $invoiceid;
+  }
+
+  public function trucking_with_attachment_cus($invoiceid)
+  {
+    echo $invoiceid;
+  }
 }
 
 

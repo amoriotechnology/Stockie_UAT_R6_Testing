@@ -170,7 +170,7 @@ class Invoices extends CI_Model {
     $this->db->from('profarma_invoice_details a');
     $this->db->join('product_information c', 'a.product_id = c.product_id');
     $this->db->join('profarma_invoice b', 'b.purchase_id = a.purchase_id');
-
+     // echo $this->db->last_query(); die();
     $this->db->where('b.purchase_id', $purchase_id);
     $this->db->group_by('a.product_id');
    
@@ -348,7 +348,7 @@ public function add_profarma_invoice()
                'ac_details'=>$this->input->post('ac_details'),
                 'sales_by'        => $this->session->userdata('user_id')
             );
-print_r($data);die();
+
         //   $CI->load->model('Invoices');
           //  $this->Invoices->add_profarma_invoice($data);
             $this->db->insert('profarma_invoice', $data);
@@ -1912,16 +1912,19 @@ public function retrieve_packing_editdata($purchase_id) {
             'container_no' => $this->input->post('container_number',TRUE),
 
             'bl_no' => $this->input->post('bl_no',TRUE),
-            'etd' => $this->input->post('etd',TRUE),
-            'eta' => $this->input->post('eta',TRUE),
-            'ac_details' => $this->input->post('ac_details',TRUE),
-            'remark' => $this->input->post('remark',TRUE),
+
             'port_of_discharge' => $this->input->post('port_of_discharge',TRUE),
 
             'total_amount'    => $this->input->post('total',TRUE),
+            'etd'    => $this->input->post('etd',TRUE),
+            'eta'    => $this->input->post('eta',TRUE),
+           
+
+            'gtotal'    => $this->input->post('gtotal',TRUE),
+            'ac_details'    => $this->input->post('ac_details',TRUE),
+            'remark'    => $this->input->post('remark',TRUE),
 
             'total_tax'       => $this->input->post('tax_details',TRUE),
-            'gtotal'       => $this->input->post('gtotal',TRUE),
 
             'invoice'         => $invoice_no_generated,
 
@@ -1955,7 +1958,7 @@ public function retrieve_packing_editdata($purchase_id) {
 
         );
 
-    //print_r($datainv);
+
 
         $this->db->insert('invoice', $datainv);
 
@@ -2200,7 +2203,7 @@ public function retrieve_packing_editdata($purchase_id) {
         $rate                = $this->input->post('product_rate',TRUE);
 
         $p_id                = $this->input->post('prodt',TRUE);
-
+        $stock                = $this->input->post('available_quantity',TRUE);
         $total_amount        = $this->input->post('total_price',TRUE);
 
         $discount_rate       = $this->input->post('discount_amount',TRUE);
@@ -2212,15 +2215,15 @@ public function retrieve_packing_editdata($purchase_id) {
         $invoice_description = $this->input->post('desc',TRUE);
 
         $serial_n            = $this->input->post('serial_no',TRUE);
-        $rowCount = count($this->input->post('product_id',TRUE));
+
 $product_id=$this->input->post('product_id',TRUE);
-for ($i = 0; $i < $rowCount; $i++) {
-    
+
+        for ($i = 0, $n = count($p_id); $i < $n; $i++) {
 
             $product_quantity = $quantity[$i];
-
+            $p_name = $p_id[$i];
             $product_rate = $rate[$i];
-
+$stock_in=$stock[$i];
             $product_id =$product_id[$i];
 
             $serial_no  = (!empty($serial_n[$i])?$serial_n[$i]:null);
@@ -2228,7 +2231,7 @@ for ($i = 0; $i < $rowCount; $i++) {
             $total_price = $total_amount[$i];
 
             $supplier_rate = $this->supplier_price($product_id);
-print_r($supplier_rate);die();
+
             // $disper = $discount_per[$i];
 
             $disper = 0;
@@ -2249,8 +2252,8 @@ print_r($supplier_rate);die();
                 'invoice_id'         => $invoice_id,
 
                 'product_id'         =>$product_id,
-
-                'serial_no'          => $serial_no,
+                'product_name'   => $p_name,
+                'in_stock'          => $stock_in,
 
                 'quantity'           => $product_quantity,
 
@@ -2276,7 +2279,7 @@ print_r($supplier_rate);die();
 
             );
 
-print_r($data1);die();
+
 
                 $this->db->insert('invoice_details', $data1);
 
@@ -3121,7 +3124,7 @@ if(!empty($this->input->post('paid_amount',TRUE))){
 
             );
 
-         //   $this->db->insert('invoice_details', $data1);
+            $this->db->insert('invoice_details', $data1);
 
 
 
@@ -4833,8 +4836,8 @@ return $output;
             'tax' => $this->input->post('tax_details',TRUE),
             'grand_total_amount' => $this->input->post('gtotal',TRUE),
             'remarks' => $this->input->post('remarks',TRUE),
-            'status'             => 1,
-          
+           'status'             => 1,
+         
         );
 
 
@@ -4982,9 +4985,11 @@ return $output;
         $query = $this->db->get();
 echo $this->db->last_query();
 
+            if ($query->num_rows() > 0) {
 
 return $query->result_array();
     
+    }
 
 }
 

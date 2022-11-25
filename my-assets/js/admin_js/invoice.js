@@ -200,6 +200,7 @@ var j = 0;
     ds = p.toFixed(2, 2);
 
     var test = +tx + +s_cost + +e + -ds + + ad;
+    $("#Total").val(e);
     $("#grandTotal").val(test.toFixed(2, 2));
 
 
@@ -357,6 +358,7 @@ function deleteRow(t) {
 
 
     }
+    calculateSum();
 }
 var count = 2,
         limits = 500;

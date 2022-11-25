@@ -32,6 +32,12 @@ function calculate_store(sl) {
     var grandtotal = gr_tot - dis;
     $("#grandTotal").val(grandtotal.toFixed(2,2));
     invoice_paidamount();
+    var first=$("#Total").val();
+var custo_amt=$('#custocurrency_rate').val();
+var value=parseInt(first*custo_amt);
+console.log(first+"/"+custo_amt);
+var custo_final = isNaN(parseInt(value)) ? 0 : parseInt(value)
+$('#vendor_gtotal').val(custo_final);  
 }
 
 
@@ -139,7 +145,7 @@ var options = {
             success: function(data)
             {
                 console.log(data);
-                obj = JSON.parse(data);
+              var  obj = JSON.parse(data);
                $('#'+available_quantity).val(obj.total_product);
                 $('#'+product_rate).val(obj.supplier_price);
               

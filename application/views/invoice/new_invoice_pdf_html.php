@@ -54,26 +54,38 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
 
 ?>
     <div class="container" id="content">
+        <?php
+    if($template==2)
+            {
+            ?>
         <div class="brand-section">
-            <div class="row">
-                <div class="col-6">
-                   <a> <img src="<?php echo  base_url().'assets/'.$logo; ?>" width="20%"><h4 class="text-white" style="margin-top: 10px;"><?php echo $company; ?></h4></a>
-                </div>
-                <div class="col-6" style="color:#F6F6F6;">
-                    <h4 style="margin-top: 30px; text-align: right;"> <?php echo $address; ?></h4>
-                </div>
-            </div>
+        <div class="row" >
+     
+     <div class="col-sm-2"><img src="<?php echo  base_url().'assets/'.$logo; ?>" style='width: 100%;'>
+        
+       </div>
+     <div class="col-sm-6 text-center" style="color:white;"><h3><?php echo $header; ?></h3></div>
+    <div class="col-sm-4" style="color:white;font-weight:bold;" id='company_info'>
+           
+          <b> Company name : </b><?php echo $company[0]['company_name']; ?><br>
+          <b>   Address : </b><?php echo $company[0]['address']; ?><br>
+          <b>   Email : </b><?php echo $company[0]['email']; ?><br>
+          <b>   Contact : </b><?php echo $company[0]['mobile']; ?><br>
+       </div>
+ </div>
         </div>
+
 
         <div class="body-section">
             <div class="row">
             <div class="col-6">
-                <table id="one" >
+            <table id="one" >
+            <tr><td  class="key">Commercial Invoice Number</td><td style="width:10px;">:</td><td calss="value"><?php echo $invoicenumber;  ?></td></tr>
     <tr><td  class="key">Customer Name</td><td style="width:10px;">:</td><td calss="value"><?php echo $customername;  ?></td></tr>
     <tr><td  class="key">Invoice No</td><td style="width:10px;">:</td><td calss="value"><?php echo $date;  ?></td></tr>
-    <tr><td  class="key">Billing Address</td><td style="width:10px;">:</td><td calss="value"><?php echo $billing;  ?></td></tr>
+    <tr><td  class="key">Payment Due date</td><td style="width:10px;">:</td><td calss="value"><?php echo $paymentdue;  ?></td></tr>
     <tr><td  class="key">Payment Terms</td><td style="width:10px;">:</td><td calss="value"> <?php echo $paymentterms;  ?></td></tr>
-    <tr><td  class="key">Number of days</td><td style="width:10px;">:</td><td calss="value"><?php echo $days;  ?></td></tr>
+    <tr><td  class="key">ETA</td><td style="width:10px;">:</td><td calss="value"><?php echo $eta;  ?></td></tr>
     <tr><td  class="key">ETD</td><td style="width:10px;">:</td><td calss="value"><?php echo $etd;  ?></td></tr>
     <tr><td  class="key">Payment Type</td><td style="width:10px;">:</td><td calss="value"><?php echo $payment;  ?></td></tr>
 </table>
@@ -82,12 +94,13 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
                 <div class="col-6">
                 <table id="two">
 
-    <tr><td  class="key">Commercial Invoice Number</td><td style="width:10px;">:</td><td calss="value"><?php echo $invoicenumber;  ?></td></tr>
     <tr><td  class="key">Container Number</td><td style="width:10px;">:</td><td calss="value"><?php echo $container;  ?></td></tr>
     <tr><td class="key">B/L No</td><td style="width:10px;">:</td><td calss="value"><?php echo $blno;  ?></td></tr>
+    <tr><td  class="key">Number of days</td><td style="width:10px;">:</td><td calss="value"><?php echo $days;  ?></td></tr>
     <tr><td  class="key">Port of discharge</td><td style="width:10px;">:</td><td calss="value"><?php echo $port;  ?></td></tr>
-    <tr><td  class="key">Payment Due date</td><td style="width:10px;">:</td><td calss="value"><?php echo $paymentdue;  ?></td></tr>
-    <tr><td  class="key">ETA</td><td style="width:10px;">:</td><td calss="value"><?php echo $eta;  ?></td></tr>
+   
+
+    <tr><td  class="key">Billing Address</td><td style="width:10px;">:</td><td calss="value"><?php echo $billing;  ?></td></tr>
 </table>
     </div>
                 
@@ -107,16 +120,16 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
                 </thead>
                 <tbody>
                 <?php
-                                    if ($all_products) {
+                                    if ($all_invoice) {
                                $count=1;
-                                   for($i=0;$i<sizeof($all_products);$i++){ ?>
+                                   for($i=0;$i<sizeof($all_invoice);$i++){ ?>
                     <tr>
                     <td style="font-size: 16px;"><?php echo $count; ?></td>
-                       <td style="font-size: 16px;"><?php echo $all_products[$i]['product_name']; ?></td>
-                       <td style="font-size: 16px;"><?php echo $all_products[$i]['p_quantity']; ?></td>
-                       <td style="font-size: 16px;"><?php echo $all_products[$i]['quantity']; ?></td>
-                       <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $all_products[$i]['rate']; ?></td>
-                       <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $all_products[$i]['total_price']; ?></td>
+                       <td style="font-size: 16px;"><?php echo $all_invoice[$i]['product_name']; ?></td>
+                       <td style="font-size: 16px;"><?php echo $all_invoice[$i]['in_stock']; ?></td>
+                       <td style="font-size: 16px;"><?php echo $all_invoice[$i]['quantity']; ?></td>
+                       <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $all_invoice[$i]['rate']; ?></td>
+                       <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $all_invoice[$i]['total_price']; ?></td>
                     </tr>
                   
                     <?php $count++;}}  ?>
@@ -124,7 +137,7 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
                 <tfoot>
                 <tr>
                     <td colspan="5" style="text-align:right;font-weight:bold;">Total:</td>
-                        <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $total; ?></td>
+                        <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $all_invoice[0]['total_amount']; ?></td>
                     </tr>
                     <tr>
                        
@@ -133,15 +146,226 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
                        </tr>
                     <tr>
                     <td colspan="5" style="text-align:right;font-weight:bold;">Grand Total:</td>
-                        <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $gtotal; ?></td>
+                        <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $all_invoice[0]['gtotal']; ?></td>
                     </tr>
                                    </tfoot>
             </table>
             <br>
-            <h3 class="heading">Message / Notes on Invoice</h3>
-            
+            <h3 class="heading">Account Details/Additional Information : </h3><?php echo $all_invoice[0]['ac_details'];  ?>  <br/><br/>
+            <h3 class="heading">Remarks/Conditions : </h3><?php  echo $all_invoice[0]['remark']; ?>  <br/><br/> 
+        </div>
+        <?php 
+
+}
+elseif($template==1)
+{
+?>   <div class="brand-section">
+<div class="row">
+   
+   <div class="col-sm-2"><img src="<?php echo  base_url().'assets/'.$logo; ?>" style='width: 100%;'>
+      
+     </div>
+   <div class="col-sm-6 text-center" style="color:white;"><h3><?php echo $header; ?></h3></div>
+  <div class="col-sm-4" id='company_info' style="color:white;">
+         
+  <b> Company name : </b><?php echo $company[0]['company_name']; ?><br>
+          <b>   Address : </b><?php echo $company[0]['address']; ?><br>
+          <b>   Email : </b><?php echo $company[0]['email']; ?><br>
+          <b>   Contact : </b><?php echo $company[0]['mobile']; ?><br>
+     </div>
+</div>
+     </div>
+     <div class="body-section">
+            <div class="row">
+            <div class="col-6">
+                <table id="one" >
+                <tr><td  class="key">Commercial Invoice Number</td><td style="width:10px;">:</td><td calss="value"><?php echo $invoicenumber;  ?></td></tr>
+    <tr><td  class="key">Customer Name</td><td style="width:10px;">:</td><td calss="value"><?php echo $customername;  ?></td></tr>
+    <tr><td  class="key">Invoice No</td><td style="width:10px;">:</td><td calss="value"><?php echo $date;  ?></td></tr>
+    <tr><td  class="key">Payment Due date</td><td style="width:10px;">:</td><td calss="value"><?php echo $paymentdue;  ?></td></tr>
+    <tr><td  class="key">Payment Terms</td><td style="width:10px;">:</td><td calss="value"> <?php echo $paymentterms;  ?></td></tr>
+    <tr><td  class="key">ETA</td><td style="width:10px;">:</td><td calss="value"><?php echo $eta;  ?></td></tr>
+    <tr><td  class="key">ETD</td><td style="width:10px;">:</td><td calss="value"><?php echo $etd;  ?></td></tr>
+    <tr><td  class="key">Payment Type</td><td style="width:10px;">:</td><td calss="value"><?php echo $payment;  ?></td></tr>
+</table>
+
+                </div>
+                <div class="col-6">
+                <table id="two">
+
+
+    <tr><td  class="key">Container Number</td><td style="width:10px;">:</td><td calss="value"><?php echo $container;  ?></td></tr>
+    <tr><td class="key">B/L No</td><td style="width:10px;">:</td><td calss="value"><?php echo $blno;  ?></td></tr>
+    <tr><td  class="key">Number of days</td><td style="width:10px;">:</td><td calss="value"><?php echo $days;  ?></td></tr>
+    <tr><td  class="key">Port of discharge</td><td style="width:10px;">:</td><td calss="value"><?php echo $port;  ?></td></tr>
+   
+   
+    <tr><td  class="key">Billing Address</td><td style="width:10px;">:</td><td calss="value"><?php echo $billing;  ?></td></tr>
+</table>
+    </div>
+                
+        </div>
+     <div class="body-section">
+            <table class="table-bordered">
+                <thead>
+                    <tr>
+                    <th class="text-center text-white">S.No</th>
+                        <th class="text-center text-white">Product Name</th>
+                        <th class="text-center text-white">In stock</th>
+                        <th class="text-center text-white">Quantity / Sq ft.</th>
+                        <th class="text-center text-white">Amount</th>
+                        <th class="text-center text-white">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <?php
+                                    if ($all_invoice) {
+                               $count=1;
+                                   for($i=0;$i<sizeof($all_invoice);$i++){ ?>
+                    <tr>
+                    <td style="font-size: 16px;"><?php echo $count; ?></td>
+                       <td style="font-size: 16px;"><?php echo $all_invoice[$i]['product_name']; ?></td>
+                       <td style="font-size: 16px;"><?php echo $all_invoice[$i]['in_stock']; ?></td>
+                       <td style="font-size: 16px;"><?php echo $all_invoice[$i]['quantity']; ?></td>
+                       <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $all_invoice[$i]['rate']; ?></td>
+                       <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $all_invoice[$i]['total_price']; ?></td>
+                    </tr>
+                  
+                    <?php $count++;}}  ?>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="5" style="text-align:right;font-weight:bold;">Total:</td>
+                        <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $all_invoice[0]['total_amount']; ?></td>
+                    </tr>
+                    <tr>
+                       
+                    <td colspan="5" style="text-align:right;font-weight:bold;"><?php echo  "Tax (".$tax_des;  ?></td>
+                           <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $tax_amt;  ?></td>
+                       </tr>
+                    <tr>
+                    <td colspan="5" style="text-align:right;font-weight:bold;">Grand Total:</td>
+                        <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $all_invoice[0]['gtotal']; ?></td>
+                    </tr>
+                                   </tfoot>
+            </table>
+            <br>
+            <h3 class="heading">Account Details/Additional Information : </h3><?php echo $all_invoice[0]['ac_details'];  ?>  <br/><br/>
+            <h3 class="heading">Remarks/Conditions : </h3><?php  echo $all_invoice[0]['remark']; ?>  <br/><br/> 
+        </div>
+        <?php 
+
+}
+elseif($template==3)
+{
+?>
+<div class="brand-section">
+<div class="row">
+       
+       <div class="col-sm-2"><img src="<?php echo  base_url().'assets/'.$logo; ?>" style='width: 100%;'>
+          
+         </div>
+       <div class="col-sm-6 text-center" style="color:white;"><h3><?php echo $header; ?></h3></div>
+    
+   </div>
         </div>
 
+        <div class="body-section">
+        <div class="row">
+        <div class="col-sm-6 "></div>
+            <div class="col-sm-6 " style="width:50%;">
+             <table>
+
+        <tr>  <td style="100px;font-weight:bold;"> Company name </td><td style="width:10px;">:</td><td> <?php echo $company[0]['company_name']; ?></td></tr>
+        <tr>   <td style="100px;font-weight:bold;"> Address </td><td style="width:10px;">:</td><td> <?php  echo $company[0]['address']; ?></td></tr>
+        <tr>   <td style="100px;font-weight:bold;"> Email </td><td style="width:10px;">:</td><td> <?php $company[0]['email']; ?></td></tr>
+        <tr>   <td style="100px;font-weight:bold;"> Contact </td><td style="width:10px;">:</td><td> <?php $company[0]['mobile']; ?></td></tr>
+</tr>        
+             
+</table>
+            </div></div>
+              <div class="row"> <div class="col-sm-12 ">&nbsp;</div></div>
+              <div class="row">
+            <div class="col-6">
+            <table id="one" >
+            <tr><td  class="key">Commercial Invoice Number</td><td style="width:10px;">:</td><td calss="value"><?php echo $invoicenumber;  ?></td></tr>
+    <tr><td  class="key">Customer Name</td><td style="width:10px;">:</td><td calss="value"><?php echo $customername;  ?></td></tr>
+    <tr><td  class="key">Invoice No</td><td style="width:10px;">:</td><td calss="value"><?php echo $date;  ?></td></tr>
+    <tr><td  class="key">Payment Due date</td><td style="width:10px;">:</td><td calss="value"><?php echo $paymentdue;  ?></td></tr>
+    <tr><td  class="key">Payment Terms</td><td style="width:10px;">:</td><td calss="value"> <?php echo $paymentterms;  ?></td></tr>
+    <tr><td  class="key">ETA</td><td style="width:10px;">:</td><td calss="value"><?php echo $eta;  ?></td></tr>
+    <tr><td  class="key">ETD</td><td style="width:10px;">:</td><td calss="value"><?php echo $etd;  ?></td></tr>
+    <tr><td  class="key">Payment Type</td><td style="width:10px;">:</td><td calss="value"><?php echo $payment;  ?></td></tr>
+</table>
+
+                </div>
+                <div class="col-6">
+                <table id="two">
+
+   
+    <tr><td  class="key">Container Number</td><td style="width:10px;">:</td><td calss="value"><?php echo $container;  ?></td></tr>
+    <tr><td class="key">B/L No</td><td style="width:10px;">:</td><td calss="value"><?php echo $blno;  ?></td></tr>
+    <tr><td  class="key">Number of days</td><td style="width:10px;">:</td><td calss="value"><?php echo $days;  ?></td></tr>
+    <tr><td  class="key">Port of discharge</td><td style="width:10px;">:</td><td calss="value"><?php echo $port;  ?></td></tr>
+   
+   
+    <tr><td  class="key">Billing Address</td><td style="width:10px;">:</td><td calss="value"><?php echo $billing;  ?></td></tr>
+</table>
+    </div>
+                
+        </div>
+     <div class="body-section">
+            <table class="table-bordered">
+                <thead>
+                    <tr>
+                    <th class="text-center text-white">S.No</th>
+                        <th class="text-center text-white">Product Name</th>
+                        <th class="text-center text-white">In stock</th>
+                        <th class="text-center text-white">Quantity / Sq ft.</th>
+                        <th class="text-center text-white">Amount</th>
+                        <th class="text-center text-white">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <?php
+                                    if ($all_invoice) {
+                               $count=1;
+                                   for($i=0;$i<sizeof($all_invoice);$i++){ ?>
+                    <tr>
+                    <td style="font-size: 16px;"><?php echo $count; ?></td>
+                       <td style="font-size: 16px;"><?php echo $all_invoice[$i]['product_name']; ?></td>
+                       <td style="font-size: 16px;"><?php echo $all_invoice[$i]['in_stock']; ?></td>
+                       <td style="font-size: 16px;"><?php echo $all_invoice[$i]['quantity']; ?></td>
+                       <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $all_invoice[$i]['rate']; ?></td>
+                       <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $all_invoice[$i]['total_price']; ?></td>
+                    </tr>
+                  
+                    <?php $count++;}}  ?>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="5" style="text-align:right;font-weight:bold;">Total:</td>
+                        <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $all_invoice[0]['total_amount']; ?></td>
+                    </tr>
+                    <tr>
+                       
+                    <td colspan="5" style="text-align:right;font-weight:bold;"><?php echo  "Tax (".$tax_des;  ?></td>
+                           <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $tax_amt;  ?></td>
+                       </tr>
+                    <tr>
+                    <td colspan="5" style="text-align:right;font-weight:bold;">Grand Total:</td>
+                        <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $all_invoice[0]['gtotal']; ?></td>
+                    </tr>
+                                   </tfoot>
+            </table>
+            <br>
+            <h3 class="heading">Account Details/Additional Information : </h3><?php echo $all_invoice[0]['ac_details'];  ?>  <br/><br/>
+            <h3 class="heading">Remarks/Conditions : </h3><?php  echo $all_invoice[0]['remark']; ?>  <br/><br/> 
+        </div>
+        <?php 
+
+}
+?>
         
     </div>   
 
@@ -291,7 +515,7 @@ table th, table td {
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
 <script>
-    /*
+    
 $(document).ready(function () {
  
  var pdf = new jsPDF('p','pt','a4');
@@ -316,11 +540,12 @@ $(document).ready(function () {
     pdf.setFontSize(10);
     pdf.setTextColor(150);
   }
-  var timer = setTimeout(function() {
-            window.location='<?php  //echo base_url();   ?>'+'Cinvoice/manage_invoice'
-        }, 10);
+
   }).save();
+  var timer = setTimeout(function() {
+            window.location='<?php  echo base_url();   ?>'+'Cinvoice/manage_invoice'
+        }, 1000);
    });
-   */
+  
    </script>
 

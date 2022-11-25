@@ -12,10 +12,11 @@ class Products extends CI_Model {
 public function get_invoice_product($purchase_id) {
     $sql='SELECT b.* from product_purchase_details a join product_information b on b.product_id=a.product_id where a.purchase_id='.$purchase_id;
         $query = $this->db->query($sql);
+       
         if ($query->num_rows() > 0) {
             return $query->result_array();
         }
-        return false;
+      
     }
     //Count Product
     public function count_product() {

@@ -285,7 +285,7 @@ textarea:focus, input:focus{
                                             <td class="text-right">
                                                 <input type="text" name="description[]" id="" required="" min="0" class="form-control text-right" value=""  tabindex="6"/>
                                             </td>
-                                            <td><span class='form-control' style='background-color: #eee;'><?php  //echo $currency; ?> 
+                                            <td style="width:220px;"><span class='form-control' style='background-color: #eee;'><?php  echo $currency; ?> 
                                                 <input type="text" name="product_rate[]" required="" onkeyup="calculate_store(1);" onchange="calculate_store(1);" id="product_rate_1" class="product_rate_1" placeholder="0.00" value="" min="0" tabindex="7"/>
                                            </span> </td>
 
@@ -294,7 +294,7 @@ textarea:focus, input:focus{
                                             </td>
                                            
 
-                                            <td><span class='form-control' style='background-color: #eee;'><?php  //echo $currency; ?> 
+                                            <td><span class='form-control' style='background-color: #eee;'><?php  echo $currency; ?> 
                                                 <input class="total_price" type="text" name="total_price[]" id="total_price_1" value="0.00" readonly="readonly" />
                                            </span></td>
                                             <td>
@@ -309,25 +309,27 @@ textarea:focus, input:focus{
                                 <tr>
                                         
                                         <td style="text-align:right;" colspan="5"><b>Grand Total</b></td>
-                                        <td><span class='form-control' style='background-color: #eee;'><?php  //echo $currency; ?>
+                                        <td ><span class='form-control' style='background-color: #eee;'><?php  echo $currency; ?>
                                             <input type="text" id="Total"  name="total" value="0.00" readonly="readonly" />
                                         </span></td>
                                         <td> <button type="button" id="add_invoice_item" class="btn btn-info" name="add-invoice-item"  onClick="addTruckingOrderField('addPurchaseItem')"  tabindex="9"/><i class="fa fa-plus"></i></button>
 
                                             <input type="hidden" name="baseUrl" class="baseUrl" value="<?php echo base_url();?>"/></td>
-                                    </tr>
-                                  
-                                    <tr> <td style="text-align:right;"  colspan="5"><b><?php echo "Grand Total" ?>:</b><br/><b>(Preferred Currency)</b></td>
+                                    </tr><tr>
+                                    <td style="width:20%;border:none;"><span style="width:30%;border:none;"></span>
+                         </td> 
+                
+                                <td  style="width:30%px;border:none;"><span class="hiden" style="width:200px;padding:5px;background-color:#38469f;border:none;font-weight:bold;color:white;">1 <?php  echo $curn_info_default;  ?>
+                                 = <input style="color:black;width:70px;text-align:center;padding:5px;" type="text" id="custocurrency_rate"/>&nbsp;<label for="custocurrency"></label></span></td>
+                    <td style="border:none;text-align:right;font-weight:bold;" colspan="3"><b><?php echo "Grand Total" ?>:</b><br/><b>(Preferred Currency)</b></td>
                                     <td>
-                                            <span class="form-control" style="background-color: #eee;" >
+                                            <span class="form-control" style="background-color: #eee;" ><input style="width:12%;font-weight:bold;" type="text" id="cus"  name="cus"  readonly="readonly" />
                                             <input type="text" id="vendor_gtotal"  name="vendor_gtotal" value="0.00" readonly="readonly" />
                                             </span></td>
                                       
 
                                             <input type="hidden" id="final_gtotal"  name="final_gtotal" />
-
-                                            <input type="hidden" name="baseUrl" class="baseUrl" value="<?php echo base_url();?>"/></td>
-                                    </tr>
+                                        </tr>
 
 
                                     <!--     <tr>
@@ -650,13 +652,15 @@ textarea:focus, input:focus{
 
             </div><!-- /.modal -->
 
-
+            <input type="hidden" name="<?php echo $this->security->get_csrf_token_name();?>" value="<?php echo $this->security->get_csrf_hash();?>">
+  
 
 <script type="text/javascript">
    // $('.select2-selection__arrow').click(function(){
     //    alert(3);
   //  });
-
+  var csrfName = '<?php echo $this->security->get_csrf_token_name();?>';
+var csrfHash = '<?php echo $this->security->get_csrf_hash();?>';
     var count = 2;
     var limits = 500;
     "use strict";
@@ -678,7 +682,7 @@ textarea:focus, input:focus{
         tab6 = tab5 + 1;
         tab7 = tab6 +1;
        
-        newdiv.innerHTML ='<td class="span3 supplier"><input type="date" name="trucking_date[]" required="" class="form-control" tabindex="'+tab1+'" > <input type="hidden" class="autocomplete_hidden_value product_id_'+ count +'" name="product_id[]" id="SchoolHiddenId"/>  <input type="hidden" class="sl" value="'+ count +'">  </td> <td class="text-right"><input type="text" name="product_quantity[]" tabindex="'+tab2+'" required  id="cartoon_'+ count +'" class="form-control text-right store_cal_' + count + '" onkeyup="calculate_store(' + count + ');" onchange="calculate_store(' + count + ');" placeholder="0.00" value="" min="0"/></td><td class="text-right"><input class="form-control" type="text" name="description[]" id="pro_no" value=""  /></td><td><span class="form-control" style="background-color: #eee;"><?php  echo $currency." ";  ?> <input type="text" name="product_rate[]" onkeyup="calculate_store('+ count +');" onchange="calculate_store('+ count +');" id="product_rate_'+ count +'" class="product_rate_'+ count +'" placeholder="0.00" value="" min="0" tabindex="'+tab3+'"/></span></td><td class="text-right"><input class="form-control" type="text" name="pro_no[]" id="pro_no" value=""  /></td><td><span class="form-control" style="background-color: #eee;"><?php echo $currency." "; ?> <input class="total_price total_price_'+ count +'" type="text" name="total_price[]" id="total_price_'+ count +'" value="0.00" readonly="readonly" /></span> </td><td> <input type="hidden" id="total_discount_1" class="" /><input type="hidden" id="all_discount_1" class="total_discount" /><button style="text-align: right;" class="btn btn-danger red" type="button"  onclick="deleteRow(this)" tabindex="8"><i class="fa fa-close"></i></button></td>';
+        newdiv.innerHTML ='<td class="span3 supplier"><input type="date" name="trucking_date[]" required="" class="form-control" tabindex="'+tab1+'" > <input type="hidden" class="autocomplete_hidden_value product_id_'+ count +'" name="product_id[]" id="SchoolHiddenId"/>  <input type="hidden" class="sl" value="'+ count +'">  </td> <td class="text-right"><input type="text" name="product_quantity[]" tabindex="'+tab2+'" required  id="cartoon_'+ count +'" class="form-control text-right store_cal_' + count + '" onkeyup="calculate_store(' + count + ');" onchange="calculate_store(' + count + ');" placeholder="0.00" value="" min="0"/></td><td class="text-right"><input class="form-control" type="text" name="description[]" id="pro_no" value=""  /></td><td style="width:220px;"><span class="form-control" style="background-color: #eee;"><?php  echo $currency." ";  ?> <input type="text" name="product_rate[]" onkeyup="calculate_store('+ count +');" onchange="calculate_store('+ count +');" id="product_rate_'+ count +'" class="product_rate_'+ count +'" placeholder="0.00" value="" min="0" tabindex="'+tab3+'"/></span></td><td class="text-right"><input class="form-control" type="text" name="pro_no[]" id="pro_no" value=""  /></td><td><span class="form-control" style="background-color: #eee;"><?php echo $currency." "; ?> <input class="total_price total_price_'+ count +'" type="text" name="total_price[]" id="total_price_'+ count +'" value="0.00" readonly="readonly" /></span> </td><td> <input type="hidden" id="total_discount_1" class="" /><input type="hidden" id="all_discount_1" class="total_discount" /><button style="text-align: right;" class="btn btn-danger red" type="button"  onclick="deleteRow(this)" tabindex="8"><i class="fa fa-close"></i></button></td>';
 
 
   document.getElementById(divName).appendChild(newdiv);
@@ -695,11 +699,30 @@ textarea:focus, input:focus{
         });
     }
 }
+$( document ).ready(function() {
+                        $('.hiden').css("display","none");
 
+  
+
+$('#Total').on('change textInput input', function (e) {
+    calculate();
+});
+
+$('#custocurrency_rate').on('change textInput input', function (e) {
+    calculate();
+});
+function calculate(){
+  
+  var first=$("#Total").val();
+var custo_amt=$('#custocurrency_rate').val();
+var value=parseInt(first*custo_amt);
+
+var custo_final = isNaN(parseInt(value)) ? 0 : parseInt(value)
+$('#vendor_gtotal').val(custo_final);  
+}
+});
 $('#supplier_id').on('change', function (e) {
- 
-    var csrfName = '<?php echo $this->security->get_csrf_token_name();?>';
-var csrfHash = '<?php echo $this->security->get_csrf_hash();?>';
+  
   var data = {
       value: $('#supplier_id').val()
    };
@@ -712,18 +735,35 @@ var csrfHash = '<?php echo $this->security->get_csrf_hash();?>';
       dataType:"json",
       url:'<?php echo base_url();?>Cinvoice/getvendorbyname',
       success: function(result, statut) {
-        
+          if(result.csrfName){
+             //assign the new csrfName/Hash
+             csrfName = result.csrfName;
+             csrfHash = result.csrfHash;
+          }
          // var parsedData = JSON.parse(result);
         //  alert(result[0].p_quantity);
         console.log(result[0]['currency_type']);
-      $("#vendor_gtotal").val(result[0]['currency_type']);
-    
-    
+     // $("#vendor_gtotal").val(result[0]['currency_type']);
+      $("#cus").val(result[0]['currency_type']);
+        $("label[for='custocurrency']").html(result[0]['currency_type']);
+       console.log('https://open.er-api.com/v6/latest/<?php echo $curn_info_default; ?>');
+       $.getJSON('https://open.er-api.com/v6/latest/<?php echo $curn_info_default; ?>', 
+function(data) {
+ var custo_currency=result[0]['currency_type'];
+    var x=data['rates'][custo_currency];
+ var Rate =parseFloat(x).toFixed(3);
+  console.log(Rate);
+  $('.hiden').show();
+  $("#custocurrency_rate").val(Rate);
+});
       }
   });
 
 
 });
+
+  
+
          
 </script>
 

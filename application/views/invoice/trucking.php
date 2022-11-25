@@ -708,7 +708,7 @@ console.log("numhere :"+num +"-"+custo_amt);
 var value=parseInt(num*custo_amt);
 var custo_final = isNaN(parseInt(value)) ? 0 : parseInt(value)
 $('#customer_gtotal').val(custo_final);  
-
+calculate();
 });
 });
 $( document ).ready(function() {
