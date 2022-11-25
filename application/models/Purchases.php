@@ -1390,11 +1390,11 @@ return $output;
                
             }
         }
-
+      
         $data = array(
             'purchase_id'        => $purchase_id,
             'create_by'       =>  $this->session->userdata('user_id'),
-            'chalan_no'          => $this->input->post('invoice_no',TRUE),
+            'chalan_no'          => $this->input->post('chalan',TRUE),
             'supplier_id'        => $this->input->post('supplier_id',TRUE),
             'grand_total_amount' => $this->input->post('total',TRUE),
             // 'grand_total_amount' => $this->input->post('grand_total_price',TRUE),
@@ -1418,6 +1418,9 @@ return $output;
             'payment_type'       =>  $this->input->post('paytype',TRUE),
              'image'              =>  $profile_img,
         );
+     
+        $this->db->insert('product_purchase', $data);
+
         //Supplier Credit
         $purchasecoatran = array(
           'VNo'            =>  $purchase_id,
@@ -1512,7 +1515,7 @@ return $output;
 
         
        
-        $this->db->insert('product_purchase', $data);
+       
         $this->db->insert('acc_transaction',$coscr);
         $this->db->insert('acc_transaction',$purchasecoatran);  
         $this->db->insert('acc_transaction',$expense);
@@ -1618,6 +1621,7 @@ return $output;
             'container_no'     => $this->input->post('container_no',TRUE),
             'grand_total_amount'      => $this->input->post('total',TRUE),
             'status'             => 1,
+            'remarks' => $this->input->post('remarks',TRUE)
         );
 
 
@@ -2455,7 +2459,7 @@ public function get_purchases_invoice($invoice_no='')
     $this->db->from('purchase_order po');
     $this->db->join('supplier_information si', 'po.supplier_id = si.supplier_id'); 
     $query = $this->db->get();
-    return $query->row();
+    return $query->result_array();
     
 
 }
@@ -2467,8 +2471,7 @@ public function get_purchases_order($invoice_no='')
     $this->db->from('purchase_order_details po');
     $this->db->join('product_information pi', 'po.product_id = pi.product_id'); 
     $query = $this->db->get();
-    return $query->result();
-    
+    return $query->result_array();
 
 }
 public function get_supplier($purchase_id='')
@@ -2712,7 +2715,7 @@ public function company_info()
 
     //Retrieve purchase_details_data
     public function purchase_details_data($purchase_id) {
-        $this->db->select('a.*,b.*,c.*,e.*');
+        $this->db->select('a.*,b.*,c.*,d.*');
         $this->db->from('product_purchase a');
         $this->db->join('supplier_information b', 'b.supplier_id = a.supplier_id');
         $this->db->join('product_purchase_details c', 'c.purchase_id = a.purchase_id');
@@ -2720,24 +2723,27 @@ public function company_info()
         $this->db->join('product_purchase e', 'e.purchase_id = c.purchase_id');
         $this->db->where('a.purchase_id', $purchase_id);
         $this->db->group_by('d.product_id');
-        $query = $this->db->get();
+        $query = $this->db->get(); 
         if ($query->num_rows() > 0) {
             
             return $query->result_array();
         }
-        return false;
+       
     }
 
     public function packing_details_data($expense_packing_id) {
         // $sql='SELECT * FROM expense_packing_list as a JOIN expense_packing_list_detail as b ON b.product_id = a.product_id WHERE a.expense_packing_id = '.$expense_packing_id;
-        $sql = 'SELECT * FROM expense_packing_list as a JOIN expense_packing_list_detail as ac JOIN product_information as b ON b.product_id = a.product_id WHERE a.expense_packing_id = '.$expense_packing_id;
-        $query = $this->db->query($sql);
-//    echo $this->db->last_query();
-//        die(); 
+  //$sql = 'SELECT * FROM expense_packing_list as a JOIN expense_packing_list_detail as ac JOIN product_information as b ON b.product_id = a.product_id WHERE a.expense_packing_id = '.$expense_packing_id;
+        $this->db->select('*');
+     $this->db->from('expense_packing_list a');
+         $this->db->join('expense_packing_list_detail ac' , 'a.expense_packing_id=ac.expense_packing_id');
+         $this->db->join('product_information b' , 'b.product_id = a.product_id');
+     $this->db->where('a.expense_packing_id' , $expense_packing_id);
+         $query = $this->db->get();
+      //  $query = $this->db->query($sql);
         if ($query->num_rows() > 0) {
             return $query->result_array();
         }
-        return true;
     }
 
 

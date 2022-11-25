@@ -26,25 +26,8 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
             </ol>
         </div>
     </section>
-    <style>
-        #ocean{
-            margin-left: 300px;
-        }
-   #company_info,form,table,p{
-   font-size:14px;
-   }
-   th, td {
-  padding: 10px;
-}
-h3,#company_info{
-   font-weight:bold;
-}
-tbody tr{text-align:center}
-.right{text-align:right; }
-   </style>
-    <?php   ?>
     <!-- Main content -->
-    <div class="">
+    <div class="" id="content">
     <section class="content">
         <!-- Alert Message -->
         <?php
@@ -71,84 +54,323 @@ tbody tr{text-align:center}
         ?>
       <!-- <table id="tab"> -->
            
-             
-    <div class="container" id="content">
-        <div class="brand-section">
-            <div class="row">
-                <div class="col-6">
-                   <a> <img src="<?php echo base_url(); ?>assets/<?php echo $invoice_setting[0]['logo']; ?>" style="width: 20%;"><h4 class="text-white" style="margin-top: 10px;"><?php echo $company_info[0]['company_name']; ?></h4></a>
+ <div class="container" id="content">
+
+<?php
+
+ if($invoice_setting[0]['template']==1)
+            {
+                ?>
+               <div class="brand-section">
+<div class="row">
+   
+  
+  
+  <div class="col-sm-4" id='company_info' style="color:white;">
+         
+  <b> Company name : </b><?php echo $company_info[0]['company_name']; ?><br>
+<b>   Address : </b><?php echo $company_info[0]['address']; ?><br>
+<b>   Email : </b><?php echo $company_info[0]['email']; ?><br>
+<b>   Contact : </b><?php echo $company_info[0]['mobile']; ?><br>
+     </div>
+     <div class="col-sm-6 text-center" style="color:white;"><h3><?php echo $invoice_setting[0]['header']; ?></h3></div>
+     <div class="col-sm-2"><img src="<?php echo  base_url().'assets/'.$invoice_setting[0]['logo']; ?>" style='width: 100%;'>
+      
+      </div>
+</div>
+     </div>
+
+            
+                <div class="body-section">
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="sub-heading heading_name">Packing List NO: &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $invoice;  ?></span></p>
+                            <p class="sub-heading heading_name">Gross Weight: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $gross;  ?></span></p>
+                            
+                        </div>
+                        <div class="col-6">
+                            <p class="sub-heading heading_name">Invoice Date: &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $invoice_date;  ?></span></p>
+                            <p class="sub-heading heading_name">Container No: &nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $container;  ?></span></p>
+                           
+                                                   
+                        </div>
+                    </div>
                 </div>
-                <div class="col-6" style="color:#F6F6F6;">
-                    <h4 style="margin-top: 30px; text-align: right;"> <?php echo $company_info[0]['address']; ?></h4>
-                </div>
-            </div>
+            
+                <div class="body-section">
+                    <table class="table-bordered">
+                        <thead>
+                            <tr>
+                                <th class="text-white text-center">Product</th>
+                                <th class="text-white text-center">Description</th>
+                                <th class="text-white text-center">Thickness</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="font-size: 16px;"><?php echo $product; ?></td>
+                                <td style="font-size: 16px;"><?php echo $description; ?></td>
+                                <td style="font-size: 16px;"><?php echo $thickness; ?></td>
+                             </tr>
+            
+                        </tbody>
+                    </table><br><br><br>
+            
+                    <table class="table-bordered">
+                        <thead>
+                            <tr>
+                                <th class="text-white text-center">Serial No</th>
+                                <th class="text-white text-center">SLAB NO</th>
+                                <th class="text-white text-center">Net Measurement (Inches)</th>
+                                <th class="text-white text-center">Area (Sq. Ft)</th>
+                            </tr>
+                            <tr> 
+                  
+                 
+     </tr>
+              </thead>
+              <tbody>
+                            <?php
+                                      if ($packing_details) {
+                                 $count=1;
+                                     for($i=0;$i<sizeof($packing_details);$i++){ ?>
+                      <tr>
+                          <td style="font-size: 16px;"><?php echo $count ;?></td>
+                          <td style="font-size: 16px;"><?php echo $packing_details[$i]['slab_no']; ?></td>
+                          <td style="font-size: 16px;"><p>Width: &nbsp; <?php echo $width; ?></p> <p >Height: &nbsp; <?php echo $height; ?></p></td>
+                         <td style="font-size: 16px;"><?php echo $packing_details[$i]['area']; ?></td>
+                         
+                      <?php $count++;}}  ?>
+                      <tfoot>
+                                <tr>
+                                    <td colspan="3" style="text-align:right;font-weight:bold;">Total:</td>
+                                    <td style="font-size: 16px;"><?php echo $total;  ?></td>
+                                </tr>
+                                     </tfoot>
+                    
+                        
+                            </tbody>
+                    </table>
+                    <br>
+
+<h4>Remarks/Conditions :</h4><?php  echo $remarks; ?><br><br><br>
+        
+                  
         </div>
-        <div class="body-section">
-            <div class="row">
-                <div class="col-6">
-                    <p class="sub-heading heading_name">Packing List NO: &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $invoice;  ?></span></p>
-                    <p class="sub-heading heading_name">Gross Weight: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $gross; ?></span></p>
-                </div>
-                <div class="col-6">
-                    <p class="sub-heading heading_name">Invoice Date: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $invoice_date; ?></span></p>
-                    <p class="sub-heading heading_name">Container No: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $container; ?></span></p>
-                </div>
+       
+    </div>  
+    <?php 
+
+}
+elseif ($invoice_setting[0]['template']==2)
+{
+    ?>
+     <div class="brand-section">
+<div class="row" >
+
+<div class="col-sm-2"><img src="<?php echo  base_url().'assets/'.$invoice_setting[0]['logo']; ?>" style='width: 100%;'>
+
+</div>
+<div class="col-sm-6 text-center" style="color:white;"><h3><?php echo $invoice_setting[0]['header']; ?></h3></div>
+<div class="col-sm-4" style="color:white;font-weight:bold;" id='company_info'>
+<b> Company name : </b><?php echo $company_info[0]['company_name']; ?><br>
+<b>   Address : </b><?php echo $company_info[0]['address']; ?><br>
+<b>   Email : </b><?php echo $company_info[0]['email']; ?><br>
+<b>   Contact : </b><?php echo $company_info[0]['mobile']; ?><br>
+</div>
+</div>
+</div>
+
+    <div class="body-section">
+        <div class="row">
+            <div class="col-6">
+                <p class="sub-heading heading_name">Packing List NO: &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $invoice;  ?></span></p>
+                <p class="sub-heading heading_name">Gross Weight: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $gross;  ?></span></p>
+                
             </div>
-        </div>
-        <div class="body-section">
-            <table class="table-bordered">
-                <thead>
-                    <tr>
-                        <th class="text-center text-white">Product</th>
-                        <th class="text-center text-white">Description</th>
-                        <th class="text-center text-white">Thickness</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td style="font-size: 16px;"><?= $product; ?></td>
-                        <td style="font-size: 16px;"><?= $description; ?></td>
-                        <td style="font-size: 16px;"><?= $thickness; ?></td>
-                     </tr>
-                </tbody>
-            </table><br><br><br>
-            <table class="table-bordered">
-                <thead>
-                    <tr>
-                        <th class="text-center text-white">SLAB NO</th>
-                        <th class="text-center text-white">Net Measurement (Inches)</th>
-                        <th class="text-center text-white">Area (Sq. Ft)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td style="font-size: 16px;"><?= $slab; ?></td>
-                         <td style="font-size: 16px;"><p>Width: &nbsp; <?php echo $width; ?></p> <p >Height: &nbsp; <?php echo $height; ?></p></td>
-                        <td style="font-size: 16px;"><?= $area; ?></td>
-                       </tr>
-                       <tr>
-                        <td colspan="2" style="text-align: right;">Total:</td>
-                        <td style="font-size: 16px;"><?= $total; ?></td>
-                         </tr>
-                </tbody>
-            </table>
-            <br>
-<h4>Remarks/Conditions</h4><br><br><br>
+            <div class="col-6">
+                <p class="sub-heading heading_name">Invoice Date: &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $invoice_date;  ?></span></p>
+                <p class="sub-heading heading_name">Container No: &nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $container;  ?></span></p>
+               
+                                       
+            </div>
         </div>
     </div>
+
+    <div class="body-section">
+        <table class="table-bordered">
+            <thead>
+                <tr>
+                    <th class="text-white text-center">Product</th>
+                    <th class="text-white text-center">Description</th>
+                    <th class="text-white text-center">Thickness</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="font-size: 16px;"><?php echo $product; ?></td>
+                    <td style="font-size: 16px;"><?php echo $description; ?></td>
+                    <td style="font-size: 16px;"><?php echo $thickness; ?></td>
+                 </tr>
+
+            </tbody>
+        </table><br><br><br>
+
+        <table class="table-bordered">
+            <thead>
+                <tr>
+                    <th class="text-white text-center">Serial No</th>
+                    <th class="text-white text-center">SLAB NO</th>
+                    <th class="text-white text-center">Net Measurement (Inches)</th>
+                    <th class="text-white text-center">Area (Sq. Ft)</th>
+                </tr>
+            </thead>
+            <tbody>
+                            <?php
+                                      if ($packing_details) {
+                                 $count=1;
+                                     for($i=0;$i<sizeof($packing_details);$i++){ ?>
+                      <tr>
+                          <td style="font-size: 16px;"><?php echo $count ;?></td>
+                          <td style="font-size: 16px;"><?php echo $packing_details[$i]['slab_no']; ?></td>
+                          <td style="font-size: 16px;"><p>Width: &nbsp; <?php echo $width; ?></p> <p >Height: &nbsp; <?php echo $height; ?></p></td>
+                         <td style="font-size: 16px;"><?php echo $packing_details[$i]['area']; ?></td>
+                         
+                      <?php $count++;}}  ?>
+                      <tfoot>
+                                <tr>
+                                    <td colspan="3" style="text-align:right;font-weight:bold;">Total:</td>
+                                    <td style="font-size: 16px;"><?php echo $total;  ?></td>
+                                </tr>
+                                     </tfoot>
+                    
+                        
+                            </tbody>
+        </table>
+        <br>
+
+        <h4>Remarks/Conditions :</h4><?php  echo $remarks; ?><br><br><br>
     
-        
-    </div>        
-        
+              
     </div>
-    </section> <!-- /.content -->
-</div> <!-- /.content-wrapper -->
-      <!-- </table> -->
+   
+</div>  
+<?php 
+
+}
+elseif ($invoice_setting[0]['template']==3)
+{
+    ?>
+<div class="brand-section">
+<div class="row">
+
+<div class="col-sm-2"><img src="<?php echo  base_url().'assets/'.$invoice_setting[0]['logo']; ?>" style='width: 100%;'>
+
+</div>
+<div class="col-sm-6 text-center" style="color:white;"><h3><?php echo $invoice_setting[0]['header']; ?></h3></div>
+
+</div>
+</div> 
+<div class="body-section">
+<div class="row">
+<div class="col-sm-6 "></div>
+<div class="col-sm-6 " style="width:50%;">
+<table>
+
+<tr>  <td style="100px;font-weight:bold;"> Company name </td><td style="width:10px;">:</td><td> <?php echo $company_info[0]['company_name']; ?></td></tr>
+<tr>   <td style="100px;font-weight:bold;"> Address </td><td style="width:10px;">:</td><td> <?php echo $company_info[0]['address']; ?></td></tr>
+<tr>   <td style="100px;font-weight:bold;"> Email </td><td style="width:10px;">:</td><td> <?php echo $company_info[0]['email']; ?></td></tr>
+<tr>   <td style="100px;font-weight:bold;"> Contact </td><td style="width:10px;">:</td><td> <?php echo  $company_info[0]['mobile']; ?></td></tr>
+</tr>        
+
+</table>
+</div></div>
+<div class="row"> <div class="col-sm-12 ">&nbsp;</div></div>
+        <div class="row">
+            <div class="col-6">
+                <p class="sub-heading heading_name">Packing List NO: &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $invoice;  ?></span></p>
+                <p class="sub-heading heading_name">Gross Weight: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $gross;  ?></span></p>
+                
 
 
+            </div>
+
+
+
+            
+            <div class="col-6">
+                <p class="sub-heading heading_name">Invoice Date: &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $invoice_date;  ?></span></p>
+                <p class="sub-heading heading_name">Container No: &nbsp;&nbsp;&nbsp;<span style="font-weight: normal;"><?php echo $container;  ?></span></p>
+               
+                                       
+            </div>
+        </div>
+    </div>
+
+    <div class="body-section">
+        <table class="table-bordered">
+            <thead>
+                <tr>
+                    <th class="text-white text-center">Product</th>
+                    <th class="text-white text-center">Description</th>
+                    <th class="text-white text-center">Thickness</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="font-size: 16px;"><?php echo $product; ?></td>
+                    <td style="font-size: 16px;"><?php echo $description; ?></td>
+                    <td style="font-size: 16px;"><?php echo $thickness; ?></td>
+                 </tr>
+
+            </tbody>
+        </table><br><br><br>
+
+        <table class="table-bordered">
+            <thead>
+                <tr>
+                    <th class="text-white text-center">Serial No</th>
+                    <th class="text-white text-center">SLAB NO</th>
+                    <th class="text-white text-center">Net Measurement (Inches)</th>
+                    <th class="text-white text-center">Area (Sq. Ft)</th>
+                </tr>
+            </thead>
+            <tbody>
+                            <?php
+                                      if ($packing_details) {
+                                 $count=1;
+                                     for($i=0;$i<sizeof($packing_details);$i++){ ?>
+                      <tr>
+                          <td style="font-size: 16px;"><?php echo $count ;?></td>
+                          <td style="font-size: 16px;"><?php echo $packing_details[$i]['slab_no']; ?></td>
+                          <td style="font-size: 16px;"><p>Width: &nbsp; <?php echo $width; ?></p> <p >Height: &nbsp; <?php echo $height; ?></p></td>
+                         <td style="font-size: 16px;"><?php echo $packing_details[$i]['area']; ?></td>
+                         
+                      <?php $count++;}}  ?>
+                      <tfoot>
+                                <tr>
+                                    <td colspan="3" style="text-align:right;font-weight:bold;">Total:</td>
+                                    <td style="font-size: 16px;"><?php echo $total;  ?></td>
+                                </tr>
+                                     </tfoot>
+                    
+                        
+                            </tbody>
+        </table>
+        <br>
+
+        <h4>Remarks/Conditions :</h4><?php  echo $remarks; ?><br>
+    
+</div>
+
+        
+</div>
+<?php  } ?>
+</div>
+</section>
 <style>
         body{
-            background-color: #FCF8F8;
+            background-color: #fcf8f8; 
             margin: 0;
             padding: 0;
         }
@@ -170,19 +392,22 @@ tbody tr{text-align:center}
             margin-top: 50px;
         }
         .brand-section{
-           background-color: #5961B3;
+           background-color: #5961b3;
            padding: 10px 40px;
         }
         .logo{
             width: 50%;
         }
+
         .row{
             display: flex;
             flex-wrap: wrap;
+            
         }
         .col-6{
             width: 50%;
             flex: 0 0 auto;
+           
         }
         .text-white{
             color: #fff;
@@ -191,9 +416,11 @@ tbody tr{text-align:center}
             float: right;
             text-align: right;
         }
+    
         .body-section{
             padding: 16px;
             border: 1px solid gray;
+            
         }
         .heading{
             font-size: 20px;
@@ -210,7 +437,7 @@ tbody tr{text-align:center}
         }
         table thead tr{
             border: 1px solid #111;
-            background-color:  #5961B3;
+            background-color:  #5961b3;
         }
         table td {
             vertical-align: middle !important;
@@ -224,7 +451,7 @@ tbody tr{text-align:center}
             box-shadow: 0px 0px 5px 0.5px gray;
         }
         .table-bordered td, .table-bordered th {
-            border: 1px solid #DEE2E6;
+            border: 1px solid #dee2e6;
         }
         .text-right{
             text-align: end;
@@ -236,8 +463,12 @@ tbody tr{text-align:center}
             float: right;
         }
         @media only screen and (max-width: 600px) {
+            
         }
-    </style>     
+
+       
+    </style>      
+
 
 
 
@@ -247,16 +478,15 @@ tbody tr{text-align:center}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 
-
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
 <script>
+    
 $(document).ready(function () {
-
-
+ 
  var pdf = new jsPDF('p','pt','a4');
     const invoice = document.getElementById("content");
              console.log(invoice);
@@ -280,10 +510,11 @@ $(document).ready(function () {
     pdf.setTextColor(150);
   }
   var timer = setTimeout(function() {
-            window.location='<?php  echo base_url();   ?>'+'Cpurchase/manage_packing_list'
+            window.location='<?php echo base_url();   ?>'+'Cpurchase/manage_packing_list'
         }, 10);
   }).save();
    });
+   
    </script>
  
 

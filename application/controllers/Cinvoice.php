@@ -65,7 +65,7 @@ class Cinvoice extends CI_Controller {
         'curn_info_default' =>$curn_info_default[0]['currency_name'],
         //  'curn_info_customer'=>$curn_info_customer[0]['currency_name'],
           'currency'  =>$currency_details[0]['currency'],
-        'currency'  =>$currency_details[0]['currency'],
+  
         'customer' => $CI->Invoices->profarma_invoice_customer(),
         'voucher_no' => $CI->Invoices->profarma_voucher_no()
        );
@@ -152,7 +152,9 @@ class Cinvoice extends CI_Controller {
         $CC->load->model('invoice_content');
         $CI1 = & get_instance();
         $CI1->load->model('Purchases');
-
+        $currency_details = $CI->Web_settings->retrieve_setting_editdata();
+        $curn_info_default = $CI->db->select('*')->from('currency_tbl')->where('icon',$currency_details[0]['currency'])->get()->result_array();
+      
         $all_supplier = $CI1->Purchases->select_all_supplier();
         $dataw = $CII->invoice_design->retrieve_data();
         // print_r($dataw); exit();
@@ -164,6 +166,8 @@ class Cinvoice extends CI_Controller {
         
               
         $data = array(
+            'curn_info_default' =>$curn_info_default[0]['currency_name'],
+            'currency'  =>$currency_details[0]['currency'],
             'header'=> $dataw[0]['header'],
             'logo'=> $dataw[0]['logo'],
             'color'=> $dataw[0]['color'],
@@ -204,7 +208,9 @@ class Cinvoice extends CI_Controller {
             'description_goods' => $purchase_detail[0]['description_goods'],
 
             'total' => $purchase_detail[0]['total'],
-
+            'remarks' => $purchase_detail[0]['remarks'],
+            'tax' => $purchase_detail[0]['tax_details'],
+            'gtotal' => $purchase_detail[0]['gtotal'],
             'ac_details' =>  $purchase_detail[0]['ac_details'],
 
              'product' => $product_name[0]['product_name'],
@@ -573,10 +579,7 @@ echo json_encode($data);
 
     
     // ================= manual sale insert ============================
-
     public function manual_sales_insert(){
-
-
 
 
         $CI = & get_instance();
@@ -586,7 +589,8 @@ echo json_encode($data);
         $CI->load->model('Invoices');
 
         $invoice_id = $CI->Invoices->invoice_entry();
-// print_r($invoice_id);
+print_r($invoice_id);
+die();
         if(!empty($invoice_id)){
 
         $data['status'] = true;
@@ -619,9 +623,9 @@ echo json_encode($data);
 
         }
 
+print_r($data);
 
-        $this->session->set_userdata('invoiceid',$invoice_id);
-
+        echo json_encode($data);
 
     }
 
@@ -1093,6 +1097,60 @@ $this->session->unset_userdata('invoiceid');
     }
 
 
+
+
+
+$uid=$_SESSION['user_id'];
+
+ $sql='select c.* from company_information c 
+    
+    join 
+    user_login as u 
+    on u.cid=c.company_id
+    where u.user_id='.$uid;
+    $query=$this->db->query($sql);
+
+    $company_info=$query->result_array();
+
+
+ $sql='SELECT c.* from invoice i JOIN customer_information c on c.customer_id=i.customer_id where i.invoice_id='.$uid;
+    $query=$this->db->query($sql);
+
+    $customer_info=$query->result_array();
+
+
+
+
+  $sql='SELECT p.* FROM `invoice_details` i JOIN
+
+ product_information p
+ on p.product_id=i.product_id
+
+ where 
+ i.invoice_id="'.$invoiceid.'";
+ ';
+
+    $query=$this->db->query($sql);
+
+    $product_info=$query->result_array();
+
+
+
+    $data['company_info']=$company_info;
+    $data['customer_info']=$customer_info;
+    $data['product_info']=$product_info;
+    $data['invoiceid']=$invoiceid;
+
+
+
+
+    $content = $this->load->view('pdf_attach_mail/new_sale', $data, true);
+    if($content)
+    {
+  redirect("Cinvoice/manage_invoice");
+}
+         // $this->template->full_admin_html_view($content);
+}   
 
 
 
@@ -1932,8 +1990,9 @@ $this->db->update('bootgrid_data');
  
 
 
-    public function packing_list_details_data() {
-        $CI = & get_instance();
+    public function packing_list_details_data($expense_id) {
+      
+       $CI = & get_instance();
         $CC = & get_instance();
         $CA = & get_instance();
         $CB = & get_instance();
@@ -1950,7 +2009,7 @@ $this->db->update('bootgrid_data');
         // print_r($dataw); die();
         $datacontent = $CI->invoice_content->retrieve_data();
 
-        $packing_details = $CB->Invoices->packing_details_data();
+        $packing_details = $CB->Invoices->packing_details_data($expense_id);
 
         // print_r($packing_details); exit();
 
@@ -1961,16 +2020,21 @@ $this->db->update('bootgrid_data');
             'template'=> $dataw[0]['template'],
             'company' => $company_info[0]['company_name'],
             'address' => $company_info[0]['address'],
+            'email' => $company_info[0]['email'],
+            'phone' => $company_info[0]['mobile'],
             'invoice'  =>$packing_details[0]['invoice_no'],
             'invoice_date' => $packing_details[0]['invoice_date'],
+            'expense_packing_id'=>$packing_details[0]['expense_packing_id'],
             'gross' => $packing_details[0]['gross_weight'],
             'container' => $packing_details[0]['container_no'],
+            'remarks' => $packing_details[0]['remarks'],
             'description' => $packing_details[0]['description'],
             'thickness' => $packing_details[0]['thickness'],
             'total' => $packing_details[0]['grand_total_amount'],
             'serial' => $packing_details[0]['serial_no'],
             'slab' => $packing_details[0]['slab_no'],
             'width' => $packing_details[0]['width'],
+            'packing_details'=>$packing_details,
             'height' => $packing_details[0]['height'],
             'area' => $packing_details[0]['area'],
             'product' => $packing_details[0]['product_name']
@@ -2197,7 +2261,7 @@ $this->db->update('bootgrid_data');
 
     //Retrive right now inserted data to cretae html
 
-    public function invoice_inserted_data() {
+    public function invoice_inserted_data($invoice_id) {
 
        // echo $invoice_id; die();
 
@@ -2212,11 +2276,11 @@ $this->db->update('bootgrid_data');
         $CA->load->model('invoice_design');
         $CC->load->model('invoice_content');
 
-        $invoice_detail = $CI->Invoices->invoice_pdf();
+        $invoice_detail = $CI->Invoices->invoice_pdf($invoice_id);
 
         // print_r($invoice_detail); die();
 
-        $all_invoice = $CI->Invoices->all_invoice();
+        $all_invoice = $CI->Invoices->all_invoice($invoice_id);
 
          // print_r($all_invoice); die();
 
@@ -2226,7 +2290,9 @@ $this->db->update('bootgrid_data');
 
         $customer = $this->db->select('*')->from('customer_information')->where("customer_id",$invoice_detail[0]['customer_id'])->get()->result_array();
 
-
+        $currency_details = $CI->Web_settings->retrieve_setting_editdata();
+        $curn_info_default = $CI->db->select('*')->from('currency_tbl')->where('icon',$currency_details[0]['currency'])->get()->result_array();
+      
 
          $product_name = $this->db->select('*')->from('product_information')->where("product_id",$all_invoice[0]['product_id'])->get()->result_array();
 
@@ -2235,12 +2301,14 @@ $this->db->update('bootgrid_data');
           // print_r($product_name); die();
 
         $data=array(
+            'curn_info_default' =>$curn_info_default[0]['currency_name'],
+            'currency'  =>$currency_details[0]['currency'],
             'header'=> $dataw[0]['header'],
             'logo'=> $dataw[0]['logo'],
             'color'=> $dataw[0]['color'],
             'template'=> $dataw[0]['template'],
-            'company'=> $company_info[0]['company_name'],
-            'address'=> $company_info[0]['address'],
+            'company'=> $company_info,
+          
             'customername'=> $customer[0]['customer_name'],
             'payment'=> $invoice_detail[0]['payment_type'],
             'billing'=> $invoice_detail[0]['billing_address'],
@@ -2254,13 +2322,20 @@ $this->db->update('bootgrid_data');
             'blno'=> $invoice_detail[0]['bl_no'],
             'port'=> $invoice_detail[0]['port_of_discharge'],
             'paymentdue'=> $invoice_detail[0]['payment_due_date'],
-            'product'=> $product_name[0]['product_name'],
-            'stock'=> $product_name[0]['p_quantity'],
+           
+            'all_products'=>$product_name,
+           'all_invoice'=>$all_invoice,
             'quantity'=> $all_invoice[0]['quantity'],
             'rate'=> $all_invoice[0]['rate'],
+            'ac_details'=> $all_invoice[0]['ac_details'],
+            'remark'=> $all_invoice[0]['remark'],
             'total'=> $all_invoice[0]['total_price'],
+            'tax_details'=> $all_invoice[0]['total_tax'],
+            'etd'=> $all_invoice[0]['etd'],
+            'eta'=> $all_invoice[0]['eta'],
+            'gtotal'       => $all_invoice[0]['gtotal']
         );
-     
+   
     
 
     $content = $this->load->view('invoice/new_invoice_pdf_html', $data, true);
@@ -3226,6 +3301,9 @@ $this->db->update('bootgrid_data');
                     'customer_id'=>$this->input->post('customer_id'),
                     'pre_carriage'=>$this->input->post('pre_carriage'),
                     'receipt'=>$this->input->post('receipt'),
+                    'remarks'=>$this->input->post('remarks'),
+                    'tax_details'=>$this->input->post('tax_details'),
+               'gtotal'=>$this->input->post('gtotal'),
                     'country_goods'=>$this->input->post('country_goods'),
                     'country_destination'=>$this->input->post('country_destination'),
                     'loading'=>$this->input->post('loading'),
@@ -3403,400 +3481,9 @@ $this->db->update('bootgrid_data');
          echo json_encode($data);
 
         }
-////////////////////////////////////////////////////////////////////////////////
-///////////////////////////mail function///////////////////////////////////////////////////
-        //////////////////////////////////////////////////////////////////
 
 
-//         public function newsale_with_attachment_stand($invoiceid)
-// {
 
-
-
-// $uid=$_SESSION['user_id'];
-
-//  $sql='select c.* from company_information c 
-    
-//     join 
-//     user_login as u 
-//     on u.cid=c.company_id
-//     where u.user_id='.$uid;
-//     $query=$this->db->query($sql);
-
-//     $company_info=$query->result_array();
-
-
-//  $sql='SELECT c.* from invoice i JOIN customer_information c on c.customer_id=i.customer_id where i.invoice_id='.$uid;
-//     $query=$this->db->query($sql);
-
-//     $customer_info=$query->result_array();
-
-
-
-
-
-//   $sql='SELECT p.* FROM `invoice_details` i JOIN
-
-//  product_information p
-//  on p.product_id=i.product_id
-
-//  where 
-//  i.invoice_id="'.$invoiceid.'";
-//  ';
-
-//     $query=$this->db->query($sql);
-
-//     $product_info=$query->result_array();
-
-
-
-//     $data['company_info']=$company_info;
-//     $data['customer_info']=$customer_info;
-//     $data['product_info']=$product_info;
-//     $data['invoiceid']=$invoiceid;
-
-
-
-
-//     $content = $this->load->view('pdf_attach_mail/new_sale', $data, true);
-//     if($content)
-//     {
-//   redirect("Cinvoice/manage_invoice");
-// }
-//          // $this->template->full_admin_html_view($content);
-// }   
-
-public function newsale_with_attachment_stand($invoiceid)
-  {
-
-    $sql='select c.* from user_login  u
-    join 
-    company_information c
-    on c.company_id=u.cid
-     where u.user_id='.$_SESSION['user_id'];
-    $query=$this->db->query($sql);
-    $data['company_info']=$query->result_array();
-
-        $sql='SELECT b.* from invoice a JOIN customer_information b on b.customer_id=a.customer_id
- WHERE a.invoice_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['customer_info']=$query->result_array();
-
-      $sql='select b.* from invoice_details a join product_information b on a.product_id=b.product_id
- where a.invoice_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['product_info']=$query->result_array();
-
- $sql='select * from invoice_details where invoice_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['invoice_details']=$query->result_array();
-$sql='select * from invoice where invoice_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['invoice']=$query->result_array();
-
-    $content = $this->load->view('pdf_attach_mail/new_sale', $data, true);
-  
-   
-  }
-
-  public function newsale_with_attachment_cus($invoiceid)
-  {
-   
-    $sql='select c.* from user_login  u
-    join 
-    company_information c
-    on c.company_id=u.cid
-     where u.user_id='.$_SESSION['user_id'];
-    $query=$this->db->query($sql);
-    $data['company_info']=$query->result_array();
-
-        $sql='SELECT b.* from invoice a JOIN customer_information b on b.customer_id=a.customer_id
- WHERE a.invoice_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['customer_info']=$query->result_array();
-
-      $sql='select b.* from invoice_details a join product_information b on a.product_id=b.product_id
- where a.invoice_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['product_info']=$query->result_array();
-
- $sql='select * from invoice_details where invoice_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['invoice_details']=$query->result_array();
-$sql='select * from invoice where invoice_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['invoice']=$query->result_array();
-    $sql='select * from invoice_email where uid='.$_SESSION['user_id'];;
-    $query=$this->db->query($sql);
-
-    $data['mail']= $query->result_array();
-
-    $content = $this->load->view('pdf_attach_mail/new_sale', $data, true);
-  
-   
-
-  }
-
-
-  /////////////////////proforma//////////////////////////////////
-
-  public function proforma_with_attachment_stand($invoiceid)
-  {
-  
-  
-    $sql='select c.* from user_login  u
-    join 
-    company_information c
-    on c.company_id=u.cid
-     where u.user_id='.$_SESSION['user_id'];
-    $query=$this->db->query($sql);
-    $data['company_info']=$query->result_array();
-
-        $sql='SELECT b.* from profarma_invoice a JOIN customer_information b on b.customer_id=a.customer_id
- WHERE a.purchase_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['customer_info']=$query->result_array();
-
-      $sql='select a.* from profarma_invoice_details a join product_information b on a.product_id=b.product_id
- where a.purchase_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['product_info']=$query->result_array();
-
- $sql='select * from profarma_invoice_details where purchase_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['invoice_details']=$query->result_array();
-$sql='select * from profarma_invoice where purchase_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['invoice']=$query->result_array();
-
-$content = $this->load->view('pdf_attach_mail/profarma', $data, true);
-  }
-
-
-
-  public function proforma_with_attachment_cus($invoiceid)
-  {
-  
-    $sql='select c.* from user_login  u
-    join 
-    company_information c
-    on c.company_id=u.cid
-     where u.user_id='.$_SESSION['user_id'];
-    $query=$this->db->query($sql);
-    $data['company_info']=$query->result_array();
-
-        $sql='SELECT b.* from profarma_invoice a JOIN customer_information b on b.customer_id=a.customer_id
- WHERE a.purchase_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['customer_info']=$query->result_array();
-
-      $sql='select a.* from profarma_invoice_details a join product_information b on a.product_id=b.product_id
- where a.purchase_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['product_info']=$query->result_array();
-
- $sql='select * from profarma_invoice_details where purchase_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['invoice_details']=$query->result_array();
-$sql='select * from profarma_invoice where purchase_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['invoice']=$query->result_array();
-    $sql='select * from invoice_email where uid='.$_SESSION['user_id'];;
-    $query=$this->db->query($sql);
-
-    $data['mail']= $query->result_array();
-$content = $this->load->view('pdf_attach_mail/profarma', $data, true);
-  }
-
-  /////////////////////packing//////////////////////////////////
-
-  public function packing_with_attachment_stand($invoiceid)
-  {
-    
-$sql='select c.* from user_login  u
-    join 
-    company_information c
-    on c.company_id=u.cid
-     where u.user_id='.$_SESSION['user_id'];
-    $query=$this->db->query($sql);
-    $data['company_info']=$query->result_array();
-
-    
-
-      $sql='select b.* from sale_packing_list_detail a join product_information b on a.product_id=b.product_id
- where a.expense_packing_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['product_info']=$query->result_array();
-
- $sql='select * from sale_packing_list_detail where expense_packing_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['invoice_details']=$query->result_array();
-$sql='select * from sale_packing_list where expense_packing_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['invoice']=$query->result_array();
-
-    $content = $this->load->view('pdf_attach_mail/packing', $data, true);
-
-
-  } 
-
-  public function packing_with_attachment_cus($invoiceid)
-  {
-  $sql='select c.* from user_login  u
-    join 
-    company_information c
-    on c.company_id=u.cid
-     where u.user_id='.$_SESSION['user_id'];
-    $query=$this->db->query($sql);
-    $data['company_info']=$query->result_array();
-
-    
-
-      $sql='select a.* from sale_packing_list_detail a join product_information b on a.product_id=b.product_id
- where a.expense_packing_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['product_info']=$query->result_array();
-
- $sql='select * from sale_packing_list_detail where expense_packing_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['invoice_details']=$query->result_array();
-$sql='select * from sale_packing_list where expense_packing_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['invoice']=$query->result_array();
-    $sql='select * from invoice_email where uid='.$_SESSION['user_id'];;
-    $query=$this->db->query($sql);
-
-    $data['mail']= $query->result_array();
-   
-$content = $this->load->view('pdf_attach_mail/packing', $data, true);
-  }
-  /////////////////////Ocean//////////////////////////////////
-
-  public function ocean_with_attachment_stand($invoiceid)
-  {
-   
-$sql='select c.* from user_login  u
-    join 
-    company_information c
-    on c.company_id=u.cid
-     where u.user_id='.$_SESSION['user_id'];
-    $query=$this->db->query($sql);
-    $data['company_info']=$query->result_array();
-
-         $sql='SELECT b.* from ocean_export_tracking a JOIN supplier_information b on b.supplier_id=a.supplier_id
- WHERE a.ocean_export_tracking_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['supplier_info']=$query->result_array();
-
-  
-
- 
-$sql='select * from ocean_export_tracking where ocean_export_tracking_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['ocean']=$query->result_array();
-$content = $this->load->view('pdf_attach_mail/ocean', $data, true);
-   
-
-  }
-
-  public function ocean_with_attachment_cus($invoiceid)
-  {
-   $sql='select c.* from user_login  u
-    join 
-    company_information c
-    on c.company_id=u.cid
-     where u.user_id='.$_SESSION['user_id'];
-    $query=$this->db->query($sql);
-    $data['company_info']=$query->result_array();
-
-        echo $sql='SELECT b.* from ocean_export_tracking a JOIN supplier_information b on b.supplier_id=a.supplier_id
- WHERE a.ocean_export_tracking_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['supplier_info']=$query->result_array();
-
-  
-
- 
-$sql='select * from ocean_export_tracking where ocean_export_tracking_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['cocean']=$query->result_array();
-
-   $sql='select * from invoice_email where uid='.$_SESSION['user_id'];;
-    $query=$this->db->query($sql);
-
-    $data['mail']= $query->result_array();
-
-$content = $this->load->view('pdf_attach_mail/ocean', $data, true);
-  }
-  /////////////////////Trucking//////////////////////////////////
-
-  public function trucking_with_attachment_stand($invoiceid)
-  {
-  
-$sql='select c.* from user_login  u
-    join 
-    company_information c
-    on c.company_id=u.cid
-     where u.user_id='.$_SESSION['user_id'];
-    $query=$this->db->query($sql);
-    $data['company_info']=$query->result_array();
-
-     $sql=' SELECT b.* FROM `sale_trucking` a join customer_information b on b.customer_id=a.bill_to where trucking_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['customer_info']=$query->result_array();  
-
- 
-
-  $sql='select * from sale_trucking_details where sale_trucking_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['sale_trucking_details']=$query->result_array();
-$sql='select * from sale_trucking where trucking_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['sale_trucking']=$query->result_array();
-    $sql='select * from sale_trucking_details where sale_trucking_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['sale_trucking_details']=$query->result_array();
-$sql='select * from sale_trucking where trucking_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['sale_trucking']=$query->result_array();
-
-$content = $this->load->view('pdf_attach_mail/trucking', $data, true);
-  }
-
-  public function trucking_with_attachment_cus($invoiceid)
-  {
- $sql='select c.* from user_login  u
-    join 
-    company_information c
-    on c.company_id=u.cid
-     where u.user_id='.$_SESSION['user_id'];
-    $query=$this->db->query($sql);
-    $data['company_info']=$query->result_array();
-
-       
-   $sql=' SELECT b.* FROM `sale_trucking` a join customer_information b on b.customer_id=a.bill_to where trucking_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['customer_info']=$query->result_array(); 
- 
-
-  $sql='select * from sale_trucking_details where sale_trucking_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['sale_trucking_details']=$query->result_array();
-$sql='select * from sale_trucking where trucking_id='.$invoiceid;
-    $query=$this->db->query($sql);
-    $data['sale_trucking']=$query->result_array();
-
-$sql='select * from invoice_email where uid='.$_SESSION['user_id'];;
-    $query=$this->db->query($sql);
-
-    $data['mail']= $query->result_array();
-
-
-// print_r($data);
-// exit;
-    
-$content = $this->load->view('pdf_attach_mail/trucking', $data, true);
-  }
 }
 
 

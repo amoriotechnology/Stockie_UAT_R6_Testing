@@ -356,6 +356,8 @@ class Linvoice {
             'container_no'    => $purchase_detail[0]['container_no'],
             'company'    => $company_info[0]['company_name'],
             'address'    => $company_info[0]['address'],
+            'email'    => $company_info[0]['email'],
+            'phone'    => $company_info[0]['mobile'],
             'seal_no'       => $purchase_detail[0]['seal_no'],
             'etd' => $purchase_detail[0]['etd'],
             'eta' => $purchase_detail[0]['eta'],
@@ -381,7 +383,6 @@ class Linvoice {
        
 
         );
-
 
 
         $chapterList = $CI->parser->parse('invoice/ocean_export_invoice_html', $data, true);
@@ -433,6 +434,8 @@ class Linvoice {
 
 
         $currency_details = $CI->Web_settings->retrieve_setting_editdata();
+        $curn_info_default = $CI->db->select('*')->from('currency_tbl')->where('icon',$currency_details[0]['currency'])->get()->result_array();
+      
         $CII = & get_instance();
         $CC = & get_instance();
         $w = & get_instance();
@@ -451,6 +454,8 @@ class Linvoice {
        $dataw = $CII->invoice_design->retrieve_data();
        $datacontent = $CI->invoice_content->retrieve_data();
      $data = array(
+        'curn_info_default' =>$curn_info_default[0]['currency_name'],
+        'currency'  =>$currency_details[0]['currency'],
             'header'=> $dataw[0]['header'],
             'logo'=> $dataw[0]['logo'],
             'color'=> $dataw[0]['color'],
@@ -467,7 +472,8 @@ class Linvoice {
             'title'            => display('purchase_details'),
 
             'trucking_id'      => $purchase_detail[0]['trucking_id'],
-            'grand_total' => $purchase_detail[0]['grand_total_amount'],
+          
+           
             'invoice_no' =>  $purchase_detail[0]['invoice_no'],
 
             'invoice_date' => $purchase_detail[0]['invoice_date'],
@@ -492,10 +498,11 @@ class Linvoice {
 
             'pro_no_reference' => $purchase_detail[0]['pro_no_reference'],
 
-            'total' =>  $purchase_detail[0]['total'],
+            'total_amt' =>  $purchase_detail[0]['total_amt'],
+            'tax' =>  $purchase_detail[0]['tax'],
 
             'grandtotal' =>  $purchase_detail[0]['grand_total_amount'],
-
+            'remarks' =>  $purchase_detail[0]['remarks'],
             'purchase_all_data'=> $purchase_detail,
 
            // 'company_info'     => $company_info,
@@ -505,7 +512,7 @@ class Linvoice {
         );
 
         // echo "<pre>";
-    //print_r($data);die();
+  
 
 
 
@@ -994,7 +1001,7 @@ class Linvoice {
             'bank_list'     => $bank_list,
             'customer_list' => $get_customer
         );
-    
+  
         $invoiceForm = $CI->parser->parse('invoice/trucking', $data, true);
         return $invoiceForm;
     }
@@ -1008,13 +1015,14 @@ class Linvoice {
         $customer_details = $CI->Invoices->pos_customer_setup();
         $get_customer= $CI->Accounts_model->get_customer();
        // print_r($customer_details);
-        $currency_details = $CI->Web_settings->retrieve_setting_editdata();
+     
         $taxfield = $CI->db->select('tax_name,default_value')
                 ->from('tax_settings')
                 ->get()
                 ->result_array();
         $bank_list          = $CI->Web_settings->bank_list();
         $data = array(
+           
             'title'         => 'Add New Trucking Invoice',
             'discount_type' => $currency_details[0]['discount_type'],
                  'all_supplier'  => $all_supplier,

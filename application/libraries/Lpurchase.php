@@ -99,9 +99,12 @@ class Lpurchase {
         $category_list = $CI->Categories->category_list_product();
 
         $unit_list     = $CI->Units->unit_list();
-
+        $currency_details = $CI->Web_settings->retrieve_setting_editdata();
+        $curn_info_default = $CI->db->select('*')->from('currency_tbl')->where('icon',$currency_details[0]['currency'])->get()->result_array();
+      
 
         $data = array(
+            'curn_info_default' =>$curn_info_default[0]['currency_name'],
             'currency' => $currency_details[0]['currency'],
             'title'         => display('add_purchase'),
 
@@ -312,6 +315,8 @@ class Lpurchase {
         $products = $CI->Products->get_products();
 
         $currency_details = $CI->Web_settings->retrieve_setting_editdata();
+        $curn_info_default = $CI->db->select('*')->from('currency_tbl')->where('icon',$currency_details[0]['currency'])->get()->result_array();
+      
 
         $bank_list        = $CI->Web_settings->bank_list();
 
@@ -325,6 +330,8 @@ class Lpurchase {
     
 
         $data = array(
+            'curn_info_default' =>$curn_info_default[0]['currency_name'],
+          
             'currency' => $currency_details[0]['currency'],
             'title'         => 'Add Purchase Order',
 
@@ -505,14 +512,18 @@ class Lpurchase {
 
         $CI->load->library('occational');
 
-        $currency_details = $CI->Web_settings->retrieve_setting_editdata();
+    
 
         $company_info = $CI->Purchases->retrieve_company();
 
         $currency_details = $CI->Web_settings->retrieve_setting_editdata();
+        $curn_info_default = $CI->db->select('*')->from('currency_tbl')->where('icon',$currency_details[0]['currency'])->get()->result_array();
+      
 
         $data = array(
-
+            'curn_info_default' =>$curn_info_default[0]['currency_name'],
+            
+              'currency'  =>$currency_details[0]['currency'],
             'title'          => display('manage_purchase'),
 
             'company_info'   => $company_info,
@@ -1254,7 +1265,7 @@ public function purchase_details_data($purchase_id) {
   
 
     $get_invoice_design = $CI->Purchases->get_invoice_design();
-            
+    $CI->load->model('invoice_design');
 
 
 
@@ -1288,10 +1299,18 @@ public function purchase_details_data($purchase_id) {
 
     $company_info = $CI->Purchases->retrieve_company();
 
-
+    $curn_info_default = $CI->db->select('*')->from('currency_tbl')->where('icon',$currency_details[0]['currency'])->get()->result_array();
+      
+    $dataw = $CI->invoice_design->retrieve_data();
+     
 
     $data = array(
-
+        'header'=> $dataw[0]['header'],
+        'logo'=> $dataw[0]['logo'],
+        'color'=> $dataw[0]['color'],
+        'template'=> $dataw[0]['template'],
+       
+        'curn_info_default' =>$curn_info_default[0]['currency_name'],
         'title'            => display('purchase_details'),
 
         'purchase_id'      => $purchase_detail[0]['purchase_id'],
@@ -1411,8 +1430,14 @@ public function purchase_details_data($purchase_id) {
         $company_info = $CI->Purchases->retrieve_company();
 
         $data = array(
-'invoice_setting'  => $dataw,
-'company_info' =>  $company_info,
+            'header'=> $dataw[0]['header'],
+            'logo'=> $dataw[0]['logo'],
+            'color'=> $dataw[0]['color'],
+            'template'=> $dataw[0]['template'],
+            'company'    => $company_info[0]['company_name'],
+            'address'    => $company_info[0]['address'],
+            'email'    => $company_info[0]['email'],
+            'phone'    => $company_info[0]['mobile'],
         'title'            => display('purchase_details'),
 
         'ocean_import_tracking_id'      => $purchase_detail[0]['ocean_import_tracking_id'],
@@ -1441,6 +1466,7 @@ public function purchase_details_data($purchase_id) {
             'attachment' => $purchase_detail[0]['attachment'],
             'status' => $purchase_detail[0]['status'],
             'create_by' => $purchase_detail[0]['create_by'],
+            'remarks' => $purchase_detail[0]['remarks']
 
             // 'sub_total_amount' => number_format($purchase_detail[0]['grand_total_amount'], 2, '.', ','),
 

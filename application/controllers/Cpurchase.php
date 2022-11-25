@@ -557,10 +557,17 @@ $CI = & get_instance();
         $data['order'] =$this->Purchases->get_purchases_order($invoice_no);
         $data['supplier'] =$this->Purchases->get_supplier($invoice_no);
         $data['company_info'] =$this->Purchases->company_info();
+      //  $order = json_decode($data['order'], true);
+$data=array(
+    'invoice_setting'  =>$this->invoice_design->retrieve_data(),
+    'invoice' =>$this->Purchases->get_purchases_invoice($invoice_no),
+    'order' => $this->Purchases->get_purchases_order($invoice_no),
+    'supplier'=> $this->Purchases->get_supplier($invoice_no),
+    'company_info' =>$this->Purchases->company_info()
+);
 
-        // print_r($data['order']); die();
 
-        $data['invoice_setting'] =$this->invoice_design->retrieve_data();
+        //$data['invoice_setting'] =$this->invoice_design->retrieve_data();
        
       
         $content = $this->load->view('purchase/purchase_order_invoice', $data, true);
@@ -597,15 +604,16 @@ $CI = & get_instance();
         $CC->load->model('invoice_content');
         $dataw = $CA->invoice_design->retrieve_data();
         $datacontent = $CI->invoice_content->retrieve_data();
-
         $packing_details = $CB->Purchases->packing_details_data($expense_packing_id);
         $company_info=$this->Purchases->company_info();
         $data=array(
+            'packing_details' => $packing_details,
             'company_info' => $company_info,
            'invoice_setting' => $dataw,
             'invoice'  =>$packing_details[0]['invoice_no'],
             'invoice_date' => $packing_details[0]['invoice_date'],
-            'gross' => $packing_details[0]['gross_weight'],
+            'gross' => $packing_details[0]['gross_weight'],        
+                'remarks' => $packing_details[0]['remarks'],
             'container' => $packing_details[0]['container_no'],
             'description' => $packing_details[0]['description'],
             'thickness' => $packing_details[0]['thickness'],
@@ -615,10 +623,10 @@ $CI = & get_instance();
             'width' => $packing_details[0]['width'],
             'height' => $packing_details[0]['height'],
             'area' => $packing_details[0]['area'],
-            'product' => $packing_details[0]['product_name']
+            'product' => $packing_details[0]['product_name'],
+            'packing_details' => $packing_details
         );
-     
-        // print_r($data); exit();
+            //  print_r($packing_details); exit();
        // echo $content = $CI->linvoice->invoice_add_form();
         $content = $this->load->view('purchase/packing_invoice_html', $data, true);
         //$content='';

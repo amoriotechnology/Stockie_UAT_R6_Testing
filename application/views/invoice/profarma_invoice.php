@@ -367,7 +367,7 @@ textarea:focus, input:focus{
   </tr>
                                     <tr> <td style="text-align:right;"  colspan="4"><b><?php echo "Grand Total" ?>:</b><br/><b>(Preferred Currency)</b></td>
                                     <td>
-                                            <span class="form-control" style="background-color: #eee;" >
+                                    <span class="form-control" style="background-color: #eee;" id="custospan"><input style="width:7%;font-weight:bold;" type="text" id="cus"  name="cus"  readonly="readonly" />
                                             <input type="text" id="customer_gtotal"  name="customer_gtotal" value="0.00" readonly="readonly" />
                                             </span></td>
                                       
@@ -585,7 +585,7 @@ var answer=0;
  var value=amt*parseInt(custo_amt);
  var custo_final = isNaN(parseInt(value)) ? 0 : parseInt(value)
 $('#customer_gtotal').val(custo_final);  
-
+calculate();
 });
 });
 $( document ).ready(function() {
@@ -663,6 +663,7 @@ function(data) {
  var Rate =parseFloat(x).toFixed(3);
   console.log(Rate);
   $('.hiden').show();
+  Rate = isNaN(Rate) ? 0 : Rate;
   $("#custocurrency_rate").val(Rate);
 });
       

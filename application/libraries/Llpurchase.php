@@ -1161,7 +1161,7 @@ class Llpurchase {
             'booking_no' => $purchase_detail[0]['booking_no'],
 
             'container_no'    => $purchase_detail[0]['container_no'],
-'company_info' => $company_info,
+
             'seal_no'       => $purchase_detail[0]['seal_no'],
             'etd' => $purchase_detail[0]['etd'],
             'eta' => $purchase_detail[0]['eta'],
@@ -1201,54 +1201,26 @@ class Llpurchase {
 
        //Trucking details data
 
-    public function trucking_details_data($purchase_id) {
-
-
-
+       public function trucking_details_data($purchase_id) {
         $CI = & get_instance();
-
         $CI->load->model('Ppurchases');
-
         $CI->load->model('Web_settings');
-
         $CI->load->library('occational');
-
-
-
         $purchase_detail = $CI->Ppurchases->trucking_details_data($purchase_id);
-
-         // print_r($purchase_detail); die();
-
-
-
+       //  print_r($purchase_detail); die();
         if (!empty($purchase_detail)) {
-
             $i = 0;
-
             foreach ($purchase_detail as $k => $v) {
-
                 $i++;
-
                 $purchase_detail[$k]['sl'] = $i;
-
             }
-
-
-
             foreach ($purchase_detail as $k => $v) {
-
                 $purchase_detail[$k]['convert_date'] = $CI->occational->dateConvert($purchase_detail[$k]['invoice_date']);
-
             }
-
         }
-
-
-
         $currency_details = $CI->Web_settings->retrieve_setting_editdata();
         $CII = & get_instance();
         $CC = & get_instance();
-      
         $company_info = $CI->Ppurchases->retrieve_company();
         // print_r($company_info); die();
         $CII->load->model('invoice_design');
@@ -1277,50 +1249,28 @@ class Llpurchase {
             'trucking_id'      => $purchase_detail[0]['trucking_id'],
             'grand_total' => $purchase_detail[0]['grand_total_amount'],
             'invoice_no' =>  $purchase_detail[0]['invoice_no'],
-
             'supplier' => $all_supplier[0]['supplier_name'],
-
             'invoice_date' => $purchase_detail[0]['invoice_date'],
-
             'truckingdate' => $purchase_detail[0]['trucking_date'],
-
             'bill_to' => $purchase_detail[0]['bill_to'],
-
             'shipment_company' => $purchase_detail[0]['shipment_company'],
-
             'container_pickup_date' => $purchase_detail[0]['container_pickup_date'],
-
             'delivery_date' => $purchase_detail[0]['delivery_date'],
-            
             'customer_name' => $purchase_detail[0]['customer_name'],
-
+            'container_no'  =>$purchase_detail[0]['container_no'],
             'qty' => $purchase_detail[0]['qty'],
-
             'description' => $purchase_detail[0]['description'],
-
             'rate' => $purchase_detail[0]['rate'],
-
             'pro_no_reference' => $purchase_detail[0]['pro_no_reference'],
-
             'total' =>  $purchase_detail[0]['total'],
-
             'purchase_all_data'=> $purchase_detail,
-
             'company_info'     => $company_info,
-
             'Web_settings'     => $currency_details,
-
         );
-
         // echo "<pre>";
         // print_r($data);die();
-
-
-
         $chapterList = $CI->parser->parse('purchase/trucking_invoice_html', $data, true);
-
         return $chapterList;
-
     }
 
 
