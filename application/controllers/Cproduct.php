@@ -66,8 +66,7 @@ class Cproduct extends CI_Controller {
                 'products_model' => $product_model
             );
 
-            print_r($supp_prd);
-            exit;
+          
             $this->db->insert('supplier_product', $supp_prd);
        
 
@@ -508,6 +507,15 @@ foreach($html->find('table.table-dark') as $elements) {
         ->get()
         ->result_array();
        echo json_encode($taxfield);
+    }
+
+    public function product_view($id)
+    {
+         $CI =& get_instance();
+        $this->auth->check_admin_auth();
+        $CI->load->library('lproduct');
+     $content =$this->lproduct->product_view($id);
+        $this->template->full_admin_html_view($content);
     }
     public function get_all_product1(){
         $CI = & get_instance();

@@ -139,13 +139,13 @@ $today = date('Y-m-d');
       <tr>
       <th class="ID">ID</th>
         <th class="Invoice No">Invoice No</th>
-        <th class="Expense Packing ID">Expense Packing ID</th>
+        <th class="Expense Packing ID">Sales Packing ID</th>
         <th class="Gross Weight">Gross Weight</th>
         <th class="Container No.">Container No.</th>
          <th class="Invoice Date">Invoice Date</th>
 		 <th class="Thickness">Thickness</th>
       <div class="myButtonClass"> 
-         <th class="text-center Action" data-column-id="action" data-formatter="commands" data-sortable="false">Action</th>
+         <th class="text-center Action" data-column-id="action" data-formatter="commands" data-sortable="false"  style="width: 223.011px; height: 44.0114px;">Action</th>
         </div>
       </tr>
     </thead>

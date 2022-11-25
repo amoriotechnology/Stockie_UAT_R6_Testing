@@ -1,5 +1,4 @@
 
-
 <!-- Manage Invoice Start -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
@@ -180,16 +179,16 @@ $today = date('Y-m-d');
 
                     <div id="customers">
   <table class="table table-bordered" cellspacing="0" width="100%" id="ProfarmaInvList">
-    <thead>
+  <thead>
       <tr>
-      <th class="ID" data-resizable-column-id="1" style="width:50px;">ID</th>
-        <th class="Invoice No" data-resizable-column-id="2">Invoice No</th>
-        <th class="Sale By" data-resizable-column-id="3">Sale By</th>
-        <th class="Customer Name"  data-resizable-column-id="4">Customer Name</th>
-        <th class="Date" data-resizable-column-id="5">Date</th>
-        <th class="Total Amount" data-resizable-column-id="6">Total Amount</th>
+      <th class="ID" data-resizable-column-id="1"    style="width: 80px; height: 40.0114px;" >ID</th>
+        <th class="Invoice No" data-resizable-column-id="2"  style="height: 45.0114px; width: 234.011px" >Invoice No</th>
+        <th class="Sale By" data-resizable-column-id="3"  style="height: 42.0114px;"   >Sale By</th>
+        <th class="Customer Name"  data-resizable-column-id="4"  style="width: 248.011px;"        >Customer Name</th>
+        <th class="Date" data-resizable-column-id="5"    style="width: 198.011px;"       >Date</th>
+        <th class="Total Amount" data-resizable-column-id="6" style="width: 190.011px; height: 44.0114px;">Total Amount</th>
       <div class="myButtonClass Action"> 
-         <th class="Action text-center" data-column-id="action" data-formatter="commands" data-sortable="false">Action</th>
+         <th class="Action text-center" data-column-id="action" data-formatter="commands" data-sortable="false"   style="width: 255.011px; height: 39.0114px;"  >Action</th>
         </div>
       </tr>
     </thead>
@@ -211,7 +210,31 @@ $today = date('Y-m-d');
   <div class="form-group">
   <td>
   <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/invoice_inserted_data/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-download" aria-hidden="true"></i></a>
-  <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/sendmail_with_attachments/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+  <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;"  data-toggle="modal" data-target="#emailmodal"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+
+  <!-- Modal -->
+<div id="emailmodal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+<form action="insert_role">    <!-- Modal content-->
+    <div class="modal-content" >
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Select Email Template </h4>
+      </div>
+      <div class="modal-body">
+     <input type="radio" id="html" name="temp" value="standard">
+<label for="html">Standard</label><br>
+<input type="radio" id="css" name="temp" value="custom">
+<label for="css">custom</label><br>
+
+      <div class="modal-footer">
+       <input type="submit" name="" value="Next" class="btn btn-primary">
+       </form>
+      </div>
+    </div>
+
+  </div>
+</div>
     <a class="btn  btn-sm" style="background-color: #3ca5de; color: #fff;" href="<?php echo base_url()?>Cinvoice/invoice_update_form/<?php echo  $arr['invoice_id'];  ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
   </td>
   </div>

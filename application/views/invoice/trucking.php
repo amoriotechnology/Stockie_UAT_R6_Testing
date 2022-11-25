@@ -238,11 +238,16 @@ textarea:focus, input:focus{
 <br>
                         <div class="table-responsive">
                         <table class="table table-bordered table-hover">
-                            <tr>
-                                <td style="width:80%;border:none;text-align:right;font-weight:bold;">Tax : 
+                        <tr>
+                      <td class="hiden" style="width:30%;border:none;">
+                         </td>
+                
+                                <td class="hiden" style="width:200px;padding:5px;background-color:#b4bae4;border:none;font-weight:bold;color:black;">1 <?php  echo $curn_info_default;  ?>
+                                 = <input style="width:70px;text-align:center;padding:5px;" type="text" id="custocurrency_rate"/>&nbsp;<label for="custocurrency"></label></td>
+                    <td style="border:none;text-align:right;font-weight:bold;">Tax : 
                                  </td>
-                                <td>
-                            <select name="tx" id="product_tax" class="form-control" onselect="gtotal();">
+                                <td style="width:40%">
+                            <select name="tx" id="product_tax" class="form-control" >
                                 <option value="Select the Tax" selected>Select the Tax</option>
                               <?php foreach($tax as $tx){?>
   
@@ -275,14 +280,14 @@ textarea:focus, input:focus{
                                         </td>
 
                                        <td class="wt">
-                                            <input type="text" name="product_quantity[]" id="cartoon_1" required="" min="0" class="form-control text-right store_cal_1" onkeyup="calculate_store(1);" onchange="calculate_store(1);" placeholder="0.00" value=""  tabindex="6"/>
+                                            <input type="text" name="product_quantity[]" id="cartoon_1" required="" min="0" class="form-control text-right store_cal_1" onkeyup="total_amt(1);"  placeholder="0.00" value=""  tabindex="6"/>
                                         </td>
                                         
                                         <td class="text-right">
                                             <input type="text" name="description[]" id="" required="" min="0" class="form-control text-right" value=""  tabindex="6"/>
                                         </td>
-                                        <td><span class='form-control' style='background-color: #eee;'><?php echo $currency;  ?>
-                                            <input type="text" name="product_rate[]" required="" onkeyup="calculate_store(1);" onchange="calculate_store(1);" id="product_rate_1" class="product_rate_1" placeholder="0.00" value="" min="0" tabindex="7"/>
+                                        <td><span style='padding:5px;background-color: #eee;'><?php echo $currency;  ?>
+                                            <input type="text" name="product_rate[]" required="" onkeyup="total_amt(1);"  id="product_rate_1" class="product_rate_1" placeholder="0.00" value="" min="0" tabindex="7"/>
                                   </span>  </td>
 
                                         <td class="text-right">
@@ -324,14 +329,14 @@ textarea:focus, input:focus{
                                  </span></td>
                                  <td> <button type="button" id="add_invoice_item" class="btn btn-info" name="add-invoice-item"  onClick="addTruckingOrderField('addPurchaseItem')"  tabindex="9"/><i class="fa fa-plus"></i></button></td>
   </tr>
-                                    <tr> <td style="text-align:right;"  colspan="5"><b><?php echo "Grand Total" ?>:</b><br/><b>(Preferred Currency)</b></td>
+  <tr> <td style="text-align:right;"  colspan="5"><b><?php echo "Grand Total" ?>:</b><br/><b>(Preferred Currency)</b></td>
                                     <td>
-                                            <span class="form-control" style="background-color: #eee;" >
-                                            <input type="text" id="customer_gtotal"  name="customer_gtotal" value="0.00" readonly="readonly" />
+                                            <span class="form-control" style="background-color: #eee;" id="custospan"><input style="width:9%;font-weight:bold;" type="text" id="cus"  name="cus"  readonly="readonly" />
+                                            <input type="text" id="customer_gtotal"  name="customer_gtotal"  readonly="readonly" />
                                             </span></td>
                                       
 
-                                            <input type="text" id="final_gtotal"  name="final_gtotal" />
+                                            <input type="hidden" id="final_gtotal"  name="final_gtotal" />
 
                                             <input type="hidden" name="baseUrl" class="baseUrl" value="<?php echo base_url();?>"/></td>
                                     </tr>   
@@ -561,18 +566,88 @@ textarea:focus, input:focus{
                         </div>
 
                         <?php echo form_close() ?>
-
+                        <input type="hidden" id="hdn"/>
+<input type="text" id="gtotal_dup"/>
+<input type="hidden" name="<?php echo $this->security->get_csrf_token_name();?>" value="<?php echo $this->security->get_csrf_hash();?>">
+            
                     </div><!-- /.modal-content -->
 
                 </div><!-- /.modal-dialog -->
 
             </div><!-- /.modal -->
+			            <div class="modal fade" id="myModal1" role="dialog" >
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="    margin-top: 190px;">
+        <div class="modal-header" style="">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Trucking invoice</h4>
+        </div>
+        <div class="modal-body">
+          
+          <h4>Trucking invoice  Created Succefully</h4>
+     
+        </div>
+        <div class="modal-footer">
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
 <script>
         var csrfName = '<?php echo $this->security->get_csrf_token_name();?>';
 var csrfHash = '<?php echo $this->security->get_csrf_hash();?>';
-    var count = 2;
+function addTruckingOrderField(t) {
+    //debugger;
+    var row = $("#truckingTable tbody tr").length;
+    var count = row + 1;
+      var  tab1 = 0;
+      var  tab2 = 0;
+      var  tab3 = 0;
+      var  tab4 = 0;
+      var  tab5 = 0;
+      var  tab6 = 0;
+      var  tab7 = 0;
+      var  tab8 = 0;
+      var  tab9 = 0;
+      var  tab10 = 0;
+      var  tab11 = 0;
+      var  tab12 = 0;
     var limits = 500;
-     
+     var taxnumber = $("#txfieldnum").val();
+    var tbfild ='';
+    for(var i=0;i<taxnumber;i++){
+        var taxincrefield = '<input id="total_tax'+i+'_'+count+'" class="total_tax'+i+'_'+count+'" type="hidden"><input id="all_tax'+i+'_'+count+'" class="total_tax'+i+'" type="hidden" name="tax[]">';
+         tbfild +=taxincrefield;
+    }
+    if (count == limits)
+        alert("You have reached the limit of adding " + count + " inputs");
+    else {
+        var a = "product_name_" + count,
+                tabindex = count * 6,
+                e = document.createElement("tr");
+        tab1 = tabindex + 1;
+        tab2 = tabindex + 2;
+        tab3 = tabindex + 3;
+        tab4 = tabindex + 4;
+        tab5 = tabindex + 5;
+        tab6 = tabindex + 6;
+        tab7 = tabindex + 7;
+        tab8 = tabindex + 8;
+        tab9 = tabindex + 9;
+        tab10 = tabindex + 10;
+        tab11 = tabindex + 11;
+        tab12 = tabindex + 12;
+        e.innerHTML ='<td class="span3 supplier"><input type="date" name="trucking_date[]" required="" class="form-control" tabindex="'+tab1+'" > <input type="hidden" class="autocomplete_hidden_value product_id_'+ count +'" name="product_id[]" id="SchoolHiddenId"/>  <input type="hidden" class="sl" value="'+ count +'">  </td> <td class="text-right"><input type="text" name="product_quantity[]" tabindex="'+tab2+'" required  id="cartoon_'+ count +'" class="form-control text-right store_cal_' + count + '" onkeyup="total_amt(' + count + ');"  placeholder="0.00" value="" min="0"/></td><td class="text-right"><input class="form-control" type="text" name="description[]" id="pro_no" value=""  /></td><td><span  style="padding:5px;background-color: #eee;"><?php  echo $currency." ";  ?> <input type="text" name="product_rate[]" onkeyup="total_amt('+ count +');"  id="product_rate_'+ count +'" class="product_rate_'+ count +'" placeholder="0.00" value="" min="0" tabindex="'+tab3+'"/></span></td><td class="text-right"><input class="form-control" type="text" name="pro_no[]" id="pro_no" value=""  /></td><td><span class="form-control" style="background-color: #eee;"><?php echo $currency." ";   ?> <input class="total_price total_price_'+ count +'" type="text" name="total_price[]" id="total_price_'+ count +'" value="0.00" readonly="readonly" /></span> </td><td> <input type="hidden" id="total_discount_1" class="" /><input type="hidden" id="all_discount_1" class="total_discount" /><button style="text-align: right;" class="btn btn-danger red" type="button"  onclick="deleteRow(this)" tabindex="8"><i class="fa fa-close"></i></button></td>';
+               
+        document.getElementById(t).appendChild(e),
+             
+                count++
+    }
+}
+ /*    
     function addTruckingOrderField(divName){
 
         if (count == limits)  {
@@ -594,7 +669,7 @@ var csrfHash = '<?php echo $this->security->get_csrf_hash();?>';
            
 
 
-            newdiv.innerHTML ='<td class="span3 supplier"><input type="date" name="trucking_date[]" required="" class="form-control" tabindex="'+tab1+'" > <input type="hidden" class="autocomplete_hidden_value product_id_'+ count +'" name="product_id[]" id="SchoolHiddenId"/>  <input type="hidden" class="sl" value="'+ count +'">  </td> <td class="text-right"><input type="text" name="product_quantity[]" tabindex="'+tab2+'" required  id="cartoon_'+ count +'" class="form-control text-right store_cal_' + count + '" onkeyup="calculate_store(' + count + ');" onchange="calculate_store(' + count + ');" placeholder="0.00" value="" min="0"/></td><td class="text-right"><input class="form-control" type="text" name="description[]" id="pro_no" value=""  /></td><td><span class="form-control" style="background-color: #eee;"><?php  echo $currency." ";  ?> <input type="text" name="product_rate[]" onkeyup="calculate_store('+ count +');" onchange="calculate_store('+ count +');" id="product_rate_'+ count +'" class="product_rate_'+ count +'" placeholder="0.00" value="" min="0" tabindex="'+tab3+'"/></span></td><td class="text-right"><input class="form-control" type="text" name="pro_no[]" id="pro_no" value=""  /></td><td><span class="form-control" style="background-color: #eee;"><?php echo $currency." ";   ?> <input class="total_price total_price_'+ count +'" type="text" name="total_price[]" id="total_price_'+ count +'" value="0.00" readonly="readonly" /></span> </td><td> <input type="hidden" id="total_discount_1" class="" /><input type="hidden" id="all_discount_1" class="total_discount" /><button style="text-align: right;" class="btn btn-danger red" type="button"  onclick="deleteRow(this)" tabindex="8"><i class="fa fa-close"></i></button></td>';
+            newdiv.innerHTML ='<td class="span3 supplier"><input type="date" name="trucking_date[]" required="" class="form-control" tabindex="'+tab1+'" > <input type="hidden" class="autocomplete_hidden_value product_id_'+ count +'" name="product_id[]" id="SchoolHiddenId"/>  <input type="hidden" class="sl" value="'+ count +'">  </td> <td class="text-right"><input type="text" name="product_quantity[]" tabindex="'+tab2+'" required  id="cartoon_'+ count +'" class="form-control text-right store_cal_' + count + '" onkeyup="total_amt(' + count + ');"  placeholder="0.00" value="" min="0"/></td><td class="text-right"><input class="form-control" type="text" name="description[]" id="pro_no" value=""  /></td><td><span class="form-control" style="background-color: #eee;"><?php  echo $currency." ";  ?> <input type="text" name="product_rate[]" onkeyup="total_amt('+ count +');"  id="product_rate_'+ count +'" class="product_rate_'+ count +'" placeholder="0.00" value="" min="0" tabindex="'+tab3+'"/></span></td><td class="text-right"><input class="form-control" type="text" name="pro_no[]" id="pro_no" value=""  /></td><td><span class="form-control" style="background-color: #eee;"><?php echo $currency." ";   ?> <input class="total_price total_price_'+ count +'" type="text" name="total_price[]" id="total_price_'+ count +'" value="0.00" readonly="readonly" /></span> </td><td> <input type="hidden" id="total_discount_1" class="" /><input type="hidden" id="all_discount_1" class="total_discount" /><button style="text-align: right;" class="btn btn-danger red" type="button"  onclick="deleteRow(this)" tabindex="8"><i class="fa fa-close"></i></button></td>';
             document.getElementById(divName).appendChild(newdiv);
             document.getElementById(tabin).focus();
             document.getElementById("add_invoice_item").setAttribute("tabindex", tab5);
@@ -609,46 +684,119 @@ var csrfHash = '<?php echo $this->security->get_csrf_hash();?>';
             });
         }
     }
+    */
     $(document).ready(function(){
-  
-  //  currency();
-    $('#product_tax').on('change', function (e) {
-        var first=$("#Total").val();
-    var tax= $('#product_tax').val();
 
-    // console.log(tax);
-
+$('#product_tax').on('change', function (e) {
+    var first=$("#Total").val();
+var tax= $('#product_tax').val();
 var field = tax.split('-');
 
 var percent = field[1];
 var answer=0;
-  var answer = parseInt((percent / 100) * first);
-  // console.log(answer);
-  var gtotal = parseInt(first + answer);
- // console.log(gtotal);
- var final_g= $('#final_gtotal').val();
- console.log(final_g);
- $("#gtotal").val(parseInt(final_g)+parseInt(first));  
+var answer = parseInt((percent / 100) * first);
+console.log("Answer : "+answer);
+var gtotal = parseInt(first + answer);
+console.log("gtotal :" +gtotal);
+var final_g= $('#final_gtotal').val();
 
+
+var amt=parseInt(answer)+parseInt(first);
+var num = isNaN(parseInt(amt)) ? 0 : parseInt(amt)
+var custo_amt=$('#custocurrency_rate').val(); 
+console.log("numhere :"+num +"-"+custo_amt);
+var value=parseInt(num*custo_amt);
+var custo_final = isNaN(parseInt(value)) ? 0 : parseInt(value)
+$('#customer_gtotal').val(custo_final);  
+calculate();
 });
 });
+$( document ).ready(function() {
+                    $('.hiden').css("display","none");
 
-$('#product_tax').on('change', function (e) {
-    var optionSelected = $("option:selected", this);
-    var valueSelected = this.value;
-    var total=$('#Total').val();
-var tax= $('#product_tax').val();
 
-var field = tax.split('-');
 
-var percent = field[1];
-percent=percent.replace("%","");
- var answer = (percent / 100) * parseInt(total);
-$('#final_gtotal').val(answer);
-   $('#hdn').val(valueSelected);
-   // answer=answer.toFixed();
-   $('#tax_details').val(answer +" ( "+tax+" )");
+$('#custocurrency_rate').on('change textInput input', function (e) {
+calculate();
 });
+
+$('.common_qnt').on('change textInput input', function (e) {
+calculate();
+});
+
+});
+
+var csrfName = '<?php echo $this->security->get_csrf_token_name();?>';
+var csrfHash = '<?php echo $this->security->get_csrf_hash();?>';
+function available_quantity (id) {
+$('.product_name').on('change', function (e) {
+    var name = 'available_quantity_'+ id;
+
+var amount = 'product_rate_'+ id;
+var pdt=$('#prodt_'+id).val();
+const myArray = pdt.split("-");
+var product_nam=myArray[0];
+var product_model=myArray[1];
+var data = {
+   amount:'product_rate_'+ id,
+   name:'available_quantity_'+ id,
+   product_nam:product_nam,
+   product_model:product_model
+};
+data[csrfName] = csrfHash;
+
+$.ajax({
+    type:'POST',
+    data: data, 
+ dataType:"json",
+    url:'<?php echo base_url();?>Cinvoice/availability',
+    success: function(result, statut) {
+        if(result.csrfName){
+         
+           csrfName = result.csrfName;
+           csrfHash = result.csrfHash;
+        }
+      $(".available_quantity_"+ id).val(result[0]['p_quantity']);
+      $("#product_rate_"+ id).val(result[0]['price']);
+      $(".product_id_"+ id).val(result[0]['product_id']);
+        console.log(result);
+    }
+});
+});
+}
+
+
+
+// Restricts input for each element in the set of matched elements to the given inputFilter.
+(function($) {
+$.fn.inputFilter = function(callback, errMsg) {
+return this.on("input keydown keyup mousedown mouseup select contextmenu drop focusout", function(e) {
+  if (callback(this.value)) {
+    // Accepted value
+    if (["keydown","mousedown","focusout"].indexOf(e.type) >= 0){
+      $(this).removeClass("input-error");
+      this.setCustomValidity("");
+    }
+    this.oldValue = this.value;
+    this.oldSelectionStart = this.selectionStart;
+    this.oldSelectionEnd = this.selectionEnd;
+  } else if (this.hasOwnProperty("oldValue")) {
+    // Rejected value - restore the previous one
+    $(this).addClass("input-error");
+    this.setCustomValidity(errMsg);
+    this.reportValidity();
+    this.value = this.oldValue;
+    this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
+  } else {
+    // Rejected value - nothing to restore
+    this.value = "";
+  }
+});
+};
+}(jQuery));
+
+$("#custocurrency_rate").inputFilter(function(value) {
+return /^-?\d*[.,]?\d*$/.test(value); }, "Must be a floating (real) Number");
 $('#bill_to').on('change', function (e) {
   
   var data = {
@@ -671,12 +819,131 @@ $('#bill_to').on('change', function (e) {
          // var parsedData = JSON.parse(result);
         //  alert(result[0].p_quantity);
         console.log(result[0]['currency_type']);
-      $("#customer_gtotal").val(result[0]['currency_type']);
-    
+        $("#cus").val(result[0]['currency_type']);
+        $("label[for='custocurrency']").html(result[0]['currency_type']);
+       console.log('https://open.er-api.com/v6/latest/<?php echo $curn_info_default; ?>');
+       $.getJSON('https://open.er-api.com/v6/latest/<?php echo $curn_info_default; ?>', 
+function(data) {
+ var custo_currency=result[0]['currency_type'];
+    var x=data['rates'][custo_currency];
+ var Rate =parseFloat(x).toFixed(3);
+  console.log(Rate);
+  $('.hiden').show();
+  $("#custocurrency_rate").val(Rate);
+});
     
       }
   });
 
 
 });
+$('#product_tax').on('change', function (e) {
+    var optionSelected = $("option:selected", this);
+    var valueSelected = this.value;
+    var total=$('#Total').val();
+var tax= $('#product_tax').val();
+
+var field = tax.split('-');
+
+var percent = field[1];
+percent=percent.replace("%","");
+ var answer = (percent / 100) * parseInt(total);
+$('#final_gtotal').val(answer);
+   $('#hdn').val(valueSelected);
+   console.log("taxi :"+valueSelected);
+  $('#tax_details').val(answer +" ( "+tax+" )");
+   calculate();
+});
+var arr=[];
+
+function total_amt(id){
+
+    var sum=0;
+  
+var total='total_price_'+id;
+
+var quantity='cartoon_'+id;
+var amount = 'product_rate_'+ id;
+var grand=$('#gtotal').val();
+var quan=$('#'+quantity).val();
+var amt=$('#'+amount).val();
+var result=parseInt(quan) * parseInt(amt);
+result = isNaN(result) ? 0 : result;
+arr.push(result);
+$('#'+total).val(result);
+
+gt();
+}
+function gt(){
+    var sum=0;
+    $('.total_price').each(function() {
+    sum += parseFloat($(this).val());
+});
+$('#Total').val(sum);
+var final_g= $('#final_gtotal').val();
+if(final_g !=''){
+var first=$("#Total").val();
+    var tax= $('#product_tax').val();
+
+var field = tax.split('-');
+
+var percent = field[1];
+var answer=0;
+  var answer =(parseInt(percent) / 100) * parseInt(first);
+   console.log(answer);
+   $('#tax_details').val(answer +" ( "+tax+" )");
+
+  var gtotal = parseInt(first + answer);
+  console.log(gtotal);
+var amt=parseInt(answer)+parseInt(first);
+ var num = isNaN(parseInt(amt)) ? 0 : parseInt(amt)
+ var custo_amt=$('#custocurrency_rate').val();
+ $("#gtotal").val(num);  
+ console.log(num +"-"+custo_amt);
+ var value=parseInt(num*custo_amt);
+ var custo_final = isNaN(parseInt(value)) ? 0 : parseInt(value)
+$('#customer_gtotal').val(custo_final);
+}  
+}
+function calculate(){
+  
+  var first=$("#Total").val();
+  var tax= $('#product_tax').val();
+var field = tax.split('-');
+
+var percent = field[1];
+var answer=0;
+var answer = parseInt((percent / 100) * first);
+var gtotal = parseInt(first + answer);
+console.log(gtotal);
+var final_g= $('#final_gtotal').val();
+
+
+var amt=parseInt(final_g)+parseInt(first);
+var num = isNaN(parseInt(amt)) ? 0 : parseInt(amt);
+$("#gtotal").val(num);  
+var custo_amt=$('#custocurrency_rate').val();
+
+console.log(num +"-"+custo_amt);
+var value=parseInt(num*custo_amt);
+var custo_final = isNaN(parseInt(value)) ? 0 : parseInt(value)
+$('#customer_gtotal').val(custo_final);  
+}
+
+
     </script>
+	
+	    <?php 
+
+    if(isset($_SESSION['truckid']))
+        { ?>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+
+           $('#myModal1').modal('show');
+           hide();
+        });
+    </script>
+     <?php } ?>

@@ -34,27 +34,20 @@
 
 		<!-- Alert Message -->
 	    <?php
-	        $message = $this->session->userdata('message');
+	         $message = $this->session->userdata('alert');
 	        if (isset($message)) {
 	    ?>
-	    <div class="alert alert-info alert-dismissable">
-	        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-	        <?php echo $message ?>                    
-	    </div>
-	    <?php 
-	        $this->session->unset_userdata('message');
-	        }
-	        $error_message = $this->session->userdata('error_message');
-	        if (isset($error_message)) {
-	    ?>
-	    <div class="alert alert-danger alert-dismissable">
-	        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-	        <?php echo $error_message ?>                    
-	    </div>
-	    <?php 
-	        $this->session->unset_userdata('error_message');
-	        }
-	    ?>
+        
+<script type="text/javascript">
+    $(window).on('load', function() {
+        $('#myModal').modal('show');
+    });
+</script>
+	   
+       <?php } 
+
+       ?>
+	    
 	            
 			
 			
@@ -133,15 +126,14 @@ $today = date('Y-m-d');
 		                    <table class="table table-striped table-bordered" cellspacing="0" width="100%" id="ProfarmaInvList"> 
 							<thead>
       <tr>
-      <th data-column-id="id" class="ID">ID</th>
-        <th data-column-id="Invoice" class="Invoice No">Invoice No</th>
-        <th data-column-id="date" class="Purchase ID">Purchase ID</th>
-        <th data-column-id="Sale By" class="Supplier Name">Supplier Name</th>
-        <th data-column-id="Customer Name" class="Purchase Date" >Purchase Date</th>
-        <th data-column-id="date" class="Total Amount">Total Amount</th>
-      
-      <div class="myButtonClass"> 
-         <th class="text-center Action" data-column-id="action" data-formatter="commands" data-sortable="false">Action</th>
+      <th data-column-id="id" class="ID" style="width: 100px; height: 43.0114px;">ID</th>
+        <th data-column-id="Invoice" class="Invoice No" style="height: 38.0114px; width: 196.011px;">Invoice No</th>
+        <th data-column-id="date" class="Purchase ID" style="height: 39.0114px; width: 230.011px;">Purchase ID</th>
+        <th data-column-id="Sale By" class="Supplier Name" style="width: 268.011px; height: 43.0114px;">Supplier Name</th>
+        <th data-column-id="Customer Name" class="Purchase Date" style="width: 253.011px;" >Purchase Date</th>
+        <th data-column-id="date" class="Total Amount" style="width: 199.011px; height: 37.0114px;">Total Amount</th>
+      <div class="myButtonClass">
+         <th class="text-center Action" data-column-id="action" data-formatter="commands" data-sortable="false" style="width: 185.011px;">Action</th>
         </div>
       </tr>
     </thead>
@@ -249,6 +241,9 @@ $count++;
 
     </section>
 
+
+  
+</div>
 </div>
 <script type="text/javascript" src="<?php echo base_url()?>my-assets/js/profarma.js"></script>
 <input type="hidden" value="Purchase/Purchase" id="url"/>
@@ -351,6 +346,14 @@ $('tr').each(function(){
 
 
 
+<script type="text/javascript">
+$('document').ready(function(){
+setTimeout(hide, 3000);
+function hide() {
+ $('#myModal').modal('hide');
 
+}
+});
+</script>
 
 

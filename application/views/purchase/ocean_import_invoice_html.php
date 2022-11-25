@@ -8,22 +8,7 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <style>
-        #ocean{
-            margin-left: 300px;
-        }
-   #company_info,form,table,p{
-   font-size:14px;
-   }
-   th, td {
-  padding: 10px;
-}
-h3,#company_info{
-   font-weight:bold;
-}
-tbody tr{text-align:center}
-.right{text-align:right; }
-   </style>
+
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -67,181 +52,330 @@ tbody tr{text-align:center}
             $this->session->unset_userdata('error_message');
         }
         ?>
-      <div class="" id="ocean">
+
+    <div class="container" id="content">
+    <?php 
+  
+  if($template==2)
+  {
+    ?>
+        <div class="brand-section">
+        <div class="row" >
+     
+     <div class="col-sm-2"><img src="<?php echo  base_url().'assets/'.$logo; ?>" style='width: 100%;'>
+        
+       </div>
+     <div class="col-sm-6 text-center" style="color:white;"><h3><?php echo $header; ?></h3></div>
+    <div class="col-sm-4" style="color:white;font-weight:bold;" id='company_info'>
+  
+          <b> Company name : </b><?php echo $company; ?><br>
+          <b>   Address : </b><?php echo $address; ?><br>
+          <b>   Email : </b><?php echo $email; ?><br>
+          <b>   Contact : </b><?php echo $phone; ?><br>
+       </div>
+ </div>
+        </div>
+        <div class="body-section">
             <div class="row">
-               <div class="document">
-                  <div class="spreadSheetGroup" id="print">
-                  <?php if($invoice_setting[0]['template']==1)
-{
- ?>
- <div class="row">
-              <div class="col-sm-3" id="company_info">
-                  Company name:&nbsp;<?php echo $company_info[0]['company_name']; ?><br>
-                  Address:&nbsp;<?php echo $company_info[0]['address']; ?><br>
-                  Email:&nbsp;<?php echo $company_info[0]['email']; ?><br>
-                  Contact:&nbsp;<?php echo $company_info[0]['mobile']; ?><br>
-              </div>
-            <div class="col-sm-6 text-center"><h3><?php echo $invoice_setting[0]['header']; ?></h3></div>
-            <div class="col-sm-3"><img src="<?php echo base_url(); ?>assets/<?php echo $invoice_setting[0]['logo']; ?>" style="width: 40%;"></div>
+                <div class="col-6">
+                <table id="one" >
+    <tr><td  class="key">Shipper / Vendor</td><td style="width:10px;">:</td><td calss="value"><?php echo $supplier_name;  ?></td></tr>
+    <tr><td  class="key">Container No</td><td style="width:10px;">:</td><td calss="value"><?php echo $container_no;  ?></td></tr>
+    <tr><td  class="key">Estimated Time Of Depature</td><td style="width:10px;">:</td><td calss="value"><?php echo $etd; ?></td></tr>
+    <tr><td  class="key">Ocean Import Tracking Date</td><td style="width:10px;">:</td><td calss="value"> <?php echo $invoice_date;  ?></td></tr>
+    <tr><td  class="key">Notify Party Email</td><td style="width:10px;">:</td><td calss="value"><?php echo $notify_party;  ?></td></tr>
+    <tr><td  class="key">Voyage No</td><td style="width:10px;">:</td><td calss="value"><?php echo $voyage_no;  ?></td></tr>
+    <tr><td  class="key">Port Of Discharge</td><td style="width:10px;">:</td><td calss="value"> <?php echo $port_of_discharge;  ?></td></tr>
+    <tr><td  class="key">Freight forwarder</td><td style="width:10px;">:</td><td calss="value"><?php echo $freight_forwarder;  ?></td></tr>
+    <tr><td  class="key">Country of Origin</td><td style="width:10px;">:</td><td calss="value"><?php echo $origin;  ?></td></tr>
+   
+</table>
+
+                </div>
+                <div class="col-6">
+                <table id="two">
+<tr><td  class="key">Booking / BL No</td><td style="width:10px;">:</td><td calss="value"><?php echo $booking_no;  ?></td></tr>
+    <tr><td  class="key">Seal NO</td><td style="width:10px;">:</td><td calss="value"><?php echo $seal_no;  ?></td></tr>
+    <tr><td  class="key">Estimated Time Of Arrival</td><td style="width:10px;">:</td><td calss="value"><?php  echo $eta;   ?></td></tr>
+    <tr><td class="key">Customer/Consignee</td><td style="width:10px;">:</td><td calss="value"><?php echo $consignee;  ?></td></tr>
+    <tr><td  class="key">Vessel</td><td style="width:10px;">:</td><td calss="value"><?php echo $vessel;  ?></td></tr>
+    <tr><td  class="key">Port of loading</td><td style="width:10px;">:</td><td calss="value"><?php echo $port_of_loading;  ?></td></tr>
+    <tr><td  class="key">Place of Delivery</td><td style="width:10px;">:</td><td calss="value"><?php echo $place_of_delivery;  ?></td></tr>
+    <tr><td  class="key">BL / Shipment Created Date</td><td style="width:10px;">:</td><td calss="value"> <?php echo $bl_shipment;  ?></td></tr>
+   
+    <tr><td  class="key">Particulars</td><td style="width:10px;">:</td><td calss="value"><?php echo $particular;  ?></td></tr>
+</table>
+              
+
+                </div>
+            </div><br><br><br>
+            <h4>Remarks/Details : </h4><?php echo $remarks  ?><br><br>
         </div>
-        <br> <br> <br>
-        
-    <div class="container">
-        <div class="row">
-            
-            <div class="col-lg-6">
-            <form action="">
-    <label for="text">Shipper / Vendor :</label>&nbsp;<?php  echo $supplier_id ; ?><br><br>
-    <label for="text">Container No :</label>&nbsp;<?php  echo $container_no ; ?><br><br>
-    <label for="text">ETD (Estimated time of depature) :</label> &nbsp;<?php  echo $etd ; ?><br><br>
-    <label for="text">Ocean Import Tracking date :</label>&nbsp; <?php  echo $invoice_date ; ?><br><br>
-    <label for="text">Notify Party Email :</label>&nbsp;<?php  echo $notify_party ; ?>  <br><br>
-    <label for="text">Voyage No. :</label>&nbsp; <?php  echo $voyage_no ; ?><br><br>
-    <label for="text">Port of discharge :</label>&nbsp; <?php  echo $port_of_discharge ; ?><br><br>
-    <label for="text">Freight Forwarder :</label>&nbsp;<?php  echo $freight_forwarder ; ?> <br><br>
-    <label for="text">BL / Shipment created date :</label>&nbsp;<?php  echo $bl_shipment ; ?><br><br>
-
-</form>
-            </div>
-        
-
-            
-            <div class="col-lg-6">
-                <form action="">
-                <label for="text">Booking / BL No :</label>&nbsp;<?php  echo $booking_no ; ?><br><br>
-                    <label for="text">Seal No :</label>&nbsp;<?php  echo $seal_no ; ?> <br><br>   
-                    <label for="text">ETA (Estimated time of Arrival) :</label>&nbsp;<?php  echo $eta ; ?> <br><br>
-                    <label for="number">Customer / Consignee :</label> &nbsp;<?php  echo $consignee ; ?> <br><br>
-                    <label for="number">Vessel :</label>&nbsp;<?php  echo $vessel ; ?>  <br><br>
-                    <label for="number">Port of loading :</label>&nbsp;<?php  echo $port_of_loading ; ?>  <br><br>
-                    <label for="number">Place of Delivery :</label>&nbsp;<?php  echo $place_of_delivery ; ?> <br><br> 
-                    <label for="number">Particulars :</label>&nbsp;<?php  echo $particular ; ?>  <br><br>
-                    <label for="number">Country of Origin :</label>&nbsp;<?php  echo $country_of_origin ; ?> <br><br> 
-                </form>
-                            </div>
-        </div><br><br><br>
-
-<h4>Remarks / Details</h4>
-        
-    </div>
-                  
-    <?php } ?>
-                  <?php if($invoice_setting[0]['template']==2)
-{
- ?> 
-           <div class="row">
-        <div class="col-sm-3"><img src="<?php echo base_url(); ?>assets/<?php echo $invoice_setting[0]['logo']; ?>" style="width: 40%;"></div>
-            <div class="col-sm-6 text-center"><h3><?php echo $invoice_setting[0]['header']; ?></h3></div>
-            <div class="col-sm-3" id="company_info">
-                  Company name:<?php echo $company_info[0]['company_name']; ?><br>
-                  Address:<?php echo $company_info[0]['address']; ?><br>
-                  Email:<?php echo $company_info[0]['email']; ?><br>
-                  Contact:<?php echo $company_info[0]['mobile']; ?><br>
-              </div>
         </div>
-  <br>
-        <br>    
-        <div class="container">
-        <div class="row">
-            
-            <div class="col-lg-6">
-<form action="">
-<label for="text">Shipper / Vendor :</label>&nbsp;<?php  echo $supplier_id ; ?><br><br>
-    <label for="text">Container No :</label>&nbsp;<?php  echo $container_no ; ?><br><br>
-    <label for="text">ETD (Estimated time of depature) :</label> &nbsp;<?php  echo $etd ; ?><br><br>
-    <label for="text">Ocean Import Tracking date :</label>&nbsp; <?php  echo $invoice_date ; ?><br><br>
-    <label for="text">Notify Party Email :</label>&nbsp;<?php  echo $notify_party ; ?>  <br><br>
-    <label for="text">Voyage No. :</label>&nbsp; <?php  echo $voyage_no ; ?><br><br>
-    <label for="text">Port of discharge :</label>&nbsp; <?php  echo $port_of_discharge ; ?><br><br>
-    <label for="text">Freight Forwarder :</label>&nbsp;<?php  echo $freight_forwarder ; ?> <br><br>
-    <label for="text">BL / Shipment created date :</label>&nbsp;<?php  echo $bl_shipment ; ?><br><br>
+        <?php 
 
-</form>
-            </div>
-        
-
-            
-            <div class="col-lg-6">
-                <form action="">
-                    <label for="text">Booking / BL No :</label>&nbsp;<?php  echo $booking_no ; ?><br><br>
-                    <label for="text">Seal No :</label>&nbsp;<?php  echo $seal_no ; ?> <br><br>   
-                    <label for="text">ETA (Estimated time of Arrival) :</label>&nbsp;<?php  echo $eta ; ?> <br><br>
-                    <label for="number">Customer / Consignee :</label> &nbsp;<?php  echo $consignee ; ?> <br><br>
-                    <label for="number">Vessel :</label>&nbsp;<?php  echo $vessel ; ?>  <br><br>
-                    <label for="number">Port of loading :</label>&nbsp;<?php  echo $port_of_loading ; ?>  <br><br>
-                    <label for="number">Place of Delivery :</label>&nbsp;<?php  echo $place_of_delivery ; ?> <br><br> 
-                    <label for="number">Particulars :</label>&nbsp;<?php  echo $particular ; ?>  <br><br>
-                    <label for="number">Country of Origin :</label>&nbsp;<?php  echo $country_of_origin ; ?> <br><br> 
-                </form>
-                            </div>
-        </div><br><br><br>
-
-<h4>Remarks / Details</h4>
-        
-    </div>   
-    <?php } ?>
-                  <?php if($invoice_setting[0]['template']==3)
+}
+elseif($template==1)
 {
- ?>   
-     <div class="row">
-        <div class="col-sm-3"><img src="<?php echo base_url(); ?>assets/<?php echo $invoice_setting[0]['logo']; ?>" style="width: 40%;"></div>
-            <div class="col-sm-6 text-center"><h3><?php echo $invoice_setting[0]['header']; ?></h3></div>
+?> 
+<div class="brand-section">
+   <div class="row">
+      
+     
+     
+     <div class="col-sm-4" id='company_info' style="color:white;">
+            
+     <b> Company name : </b><?php echo $company; ?><br>
+          <b>   Address : </b><?php echo $address; ?><br>
+          <b>   Email : </b><?php echo $email; ?><br>
+          <b>   Contact : </b><?php echo $phone; ?><br>
         </div>
-        <br>
-  <br>
-        <br>    
-        <div class="container">
+        <div class="col-sm-6 text-center" style="color:white;"><h3><?php echo $header; ?></h3></div>
+        <div class="col-sm-2"><img src="<?php echo  base_url().'assets/'.$logo; ?>" style='width: 100%;'>
+         
+         </div>
+  </div>
+        </div>
+        <div class="body-section">
+            <div class="row">
+                <div class="col-6">
+                <table id="one" >
+    <tr><td  class="key">Shipper / Vendor</td><td style="width:10px;">:</td><td calss="value"><?php echo $supplier_name;  ?></td></tr>
+    <tr><td  class="key">Container No</td><td style="width:10px;">:</td><td calss="value"><?php echo $container_no;  ?></td></tr>
+    <tr><td  class="key">Estimated Time Of Depature</td><td style="width:10px;">:</td><td calss="value"><?php echo $etd; ?></td></tr>
+    <tr><td  class="key">Ocean Import Tracking Date</td><td style="width:10px;">:</td><td calss="value"> <?php echo $invoice_date;  ?></td></tr>
+    <tr><td  class="key">Notify Party Email</td><td style="width:10px;">:</td><td calss="value"><?php echo $notify_party;  ?></td></tr>
+    <tr><td  class="key">Voyage No</td><td style="width:10px;">:</td><td calss="value"><?php echo $voyage_no;  ?></td></tr>
+    <tr><td  class="key">Port Of Discharge</td><td style="width:10px;">:</td><td calss="value"> <?php echo $port_of_discharge;  ?></td></tr>
+    <tr><td  class="key">Freight forwarder</td><td style="width:10px;">:</td><td calss="value"><?php echo $freight_forwarder;  ?></td></tr>
+     <tr><td  class="key">Country of Origin</td><td style="width:10px;">:</td><td calss="value"><?php echo $origin;  ?></td></tr>
+   
+</table>
+
+                </div>
+                <div class="col-6">
+                <table id="two">
+<tr><td  class="key">Booking / BL No</td><td style="width:10px;">:</td><td calss="value"><?php echo $booking_no;  ?></td></tr>
+    <tr><td  class="key">Seal NO</td><td style="width:10px;">:</td><td calss="value"><?php echo $seal_no;  ?></td></tr>
+    <tr><td  class="key">Estimated Time Of Arrival</td><td style="width:10px;">:</td><td calss="value"><?php  echo $eta;   ?></td></tr>
+    <tr><td class="key">Customer/Consignee</td><td style="width:10px;">:</td><td calss="value"><?php echo $consignee;  ?></td></tr>
+    <tr><td  class="key">Vessel</td><td style="width:10px;">:</td><td calss="value"><?php echo $vessel;  ?></td></tr>
+    <tr><td  class="key">Port of loading</td><td style="width:10px;">:</td><td calss="value"><?php echo $port_of_loading;  ?></td></tr>
+    <tr><td  class="key">Place of Delivery</td><td style="width:10px;">:</td><td calss="value"><?php echo $place_of_delivery;  ?></td></tr>
+    <tr><td  class="key">BL / Shipment Created Date</td><td style="width:10px;">:</td><td calss="value"> <?php echo $bl_shipment;  ?></td></tr>
+  
+    <tr><td  class="key">Particulars</td><td style="width:10px;">:</td><td calss="value"><?php echo $particular;  ?></td></tr>
+</table>
+              
+
+                </div>
+            </div><br><br><br>
+            <h4>Remarks/Details : </h4><?php echo $remarks  ?><br><br>
+        </div>
+        </div>
+        <?php 
+
+}
+elseif($template==3)
+{
+?>
+<div class="brand-section">
+<div class="row">
+       
+       <div class="col-sm-2"><img src="<?php echo  base_url().'assets/'.$logo; ?>" style='width: 100%;'>
+          
+         </div>
+       <div class="col-sm-6 text-center" style="color:white;"><h3><?php echo $header; ?></h3></div>
+    
+   </div>
+        </div>
+        <div class="body-section">
         <div class="row">
-            
-            <div class="col-sm-4">
-            <form action="">
-            <label for="text">Shipper / Vendor :</label>&nbsp;<?php  echo $supplier_id ; ?><br><br>
-    <label for="text">Container No :</label>&nbsp;<?php  echo $container_no ; ?><br><br>
-    <label for="text">ETD (Estimated time of depature) :</label> &nbsp;<?php  echo $etd ; ?><br><br>
-    <label for="text">Ocean Import Tracking date :</label>&nbsp; <?php  echo $invoice_date ; ?><br><br>
-    <label for="text">Notify Party Email :</label>&nbsp;<?php  echo $notify_party ; ?>  <br><br>
-    <label for="text">Voyage No. :</label>&nbsp; <?php  echo $voyage_no ; ?><br><br>
-    <label for="text">Port of discharge :</label>&nbsp; <?php  echo $port_of_discharge ; ?><br><br>
-    <label for="text">Freight Forwarder :</label>&nbsp;<?php  echo $freight_forwarder ; ?> <br><br>
-    <label for="text">BL / Shipment created date :</label>&nbsp;<?php  echo $bl_shipment ; ?><br><br>
+        <div class="col-sm-6 "></div>
+            <div class="col-sm-6 " style="width:50%;">
+             <table>
+          
+        <tr>  <td style="100px;font-weight:bold;"> Company name </td><td style="width:10px;">:</td><td> <?php echo $company; ?></td></tr>
+        <tr>   <td style="100px;font-weight:bold;"> Address </td><td style="width:10px;">:</td><td> <?php echo $address; ?></td></tr>
+        <tr>   <td style="100px;font-weight:bold;"> Email </td><td style="width:10px;">:</td><td> <?php echo $email; ?></td></tr>
+        <tr>   <td style="100px;font-weight:bold;"> Contact </td><td style="width:10px;">:</td><td> <?php echo $phone; ?></td></tr>
+</tr>        
+             
+</table>
+            </div></div>
+              <div class="row"> <div class="col-sm-12 ">&nbsp;</div></div>
+              <div class="row">
+                <div class="col-6">
+                <table id="one" >
+    <tr><td  class="key">Shipper / Vendor</td><td style="width:10px;">:</td><td calss="value"><?php echo $supplier_name;  ?></td></tr>
+    <tr><td  class="key">Container No</td><td style="width:10px;">:</td><td calss="value"><?php echo $container_no;  ?></td></tr>
+    <tr><td  class="key">Estimated Time Of Depature</td><td style="width:10px;">:</td><td calss="value"><?php echo $etd; ?></td></tr>
+    <tr><td  class="key">Ocean Import Tracking Date</td><td style="width:10px;">:</td><td calss="value"> <?php echo $invoice_date;  ?></td></tr>
+    <tr><td  class="key">Notify Party Email</td><td style="width:10px;">:</td><td calss="value"><?php echo $notify_party;  ?></td></tr>
+    <tr><td  class="key">Voyage No</td><td style="width:10px;">:</td><td calss="value"><?php echo $voyage_no;  ?></td></tr>
+    <tr><td  class="key">Port Of Discharge</td><td style="width:10px;">:</td><td calss="value"> <?php echo $port_of_discharge;  ?></td></tr>
+    <tr><td  class="key">Freight forwarder</td><td style="width:10px;">:</td><td calss="value"><?php echo $freight_forwarder;  ?></td></tr>
+     <tr><td  class="key">Country of Origin</td><td style="width:10px;">:</td><td calss="value"><?php echo $origin;  ?></td></tr>
+   
+</table>
 
-</form>
-            </div>
-        
+                </div>
+                <div class="col-6">
+                <table id="two">
+<tr><td  class="key">Booking / BL No</td><td style="width:10px;">:</td><td calss="value"><?php echo $booking_no;  ?></td></tr>
+    <tr><td  class="key">Seal NO</td><td style="width:10px;">:</td><td calss="value"><?php echo $seal_no;  ?></td></tr>
+    <tr><td  class="key">Estimated Time Of Arrival</td><td style="width:10px;">:</td><td calss="value"><?php  echo $eta;   ?></td></tr>
+    <tr><td class="key">Customer/Consignee</td><td style="width:10px;">:</td><td calss="value"><?php echo $consignee;  ?></td></tr>
+    <tr><td  class="key">Vessel</td><td style="width:10px;">:</td><td calss="value"><?php echo $vessel;  ?></td></tr>
+    <tr><td  class="key">Port of loading</td><td style="width:10px;">:</td><td calss="value"><?php echo $port_of_loading;  ?></td></tr>
+    <tr><td  class="key">Place of Delivery</td><td style="width:10px;">:</td><td calss="value"><?php echo $place_of_delivery;  ?></td></tr>
+    <tr><td  class="key">BL / Shipment Created Date</td><td style="width:10px;">:</td><td calss="value"> <?php echo $bl_shipment;  ?></td></tr>
+   
+    <tr><td  class="key">Particulars</td><td style="width:10px;">:</td><td calss="value"><?php echo $particular;  ?></td></tr>
+</table>
+              
 
-            
-            <div class="col-sm-4">
-                <form action="">
-                <label for="text">Booking / BL No :</label>&nbsp;<?php  echo $booking_no ; ?><br><br>
-                    <label for="text">Seal No :</label>&nbsp;<?php  echo $seal_no ; ?> <br><br>   
-                    <label for="text">ETA (Estimated time of Arrival) :</label>&nbsp;<?php  echo $eta ; ?> <br><br>
-                    <label for="number">Customer / Consignee :</label> &nbsp;<?php  echo $consignee ; ?> <br><br>
-                    <label for="number">Vessel :</label>&nbsp;<?php  echo $vessel ; ?>  <br><br>
-                    <label for="number">Port of loading :</label>&nbsp;<?php  echo $port_of_loading ; ?>  <br><br>
-                    <label for="number">Place of Delivery :</label>&nbsp;<?php  echo $place_of_delivery ; ?> <br><br> 
-                    <label for="number">Particulars :</label>&nbsp;<?php  echo $particular ; ?>  <br><br>
-                    <label for="number">Country of Origin :</label>&nbsp;<?php  echo $country_of_origin ; ?> <br><br> 
-                </form>
-                            </div>
-                            <div class="col-sm-4" id="company_info">
-                  Company name:<?php echo $company_info[0]['company_name']; ?><br>
-                  Address:<?php echo $company_info[0]['address']; ?><br>
-                  Email:<?php echo $company_info[0]['email']; ?><br>
-                  Contact:<?php echo $company_info[0]['mobile']; ?><br>
-              </div>
-        </div><br><br><br>
+                </div>
+            </div><br><br><br>
+            <h4>Remarks/Details : </h4><?php echo $remarks  ?><br>
+        </div>
+        </div>
 
-<h4>Remarks / Details</h4>
-        
-    </div>  
- 
- <?php } ?>
-                  </div>
-               </div>
-            </div>
+        <?php  } ?>
+
+
          </div>
     </section> <!-- /.content -->
 </div> <!-- /.content-wrapper -->
+
+<style>
+
+.key{
+    text-align:left;
+font-weight:bold;
+
+}
+.value{
+    text-align:left;
+}
+#one,#two{
+float:left;
+width:100%;
+}
+body{
+    width:100%;
+    background-color: #fcf8f8; 
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.heading_name{
+    font-weight: bold;
+}
+.container{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+}
+.brand-section{
+   background-color: #5961b3;
+   padding: 10px 40px;
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.col-6{
+    width: 50%;
+    flex: 0 0 auto;
+   
+}
+.text-white{
+    color: #fff;
+}
+.company-details{
+    float: right;
+    text-align: right;
+}
+
+.body-section{
+    padding: 16px;
+    border: 1px solid gray;
+    
+}
+.heading{
+    font-size: 20px;
+    margin-bottom: 08px;
+}
+.sub-heading{
+    color: #262626;
+    margin-bottom: 05px;
+}
+table{
+   
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+   
+}
+
+table thead tr{
+    vertical-align: text-bottom;
+    border-bottom: none !important;
+            border: 1px solid #5961b3;
+            background-color:  #5961b3;
+   
+}
+.table-bordered td{
+    text-align:center;
+}
+table td {
+    vertical-align: middle !important;
+ 
+    word-wrap: break-word;
+}
+th{
+    text-align:center;
+    color:white;
+}
+table th, table td {
+    padding:10px;
+    padding-top: 08px;
+    padding-bottom: 08px;
+}
+.table-bordered{
+    box-shadow: 0px 0px 5px 0.5px gray !important;
+}
+.table-bordered td, .table-bordered th {
+    border: 1px solid #dee2e6 !important;
+}
+.text-right{
+    text-align: right;
+}
+.w-20{
+    width: 20%;
+}
+.float-right{
+    float: right;
+}
+@media only screen and (max-width: 600px) {
+    
+}
+
+
+</style>      
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
@@ -261,7 +395,7 @@ $(document).ready(function () {
 
 
  var pdf = new jsPDF('p','pt','a4');
-    const invoice = document.getElementById("print");
+    const invoice = document.getElementById("content");
              console.log(invoice);
              console.log(window);
              var pageWidth = 8.5;

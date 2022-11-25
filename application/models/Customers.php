@@ -487,8 +487,10 @@ class Customers extends CI_Model {
     //Customer Previous balance adjustment
     public function previous_balance_add($balance, $customer_id) {
         $this->load->library('auth');
-    $cusifo = $this->db->select('*')->from('customer_information')->where('customer_id',$customer_id)->get()->row();
-    $headn = $customer_id.'-'.$cusifo->customer_name;
+      
+    $cusifo = $this->db->select('*')->from('customer_information')->where('customer_id',1)->get()->row();
+    $headn = $cusifo->$customer_id.'-'.$cusifo->customer_name;
+
     $coainfo = $this->db->select('*')->from('acc_coa')->where('HeadName',$headn)->get()->row();
     $customer_headcode = $coainfo->HeadCode;
         $transaction_id = $this->auth->generator(10);

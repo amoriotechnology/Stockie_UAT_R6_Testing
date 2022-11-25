@@ -112,11 +112,11 @@ class Invoices extends CI_Model {
 
 
     
-     public function invoice_pdf() {
+     public function invoice_pdf($invoice_id) {
         $this->db->select('in.*, ci.customer_name');
         $this->db->from('invoice in');
         $this->db->join('customer_information ci', 'ci.customer_id = in.customer_id');
-      //  $this->db->where('in.invoice_id', $invoice_id);
+        $this->db->where('in.invoice_id', $invoice_id);
        
         $query = $this->db->get();
 
@@ -135,18 +135,18 @@ class Invoices extends CI_Model {
     
   
 
-    public function all_invoice() {
+    public function all_invoice($invoice_id) {
     $this->db->select('a.*,b.*');
     $this->db->from('invoice_details a');
     $this->db->join('invoice b', 'b.invoice_id = a.invoice_id');
-
+    $this->db->where('b.invoice_id', $invoice_id);
     
     $query = $this->db->get();
-   
+
       if ($query->num_rows() > 0) {
           return $query->result_array();
       }
-      return false;
+    
 }
 
 
@@ -166,13 +166,14 @@ class Invoices extends CI_Model {
 
   }
   public function all_profarma($purchase_id) {
-    $this->db->select('a.*,b.*');
+    $this->db->select('a.*,b.*,c.*');
     $this->db->from('profarma_invoice_details a');
+    $this->db->join('product_information c', 'a.product_id = c.product_id');
     $this->db->join('profarma_invoice b', 'b.purchase_id = a.purchase_id');
+     // echo $this->db->last_query(); die();
     $this->db->where('b.purchase_id', $purchase_id);
-
+    $this->db->group_by('a.product_id');
    
-    
     $query = $this->db->get();
 
    //   if ($query->num_rows() > 0) {
@@ -182,14 +183,19 @@ class Invoices extends CI_Model {
 }
 
 
-    public function packing_details_data() {
-        $sql = 'SELECT * FROM sale_packing_list as a JOIN sale_packing_list_detail as ac JOIN product_information as b ON b.product_id = a.product_id';
-        $query = $this->db->query($sql);
-
+    public function packing_details_data($expense_id) {
+        $this->db->select('a.*,b.*,c.*');
+        $this->db->from('sale_packing_list a');
+        $this->db->join('sale_packing_list_detail b', 'a.expense_packing_id = b.expense_packing_id');
+        $this->db->join('product_information c', 'c.product_id = a.product_id');
+    
+        $this->db->where('b.expense_packing_id',$expense_id);
+       // $sql = 'SELECT * FROM sale_packing_list as a JOIN sale_packing_list_detail as ac JOIN product_information as b ON b.product_id = a.product_id';
+       $query = $this->db->get(); 
         if ($query->num_rows() > 0) {
             return $query->result_array();
         }
-        return false;
+       
     }
 
 
@@ -231,6 +237,7 @@ class Invoices extends CI_Model {
         'invoice_no'          => $this->input->post('invoice_no',TRUE),
         'invoice_date'        => $this->input->post('invoice_date',TRUE),
         'gross_weight' => $this->input->post('gross_weight',TRUE),
+        'remarks' => $this->input->post('remarks',TRUE),
         'thickness' => $this->input->post('thickness',TRUE),
         'description'=> $this->input->post('description',TRUE),
         'product_id' => $this->input->post('product_id',TRUE),
@@ -295,7 +302,7 @@ class Invoices extends CI_Model {
             $this->db->insert('sale_packing_list_detail', $data1);
         }
     }
-    return true;
+    return $purchase_id;
 }
 
 
@@ -332,6 +339,8 @@ public function add_profarma_invoice()
                'country_goods'=>$this->input->post('country_goods'),
                'country_destination'=>$this->input->post('country_destination'),
                'loading'=>$this->input->post('loading'),
+               'tax_details'=>$this->input->post('tax_details'),
+               'gtotal'=>$this->input->post('gtotal'),
                'discharge'=>$this->input->post('discharge'),
                'terms_payment'=>$this->input->post('terms_payment'),
                'description_goods'=>$this->input->post('description_goods'),
@@ -1907,8 +1916,15 @@ public function retrieve_packing_editdata($purchase_id) {
             'port_of_discharge' => $this->input->post('port_of_discharge',TRUE),
 
             'total_amount'    => $this->input->post('total',TRUE),
+            'etd'    => $this->input->post('etd',TRUE),
+            'eta'    => $this->input->post('eta',TRUE),
+           
 
-            'total_tax'       => $this->input->post('total_tax',TRUE),
+            'gtotal'    => $this->input->post('gtotal',TRUE),
+            'ac_details'    => $this->input->post('ac_details',TRUE),
+            'remark'    => $this->input->post('remark',TRUE),
+
+            'total_tax'       => $this->input->post('tax_details',TRUE),
 
             'invoice'         => $invoice_no_generated,
 
@@ -1942,7 +1958,7 @@ public function retrieve_packing_editdata($purchase_id) {
 
         );
 
-    //print_r($datainv);
+
 
         $this->db->insert('invoice', $datainv);
 
@@ -2187,7 +2203,7 @@ public function retrieve_packing_editdata($purchase_id) {
         $rate                = $this->input->post('product_rate',TRUE);
 
         $p_id                = $this->input->post('prodt',TRUE);
-
+        $stock                = $this->input->post('available_quantity',TRUE);
         $total_amount        = $this->input->post('total_price',TRUE);
 
         $discount_rate       = $this->input->post('discount_amount',TRUE);
@@ -2205,9 +2221,9 @@ $product_id=$this->input->post('product_id',TRUE);
         for ($i = 0, $n = count($p_id); $i < $n; $i++) {
 
             $product_quantity = $quantity[$i];
-
+            $p_name = $p_id[$i];
             $product_rate = $rate[$i];
-
+$stock_in=$stock[$i];
             $product_id =$product_id[$i];
 
             $serial_no  = (!empty($serial_n[$i])?$serial_n[$i]:null);
@@ -2236,8 +2252,8 @@ $product_id=$this->input->post('product_id',TRUE);
                 'invoice_id'         => $invoice_id,
 
                 'product_id'         =>$product_id,
-
-                'serial_no'          => $serial_no,
+                'product_name'   => $p_name,
+                'in_stock'          => $stock_in,
 
                 'quantity'           => $product_quantity,
 
@@ -2263,7 +2279,7 @@ $product_id=$this->input->post('product_id',TRUE);
 
             );
 
-//print_r($data1);
+
 
                 $this->db->insert('invoice_details', $data1);
 
@@ -2306,6 +2322,7 @@ $product_id=$this->input->post('product_id',TRUE);
         return $invoice_id;
 
     }
+
 
     private function stripHTMLtags($str)
     {
@@ -2467,7 +2484,7 @@ $product_id=$this->input->post('product_id',TRUE);
           $query= $this->db->insert('ocean_export_tracking', $data);
   
 
-        return true;
+        return $purchase_id;
     }
 
 
@@ -4090,8 +4107,15 @@ public function service_invoice_taxinfo($invoice_id){
             ->result_array(); 
 
     }
-
-
+  /*  public function getcusto_currency(){
+        $this->db->select('*');
+        $this->db->from('currency_tbl');
+        $this->db->where('customer_name', $value);
+        $query = $this->db->get()->result();
+        return $query;
+        $curn_info_customer = $CI->db->select('*')->from('currency_tbl')->where('icon',$value)->get()->result_array();
+    }
+*/
     public function getcustomer_data($value){
         $this->db->select('*');
         $this->db->from('customer_information');
@@ -4808,9 +4832,12 @@ return $output;
             'shipment_company'   => $this->input->post('shipment_company',TRUE),
             'container_pickup_date'   => $this->input->post('container_pick_up_date',TRUE),
             'delivery_date' => $this->input->post('delivery_date',TRUE),
-            'grand_total_amount' => $this->input->post('total',TRUE),
-            'status'             => 1,
-          
+            'total_amt' => $this->input->post('total',TRUE),
+            'tax' => $this->input->post('tax_details',TRUE),
+            'grand_total_amount' => $this->input->post('gtotal',TRUE),
+            'remarks' => $this->input->post('remarks',TRUE),
+           'status'             => 1,
+         
         );
 
 
@@ -4876,7 +4903,7 @@ return $output;
 
 
 
-        return true;
+        return $purchase_id;
     }
 
 
@@ -4950,18 +4977,18 @@ return $output;
       public function product($invoice_id)
     {
         
-        
-
-
-              $sql='SELECT b.* FROM `invoice_details` as a join product_information b on a.product_id=b.product_name where a.invoice_id='.$invoice_id;
-
-
-            $query = $this->db->query($sql);
+        $this->db->select('a.*,b.*');
+        $this->db->from('invoice_details a');
+        $this->db->join('product_information b', 'a.product_id=b.product_id');
+        $this->db->where('a.invoice_id', $invoice_id);
+       
+        $query = $this->db->get();
+echo $this->db->last_query();
 
             if ($query->num_rows() > 0) {
 
-                return $query->result_array();
-
+return $query->result_array();
+    
     }
 
 }
@@ -4980,6 +5007,22 @@ public function get_datas()
 
 
             $query = $this->db->query($sql);
+
+            if ($query->num_rows() > 0) {
+
+                return $query->result_array();
+
+    }
+
+
+
+}
+
+public function sales_packing_list()
+{
+    $sql='select a.*,b.product_name from sale_packing_list a join product_information b on b.product_id=a.product_id where a.create_by='.$_SESSION['user_id'];
+
+     $query = $this->db->query($sql);
 
             if ($query->num_rows() > 0) {
 

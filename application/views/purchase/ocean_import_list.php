@@ -135,19 +135,19 @@ $today = date('Y-m-d');
                     <div class="panel-body">
                     <div id="customers">
   <table class="table table-bordered" cellspacing="0" width="100%" id="ProfarmaInvList">
-    <thead>
+  <thead>
       <tr>
-      <th class="ID">ID</th>
-        <th class="Booking Number">Booking Number</th>
-        <th class="Container Number">Container Number</th>
-        <th class="Seal Number">Seal Number</th>
-        <th class="Ocean Import ID">Ocean Import ID</th>
-         <th class="Supplier Name">Supplier Name</th>
-		 <th class="Purchase Date">Purchase Date</th>
-		 <th class="Country of Origin">Country of Origin</th>
-		 <th class="Place of Delivery">Place of Delivery</th>
-      <div class="myButtonClass Action"> 
-         <th class="text-center Action" data-column-id="action" data-formatter="commands" data-sortable="false">Action</th>
+      <th class="ID"   style="width: 100px; height: 39.0114px;" >ID</th>
+        <th class="Booking Number"    style="height: 45.0114px; width: 167.011px;" >Booking Number</th>
+        <th class="Container Number"     style="height: 44.0114px; width: 193.011px;">Container Number</th>
+        <th class="Seal Number"          style="width: 127.011px; height: 46.0114px;" >Seal Number</th>
+        <th class="Ocean Import ID"  style="width: 185.011px; height: 47.0114px;" >Ocean Import ID</th>
+         <th class="Supplier Name"  style="height: 42.0114px; width: 151.011px;" >Supplier Name</th>
+         <th class="Purchase Date"  style="width: 149.011px;" >Purchase Date</th>
+         <th class="Country of Origin" style="height: 42.0114px; width: 171.011px;"  >Country of Origin</th>
+         <th class="Place of Delivery"style="height: 42.0114px; width: 171.011px;" >Place of Delivery</th>
+      <div class="myButtonClass Action">
+         <th class="text-center Action" data-column-id="action" data-formatter="commands" data-sortable="false" style="width: 183.011px; height: 45.0114px;" >Action</th>
         </div>
       </tr>
     </thead>
@@ -225,21 +225,21 @@ $count++;
             <div id="myModal_colSwitch" class="modal_colSwitch">
                     <div class="modal-content_colSwitch">
                           <span class="close_colSwitch">&times;</span>
-                          <input type="checkbox"  data-control-column="1" class="opt ID" value="ID"/> ID<br>
+                          <input type="checkbox"  data-control-column="1" checked = "checked" class="opt ID" value="ID"/> ID<br>
 
-    <input type="checkbox"  data-control-column="2" class="opt Booking Number" value="Booking Number"/>Booking Number<br>
+    <input type="checkbox"  data-control-column="2" checked = "checked" class="opt Booking Number" value="Booking Number"/>Booking Number<br>
  
-    <input type="checkbox"  data-control-column="3" class="opt Container Number" value="Container Number"/>Container Number<br>
+    <input type="checkbox"  data-control-column="3" checked = "checked" class="opt Container Number" value="Container Number"/>Container Number<br>
   
-    <input type="checkbox"  data-control-column="4" class="opt Seal Number" value="Seal Number"/>Seal Number<br>
+    <input type="checkbox"  data-control-column="4" checked = "checked" class="opt Seal Number" value="Seal Number"/>Seal Number<br>
 
-    <input type="checkbox"  data-control-column="5" class="opt Ocean Import ID" value="Ocean Import ID"/>Ocean Import ID<br>
+    <input type="checkbox"  data-control-column="5" checked = "checked" class="opt Ocean Import ID" value="Ocean Import ID"/>Ocean Import ID<br>
 
-    <input type="checkbox"  data-control-column="6" class="opt Supplier Name" value="Supplier Name"/>Supplier Name<br>
-	<input type="checkbox"  data-control-column="7" class="opt Purchase Date" value="Purchase Date"/>Purchase Date<br>
-	<input type="checkbox"  data-control-column="8" class="opt Country of Origin" value="Country of Origin"/>Country of Origin<br>
-	<input type="checkbox"  data-control-column="9" class="opt Place of Delivery" value="Place of Delivery"/>Place of Delivery<br>
-<input type="checkbox"  data-control-column="10" class="opt Action" value="Action"/>Action<br>
+    <input type="checkbox"  data-control-column="6" checked = "checked" class="opt Supplier Name" value="Supplier Name"/>Supplier Name<br>
+	<input type="checkbox"  data-control-column="7" checked = "checked" class="opt Purchase Date" value="Purchase Date"/>Purchase Date<br>
+	<input type="checkbox"  data-control-column="8" checked = "checked" class="opt Country of Origin" value="Country of Origin"/>Country of Origin<br>
+	<input type="checkbox"  data-control-column="9" checked = "checked" class="opt Place of Delivery" value="Place of Delivery"/>Place of Delivery<br>
+<input type="checkbox"  data-control-column="10" checked = "checked" class="opt Action" value="Action"/>Action<br>
      <!--      <input type="submit" value="submit" id="submit"/>--> 
                      
                     </div>

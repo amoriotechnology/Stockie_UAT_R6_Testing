@@ -24,29 +24,7 @@
     </section>
 
     <section class="content">
-        <!-- Alert Message -->
-        <?php
-            $message = $this->session->userdata('message');
-            if (isset($message)) {
-        ?>
-        <div class="alert alert-info alert-dismissable">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
-            <?php echo $message ?>                    
-        </div>
-        <?php 
-            $this->session->unset_userdata('message');
-            }
-            $error_message = $this->session->userdata('error_message');
-            if (isset($error_message)) {
-        ?>
-        <div class="alert alert-danger alert-dismissable">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-            <?php echo $error_message ?>                    
-        </div>
-        <?php 
-            $this->session->unset_userdata('error_message');
-            }
-        ?>
+        
 <style>
             input {
     border: none;
@@ -84,8 +62,8 @@ textarea:focus, input:focus{
                                         <i class="text-danger">*</i>
                                     </label>
                                     <div class="col-sm-7">
-                                        <select name="supplier_id" id="supplier_id" class="form-control " required="" tabindex="1"> 
-                                            <option value=" "><?php echo display('select_one') ?></option>
+                                        <select name="supplier_id" id="supplier_id" class="form-control " required tabindex="1"> 
+                                            <option value=""><?php echo display('select_one') ?></option>
                                             {all_supplier}
                                             <option value="{supplier_id}">{supplier_name}</option>
                                             {/all_supplier}
@@ -122,7 +100,7 @@ textarea:focus, input:focus{
                                     </label>
                                     <div class="col-sm-8">
                                         <?php $date = date('Y-m-d'); ?>
-                                        <input type="text" required tabindex="2" class="form-control datepicker" name="purchase_date" value="<?php echo $date; ?>" id="date"  required/>
+                                        <input type="date" required tabindex="2" class="form-control datepicker" name="purchase_date" value="<?php echo $date; ?>" id="date"  required/>
                                     </div>
                                 </div>
                             </div>
@@ -360,7 +338,7 @@ textarea:focus, input:focus{
                                             <td class="text-right">
                                                 <input type="text" name="product_quantity[]" id="cartoon_1" required="" min="0" class="form-control text-right store_cal_1" onkeyup="calculate_store(1);" onchange="calculate_store(1);" placeholder="0.00" value=""  tabindex="6"/>
                                             </td>
-                                            <td><span style='padding:5px;background-color: #eee;'><?php  echo $currency; ?> 
+                                            <td style="width: 220px;"><span style='padding:5px;background-color: #eee;'><?php  echo $currency; ?> 
                                                 <input style="padding:5px;" type="text" name="product_rate[]" required="" onkeyup="calculate_store(1);" onchange="calculate_store(1);" id="product_rate_1" class="product_rate_1" placeholder="0.00" value="" min="0" tabindex="7"/>
                                         </span></td>
                                         <td><span class='form-control' style='background-color: #eee;'><?php  echo $currency; ?> 
@@ -380,25 +358,28 @@ textarea:focus, input:focus{
                                 <tr>
                                         
                                         <td style="text-align:right;" colspan="5"><b>Grand Total</b></td>
-                                        <td><span class='form-control' style='background-color: #eee;'><?php  echo $currency; ?>
+                                        <td ><span class='form-control' style='background-color: #eee;'><?php  echo $currency; ?>
                                             <input type="text" id="Total"  name="total" value="0.00" readonly="readonly" />
                                         </span></td>
                                         <td> <button type="button" id="add_invoice_item" class="btn btn-info" name="add-invoice-item"  onClick="addPurchaseOrderField2('addPurchaseItem')"  tabindex="9"/><i class="fa fa-plus"></i></button>
 
                                             <input type="hidden" name="baseUrl" class="baseUrl" value="<?php echo base_url();?>"/></td>
-                                    </tr>
-                                  
-                                    <tr> <td style="text-align:right;"  colspan="5"><b><?php echo "Grand Total" ?>:</b><br/><b>(Preferred Currency)</b></td>
+                                    </tr><tr>
+                                    <td style="width:30%;border:none;"><span style="width:30%;border:none;"></span>
+                         </td> 
+                
+                                <td  style="width:30%px;border:none;"><span class="hiden" style="width:200px;padding:5px;background-color:#38469f;border:none;font-weight:bold;color:white;">1 <?php  echo $curn_info_default;  ?>
+                                 = <input style="color:black;width:70px;text-align:center;padding:5px;" type="text" id="custocurrency_rate"/>&nbsp;<label for="custocurrency"></label></span></td>
+                    <td style="border:none;text-align:right;font-weight:bold;" colspan="3"><b><?php echo "Grand Total" ?>:</b><br/><b>(Preferred Currency)</b></td>
                                     <td>
-                                            <span class="form-control" style="background-color: #eee;" >
+                                            <span class="form-control" style="background-color: #eee;" ><input style="width:12%;font-weight:bold;" type="text" id="cus"  name="cus"  readonly="readonly" />
                                             <input type="text" id="vendor_gtotal"  name="vendor_gtotal" value="0.00" readonly="readonly" />
                                             </span></td>
                                       
 
                                             <input type="hidden" id="final_gtotal"  name="final_gtotal" />
-
-                                            <input type="hidden" name="baseUrl" class="baseUrl" value="<?php echo base_url();?>"/></td>
-                                    </tr>
+                                        </tr>
+                                    
 
 
 
@@ -476,7 +457,19 @@ textarea:focus, input:focus{
                          <div class="form-group row">
                             <div class="col-sm-6">
                                 <input type="submit" id="add_purchase" class="btn btn-primary btn-large" name="add-purchase-order" value="Save" />
-                                <input type="submit" value="<?php echo display('submit_and_add_another') ?>" name="add-purchase-order-another" class="btn btn-large btn-success" id="add_purchase_order_another" >
+                                
+                                <?php 
+                                if(isset($_SESSION['purchase_orderid']))
+                                {
+                                    ?>
+                                 <a href="<?php echo base_url('Cpurchase/manage_purchase_order'); ?>" class='btn btn-primary' style='color: #fff;'>Submit</a>
+                                 <a class="btn btn-primary" style="color: #fff;" href="<?php echo base_url('Cpurchase/purchase_order_details_data/'); ?><?php echo $_SESSION['purchase_orderid']; ?> ">Download</a>
+                                 
+                                    <?php 
+                                }
+                                 ?>
+
+                            </div>
                             </div>
                         </div>
 
@@ -490,6 +483,27 @@ textarea:focus, input:focus{
         </div>
     </section>
 </div>
+<div class="modal fade" id="myModal1" role="dialog" >
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="    margin-top: 190px;">
+        <div class="modal-header" style="">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Purchase Order</h4>
+        </div>
+        <div class="modal-body">
+          
+          <h4>Purchase order  Created Succefully</h4>
+     
+        </div>
+        <div class="modal-footer">
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
 
 
      <!------ add new product-->  
@@ -920,7 +934,7 @@ function addPurchaseOrderField2(divName){
        
 
 
-        newdiv.innerHTML ='<td class="span3 supplier"><input type="text" name="product_name" required="" class="form-control product_name productSelection" onkeypress="product_pur_or_list('+ count +');" placeholder="Product Name" id="product_name_'+ count +'" tabindex="'+tab1+'" > <input type="hidden" class="autocomplete_hidden_value product_id_'+ count +'" name="product_id[]" id="SchoolHiddenId"/>  <input type="hidden" class="sl" value="'+ count +'">  </td>  <td class="wt"> <input type="text" class="form-control text-right" name="slabs[]" placeholder="0.00" /> </td>  <td class="wt"> <input type="text" id="available_quantity_'+ count +'" class="form-control text-right stock_ctn_'+ count +'"/> </td><td class="text-right"><input type="text" name="product_quantity[]" tabindex="'+tab2+'" required  id="cartoon_'+ count +'" class="form-control text-right store_cal_' + count + '" onkeyup="calculate_store(' + count + ');" onchange="calculate_store(' + count + ');" placeholder="0.00" value="" min="0"/>  </td> <td><span class="form-control" style="background-color: #eee;"><?php  echo $currency." ";  ?> <input type="text" name="product_rate[]" onkeyup="calculate_store('+ count +');" onchange="calculate_store('+ count +');" id="product_rate_'+ count +'" class="product_rate_'+ count +'" placeholder="0.00" value="" min="0" tabindex="'+tab3+'"/></span></td> <td><span class="form-control" style="background-color: #eee;"><?php  echo $currency." ";  ?> <input class="total_price total_price_'+ count +'" type="text" name="total_price[]" id="total_price_'+ count +'" value="0.00" readonly="readonly" /> </span></td><td> <input type="hidden" id="total_discount_1" class="" /><input type="hidden" id="all_discount_1" class="total_discount" /><button style="text-align: right;" class="btn btn-danger red" type="button"  onclick="deleteRow(this)" tabindex="8"><i class="fa fa-close"></i></button></td>';
+        newdiv.innerHTML ='<td class="span3 supplier"><input type="text" name="product_name" required="" class="form-control product_name productSelection" onkeypress="product_pur_or_list('+ count +');" placeholder="Product Name" id="product_name_'+ count +'" tabindex="'+tab1+'" > <input type="hidden" class="autocomplete_hidden_value product_id_'+ count +'" name="product_id[]" id="SchoolHiddenId"/>  <input type="hidden" class="sl" value="'+ count +'">  </td>  <td class="wt"> <input type="text" class="form-control text-right" name="slabs[]" placeholder="0.00" /> </td>  <td class="wt"> <input type="text" id="available_quantity_'+ count +'" class="form-control text-right stock_ctn_'+ count +'"/> </td><td class="text-right"><input type="text" name="product_quantity[]" tabindex="'+tab2+'" required  id="cartoon_'+ count +'" class="form-control text-right store_cal_' + count + '" onkeyup="calculate_store(' + count + ');" onchange="calculate_store(' + count + ');" placeholder="0.00" value="" min="0"/>  </td> <td style="width:220px"><span class="form-control" style="background-color: #eee;"><?php  echo $currency." ";  ?> <input type="text" name="product_rate[]" onkeyup="calculate_store('+ count +');" onchange="calculate_store('+ count +');" id="product_rate_'+ count +'" class="product_rate_'+ count +'" placeholder="0.00" value="" min="0" tabindex="'+tab3+'"/></span></td> <td><span class="form-control" style="background-color: #eee;"><?php  echo $currency." ";  ?> <input class="total_price total_price_'+ count +'" type="text" name="total_price[]" id="total_price_'+ count +'" value="0.00" readonly="readonly" /> </span></td><td> <input type="hidden" id="total_discount_1" class="" /><input type="hidden" id="all_discount_1" class="total_discount" /><button style="text-align: right;" class="btn btn-danger red" type="button"  onclick="deleteRow(this)" tabindex="8"><i class="fa fa-close"></i></button></td>';
         document.getElementById(divName).appendChild(newdiv);
         document.getElementById(tabin).focus();
         document.getElementById("add_invoice_item").setAttribute("tabindex", tab5);
@@ -935,6 +949,28 @@ function addPurchaseOrderField2(divName){
         });
     }
 }
+$( document ).ready(function() {
+                        $('.hiden').css("display","none");
+
+  
+
+$('#Total').on('change textInput input', function (e) {
+    calculate();
+});
+
+$('#custocurrency_rate').on('change textInput input', function (e) {
+    calculate();
+});
+function calculate(){
+  
+  var first=$("#Total").val();
+var custo_amt=$('#custocurrency_rate').val();
+var value=parseInt(first*custo_amt);
+
+var custo_final = isNaN(parseInt(value)) ? 0 : parseInt(value)
+$('#vendor_gtotal').val(custo_final);  
+}
+});
 $('#supplier_id').on('change', function (e) {
   
   var data = {
@@ -957,16 +993,42 @@ $('#supplier_id').on('change', function (e) {
          // var parsedData = JSON.parse(result);
         //  alert(result[0].p_quantity);
         console.log(result[0]['currency_type']);
-      $("#vendor_gtotal").val(result[0]['currency_type']);
-    
-    
+     // $("#vendor_gtotal").val(result[0]['currency_type']);
+      $("#cus").val(result[0]['currency_type']);
+        $("label[for='custocurrency']").html(result[0]['currency_type']);
+       console.log('https://open.er-api.com/v6/latest/<?php echo $curn_info_default; ?>');
+       $.getJSON('https://open.er-api.com/v6/latest/<?php echo $curn_info_default; ?>', 
+function(data) {
+ var custo_currency=result[0]['currency_type'];
+    var x=data['rates'][custo_currency];
+ var Rate =parseFloat(x).toFixed(3);
+  console.log(Rate);
+  $('.hiden').show();
+  $("#custocurrency_rate").val(Rate);
+});
       }
   });
 
 
 });
-    </script>
 
+  
+  
+
+    </script>
+<?php 
+    if($_SESSION['purchase_orderid'])
+        { ?>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+
+           $('#myModal1').modal('show');
+           hide();
+        });
+    </script>
+    <?php } ?>
 
 
 

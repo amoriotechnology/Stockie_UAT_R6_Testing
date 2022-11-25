@@ -42,114 +42,461 @@
 	        }
 	    ?>
 
-	     <div class="container" id="content">
-        <div class="row">
-            <div class="col-lg-4">
-                <img src="<?php echo  base_url().'assets/'.$logo; ?>" width="40%"  alt="">
-            </div>
-            <div class="col-lg-4">
-              <h4 style="margin-top: 30px; text-align: center;"> <?php echo $company_info[0]['company_name']; ?></h4>
-            </div>
-            <div class="col-lg-4">
-                <h4 style="margin-top: 30px; text-align: right;"> <?php echo $company_info[0]['address']; ?></h4>
-              </div>
-        </div><br><br>
-          <div class="table">
-        <div class="row">
-            
-            <div class="col-lg-6" >
-          <h5>Date: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $purchase_date;  ?></span></h5> 
-          <h5>Invoice No: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $chalan_no;  ?></span></h5> 
-          <h5>Pre Carriage By: &nbsp;<span style="font-family: roboto; font-weight: bold;">{pre_carriage}</span></h5> 
-          <h5>Country of origin of goods: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $country_goods; ?></span></h5> 
-          <h5>Port of loading: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $loading; ?></span></h5> 
-          <h5>Terms of payment and delivery: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $terms_payment; ?></span></h5> 
-            </div>
-            <div class="col-lg-6">
-                <h5>Place of Receipt: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $receipt; ?></span></h5>
-                <h5>Country of final destination: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $receipt; ?></span></h5>
-                <h5>Port of discharge: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $country_destination; ?></span></h5>
-                <h5>Description of goods: &nbsp;<span style="font-family: roboto; font-weight: bold;"><?php echo $description_goods; ?></span></h5>
-            </div>
-        </div><br><br><br>
+<div class="container" id="content">
+<?php
+
+   $myArray = explode('(',$tax); 
+ $tax_amt=$myArray[0];
+ $tax_des=$myArray[1];
+ $tax_des=str_replace(")","%)", $tax_des);
+
+
+            //////////////Design one///////////// 
+            if($template==2)
+            {
+            ?>
+        <div class="brand-section">
+        <div class="row" >
+     
+     <div class="col-sm-2"><img src="<?php echo  base_url().'assets/'.$logo; ?>" style='width: 100%;'>
+        
+       </div>
+     <div class="col-sm-6 text-center" style="color:white;"><h3><?php echo $header; ?></h3></div>
+    <div class="col-sm-4" style="color:white;font-weight:bold;" id='company_info'>
+           
+          <b> Company name : </b><?php echo $cname; ?><br>
+          <b>   Address : </b><?php echo $address; ?><br>
+          <b>   Email : </b><?php echo $email; ?><br>
+          <b>   Contact : </b><?php echo $phone; ?><br>
+       </div>
+ </div>
+        </div>
+
+        <div class="body-section">
+            <div class="row">
+                <div class="col-6">
+                <table id="one" >
+    <tr><td  class="key">Date</td><td style="width:10px;">:</td><td calss="value"><?php echo $purchase_date;  ?></td></tr>
+    <tr><td  class="key">Invoice No</td><td style="width:10px;">:</td><td calss="value"><?php echo $chalan_no;  ?></td></tr>
+    <tr><td  class="key">Pre Carriage By</td><td style="width:10px;">:</td><td calss="value">{pre_carriage}</td></tr>
+    <tr><td  class="key">Country of origin of goods</td><td style="width:10px;">:</td><td calss="value"> <?php echo $country_goods;  ?></td></tr>
+    <tr><td  class="key">Port of loading</td><td style="width:10px;">:</td><td calss="value"><?php echo $loading;  ?></td></tr>
+    <tr><td  class="key">Terms of payment<br> and delivery</td><td style="width:10px;">:</td><td calss="value"><?php echo $terms_payment;  ?></td></tr>
+ 
+</table>
+
+                </div>
+                <div class="col-6">
+                <table id="two">
+<tr><td  class="key">Buyer/Customer</td><td style="width:10px;">:</td><td calss="value"><?php echo $purchase_date;  ?></td></tr>
+    <tr><td  class="key">Place of Receipt</td><td style="width:10px;">:</td><td calss="value"><?php echo $chalan_no;  ?></td></tr>
+    <tr><td  class="key">Country of final destination</td><td style="width:10px;">:</td><td calss="value">{pre_carriage}</td></tr>
+    <tr><td class="key">Port of discharge</td><td style="width:10px;">:</td><td calss="value"><?php echo $country_goods;  ?></td></tr>
+    <tr><td  class="key">Port of loading</td><td style="width:10px;">:</td><td calss="value"><?php echo $loading;  ?></td></tr>
+    <tr><td  class="key">Description of goods</td><td style="width:10px;">:</td><td calss="value"><?php echo $terms_payment;  ?></td></tr>
+</table>
     </div>
+            </div>
+        </div>
+
+        <div class="body-section">
+            <table class="table-bordered" style="outline:thick solid;">
+            <thead>
+      <tr>
+      <th data-column-id="id" class="ID"   style="width:100px;" >S.No</th>
+        <th data-column-id="Invoice" class="Invoice No" >Product Name</th>
+        <th data-column-id="Sale By" class="Sale By" >Quantity</th>
+        <th data-column-id="Customer Name" class="Customer Name"  >Rate</th>
+        <th data-column-id="date" class="Date"  >Total Amount</th>
+       
+      </tr>
+    </thead>
+                <tbody>
+                <?php
+                                    if ($order) {
+                               $count=1;
+                                   for($i=0;$i<sizeof($order);$i++){ ?>
+                    <tr>
+                        <td style="font-size: 16px;"><?php echo $count ;?></td>
+                        <td style="font-size: 16px;"><?php echo $order[$i]['product_name']; ?></td>
+                       <td style="font-size: 16px;"><?php echo $order[$i]['quantity']; ?></td>
+                       <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $order[$i]['rate']; ?></td>
+                       <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $order[$i]['total_amount'];  ?></td>
+                    </tr>
+                    <?php $count++;}}  ?>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td colspan="4" style="text-align:right;font-weight:bold;">Total:</td>
+                        <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $total;  ?></td>
+                    </tr>
+                    <tr>
+                       
+                    <td colspan="4" style="text-align:right;font-weight:bold;"><?php echo  "Tax (".$tax_des;  ?></td>
+                        <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $tax_amt;  ?></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="text-align:right;font-weight:bold;">Grand Total:</td>
+                        <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $gtotal;  ?></td>
+                    </tr>
+                    </tfoot>
+            </table>
+            <br>
+            <h4>Account Details/Additional Information : </h4><?php  echo  $ac_details ; ?><br><br>
+
+<h4>Remarks/Conditions : </h4><?php  echo  $remarks; ?><br><br>
+        
+            
+        </div>
+
+        
+    </div>
+    <?php 
+
+}
+elseif($template==1)
+{
+?>     
+   <div class="brand-section">
+   <div class="row">
+      
+      <div class="col-sm-2"><img src="<?php echo  base_url().'assets/'.$logo; ?>" style='width: 100%;'>
+         
+        </div>
+      <div class="col-sm-6 text-center" style="color:white;"><h3><?php echo $header; ?></h3></div>
+     <div class="col-sm-4" id='company_info' style="color:white;">
+            
+          <b>  Company name : </b><?php echo $cname; ?><br>
+          <b> Address : </b><?php echo $address; ?><br>
+          <b>  Email : </b><?php echo $email; ?><br>
+          <b>  Contact : </b><?php echo $phone; ?><br>
+        </div>
+  </div>
+        </div>
+
+        <div class="body-section">
+            <div class="row">
+                <div class="col-6">
+                <table id="one" >
+    <tr><td  class="key">Date</td><td style="width:10px;">:</td><td calss="value"><?php echo $purchase_date;  ?></td></tr>
+    <tr><td  class="key">Invoice No</td><td style="width:10px;">:</td><td calss="value"><?php echo $chalan_no;  ?></td></tr>
+    <tr><td  class="key">Pre Carriage By</td><td style="width:10px;">:</td><td calss="value">{pre_carriage}</td></tr>
+    <tr><td  class="key">Country of origin of goods</td><td style="width:10px;">:</td><td calss="value"> <?php echo $country_goods;  ?></td></tr>
+    <tr><td  class="key">Port of loading</td><td style="width:10px;">:</td><td calss="value"><?php echo $loading;  ?></td></tr>
+    <tr><td  class="key">Terms of payment<br> and delivery</td><td style="width:10px;">:</td><td calss="value"><?php echo $terms_payment;  ?></td></tr>
+ 
+</table>
+
+                </div>
+                <div class="col-6">
+                <table id="two">
+<tr><td  class="key">Buyer/Customer</td><td style="width:10px;">:</td><td calss="value"><?php echo $purchase_date;  ?></td></tr>
+    <tr><td  class="key">Place of Receipt</td><td style="width:10px;">:</td><td calss="value"><?php echo $chalan_no;  ?></td></tr>
+    <tr><td  class="key">Country of final destination</td><td style="width:10px;">:</td><td calss="value">{pre_carriage}</td></tr>
+    <tr><td class="key">Port of discharge</td><td style="width:10px;">:</td><td calss="value"><?php echo $country_goods;  ?></td></tr>
+    <tr><td  class="key">Port of loading</td><td style="width:10px;">:</td><td calss="value"><?php echo $loading;  ?></td></tr>
+    <tr><td  class="key">Description of goods</td><td style="width:10px;">:</td><td calss="value"><?php echo $terms_payment;  ?></td></tr>
+</table>
+    </div>
+            </div>
+        </div>
+
+        <div class="body-section">
+            <table class="table-bordered" style="outline:thick solid;">
+            <thead>
+      <tr>
+      <th data-column-id="id" class="ID"   style="width:100px;" >S.No</th>
+        <th data-column-id="Invoice" class="Invoice No" >Product Name</th>
+        <th data-column-id="Sale By" class="Sale By" >Quantity</th>
+        <th data-column-id="Customer Name" class="Customer Name"  >Rate</th>
+        <th data-column-id="date" class="Date"  >Total Amount</th>
+       
+      </tr>
+    </thead>
+                <tbody>
+                <?php
+                                    if ($order) {
+                               $count=1;
+                                   for($i=0;$i<sizeof($order);$i++){ ?>
+                    <tr>
+                        <td style="font-size: 16px;"><?php echo $count ;?></td>
+                        <td style="font-size: 16px;"><?php echo $order[$i]['product_name']; ?></td>
+                       <td style="font-size: 16px;"><?php echo $order[$i]['quantity']; ?></td>
+                       <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $order[$i]['rate']; ?></td>
+                       <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $order[$i]['total_amount'];  ?></td>
+                    </tr>
+                    <?php $count++;}}  ?>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td colspan="4" style="text-align:right;font-weight:bold;">Total:</td>
+                        <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $total;  ?></td>
+                    </tr>
+                    <tr>
+                       
+                        <td colspan="4" style="text-align:right;font-weight:bold;"><?php echo  "Tax (".$tax_des;  ?></td>
+                        <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $tax_amt;  ?></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="text-align:right;font-weight:bold;">Grand Total:</td>
+                        <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $gtotal;  ?></td>
+                    </tr>
+                    </tfoot>
+            </table>
+            <br>
+            <h4>Account Details/Additional Information : </h4><?php  echo  $ac_details ; ?><br><br>
+
+<h4>Remarks/Conditions : </h4><?php  echo  $remarks; ?><br><br>
+        
+            
+        </div>
+
+        
+    </div>
+    <?php 
+
+}
+elseif($template==3)
+{
+?>
+<div class="brand-section">
 <div class="row">
-    <div class="col-lg-12">
-        <table style="width:100%">
-<!-- <tr>
-    <td colspan="5" style="text-align: right;">Tax:</td>
-    <td></td>
-</tr> -->
-</table><br>
-<table style="width:100%">
-            <tr>
-                <th>Product Name</th>
-                <th>In stock</th>
-                <th>Quantity / Sq ft.</th>
-                <th>Amount</th>
-                <th>Total</th>
-                
-            </tr>
-            <tr>
-               <td style="font-size: 16px;"><?php echo $product; ?></td>
-               <td style="font-size: 16px;"><?php echo $stock; ?></td>
-               <td style="font-size: 16px;"><?php echo $quantity; ?></td>
-               <td style="font-size: 16px;"><?php echo $totalamount; ?></td>
-               <td style="font-size: 16px;"><?php echo $total;  ?></td>
-              
-               
-            </tr>
+       
+       <div class="col-sm-2"><img src="<?php echo  base_url().'assets/'.$logo; ?>" style='width: 100%;'>
+          
+         </div>
+       <div class="col-sm-6 text-center" style="color:white;"><h3><?php echo $header; ?></h3></div>
+    
+   </div>
+        </div>
 
-            <tr>
-           
-              <td colspan="4" style="text-align: right;">Total:</td>
-              <td style="font-size: 16px;"><?php echo $total;  ?></td>
+        <div class="body-section">
+        <div class="row">
+        <div class="col-sm-6 "></div>
+            <div class="col-sm-6 " style="width:50%;">
+             <table>
+       
+        <tr>  <td style="100px;font-weight:bold;"> Company name </td><td style="width:10px;">:</td><td> <?php echo $cname; ?></td></tr>
+        <tr>   <td style="100px;font-weight:bold;"> Address </td><td style="width:10px;">:</td><td> <?php echo $address; ?></td></tr>
+        <tr>   <td style="100px;font-weight:bold;"> Email </td><td style="width:10px;">:</td><td> <?php echo $email; ?></td></tr>
+        <tr>   <td style="100px;font-weight:bold;"> Contact </td><td style="width:10px;">:</td><td> <?php echo $phone; ?></td></tr>
+</tr>        
+             
+</table>
+            </div></div>
+              <div class="row"> <div class="col-sm-12 ">&nbsp;</div></div>
+            <div class="row">
             
-               
-                
-            </tr>
+                <div class="col-6">
+                <table id="one" >
+    <tr><td  class="key">Date</td><td style="width:10px;">:</td><td calss="value"><?php echo $purchase_date;  ?></td></tr>
+    <tr><td  class="key">Invoice No</td><td style="width:10px;">:</td><td calss="value"><?php echo $chalan_no;  ?></td></tr>
+    <tr><td  class="key">Pre Carriage By</td><td style="width:10px;">:</td><td calss="value">{pre_carriage}</td></tr>
+    <tr><td  class="key">Country of origin of goods</td><td style="width:10px;">:</td><td calss="value"> <?php echo $country_goods;  ?></td></tr>
+    <tr><td  class="key">Port of loading</td><td style="width:10px;">:</td><td calss="value"><?php echo $loading;  ?></td></tr>
+    <tr><td  class="key">Terms of payment<br> and delivery</td><td style="width:10px;">:</td><td calss="value"><?php echo $terms_payment;  ?></td></tr>
+ 
+</table>
 
-            <tr>
-           
-                <td colspan="4" style="text-align: right;">Grand Total:</td>
-                <td></td>
-                
-                 
-                  
-              </tr>
-        </table>
+                </div>
+                <div class="col-6">
+                <table id="two">
+<tr><td  class="key">Buyer/Customer</td><td style="width:10px;">:</td><td calss="value"><?php echo $purchase_date;  ?></td></tr>
+    <tr><td  class="key">Place of Receipt</td><td style="width:10px;">:</td><td calss="value"><?php echo $chalan_no;  ?></td></tr>
+    <tr><td  class="key">Country of final destination</td><td style="width:10px;">:</td><td calss="value">{pre_carriage}</td></tr>
+    <tr><td class="key">Port of discharge</td><td style="width:10px;">:</td><td calss="value"><?php echo $country_goods;  ?></td></tr>
+    <tr><td  class="key">Port of loading</td><td style="width:10px;">:</td><td calss="value"><?php echo $loading;  ?></td></tr>
+    <tr><td  class="key">Description of goods</td><td style="width:10px;">:</td><td calss="value"><?php echo $terms_payment;  ?></td></tr>
+</table>
+    </div>
+            </div>
+        </div>
+
+        <div class="body-section">
+            <table class="table-bordered" style="outline:thick solid;">
+            <thead>
+      <tr>
+      <th data-column-id="id" class="ID"   style="width:100px;" >S.No</th>
+        <th data-column-id="Invoice" class="Invoice No" >Product Name</th>
+        <th data-column-id="Sale By" class="Sale By" >Quantity</th>
+        <th data-column-id="Customer Name" class="Customer Name"  >Rate</th>
+        <th data-column-id="date" class="Date"  >Total Amount</th>
+       
+      </tr>
+    </thead>
+                <tbody>
+                <?php
+                                    if ($order) {
+                               $count=1;
+                                   for($i=0;$i<sizeof($order);$i++){ ?>
+                    <tr>
+                        <td style="font-size: 16px;"><?php echo $count ;?></td>
+                        <td style="font-size: 16px;"><?php echo $order[$i]['product_name']; ?></td>
+                       <td style="font-size: 16px;"><?php echo $order[$i]['quantity']; ?></td>
+                       <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $order[$i]['rate']; ?></td>
+                       <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $order[$i]['total_amount'];  ?></td>
+                    </tr>
+                    <?php $count++;}}  ?>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td colspan="4" style="text-align:right;font-weight:bold;">Total:</td>
+                        <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $total;  ?></td>
+                    </tr>
+                    <tr>
+                       
+                        <td colspan="4" style="text-align:right;font-weight:bold;"><?php echo  "Tax (".$tax_des;  ?></td>
+                        <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $tax_amt;  ?></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="text-align:right;font-weight:bold;">Grand Total:</td>
+                        <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $gtotal;  ?></td>
+                    </tr>
+                    </tfoot>
+            </table>
+            <br>
+            <h4>Account Details/Additional Information : </h4><?php  echo  $ac_details ; ?><br>
+
+<h4>Remarks/Conditions : </h4><?php  echo  $remarks; ?>
+        
+            
+        </div>
+
         
     </div>
-</div>
-<h4>Account Details/Additional Information</h4><br><br>
-
-<h4>Remarks/Conditions</h4><br><br><br>
-        
+    <?php  } ?>
     </div>
-
 	</section>
-</div>
+
 <!-- Purchase ledger End  -->
 
 
-<style>
-    .container {
-  width: 100%;
-  /*background-color: rgb(241, 248, 250);*/
-  margin-top: 50px;
- 
+    <style>
 
-}
+        .key{
+            text-align:left;
+font-weight:bold;
 
-    td,th{
-        border:1px solid black;
-        text-align: center;
-        padding: 3px;
-    }
+        }
+        .value{
+            text-align:left;
+        }
+        #one,#two{
+        float:left;
+    width:100%;
+        }
+        body{
+            background-color: #fcf8f8; 
+            margin: 0;
+            padding: 0;
+        }
+        h1,h2,h3,h4,h5,h6{
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            margin: 0;
+            padding: 0;
+        }
+        .heading_name{
+            font-weight: bold;
+        }
+        .container{
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 50px;
+        }
+        .brand-section{
+           background-color: #5961b3;
+           padding: 10px 40px;
+        }
+        .logo{
+            width: 50%;
+        }
+
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        .col-6{
+            width: 50%;
+            flex: 0 0 auto;
+           
+        }
+        .text-white{
+            color: #fff;
+        }
+        .company-details{
+            float: right;
+            text-align: right;
+        }
     
+        .body-section{
+            padding: 16px;
+            border: 1px solid gray;
+            
+        }
+        .heading{
+            font-size: 20px;
+            margin-bottom: 08px;
+        }
+        .sub-heading{
+            color: #262626;
+            margin-bottom: 05px;
+        }
+        table{
+           
+            background-color: #fff;
+            width: 100%;
+            border-collapse: collapse;
+           
+        }
     
-</style>
+        table thead tr{
+            border: 1px solid #111;
+            background-color: #5961b3;
+           
+        }
+        .table-bordered td{
+            text-align:center;
+        }
+        table td {
+            vertical-align: middle !important;
+          
+            word-wrap: break-word;
+        }
+        th{
+            text-align:center;
+            color:white;
+        }
+        table th, table td {
+            padding-top: 08px;
+            padding-bottom: 08px;
+        }
+        .table-bordered{
+            box-shadow: 0px 0px 5px 0.5px gray !important;
+        }
+        .table-bordered td, .table-bordered th {
+            border: 1px solid #dee2e6 !important;
+        }
+        .text-right{
+            text-align: right;
+        }
+        .w-20{
+            width: 20%;
+        }
+        .float-right{
+            float: right;
+        }
+        @media only screen and (max-width: 600px) {
+            
+        }
 
+       
+    </style>
+    
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
@@ -162,22 +509,23 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
 <script>
+  
 $(document).ready(function () {
  
- var pdf = new jsPDF('p','pt','a4');
+ var pdf = new jsPDF('p','pt','letter');
     const invoice = document.getElementById("content");
              console.log(invoice);
              console.log(window);
              var pageWidth = 8.5;
              var margin=0.5;
              var opt = {
-   lineHeight : 1.2,
+ 
    margin : 0.2,
-   maxLineWidth : pageWidth - margin *1,
+ 
                  filename: 'invoice'+'.pdf',
                  allowTaint: true,
-                 html2canvas: { scale: 3 },
-                 jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+                 html2canvas: { scale: 5 },
+                 jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
              };
               html2pdf().from(invoice).set(opt).toPdf().get('pdf').then(function (pdf) {
   var totalPages = pdf.internal.getNumberOfPages();
@@ -186,9 +534,13 @@ $(document).ready(function () {
     pdf.setFontSize(10);
     pdf.setTextColor(150);
   }
+
+  }).save();
   var timer = setTimeout(function() {
             window.location='<?php  echo base_url();   ?>'+'Cinvoice/manage_profarma_invoice'
-        }, 10);
-  }).save();
+     }, 1000);
    });
+
+ 
+ 
    </script>

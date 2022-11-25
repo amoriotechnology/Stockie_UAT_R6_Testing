@@ -18,7 +18,7 @@
             <h1>Packing List</h1>
             <small>Generate New Packing List Invoice</small>
             <ol class="breadcrumb">
-                <li><a href="#"><i class="pe-7s-home"></i> <?php echo display('home') ?></a></li>
+                <li><a href="#"><i class="pe-7s-home"></i> <?php echo display('home') ?><?php echo $_SESSION['expense_packing_id']; ?></a></li>
                 <li><a href="#">Packing List</a></li>
                 <li class="active">Packing List Invoice</li>
             </ol>
@@ -321,12 +321,7 @@
 
                     </div>
 
-                        <div class="form-group row">
-                            <div class="col-sm-6">
-                                <input type="submit" id="add_purchase" class="btn btn-primary btn-large" name="add-packing-list" value="<?php echo display('submit') ?>" />
-                                <input type="submit" value="<?php echo display('submit_and_add_another') ?>" name="add-packing-list-another" class="btn btn-large btn-success" id="add-packing-list-another" >
-                            </div>
-                        </div>
+                        
 
 
                            <div class="row">
@@ -352,7 +347,22 @@
                             </div>
                         </div>
 
-
+<div class="form-group row">
+                            <div class="col-sm-6">
+                                <input type="submit" id="add_purchase" class="btn btn-primary btn-large" name="add-packing-list" value="Save" />
+                               <?php 
+                               if(isset($_SESSION['expense_packing_id']))
+                               {
+                                ?>
+                                <a style="color:#fff" href="<?php echo base_url('Cpurchase/manage_packing_list'); ?>" class="btn btn-primary">
+                                    Submit
+                                </a>
+                                <a style="color:#fff" href="<?php echo base_url('Cpurchase/packing_list_details_data'); ?>" class="btn btn-primary">
+                                    Download
+                                </a>
+                            <?php }  ?>
+                            </div>
+                        </div>
                     <?php echo form_close()?>
                     </div>
                 </div>
@@ -360,6 +370,28 @@
             </div>
         </div>
     </section>
+    <div class="modal fade" id="myModal1" role="dialog" >
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="    margin-top: 190px;">
+        <div class="modal-header" style="">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Pruchase Packing List</h4>
+        </div>
+        <div class="modal-body">
+          
+          <h4>Packing    Invoice  Created Succefully</h4>
+     
+        </div>
+        <div class="modal-footer">
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
 </div>
 <!-- Purchase Report End -->
 
@@ -367,6 +399,20 @@
 
 
 
+<?php 
+
+    if($_SESSION['expense_packing_id'])
+        { ?>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+
+           $('#myModal1').modal('show');
+           hide();
+        });
+    </script>
+    <?php } ?>
 
 <script type="text/javascript">
 

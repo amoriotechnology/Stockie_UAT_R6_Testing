@@ -8,7 +8,7 @@
             <h1><?php echo display('manage_product') ?></h1>
             <small><?php echo display('manage_your_product') ?></small>
             <ol class="breadcrumb">
-                <li><a href="#"><i class="pe-7s-home"></i> <?php echo display('home') ?></a></li>
+                <li><a href="#"><i class="pe-7s-home"></i> <?php echo display('home') ?>55</a></li>
                 <li><a href="#"><?php echo display('product') ?></a></li>
                 <li class="active"><?php echo display('manage_product') ?></li>
             </ol>
@@ -78,29 +78,54 @@
 
                         </div>
                     </div>
-                    <div class="panel-body">
-                        <div class="table-responsive">
-                            <table class="table table-striped table-bordered" cellspacing="0" width="100%" id="productList"> 
-                                <thead>
-                                    <tr>
-                                        <th><?php echo display('sl') ?></th>
-                                        <th><?php echo display('product_name') ?></th>
-                                        <th><?php echo display('product_model') ?></th>
-                                        <th><?php echo display('supplier_name') ?></th>
-                                        <th><?php echo display('price') ?></th>
-                                        <th><?php echo display('supplier_price') ?></th>
-                                        <th><?php echo display('image') ?>s</th>
-                                        <th><?php echo display('action') ?> 
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                  
-                                </tbody>
-                            </table>
+                    
+                    <table class="table table-striped table-bordered">
+                        <tr>
+                            <th>Sno</th>
+                            <th>Product Name</th>
+                            <th>Inventry</th>
+                            <th>Supplier name</th>
+                            <th>Product Model</th>
+                            <th>Supplier price</th>
+                             <th>Price</th>
+                         
                           
-                        </div>
-                    </div>
+                        </tr>
+                        <?php 
+                        $i=0;
+                        foreach($products as $product)
+                            { ?>
+                        <tr>
+                            <td><?php echo $product['id']; ?></td>
+                            <td><a href="<?php echo base_url().'Cproduct/'; ?>product_view/<?php echo $product['id']; ?>"><?php echo $product['product_name']; ?></a></td>
+                            <td>
+                                <div class="row" style="border: 1px solid #d3d3d366;
+    margin: -1px;"><div class="col-sm-6">In Stock</div><div class="col-sm-6"><?php echo $product['p_quantity']; ?></div></div>
+                                <div class="row" style="border: 1px solid #d3d3d366;
+    margin: -1px;"><div class="col-sm-6">Avaliablity</div><div class="col-sm-6"><?php  if($product['product_id']==$sale_count[$i]['product_id']){ $avail=$product['p_quantity']-$sale_count[$i]['value'];
+     }
+    if($product['product_id']==$expense_count[$i]['product_id']){ 
+     
+        $avail=$avail+$expense_count[$i]['value']; 
+        }
+
+if(isset($avail))
+{
+    echo $avail;
+}
+
+     ?></div></div>
+                            </td>
+                            <td><?php echo $product['supplier_name']; ?></td>
+                           
+                            <td><?php echo $product['product_model']; ?></td>
+                            <td><?php echo $product['supplier_price']; ?></td>
+                            <td><?php echo $product['price']; ?></td>
+                            
+                           
+                        </tr>
+                    <?php $i++; } ?>
+                    </table>
                 </div>
                 <input type="hidden" id="total_product" value="<?php echo $total_product;?>" name="">
 

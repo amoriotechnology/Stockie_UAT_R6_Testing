@@ -12,10 +12,11 @@ class Products extends CI_Model {
 public function get_invoice_product($purchase_id) {
     $sql='SELECT b.* from product_purchase_details a join product_information b on b.product_id=a.product_id where a.purchase_id='.$purchase_id;
         $query = $this->db->query($sql);
+       
         if ($query->num_rows() > 0) {
             return $query->result_array();
         }
-        return false;
+      
     }
     //Count Product
     public function count_product() {
@@ -60,13 +61,84 @@ public function get_invoice_product($purchase_id) {
 
 
     public function get_products() {
-        $sql='select * from product_information';
+        $sql='select a.*,b.category_name  from product_information a 
+        join
+        product_category b 
+        on b.category_id=a.category_id
+        
+         limit 10
+
+        ';
         $query = $this->db->query($sql);
         if ($query->num_rows() > 0) {
             return $query->result_array();
         }
         return false;
     }
+     public function get_all_products() {
+        $sql='SELECT b.*,a.products_model,a.supplier_price,c.supplier_name,c.country FROM `supplier_product` a join product_information b on a.product_id=b.product_id JOIN supplier_information c on c.supplier_id=a.product_id
+';
+        $query = $this->db->query($sql);
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        }
+        return false;
+    }
+
+
+ public function sales_product_all() {
+         $sql='SELECT product_id,sum(quantity) as value FROM `invoice_details` GROUP by product_id HAVING product_id <>""';
+        $query = $this->db->query($sql);
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        }
+
+        return false;
+    }
+
+        public function expense_product_all() {
+         $sql='SELECT product_id,sum(quantity) as value FROM `product_purchase_details` GROUP by product_id HAVING product_id <>""';
+        $query = $this->db->query($sql);
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        }
+            return false;
+    }
+
+
+    public function sales_products($id) {
+         $sql='SELECT * FROM `invoice_details` where product_id='.$id;
+        $query = $this->db->query($sql);
+        if ($query->num_rows() > 0) {
+            return $query->num_rows();
+        }
+        else
+        {
+            return 0;
+        }
+        return false;
+    }
+    
+
+ public function expense_products($id) {
+         $sql='SELECT * FROM `product_purchase_details` where product_id='.$id;
+        $query = $this->db->query($sql);
+        if ($query->num_rows() > 0) {
+            return $query->num_rows();
+        }
+        else
+        {
+            return 0;
+        }
+        return false;
+    }
+
+
+
+
+
+
+
 
     public function getProductList($postData=null){
 
@@ -371,6 +443,20 @@ public function get_invoice_product($purchase_id) {
         $this->db->where('created_by',$this->session->userdata('user_id'));
         $query = $this->db->get();
         return $this->db->affected_rows();
+    }
+
+    public function product_details($id)
+    {
+        $sql='SELECT b.*,a.products_model,d.iso3,a.supplier_price,c.supplier_name,c.country,c.address,c.email_address FROM `supplier_product` a join product_information b on a.product_id=b.product_id JOIN supplier_information c on c.supplier_id=a.product_id
+            join country d 
+            on d.name=c.country
+        where b.id='.$id;
+       $query=$this->db->query($sql);
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        }
+        return false;
+
     }
 
     //Product Details

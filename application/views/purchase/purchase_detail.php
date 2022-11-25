@@ -1,36 +1,4 @@
 
-<style>
-    .container {
-  width: 100%;
-/*  background-color: rgb(241, 248, 250);*/
-  margin-top: 50px;
- 
-
-}
-
-    td,th{
-        border:1px solid black;
-        text-align: center;
-        padding: 3px;
-    }
-    
-</style>
-<style>
-        #ocean{
-            margin-left: 300px;
-        }
-   #company_info,form,table,p{
-   font-size:14px;
-   }
-   th, td {
-  padding: 10px;
-}
-h3,#company_info{
-   font-weight:bold;
-}
-tbody tr{text-align:center}
-.right{text-align:right; font-weight:bold;}
-   </style>
 
 <div class="content-wrapper">
     <section class="content-header" >
@@ -47,261 +15,393 @@ tbody tr{text-align:center}
             </ol>
         </div>
     </section>
-<?php if($invoice_setting[0]['template']==1)
-{
- ?>    <!-- Invoice information -->
-    <div id="content">
-        <div class="row">
-        
-              <div class="col-sm-3" id="company_info">
-                  
-                  Company name :&nbsp;<?php echo $company_info[0]['company_name']; ?><br>
-                  Address :&nbsp;<?php echo $company_info[0]['address']; ?><br>
-                  Email :&nbsp;<?php echo $company_info[0]['email']; ?><br>
-                  Contact :&nbsp;<?php echo $company_info[0]['mobile']; ?><br>
-              </div>
-            <div class="col-sm-6 text-center"><h3><?php echo $invoice_setting[0]['header']; ?></h3></div>
-            <div class="col-sm-3"><img src="<?php echo base_url(); ?>assets/<?php echo $invoice_setting[0]['logo']; ?>" style="width: 40%;"></div>
-        </div>
-        <div class="row">
-    <div class="col-lg-12">
-        <table style="width:100%">
-            <tr>
-                <th S.No</th>
-                <th>Product</th>
-                <th>Description</th>
-                <th>Quantity </th>
-                <th>Rate</th>
-                <th>Total</th>
-               
-                
-            </tr>
-            <?php
-$i=1;
-foreach($products as $product)
-{ 
+  <!-- Invoice information -->
 
-    ?>
-            <tr>
-               <td><?php echo $i; ?></td>
-                
-               <td><?php echo $product['product_name']; ?></td>
-               <td><?php echo $product['product_details']; ?></td> 
-               <td><?php echo $product['p_quantity']; ?></td> 
-               <td><?php echo $product['price']; ?></td> 
-               <td><?php echo $totals[$i]=$product['price']*$product['price']; ?></td> 
-              
-           
-            
-               
-            </tr>
-        <?php $i++;} ?>
-            <tr>
-             
-             
-                <td class="right" colspan="5">Overall Total:</td>
-                <td><?php echo array_sum($totals); ?></td>
-            </tr>
-        </table><br><br>
-        
-    </div>
-</div>
-<h4>Remarks / Details :&nbsp;</h4><?php  echo $remarks; ?>
-<br><br><br>
-<h4>Message on Invoice :&nbsp;</h4><?php   echo $message_invoice; ?>
-
-        
-    </div>
-</div>
-<?php } ?>
-<?php if($invoice_setting[0]['template']==2)
-{
- ?>    <!-- Invoice information -->
-    <div id="content">
-        <div class="row">
-        <div class="col-sm-3"><img src="<?php echo base_url(); ?>assets/<?php echo $invoice_setting[0]['logo']; ?>" style="width: 40%;"></div>
-
-              
-            <div class="col-sm-6 text-center"><h3><?php echo $invoice_setting[0]['header']; ?></h3></div>
-            
-            <div class="col-sm-3" id="company_info">
-                  
-                  Company name :&nbsp;<?php echo $company_info[0]['company_name']; ?><br>
-                  Address :&nbsp;<?php echo $company_info[0]['address']; ?><br>
-                  Email :&nbsp;<?php echo $company_info[0]['email']; ?><br>
-                  Contact :&nbsp;<?php echo $company_info[0]['mobile']; ?><br>
-              </div>
-        </div>
-  <br>
-        <br>
-        <div class="container">
-        <div class="row">
-            
-            <div class="col-lg-6">
-<form action="">
-    <label for="text">Vendor :&nbsp;</label><?php echo $supplier_name;   ?><br><br>
-    <label for="text">Invoice No :&nbsp;</label><?php echo $chalan_no; ?>
-   
-</form>
-            </div>
-        
-
-            
-            <div class="col-lg-6">
-                <form action="">
-                    <label for="text">Expenses / Bill date :&nbsp;</label><?php echo $final_date; ?><br><br>
-                    <label for="text">Payment due date :&nbsp;</label> <?php echo $payment_due_date; ?>
-                </form>
-                            </div>
-        </div><br><br>
-<div class="row">
-    <div class="col-lg-12">
-        <table style="width:100%">
-            <tr>
-                <th>S.No</th>
-                <th>Product</th>
-                <th>Description</th>
-                <th>Quantity </th>
-                <th>Rate</th>
-                <th>Total</th>
-             
-                
-            </tr>
-            <?php
-$i=1;
-foreach($products as $product)
-{ 
-
-    ?>
-            <tr>
-               <td><?php echo $i; ?></td>
-                
-               <td><?php echo $product['product_name']; ?></td>
-               <td><?php echo $product['product_details']; ?></td> 
-               <td><?php echo $product['p_quantity']; ?></td> 
-               <td><?php echo $product['price']; ?></td> 
-               <td><?php echo $totals[$i]=$product['price']*$product['price']; ?></td> 
-              
-           
-            
-               
-            </tr>
-        <?php $i++;} ?>
-            <tr>
-             
-             
-                <td class="right" colspan="5">Overall Total :</td>
-                <td><?php echo array_sum($totals); ?></td>
-            </tr>
-        </table><br><br>
-        
-    </div>
-</div>
-<h4>Remarks / Details :&nbsp;</h4><?php  echo $remarks; ?>
-<br><br><br>
-<h4>Message on Invoice :&nbsp;</h4><?php   echo $message_invoice; ?>
-
-        
-    </div>
-</div>
-<?php } ?>
-<?php if($invoice_setting[0]['template']==3)
-{
- ?>    <!-- Invoice information -->
-   <div id="content">
+     <div class="container" id="content">
+        <?php
+     if($template==2)
+            {
+            ?>
+        <div class="brand-section">
         <div class="row" >
+     
+     <div class="col-sm-2"><img src="<?php echo  base_url().'assets/'.$logo; ?>" style='width: 100%;'>
         
-        <div class="col-sm-3"><img src="<?php echo base_url(); ?>assets/<?php echo $invoice_setting[0]['logo']; ?>" style="width: 40%;"></div>
-              
-            <div class="col-sm-6 text-center"><h3></h3><?php echo $invoice_setting[0]['header']; ?></h3></div>
-            
-        </div>
-<br>
-<br>
-<div class="container">
-        <div class="row">
-            
-            <div class="col-sm-4">
-<form action="">
-<label for="text">Vendor :&nbsp;</label><?php echo $supplier_name;   ?><br><br>
-    <label for="text">Invoice No :&nbsp;</label><?php echo $chalan_no; ?>
-   
-</form>
-            </div>
-        
-
-            
-            <div class="col-sm-4">
-                <form action="">
-                <label for="text">Expenses / Bill date :&nbsp;</label><?php echo $final_date; ?><br><br>
-                    <label for="text">Payment due date :&nbsp;</label> <?php echo $payment_due_date; ?>
-                </form>
-                            </div>
-                            <div class="col-sm-4" id="company_info">
-                  Company name :&nbsp;<?php echo $company_info[0]['company_name']; ?><br>
-                  Address :&nbsp;<?php echo $company_info[0]['address']; ?><br>
-                  Email :&nbsp;<?php echo $company_info[0]['email']; ?><br>
-                  Contact :&nbsp;<?php echo $company_info[0]['mobile']; ?><br>
-              </div>
-
-
-        </div>
-        
-        
-        
-        
-        <br><br>
-<div class="row">
-    <div class="col-lg-12">
-        <table style="width:100%">
-            <tr>
-            <th>S.No</th>
-                <th>Product</th>
-                <th>Description</th>
-                <th>Quantity </th>
-                <th>Rate</th>
-                <th>Total</th>
-             
-                
-            </tr>
-            <?php
-$i=1;
-foreach($products as $product)
-{ 
-
-    ?>
-            <tr>
-               <td><?php echo $i; ?></td>
-                
-               <td><?php echo $product['product_name']; ?></td>
-               <td><?php echo $product['product_details']; ?></td> 
-               <td><?php echo $product['p_quantity']; ?></td> 
-               <td><?php echo $product['price']; ?></td> 
-               <td><?php echo $totals[$i]=$product['price']*$product['price']; ?></td> 
-              
+       </div>
+     <div class="col-sm-6 text-center" style="color:white;"><h3><?php echo $header; ?></h3></div>
+    <div class="col-sm-4" style="color:white;font-weight:bold;" id='company_info'>
            
-            
-               
-            </tr>
-        <?php $i++;} ?>
-        <tr>
-             
-             
-             <td class="right" colspan="5">Overall Total :</td>
-             <td><?php echo array_sum($totals); ?></td>
-         </tr>
-     </table><br><br>
-     
+          <b> Company name : </b><?php echo $company_info[0]['company_name']; ?><br>
+          <b>   Address : </b><?php echo $company_info[0]['address']; ?><br>
+          <b>   Email : </b><?php echo $company_info[0]['email']; ?><br>
+          <b>   Contact : </b><?php echo $company_info[0]['mobile']; ?><br>
+       </div>
  </div>
-</div>
-<h4>Remarks / Details :&nbsp;</h4><?php  echo $remarks; ?>
-<br><br><br>
-<h4>Message on Invoice :&nbsp;</h4><?php   echo $message_invoice; ?>
+        </div>
+        <div class="brand-section">
+            <div class="row">
+                <div class="col-6">
+                   <a> <img src="<?php echo base_url(); ?>assets/<?php echo $invoice_setting[0]['logo']; ?>" style="width: 20%;"><h4 class="text-white" style="margin-top: 10px;"><?php echo $company_info[0]['company_name']; ?></h4></a>
+                </div>
+                <div class="col-6" style="color:#F6F6F6;">
+                <b>  Company name : </b><?php echo $company_info[0]['company_name']; ?><br>
+          <b> Address : </b><?php echo $company_info[0]['address']; ?><br>
+          <b>  Email : </b><?php echo $company_info[0]['email']; ?><br>
+          <b>  Contact : </b><?php echo $company_info[0]['mobile']; ?><br>
+                </div>
+            </div>
+        </div>
+        <div class="body-section">
+            <div class="row">
+                <div class="col-6">
+                <table id="one" style="border:none;">
+    <tr><td  class="key">Vendor</td><td style="width:10px;">:</td><td calss="value"><?php echo $supplier_name;  ?></td></tr>
+    <tr><td  class="key">Invoice No</td><td style="width:10px;">:</td><td calss="value"><?php echo $chalan_no;  ?></td></tr>
+   
+</table>
 
-     
- </div> </div>
+                </div>
+                <div class="col-6">
+                <table id="two">
+<tr><td  class="key">Expenses /Bill Date</td><td style="width:10px;">:</td><td calss="value"><?php echo $final_date;  ?></td></tr>
+    <tr><td  class="key">Payment Due Date</td><td style="width:10px;">:</td><td calss="value"><?php echo $payment_due_date;  ?></td></tr>
+</table> </div>
+            </div>
+        </div>
+        <div class="body-section">
+            <table class="table-bordered">
+                <thead>
+                    <tr>
+                    <th class="text-center text-white">S.No</th>
+                        <th class="text-center text-white">Product</th>
+                        <th class="text-center text-white">Description</th>
+                        <th class="text-center text-white">Quantity</th>
+                        <th class="text-center text-white">Rate</th>
+                        <th class="text-center text-white">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <?php
+                                    if ($purchase_all_data) {
+                               $count=1;
+                                   for($i=0;$i<sizeof($purchase_all_data);$i++){ ?>
+                    <tr>
+                    <td style="font-size: 16px;"><?php echo $count ;?></td>
+                       <td style="font-size: 16px;"><?php echo $purchase_all_data[$i]['product_name']; ?></td>
+                       <td style="font-size: 16px;"><?php echo $purchase_all_data[$i]['description']; ?></td>
+                       <td style="font-size: 16px;"><?php echo $purchase_all_data[$i]['quantity']; ?></td>
+                       <td style="font-size: 16px;"><?php echo $purchase_all_data[$i]['rate']; ?></td>
+                       <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $purchase_all_data[$i]['total_amount']; ?></td>
+                    </tr>
+                    <?php $count++;}}  ?>
+                    <tr>
+                        <td colspan="5" class="text-right">Overall Total:</td>
+                        <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $purchase_all_data[0]['grand_total_amount']; ?></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+<h4>Remarks :</h4><?php echo $purchase_all_data[0]['remarks']; ?><br><br><br>
+        </div>
+
+
+        <?php 
+
+}
+elseif($template==1)
+{
+?>     
+   <div class="brand-section">
+   <div class="row">
+      
+      <div class="col-sm-2"><img src="<?php echo  base_url().'assets/'.$logo; ?>" style='width: 100%;'>
+         
+        </div>
+      <div class="col-sm-6 text-center" style="color:white;"><h3><?php echo $header; ?></h3></div>
+     <div class="col-sm-4" id='company_info' style="color:white;">
+            
+          <b>  Company name : </b><?php echo $company_info[0]['company_name']; ?><br>
+          <b> Address : </b><?php echo $company_info[0]['address']; ?><br>
+          <b>  Email : </b><?php echo $company_info[0]['email']; ?><br>
+          <b>  Contact : </b><?php echo $company_info[0]['mobile']; ?><br>
+        </div>
+  </div>
+        </div>
+        <div class="body-section">
+            <div class="row">
+                <div class="col-6">
+                <table id="one" style="border:none;">
+    <tr><td  class="key">Vendor</td><td style="width:10px;">:</td><td calss="value"><?php echo $supplier_name;  ?></td></tr>
+    <tr><td  class="key">Invoice No</td><td style="width:10px;">:</td><td calss="value"><?php echo $chalan_no;  ?></td></tr>
+   
+</table>
+
+                </div>
+                <div class="col-6">
+                <table id="two">
+<tr><td  class="key">Expenses /Bill Date</td><td style="width:10px;">:</td><td calss="value"><?php echo $final_date;  ?></td></tr>
+    <tr><td  class="key">Payment Due Date</td><td style="width:10px;">:</td><td calss="value"><?php echo $payment_due_date;  ?></td></tr>
+</table> </div>
+            </div>
+        </div>
+        <div class="body-section">
+            <table class="table-bordered">
+                <thead>
+                    <tr>
+                    <th class="text-center text-white">S.No</th>
+                        <th class="text-center text-white">Product</th>
+                        <th class="text-center text-white">Description</th>
+                        <th class="text-center text-white">Quantity</th>
+                        <th class="text-center text-white">Rate</th>
+                        <th class="text-center text-white">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <?php
+                                    if ($purchase_all_data) {
+                               $count=1;
+                                   for($i=0;$i<sizeof($purchase_all_data);$i++){ ?>
+                    <tr>
+                    <td style="font-size: 16px;"><?php echo $count ;?></td>
+                       <td style="font-size: 16px;"><?php echo $purchase_all_data[$i]['product_name']; ?></td>
+                       <td style="font-size: 16px;"><?php echo $purchase_all_data[$i]['description']; ?></td>
+                       <td style="font-size: 16px;"><?php echo $purchase_all_data[$i]['quantity']; ?></td>
+                       <td style="font-size: 16px;"><?php echo $purchase_all_data[$i]['rate']; ?></td>
+                       <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $purchase_all_data[$i]['total_amount']; ?></td>
+                    </tr>
+                    <?php $count++;}}  ?>
+                    <tr>
+                        <td colspan="5" class="text-right">Overall Total:</td>
+                        <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $purchase_all_data[0]['grand_total_amount']; ?></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+<h4>Remarks :</h4><?php echo $purchase_all_data[0]['remarks']; ?><br><br><br>
+        </div>
+
+
+        <?php 
+
+}
+elseif($template==3)
+{
+?>
+<div class="brand-section">
+<div class="row">
        
-<?php } ?>
+       <div class="col-sm-2"><img src="<?php echo  base_url().'assets/'.$logo; ?>" style='width: 100%;'>
+          
+         </div>
+       <div class="col-sm-6 text-center" style="color:white;"><h3><?php echo $header; ?></h3></div>
+    
+   </div>
+        </div>
+
+        <div class="body-section">
+        <div class="row">
+        <div class="col-sm-6 "></div>
+            <div class="col-sm-6 " style="width:50%;">
+             <table>
+       
+        <tr>  <td style="100px;font-weight:bold;"> Company name </td><td style="width:10px;">:</td><td> <?php echo $company_info[0]['company_name']; ?></td></tr>
+        <tr>   <td style="100px;font-weight:bold;"> Address </td><td style="width:10px;">:</td><td> <?php echo $company_info[0]['address']; ?></td></tr>
+        <tr>   <td style="100px;font-weight:bold;"> Email </td><td style="width:10px;">:</td><td> <?php echo $company_info[0]['email']; ?></td></tr>
+        <tr>   <td style="100px;font-weight:bold;"> Contact </td><td style="width:10px;">:</td><td> <?php echo $company_info[0]['mobile']; ?></td></tr>
+</tr>        
+             
+</table>
+            </div></div>
+              <div class="row"> <div class="col-sm-12 ">&nbsp;</div></div>
+              <div class="row">
+                <div class="col-6">
+                <table id="one" style="border:none;">
+    <tr><td  class="key">Vendor</td><td style="width:10px;">:</td><td calss="value"><?php echo $supplier_name;  ?></td></tr>
+    <tr><td  class="key">Invoice No</td><td style="width:10px;">:</td><td calss="value"><?php echo $chalan_no;  ?></td></tr>
+   
+</table>
+
+                </div>
+                <div class="col-6">
+                <table id="two">
+<tr><td  class="key">Expenses /Bill Date</td><td style="width:10px;">:</td><td calss="value"><?php echo $final_date;  ?></td></tr>
+    <tr><td  class="key">Payment Due Date</td><td style="width:10px;">:</td><td calss="value"><?php echo $payment_due_date;  ?></td></tr>
+</table> </div>
+            </div>
+        </div>
+        <div class="body-section">
+            <table class="table-bordered">
+                <thead>
+                    <tr>
+                    <th class="text-center text-white">S.No</th>
+                        <th class="text-center text-white">Product</th>
+                        <th class="text-center text-white">Description</th>
+                        <th class="text-center text-white">Quantity</th>
+                        <th class="text-center text-white">Rate</th>
+                        <th class="text-center text-white">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <?php
+                                    if ($purchase_all_data) {
+                               $count=1;
+                                   for($i=0;$i<sizeof($purchase_all_data);$i++){ ?>
+                    <tr>
+                    <td style="font-size: 16px;"><?php echo $count ;?></td>
+                       <td style="font-size: 16px;"><?php echo $purchase_all_data[$i]['product_name']; ?></td>
+                       <td style="font-size: 16px;"><?php echo $purchase_all_data[$i]['description']; ?></td>
+                       <td style="font-size: 16px;"><?php echo $purchase_all_data[$i]['quantity']; ?></td>
+                       <td style="font-size: 16px;"><?php echo $purchase_all_data[$i]['rate']; ?></td>
+                       <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $purchase_all_data[$i]['total_amount']; ?></td>
+                    </tr>
+                    <?php $count++;}}  ?>
+                    <tr>
+                        <td colspan="5" class="text-right">Overall Total:</td>
+                        <td style="font-size: 16px;"><?php  echo $currency." " ; ?><?php echo $purchase_all_data[0]['grand_total_amount']; ?></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+<h4>Remarks :</h4><?php echo $purchase_all_data[0]['remarks']; ?><br><br><br>
+        </div>
+
+        <?php  } ?>
+
+    </div>
+
+</div>
+
+
+
+<style>
+
+.key{
+    border:none;
+    text-align:left;
+font-weight:bold;
+
+}
+.value{
+    border:none;
+    text-align:left;
+}
+#one,#two{
+float:left;
+width:100%;
+}
+body{
+    background-color: #fcf8f8; 
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.heading_name{
+    font-weight: bold;
+}
+.container{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+}
+.brand-section{
+   background-color: #5961b3;
+   padding: 10px 40px;
+}
+.logo{
+    width: 50%;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.col-6{
+    width: 50%;
+    flex: 0 0 auto;
+   
+}
+.text-white{
+    color: #fff;
+}
+.company-details{
+    float: right;
+    text-align: right;
+}
+
+.body-section{
+    padding: 16px;
+    border: 1px solid gray;
+    
+}
+.heading{
+    font-size: 20px;
+    margin-bottom: 08px;
+}
+.sub-heading{
+    color: #262626;
+    margin-bottom: 05px;
+}
+table{
+   
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+   
+}
+
+table thead tr{
+    border: 1px solid #111;
+    background-color: #5961b3;
+   
+}
+.table-bordered td{
+    text-align:center;
+}
+table td {
+    vertical-align: middle !important;
+  
+    word-wrap: break-word;
+}
+th{
+    text-align:center;
+    color:white;
+}
+table th, table td {
+    padding-top: 08px;
+    padding-bottom: 08px;
+}
+.table-bordered{
+    box-shadow: 0px 0px 5px 0.5px gray !important;
+}
+.table-bordered td, .table-bordered th {
+    border: 1px solid #dee2e6 !important;
+}
+.text-right{
+    text-align: right;
+}
+.w-20{
+    width: 20%;
+}
+.float-right{
+    float: right;
+}
+@media only screen and (max-width: 600px) {
+    
+}
+
+
+</style>
+
+    
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -317,7 +417,7 @@ foreach($products as $product)
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
 <script>
-    
+   
 $(document).ready(function () {
  
  var pdf = new jsPDF('p','pt','a4');
@@ -345,11 +445,13 @@ $(document).ready(function () {
     
   }
   
+ 
+  }).save();
   var timer = setTimeout(function() {
             window.location='<?php  echo base_url();   ?>'+'Cpurchase/manage_purchase'
-        }, 10);
-  }).save();
+        }, 1000);
    });
+  
    </script> 
 
 

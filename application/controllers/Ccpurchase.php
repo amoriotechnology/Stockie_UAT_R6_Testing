@@ -64,6 +64,8 @@ class Ccpurchase extends CI_Controller {
 
 
      public function manage_trucking() {
+
+        $this->session->unset_userdata('expensetruckingid');
         $date = $this->input->post("daterange");
         $this->load->library('Llpurchase');
         $content1 = $this->llpurchase->trucking_list();
@@ -134,13 +136,18 @@ class Ccpurchase extends CI_Controller {
         $CI->load->model('Web_settings');
         $CI1 = & get_instance();
         $CI1->load->model('Purchases');
-        $currency_details = $CI->Web_settings->retrieve_setting_editdata();
+       
         $all_supplier = $CI1->Purchases->select_all_supplier();
          $get_customer= $this->accounts_model->get_customer();
          $bank_list        = $this->Web_settings->bank_list();
         $voucher_no = $this->Purchases->trucking_voucher_no();
+        $currency_details = $CI->Web_settings->retrieve_setting_editdata();
+        $curn_info_default = $CI->db->select('*')->from('currency_tbl')->where('icon',$currency_details[0]['currency'])->get()->result_array();
+      
         $data = array(
-            'currency' => $currency_details[0]['currency'],
+            'curn_info_default' =>$curn_info_default[0]['currency_name'],
+          
+              'currency'  =>$currency_details[0]['currency'],
             'title'         => "Add Trucking",
             'all_supplier'  => $all_supplier,
            

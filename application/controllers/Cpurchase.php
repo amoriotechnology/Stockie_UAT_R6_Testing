@@ -1,4 +1,4 @@
-<?php
+    <?php
 
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
@@ -23,6 +23,7 @@ $CI = & get_instance();
         $this->template->full_admin_html_view($content);
 }
     public function index() {
+       
         $CI = & get_instance();
         $CI->auth->check_admin_auth();
         $CI->load->library('lpurchase');
@@ -39,6 +40,9 @@ $CI = & get_instance();
         $this->template->full_admin_html_view($content);
     }
     public function manage_packing_list(){
+
+        $this->session->unset_userdata('expense_packing_id');
+
         $date = $this->input->post("daterange");
         $CI = & get_instance();
         $CI->load->model('Purchases');
@@ -65,6 +69,7 @@ $CI = & get_instance();
 
     //Manage purchase
     public function manage_purchase() {
+         $this->session->unset_userdata('newexpenseid');
         $date = $this->input->post("daterange");
         $CI = & get_instance();
         $CI->load->model('Purchases');
@@ -90,6 +95,7 @@ $CI = & get_instance();
     }
 
      public function manage_purchase_order() {
+        $this->session->unset_userdata('purchase_orderid');
         $date = $this->input->post("daterange");
         $this->load->library('lpurchase');
         $CI = & get_instance();
@@ -114,6 +120,8 @@ $CI = & get_instance();
     }
 
     public function manage_ocean_import_tracking() {
+        $this->session->unset_userdata('expenseoceanid');
+
         $this->load->library('lpurchase');
         $content = $this->lpurchase->ocean_import_list();
         $this->template->full_admin_html_view($content);
@@ -289,18 +297,22 @@ $CI = & get_instance();
 
     //Insert purchase
     public function insert_purchase() {
+
+
+
+
         $CI = & get_instance();
         $CI->auth->check_admin_auth();
         $CI->load->model('Purchases');
-        $CI->Purchases->purchase_entry();
-        $this->session->set_userdata(array('message' => display('successfully_added')));
-        if (isset($_POST['add-purchase'])) {
-            redirect(base_url('Cpurchase/manage_purchase'));
-            exit;
-        } elseif (isset($_POST['add-purchase-another'])) {
-            redirect(base_url('Cpurchase'));
-            exit;
-        }
+        $data=$CI->Purchases->purchase_entry();
+
+           echo $data;  
+           $this->session->set_userdata(array('newexpenseid' =>$data)); 
+           redirect('Cpurchase');
+         
+         
+    
+
     }
 
 
@@ -310,10 +322,11 @@ $CI = & get_instance();
         $CI = & get_instance();
         $CI->auth->check_admin_auth();
         $CI->load->model('Purchases');
-        $CI->Purchases->packing_list_entry();
-        $this->session->set_userdata(array('message' => display('successfully_added')));
+        $invoice_id=$CI->Purchases->packing_list_entry();
+
+        $this->session->set_userdata(array('expense_packing_id' =>$invoice_id));
         if (isset($_POST['add-packing-list'])) {
-            redirect(base_url('Cpurchase/manage_packing_list'));
+            redirect(base_url('Cpurchase/add_packing_list'));
             exit;
         } elseif (isset($_POST['add-packing-list-another'])) {
             redirect(base_url('Cpurchase'));
@@ -324,10 +337,12 @@ $CI = & get_instance();
    $CI = & get_instance();
         $CI->auth->check_admin_auth();
         $CI->load->model('Purchases');
-        $CI->Purchases->purchase_order_entry();
-        $this->session->set_userdata(array('message' => display('successfully_added')));
+        $invoice_id=$CI->Purchases->purchase_order_entry();
+
+       
+        $this->session->set_userdata(array('purchase_orderid' => $invoice_id));
         if (isset($_POST['add-purchase-order'])) {
-            redirect(base_url('Cpurchase/manage_purchase_order'));
+            redirect(base_url('Cpurchase/purchase_order'));
             exit;
         } elseif (isset($_POST['add-purchase-order-another'])) {
             redirect(base_url('Cpurchase/purchase_order'));
@@ -338,10 +353,10 @@ $CI = & get_instance();
         $CI = & get_instance();
         $CI->auth->check_admin_auth();
         $CI->load->model('Purchases');
-        $CI->Purchases->ocean_import_entry();
-        $this->session->set_userdata(array('message' => display('successfully_added')));
+        $purchase_id=$CI->Purchases->ocean_import_entry();
+        $this->session->set_userdata(array('expenseoceanid' => $purchase_id));
         if (isset($_POST['add-ocean-import'])) {
-            redirect(base_url('Cpurchase/manage_ocean_import_tracking'));
+            redirect(base_url('Cpurchase/ocean_import_tracking'));
             exit;
         } elseif (isset($_POST['add-ocean-import-another'])) {
             redirect(base_url('Cpurchase/ocean_import_tracking'));
@@ -352,13 +367,17 @@ $CI = & get_instance();
 
 
       public function insert_trucking() {
+
         $CI = & get_instance();
         $CI->auth->check_admin_auth();
         $CI->load->model('Purchases');
-        $CI->Purchases->trucking_entry();
-        $this->session->set_userdata(array('message' => display('successfully_added')));
+       $purchaseid=$CI->Purchases->trucking_entry();
+        
+        $this->session->set_userdata(array('expensetruckingid' => $purchaseid));
+
+
         if (isset($_POST['add-trucking'])) {
-            redirect(base_url('Cpurchase/manage_trucking'));
+            redirect(base_url('Cpurchase/trucking'));
             exit;
         } elseif (isset($_POST['add-trucking-another'])) {
             redirect(base_url('Cpurchase/trucking'));
@@ -538,13 +557,18 @@ $CI = & get_instance();
         $data['order'] =$this->Purchases->get_purchases_order($invoice_no);
         $data['supplier'] =$this->Purchases->get_supplier($invoice_no);
         $data['company_info'] =$this->Purchases->company_info();
+      //  $order = json_decode($data['order'], true);
+$data=array(
+    'invoice_setting'  =>$this->invoice_design->retrieve_data(),
+    'invoice' =>$this->Purchases->get_purchases_invoice($invoice_no),
+    'order' => $this->Purchases->get_purchases_order($invoice_no),
+    'supplier'=> $this->Purchases->get_supplier($invoice_no),
+    'company_info' =>$this->Purchases->company_info()
+);
 
-        $data['invoice_setting'] =$this->invoice_design->retrieve_data();
+
+        //$data['invoice_setting'] =$this->invoice_design->retrieve_data();
        
-   
-
-     
-
       
         $content = $this->load->view('purchase/purchase_order_invoice', $data, true);
         //$content='';
@@ -580,15 +604,16 @@ $CI = & get_instance();
         $CC->load->model('invoice_content');
         $dataw = $CA->invoice_design->retrieve_data();
         $datacontent = $CI->invoice_content->retrieve_data();
-
         $packing_details = $CB->Purchases->packing_details_data($expense_packing_id);
         $company_info=$this->Purchases->company_info();
         $data=array(
+            'packing_details' => $packing_details,
             'company_info' => $company_info,
            'invoice_setting' => $dataw,
             'invoice'  =>$packing_details[0]['invoice_no'],
             'invoice_date' => $packing_details[0]['invoice_date'],
-            'gross' => $packing_details[0]['gross_weight'],
+            'gross' => $packing_details[0]['gross_weight'],        
+                'remarks' => $packing_details[0]['remarks'],
             'container' => $packing_details[0]['container_no'],
             'description' => $packing_details[0]['description'],
             'thickness' => $packing_details[0]['thickness'],
@@ -598,10 +623,10 @@ $CI = & get_instance();
             'width' => $packing_details[0]['width'],
             'height' => $packing_details[0]['height'],
             'area' => $packing_details[0]['area'],
-            'product' => $packing_details[0]['product_name']
+            'product' => $packing_details[0]['product_name'],
+            'packing_details' => $packing_details
         );
-     
-        // print_r($data); exit();
+            //  print_r($packing_details); exit();
        // echo $content = $CI->linvoice->invoice_add_form();
         $content = $this->load->view('purchase/packing_invoice_html', $data, true);
         //$content='';
